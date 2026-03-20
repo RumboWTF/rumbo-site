@@ -9,44 +9,35 @@
     *{box-sizing:border-box;margin:0;padding:0;}
     body{background:#faf9f6;color:#1a1a18;font-family:Georgia,'Times New Roman',serif;line-height:1.65;}
     a{color:inherit;text-decoration:none;}
-
     nav{background:#1a1a18;padding:18px 32px;display:flex;justify-content:space-between;align-items:center;}
     .logo{font-family:Georgia,serif;font-size:22px;color:#f5f3ee;letter-spacing:-0.5px;}
     .logo em{font-style:normal;color:#c8a84a;}
     .nav-links{display:flex;gap:28px;}
-    .nav-links a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#888;text-transform:uppercase;}
-    .nav-links a:hover{color:#c8a84a;}
-
+    .nav-links a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#c8a84a;text-transform:uppercase;}
+    .nav-links a:hover{color:#f5f3ee;}
     .content{max-width:640px;margin:0 auto;padding:52px 24px 72px;}
-
-    .page-label{font-family:'Courier New',monospace;font-size:9px;letter-spacing:3px;color:#c8a84a;margin-bottom:20px;}
-
-    h1{font-family:Georgia,serif;font-size:28px;font-weight:400;color:#1a1a18;line-height:1.25;margin-bottom:28px;}
-
+    .page-label{font-family:'Courier New',monospace;font-size:10px;letter-spacing:3px;color:#c8a84a;margin-bottom:20px;}
+    h1{font-family:Georgia,serif;font-size:30px;font-weight:400;color:#1a1a18;line-height:1.25;margin-bottom:36px;}
     .section{margin-bottom:36px;}
-    .section-title{font-family:'Courier New',monospace;font-size:9px;letter-spacing:2px;color:#aaa;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid #e8e4dc;}
-    p{font-size:14px;color:#333;line-height:1.75;margin-bottom:14px;}
+    .section-title{font-family:'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#555;text-transform:uppercase;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #e0dcd4;}
+    p{font-size:14.5px;color:#333;line-height:1.75;margin-bottom:14px;}
     p:last-child{margin-bottom:0;}
-
-    .testing-note{background:#f0ede6;border-left:3px solid #c8a84a;padding:14px 18px;margin-top:36px;border-radius:0 4px 4px 0;}
-    .testing-note p{font-size:13px;color:#555;}
-
+    .testing-note{background:#f0ede6;border-left:3px solid #c8a84a;padding:16px 20px;margin-top:36px;border-radius:0 4px 4px 0;}
+    .testing-note p{font-size:13.5px;color:#444;}
     .prompt-block{margin-top:36px;}
     .prompt-toggle{font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#c8a84a;cursor:pointer;border:none;background:none;padding:0;display:flex;align-items:center;gap:8px;}
     .prompt-toggle:hover{color:#a07828;}
-    .prompt-toggle::before{content:'▶';font-size:8px;transition:transform 0.2s;}
-    .prompt-toggle.open::before{transform:rotate(90deg);}
-    .prompt-text{display:none;margin-top:14px;background:#1a1a18;color:#c8c4bc;font-family:'Courier New',monospace;font-size:11px;line-height:1.7;padding:20px;border-radius:4px;white-space:pre-wrap;}
+    .arrow{display:inline-block;font-size:8px;transition:transform 0.2s;}
+    .prompt-toggle.open .arrow{transform:rotate(90deg);}
+    .prompt-text{display:none;margin-top:14px;background:#1a1a18;color:#b0ac9e;font-family:'Courier New',monospace;font-size:11px;line-height:1.75;padding:22px;border-radius:4px;white-space:pre-wrap;}
     .prompt-text.visible{display:block;}
-
     footer{background:#1a1a18;padding:16px 32px;display:flex;justify-content:space-between;align-items:center;}
-    .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#555;letter-spacing:0.5px;}
+    .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#888;letter-spacing:0.5px;}
     .footer-right{display:flex;gap:24px;}
-    .footer-right a{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.5px;color:#666;text-transform:uppercase;}
-    .footer-right a:hover{color:#c8a84a;}
-
+    .footer-right a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#c8a84a;text-transform:uppercase;}
+    .footer-right a:hover{color:#f5f3ee;}
     @media(max-width:600px){
-      nav{padding:14px 18px;}
+      nav,footer{padding:14px 18px;}
       .content{padding:36px 16px 52px;}
     }
   </style>
@@ -64,7 +55,7 @@
 <div class="content">
 
   <div class="page-label">What this is</div>
-  <h1>A world intelligence brief with nothing to hide.</h1>
+  <h1>News with no agenda and nothing to hide.</h1>
 
   <div class="section">
     <div class="section-title">The idea</div>
@@ -80,28 +71,30 @@
 
   <div class="section">
     <div class="section-title">How it is made</div>
-    <p>Each edition is generated using Claude, an AI model made by Anthropic, running a structured prompt against fresh sources from major international news outlets. The prompt used to generate each edition is shown in full below — nothing is hidden about how this works.</p>
-    <p>A confidence score appears in the footer of each edition. It reflects how well-sourced that edition is, not how certain we are about the world. Uncertainty is the honest default.</p>
+    <p>Each edition is generated by an AI language model — currently Claude by Anthropic, though the model used may change over time as we evaluate which produces the most precise and neutral output. No single AI company has a permanent seat at the editorial table.</p>
+    <p>The prompt used to generate each edition is shown in full below. The sources consulted are the same major international wire services a careful human reader would use. Nothing about the process is hidden.</p>
   </div>
 
   <div class="section">
-    <div class="section-title">What this costs</div>
-    <p>Nothing. No ads, no sponsors, no promoted content. If that changes, it will be stated plainly at the top of the edition it changes in.</p>
+    <div class="section-title">What this costs you</div>
+    <p>Nothing. No ads, no sponsors, no promoted content. If that changes, it will be stated plainly at the top of the edition it changes in — not buried in a terms update.</p>
   </div>
 
   <div class="testing-note">
-    <p><strong>Testing phase.</strong> Rumbo.WTF is currently in early testing. Errors can and will occur. AI generation is fast but not infallible — treat everything here as a starting point, not a final word. Your critical thinking is not optional.</p>
+    <p><strong>Testing phase.</strong> Rumbo.WTF is currently in early testing. Errors can and will occur. AI generation is fast but not infallible — treat everything here as a starting point for your own thinking, not a final word. Your critical thinking is not optional, and in an AI-saturated news world, it is more important than ever.</p>
   </div>
 
   <div class="prompt-block">
-    <button class="prompt-toggle" onclick="togglePrompt(this)">View the prompt used to generate each edition</button>
+    <button class="prompt-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('visible')">
+      <span class="arrow">▶</span> View the prompt used to generate each edition
+    </button>
     <div class="prompt-text">You are the editorial engine for Rumbo.WTF, a world intelligence brief.
 
 Search the web for the most consequential global developments from the last 48 hours. Apply the following editorial rules:
 
 — Select 3–5 items based on second-order consequences, not surface drama
 — Write each item in plain language any curious adult can understand without prior knowledge
-— No jargon: translate all technical terms, acronyms, and financial language
+— No jargon: translate all technical terms, acronyms, and financial language into plain English
 — Two sentences per item: what actually shifted, and how it moves the world
 — Geo tag each item: Global / Europe / Spain / Nordic / etc
 — Add 3–4 Noteworthy items: one line each, category label, no analysis
@@ -110,7 +103,8 @@ Search the web for the most consequential global developments from the last 48 h
 — Output structured JSON: headline, body, geo_tag, noteworthy array
 
 Sources: prioritise major international wire services and established global outlets.
-Weight stories covered by multiple independent sources over single-source items.</div>
+Weight stories covered by multiple independent sources over single-source items.
+Flag when a development is only covered by one source cluster.</div>
   </div>
 
 </div>
@@ -122,14 +116,6 @@ Weight stories covered by multiple independent sources over single-source items.
     <a href="about.html">About</a>
   </div>
 </footer>
-
-<script>
-function togglePrompt(btn){
-  btn.classList.toggle('open');
-  const txt = btn.nextElementSibling;
-  txt.classList.toggle('visible');
-}
-</script>
 
 </body>
 </html>
