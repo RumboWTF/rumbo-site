@@ -9,21 +9,26 @@
     *{box-sizing:border-box;margin:0;padding:0;}
     body{background:#faf9f6;color:#1a1a18;font-family:Georgia,'Times New Roman',serif;line-height:1.65;}
     a{color:inherit;text-decoration:none;}
+
     nav{background:#1a1a18;padding:18px 32px;display:flex;justify-content:space-between;align-items:center;}
     .logo{font-family:Georgia,serif;font-size:22px;color:#f5f3ee;letter-spacing:-0.5px;}
     .logo em{font-style:normal;color:#c8a84a;}
     .nav-links{display:flex;gap:28px;}
     .nav-links a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#c8a84a;text-transform:uppercase;}
     .nav-links a:hover{color:#f5f3ee;}
+
     .content{max-width:640px;margin:0 auto;padding:52px 24px 72px;}
     .page-label{font-family:'Courier New',monospace;font-size:10px;letter-spacing:3px;color:#c8a84a;margin-bottom:20px;}
     h1{font-family:Georgia,serif;font-size:30px;font-weight:400;color:#1a1a18;line-height:1.25;margin-bottom:36px;}
+
     .section{margin-bottom:36px;}
     .section-title{font-family:'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#555;text-transform:uppercase;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #e0dcd4;}
-    p{font-size:14.5px;color:#333;line-height:1.75;margin-bottom:14px;}
+    p{font-size:15.5px;color:#333;line-height:1.75;margin-bottom:14px;}
     p:last-child{margin-bottom:0;}
+
     .testing-note{background:#f0ede6;border-left:3px solid #c8a84a;padding:16px 20px;margin-top:36px;border-radius:0 4px 4px 0;}
-    .testing-note p{font-size:13.5px;color:#444;}
+    .testing-note p{font-size:14px;color:#444;}
+
     .prompt-block{margin-top:36px;}
     .prompt-toggle{font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#c8a84a;cursor:pointer;border:none;background:none;padding:0;display:flex;align-items:center;gap:8px;}
     .prompt-toggle:hover{color:#a07828;}
@@ -31,11 +36,13 @@
     .prompt-toggle.open .arrow{transform:rotate(90deg);}
     .prompt-text{display:none;margin-top:14px;background:#1a1a18;color:#b0ac9e;font-family:'Courier New',monospace;font-size:11px;line-height:1.75;padding:22px;border-radius:4px;white-space:pre-wrap;}
     .prompt-text.visible{display:block;}
+
     footer{background:#1a1a18;padding:16px 32px;display:flex;justify-content:space-between;align-items:center;}
-    .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#888;letter-spacing:0.5px;}
+    .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#b0aa9e;letter-spacing:0.5px;}
     .footer-right{display:flex;gap:24px;}
     .footer-right a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#c8a84a;text-transform:uppercase;}
     .footer-right a:hover{color:#f5f3ee;}
+
     @media(max-width:600px){
       nav,footer{padding:14px 18px;}
       .content{padding:36px 16px 52px;}
@@ -116,6 +123,13 @@ Flag when a development is only covered by one source cluster.</div>
     <a href="about.html">About</a>
   </div>
 </footer>
+
+<script>
+function togglePrompt(btn){
+  btn.classList.toggle('open');
+  btn.nextElementSibling.classList.toggle('visible');
+}
+</script>
 
 </body>
 </html>

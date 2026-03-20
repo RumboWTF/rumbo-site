@@ -9,38 +9,49 @@
     *{box-sizing:border-box;margin:0;padding:0;}
     body{background:#faf9f6;color:#1a1a18;font-family:Georgia,'Times New Roman',serif;line-height:1.6;}
     a{color:inherit;text-decoration:none;}
+
     nav{background:#1a1a18;padding:18px 32px;display:flex;justify-content:space-between;align-items:center;}
     .logo{font-family:Georgia,serif;font-size:22px;color:#f5f3ee;letter-spacing:-0.5px;}
     .logo em{font-style:normal;color:#c8a84a;}
     .nav-links{display:flex;gap:28px;}
     .nav-links a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#c8a84a;text-transform:uppercase;}
     .nav-links a:hover{color:#f5f3ee;}
-    .meta-bar{background:#1a1a18;border-top:1px solid #2a2a28;padding:8px 32px 16px;display:flex;justify-content:space-between;}
-    .meta-date{font-family:'Courier New',monospace;font-size:10px;color:#888;letter-spacing:1px;}
-    .meta-count{font-family:'Courier New',monospace;font-size:10px;color:#888;letter-spacing:1px;}
+
+    .meta-bar{background:#1a1a18;border-top:1px solid #2e2e2c;padding:8px 32px 16px;display:flex;justify-content:space-between;}
+    .meta-date{font-family:'Courier New',monospace;font-size:10px;color:#b0aa9e;letter-spacing:1px;}
+    .meta-count{font-family:'Courier New',monospace;font-size:10px;color:#b0aa9e;letter-spacing:1px;}
+
     .feed{max-width:700px;margin:0 auto;padding:36px 24px 52px;}
-    .item{display:flex;gap:14px;padding:20px 0;border-bottom:1px solid #e8e4dc;align-items:flex-start;}
+
+    .item{display:flex;gap:14px;padding:22px 0;border-bottom:1px solid #e8e4dc;align-items:flex-start;}
     .item:last-child{border-bottom:none;}
-    .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:8px;}
+    .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:9px;}
     .dot-global{background:#d4d0c8;border:1px solid #c0bbb2;}
     .dot-regional{background:#c8a84a;}
+
     .item-body{flex:1;}
-    .item-head{font-size:17px;font-weight:400;color:#1a1a18;line-height:1.4;margin-bottom:9px;}
-    .item-text{font-size:14.5px;color:#3a3a38;line-height:1.7;margin-bottom:10px;}
-    .item-foot{display:flex;align-items:center;}
+    .item-head{font-size:18px;font-weight:400;color:#1a1a18;line-height:1.4;margin-bottom:10px;}
+    .item-text{font-size:15.5px;color:#3a3a38;line-height:1.7;margin-bottom:11px;}
+
+    .item-foot{display:flex;align-items:center;gap:10px;}
     .geo-pill{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.5px;padding:3px 9px;border-radius:3px;background:#ede9e0;color:#666;}
     .geo-pill.regional{background:#f5f1e6;color:#a07828;}
+    .search-link{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#b0aa9e;text-decoration:none;}
+    .search-link:hover{color:#c8a84a;}
+
     .nw-section{max-width:700px;margin:0 auto;padding:0 24px 52px;}
     .nw-label{font-family:'Courier New',monospace;font-size:9px;letter-spacing:2.5px;color:#999;margin-bottom:14px;padding-top:10px;border-top:1px solid #e0dcd4;}
     .nw-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 32px;}
     .nw-item{display:flex;align-items:baseline;padding:5px 0;}
     .nw-cat{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#c8a84a;width:64px;flex-shrink:0;}
-    .nw-txt{font-size:12.5px;color:#555;line-height:1.45;}
+    .nw-txt{font-size:13px;color:#555;line-height:1.45;}
+
     footer{background:#1a1a18;padding:16px 32px;display:flex;justify-content:space-between;align-items:center;}
-    .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#888;letter-spacing:0.5px;}
+    .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#b0aa9e;letter-spacing:0.5px;}
     .footer-right{display:flex;gap:24px;}
     .footer-right a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#c8a84a;text-transform:uppercase;}
     .footer-right a:hover{color:#f5f3ee;}
+
     @media(max-width:600px){
       .nw-grid{grid-template-columns:1fr;}
       nav,.meta-bar,footer{padding-left:16px;padding-right:16px;}
@@ -69,7 +80,10 @@
     <div class="item-body">
       <div class="item-head">Israel strikes Iran's largest gas field — oil prices up 69% in three weeks</div>
       <div class="item-text">Israel attacked the gas infrastructure that supplies much of Europe and Asia with heating and power. Iran hit back at Qatar and Saudi Arabia's energy facilities the same day. Energy prices are now rising fast enough to push up the cost of food, transport, and manufacturing across the world.</div>
-      <div class="item-foot"><span class="geo-pill">Global</span></div>
+      <div class="item-foot">
+        <span class="geo-pill">Global</span>
+        <a class="search-link" href="https://duckduckgo.com/?q=Israel+strikes+Iran+gas+field+oil+prices" target="_blank">search this ↗</a>
+      </div>
     </div>
   </div>
 
@@ -78,7 +92,10 @@
     <div class="item-body">
       <div class="item-head">US central bank freezes interest rates, blaming war uncertainty</div>
       <div class="item-text">The US Federal Reserve kept borrowing costs unchanged — its chair said the economic impact of the Iran war is too unpredictable to act on. Central banks in both the US and Europe are now stuck between rising energy costs pushing prices up and a slowing economy pulling them down.</div>
-      <div class="item-foot"><span class="geo-pill">Global</span></div>
+      <div class="item-foot">
+        <span class="geo-pill">Global</span>
+        <a class="search-link" href="https://duckduckgo.com/?q=Federal+Reserve+interest+rates+Iran+war+2026" target="_blank">search this ↗</a>
+      </div>
     </div>
   </div>
 
@@ -87,7 +104,10 @@
     <div class="item-body">
       <div class="item-head">Israeli military strikes Iranian ships in the Caspian Sea — war spreads north</div>
       <div class="item-text">Israeli forces attacked Iranian naval vessels in the Caspian Sea — a landlocked body of water shared with Russia, Kazakhstan, and three other countries. It is the first attack outside the Gulf region and puts the conflict on Russia's doorstep for the first time.</div>
-      <div class="item-foot"><span class="geo-pill">Global</span></div>
+      <div class="item-foot">
+        <span class="geo-pill">Global</span>
+        <a class="search-link" href="https://duckduckgo.com/?q=Israel+strikes+Iranian+ships+Caspian+Sea+2026" target="_blank">search this ↗</a>
+      </div>
     </div>
   </div>
 
@@ -96,7 +116,10 @@
     <div class="item-body">
       <div class="item-head">Spain pledges €1 billion to Ukraine and agrees to jointly build drones and missiles</div>
       <div class="item-text">Spain committed €1 billion in military support to Ukraine — including joint production of drones, radar, and missiles — while simultaneously refusing to let the US use its military bases for the Iran war. This puts Washington in a difficult position: pushing back on Spain risks undermining its own Ukraine policy.</div>
-      <div class="item-foot"><span class="geo-pill regional">España</span></div>
+      <div class="item-foot">
+        <span class="geo-pill regional">España</span>
+        <a class="search-link" href="https://duckduckgo.com/?q=Spain+1+billion+Ukraine+drones+missiles+2026" target="_blank">search this ↗</a>
+      </div>
     </div>
   </div>
 
@@ -105,7 +128,10 @@
     <div class="item-body">
       <div class="item-head">Police bust network hiding a Russian oligarch's assets across five Mallorca villas</div>
       <div class="item-text">Three people were arrested in Mallorca for hiding luxury properties, bank accounts, and cars on behalf of a Russian businessman under EU sanctions — linked to supplying helicopters to the Russian military. The timing, the same week Spain deepened its Ukraine commitment, makes it as much a political signal as a police operation.</div>
-      <div class="item-foot"><span class="geo-pill regional">España</span></div>
+      <div class="item-foot">
+        <span class="geo-pill regional">España</span>
+        <a class="search-link" href="https://duckduckgo.com/?q=Mallorca+Russia+sanctions+evasion+arrest+2026" target="_blank">search this ↗</a>
+      </div>
     </div>
   </div>
 
