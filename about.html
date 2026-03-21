@@ -9,25 +9,12 @@
     *{box-sizing:border-box;margin:0;padding:0;}
     body{background:#faf9f6;color:#1a1a18;font-family:Georgia,'Times New Roman',serif;line-height:1.65;}
     a{color:inherit;text-decoration:none;}
-    nav{background:#1a1a18;padding:18px 32px;display:flex;justify-content:space-between;align-items:center;position:relative;}
+    nav{background:#1a1a18;padding:18px 32px;display:flex;justify-content:space-between;align-items:center;}
     .logo{font-family:Georgia,serif;font-size:22px;color:#f5f3ee;letter-spacing:-0.5px;}
     .logo em{font-style:normal;color:#c8a84a;}
-    .nav-links{display:flex;gap:24px;align-items:center;}
+    .nav-links{display:flex;gap:28px;align-items:center;}
     .nav-links a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#c8a84a;text-transform:uppercase;}
     .nav-links a:hover{color:#f5f3ee;}
-    .locale-token{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#aaa;border:1px solid #444;padding:3px 9px;border-radius:3px;cursor:pointer;display:flex;align-items:center;gap:5px;position:relative;user-select:none;}
-    .locale-token:hover{border-color:#c8a84a;color:#c8a84a;}
-    .locale-arrow{font-size:7px;opacity:0.7;}
-    .locale-dropdown{display:none;position:absolute;top:calc(100% + 6px);right:0;background:#222220;border:1px solid #3a3a38;border-radius:6px;padding:16px;min-width:260px;z-index:100;}
-    .locale-dropdown.open{display:block;}
-    .locale-dl{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.5px;color:#888;text-transform:uppercase;margin-bottom:8px;}
-    .locale-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}
-    .locale-row:last-child{margin-bottom:0;}
-    .lpill{font-family:'Courier New',monospace;font-size:10px;padding:4px 10px;border-radius:3px;border:1px solid #444;color:#bbb;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all 0.1s;}
-    .lpill:hover{border-color:#c8a84a;color:#c8a84a;}
-    .lpill.active{border-color:#c8a84a;background:#2a2410;color:#c8a84a;}
-    .lpill.soon{opacity:0.5;cursor:default;color:#777;}
-    .lpill.soon:hover{border-color:#444;color:#777;}
     .content{max-width:640px;margin:0 auto;padding:52px 24px 72px;}
     h1{font-family:Georgia,serif;font-size:30px;font-weight:400;color:#1a1a18;line-height:1.25;margin-bottom:8px;}
     .tagline{font-family:'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#c8a84a;margin-bottom:40px;display:block;}
@@ -47,12 +34,26 @@
     .prompt-toggle.open .arrow{transform:rotate(90deg);}
     .prompt-text{display:none;margin-top:14px;background:#1a1a18;color:#b0ac9e;font-family:'Courier New',monospace;font-size:11px;line-height:1.75;padding:22px;border-radius:4px;white-space:pre-wrap;}
     .prompt-text.visible{display:block;}
-    footer{background:#1a1a18;padding:16px 32px;display:flex;justify-content:space-between;align-items:center;}
+    footer{background:#1a1a18;padding:20px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
     .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#b0aa9e;letter-spacing:0.5px;}
+    .footer-center{display:flex;align-items:center;gap:8px;position:relative;}
     .footer-right{display:flex;gap:24px;}
     .footer-right a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#c8a84a;text-transform:uppercase;}
     .footer-right a:hover{color:#f5f3ee;}
-    @media(max-width:600px){nav,footer{padding:14px 18px;}.content{padding:36px 16px 52px;}}
+    .locale-token{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#aaa;border:1px solid #444;padding:3px 9px;border-radius:3px;cursor:pointer;display:flex;align-items:center;gap:5px;user-select:none;}
+    .locale-token:hover{border-color:#c8a84a;color:#c8a84a;}
+    .locale-arrow{font-size:7px;opacity:0.7;}
+    .locale-dropdown{display:none;position:absolute;bottom:calc(100% + 6px);left:0;background:#222220;border:1px solid #3a3a38;border-radius:6px;padding:16px;min-width:260px;z-index:100;}
+    .locale-dropdown.open{display:block;}
+    .locale-dl{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.5px;color:#888;text-transform:uppercase;margin-bottom:8px;}
+    .locale-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}
+    .locale-row:last-child{margin-bottom:0;}
+    .lpill{font-family:'Courier New',monospace;font-size:10px;padding:4px 10px;border-radius:3px;border:1px solid #444;color:#bbb;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all 0.1s;}
+    .lpill:hover{border-color:#c8a84a;color:#c8a84a;}
+    .lpill.active{border-color:#c8a84a;background:#2a2410;color:#c8a84a;}
+    .lpill.soon{opacity:0.5;cursor:default;color:#777;}
+    .lpill.soon:hover{border-color:#444;color:#777;}
+    @media(max-width:600px){nav,footer{padding:14px 18px;}.content{padding:36px 16px 52px;}footer{flex-direction:column;align-items:flex-start;}}
   </style>
 </head>
 <body>
@@ -61,25 +62,6 @@
   <div class="nav-links">
     <a href="index.html">Latest</a>
     <a href="about.html">About</a>
-    <div class="locale-token" id="localeToken" onclick="toggleLocale(event)">
-      <span id="localeLabel">&#127468;&#127463; EN &middot; &#127757; Global</span>
-      <span class="locale-arrow">&#9660;</span>
-      <div class="locale-dropdown" id="localeDropdown">
-        <div class="locale-dl">Language</div>
-        <div class="locale-row">
-          <div class="lpill active" onclick="setLang(event,'EN','en')">&#127468;&#127463; EN</div>
-          <div class="lpill soon">&#127466;&#127480; ES &mdash; soon</div>
-          <div class="lpill soon">&#127475;&#127476; NO &mdash; soon</div>
-        </div>
-        <div class="locale-dl">Local context</div>
-        <div class="locale-row">
-          <div class="lpill active" onclick="setRegion(event,'Global','global')">&#127757; Global</div>
-          <div class="lpill" onclick="setRegion(event,'Spain','es')">&#127466;&#127480; Spain</div>
-          <div class="lpill soon">&#127475;&#127476; Norway &mdash; soon</div>
-          <div class="lpill soon">&#127468;&#127463; UK &mdash; soon</div>
-        </div>
-      </div>
-    </div>
   </div>
 </nav>
 <div class="content">
@@ -133,7 +115,31 @@ Flag when a development is only covered by one source cluster.</div>
 </div>
 <footer>
   <span class="footer-left">rumbo.wtf &middot; open &middot; no ads</span>
-  <div class="footer-right"><a href="index.html">Latest</a><a href="about.html">About</a></div>
+  <div class="footer-center">
+    <div class="locale-token" id="localeToken" onclick="toggleLocale(event)">
+      <span id="localeLabel">&#127468;&#127463; EN &middot; &#127757; Global</span>
+      <span class="locale-arrow">&#9650;</span>
+      <div class="locale-dropdown" id="localeDropdown">
+        <div class="locale-dl">Language</div>
+        <div class="locale-row">
+          <div class="lpill active" onclick="setLang(event,'EN','en')">&#127468;&#127463; EN</div>
+          <div class="lpill soon">&#127466;&#127480; ES &mdash; soon</div>
+          <div class="lpill soon">&#127475;&#127476; NO &mdash; soon</div>
+        </div>
+        <div class="locale-dl">Local context</div>
+        <div class="locale-row">
+          <div class="lpill active" onclick="setRegion(event,'Global','global')">&#127757; Global</div>
+          <div class="lpill" onclick="setRegion(event,'Spain','es')">&#127466;&#127480; Spain</div>
+          <div class="lpill soon">&#127475;&#127476; Norway &mdash; soon</div>
+          <div class="lpill soon">&#127468;&#127463; UK &mdash; soon</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-right">
+    <a href="index.html">Latest</a>
+    <a href="about.html">About</a>
+  </div>
 </footer>
 <script>
 var lang=localStorage.getItem('rumbo_lang')||'EN';
@@ -143,8 +149,8 @@ function updateToken(){document.getElementById('localeLabel').textContent=flagFo
 function flagFor(v){var m={'EN':'\ud83c\uddec\ud83c\udde7','ES':'\ud83c\uddea\ud83c\uddf8','NO':'\ud83c\uddf3\ud83c\uddf4','Global':'\ud83c\udf0d','Spain':'\ud83c\uddea\ud83c\uddf8','Norway':'\ud83c\uddf3\ud83c\uddf4','UK':'\ud83c\uddec\ud83c\udde7'};return m[v]||'';}
 function toggleLocale(e){e.stopPropagation();document.getElementById('localeDropdown').classList.toggle('open');}
 document.addEventListener('click',function(){document.getElementById('localeDropdown').classList.remove('open');});
-function setLang(e,val,code){e.stopPropagation();lang=val;localStorage.setItem('rumbo_lang',val);document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
-function setRegion(e,val,code){e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
+function setLang(e,val){e.stopPropagation();lang=val;localStorage.setItem('rumbo_lang',val);document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
+function setRegion(e,val){e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
 </script>
 </body>
 </html>
