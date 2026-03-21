@@ -9,74 +9,60 @@
     *{box-sizing:border-box;margin:0;padding:0;}
     body{background:#faf9f6;color:#1a1a18;font-family:Georgia,'Times New Roman',serif;line-height:1.6;}
     a{color:inherit;text-decoration:none;}
-
     nav{background:#1a1a18;padding:18px 32px;display:flex;justify-content:space-between;align-items:center;position:relative;}
     .logo{font-family:Georgia,serif;font-size:22px;color:#f5f3ee;letter-spacing:-0.5px;}
     .logo em{font-style:normal;color:#c8a84a;}
     .nav-links{display:flex;gap:24px;align-items:center;}
     .nav-links a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#c8a84a;text-transform:uppercase;}
     .nav-links a:hover{color:#f5f3ee;}
-
-    .locale-token{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#888;border:1px solid #333;padding:3px 9px;border-radius:3px;cursor:pointer;display:flex;align-items:center;gap:5px;position:relative;user-select:none;}
+    .locale-token{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#aaa;border:1px solid #444;padding:3px 9px;border-radius:3px;cursor:pointer;display:flex;align-items:center;gap:5px;position:relative;user-select:none;}
     .locale-token:hover{border-color:#c8a84a;color:#c8a84a;}
-    .locale-arrow{font-size:7px;opacity:0.6;}
-
-    .locale-dropdown{display:none;position:absolute;top:calc(100% + 6px);right:0;background:#1a1a18;border:1px solid #2e2e2c;border-radius:6px;padding:16px;min-width:260px;z-index:100;}
+    .locale-arrow{font-size:7px;opacity:0.7;}
+    .locale-dropdown{display:none;position:absolute;top:calc(100% + 6px);right:0;background:#222220;border:1px solid #3a3a38;border-radius:6px;padding:16px;min-width:260px;z-index:100;}
     .locale-dropdown.open{display:block;}
-    .locale-dl{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.5px;color:#555;text-transform:uppercase;margin-bottom:8px;}
+    .locale-dl{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.5px;color:#888;text-transform:uppercase;margin-bottom:8px;}
     .locale-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}
     .locale-row:last-child{margin-bottom:0;}
-    .lpill{font-family:'Courier New',monospace;font-size:10px;padding:4px 10px;border-radius:3px;border:1px solid #333;color:#888;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all 0.1s;}
+    .lpill{font-family:'Courier New',monospace;font-size:10px;padding:4px 10px;border-radius:3px;border:1px solid #444;color:#bbb;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all 0.1s;}
     .lpill:hover{border-color:#c8a84a;color:#c8a84a;}
-    .lpill.active{border-color:#c8a84a;background:#1e1a10;color:#c8a84a;}
-    .lpill.soon{opacity:0.35;cursor:default;}
-    .lpill.soon:hover{border-color:#333;color:#888;}
-
+    .lpill.active{border-color:#c8a84a;background:#2a2410;color:#c8a84a;}
+    .lpill.soon{opacity:0.5;cursor:default;color:#777;}
+    .lpill.soon:hover{border-color:#444;color:#777;}
     .meta-bar{background:#1a1a18;border-top:1px solid #2e2e2c;padding:8px 32px 16px;display:flex;justify-content:space-between;}
     .meta-date{font-family:'Courier New',monospace;font-size:10px;color:#b0aa9e;letter-spacing:1px;}
     .meta-count{font-family:'Courier New',monospace;font-size:10px;color:#b0aa9e;letter-spacing:1px;}
-
     .feed{max-width:700px;margin:0 auto;padding:36px 24px 48px;}
-
     .item{display:flex;gap:14px;padding:22px 0;border-bottom:1px solid #e8e4dc;align-items:flex-start;}
     .item:last-child{border-bottom:none;}
     .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:9px;}
     .dot-global{background:#d4d0c8;border:1px solid #c0bbb2;}
     .dot-regional{background:#c8a84a;}
-
     .item-body{flex:1;}
     .item-head{font-size:18px;font-weight:400;color:#1a1a18;line-height:1.4;margin-bottom:10px;}
     .item-text{font-size:15.5px;color:#3a3a38;line-height:1.7;margin-bottom:11px;}
-
     .item-foot{display:flex;align-items:center;gap:10px;}
     .geo-pill{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.5px;padding:3px 9px;border-radius:3px;background:#ede9e0;color:#555;}
     .geo-pill.regional{background:#f5f1e6;color:#a07828;}
     .search-link{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#b0aa9e;}
     .search-link:hover{color:#c8a84a;}
-
     .meanwhile-section{max-width:700px;margin:0 auto;padding:0 24px 52px;}
-    .meanwhile-header{display:flex;align-items:baseline;gap:0;margin-bottom:16px;padding-top:4px;border-top:1px solid #e0dcd4;}
+    .meanwhile-header{margin-bottom:16px;padding-top:4px;border-top:1px solid #e0dcd4;}
     .meanwhile-title{font-family:'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#1a1a18;font-weight:700;text-transform:uppercase;}
-
     .nw-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 32px;}
     .nw-item{display:flex;flex-direction:column;gap:5px;padding:4px 0;}
     .nw-top{display:flex;align-items:center;gap:8px;}
-
     .nw-cat-wrap{position:relative;}
     .nw-cat{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#a07828;background:#f5f1e6;padding:2px 8px;border-radius:3px;cursor:default;border-bottom:1px dotted #c8a84a;display:inline-block;}
     .nw-tooltip{display:none;position:absolute;bottom:22px;left:0;background:#1a1a18;color:#c8c4bc;font-family:'Courier New',monospace;font-size:10px;line-height:1.5;padding:6px 10px;border-radius:4px;white-space:nowrap;z-index:10;pointer-events:none;}
     .nw-cat-wrap:hover .nw-tooltip{display:block;}
-
     .nw-search{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#b0aa9e;}
     .nw-search:hover{color:#c8a84a;}
     .nw-txt{font-size:13px;color:#555;line-height:1.5;}
-
     footer{background:#1a1a18;padding:16px 32px;display:flex;justify-content:space-between;align-items:center;}
     .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#b0aa9e;letter-spacing:0.5px;}
     .footer-right{display:flex;gap:24px;}
     .footer-right a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#c8a84a;text-transform:uppercase;}
     .footer-right a:hover{color:#f5f3ee;}
-
     @media(max-width:600px){
       .nw-grid{grid-template-columns:1fr;}
       nav,.meta-bar,footer{padding-left:16px;padding-right:16px;}
@@ -85,200 +71,125 @@
   </style>
 </head>
 <body>
-
 <nav>
   <div class="logo">Rumbo<em>.wtf</em></div>
   <div class="nav-links">
     <a href="index.html">Latest</a>
     <a href="about.html">About</a>
     <div class="locale-token" id="localeToken" onclick="toggleLocale(event)">
-      <span id="localeLabel">🇬🇧 EN · 🌍 Global</span>
-      <span class="locale-arrow">▾</span>
+      <span id="localeLabel">&#127468;&#127463; EN &middot; &#127757; Global</span>
+      <span class="locale-arrow">&#9660;</span>
       <div class="locale-dropdown" id="localeDropdown">
         <div class="locale-dl">Language</div>
         <div class="locale-row">
-          <div class="lpill active" onclick="setLang(event,'🇬🇧 EN','en')">🇬🇧 EN</div>
-          <div class="lpill soon" title="Coming soon">🇪🇸 ES</div>
-          <div class="lpill soon" title="Coming soon">🇳🇴 NO</div>
+          <div class="lpill active" onclick="setLang(event,'EN','en')">&#127468;&#127463; EN</div>
+          <div class="lpill soon">&#127466;&#127480; ES &mdash; soon</div>
+          <div class="lpill soon">&#127475;&#127476; NO &mdash; soon</div>
         </div>
         <div class="locale-dl">Local context</div>
         <div class="locale-row">
-          <div class="lpill active" onclick="setRegion(event,'🌍 Global','global')">🌍 Global</div>
-          <div class="lpill" onclick="setRegion(event,'🇪🇸 Spain','es')">🇪🇸 Spain</div>
-          <div class="lpill soon" title="Coming soon">🇳🇴 Norway</div>
-          <div class="lpill soon" title="Coming soon">🇬🇧 UK</div>
+          <div class="lpill active" onclick="setRegion(event,'Global','global')">&#127757; Global</div>
+          <div class="lpill" onclick="setRegion(event,'Spain','es')">&#127466;&#127480; Spain</div>
+          <div class="lpill soon">&#127475;&#127476; Norway &mdash; soon</div>
+          <div class="lpill soon">&#127468;&#127463; UK &mdash; soon</div>
         </div>
       </div>
     </div>
   </div>
 </nav>
-
 <div class="meta-bar">
-  <span class="meta-date">Last updated 21 March 2026 · 08:00 CET</span>
+  <span class="meta-date">Last updated 21 March 2026 &middot; 08:00 CET</span>
   <span class="meta-count">5 items</span>
 </div>
-
 <div class="feed">
-
   <div class="item">
     <div class="dot dot-global"></div>
     <div class="item-body">
       <div class="item-head">Trump talks of ending the Iran war while sending more troops and lifting sanctions on Iranian oil</div>
       <div class="item-text">Three weeks in, the US is simultaneously deploying more marines to the Middle East, easing sanctions on Iranian oil to bring prices down, and signalling it wants to wind the conflict down. These moves point in opposite directions and suggest the administration is running out of options to control the economic damage the war is causing.</div>
-      <div class="item-foot">
-        <span class="geo-pill">Global</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Trump+winding+down+Iran+war+sanctions+oil+2026" target="_blank">search this ↗</a>
-      </div>
+      <div class="item-foot"><span class="geo-pill">Global</span><a class="search-link" href="https://duckduckgo.com/?q=Trump+winding+down+Iran+war+sanctions+oil+2026" target="_blank">search this &#8599;</a></div>
     </div>
   </div>
-
   <div class="item">
     <div class="dot dot-global"></div>
     <div class="item-body">
-      <div class="item-head">A third of the world's fertilizer supply is stuck — food prices are the next wave</div>
+      <div class="item-head">A third of the world&#39;s fertilizer supply is stuck &mdash; food prices are the next wave</div>
       <div class="item-text">Around a third of all fertilizer shipped globally passes through the blocked strait. With planting season approaching in the northern hemisphere, farmers who cannot get fertilizer will produce less food later in the year. The energy crisis is quietly becoming a food supply crisis too.</div>
-      <div class="item-foot">
-        <span class="geo-pill">Global</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=fertilizer+Strait+Hormuz+food+supply+2026" target="_blank">search this ↗</a>
-      </div>
+      <div class="item-foot"><span class="geo-pill">Global</span><a class="search-link" href="https://duckduckgo.com/?q=fertilizer+Strait+Hormuz+food+supply+2026" target="_blank">search this &#8599;</a></div>
     </div>
   </div>
-
   <div class="item">
     <div class="dot dot-global"></div>
     <div class="item-body">
       <div class="item-head">Elon Musk found legally responsible for misleading investors over his Twitter takeover</div>
-      <div class="item-text">A jury ruled that Musk deliberately pushed Twitter's share price down in the months before buying the company in 2022, allowing him to pay less than he should have. The case is one of the largest investor fraud verdicts against an individual in recent years and sets a precedent for accountability at the top of the tech industry.</div>
-      <div class="item-foot">
-        <span class="geo-pill">Global</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Elon+Musk+liable+Twitter+investors+verdict+2026" target="_blank">search this ↗</a>
-      </div>
+      <div class="item-text">A jury ruled that Musk deliberately pushed Twitter&#39;s share price down in the months before buying the company in 2022, allowing him to pay less than he should have. The case is one of the largest investor fraud verdicts against an individual in recent years and sets a precedent for accountability at the top of the tech industry.</div>
+      <div class="item-foot"><span class="geo-pill">Global</span><a class="search-link" href="https://duckduckgo.com/?q=Elon+Musk+liable+Twitter+investors+verdict+2026" target="_blank">search this &#8599;</a></div>
     </div>
   </div>
-
   <div class="item">
     <div class="dot dot-regional"></div>
     <div class="item-body">
-      <div class="item-head">Spain approves a €5 billion emergency package to help households and businesses with energy bills</div>
+      <div class="item-head">Spain approves a &euro;5 billion emergency package to help households and businesses with energy bills</div>
       <div class="item-text">Gas prices in Spain have risen more than 60% since the Hormuz closure. The government has approved emergency support covering 20 million households and 3 million businesses. It is the largest energy intervention since the 2022 Ukraine-driven price crisis and signals the economic fallout from the war is now being felt directly at household level.</div>
-      <div class="item-foot">
-        <span class="geo-pill regional">Spain</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Spain+5+billion+energy+package+gas+prices+2026" target="_blank">search this ↗</a>
-      </div>
+      <div class="item-foot"><span class="geo-pill regional">Spain</span><a class="search-link" href="https://duckduckgo.com/?q=Spain+5+billion+energy+package+gas+prices+2026" target="_blank">search this &#8599;</a></div>
     </div>
   </div>
-
   <div class="item">
     <div class="dot dot-regional"></div>
     <div class="item-body">
-      <div class="item-head">Official report finds Spain's 2025 blackout had no single cause — and the grid is still exposed</div>
-      <div class="item-text">The final report on last April's blackout, which cut power to most of Spain and parts of Portugal for ten hours, concluded it was a combination of voltage failures, monitoring gaps, and poor coordination between grid operators. The regulator called for urgent reforms, particularly as the grid absorbs more renewable energy.</div>
-      <div class="item-foot">
-        <span class="geo-pill regional">Spain</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Spain+blackout+2025+report+grid+reform" target="_blank">search this ↗</a>
-      </div>
+      <div class="item-head">Official report finds Spain&#39;s 2025 blackout had no single cause &mdash; and the grid is still exposed</div>
+      <div class="item-text">The final report on last April&#39;s blackout, which cut power to most of Spain and parts of Portugal for ten hours, concluded it was a combination of voltage failures, monitoring gaps, and poor coordination between grid operators. The regulator called for urgent reforms, particularly as the grid absorbs more renewable energy.</div>
+      <div class="item-foot"><span class="geo-pill regional">Spain</span><a class="search-link" href="https://duckduckgo.com/?q=Spain+blackout+2025+report+grid+reform" target="_blank">search this &#8599;</a></div>
     </div>
   </div>
-
 </div>
-
 <div class="meanwhile-section">
-  <div class="meanwhile-header">
-    <span class="meanwhile-title">Meanwhile</span>
-  </div>
+  <div class="meanwhile-header"><span class="meanwhile-title">Meanwhile</span></div>
   <div class="nw-grid">
-
     <div class="nw-item">
       <div class="nw-top">
-        <div class="nw-cat-wrap">
-          <span class="nw-cat">culture</span>
-          <div class="nw-tooltip">Sport, entertainment, art — the shared conversation</div>
-        </div>
-        <a class="nw-search" href="https://duckduckgo.com/?q=Alcaraz+Medvedev+Indian+Wells+2026+semifinals" target="_blank">search ↗</a>
+        <div class="nw-cat-wrap"><span class="nw-cat">culture</span><div class="nw-tooltip">Sport, entertainment, art &mdash; the shared conversation</div></div>
+        <a class="nw-search" href="https://duckduckgo.com/?q=Alcaraz+Medvedev+Indian+Wells+2026+semifinals" target="_blank">search &#8599;</a>
       </div>
-      <span class="nw-txt">Alcaraz and Medvedev meet in the Indian Wells semifinals — a repeat of last year's final.</span>
+      <span class="nw-txt">Alcaraz and Medvedev meet in the Indian Wells semifinals &mdash; a repeat of last year&#39;s final.</span>
     </div>
-
     <div class="nw-item">
       <div class="nw-top">
-        <div class="nw-cat-wrap">
-          <span class="nw-cat">frontiers</span>
-          <div class="nw-tooltip">Science, tech, AI — things changing how the world works</div>
-        </div>
-        <a class="nw-search" href="https://duckduckgo.com/?q=drone+warfare+civilian+targets+2026" target="_blank">search ↗</a>
+        <div class="nw-cat-wrap"><span class="nw-cat">frontiers</span><div class="nw-tooltip">Science, tech, AI &mdash; things changing how the world works</div></div>
+        <a class="nw-search" href="https://duckduckgo.com/?q=drone+warfare+civilian+targets+2026" target="_blank">search &#8599;</a>
       </div>
-      <span class="nw-txt">Cheap drones are now hitting hospitals and rehab centres — the line between military and civilian targets is dissolving across multiple conflicts at once.</span>
+      <span class="nw-txt">Cheap drones are now hitting hospitals and rehab centres &mdash; the line between military and civilian targets is dissolving across multiple conflicts at once.</span>
     </div>
-
     <div class="nw-item">
       <div class="nw-top">
-        <div class="nw-cat-wrap">
-          <span class="nw-cat">wellbeing</span>
-          <div class="nw-tooltip">Health, medicine, longevity — how people are actually living</div>
-        </div>
-        <a class="nw-search" href="https://duckduckgo.com/?q=people+limiting+phone+screen+time+strategies" target="_blank">search ↗</a>
+        <div class="nw-cat-wrap"><span class="nw-cat">wellbeing</span><div class="nw-tooltip">Health, medicine, longevity &mdash; how people are actually living</div></div>
+        <a class="nw-search" href="https://duckduckgo.com/?q=people+limiting+phone+screen+time+strategies" target="_blank">search &#8599;</a>
       </div>
-      <span class="nw-txt">People are finding creative ways to limit phone use — keeping it in another room, pairing screen time with a paperback.</span>
+      <span class="nw-txt">People are finding creative ways to limit phone use &mdash; keeping it in another room, pairing screen time with a paperback.</span>
     </div>
-
     <div class="nw-item">
       <div class="nw-top">
-        <div class="nw-cat-wrap">
-          <span class="nw-cat">worldviews</span>
-          <div class="nw-tooltip">Politics, religion, ideology — what people believe and why it matters</div>
-        </div>
-        <a class="nw-search" href="https://duckduckgo.com/?q=Iran+Nowruz+wartime+new+year+2026" target="_blank">search ↗</a>
+        <div class="nw-cat-wrap"><span class="nw-cat">worldviews</span><div class="nw-tooltip">Politics, religion, ideology &mdash; what people believe and why it matters</div></div>
+        <a class="nw-search" href="https://duckduckgo.com/?q=Iran+Nowruz+wartime+new+year+2026" target="_blank">search &#8599;</a>
       </div>
-      <span class="nw-txt">Iranians are marking Nowruz, their new year, under wartime conditions — security forces banned public gatherings while millions celebrated quietly at home.</span>
+      <span class="nw-txt">Iranians are marking Nowruz, their new year, under wartime conditions &mdash; security forces banned public gatherings while millions celebrated quietly at home.</span>
     </div>
-
   </div>
 </div>
-
 <footer>
-  <span class="footer-left">rumbo.wtf · open · no ads</span>
-  <div class="footer-right">
-    <a href="index.html">Latest</a>
-    <a href="about.html">About</a>
-  </div>
+  <span class="footer-left">rumbo.wtf &middot; open &middot; no ads</span>
+  <div class="footer-right"><a href="index.html">Latest</a><a href="about.html">About</a></div>
 </footer>
-
 <script>
-  var lang = localStorage.getItem('rumbo_lang') || '🇬🇧 EN';
-  var region = localStorage.getItem('rumbo_region') || '🌍 Global';
-  updateToken();
-
-  function updateToken(){
-    document.getElementById('localeLabel').textContent = lang + ' · ' + region;
-  }
-
-  function toggleLocale(e){
-    e.stopPropagation();
-    document.getElementById('localeDropdown').classList.toggle('open');
-  }
-
-  document.addEventListener('click', function(){
-    document.getElementById('localeDropdown').classList.remove('open');
-  });
-
-  function setLang(e, val, code){
-    e.stopPropagation();
-    lang = val;
-    localStorage.setItem('rumbo_lang', val);
-    document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){ p.classList.remove('active'); });
-    e.target.classList.add('active');
-    updateToken();
-  }
-
-  function setRegion(e, val, code){
-    e.stopPropagation();
-    region = val;
-    localStorage.setItem('rumbo_region', val);
-    document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){ p.classList.remove('active'); });
-    e.target.classList.add('active');
-    updateToken();
-  }
+var lang=localStorage.getItem('rumbo_lang')||'EN';
+var region=localStorage.getItem('rumbo_region')||'Global';
+updateToken();
+function updateToken(){document.getElementById('localeLabel').textContent=flagFor(lang)+' '+lang+' \u00b7 '+flagFor(region)+' '+region;}
+function flagFor(v){var m={'EN':'\ud83c\uddec\ud83c\udde7','ES':'\ud83c\uddea\ud83c\uddf8','NO':'\ud83c\uddf3\ud83c\uddf4','Global':'\ud83c\udf0d','Spain':'\ud83c\uddea\ud83c\uddf8','Norway':'\ud83c\uddf3\ud83c\uddf4','UK':'\ud83c\uddec\ud83c\udde7'};return m[v]||'';}
+function toggleLocale(e){e.stopPropagation();document.getElementById('localeDropdown').classList.toggle('open');}
+document.addEventListener('click',function(){document.getElementById('localeDropdown').classList.remove('open');});
+function setLang(e,val,code){e.stopPropagation();lang=val;localStorage.setItem('rumbo_lang',val);document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
+function setRegion(e,val,code){e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
 </script>
-
 </body>
 </html>

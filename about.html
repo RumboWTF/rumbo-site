@@ -3,50 +3,43 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>About · Rumbo.wtf</title>
+  <title>About &middot; Rumbo.wtf</title>
   <link rel="icon" type="image/png" href="favicon.png"/>
   <style>
     *{box-sizing:border-box;margin:0;padding:0;}
     body{background:#faf9f6;color:#1a1a18;font-family:Georgia,'Times New Roman',serif;line-height:1.65;}
     a{color:inherit;text-decoration:none;}
-
     nav{background:#1a1a18;padding:18px 32px;display:flex;justify-content:space-between;align-items:center;position:relative;}
     .logo{font-family:Georgia,serif;font-size:22px;color:#f5f3ee;letter-spacing:-0.5px;}
     .logo em{font-style:normal;color:#c8a84a;}
     .nav-links{display:flex;gap:24px;align-items:center;}
     .nav-links a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#c8a84a;text-transform:uppercase;}
     .nav-links a:hover{color:#f5f3ee;}
-
-    .locale-token{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#888;border:1px solid #333;padding:3px 9px;border-radius:3px;cursor:pointer;display:flex;align-items:center;gap:5px;position:relative;user-select:none;}
+    .locale-token{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#aaa;border:1px solid #444;padding:3px 9px;border-radius:3px;cursor:pointer;display:flex;align-items:center;gap:5px;position:relative;user-select:none;}
     .locale-token:hover{border-color:#c8a84a;color:#c8a84a;}
-    .locale-arrow{font-size:7px;opacity:0.6;}
-    .locale-dropdown{display:none;position:absolute;top:calc(100% + 6px);right:0;background:#1a1a18;border:1px solid #2e2e2c;border-radius:6px;padding:16px;min-width:260px;z-index:100;}
+    .locale-arrow{font-size:7px;opacity:0.7;}
+    .locale-dropdown{display:none;position:absolute;top:calc(100% + 6px);right:0;background:#222220;border:1px solid #3a3a38;border-radius:6px;padding:16px;min-width:260px;z-index:100;}
     .locale-dropdown.open{display:block;}
-    .locale-dl{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.5px;color:#555;text-transform:uppercase;margin-bottom:8px;}
+    .locale-dl{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.5px;color:#888;text-transform:uppercase;margin-bottom:8px;}
     .locale-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}
     .locale-row:last-child{margin-bottom:0;}
-    .lpill{font-family:'Courier New',monospace;font-size:10px;padding:4px 10px;border-radius:3px;border:1px solid #333;color:#888;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all 0.1s;}
+    .lpill{font-family:'Courier New',monospace;font-size:10px;padding:4px 10px;border-radius:3px;border:1px solid #444;color:#bbb;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all 0.1s;}
     .lpill:hover{border-color:#c8a84a;color:#c8a84a;}
-    .lpill.active{border-color:#c8a84a;background:#1e1a10;color:#c8a84a;}
-    .lpill.soon{opacity:0.35;cursor:default;}
-    .lpill.soon:hover{border-color:#333;color:#888;}
-
+    .lpill.active{border-color:#c8a84a;background:#2a2410;color:#c8a84a;}
+    .lpill.soon{opacity:0.5;cursor:default;color:#777;}
+    .lpill.soon:hover{border-color:#444;color:#777;}
     .content{max-width:640px;margin:0 auto;padding:52px 24px 72px;}
     h1{font-family:Georgia,serif;font-size:30px;font-weight:400;color:#1a1a18;line-height:1.25;margin-bottom:8px;}
     .tagline{font-family:'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#c8a84a;margin-bottom:40px;display:block;}
-
     .section{margin-bottom:36px;}
     .section-title{font-family:'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#555;text-transform:uppercase;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid #e0dcd4;}
     p{font-size:15.5px;color:#333;line-height:1.75;margin-bottom:16px;}
     p:last-child{margin-bottom:0;}
-
     .rumbo-tip{position:relative;display:inline;border-bottom:1px dotted #c8a84a;cursor:default;}
     .rumbo-tip .tip-text{display:none;position:absolute;bottom:20px;left:0;background:#1a1a18;color:#c8c4bc;font-family:'Courier New',monospace;font-size:10px;line-height:1.5;padding:7px 11px;border-radius:4px;white-space:nowrap;z-index:10;pointer-events:none;}
     .rumbo-tip:hover .tip-text{display:block;}
-
     .testing-note{background:#f0ede6;border-left:3px solid #c8a84a;padding:18px 22px;margin-top:36px;border-radius:0 4px 4px 0;}
     .testing-note p{font-size:14px;color:#444;}
-
     .prompt-block{margin-top:36px;}
     .prompt-toggle{font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#c8a84a;cursor:pointer;border:none;background:none;padding:0;display:flex;align-items:center;gap:8px;}
     .prompt-toggle:hover{color:#a07828;}
@@ -54,145 +47,104 @@
     .prompt-toggle.open .arrow{transform:rotate(90deg);}
     .prompt-text{display:none;margin-top:14px;background:#1a1a18;color:#b0ac9e;font-family:'Courier New',monospace;font-size:11px;line-height:1.75;padding:22px;border-radius:4px;white-space:pre-wrap;}
     .prompt-text.visible{display:block;}
-
     footer{background:#1a1a18;padding:16px 32px;display:flex;justify-content:space-between;align-items:center;}
     .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#b0aa9e;letter-spacing:0.5px;}
     .footer-right{display:flex;gap:24px;}
     .footer-right a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#c8a84a;text-transform:uppercase;}
     .footer-right a:hover{color:#f5f3ee;}
-
-    @media(max-width:600px){
-      nav,footer{padding:14px 18px;}
-      .content{padding:36px 16px 52px;}
-    }
+    @media(max-width:600px){nav,footer{padding:14px 18px;}.content{padding:36px 16px 52px;}}
   </style>
 </head>
 <body>
-
 <nav>
   <div class="logo">Rumbo<em>.wtf</em></div>
   <div class="nav-links">
     <a href="index.html">Latest</a>
     <a href="about.html">About</a>
     <div class="locale-token" id="localeToken" onclick="toggleLocale(event)">
-      <span id="localeLabel">🇬🇧 EN · 🌍 Global</span>
-      <span class="locale-arrow">▾</span>
+      <span id="localeLabel">&#127468;&#127463; EN &middot; &#127757; Global</span>
+      <span class="locale-arrow">&#9660;</span>
       <div class="locale-dropdown" id="localeDropdown">
         <div class="locale-dl">Language</div>
         <div class="locale-row">
-          <div class="lpill active" onclick="setLang(event,'🇬🇧 EN','en')">🇬🇧 EN</div>
-          <div class="lpill soon" title="Coming soon">🇪🇸 ES</div>
-          <div class="lpill soon" title="Coming soon">🇳🇴 NO</div>
+          <div class="lpill active" onclick="setLang(event,'EN','en')">&#127468;&#127463; EN</div>
+          <div class="lpill soon">&#127466;&#127480; ES &mdash; soon</div>
+          <div class="lpill soon">&#127475;&#127476; NO &mdash; soon</div>
         </div>
         <div class="locale-dl">Local context</div>
         <div class="locale-row">
-          <div class="lpill active" onclick="setRegion(event,'🌍 Global','global')">🌍 Global</div>
-          <div class="lpill" onclick="setRegion(event,'🇪🇸 Spain','es')">🇪🇸 Spain</div>
-          <div class="lpill soon" title="Coming soon">🇳🇴 Norway</div>
-          <div class="lpill soon" title="Coming soon">🇬🇧 UK</div>
+          <div class="lpill active" onclick="setRegion(event,'Global','global')">&#127757; Global</div>
+          <div class="lpill" onclick="setRegion(event,'Spain','es')">&#127466;&#127480; Spain</div>
+          <div class="lpill soon">&#127475;&#127476; Norway &mdash; soon</div>
+          <div class="lpill soon">&#127468;&#127463; UK &mdash; soon</div>
         </div>
       </div>
     </div>
   </div>
 </nav>
-
 <div class="content">
-
   <h1>News with no agenda and nothing to hide.</h1>
   <span class="tagline">Know enough. Live more.</span>
-
   <div class="section">
     <div class="section-title">What this is</div>
-    <p>I made <span class="rumbo-tip">Rumbo<span class="tip-text">Rumbo — Spanish and nautical for heading, course, direction. Where things are going.</span></span> for myself. I got tired of the noise — the clickbait, the outrage loops, the ads dressed up as news. But knowing roughly what is going on is just part of functioning — having a conversation, understanding why things cost more, not being completely lost at the table. So I wanted the minimum effective dose. Enough to grasp the big picture. As little attention as possible, but not zero. Rumbo is a means, not an end. Read it in five minutes, close it, go live.</p>
+    <p>I made <span class="rumbo-tip">Rumbo<span class="tip-text">Rumbo &mdash; Spanish and nautical for heading, course, direction. Where things are going.</span></span> for myself. I got tired of the noise &mdash; the clickbait, the outrage loops, the ads dressed up as news. But knowing roughly what is going on is just part of functioning &mdash; having a conversation, understanding why things cost more, not being completely lost at the table. I want the minimum effective dose. Just enough to grasp the big picture. Rumbo aims to give that. Read it in five minutes, close it, go live.</p>
   </div>
-
   <div class="section">
     <div class="section-title">How Rumbo sees the world</div>
-    <p>Rumbo approaches the news the way an observer arriving on Earth for the first time would — without allegiance to any country, bloc, religion, or ideology. There is no home team. Everything is described by what it does and what interests it serves, not whether it is right.</p>
+    <p>Rumbo approaches the news the way an observer arriving on Earth for the first time would &mdash; without allegiance to any country, bloc, religion, or ideology. There is no home team. Everything is described by what it does and what interests it serves, not whether it is right.</p>
   </div>
-
   <div class="section">
     <div class="section-title">How it is made</div>
     <p>Each edition is generated daily by an AI language model, currently Claude by Anthropic, though the model may change as Rumbo evaluates which produces the most precise and neutral output.</p>
-    <p>AI makes mistakes. So does every other news source. If every major outlet is reporting the same false story, it will likely make it into Rumbo too — that is a flaw in how information moves through the world, not unique to AI. What Rumbo can promise is this: no deliberate spin, no agenda, no commercial pressure to keep you reading longer than is good for you. No ads, ever. The prompt used to generate each edition is shown below. Nothing is hidden.</p>
+    <p>AI makes mistakes. So does every other news source. If every major outlet is reporting the same false story, it will likely make it into Rumbo too &mdash; that is a flaw in how information moves through the world, not unique to AI. What Rumbo can promise is this: no deliberate spin, no agenda, no commercial pressure to keep you reading longer than is good for you. No ads, ever. The prompt used to generate each edition is shown below. Nothing is hidden.</p>
   </div>
-
   <div class="testing-note">
     <p><strong>Testing phase.</strong> Rumbo is in early testing. Errors will occur. Treat everything here as a starting point for your own thinking, not a final word. Your critical thinking is not optional. In an AI-saturated world, it is more important than ever.</p>
     <p style="margin-top:10px;">Feedback and improvement ideas welcome at <a href="mailto:info@rumbo.wtf" style="color:#a07828;">info@rumbo.wtf</a>.</p>
   </div>
-
   <div class="prompt-block">
     <button class="prompt-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('visible')">
-      <span class="arrow">▶</span> View the prompt used to generate each edition
+      <span class="arrow">&#9658;</span> View the prompt used to generate each edition
     </button>
     <div class="prompt-text">You are the editorial engine for Rumbo.wtf, a world intelligence brief.
 
 Search the web for the most consequential global developments from the last 48 hours. Apply the following editorial rules:
 
-— Select 3–5 items based on second-order consequences, not surface drama
-— Write each item in plain language any curious adult can understand without prior knowledge
-— No jargon: translate all technical terms, acronyms, and financial language into plain English
-— Two sentences per item: what actually shifted, and how it moves the world
-— Geo tag each item: Global / Europe / Spain / Nordic / etc
-— Aim for geographic balance — check for significant developments in Asia, Africa, and Latin America before finalising; flag if more than 2 items are from Anglo-American sources
-— Add exactly 4 Meanwhile items, one per category: Culture / Frontiers / Wellbeing / Worldviews
-— Meanwhile = things worth knowing, not current headlines. Each item one line, no analysis.
-— Culture: sport, entertainment, art — the shared conversation
-— Frontiers: science, tech, AI — things changing how the world works
-— Wellbeing: health, medicine, longevity — how people are actually living
-— Worldviews: politics, religion, philosophy, ideology — what people believe and why it matters. Not sports governance.
-— Alien-observer neutrality: no home team, no ideology, describe what actors do not whether they are right
-— Avoid passive voice that hides agency
-— Output structured JSON: headline, body, geo_tag, meanwhile array
+- Select 3-5 items based on second-order consequences, not surface drama
+- Write each item in plain language any curious adult can understand without prior knowledge
+- No jargon: translate all technical terms, acronyms, and financial language into plain English
+- Two sentences per item: what actually shifted, and how it moves the world
+- Geo tag each item: Global / Europe / Spain / Nordic / etc
+- Aim for geographic balance: check for significant developments in Asia, Africa, and Latin America before finalising; flag if more than 2 items are from Anglo-American sources
+- Add exactly 4 Meanwhile items, one per category: Culture / Frontiers / Wellbeing / Worldviews
+- Meanwhile = things worth knowing, not current headlines. Each item one line, no analysis.
+- Culture: sport, entertainment, art - the shared conversation
+- Frontiers: science, tech, AI - things changing how the world works
+- Wellbeing: health, medicine, longevity - how people are actually living
+- Worldviews: politics, religion, philosophy, ideology - what people believe and why it matters. Not sports governance.
+- Alien-observer neutrality: no home team, no ideology, describe what actors do not whether they are right
+- Avoid passive voice that hides agency
+- Output structured JSON: headline, body, geo_tag, meanwhile array
 
 Sources: prioritise major international wire services and established global outlets.
 Weight stories covered by multiple independent sources over single-source items.
 Flag when a development is only covered by one source cluster.</div>
   </div>
-
 </div>
-
 <footer>
-  <span class="footer-left">rumbo.wtf · open · no ads</span>
-  <div class="footer-right">
-    <a href="index.html">Latest</a>
-    <a href="about.html">About</a>
-  </div>
+  <span class="footer-left">rumbo.wtf &middot; open &middot; no ads</span>
+  <div class="footer-right"><a href="index.html">Latest</a><a href="about.html">About</a></div>
 </footer>
-
 <script>
-  var lang = localStorage.getItem('rumbo_lang') || '🇬🇧 EN';
-  var region = localStorage.getItem('rumbo_region') || '🌍 Global';
-  updateToken();
-
-  function updateToken(){
-    document.getElementById('localeLabel').textContent = lang + ' · ' + region;
-  }
-  function toggleLocale(e){
-    e.stopPropagation();
-    document.getElementById('localeDropdown').classList.toggle('open');
-  }
-  document.addEventListener('click', function(){
-    document.getElementById('localeDropdown').classList.remove('open');
-  });
-  function setLang(e, val, code){
-    e.stopPropagation();
-    lang = val;
-    localStorage.setItem('rumbo_lang', val);
-    document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){ p.classList.remove('active'); });
-    e.target.classList.add('active');
-    updateToken();
-  }
-  function setRegion(e, val, code){
-    e.stopPropagation();
-    region = val;
-    localStorage.setItem('rumbo_region', val);
-    document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){ p.classList.remove('active'); });
-    e.target.classList.add('active');
-    updateToken();
-  }
+var lang=localStorage.getItem('rumbo_lang')||'EN';
+var region=localStorage.getItem('rumbo_region')||'Global';
+updateToken();
+function updateToken(){document.getElementById('localeLabel').textContent=flagFor(lang)+' '+lang+' \u00b7 '+flagFor(region)+' '+region;}
+function flagFor(v){var m={'EN':'\ud83c\uddec\ud83c\udde7','ES':'\ud83c\uddea\ud83c\uddf8','NO':'\ud83c\uddf3\ud83c\uddf4','Global':'\ud83c\udf0d','Spain':'\ud83c\uddea\ud83c\uddf8','Norway':'\ud83c\uddf3\ud83c\uddf4','UK':'\ud83c\uddec\ud83c\udde7'};return m[v]||'';}
+function toggleLocale(e){e.stopPropagation();document.getElementById('localeDropdown').classList.toggle('open');}
+document.addEventListener('click',function(){document.getElementById('localeDropdown').classList.remove('open');});
+function setLang(e,val,code){e.stopPropagation();lang=val;localStorage.setItem('rumbo_lang',val);document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
+function setRegion(e,val,code){e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
 </script>
-
 </body>
 </html>
