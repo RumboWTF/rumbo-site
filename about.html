@@ -36,7 +36,7 @@
     .prompt-text.visible{display:block;}
     footer{background:#1a1a18;padding:20px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
     .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#b0aa9e;letter-spacing:0.5px;}
-    .footer-center{display:flex;align-items:center;gap:8px;position:relative;}
+    .footer-center{display:flex;align-items:center;position:relative;}
     .footer-right{display:flex;gap:24px;}
     .footer-right a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#c8a84a;text-transform:uppercase;}
     .footer-right a:hover{color:#f5f3ee;}
@@ -67,58 +67,56 @@
 <div class="content">
   <h1>News with no agenda and nothing to hide.</h1>
   <span class="tagline">Know enough. Live more.</span>
+
   <div class="section">
     <div class="section-title">What this is</div>
     <p>I made <span class="rumbo-tip">Rumbo<span class="tip-text">Rumbo &mdash; Spanish and nautical for heading, course, direction. Where things are going.</span></span> for myself. I got tired of the noise &mdash; the clickbait, the outrage loops, the ads dressed up as news. But knowing roughly what is going on is just part of functioning &mdash; having a conversation, understanding why things cost more, not being completely lost at the table. I want the minimum effective dose. Just enough to grasp the big picture. Rumbo aims to give that. Read it in five minutes, close the tab, and get back to your life.</p>
   </div>
+
   <div class="section">
     <div class="section-title">How Rumbo sees the world</div>
-    <p>Rumbo approaches the news the way an observer arriving on Earth for the first time would. <strong>No home team</strong> <p>Rumbo approaches the news the way an observer arriving on Earth for the first time would &mdash; without allegiance to any country, bloc, religion, or ideology. There is no home team. Everything is described by what it does and what interests it serves, not whether it is right.</p>mdash; no allegiance to any country, bloc, religion, or ideology. <strong>Functional reporting</strong> <p>Rumbo approaches the news the way an observer arriving on Earth for the first time would &mdash; without allegiance to any country, bloc, religion, or ideology. There is no home team. Everything is described by what it does and what interests it serves, not whether it is right.</p>mdash; everything is described by what it does and what interests it serves, not whether it is right. <strong>No agenda</strong> <p>Rumbo approaches the news the way an observer arriving on Earth for the first time would &mdash; without allegiance to any country, bloc, religion, or ideology. There is no home team. Everything is described by what it does and what interests it serves, not whether it is right.</p>mdash; no commercial pressure, no spin, no incentive to keep you reading longer than is good for you.</p>
+    <p>Rumbo approaches the news the way an observer arriving on Earth for the first time would. <strong>No home team</strong> &mdash; no allegiance to any country, bloc, religion, or ideology. <strong>Functional reporting</strong> &mdash; everything is described by what it does and what interests it serves, not whether it is right.</p>
   </div>
+
   <div class="section">
     <div class="section-title">How it is made</div>
     <p>Each edition is generated daily by an AI language model, currently Claude by Anthropic, though the model may change as Rumbo evaluates which produces the most precise and neutral output.</p>
     <p>AI makes mistakes. So does every other news source. If every major outlet is reporting the same false story, it will likely make it into Rumbo too &mdash; that is a flaw in how information moves through the world, not unique to AI. What Rumbo can promise is this: no deliberate spin, no agenda, no commercial pressure to keep you reading longer than is good for you. No ads, ever. The prompt used to generate each edition is shown below. Nothing is hidden.</p>
   </div>
+
   <div class="testing-note">
     <p><strong>Testing phase.</strong> Rumbo is in early testing. Errors will occur. Rumbo is a starting point for your own thinking, not a final word. Your critical thinking is not optional. In an AI-saturated world, it is more important than ever.</p>
-    <p style="margin-top:10px;">Feedback and improvement ideas welcome at <a href="/cdn-cgi/l/email-protection#462f2820290634332b242968313220" style="color:#a07828;"><span class="__cf_email__" data-cfemail="264f4840496654534b444908515240">[email&#160;protected]</span></a>.</p>
+    <p style="margin-top:10px;">Feedback and improvement ideas welcome at <a href="mailto:info@rumbo.wtf" style="color:#a07828;">info@rumbo.wtf</a>.</p>
   </div>
+
   <div class="prompt-block">
     <button class="prompt-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('visible')">
       <span class="arrow">&#9658;</span> View the prompt used to generate each edition
     </button>
-    <div class="prompt-text">You are the editorial engine for Rumbo.wtf, a daily world intelligence brief.
+    <div class="prompt-text">You are the editorial engine for Rumbo.wtf, a world intelligence brief.
 
-Your role
-Surface the developments that actually matter — not what is loudest, most dramatic, or most covered. Select stories based on their consequences for how the world works, not on the volume of coverage they receive.
+Search the web for the most consequential global developments from the last 48 hours. Apply the following editorial rules:
 
-Search
-Search broadly across the last 48 hours. Actively seek developments in parts of the world that receive less coverage from major English-language outlets. The significance of an event should determine its place in the brief, not how much it has been covered. Weight stories confirmed by multiple independent sources. Flag any item that rests on a single source cluster.
+- Select 3-5 items based on second-order consequences, not surface drama
+- Write each item in plain language any curious adult can understand without prior knowledge
+- No jargon: translate all technical terms, acronyms, and financial language into plain English
+- Two sentences per item: what actually shifted, and how it moves the world
+- Geo tag each item: Global / Europe / Spain / Nordic / etc
+- Aim for geographic balance: check for significant developments in Asia, Africa, and Latin America before finalising; flag if more than 2 items are from Anglo-American sources
+- No individual names in headlines unless the person is irreplaceable to the story. Lead with the institution, country, or dynamic instead.
+- Add exactly 4 Meanwhile items, one per category: Culture / Frontiers / Wellbeing / Worldviews
+- Meanwhile = things worth knowing, not current headlines. Each item one line, no analysis.
+- Culture: sport, entertainment, art - the shared conversation
+- Frontiers: science, tech, AI - things changing how the world works
+- Wellbeing: health, medicine, longevity - how people are actually living
+- Worldviews: politics, religion, philosophy, ideology - what people believe and why it matters. Not sports governance.
+- Alien-observer neutrality: no home team, no ideology, describe what actors do not whether they are right
+- Avoid passive voice that hides agency
+- Output structured JSON: headline, body, geo_tag, meanwhile array
 
-Story selection — 3 to 5 items
-Select for second-order consequences: what does this event set in motion? Avoid: celebrity news, domestic crime, sports results, events with no consequence beyond the immediate moment, and stories driven primarily by a single government's press release.
-
-Ensure topic diversity — do not run two items that are essentially the same story from different angles. If the brief would contain more than two items from the same region or conflict, find what else is moving in the world.
-
-Writing each item
-- Headline: plain statement of what shifted, not a dramatic hook
-- Body: 2–3 sentences. First — what actually changed. Second — what it sets in motion. Third only if genuinely needed for context.
-- No jargon. Translate every technical term, acronym, and financial concept into plain language.
-- Active voice. If an actor caused something, name them.
-- No hedging, no filler, no buzzwords.
-- Geo tag: Global / Europe / Spain / Nordic / Asia / Africa / Latin America / etc
-
-Voice
-Direct. Plain. Calm. No alarm, no cheerleading. Describe what is happening and why it matters — not whether it is good or bad.
-
-Meanwhile — exactly 4 items, one per category
-Things worth knowing that will still feel relevant in a week. Not breaking news. Not sports scores. One line each, no analysis.
-
-- Culture — sport, entertainment, art: something in the shared conversation worth noticing
-- Frontiers — science, tech, AI: something changing how the world works, ideally early stage
-- Wellbeing — health, medicine, longevity: something shifting in how people live
-- Worldviews — politics, religion, philosophy, ideology: a belief system or ideology doing something notable. Not sports governance.</div>
+Sources: prioritise major international wire services and established global outlets.
+Weight stories covered by multiple independent sources over single-source items.
+Flag when a development is only covered by one source cluster.</div>
   </div>
 </div>
 <footer>
@@ -149,7 +147,7 @@ Things worth knowing that will still feel relevant in a week. Not breaking news.
     <a href="about.html">About</a>
   </div>
 </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 var lang=localStorage.getItem('rumbo_lang')||'EN';
 var region=localStorage.getItem('rumbo_region')||'Global';
 updateToken();
@@ -158,4 +156,7 @@ function flagFor(v){var m={'EN':'\ud83c\uddec\ud83c\udde7','ES':'\ud83c\uddea\ud
 function toggleLocale(e){e.stopPropagation();document.getElementById('localeDropdown').classList.toggle('open');}
 document.addEventListener('click',function(){document.getElementById('localeDropdown').classList.remove('open');});
 function setLang(e,val){e.stopPropagation();lang=val;localStorage.setItem('rumbo_lang',val);document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
-function setRegion(e,val){e.stopPropagation();region=val;localStorage.setItem('rumbo_reg
+function setRegion(e,val){e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
+</script>
+</body>
+</html>
