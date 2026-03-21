@@ -34,21 +34,26 @@
     .item-text{font-size:15.5px;color:#3a3a38;line-height:1.7;margin-bottom:11px;}
 
     .item-foot{display:flex;align-items:center;gap:10px;}
-    .geo-pill{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.5px;padding:3px 9px;border-radius:3px;background:#ede9e0;color:#666;}
+    .geo-pill{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.5px;padding:3px 9px;border-radius:3px;background:#ede9e0;color:#555;}
     .geo-pill.regional{background:#f5f1e6;color:#a07828;}
     .search-link{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#b0aa9e;}
     .search-link:hover{color:#c8a84a;}
 
     .nw-section{max-width:700px;margin:0 auto;padding:0 24px 52px;}
-    .nw-rule{border:none;border-top:1px solid #e0dcd4;margin-bottom:16px;}
+    .nw-rule{border:none;border-top:1px solid #e0dcd4;margin-bottom:18px;}
 
-    .nw-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 32px;}
-    .nw-item{display:flex;align-items:baseline;padding:4px 0;}
-    .nw-cat-wrap{position:relative;width:80px;flex-shrink:0;}
-    .nw-cat{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#c8a84a;cursor:default;border-bottom:1px dotted #c8a84a;}
-    .nw-tooltip{display:none;position:absolute;bottom:18px;left:0;background:#1a1a18;color:#c8c4bc;font-family:'Courier New',monospace;font-size:10px;line-height:1.5;padding:6px 10px;border-radius:4px;white-space:nowrap;z-index:10;pointer-events:none;}
+    .nw-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 32px;}
+    .nw-item{display:flex;flex-direction:column;gap:5px;padding:4px 0;}
+    .nw-top{display:flex;align-items:center;gap:8px;}
+
+    .nw-cat-wrap{position:relative;}
+    .nw-cat{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#a07828;background:#f5f1e6;padding:2px 8px;border-radius:3px;cursor:default;border-bottom:1px dotted #c8a84a;display:inline-block;}
+    .nw-tooltip{display:none;position:absolute;bottom:22px;left:0;background:#1a1a18;color:#c8c4bc;font-family:'Courier New',monospace;font-size:10px;line-height:1.5;padding:6px 10px;border-radius:4px;white-space:nowrap;z-index:10;pointer-events:none;}
     .nw-cat-wrap:hover .nw-tooltip{display:block;}
-    .nw-txt{font-size:13px;color:#555;line-height:1.45;}
+
+    .nw-search{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#b0aa9e;}
+    .nw-search:hover{color:#c8a84a;}
+    .nw-txt{font-size:13px;color:#555;line-height:1.5;}
 
     footer{background:#1a1a18;padding:16px 32px;display:flex;justify-content:space-between;align-items:center;}
     .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#b0aa9e;letter-spacing:0.5px;}
@@ -73,7 +78,7 @@
   </div>
 </nav>
 <div class="meta-bar">
-  <span class="meta-date">Last updated 21 March 2026</span>
+  <span class="meta-date">Last updated 21 March 2026 · 08:00 CET</span>
   <span class="meta-count">5 items</span>
 </div>
 
@@ -121,7 +126,7 @@
       <div class="item-head">Spain approves a €5 billion emergency package to help households and businesses with energy bills</div>
       <div class="item-text">Gas prices in Spain have risen more than 60% since the Hormuz closure. The government has approved emergency support covering 20 million households and 3 million businesses. It is the largest energy intervention since the 2022 Ukraine-driven price crisis and signals that the economic fallout from the war is now being felt directly at household level.</div>
       <div class="item-foot">
-        <span class="geo-pill regional">España</span>
+        <span class="geo-pill regional">Spain</span>
         <a class="search-link" href="https://duckduckgo.com/?q=Spain+5+billion+energy+package+gas+prices+2026" target="_blank">search this ↗</a>
       </div>
     </div>
@@ -131,9 +136,9 @@
     <div class="dot dot-regional"></div>
     <div class="item-body">
       <div class="item-head">Official report finds Spain's 2025 blackout had no single cause — and the grid is still exposed</div>
-      <div class="item-text">The final report on last April's blackout, which cut power to most of Spain and parts of Portugal for ten hours, concluded it was a combination of voltage failures, gaps in monitoring, and poor coordination between grid operators. The regulator stopped short of assigning blame but called for urgent reforms, particularly as the grid absorbs more renewable energy.</div>
+      <div class="item-text">The final report on last April's blackout, which cut power to most of Spain and parts of Portugal for ten hours, concluded it was a combination of voltage failures, monitoring gaps, and poor coordination between grid operators. The regulator called for urgent reforms, particularly as the grid absorbs more renewable energy.</div>
       <div class="item-foot">
-        <span class="geo-pill regional">España</span>
+        <span class="geo-pill regional">Spain</span>
         <a class="search-link" href="https://duckduckgo.com/?q=Spain+blackout+2025+report+grid+reform" target="_blank">search this ↗</a>
       </div>
     </div>
@@ -146,35 +151,47 @@
   <div class="nw-grid">
 
     <div class="nw-item">
-      <div class="nw-cat-wrap">
-        <span class="nw-cat">culture</span>
-        <div class="nw-tooltip">Sport, entertainment, art — the shared conversation</div>
+      <div class="nw-top">
+        <div class="nw-cat-wrap">
+          <span class="nw-cat">culture</span>
+          <div class="nw-tooltip">Sport, entertainment, art — the shared conversation</div>
+        </div>
+        <a class="nw-search" href="https://duckduckgo.com/?q=Alcaraz+Medvedev+Indian+Wells+2026+semifinals" target="_blank">search ↗</a>
       </div>
       <span class="nw-txt">Alcaraz and Medvedev meet in the Indian Wells semifinals — a repeat of last year's final.</span>
     </div>
 
     <div class="nw-item">
-      <div class="nw-cat-wrap">
-        <span class="nw-cat">frontiers</span>
-        <div class="nw-tooltip">Science, tech, AI — things changing how the world works</div>
+      <div class="nw-top">
+        <div class="nw-cat-wrap">
+          <span class="nw-cat">frontiers</span>
+          <div class="nw-tooltip">Science, tech, AI — things changing how the world works</div>
+        </div>
+        <a class="nw-search" href="https://duckduckgo.com/?q=drone+warfare+civilian+casualties+2026" target="_blank">search ↗</a>
       </div>
-      <span class="nw-txt">Pakistan used air strikes to hit a drug rehabilitation hospital in Kabul, killing over 100 — drones and precision weapons are reshaping conflict everywhere.</span>
+      <span class="nw-txt">Cheap drones are now hitting hospitals and rehab centres — the line between military and civilian targets is dissolving in multiple conflicts at once.</span>
     </div>
 
     <div class="nw-item">
-      <div class="nw-cat-wrap">
-        <span class="nw-cat">wellbeing</span>
-        <div class="nw-tooltip">Health, medicine, longevity — how people are actually living</div>
+      <div class="nw-top">
+        <div class="nw-cat-wrap">
+          <span class="nw-cat">wellbeing</span>
+          <div class="nw-tooltip">Health, medicine, longevity — how people are actually living</div>
+        </div>
+        <a class="nw-search" href="https://duckduckgo.com/?q=people+limiting+phone+use+strategies+2026" target="_blank">search ↗</a>
       </div>
-      <span class="nw-txt">People are finding creative ways to limit phone use — keeping it in another room, pairing it with a paperback.</span>
+      <span class="nw-txt">People are finding creative ways to limit phone use — keeping it in another room, pairing screen time with a paperback.</span>
     </div>
 
     <div class="nw-item">
-      <div class="nw-cat-wrap">
-        <span class="nw-cat">worldviews</span>
-        <div class="nw-tooltip">Politics, religion, ideology — what people believe and why it matters</div>
+      <div class="nw-top">
+        <div class="nw-cat-wrap">
+          <span class="nw-cat">worldviews</span>
+          <div class="nw-tooltip">Politics, religion, ideology — what people believe and why it matters</div>
+        </div>
+        <a class="nw-search" href="https://duckduckgo.com/?q=Iran+Nowruz+New+Year+war+2026+people" target="_blank">search ↗</a>
       </div>
-      <span class="nw-txt">Morocco awarded the Africa Cup of Nations title after judges overturned Senegal's January victory — the decision sparked immediate controversy across the continent.</span>
+      <span class="nw-txt">Iranians are marking Nowruz, their new year, under wartime conditions — security forces banned public gatherings while millions tried to celebrate quietly at home.</span>
     </div>
 
   </div>
