@@ -16,10 +16,10 @@
     .nav-links a{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#c8a84a;text-transform:uppercase;}
     .nav-links a:hover{color:#f5f3ee;}
     .meta-bar{background:#1a1a18;border-top:1px solid #2e2e2c;padding:8px 32px 16px;display:flex;justify-content:space-between;}
-    .meta-date{font-family:'Courier New',monospace;font-size:10px;color:#b0aa9e;letter-spacing:1px;}
-    .meta-count{font-family:'Courier New',monospace;font-size:10px;color:#b0aa9e;letter-spacing:1px;}
+    .meta-date{font-family:'Courier New',monospace;font-size:10px;color:#8a8680;letter-spacing:1px;}
+    .meta-count{font-family:'Courier New',monospace;font-size:10px;color:#8a8680;letter-spacing:1px;}
     .feed{max-width:700px;margin:0 auto;padding:36px 24px 48px;}
-    .item{display:flex;gap:14px;padding:22px 0;border-bottom:1px solid #e8e4dc;align-items:flex-start;}
+    .item{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #e8e4dc;align-items:flex-start;}
     .item:last-child{border-bottom:none;}
     .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:9px;}
     .dot-global{background:#c8a84a;}
@@ -30,7 +30,7 @@
     .item-foot{display:flex;align-items:center;gap:10px;}
     .geo-pill{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.5px;padding:3px 9px;border-radius:3px;background:#ede9e0;color:#444;}
     .geo-pill.regional{background:#e8e4dc;color:#555;}
-    .source-pill{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;padding:3px 9px;border-radius:3px;background:#ede9e0;color:#888;cursor:default;position:relative;}.source-pill .src-tip{display:none;position:absolute;bottom:22px;left:0;background:#1a1a18;color:#c8c4bc;font-family:'Courier New',monospace;font-size:10px;line-height:1.5;padding:6px 10px;border-radius:4px;white-space:nowrap;z-index:10;pointer-events:none;width:280px;white-space:normal;}.source-pill:hover .src-tip{display:block;}.search-link{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#777;}
+    .source-pill{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;padding:3px 9px;border-radius:3px;background:#ede9e0;color:#888;cursor:default;position:relative;}.source-pill .src-tip{display:none;position:absolute;bottom:22px;left:0;background:#1a1a18;color:#c8c4bc;font-family:'Courier New',monospace;font-size:10px;line-height:1.5;padding:6px 10px;border-radius:4px;white-space:nowrap;z-index:10;pointer-events:none;width:280px;white-space:normal;}.source-pill:hover .src-tip{display:block;}.search-link{font-family:'Courier New',monospace;font-size:13px;color:#555;line-height:1;text-decoration:none;}
     .search-link:hover{color:#c8a84a;}
     .meanwhile-section{max-width:700px;margin:0 auto;padding:0 24px 52px;}
     .meanwhile-header{margin-bottom:16px;padding-top:4px;border-top:1px solid #e0dcd4;}
@@ -39,10 +39,10 @@
     .nw-item{display:flex;flex-direction:column;gap:5px;padding:4px 0;}
     .nw-top{display:flex;align-items:center;gap:8px;}
     .nw-cat-wrap{position:relative;}
-    .nw-cat{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#a07828;background:#f5f1e6;padding:2px 8px;border-radius:3px;cursor:default;border-bottom:1px dotted #c8a84a;display:inline-block;}
+    .nw-cat{font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#8a6010;background:#f5f1e6;padding:3px 9px;border-radius:3px;cursor:default;border-bottom:1px dotted #c8a84a;display:inline-block;font-weight:600;}
     .nw-tooltip{display:none;position:absolute;bottom:22px;left:0;background:#1a1a18;color:#c8c4bc;font-family:'Courier New',monospace;font-size:10px;line-height:1.5;padding:6px 10px;border-radius:4px;white-space:nowrap;z-index:10;pointer-events:none;}
     .nw-cat-wrap:hover .nw-tooltip{display:block;}
-    .nw-search{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#777;}
+    .nw-search{font-family:'Courier New',monospace;font-size:13px;color:#555;text-decoration:none;line-height:1;}
     .nw-search:hover{color:#c8a84a;}
     .nw-txt{font-size:13px;color:#555;line-height:1.5;}
     footer{background:#1a1a18;padding:20px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
@@ -81,7 +81,7 @@
   </div>
 </nav>
 <div class="meta-bar">
-  <span class="meta-date">Last updated 21 March 2026 &middot; 08:00 CET</span>
+  <span class="meta-date" id="meta-date">Last updated 21 March 2026 &middot; 08:00 CET</span>
   <span class="meta-count">5 items</span>
 </div>
 <div class="feed">
@@ -91,7 +91,7 @@
     <div class="item-body">
       <div class="item-head">The US is escalating militarily in Iran while signalling it wants to wind down &mdash; and lifting sanctions on Iranian oil to ease the economic damage</div>
       <div class="item-text">Three weeks into the conflict, the US is simultaneously sending more marines to the Middle East and easing sanctions on Iranian oil stranded at sea. These moves point in opposite directions and suggest Washington is running out of options to contain the economic damage the war is causing.</div>
-      <div class="item-foot"><span class="geo-pill">Global</span><span class="source-pill">~8 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting &mdash; not that the story is accurate.</span></span><a class="search-link" href="https://duckduckgo.com/?q=US+Iran+war+wind+down+sanctions+oil+2026" target="_blank">search this &#8599;</a></div>
+      <div class="item-foot"><span class="geo-pill">Global</span><a class="search-link" href="https://duckduckgo.com/?q=US+Iran+war+wind+down+sanctions+oil+2026" target="_blank">↗</a><span class="source-pill">~8 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting &mdash; not that the story is accurate.</span></span></div>
     </div>
   </div>
 
@@ -100,7 +100,7 @@
     <div class="item-body">
       <div class="item-head">A third of the world&#39;s fertilizer supply is stuck &mdash; food prices are the next wave</div>
       <div class="item-text">Around a third of all fertilizer shipped globally passes through the blocked Strait of Hormuz. With planting season approaching in the northern hemisphere, farmers who cannot get fertilizer will produce less food later in the year — the energy crisis is quietly becoming a food supply crisis too.</div>
-      <div class="item-foot"><span class="geo-pill">Global</span><span class="source-pill">~5 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting &mdash; not that the story is accurate.</span></span><a class="search-link" href="https://duckduckgo.com/?q=fertilizer+Strait+Hormuz+food+supply+2026" target="_blank">search this &#8599;</a></div>
+      <div class="item-foot"><span class="geo-pill">Global</span><a class="search-link" href="https://duckduckgo.com/?q=fertilizer+Strait+Hormuz+food+supply+2026" target="_blank">↗</a><span class="source-pill">~5 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting &mdash; not that the story is accurate.</span></span></div>
     </div>
   </div>
 
@@ -109,7 +109,7 @@
     <div class="item-body">
       <div class="item-head">More than 100 people were killed in an airstrike on a drug rehabilitation hospital in Kabul</div>
       <div class="item-text">Pakistan carried out the strike on a facility where patients were receiving treatment for addiction. The deadliest single strike on Afghan civilians in years, it signals how far the protection of civilian infrastructure has eroded as a norm across multiple active conflict zones.</div>
-      <div class="item-foot"><span class="geo-pill">Global</span><span class="source-pill">~4 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting &mdash; not that the story is accurate.</span></span><a class="search-link" href="https://duckduckgo.com/?q=Kabul+hospital+airstrike+Pakistan+2026" target="_blank">search this &#8599;</a></div>
+      <div class="item-foot"><span class="geo-pill">Global</span><a class="search-link" href="https://duckduckgo.com/?q=Kabul+hospital+airstrike+Pakistan+2026" target="_blank">↗</a><span class="source-pill">~4 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting &mdash; not that the story is accurate.</span></span></div>
     </div>
   </div>
 
@@ -118,7 +118,7 @@
     <div class="item-body">
       <div class="item-head">Spain approves a &euro;5 billion emergency package to help households and businesses with energy bills</div>
       <div class="item-text">Gas prices in Spain have risen more than 60% since the Hormuz closure. The government approved emergency support covering 20 million households and 3 million businesses — the largest energy intervention since the 2022 Ukraine-driven price crisis — signalling the economic fallout from the war is now being felt directly at household level.</div>
-      <div class="item-foot"><span class="geo-pill regional">Spain</span><span class="source-pill">~3 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting &mdash; not that the story is accurate.</span></span><a class="search-link" href="https://duckduckgo.com/?q=Spain+5+billion+energy+package+gas+prices+2026" target="_blank">search this &#8599;</a></div>
+      <div class="item-foot"><span class="geo-pill regional">Spain</span><a class="search-link" href="https://duckduckgo.com/?q=Spain+5+billion+energy+package+gas+prices+2026" target="_blank">↗</a><span class="source-pill">~3 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting &mdash; not that the story is accurate.</span></span></div>
     </div>
   </div>
 
@@ -127,7 +127,7 @@
     <div class="item-body">
       <div class="item-head">Official report finds Spain&#39;s 2025 blackout had no single cause &mdash; and the grid is still exposed</div>
       <div class="item-text">The final report on last April&#39;s blackout, which cut power to most of Spain and parts of Portugal for ten hours, concluded it was a combination of voltage failures, monitoring gaps, and poor coordination between grid operators. The regulator called for urgent reforms, particularly as the grid absorbs more renewable energy.</div>
-      <div class="item-foot"><span class="geo-pill regional">Spain</span><span class="source-pill">~2 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting &mdash; not that the story is accurate.</span></span><a class="search-link" href="https://duckduckgo.com/?q=Spain+blackout+2025+report+grid+reform" target="_blank">search this &#8599;</a></div>
+      <div class="item-foot"><span class="geo-pill regional">Spain</span><a class="search-link" href="https://duckduckgo.com/?q=Spain+blackout+2025+report+grid+reform" target="_blank">↗</a><span class="source-pill">~2 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting &mdash; not that the story is accurate.</span></span></div>
     </div>
   </div>
 
@@ -139,7 +139,7 @@
     <div class="nw-item">
       <div class="nw-top">
         <div class="nw-cat-wrap"><span class="nw-cat">culture</span><div class="nw-tooltip">Sport, entertainment, art &mdash; the shared conversation</div></div>
-        <a class="nw-search" href="https://duckduckgo.com/?q=Alcaraz+Medvedev+Indian+Wells+2026+semifinals" target="_blank">search &#8599;</a>
+        <a class="nw-search" href="https://duckduckgo.com/?q=Alcaraz+Medvedev+Indian+Wells+2026+semifinals" target="_blank">↗</a>
       </div>
       <span class="nw-txt">Alcaraz and Medvedev meet in the Indian Wells semifinals &mdash; a repeat of last year&#39;s final.</span>
     </div>
@@ -147,7 +147,7 @@
     <div class="nw-item">
       <div class="nw-top">
         <div class="nw-cat-wrap"><span class="nw-cat">frontiers</span><div class="nw-tooltip">Science, tech, AI &mdash; things changing how the world works</div></div>
-        <a class="nw-search" href="https://duckduckgo.com/?q=drone+warfare+civilian+targets+2026" target="_blank">search &#8599;</a>
+        <a class="nw-search" href="https://duckduckgo.com/?q=drone+warfare+civilian+targets+2026" target="_blank">↗</a>
       </div>
       <span class="nw-txt">Cheap drones are now hitting hospitals and rehab centres &mdash; the line between military and civilian targets is dissolving across multiple conflicts at once.</span>
     </div>
@@ -155,7 +155,7 @@
     <div class="nw-item">
       <div class="nw-top">
         <div class="nw-cat-wrap"><span class="nw-cat">wellbeing</span><div class="nw-tooltip">Health, medicine, longevity &mdash; how people are actually living</div></div>
-        <a class="nw-search" href="https://duckduckgo.com/?q=people+limiting+phone+screen+time+strategies" target="_blank">search &#8599;</a>
+        <a class="nw-search" href="https://duckduckgo.com/?q=people+limiting+phone+screen+time+strategies" target="_blank">↗</a>
       </div>
       <span class="nw-txt">People are finding creative ways to limit phone use &mdash; keeping it in another room, pairing screen time with a paperback.</span>
     </div>
@@ -163,7 +163,7 @@
     <div class="nw-item">
       <div class="nw-top">
         <div class="nw-cat-wrap"><span class="nw-cat">worldviews</span><div class="nw-tooltip">Politics, religion, ideology &mdash; what people believe and why it matters</div></div>
-        <a class="nw-search" href="https://duckduckgo.com/?q=Musk+Twitter+stock+manipulation+verdict+2026" target="_blank">search &#8599;</a>
+        <a class="nw-search" href="https://duckduckgo.com/?q=Musk+Twitter+stock+manipulation+verdict+2026" target="_blank">↗</a>
       </div>
       <span class="nw-txt">A US court found a tech billionaire liable for manipulating his own company&#39;s stock price before a $44 billion acquisition &mdash; one of the largest investor fraud verdicts against an individual in years.</span>
     </div>
@@ -208,6 +208,16 @@ function toggleLocale(e){e.stopPropagation();document.getElementById('localeDrop
 document.addEventListener('click',function(){document.getElementById('localeDropdown').classList.remove('open');});
 function setLang(e,val){e.stopPropagation();lang=val;localStorage.setItem('rumbo_lang',val);document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
 function setRegion(e,val){e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
+
+// Localise the update timestamp to the reader's timezone
+(function(){
+  try {
+    var utc = new Date('2026-03-21T07:00:00Z'); // 08:00 CET = 07:00 UTC
+    var opts = {day:'numeric', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit'};
+    var local = utc.toLocaleString(undefined, opts);
+    document.getElementById('meta-date').textContent = 'Last updated ' + local;
+  } catch(e) {}
+})();
 </script>
 </body>
 </html>
