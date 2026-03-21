@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Rumbo.WTF</title>
+  <title>Rumbo.wtf</title>
   <link rel="icon" type="image/png" href="favicon.png"/>
   <style>
     *{box-sizing:border-box;margin:0;padding:0;}
@@ -21,7 +21,7 @@
     .meta-date{font-family:'Courier New',monospace;font-size:10px;color:#b0aa9e;letter-spacing:1px;}
     .meta-count{font-family:'Courier New',monospace;font-size:10px;color:#b0aa9e;letter-spacing:1px;}
 
-    .feed{max-width:700px;margin:0 auto;padding:36px 24px 52px;}
+    .feed{max-width:700px;margin:0 auto;padding:36px 24px 48px;}
 
     .item{display:flex;gap:14px;padding:22px 0;border-bottom:1px solid #e8e4dc;align-items:flex-start;}
     .item:last-child{border-bottom:none;}
@@ -36,14 +36,18 @@
     .item-foot{display:flex;align-items:center;gap:10px;}
     .geo-pill{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.5px;padding:3px 9px;border-radius:3px;background:#ede9e0;color:#666;}
     .geo-pill.regional{background:#f5f1e6;color:#a07828;}
-    .search-link{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#b0aa9e;text-decoration:none;}
+    .search-link{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#b0aa9e;}
     .search-link:hover{color:#c8a84a;}
 
     .nw-section{max-width:700px;margin:0 auto;padding:0 24px 52px;}
-    .nw-label{font-family:'Courier New',monospace;font-size:9px;letter-spacing:2.5px;color:#999;margin-bottom:14px;padding-top:10px;border-top:1px solid #e0dcd4;}
-    .nw-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 32px;}
-    .nw-item{display:flex;align-items:baseline;padding:5px 0;}
-    .nw-cat{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#c8a84a;width:64px;flex-shrink:0;}
+    .nw-rule{border:none;border-top:1px solid #e0dcd4;margin-bottom:16px;}
+
+    .nw-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 32px;}
+    .nw-item{display:flex;align-items:baseline;padding:4px 0;}
+    .nw-cat-wrap{position:relative;width:80px;flex-shrink:0;}
+    .nw-cat{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;color:#c8a84a;cursor:default;border-bottom:1px dotted #c8a84a;}
+    .nw-tooltip{display:none;position:absolute;bottom:18px;left:0;background:#1a1a18;color:#c8c4bc;font-family:'Courier New',monospace;font-size:10px;line-height:1.5;padding:6px 10px;border-radius:4px;white-space:nowrap;z-index:10;pointer-events:none;}
+    .nw-cat-wrap:hover .nw-tooltip{display:block;}
     .nw-txt{font-size:13px;color:#555;line-height:1.45;}
 
     footer{background:#1a1a18;padding:16px 32px;display:flex;justify-content:space-between;align-items:center;}
@@ -62,14 +66,14 @@
 <body>
 
 <nav>
-  <div class="logo">Rumbo<em>.WTF</em></div>
+  <div class="logo">Rumbo<em>.wtf</em></div>
   <div class="nav-links">
     <a href="index.html">Latest</a>
     <a href="about.html">About</a>
   </div>
 </nav>
 <div class="meta-bar">
-  <span class="meta-date">Last updated 20 March 2026</span>
+  <span class="meta-date">Last updated 21 March 2026</span>
   <span class="meta-count">5 items</span>
 </div>
 
@@ -78,11 +82,11 @@
   <div class="item">
     <div class="dot dot-global"></div>
     <div class="item-body">
-      <div class="item-head">Israel strikes Iran's largest gas field — oil prices up 69% in three weeks</div>
-      <div class="item-text">Israel attacked the gas infrastructure that supplies much of Europe and Asia with heating and power. Iran hit back at Qatar and Saudi Arabia's energy facilities the same day. Energy prices are now rising fast enough to push up the cost of food, transport, and manufacturing across the world.</div>
+      <div class="item-head">Trump talks of ending the Iran war while sending more troops and lifting sanctions on Iranian oil</div>
+      <div class="item-text">Three weeks in, the US is simultaneously deploying more marines to the Middle East, easing sanctions on Iranian oil to bring prices down, and signalling it wants to wind the conflict down. These moves point in opposite directions and suggest the administration is running out of options to control the economic damage the war is causing.</div>
       <div class="item-foot">
         <span class="geo-pill">Global</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Israel+strikes+Iran+gas+field+oil+prices" target="_blank">search this ↗</a>
+        <a class="search-link" href="https://duckduckgo.com/?q=Trump+winding+down+Iran+war+sanctions+oil+2026" target="_blank">search this ↗</a>
       </div>
     </div>
   </div>
@@ -90,11 +94,11 @@
   <div class="item">
     <div class="dot dot-global"></div>
     <div class="item-body">
-      <div class="item-head">US central bank freezes interest rates, blaming war uncertainty</div>
-      <div class="item-text">The US Federal Reserve kept borrowing costs unchanged — its chair said the economic impact of the Iran war is too unpredictable to act on. Central banks in both the US and Europe are now stuck between rising energy costs pushing prices up and a slowing economy pulling them down.</div>
+      <div class="item-head">A third of the world's fertilizer supply is stuck — food prices are the next wave</div>
+      <div class="item-text">Around a third of all fertilizer shipped globally passes through the blocked strait. With planting season approaching in the northern hemisphere, farmers who cannot get fertilizer will produce less food later in the year. The energy crisis is quietly becoming a food supply crisis too.</div>
       <div class="item-foot">
         <span class="geo-pill">Global</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Federal+Reserve+interest+rates+Iran+war+2026" target="_blank">search this ↗</a>
+        <a class="search-link" href="https://duckduckgo.com/?q=fertilizer+Strait+Hormuz+food+supply+2026" target="_blank">search this ↗</a>
       </div>
     </div>
   </div>
@@ -102,11 +106,11 @@
   <div class="item">
     <div class="dot dot-global"></div>
     <div class="item-body">
-      <div class="item-head">Israeli military strikes Iranian ships in the Caspian Sea — war spreads north</div>
-      <div class="item-text">Israeli forces attacked Iranian naval vessels in the Caspian Sea — a landlocked body of water shared with Russia, Kazakhstan, and three other countries. It is the first attack outside the Gulf region and puts the conflict on Russia's doorstep for the first time.</div>
+      <div class="item-head">Elon Musk found legally responsible for misleading investors over his Twitter takeover</div>
+      <div class="item-text">A jury ruled that Musk deliberately pushed Twitter's share price down in the months before buying the company in 2022, allowing him to pay less than he should have. The case is one of the largest investor fraud verdicts against an individual in recent years and sets a precedent for accountability at the top of the tech industry.</div>
       <div class="item-foot">
         <span class="geo-pill">Global</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Israel+strikes+Iranian+ships+Caspian+Sea+2026" target="_blank">search this ↗</a>
+        <a class="search-link" href="https://duckduckgo.com/?q=Elon+Musk+liable+Twitter+investors+verdict+2026" target="_blank">search this ↗</a>
       </div>
     </div>
   </div>
@@ -114,11 +118,11 @@
   <div class="item">
     <div class="dot dot-regional"></div>
     <div class="item-body">
-      <div class="item-head">Spain pledges €1 billion to Ukraine and agrees to jointly build drones and missiles</div>
-      <div class="item-text">Spain committed €1 billion in military support to Ukraine — including joint production of drones, radar, and missiles — while simultaneously refusing to let the US use its military bases for the Iran war. This puts Washington in a difficult position: pushing back on Spain risks undermining its own Ukraine policy.</div>
+      <div class="item-head">Spain approves a €5 billion emergency package to help households and businesses with energy bills</div>
+      <div class="item-text">Gas prices in Spain have risen more than 60% since the Hormuz closure. The government has approved emergency support covering 20 million households and 3 million businesses. It is the largest energy intervention since the 2022 Ukraine-driven price crisis and signals that the economic fallout from the war is now being felt directly at household level.</div>
       <div class="item-foot">
         <span class="geo-pill regional">España</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Spain+1+billion+Ukraine+drones+missiles+2026" target="_blank">search this ↗</a>
+        <a class="search-link" href="https://duckduckgo.com/?q=Spain+5+billion+energy+package+gas+prices+2026" target="_blank">search this ↗</a>
       </div>
     </div>
   </div>
@@ -126,11 +130,11 @@
   <div class="item">
     <div class="dot dot-regional"></div>
     <div class="item-body">
-      <div class="item-head">Police bust network hiding a Russian oligarch's assets across five Mallorca villas</div>
-      <div class="item-text">Three people were arrested in Mallorca for hiding luxury properties, bank accounts, and cars on behalf of a Russian businessman under EU sanctions — linked to supplying helicopters to the Russian military. The timing, the same week Spain deepened its Ukraine commitment, makes it as much a political signal as a police operation.</div>
+      <div class="item-head">Official report finds Spain's 2025 blackout had no single cause — and the grid is still exposed</div>
+      <div class="item-text">The final report on last April's blackout, which cut power to most of Spain and parts of Portugal for ten hours, concluded it was a combination of voltage failures, gaps in monitoring, and poor coordination between grid operators. The regulator stopped short of assigning blame but called for urgent reforms, particularly as the grid absorbs more renewable energy.</div>
       <div class="item-foot">
         <span class="geo-pill regional">España</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Mallorca+Russia+sanctions+evasion+arrest+2026" target="_blank">search this ↗</a>
+        <a class="search-link" href="https://duckduckgo.com/?q=Spain+blackout+2025+report+grid+reform" target="_blank">search this ↗</a>
       </div>
     </div>
   </div>
@@ -138,12 +142,41 @@
 </div>
 
 <div class="nw-section">
-  <div class="nw-label">noteworthy</div>
+  <hr class="nw-rule"/>
   <div class="nw-grid">
-    <div class="nw-item"><span class="nw-cat">sport</span><span class="nw-txt">Barcelona 7–2 Newcastle; Yamal becomes top Champions League scorer under 19.</span></div>
-    <div class="nw-item"><span class="nw-cat">sport</span><span class="nw-txt">Antonelli wins first Formula 1 race in China, aged 19.</span></div>
-    <div class="nw-item"><span class="nw-cat">culture</span><span class="nw-txt">Las Fallas final night in Valencia — giant sculptures burned at midnight.</span></div>
-    <div class="nw-item"><span class="nw-cat">science</span><span class="nw-txt">Sri Lanka moves to a 4-day public sector week to save fuel.</span></div>
+
+    <div class="nw-item">
+      <div class="nw-cat-wrap">
+        <span class="nw-cat">culture</span>
+        <div class="nw-tooltip">Sport, entertainment, art — the shared conversation</div>
+      </div>
+      <span class="nw-txt">Alcaraz and Medvedev meet in the Indian Wells semifinals — a repeat of last year's final.</span>
+    </div>
+
+    <div class="nw-item">
+      <div class="nw-cat-wrap">
+        <span class="nw-cat">frontiers</span>
+        <div class="nw-tooltip">Science, tech, AI — things changing how the world works</div>
+      </div>
+      <span class="nw-txt">Pakistan used air strikes to hit a drug rehabilitation hospital in Kabul, killing over 100 — drones and precision weapons are reshaping conflict everywhere.</span>
+    </div>
+
+    <div class="nw-item">
+      <div class="nw-cat-wrap">
+        <span class="nw-cat">wellbeing</span>
+        <div class="nw-tooltip">Health, medicine, longevity — how people are actually living</div>
+      </div>
+      <span class="nw-txt">People are finding creative ways to limit phone use — keeping it in another room, pairing it with a paperback.</span>
+    </div>
+
+    <div class="nw-item">
+      <div class="nw-cat-wrap">
+        <span class="nw-cat">worldviews</span>
+        <div class="nw-tooltip">Politics, religion, ideology — what people believe and why it matters</div>
+      </div>
+      <span class="nw-txt">Morocco awarded the Africa Cup of Nations title after judges overturned Senegal's January victory — the decision sparked immediate controversy across the continent.</span>
+    </div>
+
   </div>
 </div>
 
