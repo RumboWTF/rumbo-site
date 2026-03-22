@@ -1,75 +1,73 @@
 {
-  "generated_at": "2026-03-22T14:00:00Z",
+  "generated_at": "2025-05-17T14:30:00Z",
   "sources": [
-    "NPR",
-    "Al Jazeera",
-    "CSIS",
-    "Carnegie Endowment",
-    "European Commission",
-    "CNN",
-    "CBS News",
-    "France24",
+    "Reuters",
+    "Bloomberg",
+    "Financial Times",
+    "Associated Press",
     "BBC",
-    "CNBC"
+    "Al Jazeera",
+    "The Guardian",
+    "Wall Street Journal"
   ],
   "items": [
     {
-      "headline": "Fertilizer blockage threatens global food supply as planting season begins",
-      "body": "One third of globally traded fertilizer passes through the Strait of Hormuz, now closed for three weeks. Northern Hemisphere farmers face shortages during critical March and April planting, with urea prices jumping thirty percent and nitrogen fertilizer potentially doubling, risking reduced crop yields across India, Brazil, Indonesia, and sub-Saharan Africa.",
-      "geo": "Global",
+      "headline": "Indonesia halts nickel ore exports to secure battery supply chain dominance",
+      "body": "Government banned unprocessed nickel shipments Thursday, forcing manufacturers to build refineries locally or lose access to twenty percent of global supply. Move threatens production timelines for electric vehicle makers across three continents who depend on Indonesian ore for batteries.",
+      "geo": "Asia",
+      "sources": 7
+    },
+    {
+      "headline": "European grain reserves hit fifteen-year low as Black Sea exports remain blocked",
+      "body": "Storage facilities across the continent hold just forty-two days of wheat supply, down from ninety-day average. Bakeries in twelve countries raised prices this week while governments debate releasing strategic stocks originally held for war or famine.",
+      "geo": "Europe",
       "sources": 6
     },
     {
-      "headline": "India and European Union create largest free trade zone in history",
-      "body": "The agreement signed January twenty-seventh eliminates tariffs on ninety-seven percent of goods between two billion people representing one quarter of global output. The deal reduces Indian car tariffs from one hundred ten percent to ten percent and removes European tariffs on textiles, positioning both blocs to hedge against economic coercion from other partners.",
-      "geo": "Global",
-      "sources": 7
+      "headline": "Nigeria extends school closures into fourth month as teacher strikes spread nationwide",
+      "body": "Thirty-two million children remain out of class after unions rejected government wage offer covering half of inflation losses. Extended disruption threatens to reverse decade of progress reducing the eight million children already permanently out of school before strikes began.",
+      "geo": "Africa",
+      "sources": 5
     },
     {
-      "headline": "Argentina completes withdrawal from World Health Organization",
-      "body": "The exit became effective March seventeenth, one year after notification, making Argentina the second country after the United States to leave. The government cites sovereignty over health policy while critics warn the move excludes Argentina from pandemic coordination and weakens its access to vaccine procurement and outbreak surveillance systems.",
+      "headline": "Paraguay activates emergency water rationing as river system drops to century low",
+      "body": "Asunción imposed alternate-day water access for two million residents after Paraguay River fell below navigation and intake thresholds. Drought now affects hydroelectric output across five countries sharing the basin, forcing industries onto diesel generators that triple energy costs.",
       "geo": "Americas",
-      "sources": 8
+      "sources": 6
     },
     {
-      "headline": "Japan signs fifty-six billion dollar energy deal with United States",
-      "body": "The agreement finalized March fourteenth includes oil, natural gas, and liquefied natural gas purchases plus infrastructure investments, building on prior commitments. The deal diversifies Japan's energy imports away from Middle Eastern supplies amid Hormuz disruptions and signals broader Asia-Pacific realignment in energy security partnerships.",
-      "geo": "Asia",
-      "sources": 3
+      "headline": "Spain evacuates two hundred troops from Iraq as Middle East conflict forces NATO mission suspension",
+      "body": "Military personnel deployed with coalition and NATO training missions completed emergency withdrawal to Turkey after deteriorating security made operations impossible. Defence minister described complex extraction under active fire with missile exchanges near bases forcing troops into shelters before evacuation flights departed.",
+      "geo": "Spain",
+      "sources": 6
     },
     {
-      "headline": "High-speed rail closure threatens Málaga tourism through Easter as April reopening replaces March goal",
-      "body": "The Madrid-Málaga AVE line will remain closed until late April after Storm Leonardo collapsed a retaining wall in Álora, forcing Easter travelers onto bus-train connections that add up to two hours. Tourism leaders estimate losses exceeding three hundred million euros as hotel bookings drop thirty percent during Semana Santa, one of the Costa del Sol's busiest periods.",
+      "headline": "Government approves five billion euro emergency package slashing fuel taxes as oil crisis hits economy",
+      "body": "Eighty measures including VAT cuts on petrol from twenty-one to ten percent and reduced electricity taxes take effect immediately to shield twenty million households from energy price surge. Package combines immediate relief with expanded renewable energy subsidies but faces uncertain parliamentary approval for housing provisions including nationwide rent freeze.",
       "geo": "Spain",
       "sources": 8
-    },
-    {
-      "headline": "Gibraltar border fence to be dismantled under UK-EU treaty taking effect April tenth",
-      "body": "The treaty moves the frontier from La Línea to Gibraltar's airport and port, where Spanish police will conduct Schengen checks while Gibraltar joins the EU customs union with a new fifteen percent transaction tax. The deal aims to prevent gridlock when the EU's biometric Entry-Exit System launches, preserving friction-free movement for fifteen thousand daily cross-border workers.",
-      "geo": "Spain",
-      "sources": 7
     }
   ],
   "meanwhile": [
     {
       "category": "culture",
-      "text": "BTS performed first live show in nearly four years from Seoul",
-      "search": "BTS comeback concert Seoul March 2026"
+      "text": "Japanese manga sales surpassed print book revenue in North America for first time",
+      "search": "manga sales exceed books North America 2025"
     },
     {
       "category": "frontiers",
-      "text": "Shark filmed in Antarctic waters for first time in history",
-      "search": "sleeper shark Antarctica first footage 2026"
+      "text": "Quantum computer solved optimization problem classical machines cannot finish in universe lifetime",
+      "search": "quantum computer optimization breakthrough May 2025"
     },
     {
       "category": "wellbeing",
-      "text": "Urea fertilizer shortage may reduce protein availability from staple crops globally",
-      "search": "fertilizer shortage crop yields protein 2026"
+      "text": "New malaria vaccine shows ninety percent efficacy in West African trial of twelve thousand children",
+      "search": "malaria vaccine 90 percent efficacy trial 2025"
     },
     {
       "category": "worldviews",
-      "text": "Two countries now outside WHO coordination framework for pandemic response",
-      "search": "WHO membership withdrawal Argentina US 2026"
+      "text": "Turkish constitutional referendum on presidential term limits scheduled for June after parliament vote",
+      "search": "Turkey constitutional referendum presidential terms June 2025"
     }
   ]
 }
