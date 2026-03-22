@@ -11,6 +11,7 @@ const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 // ─── Prompts ────────────────────────────────────────────────────────────────
 
+// NOTE: Keep in sync with the prompt displayed in about.html
 const GLOBAL_PROMPT = `You are the editorial engine for Rumbo.wtf, a world intelligence brief.
 
 Search the web for the most consequential global developments from the last 48 hours.
