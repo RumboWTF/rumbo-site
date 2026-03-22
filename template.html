@@ -173,9 +173,10 @@
 
   </div>
 </div>
-<!-- MEANWHILE:END --> 
-<footer>
-  <span class="footer-left">rumbo.wtf &middot; open &middot; no ads</span>
+<!-- MEANWHILE:END -->
+</div>
+<footer style="margin-top: 2rem;">
+    <span class="footer-left">rumbo.wtf &middot; open &middot; no ads</span>
   <div class="footer-center">
     <div class="locale-token" id="localeToken" onclick="toggleLocale(event)">
       <span id="localeLabel">&#127468;&#127463; EN &middot; &#127757; Global</span>
@@ -217,8 +218,7 @@ function setRegion(e,val){e.stopPropagation();region=val;localStorage.setItem('r
 (function(){
   try {
     var utc = new Date('2026-03-21T07:00:00Z'); // 08:00 CET = 07:00 UTC
-    var opts = {day:'numeric', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit'};
-    var local = utc.toLocaleString(undefined, opts);
+    var opts = {day:'numeric', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit', hour12: false};    var local = utc.toLocaleString(undefined, opts);
     document.getElementById('meta-date').textContent = 'Last updated ' + local;
   } catch(e) {}
 })();
