@@ -68,6 +68,7 @@ Search the web for the 1-2 most consequential developments in ${regionName} from
 Rules:
 - Only include items genuinely specific to ${regionName} and not already represented in the global feed
 - Same format as global items: plain language, two sentences, no individual names in headlines
+- Exactly two sentences per item. Each sentence must be 20 words or fewer. Cut ruthlessly.
 - Count independent source clusters per item
 - You MUST return at least one item. If no major developments exist, include the most noteworthy ${regionName} story from the last 48 hours even if smaller in scale than the global items.
 CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end with }. No other text.
@@ -85,32 +86,43 @@ CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end w
 // ─── API call ────────────────────────────────────────────────────────────────
 
 async function callClaude(prompt) {
-  // Step 1: search and gather with web search enabled
-  const searchResponse = await client.messages.create({
-    model: "claude-sonnet-4-5",
-    max_tokens: 3000,
-    tools: [{ type: "web_search_20250305", name: "web_search" }],
-    messages: [{ role: "user", content: prompt }],
-  });
+  const timeout = 60000; // 60 seconds
 
-  // Get all text from the search response
+  // Step 1: search and gather with web search enabled
+  const searchResponse = await Promise.race([
+    client.messages.create({
+      model: "claude-sonnet-4-5",
+      max_tokens: 3000,
+      tools: [{ type: "web_search_20250305", name: "web_search" }],
+      messages: [{ role: "user", content: prompt }],
+    }),
+    new Promise((_, reject) =>
+      setTimeout(() => reject(new Error("Claude API timeout (search)")), timeout)
+    ),
+  ]);
+
   const searchText = searchResponse.content
     .filter((b) => b.type === "text")
     .map((b) => b.text)
     .join("\n");
 
   // Step 2: format as JSON without search tool
-  const formatResponse = await client.messages.create({
-    model: "claude-sonnet-4-5",
-    max_tokens: 2000,
-    system: "You are a JSON formatter. Output only raw valid JSON. Start with { and end with }. No other text.",
-    messages: [
-      {
-        role: "user",
-        content: `Format this content as the required JSON structure:\n\n${searchText}\n\n${prompt}`,
-      },
-    ],
-  });
+  const formatResponse = await Promise.race([
+    client.messages.create({
+      model: "claude-sonnet-4-5",
+      max_tokens: 2000,
+      system: "You are a JSON formatter. Output only raw valid JSON. Start with { and end with }. No other text.",
+      messages: [
+        {
+          role: "user",
+          content: `Format this content as the required JSON structure:\n\n${searchText}\n\n${prompt}`,
+        },
+      ],
+    }),
+    new Promise((_, reject) =>
+      setTimeout(() => reject(new Error("Claude API timeout (format)")), timeout)
+    ),
+  ]);
 
   const textBlock = formatResponse.content.find((b) => b.type === "text");
   if (!textBlock) throw new Error("No text in Claude response");
