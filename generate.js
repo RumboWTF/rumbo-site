@@ -86,7 +86,7 @@ CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end w
 // ─── API call ────────────────────────────────────────────────────────────────
 
 async function callClaude(prompt) {
-  const timeout = 60000; // 60 seconds
+  const timeout = 600000; // 60 seconds
 
   // Step 1: search and gather with web search enabled
   const searchResponse = await Promise.race([
