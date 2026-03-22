@@ -69,8 +69,7 @@ Rules:
 - Only include items genuinely specific to ${regionName} and not already represented in the global feed
 - Same format as global items: plain language, two sentences, no individual names in headlines
 - Count independent source clusters per item
-- If there are no significant regional developments distinct from the global feed, return an empty items array
-
+- You MUST return at least one item. If no major developments exist, include the most noteworthy ${regionName} story from the last 48 hours even if smaller in scale than the global items.
 CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end with }. No other text.
 {
   "items": [
@@ -192,7 +191,7 @@ function formatSourceList(sources) {
 function renderHtml(data, date) {
   const allItems = data.items;
   const itemCount = allItems.length;
-  const utcTime = new Date(data.generated_at);
+  const utcTime = new Date();
   const isoString = utcTime.toISOString();
   const sourcesFormatted = (data.sources || []).join(" · ");
 
