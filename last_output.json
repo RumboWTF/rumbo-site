@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-03-22T14:00:00Z",
+  "sources": [
+    "NPR",
+    "Al Jazeera",
+    "CSIS",
+    "Carnegie Endowment",
+    "European Commission",
+    "CNN",
+    "CBS News",
+    "France24",
+    "BBC",
+    "CNBC"
+  ],
+  "items": [
+    {
+      "headline": "Fertilizer blockage threatens global food supply as planting season begins",
+      "body": "One third of globally traded fertilizer passes through the Strait of Hormuz, now closed for three weeks. Northern Hemisphere farmers face shortages during critical March and April planting, with urea prices jumping thirty percent and nitrogen fertilizer potentially doubling, risking reduced crop yields across India, Brazil, Indonesia, and sub-Saharan Africa.",
+      "geo": "Global",
+      "sources": 6
+    },
+    {
+      "headline": "India and European Union create largest free trade zone in history",
+      "body": "The agreement signed January twenty-seventh eliminates tariffs on ninety-seven percent of goods between two billion people representing one quarter of global output. The deal reduces Indian car tariffs from one hundred ten percent to ten percent and removes European tariffs on textiles, positioning both blocs to hedge against economic coercion from other partners.",
+      "geo": "Global",
+      "sources": 7
+    },
+    {
+      "headline": "Argentina completes withdrawal from World Health Organization",
+      "body": "The exit became effective March seventeenth, one year after notification, making Argentina the second country after the United States to leave. The government cites sovereignty over health policy while critics warn the move excludes Argentina from pandemic coordination and weakens its access to vaccine procurement and outbreak surveillance systems.",
+      "geo": "Americas",
+      "sources": 8
+    },
+    {
+      "headline": "Japan signs fifty-six billion dollar energy deal with United States",
+      "body": "The agreement finalized March fourteenth includes oil, natural gas, and liquefied natural gas purchases plus infrastructure investments, building on prior commitments. The deal diversifies Japan's energy imports away from Middle Eastern supplies amid Hormuz disruptions and signals broader Asia-Pacific realignment in energy security partnerships.",
+      "geo": "Asia",
+      "sources": 3
+    },
+    {
+      "headline": "High-speed rail closure threatens Málaga tourism through Easter as April reopening replaces March goal",
+      "body": "The Madrid-Málaga AVE line will remain closed until late April after Storm Leonardo collapsed a retaining wall in Álora, forcing Easter travelers onto bus-train connections that add up to two hours. Tourism leaders estimate losses exceeding three hundred million euros as hotel bookings drop thirty percent during Semana Santa, one of the Costa del Sol's busiest periods.",
+      "geo": "Spain",
+      "sources": 8
+    },
+    {
+      "headline": "Gibraltar border fence to be dismantled under UK-EU treaty taking effect April tenth",
+      "body": "The treaty moves the frontier from La Línea to Gibraltar's airport and port, where Spanish police will conduct Schengen checks while Gibraltar joins the EU customs union with a new fifteen percent transaction tax. The deal aims to prevent gridlock when the EU's biometric Entry-Exit System launches, preserving friction-free movement for fifteen thousand daily cross-border workers.",
+      "geo": "Spain",
+      "sources": 7
+    }
+  ],
+  "meanwhile": [
+    {
+      "category": "culture",
+      "text": "BTS performed first live show in nearly four years from Seoul",
+      "search": "BTS comeback concert Seoul March 2026"
+    },
+    {
+      "category": "frontiers",
+      "text": "Shark filmed in Antarctic waters for first time in history",
+      "search": "sleeper shark Antarctica first footage 2026"
+    },
+    {
+      "category": "wellbeing",
+      "text": "Urea fertilizer shortage may reduce protein availability from staple crops globally",
+      "search": "fertilizer shortage crop yields protein 2026"
+    },
+    {
+      "category": "worldviews",
+      "text": "Two countries now outside WHO coordination framework for pandemic response",
+      "search": "WHO membership withdrawal Argentina US 2026"
+    }
+  ]
+}
