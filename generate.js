@@ -32,7 +32,7 @@ Apply the following editorial rules:
 - Culture: the lighter side of being human — sport, art, entertainment
 - Frontiers: science and tech — what is becoming possible
 - Wellbeing: health, medicine, longevity — how people are living
-- Worldviews: the stories humans tell to form groups — politics, religion, ideology. Not sports governance.
+Worldviews: belief systems, ideological shifts, religious movements, or political culture — how groups define themselves and others. Not news events, not disasters, not policy outcomes
 - Alien-observer neutrality: no home team, no ideology, describe what actors do not whether they are right
 - Avoid passive voice that hides agency
 
