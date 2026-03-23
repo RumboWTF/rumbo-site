@@ -79,6 +79,7 @@ Rules:
 - Same format as global items: plain language, two sentences, no individual names in headlines
 - Exactly two sentences per item. Each sentence must be 20 words or fewer. Cut ruthlessly.
 - Never include specific figures (monetary amounts, percentages, casualty counts) unless they appear in multiple independent sources. If uncertain, describe impact qualitatively instead.
+- Only include items that have new developments or reporting within the last 72 hours. If a story's most recent coverage is older than 72 hours, skip it regardless of significance.
 - Count independent source clusters per item
 - You MUST return at least one item. If no major developments exist, include the most noteworthy ${regionName} story from the last 72 hours even if smaller in scale than the global items.
 
