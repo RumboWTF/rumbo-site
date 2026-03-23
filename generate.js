@@ -1,15 +1,21 @@
 // Rumbo.wtf — daily generation script
-// Calls Claude API (global + regional), merges JSON, renders index.html
-// Run manually: node generate.js
-// Run with region: node generate.js --region=es
+// Calls Claude API (global + regional), renders one HTML file per region
+// Run: node generate.js
 
 import Anthropic from "@anthropic-ai/sdk";
 import fs from "fs";
-import path from "path";
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
-// ─── Prompts ────────────────────────────────────────────────────────────────
+// ─── Region config ────────────────────────────────────────────────────────────
+// Add new regions here — nothing else needs to change
+
+const REGIONS = [
+  { code: "es", name: "Spain",  file: "index-es.html" },
+  { code: "no", name: "Norway", file: "index-no.html" },
+];
+
+// ─── Prompts ──────────────────────────────────────────────────────────────────
 
 // NOTE: Keep in sync with the prompt displayed in about.html
 const GLOBAL_PROMPT = `You are the editorial engine for Rumbo.wtf, a world intelligence brief.
@@ -35,7 +41,7 @@ Apply the following editorial rules:
 - Culture: the lighter side of being human — sport, art, entertainment
 - Frontiers: science and tech — what is becoming possible
 - Wellbeing: health, medicine, longevity — how people are living
-Worldviews: belief systems, ideological shifts, religious movements, or political culture — how groups define themselves and others. Not news events, not disasters, not policy outcomes
+- Worldviews: belief systems, ideological shifts, religious movements, or political culture — how groups define themselves and others. Not news events, not disasters, not policy outcomes.
 - Alien-observer neutrality: no home team, no ideology, describe what actors do not whether they are right
 - Avoid passive voice that hides agency
 
@@ -74,7 +80,8 @@ Rules:
 - Exactly two sentences per item. Each sentence must be 20 words or fewer. Cut ruthlessly.
 - Never include specific figures (monetary amounts, percentages, casualty counts) unless they appear in multiple independent sources. If uncertain, describe impact qualitatively instead.
 - Count independent source clusters per item
-- You MUST return at least one item. If no major developments exist, include the most noteworthy ${regionName} story from the last 48 hours even if smaller in scale than the global items.
+- You MUST return at least one item. If no major developments exist, include the most noteworthy ${regionName} story from the last 72 hours even if smaller in scale than the global items.
+
 CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end with }. No other text.
 {
   "items": [
@@ -87,12 +94,11 @@ CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end w
   ]
 }`;
 
-// ─── API call ────────────────────────────────────────────────────────────────
+// ─── API call ─────────────────────────────────────────────────────────────────
 
 async function callClaude(prompt) {
-  const timeout = 600000; // 60 seconds
+  const timeout = 600000; // 10 minutes
 
-  // Step 1: search and gather with web search enabled
   const searchResponse = await Promise.race([
     client.messages.create({
       model: "claude-sonnet-4-5",
@@ -110,7 +116,6 @@ async function callClaude(prompt) {
     .map((b) => b.text)
     .join("\n");
 
-  // Step 2: format as JSON without search tool
   const formatResponse = await Promise.race([
     client.messages.create({
       model: "claude-sonnet-4-5",
@@ -132,28 +137,19 @@ async function callClaude(prompt) {
   if (!textBlock) throw new Error("No text in Claude response");
   return textBlock.text.trim();
 }
-// ─── JSON parse with cleanup ─────────────────────────────────────────────────
+
+// ─── JSON parse ───────────────────────────────────────────────────────────────
 
 function parseJson(raw) {
-  // First try direct parse after stripping markdown
   const clean = raw.replace(/^```json\s*/i, "").replace(/```\s*$/i, "").trim();
-  
-  // If it starts with {, try direct parse
-  if (clean.startsWith("{")) {
-    return JSON.parse(clean);
-  }
-  
-  // Otherwise find the JSON object within the text
+  if (clean.startsWith("{")) return JSON.parse(clean);
   const start = raw.indexOf("{");
   const end = raw.lastIndexOf("}");
-  if (start !== -1 && end !== -1) {
-    return JSON.parse(raw.slice(start, end + 1));
-  }
-  
+  if (start !== -1 && end !== -1) return JSON.parse(raw.slice(start, end + 1));
   throw new Error("No JSON object found in response");
 }
 
-// ─── HTML rendering ──────────────────────────────────────────────────────────
+// ─── HTML rendering ───────────────────────────────────────────────────────────
 
 function ddgUrl(query) {
   return `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
@@ -162,8 +158,8 @@ function ddgUrl(query) {
 function renderItem(item) {
   const regionalGeos = ["Spain", "Norway", "UK", "Germany", "Netherlands"];
   const isRegional = regionalGeos.includes(item.geo);
-  const pillClass = isRegional ? 'geo-pill regional' : 'geo-pill';
-  const dotClass = isRegional ? 'dot dot-regional' : 'dot dot-global';
+  const pillClass = isRegional ? "geo-pill regional" : "geo-pill";
+  const dotClass = isRegional ? "dot dot-regional" : "dot dot-global";
   const searchQuery = encodeURIComponent(item.headline);
 
   return `  <div class="item">
@@ -200,36 +196,30 @@ function renderMeanwhile(items) {
     .join("\n");
 }
 
-function formatSourceList(sources) {
-  return sources.join(" · ");
-}
-
 function renderHtml(data, date) {
   const allItems = data.items;
   const itemCount = allItems.length;
   const utcTime = new Date();
   const isoString = utcTime.toISOString();
-  const sourcesFormatted = (data.sources || []).join(" · ");
 
   let html = fs.readFileSync("template.html", "utf8");
 
-  // Replace feed
-  const feedStart = html.indexOf('<!-- FEED:START -->');
-  const feedEnd = html.indexOf('<!-- FEED:END -->') + '<!-- FEED:END -->'.length;
-  html = html.slice(0, feedStart) +
+  const feedStart = html.indexOf("<!-- FEED:START -->");
+  const feedEnd = html.indexOf("<!-- FEED:END -->") + "<!-- FEED:END -->".length;
+  html =
+    html.slice(0, feedStart) +
     `<!-- FEED:START -->\n<div class="feed">\n${allItems.map(renderItem).join("\n")}\n</div>\n` +
-    '<!-- FEED:END -->' +
+    "<!-- FEED:END -->" +
     html.slice(feedEnd);
 
-  // Replace meanwhile
-  const mwStart = html.indexOf('<!-- MEANWHILE:START -->');
-  const mwEnd = html.indexOf('<!-- MEANWHILE:END -->') + '<!-- MEANWHILE:END -->'.length;
-  html = html.slice(0, mwStart) +
+  const mwStart = html.indexOf("<!-- MEANWHILE:START -->");
+  const mwEnd = html.indexOf("<!-- MEANWHILE:END -->") + "<!-- MEANWHILE:END -->".length;
+  html =
+    html.slice(0, mwStart) +
     `<!-- MEANWHILE:START -->\n<div class="nw-grid">\n${renderMeanwhile(data.meanwhile)}\n  </div>\n` +
-    '<!-- MEANWHILE:END -->' +
+    "<!-- MEANWHILE:END -->" +
     html.slice(mwEnd);
-  
-    // Update meta
+
   html = html.replace(/Last updated [^<]+/, `Last updated ${date}`);
   html = html.replace(/>\d+ items</, `>${itemCount} items<`);
   html = html.replace(
@@ -237,83 +227,26 @@ function renderHtml(data, date) {
     `var utc = new Date('${isoString}')`
   );
 
-  // Update sources box
-  html = html.replace(
-    /Sources consulted[\s\S]*?endorsement\./,
-    `Sources consulted — ${date}\n\nClaude Sonnet 4.5 consulted the following outlets to prepare this edition.\n\n${sourcesFormatted}\n\nThis list is approximate. Listing a source is not an endorsement.`
-  );
-
   return html;
 }
 
-// ─── Main ────────────────────────────────────────────────────────────────────
+// ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
-  const args = process.argv.slice(2);
-  const regionArg = args.find((a) => a.startsWith("--region="));
-  const region = regionArg ? regionArg.split("=")[1] : null;
-
-  const regionMap = {
-    es: "Spain",
-    no: "Norway",
-    uk: "United Kingdom",
-    de: "Germany",
-    nl: "Netherlands",
-  };
-
   console.log("Rumbo generator starting...");
-  console.log("Calling Claude for global edition...");
 
-  let globalRaw;
+  // Step 1: global call — runs once, shared across all editions
+  console.log("Calling Claude for global edition...");
+  let globalData;
   try {
-    globalRaw = await callClaude(GLOBAL_PROMPT);
+    const globalRaw = await callClaude(GLOBAL_PROMPT);
+    globalData = parseJson(globalRaw);
+    console.log(`Global: ${globalData.items.length} items, ${globalData.meanwhile.length} meanwhile`);
   } catch (e) {
     console.error("Global call failed:", e.message);
     process.exit(1);
   }
 
-  let globalData;
-  try {
-    globalData = parseJson(globalRaw);
-  } catch (e) {
-    console.error("Failed to parse global JSON:", e.message);
-    console.error("Raw output:", globalRaw);
-    process.exit(1);
-  }
-
-  console.log(`Global: ${globalData.items.length} items, ${globalData.meanwhile.length} meanwhile`);
-
-  // Regional top-up
-  if (region && regionMap[region]) {
-    const regionName = regionMap[region];
-    console.log(`Calling Claude for ${regionName} regional top-up...`);
-
-    let regionalRaw;
-    try {
-      regionalRaw = await callClaude(
-        REGIONAL_PROMPT(regionName, JSON.stringify(globalData, null, 2))
-      );
-    } catch (e) {
-      console.error(`Regional call failed for ${regionName}:`, e.message);
-      // Non-fatal — continue with global only
-    }
-
-    if (regionalRaw) {
-      try {
-        const regionalData = parseJson(regionalRaw);
-        if (regionalData.items && regionalData.items.length > 0) {
-          globalData.items.push(...regionalData.items);
-          console.log(`Added ${regionalData.items.length} regional items for ${regionName}`);
-        } else {
-          console.log(`No distinct regional items for ${regionName}`);
-        }
-      } catch (e) {
-        console.error("Failed to parse regional JSON:", e.message);
-      }
-    }
-  }
-
-  // Render
   const now = new Date();
   const dateStr = now.toLocaleDateString("en-GB", {
     day: "numeric",
@@ -321,12 +254,45 @@ async function main() {
     year: "numeric",
   });
 
-  console.log("Rendering HTML...");
-  const html = renderHtml(globalData, dateStr);
-  fs.writeFileSync("index.html", html, "utf8");
-  console.log("index.html written successfully.");
+  // Step 2: render global-only edition
+  console.log("Rendering index.html (global)...");
+  const globalHtml = renderHtml({ ...globalData }, dateStr);
+  fs.writeFileSync("index.html", globalHtml, "utf8");
+  console.log("index.html written.");
 
-  // Save raw JSON for debugging
+  // Step 3: regional editions — one API call per region
+  for (const region of REGIONS) {
+    console.log(`Calling Claude for ${region.name} regional top-up...`);
+    try {
+      const regionalRaw = await callClaude(
+        REGIONAL_PROMPT(region.name, JSON.stringify(globalData, null, 2))
+      );
+      const regionalData = parseJson(regionalRaw);
+
+      if (regionalData.items && regionalData.items.length > 0) {
+        // Merge: global items + regional items
+        const mergedData = {
+          ...globalData,
+          items: [...globalData.items, ...regionalData.items],
+        };
+        console.log(`Added ${regionalData.items.length} regional items for ${region.name}`);
+        const regionalHtml = renderHtml(mergedData, dateStr);
+        fs.writeFileSync(region.file, regionalHtml, "utf8");
+        console.log(`${region.file} written.`);
+      } else {
+        // No regional items — write global-only version for this region too
+        console.log(`No regional items for ${region.name}, writing global-only version.`);
+        fs.writeFileSync(region.file, globalHtml, "utf8");
+      }
+    } catch (e) {
+      console.error(`Regional call failed for ${region.name}:`, e.message);
+      // Non-fatal — write global-only version as fallback
+      console.log(`Writing global-only fallback for ${region.name}.`);
+      fs.writeFileSync(region.file, globalHtml, "utf8");
+    }
+  }
+
+  // Step 4: save debug JSON
   fs.writeFileSync("last_output.json", JSON.stringify(globalData, null, 2), "utf8");
   console.log("Raw JSON saved to last_output.json");
   console.log("Done.");
