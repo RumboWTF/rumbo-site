@@ -163,8 +163,8 @@ function renderItem(item) {
   const isRegional = regionalGeos.includes(item.geo);
   const pillClass = isRegional ? "geo-pill regional" : "geo-pill";
   const dotClass = isRegional ? "dot dot-regional" : "dot dot-global";
-  const searchQuery = encodeURIComponent(item.headline);
-
+  const searchQuery = isRegional ? encodeURIComponent(item.headline + ' ' + item.geo) : encodeURIComponent(item.headline);
+  
   return `  <div class="item">
     <div class="${dotClass}"></div>
     <div class="item-body">
