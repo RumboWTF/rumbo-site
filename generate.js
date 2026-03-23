@@ -11,8 +11,10 @@ const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 // Add new regions here — nothing else needs to change
 
 const REGIONS = [
-  { code: "es", name: "Spain",  file: "index-es.html" },
-  { code: "no", name: "Norway", file: "index-no.html" },
+  { code: "es", name: "Spain",           file: "index-es.html" },
+  { code: "no", name: "Norway",          file: "index-no.html" },
+  { code: "uk", name: "United Kingdom",  file: "index-uk.html" },
+  { code: "nl", name: "Netherlands",     file: "index-nl.html" },
 ];
 
 // ─── Prompts ──────────────────────────────────────────────────────────────────
@@ -157,7 +159,7 @@ function ddgUrl(query) {
 }
 
 function renderItem(item) {
-  const regionalGeos = ["Spain", "Norway", "UK", "Germany", "Netherlands"];
+  const regionalGeos = ["Spain", "Norway", "UK", "United Kingdom", "Netherlands"];
   const isRegional = regionalGeos.includes(item.geo);
   const pillClass = isRegional ? "geo-pill regional" : "geo-pill";
   const dotClass = isRegional ? "dot dot-regional" : "dot dot-global";
