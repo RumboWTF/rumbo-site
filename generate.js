@@ -14,7 +14,7 @@ const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 // NOTE: Keep in sync with the prompt displayed in about.html
 const GLOBAL_PROMPT = `You are the editorial engine for Rumbo.wtf, a world intelligence brief.
 
-Search the web for the most consequential global developments from the last 48 hours.
+Search the web for the most consequential global developments from the last 72 hours.
 
 Apply the following editorial rules:
 - Select 3-4 items based on second-order consequences, not surface drama
@@ -66,7 +66,7 @@ const REGIONAL_PROMPT = (regionName, globalJson) =>
 The global edition for today has already been generated. Here it is for context:
 ${globalJson}
 
-Search the web for the 1-2 most consequential developments in ${regionName} from the last 48 hours that are NOT already covered in the global edition above.
+Search the web for the 1-2 most consequential developments in ${regionName} from the last 72 hours that are NOT already covered in the global edition above.
 
 Rules:
 - Only include items genuinely specific to ${regionName} and not already represented in the global feed
