@@ -208,6 +208,8 @@
   var lang=localStorage.getItem('rumbo_lang')||'EN';
   var region=localStorage.getItem('rumbo_region')||'Global';
   updateToken();
+  document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill').forEach(function(p){p.classList.remove('active');});
+  document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill').forEach(function(p){if(p.textContent.trim().indexOf(region)!==-1){p.classList.add('active');}});
   (function(){var fileMap={'Global':'index.html','Spain':'index-es.html','Norway':'index-no.html','UK':'index-uk.html','Netherlands':'index-nl.html'};var target=fileMap[region];if(target&&window.location.pathname.indexOf(target)===-1){window.location.href=target;}})();
   function updateToken(){document.getElementById('localeLabel').textContent=flagFor(lang)+' '+lang+' \u00b7 '+flagFor(region)+' '+region;}
   function flagFor(v){var m={'EN':'\ud83c\uddec\ud83c\udde7','ES':'\ud83c\uddea\ud83c\uddf8','NO':'\ud83c\uddf3\ud83c\uddf4','Global':'\ud83c\udf0d','Spain':'\ud83c\uddea\ud83c\uddf8','Norway':'\ud83c\uddf3\ud83c\uddf4','UK':'\ud83c\uddec\ud83c\udde7','Netherlands':'\ud83c\uddf3\ud83c\uddf1'};return m[v]||'';}
