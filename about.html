@@ -150,6 +150,7 @@
 var lang=localStorage.getItem('rumbo_lang')||'EN';
 var region=localStorage.getItem('rumbo_region')||'Global';
 updateToken();
+function toggleLocale(e){e.stopPropagation();document.getElementById('localeDropdown').classList.toggle('open');}
 (function(){var fileMap={'Global':'index.html','Spain':'index-es.html','Norway':'index-no.html'};var target=fileMap[region];if(target&&window.location.pathname.indexOf(target)===-1){window.location.href=target;}})();
 function updateToken(){document.getElementById('localeLabel').textContent=flagFor(lang)+' '+lang+' \u00b7 '+flagFor(region)+' '+region;}
 function flagFor(v){var m={'EN':'\ud83c\uddec\ud83c\udde7','ES':'\ud83c\uddea\ud83c\uddf8','NO':'\ud83c\uddf3\ud83c\uddf4','Global':'\ud83c\udf0d','Spain':'\ud83c\uddea\ud83c\uddf8','Norway':'\ud83c\uddf3\ud83c\uddf4','UK':'\ud83c\uddec\ud83c\udde7'};return m[v]||'';}
