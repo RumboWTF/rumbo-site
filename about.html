@@ -157,3 +157,6 @@ function flagFor(v){var m={'EN':'\ud83c\uddec\ud83c\udde7','ES':'\ud83c\uddea\ud
 document.addEventListener('click',function(){document.getElementById('localeDropdown').classList.remove('open');});
 function setLang(e,val){e.stopPropagation();lang=val;localStorage.setItem('rumbo_lang',val);document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
 function setRegion(e,val){e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();var fileMap={'Global':'index.html','Spain':'index-es.html','Norway':'index-no.html'};if(fileMap[val]&&window.location.pathname.indexOf(fileMap[val])===-1){window.location.href=fileMap[val];}}
+        </script>
+    </body>
+</html>
