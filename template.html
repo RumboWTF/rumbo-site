@@ -76,14 +76,14 @@
 <nav>
   <div class="logo">Rumbo<em>.wtf</em></div>
   <div class="nav-links">
-    <a href="index.html">Latest</a>
-    <a href="about.html">About</a>
-    <a href="signup.html">Sign up</a>
+    <a href="index.html">{{NAV_LATEST}}</a>
+    <a href="about.html">{{NAV_ABOUT}}</a>
+    <a href="signup.html">{{NAV_SIGNUP}}</a>
 </div>
 </nav>
 <div class="meta-bar">
-  <span class="meta-date" id="meta-date">Last updated 21 March 2026 &middot; 08:00 CET</span>
-  <span class="meta-count">5 items</span>
+  <span class="meta-date" id="meta-date">{{META_UPDATED_LABEL}} 21 March 2026 &middot; 08:00 CET</span>
+  <span class="meta-count">5 {{ITEMS_SUFFIX}}</span>
 </div>
 
 <!-- FEED:START -->
@@ -137,7 +137,7 @@
 </div>
 <!-- FEED:END -->
  <div class="meanwhile-section">
-  <div class="meanwhile-header"><span class="meanwhile-title">Meanwhile</span></div>
+  <div class="meanwhile-header"><span class="meanwhile-title">{{MEANWHILE_TITLE}}</span></div>
 <!-- MEANWHILE:START -->
 <div class="nw-grid">
     <div class="nw-item">
@@ -150,7 +150,7 @@
 
     <div class="nw-item">
       <div class="nw-top">
-        <div class="nw-cat-wrap"><span class="nw-cat">frontiers</span><div class="nw-tooltip">Science and tech &mdash; what is becoming possible</div></div>
+        <div class="nw-cat-wrap"><span class="nw-cat">science_tech</span><div class="nw-tooltip">What is becoming possible</div></div>
         <a class="nw-search" href="https://duckduckgo.com/?q=drone+warfare+civilian+targets+2026" target="_blank">↗</a>
       </div>
       <span class="nw-txt">Cheap drones are now hitting hospitals and rehab centres &mdash; the line between military and civilian targets is dissolving across multiple conflicts at once.</span>
@@ -183,13 +183,13 @@
       <span id="localeLabel">&#127468;&#127463; EN &middot; &#127757; Global</span>
       <span class="locale-arrow">&#9650;</span>
       <div class="locale-dropdown" id="localeDropdown">
-        <div class="locale-dl">Language</div>
+        <div class="locale-dl">{{LOCALE_LANGUAGE}}</div>
         <div class="locale-row">
           <div class="lpill active" onclick="setLang(event,'EN')">&#127468;&#127463; EN</div>
           <div class="lpill soon">&#127466;&#127480; ES &mdash; soon</div>
           <div class="lpill soon">&#127475;&#127476; NO &mdash; soon</div>
         </div>
-        <div class="locale-dl">Local context</div>
+        <div class="locale-dl">{{LOCALE_LOCAL_CONTEXT}}</div>
         <div class="locale-row">
           <div class="lpill active" onclick="setRegion(event,'Global')">&#127757; Global</div>
           <div class="lpill" onclick="setRegion(event,'Spain')">&#127466;&#127480; Spain</div>
@@ -201,8 +201,8 @@
     </div>
   </div>
   <div class="footer-right">
-    <a href="index.html">Latest</a>
-    <a href="about.html">About</a>
+    <a href="index.html">{{FOOTER_LATEST}}</a>
+    <a href="about.html">{{FOOTER_ABOUT}}</a>
   </div>
 </footer>
 <script>
@@ -224,7 +224,7 @@ function setRegion(e,val){e.stopPropagation();region=val;localStorage.setItem('r
   try {
     var utc = new Date('2026-03-21T07:00:00Z'); // 08:00 CET = 07:00 UTC
     var opts = {day:'numeric', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit', hour12: false};    var local = utc.toLocaleString(undefined, opts);
-    document.getElementById('meta-date').textContent = 'Last updated ' + local;
+    document.getElementById('meta-date').textContent = '{{META_UPDATED_LABEL}} ' + local;
   } catch(e) {}
 })();
 </script>

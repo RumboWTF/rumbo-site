@@ -1,0 +1,22 @@
+{
+  "no": {
+    "MEANWHILE_TITLE": "Ellers...",
+    "ITEMS_SUFFIX": "saker",
+    "META_UPDATED_LABEL": "Sist oppdatert",
+    "LOCALE_LANGUAGE": "Språk",
+    "LOCALE_LOCAL_CONTEXT": "Lokale nyheter",
+    "SOURCE_PILL_LABEL": "kilder",
+    "CATEGORIES": {
+      "culture": "Kultur",
+      "science_tech": "Vitenskap & tech",
+      "wellbeing": "Helse og velvære",
+      "worldviews": "Anskuelser"
+    },
+    "CATEGORY_TOOLTIPS": {
+      "culture": "Den lysere siden av det å være menneske",
+      "science_tech": "Det som er i ferd med å bli mulig",
+      "wellbeing": "Helse, medisin og hvordan folk lever",
+      "worldviews": "Trossystemer og gruppetenking"
+    }
+  }
+}

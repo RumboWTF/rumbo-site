@@ -7,12 +7,47 @@ import fs from "fs";
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
+// ─── Load translations ─────────────────────────────────────────────────────────
+const TRANSLATIONS = JSON.parse(fs.readFileSync("translations.json", "utf8"));
+
+// ─── English string defaults ──────────────────────────────────────────────────
+// Single source of truth for all UI strings.
+// Non-English locales override selectively via translations.json.
+// Nav and footer links intentionally stay in English for all locales.
+const EN_STRINGS = {
+  NAV_LATEST: "Latest",
+  NAV_ABOUT: "About",
+  NAV_SIGNUP: "Newsletter",
+  META_UPDATED_LABEL: "Last updated",
+  ITEMS_SUFFIX: "items",
+  MEANWHILE_TITLE: "Meanwhile",
+  LOCALE_LANGUAGE: "Language",
+  LOCALE_LOCAL_CONTEXT: "Local news",
+  FOOTER_LATEST: "Latest",
+  FOOTER_ABOUT: "About",
+  SOURCE_TIP: "Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.",
+  SOURCE_PILL_LABEL: "sources",
+  CATEGORIES: {
+    culture: "Culture",
+    science_tech: "Science & tech",
+    wellbeing: "Wellbeing",
+    worldviews: "Worldviews",
+  },
+  CATEGORY_TOOLTIPS: {
+    culture: "The lighter side of being human",
+    science_tech: "What is becoming possible",
+    wellbeing: "Health, medicine, and how people live",
+    worldviews: "Belief systems and group thinking",
+  },
+};
+
 // ─── Region config ────────────────────────────────────────────────────────────
-// Add new regions here — nothing else needs to change
+// Add new regions here — nothing else needs to change.
+// translate: true → run a translation pass before rendering (Norwegian only for now)
 
 const REGIONS = [
   { code: "es", name: "Spain",           file: "index-es.html" },
-  { code: "no", name: "Norway",          file: "index-no.html" },
+  { code: "no", name: "Norway",          file: "index-no.html", translate: true },
   { code: "uk", name: "United Kingdom",  file: "index-uk.html" },
   { code: "nl", name: "Netherlands",     file: "index-nl.html" },
 ];
@@ -33,16 +68,17 @@ Apply the following editorial rules:
 - Apply a genuine global lens. Before finalising, ask: does this selection reflect only the most-covered corners of the world? If yes, replace the weakest item with the most consequential under-reported development from elsewhere.
 - No individual names in headlines unless the person is irreplaceable to the story. Lead with the institution, country, or dynamic instead.
 - Never include specific prices, rates, or market figures (oil price, exchange rates, stock levels) — these change daily and will be outdated. Describe direction and magnitude qualitatively instead (e.g. "oil prices surged to historic highs" not "$110 per barrel").
-- Exactly two sentences per item. Count the words — each sentence must be 20 words or fewer. Cut ruthlessly: what actually shifted, and how it moves the world
+- Only include items that have new developments or reporting within the last 72 hours. If a story's most recent coverage is older than 72 hours, skip it regardless of significance.
+- Exactly two sentences per item. Count the words — each sentence must be 20 words or fewer. Cut ruthlessly: what actually shifted, and how it moves the world.
 - Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania
 - For each item, count the number of genuinely independent source clusters (organisations that did their own reporting, not syndication of the same wire). Include this as a "sources" integer. Do not count outlets republishing the same wire service as independent sources.
-- You MUST include exactly 4 Meanwhile items, one for EACH of these four categories in this exact order: culture, frontiers, wellbeing, worldviews. All four are required every time.
+- You MUST include exactly 4 Meanwhile items, one for EACH of these four categories in this exact order: culture, science_tech, wellbeing, worldviews. All four are required every time.
 - Meanwhile = things worth knowing, not current headlines. Each item maximum 15 words, no analysis.
 - Meanwhile items must not repeat or summarise any story already included in the main feed items above.
 - Meanwhile items must reflect something genuinely new or newly reported within the last 72 hours, not established facts or old studies being recycled.
 - Each Meanwhile item must include a "search" field with a good DuckDuckGo search query for that item.
 - Culture: the lighter side of being human — sport, art, entertainment
-- Frontiers: science and tech — what is becoming possible
+- Science_tech: what is becoming possible
 - Wellbeing: health, medicine, longevity — how people are living
 - Worldviews: belief systems, ideological shifts, religious movements, or political culture — how groups define themselves and others. Not news events, not disasters, not policy outcomes.
 - Alien-observer neutrality: no home team, no ideology, describe what actors do not whether they are right
@@ -62,7 +98,7 @@ CRITICAL: Your response must be ONLY the raw JSON object. No thinking, no explan
   ],
   "meanwhile": [
     {
-      "category": "culture|frontiers|wellbeing|worldviews",
+      "category": "culture|science_tech|wellbeing|worldviews",
       "text": "string — one line",
       "search": "duckduckgo search query string"
     }
@@ -98,8 +134,24 @@ CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end w
   ]
 }`;
 
-// ─── API call ─────────────────────────────────────────────────────────────────
+const TRANSLATE_PROMPT = (langName, contentJson) =>
+  `Translate the following Rumbo.wtf JSON content into ${langName}.
 
+Rules:
+- Translate ONLY the string values of: "headline" and "body" in items; "text" in meanwhile items
+- Do NOT translate: JSON keys, "geo" values, "category" values, "search" field values, integers
+- Write as if originally authored in ${langName} — natural phrasing, not word-for-word translation
+- Keep headlines punchy and direct
+- Preserve the same sentence structure and brevity as the original
+- Preserve all punctuation conventions and em-dashes
+
+CRITICAL: Return ONLY the raw JSON object with the exact same structure as the input. Start with { and end with }. No other text.
+
+${contentJson}`;
+
+// ─── API calls ────────────────────────────────────────────────────────────────
+
+// Two-step call: search pass then format pass. Used for global and regional editions.
 async function callClaude(prompt) {
   const timeout = 600000; // 10 minutes
 
@@ -142,6 +194,19 @@ async function callClaude(prompt) {
   return textBlock.text.trim();
 }
 
+// Single call, no search. Used for translation passes.
+async function callClaudeSimple(prompt) {
+  const response = await client.messages.create({
+    model: "claude-sonnet-4-5",
+    max_tokens: 3000,
+    system: "You are a JSON translator. Output only raw valid JSON. Start with { and end with }. No other text.",
+    messages: [{ role: "user", content: prompt }],
+  });
+  const textBlock = response.content.find((b) => b.type === "text");
+  if (!textBlock) throw new Error("No text in Claude response");
+  return textBlock.text.trim();
+}
+
 // ─── JSON parse ───────────────────────────────────────────────────────────────
 
 function parseJson(raw) {
@@ -153,19 +218,34 @@ function parseJson(raw) {
   throw new Error("No JSON object found in response");
 }
 
+// ─── Translations ─────────────────────────────────────────────────────────────
+
+function getTranslations(locale) {
+  if (locale === "en" || !TRANSLATIONS[locale]) return EN_STRINGS;
+  const loc = TRANSLATIONS[locale];
+  return {
+    ...EN_STRINGS,
+    ...loc,
+    CATEGORIES: { ...EN_STRINGS.CATEGORIES, ...(loc.CATEGORIES || {}) },
+    CATEGORY_TOOLTIPS: { ...EN_STRINGS.CATEGORY_TOOLTIPS, ...(loc.CATEGORY_TOOLTIPS || {}) },
+  };
+}
+
 // ─── HTML rendering ───────────────────────────────────────────────────────────
 
 function ddgUrl(query) {
   return `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
 }
 
-function renderItem(item) {
+function renderItem(item, t) {
   const regionalGeos = ["Spain", "Norway", "UK", "United Kingdom", "Netherlands"];
   const isRegional = regionalGeos.includes(item.geo);
   const pillClass = isRegional ? "geo-pill regional" : "geo-pill";
   const dotClass = isRegional ? "dot dot-regional" : "dot dot-global";
-  const searchQuery = isRegional ? encodeURIComponent(item.headline + ' ' + item.geo) : encodeURIComponent(item.headline);
-  
+  const searchQuery = isRegional
+    ? encodeURIComponent(item.headline + " " + item.geo)
+    : encodeURIComponent(item.headline);
+
   return `  <div class="item">
     <div class="${dotClass}"></div>
     <div class="item-body">
@@ -174,33 +254,30 @@ function renderItem(item) {
       <div class="item-foot">
         <span class="${pillClass}">${item.geo}</span>
         <a class="search-link" href="https://duckduckgo.com/?q=${searchQuery}" target="_blank">↗</a>
-        <span class="source-pill">~${item.sources} sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.</span></span>
+        <span class="source-pill">~${item.sources} ${t.SOURCE_PILL_LABEL}<span class="src-tip">${t.SOURCE_TIP}</span></span>
       </div>
     </div>
   </div>`;
 }
 
-function renderMeanwhile(items) {
-  const tooltips = {
-    culture: "The lighter side of being human",
-    frontiers: "Science and tech — what is becoming possible",
-    wellbeing: "Health, medicine, longevity — how people are living",
-    worldviews: "The stories humans tell to form groups",
-  };
+function renderMeanwhile(items, t) {
   return items
-    .map(
-      (item) => `    <div class="nw-item">
+    .map((item) => {
+      const label = t.CATEGORIES[item.category] || item.category;
+      const tooltip = t.CATEGORY_TOOLTIPS[item.category] || "";
+      return `    <div class="nw-item">
       <div class="nw-top">
-        <div class="nw-cat-wrap"><span class="nw-cat">${item.category}</span><div class="nw-tooltip">${tooltips[item.category] || ""}</div></div>
+        <div class="nw-cat-wrap"><span class="nw-cat">${label}</span><div class="nw-tooltip">${tooltip}</div></div>
         <a class="nw-search" href="${ddgUrl(item.search)}" target="_blank">↗</a>
       </div>
       <span class="nw-txt">${item.text}</span>
-    </div>`
-    )
+    </div>`;
+    })
     .join("\n");
 }
 
-function renderHtml(data, date) {
+function renderHtml(data, date, locale = "en") {
+  const t = getTranslations(locale);
   const allItems = data.items;
   const itemCount = allItems.length;
   const utcTime = new Date();
@@ -208,28 +285,42 @@ function renderHtml(data, date) {
 
   let html = fs.readFileSync("template.html", "utf8");
 
+  // Inject feed
   const feedStart = html.indexOf("<!-- FEED:START -->");
   const feedEnd = html.indexOf("<!-- FEED:END -->") + "<!-- FEED:END -->".length;
   html =
     html.slice(0, feedStart) +
-    `<!-- FEED:START -->\n<div class="feed">\n${allItems.map(renderItem).join("\n")}\n</div>\n` +
+    `<!-- FEED:START -->\n<div class="feed">\n${allItems.map((item) => renderItem(item, t)).join("\n")}\n</div>\n` +
     "<!-- FEED:END -->" +
     html.slice(feedEnd);
 
+  // Inject meanwhile
   const mwStart = html.indexOf("<!-- MEANWHILE:START -->");
   const mwEnd = html.indexOf("<!-- MEANWHILE:END -->") + "<!-- MEANWHILE:END -->".length;
   html =
     html.slice(0, mwStart) +
-    `<!-- MEANWHILE:START -->\n<div class="nw-grid">\n${renderMeanwhile(data.meanwhile)}\n  </div>\n` +
+    `<!-- MEANWHILE:START -->\n<div class="nw-grid">\n${renderMeanwhile(data.meanwhile, t)}\n  </div>\n` +
     "<!-- MEANWHILE:END -->" +
     html.slice(mwEnd);
 
-  html = html.replace(/Last updated [^<]+/, `Last updated ${date}`);
-  html = html.replace(/>\d+ items</, `>${itemCount} items<`);
+  // Update date — keep token in place so replaceAll picks it up at the end
+  html = html.replace(/\{\{META_UPDATED_LABEL\}\} [^<&]+/, `{{META_UPDATED_LABEL}} ${date}`);
+
+  // Update item count — keep token in place
+  html = html.replace(/>\d+\s+\{\{ITEMS_SUFFIX\}\}</, `>${itemCount} {{ITEMS_SUFFIX}}<`);
+
+  // Update UTC timestamp for client-side timezone localisation
   html = html.replace(
     /var utc = new Date\('[^']+'\)/,
     `var utc = new Date('${isoString}')`
   );
+
+  // Apply all flat string tokens from translations
+  for (const [key, val] of Object.entries(t)) {
+    if (typeof val === "string") {
+      html = html.replaceAll(`{{${key}}}`, val);
+    }
+  }
 
   return html;
 }
@@ -258,9 +349,9 @@ async function main() {
     year: "numeric",
   });
 
-  // Step 2: render global-only edition
+  // Step 2: render global-only edition (English)
   console.log("Rendering index.html (global)...");
-  const globalHtml = renderHtml({ ...globalData }, dateStr);
+  const globalHtml = renderHtml({ ...globalData }, dateStr, "en");
   fs.writeFileSync("index.html", globalHtml, "utf8");
   console.log("index.html written.");
 
@@ -273,24 +364,44 @@ async function main() {
       );
       const regionalData = parseJson(regionalRaw);
 
+      // Merge: global items + regional items
+      const mergedData =
+        regionalData.items && regionalData.items.length > 0
+          ? { ...globalData, items: [...globalData.items, ...regionalData.items] }
+          : { ...globalData };
+
       if (regionalData.items && regionalData.items.length > 0) {
-        // Merge: global items + regional items
-        const mergedData = {
-          ...globalData,
-          items: [...globalData.items, ...regionalData.items],
-        };
         console.log(`Added ${regionalData.items.length} regional items for ${region.name}`);
-        const regionalHtml = renderHtml(mergedData, dateStr);
-        fs.writeFileSync(region.file, regionalHtml, "utf8");
-        console.log(`${region.file} written.`);
       } else {
-        // No regional items — write global-only version for this region too
-        console.log(`No regional items for ${region.name}, writing global-only version.`);
-        fs.writeFileSync(region.file, globalHtml, "utf8");
+        console.log(`No regional items for ${region.name}, using global-only content.`);
       }
+
+      // Step 3a: translation pass for locales that need it (Norwegian)
+      let renderData = mergedData;
+      if (region.translate) {
+        console.log(`Translating content into Norwegian...`);
+        try {
+          const toTranslate = {
+            items: mergedData.items,
+            meanwhile: mergedData.meanwhile,
+          };
+          const translatedRaw = await callClaudeSimple(
+            TRANSLATE_PROMPT("Norwegian", JSON.stringify(toTranslate, null, 2))
+          );
+          const translated = parseJson(translatedRaw);
+          renderData = { ...mergedData, ...translated };
+          console.log("Norwegian translation done.");
+        } catch (e) {
+          console.error(`Translation failed, rendering English fallback:`, e.message);
+          // renderData stays as mergedData
+        }
+      }
+
+      const regionalHtml = renderHtml(renderData, dateStr, region.code);
+      fs.writeFileSync(region.file, regionalHtml, "utf8");
+      console.log(`${region.file} written.`);
     } catch (e) {
       console.error(`Regional call failed for ${region.name}:`, e.message);
-      // Non-fatal — write global-only version as fallback
       console.log(`Writing global-only fallback for ${region.name}.`);
       fs.writeFileSync(region.file, globalHtml, "utf8");
     }

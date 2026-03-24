@@ -62,7 +62,7 @@
   <div class="nav-links">
     <a href="index.html">Latest</a>
     <a href="about.html">About</a>
-    <a href="signup.html">Sign up</a>
+    <a href="signup.html">Newsletter</a>
 </div>
 </nav>
 <div class="content">
@@ -84,7 +84,7 @@
   <div class="section">
     <div class="section-title">Using Rumbo</div>
     <p>Each edition contains 3–4 global items selected for broader consequences, not headline volume. If you choose a regional focus in the footer, up to two local items are added — marked with a grey dot (global items carry a gold dot).</p>
-    <p>The Meanwhile section has four lighter items — one each from Culture, Frontiers, Wellbeing, and Worldviews. Hover the category label for a definition.</p>
+    <p>The Meanwhile section has four lighter items — one each from Culture, Science & tech, Wellbeing, and Worldviews. Hover the category label for a definition.</p>
     <p>The ↗ arrow next to each item opens a DuckDuckGo search for that story. The source count (~N sources) is an estimate of independent reporting clusters — more sources means wider coverage, not that the story is accurate. Hover for details.</p>
     <p>Rumbo updates at least once daily. Errors will occur. Think independently.</p>
     <p>Feedback: <a href="mailto:&#105;&#110;&#102;&#111;&#64;&#114;&#117;&#109;&#98;&#111;&#46;&#119;&#116;&#102;" style="color:#7a5c0a;">&#105;&#110;&#102;&#111;&#64;&#114;&#117;&#109;&#98;&#111;&#46;&#119;&#116;&#102;</a>.</p>
@@ -104,15 +104,16 @@
  - No individual names in headlines unless the person is irreplaceable to the story. Lead with the institution, country, or dynamic instead.
  - Never include specific prices, rates, or market figures (oil price, exchange rates, stock levels) — these change daily and will be outdated. Describe direction and magnitude qualitatively instead (e.g. "oil prices surged to historic highs" not "$110 per barrel").
  - Only include items that have new developments or reporting within the last 72 hours. If a story's most recent coverage is older than 72 hours, skip it regardless of significance.
-  - Exactly two sentences per item. Count the words — each sentence must be 20 words or fewer. Cut ruthlessly: what actually shifted, and how it moves the world.
+ - Exactly two sentences per item. Count the words — each sentence must be 20 words or fewer. Cut ruthlessly: what actually shifted, and how it moves the world.
  - Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania
  - Count genuinely independent source clusters per item (organisations that did their own reporting, not syndication). Include as a "sources" integer.
- - Exactly 4 Meanwhile items, one per category in this order: culture, frontiers, wellbeing, worldviews. All four required every time.
+ - Exactly 4 Meanwhile items, one per category in this order: culture, science_tech, wellbeing, worldviews. All four required every time.
  - Meanwhile = things worth knowing, not current headlines. Maximum 15 words each, no analysis.
  - Meanwhile items must not repeat any story already in the main feed.
  - Meanwhile items must reflect something genuinely new or newly reported within the last 72 hours, not established facts or old studies being recycled.
+ - Each Meanwhile item must include a "search" field with a good DuckDuckGo search query for that item.
  - Culture: the lighter side of being human — sport, art, entertainment
- - Frontiers: science and tech — what is becoming possible
+ - Science_tech: what is becoming possible
  - Wellbeing: health, medicine, longevity — how people are living
  - Worldviews: belief systems, ideological shifts, religious movements, or political culture — how groups define themselves and others. Not news events, not disasters, not policy outcomes.
  - Alien-observer neutrality: no home team, no ideology, describe what actors do not whether they are right
@@ -133,7 +134,7 @@
           <div class="lpill soon">&#127466;&#127480; ES &mdash; soon</div>
           <div class="lpill soon">&#127475;&#127476; NO &mdash; soon</div>
         </div>
-        <div class="locale-dl">Local context</div>
+        <div class="locale-dl">Local news</div>
         <div class="locale-row">
           <div class="lpill active" onclick="setRegion(event,'Global')">&#127757; Global</div>
           <div class="lpill" onclick="setRegion(event,'Spain')">&#127466;&#127480; Spain</div>
@@ -162,7 +163,6 @@ function flagFor(v){var m={'EN':'\ud83c\uddec\ud83c\udde7','ES':'\ud83c\uddea\ud
 document.addEventListener('click',function(){document.getElementById('localeDropdown').classList.remove('open');});
 function setLang(e,val){e.stopPropagation();lang=val;localStorage.setItem('rumbo_lang',val);document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
 function setRegion(e,val){e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
-
         </script>
     </body>
 </html>
