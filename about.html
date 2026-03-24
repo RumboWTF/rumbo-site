@@ -61,7 +61,7 @@
     <a href="index.html">Brief</a>
     <a href="about.html">About</a>
     <a href="signup.html">Newsletter</a>
-</div>
+  </div>
 </nav>
 <div class="content">
   <h1>News that has nothing to sell you.</h1>
@@ -85,7 +85,7 @@
     <p>The Meanwhile section has four lighter items — one each from Culture, Science & tech, Wellbeing, and Worldviews. Hover the category label for a definition.</p>
     <p>The ↗ arrow next to each item opens a DuckDuckGo search for that story. The source count (~N sources) is an estimate of independent reporting clusters — more sources means wider coverage, not that the story is accurate. Hover for details.</p>
     <p>Rumbo updates daily. Errors will occur. Think independently.</p>
-    <p>Feedback: <a href="/cdn-cgi/l/email-protection#4167627071747a67627070717a67627071737a67627070707a676277757a67627070757a67627070767a67627071787a676278797a67627070707a676275777a67627070787a67627070777a67627071737a" style="color:#7a5c0a;">&#105;&#110;&#102;&#111;&#64;&#114;&#117;&#109;&#98;&#111;&#46;&#119;&#116;&#102;</a>.</p>
+    <p>Feedback: <a href="mailto:&#105;&#110;&#102;&#111;&#64;&#114;&#117;&#109;&#98;&#111;&#46;&#119;&#116;&#102;" style="color:#7a5c0a;">&#105;&#110;&#102;&#111;&#64;&#114;&#117;&#109;&#98;&#111;&#46;&#119;&#116;&#102;</a>.</p>
   </div>
 
   <div class="prompt-block">
@@ -102,12 +102,15 @@
  - No individual names in headlines unless the person is irreplaceable to the story. Lead with the institution, country, or dynamic instead.
  - Never include specific prices, rates, or market figures (oil price, exchange rates, stock levels) — these change daily and will be outdated. Describe direction and magnitude qualitatively instead (e.g. "oil prices surged to historic highs" not "$110 per barrel").
  - Only include items that have new developments or reporting within the last 72 hours. If a story's most recent coverage is older than 72 hours, skip it regardless of significance.
+ - Before including any item, verify the publication date of your sources. If you cannot find a source dated within the last 72 hours, do not include that item.
+ - For each item, the newness must be concrete: a vote that happened, a statement made, a figure released, an event that occurred — all within the last 72 hours. Do not include ongoing situations unless something specific changed in that window.
+ - Never include time references like "this week", "on Friday", "recently", or "announced today" in headlines or body text unless you can verify the exact date from a source. Use the factual content only — the freshness is implied by the 72-hour rule.
  - Exactly two sentences per item. Count the words — each sentence must be 20 words or fewer. Cut ruthlessly: what actually shifted, and how it moves the world.
  - Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania
  - Count genuinely independent source clusters per item (organisations that did their own reporting, not syndication). Include as a "sources" integer.
  - Exactly 4 Meanwhile items, one per category in this order: culture, science_tech, wellbeing, worldviews. All four required every time.
  - Meanwhile = things worth knowing, not current headlines. Maximum 15 words each, no analysis.
- - Meanwhile items must not repeat any story already in the main feed.
+ - Meanwhile items must not repeat, reference, or summarise any story, person, event, or entity already included in the main feed items above. If a person, group, country, or event appears in the main feed, it cannot appear in Meanwhile even from a different angle.
  - Meanwhile items must reflect something genuinely new or newly reported within the last 72 hours, not established facts or old studies being recycled.
  - Each Meanwhile item must include a "search" field with a good DuckDuckGo search query for that item.
  - Culture: the lighter side of being human — sport, art, entertainment
@@ -118,7 +121,7 @@
  - Avoid passive voice that hides agency</div>
   </div>
 
- </div>
+</div>
 <footer>
   <span class="footer-left">rumbo.wtf</span>
   <div class="footer-center">
@@ -166,11 +169,6 @@ document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not
 document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){if(p.textContent.trim().indexOf(lang)!==-1){p.classList.add('active');}});
 
 function toggleLocale(e){e.stopPropagation();document.getElementById('localeDropdown').classList.toggle('open');}
-// About page: store preference and navigate to the right index file
-(function(){
-  var target=getFile(lang,region);
-  // Only redirect if explicitly navigating away, not on page load
-})();
 function updateToken(){document.getElementById('localeLabel').textContent=flagFor(lang)+' '+lang+' \u00b7 '+flagFor(region)+' '+region;}
 function flagFor(v){var m={'EN':'\ud83c\uddec\ud83c\udde7','NO':'\ud83c\uddf3\ud83c\uddf4','ES':'\ud83c\uddea\ud83c\uddf8','Global':'\ud83c\udf0d','Spain':'\ud83c\uddea\ud83c\uddf8','Norway':'\ud83c\uddf3\ud83c\uddf4','UK':'\ud83c\uddec\ud83c\udde7','Netherlands':'\ud83c\uddf3\ud83c\uddf1'};return m[v]||'';}
 document.addEventListener('click',function(){document.getElementById('localeDropdown').classList.remove('open');});
@@ -182,4 +180,11 @@ function setLang(e,val){
 }
 function setRegion(e,val){
   e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);
-  document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.
+  document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});
+  e.currentTarget.classList.add('active');updateToken();
+  var target=getFile(lang,region);
+  window.location.href=target;
+}
+</script>
+</body>
+</html>
