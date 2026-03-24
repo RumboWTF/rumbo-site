@@ -153,6 +153,12 @@ function updateSummary(){
   document.getElementById('readtime').textContent='~'+mins+' min read';
 }
 function handleSubmit(){
+  var email=document.getElementById('emailInput').value;
+  var days=Array.from(document.querySelectorAll('.day.on')).map(d=>d.textContent).join('');
+  var regions=selectedRegions.length===0?'global only':selectedRegions.map(r=>names[r]).join(', ');
+  var subject='Rumbo signup interest: '+regions;
+  var body='Email: '+email+'\nDays: '+days+'\nRegions: '+regions;
+  window.location.href='mailto:&#105;&#110;&#102;&#111;&#64;&#114;&#117;&#109;&#98;&#111;&#46;&#119;&#116;&#102;?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
   document.getElementById('comingSoon').style.display='block';
   document.querySelector('.btn').textContent='noted ✓';
   document.querySelector('.btn').style.background='#555';
