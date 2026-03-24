@@ -214,7 +214,7 @@
   // Missing combinations fall back silently to EN version of that region
   var fileMap={
     'EN':{'Global':'index.html','Spain':'index-es.html','Norway':'index-no.html','UK':'index-uk.html','Netherlands':'index-nl.html'},
-    'NO':{'Global':'index-global-no.html','Norway':'index-norway-no.html'}
+    'NO':{'Global':'index-global-no.html','Spain':'index-spain-no.html','Norway':'index-norway-no.html','UK':'index-uk-no.html','Netherlands':'index-nl-no.html'}
   };
   function getFile(l,r){var lm=fileMap[l]||{};return lm[r]||fileMap['EN'][r]||'index.html';}
 

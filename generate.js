@@ -47,10 +47,10 @@ const EN_STRINGS = {
 // Adding Norwegian for a region later = set noFile to the target filename
 
 const REGIONS = [
-  { code: "es", name: "Spain",          file: "index-es.html",  noFile: null },
+  { code: "es", name: "Spain",          file: "index-es.html",  noFile: "index-spain-no.html" },
   { code: "no", name: "Norway",         file: "index-no.html",  noFile: "index-norway-no.html" },
-  { code: "uk", name: "United Kingdom", file: "index-uk.html",  noFile: null },
-  { code: "nl", name: "Netherlands",    file: "index-nl.html",  noFile: null },
+  { code: "uk", name: "United Kingdom", file: "index-uk.html",  noFile: "index-uk-no.html" },
+  { code: "nl", name: "Netherlands",    file: "index-nl.html",  noFile: "index-nl-no.html" },
 ];
 
 // Global Norwegian file — generated separately from the REGIONS loop
