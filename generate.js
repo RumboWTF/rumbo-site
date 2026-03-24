@@ -34,7 +34,7 @@ Apply the following editorial rules:
 - No individual names in headlines unless the person is irreplaceable to the story. Lead with the institution, country, or dynamic instead.
 - Never include specific prices, rates, or market figures (oil price, exchange rates, stock levels) — these change daily and will be outdated. Describe direction and magnitude qualitatively instead (e.g. "oil prices surged to historic highs" not "$110 per barrel").
 - Exactly two sentences per item. Count the words — each sentence must be 20 words or fewer. Cut ruthlessly: what actually shifted, and how it moves the world
-- Geo tag each item: Global / Europe / Asia / Africa / Americas
+- Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania
 - For each item, count the number of genuinely independent source clusters (organisations that did their own reporting, not syndication of the same wire). Include this as a "sources" integer. Do not count outlets republishing the same wire service as independent sources.
 - You MUST include exactly 4 Meanwhile items, one for EACH of these four categories in this exact order: culture, frontiers, wellbeing, worldviews. All four are required every time.
 - Meanwhile = things worth knowing, not current headlines. Each item maximum 15 words, no analysis.
