@@ -330,6 +330,22 @@ function renderHtml(data, date, locale = "en") {
     `var utc = new Date('${isoString}')`
   );
 
+  // Hardcode timestamp locale per file — not dependent on localStorage lang
+  const jsLocaleMap = { en: "en-GB", no: "nb-NO", es: "es-ES" };
+  html = html.replace("{{JS_LOCALE}}", jsLocaleMap[locale] || "en-GB");
+
+  // Set correct active language pill based on render locale (baked in, no JS dependency)
+  if (locale !== "en") {
+    html = html.replace(
+      `<div class="lpill active" onclick="setLang(event,'EN')">`,
+      `<div class="lpill" onclick="setLang(event,'EN')">`
+    );
+    html = html.replace(
+      `<div class="lpill" onclick="setLang(event,'${locale.toUpperCase()}')">`,
+      `<div class="lpill active" onclick="setLang(event,'${locale.toUpperCase()}')">`
+    );
+  }
+
   // Apply all flat string tokens from translations
   for (const [key, val] of Object.entries(t)) {
     if (typeof val === "string") {
