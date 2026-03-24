@@ -32,7 +32,7 @@ Apply the following editorial rules:
 - Before finalising, ask: does this set of stories reflect only one region's news cycle? If more than two items share the same geopolitical frame, replace the weakest with the most consequential development from a different part of the world.
 - Apply a genuine global lens. Before finalising, ask: does this selection reflect only the most-covered corners of the world? If yes, replace the weakest item with the most consequential under-reported development from elsewhere.
 - No individual names in headlines unless the person is irreplaceable to the story. Lead with the institution, country, or dynamic instead.
-- Never include specific figures (monetary amounts, percentages, casualty counts) unless they appear in multiple independent sources. If uncertain, describe impact qualitatively instead.
+- Never include specific prices, rates, or market figures (oil price, exchange rates, stock levels) — these change daily and will be outdated. Describe direction and magnitude qualitatively instead (e.g. "oil prices surged to historic highs" not "$110 per barrel").
 - Exactly two sentences per item. Count the words — each sentence must be 20 words or fewer. Cut ruthlessly: what actually shifted, and how it moves the world
 - Geo tag each item: Global / Europe / Asia / Africa / Americas
 - For each item, count the number of genuinely independent source clusters (organisations that did their own reporting, not syndication of the same wire). Include this as a "sources" integer. Do not count outlets republishing the same wire service as independent sources.
