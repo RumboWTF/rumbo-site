@@ -73,6 +73,7 @@ Apply the following editorial rules:
 - No individual names in headlines unless the person is irreplaceable to the story. Lead with the institution, country, or dynamic instead.
 - Never include specific prices, rates, or market figures (oil price, exchange rates, stock levels) — these change daily and will be outdated. Describe direction and magnitude qualitatively instead (e.g. "oil prices surged to historic highs" not "$110 per barrel").
 - Only include items that have new developments or reporting within the last 72 hours. If a story's most recent coverage is older than 72 hours, skip it regardless of significance.
+- If the most recent independent source you can find for a story is more than 30 days old, it is not eligible regardless of how the headline is phrased.
 - Never include time references like "this week", "on Friday", "recently", or "announced today" in headlines or body text unless you can verify the exact date from a source. Use the factual content only — the freshness is implied by the 72-hour rule.
 - Exactly two sentences per item. Count the words — each sentence must be 20 words or fewer. Cut ruthlessly: what actually shifted, and how it moves the world.
 - Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania
