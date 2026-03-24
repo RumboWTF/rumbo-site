@@ -123,6 +123,9 @@ Rules:
 - Exactly two sentences per item. Each sentence must be 20 words or fewer. Cut ruthlessly.
 - Never include specific figures (monetary amounts, percentages, casualty counts) unless they appear in multiple independent sources. If uncertain, describe impact qualitatively instead.
 - Only include items that have new developments or reporting within the last 72 hours. If a story's most recent coverage is older than 72 hours, skip it regardless of significance.
+- Before including any item, verify the publication date of your sources. If you cannot find a source dated within the last 72 hours, do not include that item.
+- For each item, the newness must be concrete: a vote that happened, a statement made, a figure released, an event that occurred — all within the last 72 hours. Do not include ongoing situations unless something specific changed in that window.
+- If you cannot find 1-2 genuinely fresh items for this region, return only one item — the most recent thing you can verify — rather than padding with older stories.
 - Count independent source clusters per item
 - You MUST return at least one item. If no major developments exist, include the most noteworthy ${regionName} story from the last 72 hours even if smaller in scale than the global items.
 
