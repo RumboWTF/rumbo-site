@@ -39,6 +39,7 @@ Apply the following editorial rules:
 - You MUST include exactly 4 Meanwhile items, one for EACH of these four categories in this exact order: culture, frontiers, wellbeing, worldviews. All four are required every time.
 - Meanwhile = things worth knowing, not current headlines. Each item maximum 15 words, no analysis.
 - Meanwhile items must not repeat or summarise any story already included in the main feed items above.
+- Meanwhile items must reflect something genuinely new or newly reported within the last 72 hours, not established facts or old studies being recycled.
 - Each Meanwhile item must include a "search" field with a good DuckDuckGo search query for that item.
 - Culture: the lighter side of being human — sport, art, entertainment
 - Frontiers: science and tech — what is becoming possible
