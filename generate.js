@@ -78,7 +78,7 @@ Apply the following editorial rules:
 - For each item, count the number of genuinely independent source clusters (organisations that did their own reporting, not syndication of the same wire). Include this as a "sources" integer. Do not count outlets republishing the same wire service as independent sources.
 - You MUST include exactly 4 Meanwhile items, one for EACH of these four categories in this exact order: culture, science_tech, wellbeing, worldviews. All four are required every time.
 - Meanwhile = things worth knowing, not current headlines. Each item maximum 15 words, no analysis.
-- Meanwhile items must not repeat or summarise any story already included in the main feed items above.
+- Meanwhile items must not repeat, reference, or summarise any story, person, event, or entity already included in the main feed items above. If a person, group, country, or event appears in the main feed, it cannot appear in Meanwhile even from a different angle.
 - Meanwhile items must reflect something genuinely new or newly reported within the last 72 hours, not established facts or old studies being recycled.
 - Each Meanwhile item must include a "search" field with a good DuckDuckGo search query for that item.
 - Culture: the lighter side of being human — sport, art, entertainment

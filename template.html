@@ -203,6 +203,7 @@
   <div class="footer-right">
     <a href="index.html">{{FOOTER_LATEST}}</a>
     <a href="about.html">{{FOOTER_ABOUT}}</a>
+    <a href="signup.html">{{NAV_SIGNUP}}</a>
   </div>
 </footer>
 <script>
@@ -241,15 +242,13 @@
     e.stopPropagation();lang=val;localStorage.setItem('rumbo_lang',val);
     document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});
     e.currentTarget.classList.add('active');updateToken();
-    var target=getFile(lang,region);
-    if(window.location.pathname.indexOf(target)===-1){window.location.href=target;}
+    window.location.href=getFile(lang,region);
   }
   function setRegion(e,val){
     e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);
     document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});
     e.currentTarget.classList.add('active');updateToken();
-    var target=getFile(lang,region);
-    if(window.location.pathname.indexOf(target)===-1){window.location.href=target;}
+    window.location.href=getFile(lang,region);
   }
 
   // Localise the update timestamp to the reader's timezone
@@ -257,7 +256,9 @@
     try {
       var utc = new Date('2026-03-21T07:00:00Z');
       var opts = {day:'numeric', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit', hour12: false};
-      var local = utc.toLocaleString(undefined, opts);
+      var localeMap={'EN':'en-GB','NO':'nb-NO','ES':'es-ES'};
+      var jsLocale=localeMap[lang]||undefined;
+      var local = utc.toLocaleString(jsLocale, opts);
       document.getElementById('meta-date').textContent = '{{META_UPDATED_LABEL}} ' + local;
     } catch(e) {}
   })();

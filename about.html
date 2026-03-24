@@ -85,7 +85,7 @@
     <p>The Meanwhile section has four lighter items — one each from Culture, Science & tech, Wellbeing, and Worldviews. Hover the category label for a definition.</p>
     <p>The ↗ arrow next to each item opens a DuckDuckGo search for that story. The source count (~N sources) is an estimate of independent reporting clusters — more sources means wider coverage, not that the story is accurate. Hover for details.</p>
     <p>Rumbo updates at least once daily. Errors will occur. Think independently.</p>
-    <p>Feedback: <a href="mailto:&#105;&#110;&#102;&#111;&#64;&#114;&#117;&#109;&#98;&#111;&#46;&#119;&#116;&#102;" style="color:#7a5c0a;">&#105;&#110;&#102;&#111;&#64;&#114;&#117;&#109;&#98;&#111;&#46;&#119;&#116;&#102;</a>.</p>
+    <p>Feedback: <a href="/cdn-cgi/l/email-protection#4167627071747a67627070717a67627071737a67627070707a676277757a67627070757a67627070767a67627071787a676278797a67627070707a676275777a67627070787a67627070777a67627071737a" style="color:#7a5c0a;">&#105;&#110;&#102;&#111;&#64;&#114;&#117;&#109;&#98;&#111;&#46;&#119;&#116;&#102;</a>.</p>
   </div>
 
   <div class="prompt-block">
@@ -146,6 +146,7 @@
   <div class="footer-right">
     <a href="index.html">Latest</a>
     <a href="about.html">About</a>
+    <a href="signup.html">Newsletter</a>
   </div>
 </footer>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
@@ -177,14 +178,8 @@ function setLang(e,val){
   e.stopPropagation();lang=val;localStorage.setItem('rumbo_lang',val);
   document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});
   e.currentTarget.classList.add('active');updateToken();
+  window.location.href=getFile(lang,region);
 }
 function setRegion(e,val){
   e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);
-  document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});
-  e.currentTarget.classList.add('active');updateToken();
-  var target=getFile(lang,region);
-  window.location.href=target;
-}
-</script>
-</body>
-</html>
+  document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.
