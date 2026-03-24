@@ -187,7 +187,7 @@
         <div class="locale-row">
           <div class="lpill active" onclick="setLang(event,'EN')">&#127468;&#127463; EN</div>
           <div class="lpill soon">&#127466;&#127480; ES &mdash; soon</div>
-          <div class="lpill soon">&#127475;&#127476; NO &mdash; soon</div>
+          <div class="lpill" onclick="setLang(event,'NO')">&#127475;&#127476; NO</div>
         </div>
         <div class="locale-dl">{{LOCALE_LOCAL_CONTEXT}}</div>
         <div class="locale-row">
@@ -208,25 +208,59 @@
 <script>
   var lang=localStorage.getItem('rumbo_lang')||'EN';
   var region=localStorage.getItem('rumbo_region')||'Global';
+
+  // 2D file map: fileMap[lang][region]
+  // Missing combinations fall back silently to EN version of that region
+  var fileMap={
+    'EN':{'Global':'index.html','Spain':'index-es.html','Norway':'index-no.html','UK':'index-uk.html','Netherlands':'index-nl.html'},
+    'NO':{'Global':'index-global-no.html','Norway':'index-norway-no.html'}
+  };
+  function getFile(l,r){var lm=fileMap[l]||{};return lm[r]||fileMap['EN'][r]||'index.html';}
+
+  // Startup: redirect to stored preference if not already on the right file
+  (function(){
+    var target=getFile(lang,region);
+    if(window.location.pathname.indexOf(target)===-1){window.location.href=target;}
+  })();
+
   updateToken();
+
+  // Mark active region pill
   document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill').forEach(function(p){p.classList.remove('active');});
   document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill').forEach(function(p){if(p.textContent.trim().indexOf(region)!==-1){p.classList.add('active');}});
-  (function(){var fileMap={'Global':'index.html','Spain':'index-es.html','Norway':'index-no.html','UK':'index-uk.html','Netherlands':'index-nl.html'};var target=fileMap[region];if(target&&window.location.pathname.indexOf(target)===-1){window.location.href=target;}})();
-  function updateToken(){document.getElementById('localeLabel').textContent=flagFor(lang)+' '+lang+' \u00b7 '+flagFor(region)+' '+region;}
-  function flagFor(v){var m={'EN':'\ud83c\uddec\ud83c\udde7','ES':'\ud83c\uddea\ud83c\uddf8','NO':'\ud83c\uddf3\ud83c\uddf4','Global':'\ud83c\udf0d','Spain':'\ud83c\uddea\ud83c\uddf8','Norway':'\ud83c\uddf3\ud83c\uddf4','UK':'\ud83c\uddec\ud83c\udde7','Netherlands':'\ud83c\uddf3\ud83c\uddf1'};return m[v]||'';}
-function toggleLocale(e){e.stopPropagation();document.getElementById('localeDropdown').classList.toggle('open');}
-document.addEventListener('click',function(){document.getElementById('localeDropdown').classList.remove('open');});
-function setLang(e,val){e.stopPropagation();lang=val;localStorage.setItem('rumbo_lang',val);document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();}
-function setRegion(e,val){e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});e.currentTarget.classList.add('active');updateToken();var fileMap={'Global':'index.html','Spain':'index-es.html','Norway':'index-no.html','UK':'index-uk.html','Netherlands':'index-nl.html'};if(fileMap[val]&&window.location.pathname.indexOf(fileMap[val])===-1){window.location.href=fileMap[val];}}
+  // Mark active language pill
+  document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});
+  document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){if(p.textContent.trim().indexOf(lang)!==-1){p.classList.add('active');}});
 
-// Localise the update timestamp to the reader's timezone
-(function(){
-  try {
-    var utc = new Date('2026-03-21T07:00:00Z'); // 08:00 CET = 07:00 UTC
-    var opts = {day:'numeric', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit', hour12: false};    var local = utc.toLocaleString(undefined, opts);
-    document.getElementById('meta-date').textContent = '{{META_UPDATED_LABEL}} ' + local;
-  } catch(e) {}
-})();
+  function updateToken(){document.getElementById('localeLabel').textContent=flagFor(lang)+' '+lang+' \u00b7 '+flagFor(region)+' '+region;}
+  function flagFor(v){var m={'EN':'\ud83c\uddec\ud83c\udde7','NO':'\ud83c\uddf3\ud83c\uddf4','ES':'\ud83c\uddea\ud83c\uddf8','Global':'\ud83c\udf0d','Spain':'\ud83c\uddea\ud83c\uddf8','Norway':'\ud83c\uddf3\ud83c\uddf4','UK':'\ud83c\uddec\ud83c\udde7','Netherlands':'\ud83c\uddf3\ud83c\uddf1'};return m[v]||'';}
+  function toggleLocale(e){e.stopPropagation();document.getElementById('localeDropdown').classList.toggle('open');}
+  document.addEventListener('click',function(){document.getElementById('localeDropdown').classList.remove('open');});
+
+  function setLang(e,val){
+    e.stopPropagation();lang=val;localStorage.setItem('rumbo_lang',val);
+    document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});
+    e.currentTarget.classList.add('active');updateToken();
+    var target=getFile(lang,region);
+    if(window.location.pathname.indexOf(target)===-1){window.location.href=target;}
+  }
+  function setRegion(e,val){
+    e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);
+    document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});
+    e.currentTarget.classList.add('active');updateToken();
+    var target=getFile(lang,region);
+    if(window.location.pathname.indexOf(target)===-1){window.location.href=target;}
+  }
+
+  // Localise the update timestamp to the reader's timezone
+  (function(){
+    try {
+      var utc = new Date('2026-03-21T07:00:00Z');
+      var opts = {day:'numeric', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit', hour12: false};
+      var local = utc.toLocaleString(undefined, opts);
+      document.getElementById('meta-date').textContent = '{{META_UPDATED_LABEL}} ' + local;
+    } catch(e) {}
+  })();
 </script>
 </body>
 </html>

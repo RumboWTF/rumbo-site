@@ -1,5 +1,5 @@
 // Rumbo.wtf — daily generation script
-// Calls Claude API (global + regional), renders one HTML file per region
+// Calls Claude API (global + regional), renders one HTML file per region/language combination
 // Run: node generate.js
 
 import Anthropic from "@anthropic-ai/sdk";
@@ -42,15 +42,19 @@ const EN_STRINGS = {
 };
 
 // ─── Region config ────────────────────────────────────────────────────────────
-// Add new regions here — nothing else needs to change.
-// translate: true → run a translation pass before rendering (Norwegian only for now)
+// file:   English output filename
+// noFile: Norwegian output filename (null = no Norwegian version for this region)
+// Adding Norwegian for a region later = set noFile to the target filename
 
 const REGIONS = [
-  { code: "es", name: "Spain",           file: "index-es.html" },
-  { code: "no", name: "Norway",          file: "index-no.html", translate: true },
-  { code: "uk", name: "United Kingdom",  file: "index-uk.html" },
-  { code: "nl", name: "Netherlands",     file: "index-nl.html" },
+  { code: "es", name: "Spain",          file: "index-es.html",  noFile: null },
+  { code: "no", name: "Norway",         file: "index-no.html",  noFile: "index-norway-no.html" },
+  { code: "uk", name: "United Kingdom", file: "index-uk.html",  noFile: null },
+  { code: "nl", name: "Netherlands",    file: "index-nl.html",  noFile: null },
 ];
+
+// Global Norwegian file — generated separately from the REGIONS loop
+const GLOBAL_NO_FILE = "index-global-no.html";
 
 // ─── Prompts ──────────────────────────────────────────────────────────────────
 
@@ -231,6 +235,17 @@ function getTranslations(locale) {
   };
 }
 
+// ─── Translation helper ────────────────────────────────────────────────────────
+
+async function translateData(data, langName) {
+  const toTranslate = { items: data.items, meanwhile: data.meanwhile };
+  const translatedRaw = await callClaudeSimple(
+    TRANSLATE_PROMPT(langName, JSON.stringify(toTranslate, null, 2))
+  );
+  const translated = parseJson(translatedRaw);
+  return { ...data, ...translated };
+}
+
 // ─── HTML rendering ───────────────────────────────────────────────────────────
 
 function ddgUrl(query) {
@@ -349,13 +364,26 @@ async function main() {
     year: "numeric",
   });
 
-  // Step 2: render global-only edition (English)
-  console.log("Rendering index.html (global)...");
+  // Step 2: render global EN edition
+  console.log("Rendering index.html (global, EN)...");
   const globalHtml = renderHtml({ ...globalData }, dateStr, "en");
   fs.writeFileSync("index.html", globalHtml, "utf8");
   console.log("index.html written.");
 
-  // Step 3: regional editions — one API call per region
+  // Step 3: render global NO edition
+  console.log("Translating global edition to Norwegian...");
+  try {
+    const globalDataNo = await translateData(globalData, "Norwegian");
+    const globalNoHtml = renderHtml(globalDataNo, dateStr, "no");
+    fs.writeFileSync(GLOBAL_NO_FILE, globalNoHtml, "utf8");
+    console.log(`${GLOBAL_NO_FILE} written.`);
+  } catch (e) {
+    console.error(`Global NO translation failed: ${e.message}`);
+    console.log(`Writing EN fallback for ${GLOBAL_NO_FILE}.`);
+    fs.writeFileSync(GLOBAL_NO_FILE, globalHtml, "utf8");
+  }
+
+  // Step 4: regional editions
   for (const region of REGIONS) {
     console.log(`Calling Claude for ${region.name} regional top-up...`);
     try {
@@ -376,38 +404,36 @@ async function main() {
         console.log(`No regional items for ${region.name}, using global-only content.`);
       }
 
-      // Step 3a: translation pass for locales that need it (Norwegian)
-      let renderData = mergedData;
-      if (region.translate) {
-        console.log(`Translating content into Norwegian...`);
-        try {
-          const toTranslate = {
-            items: mergedData.items,
-            meanwhile: mergedData.meanwhile,
-          };
-          const translatedRaw = await callClaudeSimple(
-            TRANSLATE_PROMPT("Norwegian", JSON.stringify(toTranslate, null, 2))
-          );
-          const translated = parseJson(translatedRaw);
-          renderData = { ...mergedData, ...translated };
-          console.log("Norwegian translation done.");
-        } catch (e) {
-          console.error(`Translation failed, rendering English fallback:`, e.message);
-          // renderData stays as mergedData
-        }
-      }
-
-      const regionalHtml = renderHtml(renderData, dateStr, region.code);
+      // Render EN version
+      const regionalHtml = renderHtml(mergedData, dateStr, "en");
       fs.writeFileSync(region.file, regionalHtml, "utf8");
       console.log(`${region.file} written.`);
+
+      // Render NO version if configured
+      if (region.noFile) {
+        console.log(`Translating ${region.name} edition to Norwegian...`);
+        try {
+          const mergedDataNo = await translateData(mergedData, "Norwegian");
+          const regionalNoHtml = renderHtml(mergedDataNo, dateStr, "no");
+          fs.writeFileSync(region.noFile, regionalNoHtml, "utf8");
+          console.log(`${region.noFile} written.`);
+        } catch (e) {
+          console.error(`NO translation failed for ${region.name}: ${e.message}`);
+          console.log(`Writing EN fallback for ${region.noFile}.`);
+          fs.writeFileSync(region.noFile, regionalHtml, "utf8");
+        }
+      }
     } catch (e) {
       console.error(`Regional call failed for ${region.name}:`, e.message);
-      console.log(`Writing global-only fallback for ${region.name}.`);
+      console.log(`Writing global-only EN fallback for ${region.name}.`);
       fs.writeFileSync(region.file, globalHtml, "utf8");
+      if (region.noFile) {
+        fs.writeFileSync(region.noFile, globalHtml, "utf8");
+      }
     }
   }
 
-  // Step 4: save debug JSON
+  // Step 5: save debug JSON
   fs.writeFileSync("last_output.json", JSON.stringify(globalData, null, 2), "utf8");
   console.log("Raw JSON saved to last_output.json");
   console.log("Done.");
