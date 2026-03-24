@@ -1,8 +1,8 @@
 {
   "no": {
     "MEANWHILE_TITLE": "Ellers...",
-    "ITEMS_SUFFIX": "saker",
-    "META_UPDATED_LABEL": "Sist oppdatert",
+    "ITEMS_SUFFIX": "signaler",
+    "META_UPDATED_LABEL": "Oppdatert:",
     "LOCALE_LANGUAGE": "Språk",
     "LOCALE_LOCAL_CONTEXT": "Lokale nyheter",
     "SOURCE_PILL_LABEL": "kilder",

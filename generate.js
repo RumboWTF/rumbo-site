@@ -15,11 +15,11 @@ const TRANSLATIONS = JSON.parse(fs.readFileSync("translations.json", "utf8"));
 // Non-English locales override selectively via translations.json.
 // Nav and footer links intentionally stay in English for all locales.
 const EN_STRINGS = {
-  NAV_LATEST: "Latest",
+  NAV_LATEST: "Brief",
   NAV_ABOUT: "About",
   NAV_SIGNUP: "Newsletter",
-  META_UPDATED_LABEL: "Last updated",
-  ITEMS_SUFFIX: "items",
+  META_UPDATED_LABEL: "Edition:",
+  ITEMS_SUFFIX: "signals",
   MEANWHILE_TITLE: "Meanwhile",
   LOCALE_LANGUAGE: "Language",
   LOCALE_LOCAL_CONTEXT: "Local news",

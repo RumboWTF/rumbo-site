@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Latest · Rumbo</title>
+  <title>Brief · Rumbo</title>
   <link rel="icon" type="image/png" href="favicon.png"/>
   <style>
     *{box-sizing:border-box;margin:0;padding:0;}
@@ -82,7 +82,7 @@
 </div>
 </nav>
 <div class="meta-bar">
-  <span class="meta-date" id="meta-date">{{META_UPDATED_LABEL}} 21 March 2026 &middot; 08:00 CET</span>
+  <span class="meta-date" id="meta-date">{{META_UPDATED_LABEL}} 21 March 2026</span>
   <span class="meta-count">5 {{ITEMS_SUFFIX}}</span>
 </div>
 
@@ -255,7 +255,7 @@
   (function(){
     try {
       var utc = new Date('2026-03-21T07:00:00Z');
-      var opts = {day:'numeric', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit', hour12: false};
+      var opts = {day:'numeric', month:'long', year:'numeric'};
       var jsLocale='{{JS_LOCALE}}';
       var local = utc.toLocaleString(jsLocale, opts);
       document.getElementById('meta-date').textContent = '{{META_UPDATED_LABEL}} ' + local;
