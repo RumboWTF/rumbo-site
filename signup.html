@@ -157,7 +157,7 @@ function handleSubmit(){
   var days=Array.from(document.querySelectorAll('.day.on')).map(d=>d.textContent).join('');
   var regions=selectedRegions.length===0?'global only':selectedRegions.map(r=>names[r]).join(', ');
   var subject='Rumbo signup interest: '+regions;
-  var body='Email: '+email+'\nDays: '+days+'\nRegions: '+regions;
+  var body='Days: '+days+'\nRegions: '+regions+'\nOther comments:';
   window.location.href='mailto:info@rumbo.wtf?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
   document.getElementById('comingSoon').style.display='block';
   document.querySelector('.btn').textContent='noted ✓';
