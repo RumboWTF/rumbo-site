@@ -491,7 +491,7 @@ try {
           if (region.esFile) {
           fs.writeFileSync(region.esFile, globalHtml, "utf8");
         }
-    
+      }
   }
 
   // Step 5: save debug JSON
