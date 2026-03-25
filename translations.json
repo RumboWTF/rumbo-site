@@ -19,4 +19,25 @@
       "worldviews": "Trossystemer og gruppetenking"
     }
   }
+  ,
+  "es": {
+    "MEANWHILE_TITLE": "Mientras tanto...",
+    "ITEMS_SUFFIX": "señales",
+    "META_UPDATED_LABEL": "Edición:",
+    "LOCALE_LANGUAGE": "Language",
+    "LOCALE_LOCAL_CONTEXT": "Local news",
+    "SOURCE_PILL_LABEL": "fuentes",
+    "CATEGORIES": {
+      "culture": "Cultura y deporte",
+      "science_tech": "Ciencia & tech",
+      "wellbeing": "Bienestar",
+      "worldviews": "Cosmovisiones"
+    },
+    "CATEGORY_TOOLTIPS": {
+      "culture": "El lado más ligero de ser humano",
+      "science_tech": "Lo que se está volviendo posible",
+      "wellbeing": "Salud, medicina y cómo vive la gente",
+      "worldviews": "Sistemas de creencias y pensamiento colectivo"
+    }
+  }
 }

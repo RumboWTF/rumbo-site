@@ -47,14 +47,15 @@ const EN_STRINGS = {
 // Adding Norwegian for a region later = set noFile to the target filename
 
 const REGIONS = [
-  { code: "es", name: "Spain",          file: "index-es.html",  noFile: "index-spain-no.html" },
-  { code: "no", name: "Norway",         file: "index-no.html",  noFile: "index-norway-no.html" },
-  { code: "uk", name: "United Kingdom", file: "index-uk.html",  noFile: "index-uk-no.html" },
-  { code: "nl", name: "Netherlands",    file: "index-nl.html",  noFile: "index-nl-no.html" },
+  { code: "es", name: "Spain",          file: "index-es.html",  noFile: "index-spain-no.html",  esFile: "index-spain-es.html" },
+  { code: "no", name: "Norway",         file: "index-no.html",  noFile: "index-norway-no.html", esFile: "index-norway-es.html" },
+  { code: "uk", name: "United Kingdom", file: "index-uk.html",  noFile: "index-uk-no.html",     esFile: "index-uk-es.html" },
+  { code: "nl", name: "Netherlands",    file: "index-nl.html",  noFile: "index-nl-no.html",     esFile: "index-nl-es.html" },
 ];
 
 // Global Norwegian file — generated separately from the REGIONS loop
 const GLOBAL_NO_FILE = "index-global-no.html";
+const GLOBAL_ES_FILE = "index-global-es.html";
 
 // ─── Prompts ──────────────────────────────────────────────────────────────────
 
@@ -412,8 +413,19 @@ async function main() {
     console.log(`Writing EN fallback for ${GLOBAL_NO_FILE}.`);
     fs.writeFileSync(GLOBAL_NO_FILE, globalHtml, "utf8");
   }
-
-  // Step 4: regional editions
+  // Step 4: render global ES edition
+console.log("Translating global edition to Spanish...");
+try {
+  const globalDataEs = await translateData(globalData, "Spanish");
+  const globalEsHtml = renderHtml(globalDataEs, dateStr, "es");
+  fs.writeFileSync(GLOBAL_ES_FILE, globalEsHtml, "utf8");
+  console.log(`${GLOBAL_ES_FILE} written.`);
+} catch (e) {
+  console.error(`Global ES translation failed: ${e.message}`);
+  console.log(`Writing EN fallback for ${GLOBAL_ES_FILE}.`);
+  fs.writeFileSync(GLOBAL_ES_FILE, globalHtml, "utf8");
+}
+  // Step 5: regional editions
   for (const region of REGIONS) {
     console.log(`Calling Claude for ${region.name} regional top-up...`);
     try {
@@ -453,6 +465,22 @@ async function main() {
           fs.writeFileSync(region.noFile, regionalHtml, "utf8");
         }
       }
+      // Render ES version if configured
+      if (region.esFile) {
+        console.log(`Translating ${region.name} edition to Spanish...`);
+        try {
+          const mergedDataEs = await translateData(mergedData, "Spanish");
+          const regionalEsHtml = renderHtml(mergedDataEs, dateStr, "es");
+          fs.writeFileSync(region.esFile, regionalEsHtml, "utf8");
+          console.log(`${region.esFile} written.`);
+        } catch (e) {
+          console.error(`ES translation failed for ${region.name}: ${e.message}`);
+          console.log(`Writing EN fallback for ${region.esFile}.`);
+          fs.writeFileSync(region.esFile, regionalHtml, "utf8");
+        }
+      }
+
+      
     } catch (e) {
       console.error(`Regional call failed for ${region.name}:`, e.message);
       console.log(`Writing global-only EN fallback for ${region.name}.`);
@@ -460,7 +488,10 @@ async function main() {
       if (region.noFile) {
         fs.writeFileSync(region.noFile, globalHtml, "utf8");
       }
-    }
+          if (region.esFile) {
+          fs.writeFileSync(region.esFile, globalHtml, "utf8");
+        }
+    
   }
 
   // Step 5: save debug JSON
