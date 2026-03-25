@@ -153,13 +153,22 @@ CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end w
   ]
 }`;
 
-const TRANSLATE_PROMPT = (langName, contentJson) =>
-  `Translate the following Rumbo.wtf JSON content into ${langName}.
+// Style anchors per language — multiple outlets to avoid ideological lean
+const STYLE_ANCHORS = {
+  Spanish: "El País, El Mundo, and RTVE",
+};
+
+const TRANSLATE_PROMPT = (langName, contentJson) => {
+  const anchor = STYLE_ANCHORS[langName];
+  const styleInstruction = anchor
+    ? `- Write as a journalist would for outlets like ${anchor} — use the vocabulary, sentence rhythm, and editorial voice of quality ${langName} journalism, not translated English phrasing.`
+    : `- Write as if originally authored in ${langName} — natural phrasing, not word-for-word translation.`;
+  return `Translate the following Rumbo.wtf JSON content into ${langName}.
 
 Rules:
 - Translate ONLY the string values of: "headline" and "body" in items; "text" in meanwhile items
 - Do NOT translate: JSON keys, "geo" values, "category" values, "search" field values, integers
-- Write as if originally authored in ${langName} — natural phrasing, not word-for-word translation
+${styleInstruction}
 - Keep headlines punchy and direct
 - Preserve the same sentence structure and brevity as the original
 - Preserve all punctuation conventions and em-dashes
@@ -167,6 +176,7 @@ Rules:
 CRITICAL: Return ONLY the raw JSON object with the exact same structure as the input. Start with { and end with }. No other text.
 
 ${contentJson}`;
+};
 
 // ─── API calls ────────────────────────────────────────────────────────────────
 
