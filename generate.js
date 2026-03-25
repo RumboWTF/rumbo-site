@@ -170,8 +170,7 @@ Rules:
 - Do NOT translate: JSON keys, "geo" values, "category" values, "search" field values, integers
 ${styleInstruction}
 - Keep headlines punchy and direct
-- Preserve the same sentence structure and brevity as the original
-- Preserve all punctuation conventions and em-dashes
+- Do not use any markdown formatting (no asterisks, underscores, or other markup) in translated text
 
 CRITICAL: Return ONLY the raw JSON object with the exact same structure as the input. Start with { and end with }. No other text.
 
