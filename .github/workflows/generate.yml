@@ -26,7 +26,7 @@ jobs:
       - name: Run generator
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: node generate.js --region=es
+        run: node generate.js
 
       - name: Commit and push
         run: |
