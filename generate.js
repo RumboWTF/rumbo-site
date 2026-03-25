@@ -28,7 +28,7 @@ const EN_STRINGS = {
   SOURCE_TIP: "Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.",
   SOURCE_PILL_LABEL: "sources",
   CATEGORIES: {
-    culture: "Culture",
+    culture: "Culture & sports",
     science_tech: "Science & tech",
     wellbeing: "Wellbeing",
     worldviews: "Worldviews",
