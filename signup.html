@@ -36,6 +36,10 @@
     .region.on .check{opacity:1;}
     .check{opacity:0;font-size:12px;color:#1a1a18;font-family:'Courier New',monospace;}
     .region-note{font-family:'Courier New',monospace;font-size:11px;color:#aaa;margin-bottom:28px;letter-spacing:0.5px;}
+    .lang-row{display:flex;gap:6px;margin-bottom:28px;}
+    .lpill{font-family:'Courier New',monospace;font-size:10px;padding:4px 10px;border-radius:3px;border:1px solid #d0ccc4;color:#888;cursor:pointer;transition:all 0.1s;}
+    .lpill:hover{border-color:#c8a84a;color:#c8a84a;}
+    .lpill.on{border-color:#1a1a18;background:#1a1a18;color:#f5f3ee;}
     .summary-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;}
     .summary{font-family:'Courier New',monospace;font-size:11px;letter-spacing:1px;color:#555;}
     .summary strong{color:#1a1a18;}
@@ -94,6 +98,12 @@
     <span class="preset" onclick="setDays('clear')">clear</span>
   </div>
 
+  <span class="field-label">content language</span>
+  <div class="lang-row">
+    <div class="lpill on" id="lang-EN" onclick="setLang('EN')">&#127468;&#127463; EN</div>
+    <div class="lpill" id="lang-ES" onclick="setLang('ES')">&#127466;&#127480; ES</div>
+  </div>
+
   <span class="field-label">regional focus <span style="font-size:9px;color:#aaa;letter-spacing:0;text-transform:none;">— add any combination</span></span>
   <div class="region-grid">
     <div class="region" onclick="toggleRegion(this,'es')">Spain <span class="check">&#10003;</span></div>
@@ -104,7 +114,7 @@
   <div class="region-note">Global edition always included. Select regions to add local items.</div>
 
   <div class="summary-row">
-    <div class="summary">You will receive <strong id="days-out">daily</strong> · <strong id="regions-out">global only</strong></div>
+    <div class="summary">You will receive <strong id="days-out">daily</strong> · <strong id="regions-out">global only</strong> · <strong id="lang-out">in English</strong></div>
     <div class="readtime" id="readtime">~4 min read</div>
   </div>
 
@@ -126,6 +136,16 @@
 </footer>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 var selectedRegions=[];
+var selectedLang=localStorage.getItem('rumbo_lang')||'EN';
+// Set initial active language pill
+document.getElementById('lang-'+selectedLang) && document.getElementById('lang-'+selectedLang).classList.add('on');
+if(selectedLang!=='EN') document.getElementById('lang-EN').classList.remove('on');
+function setLang(val){
+  selectedLang=val;
+  document.querySelectorAll('.lpill').forEach(function(p){p.classList.remove('on');});
+  document.getElementById('lang-'+val).classList.add('on');
+  updateSummary();
+}
 function toggleDay(el){el.classList.toggle('on');updateSummary();}
 function setDays(p){
   var days=document.querySelectorAll('.day');
@@ -142,12 +162,14 @@ function toggleRegion(el,code){
   updateSummary();
 }
 var names={'es':'Spain','no':'Norway','uk':'UK','nl':'Netherlands'};
+var langNames={'EN':'in English','ES':'en español'};
 function updateSummary(){
   var active=Array.from(document.querySelectorAll('.day.on')).length;
   var dayStr=active===7?'daily':active===5?'weekdays':active===0?'no days':active+' days/week';
   document.getElementById('days-out').textContent=dayStr;
   var rStr=selectedRegions.length===0?'global only':'global + '+selectedRegions.map(r=>names[r]).join(' + ').toLowerCase();
   document.getElementById('regions-out').textContent=rStr;
+  document.getElementById('lang-out').textContent=langNames[selectedLang]||'in English';
   var mins=4+selectedRegions.length;
   document.getElementById('readtime').textContent='~'+mins+' min read';
 }
@@ -156,7 +178,7 @@ function handleSubmit(){
   var days=Array.from(document.querySelectorAll('.day.on')).map(d=>d.textContent).join('');
   var regions=selectedRegions.length===0?'global only':selectedRegions.map(r=>names[r]).join(', ');
   var subject='Rumbo signup interest: '+regions;
-  var body='Days: '+days+'\nRegions: '+regions+'\nOther comments:';
+  var body='Days: '+days+'\nRegions: '+regions+'\nLanguage: '+selectedLang+'\nOther comments:';
   window.location.href='mailto:info@rumbo.wtf?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
   document.getElementById('comingSoon').style.display='block';
   document.querySelector('.btn').textContent='noted \u2713';
