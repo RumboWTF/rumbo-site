@@ -43,18 +43,16 @@ const EN_STRINGS = {
 
 // ─── Region config ────────────────────────────────────────────────────────────
 // file:   English output filename
-// noFile: Norwegian output filename (null = no Norwegian version for this region)
-// Adding Norwegian for a region later = set noFile to the target filename
+// esFile: Spanish output filename
 
 const REGIONS = [
-  { code: "es", name: "Spain",          file: "index-es.html",  noFile: "index-spain-no.html",  esFile: "index-spain-es.html" },
-  { code: "no", name: "Norway",         file: "index-no.html",  noFile: "index-norway-no.html", esFile: "index-norway-es.html" },
-  { code: "uk", name: "United Kingdom", file: "index-uk.html",  noFile: "index-uk-no.html",     esFile: "index-uk-es.html" },
-  { code: "nl", name: "Netherlands",    file: "index-nl.html",  noFile: "index-nl-no.html",     esFile: "index-nl-es.html" },
+  { code: "es", name: "Spain",          file: "index-es.html",  esFile: "index-spain-es.html" },
+  { code: "no", name: "Norway",         file: "index-no.html",  esFile: "index-norway-es.html" },
+  { code: "uk", name: "United Kingdom", file: "index-uk.html",  esFile: "index-uk-es.html" },
+  { code: "nl", name: "Netherlands",    file: "index-nl.html",  esFile: "index-nl-es.html" },
 ];
 
-// Global Norwegian file — generated separately from the REGIONS loop
-const GLOBAL_NO_FILE = "index-global-no.html";
+// Global Spanish file — generated separately from the REGIONS loop
 const GLOBAL_ES_FILE = "index-global-es.html";
 
 // ─── Prompts ──────────────────────────────────────────────────────────────────
@@ -138,11 +136,8 @@ Rules:
 - Never include time references like "this week", "on Friday", "recently", or "announced today" in headlines or body text unless you can verify the exact date from a source. Use the factual content only — the freshness is implied by the 72-hour rule.
 - Never include a specific calendar date (day and month) in body text unless you have verified it is from within the last 72 hours. If uncertain of the year, omit the date entirely.
 - When citing a specific date from a source, verify it is from the current year. A real date from a previous year is worse than no date — it presents old news as current fact.
-- Before including any item, verify the publication date of your sources. If you cannot find a source dated within the last 72 hours, do not include that item.
 - You must be able to cite a specific headline, outlet, and publication date for each item. If you cannot name all three from your search results, do not include the item.
 - If the most recent independent source you can find for a story is more than 30 days old, it is not eligible regardless of how the headline is phrased.
-- For each item, the newness must be concrete: a vote that happened, a statement made, a figure released, an event that occurred — all within the last 72 hours. Do not include ongoing situations unless something specific changed in that window.
-- If you cannot find 1-2 genuinely fresh items for this region, return only one item — the most recent thing you can verify — rather than padding with older stories.
 - Count independent source clusters per item
 - You MUST return at least one item. If no major developments exist, include the most noteworthy ${regionName} story from the last 72 hours even if smaller in scale than the global items.
 
@@ -381,11 +376,25 @@ function renderHtml(data, date, locale = "en") {
 async function main() {
   console.log("Rumbo generator starting...");
 
-  // Step 1: global call — runs once, shared across all editions
+  // Step 1: load previous run context to avoid repetition
+  let previousContext = "";
+  let previousMeanwhileContext = "";
+  try {
+    const lastOutput = JSON.parse(fs.readFileSync("last_output.json", "utf8"));
+    const headlines = lastOutput.items.map(i => `- ${i.headline}`).join("\n");
+    const meanwhiles = lastOutput.meanwhile.map(i => `- ${i.text}`).join("\n");
+    previousContext = `\nThe previous edition covered these stories. Do not repeat the same topics, angles, or entities — find what is genuinely new:\n${headlines}\n`;
+    previousMeanwhileContext = `\nThe previous edition's Meanwhile section covered:\n${meanwhiles}\nDo not repeat these topics or closely related ones.\n`;
+    console.log("Loaded previous run context for deduplication.");
+  } catch (e) {
+    console.log("No previous run context found — first run.");
+  }
+
+  // Step 2: global call — runs once, shared across all editions
   console.log("Calling Claude for global edition...");
   let globalData;
   try {
-    const globalRaw = await callClaude(GLOBAL_PROMPT);
+    const globalRaw = await callClaude(GLOBAL_PROMPT + previousContext + previousMeanwhileContext);
     globalData = parseJson(globalRaw);
     console.log(`Global: ${globalData.items.length} items, ${globalData.meanwhile.length} meanwhile`);
   } catch (e) {
@@ -400,24 +409,12 @@ async function main() {
     year: "numeric",
   });
 
-  // Step 2: render global EN edition
+  // Step 3: render global EN edition
   console.log("Rendering index.html (global, EN)...");
   const globalHtml = renderHtml({ ...globalData }, dateStr, "en");
   fs.writeFileSync("index.html", globalHtml, "utf8");
   console.log("index.html written.");
 
-  // Step 3: render global NO edition
-  console.log("Translating global edition to Norwegian...");
-  try {
-    const globalDataNo = await translateData(globalData, "Norwegian");
-    const globalNoHtml = renderHtml(globalDataNo, dateStr, "no");
-    fs.writeFileSync(GLOBAL_NO_FILE, globalNoHtml, "utf8");
-    console.log(`${GLOBAL_NO_FILE} written.`);
-  } catch (e) {
-    console.error(`Global NO translation failed: ${e.message}`);
-    console.log(`Writing EN fallback for ${GLOBAL_NO_FILE}.`);
-    fs.writeFileSync(GLOBAL_NO_FILE, globalHtml, "utf8");
-  }
   // Step 4: render global ES edition
 console.log("Translating global edition to Spanish...");
 try {
@@ -435,7 +432,7 @@ try {
     console.log(`Calling Claude for ${region.name} regional top-up...`);
     try {
       const regionalRaw = await callClaude(
-        REGIONAL_PROMPT(region.name, JSON.stringify(globalData, null, 2))
+        REGIONAL_PROMPT(region.name, JSON.stringify(globalData, null, 2)) + previousContext
       );
       const regionalData = parseJson(regionalRaw);
 
@@ -456,20 +453,6 @@ try {
       fs.writeFileSync(region.file, regionalHtml, "utf8");
       console.log(`${region.file} written.`);
 
-      // Render NO version if configured
-      if (region.noFile) {
-        console.log(`Translating ${region.name} edition to Norwegian...`);
-        try {
-          const mergedDataNo = await translateData(mergedData, "Norwegian");
-          const regionalNoHtml = renderHtml(mergedDataNo, dateStr, "no");
-          fs.writeFileSync(region.noFile, regionalNoHtml, "utf8");
-          console.log(`${region.noFile} written.`);
-        } catch (e) {
-          console.error(`NO translation failed for ${region.name}: ${e.message}`);
-          console.log(`Writing EN fallback for ${region.noFile}.`);
-          fs.writeFileSync(region.noFile, regionalHtml, "utf8");
-        }
-      }
       // Render ES version if configured
       if (region.esFile) {
         console.log(`Translating ${region.name} edition to Spanish...`);
@@ -490,16 +473,13 @@ try {
       console.error(`Regional call failed for ${region.name}:`, e.message);
       console.log(`Writing global-only EN fallback for ${region.name}.`);
       fs.writeFileSync(region.file, globalHtml, "utf8");
-      if (region.noFile) {
-        fs.writeFileSync(region.noFile, globalHtml, "utf8");
-      }
-          if (region.esFile) {
+      if (region.esFile) {
           fs.writeFileSync(region.esFile, globalHtml, "utf8");
         }
       }
   }
 
-  // Step 5: save debug JSON
+  // Step 6: save debug JSON
   fs.writeFileSync("last_output.json", JSON.stringify(globalData, null, 2), "utf8");
   console.log("Raw JSON saved to last_output.json");
   console.log("Done.");
