@@ -61,7 +61,6 @@ const GLOBAL_ES_FILE = "index-global-es.html";
 const GLOBAL_PROMPT = `You are the editorial engine for Rumbo.wtf, a world intelligence brief. Search the web for the most consequential global developments from the last 72 hours. Apply the following editorial rules:
 
 SELECTION
-- Select 3-4 items based on second-order consequences, not surface drama
 - Select by second-order consequences, not by volume of coverage. A development that shifts how hundreds of millions of people live outranks one that dominates coverage but affects only one country's domestic politics. Actively discount story loudness as a selection criterion.
 - Apply a genuine global lens. If more than two items share the same geopolitical frame, or if the selection reflects only the most-covered corners of the world, replace the weakest with the most consequential development from elsewhere.
 
@@ -139,7 +138,7 @@ Rules:
 - You must be able to cite a specific headline, outlet, and publication date for each item. If you cannot name all three from your search results, do not include the item.
 - If the most recent independent source you can find for a story is more than 30 days old, it is not eligible regardless of how the headline is phrased.
 - Count independent source clusters per item
-- You MUST return at least one item. If no major developments exist, include the most noteworthy ${regionName} story from the last 72 hours even if smaller in scale than the global items.
+- If you cannot find any genuinely fresh items for this region, return an empty items array rather than padding with stale stories.
 
 CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end with }. No other text.
 {
@@ -355,7 +354,7 @@ function renderHtml(data, date, locale = "en") {
   );
 
   // Hardcode timestamp locale per file — not dependent on localStorage lang
-  const jsLocaleMap = { en: "en-GB", no: "nb-NO", es: "es-ES" };
+  const jsLocaleMap = { en: "en-GB", es: "es-ES" };
   html = html.replace("{{JS_LOCALE}}", jsLocaleMap[locale] || "en-GB");
 
   // Set correct active language pill based on render locale (baked in, no JS dependency)
@@ -425,17 +424,17 @@ async function main() {
   console.log("index.html written.");
 
   // Step 4: render global ES edition
-console.log("Translating global edition to Spanish...");
-try {
-  const globalDataEs = await translateData(globalData, "Spanish");
-  const globalEsHtml = renderHtml(globalDataEs, dateStr, "es");
-  fs.writeFileSync(GLOBAL_ES_FILE, globalEsHtml, "utf8");
-  console.log(`${GLOBAL_ES_FILE} written.`);
-} catch (e) {
-  console.error(`Global ES translation failed: ${e.message}`);
-  console.log(`Writing EN fallback for ${GLOBAL_ES_FILE}.`);
-  fs.writeFileSync(GLOBAL_ES_FILE, globalHtml, "utf8");
-}
+  console.log("Translating global edition to Spanish...");
+  try {
+    const globalDataEs = await translateData(globalData, "Spanish");
+    const globalEsHtml = renderHtml(globalDataEs, dateStr, "es");
+    fs.writeFileSync(GLOBAL_ES_FILE, globalEsHtml, "utf8");
+    console.log(`${GLOBAL_ES_FILE} written.`);
+  } catch (e) {
+    console.error(`Global ES translation failed: ${e.message}`);
+    console.log(`Writing EN fallback for ${GLOBAL_ES_FILE}.`);
+    fs.writeFileSync(GLOBAL_ES_FILE, globalHtml, "utf8");
+  }
   // Step 5: regional editions
   for (const region of REGIONS) {
     console.log(`Calling Claude for ${region.name} regional top-up...`);
