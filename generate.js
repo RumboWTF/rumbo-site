@@ -77,6 +77,7 @@ WRITING
 - Plain language any curious adult can understand without prior knowledge. No jargon, acronyms, or financial language — translate everything.
 - No individual names in headlines unless the person is irreplaceable to the story. Lead with the institution, country, or dynamic instead.
 - Never include specific prices, rates, or market figures — describe direction and magnitude qualitatively instead.
+- Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", but "three countries", "two senators".
 - Never include vague time references ("this week", "recently", "on Friday") unless you can cite the exact date from a source.
 - Exactly two sentences per item. Each sentence 20 words or fewer. Cut ruthlessly: what actually shifted, and how it moves the world.
 - Avoid passive voice that hides agency.
@@ -130,6 +131,7 @@ Rules:
 - Same format as global items: plain language, two sentences, no individual names in headlines
 - Exactly two sentences per item. Each sentence must be 20 words or fewer. Cut ruthlessly.
 - Never include specific figures (monetary amounts, percentages, casualty counts) unless they appear in multiple independent sources. If uncertain, describe impact qualitatively instead.
+- Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", but "three countries", "two senators".
 - Only include items that have new developments or reporting within the last 72 hours. If a story's most recent coverage is older than 72 hours, skip it regardless of significance.
 - Before including any item, verify the publication date of your sources. If you cannot find a source dated within the last 72 hours, do not include that item.
 - For each item, the newness must be concrete: a vote that happened, a statement made, a figure released, an event that occurred — all within the last 72 hours. Do not include ongoing situations unless something specific changed in that window.
