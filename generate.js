@@ -75,9 +75,9 @@ FRESHNESS
 
 WRITING
 - Plain language any curious adult can understand without prior knowledge. No jargon, acronyms, or financial language — translate everything.
-- No individual names in headlines unless the person is irreplaceable to the story. Lead with the institution, country, or dynamic instead.
+- No individual names in headlines unless the person's identity is the story, not their action or position. Avoid personality-driven headlines — lead with the institution, country, or dynamic instead.
 - Never include specific prices, rates, or market figures — describe direction and magnitude qualitatively instead.
-- Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", but "three countries", "two senators".
+- Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", but "three countries", "two senators". Never spell out numbers as words for 10 and above under any circumstances.
 - Never include vague time references ("this week", "recently", "on Friday") unless you can cite the exact date from a source.
 - Exactly two sentences per item. Each sentence 20 words or fewer. Cut ruthlessly: what actually shifted, and how it moves the world.
 - Avoid passive voice that hides agency.
@@ -95,7 +95,7 @@ MEANWHILE
 - Culture: the lighter side of being human — sport, art, entertainment
 - Science_tech: what is becoming possible
 - Wellbeing: health, medicine, longevity — how people are living
-- Worldviews: belief systems, ideological shifts, religious movements, or political culture — how groups define themselves and others. Not news events, not disasters, not policy outcomes.
+- Worldviews: belief systems, ideological shifts, religious movements, or political culture — how groups define themselves and others. Not news events, not disasters, not policy outcomes, not economic responses. A Worldviews item describes a shift in how people think, believe, or identify — not what governments do.
 
 CRITICAL: Your response must be ONLY the raw JSON object. No thinking, no explanation, no markdown, no preamble. Start your response with { and end with }. Any text outside the JSON will break the parser.
 {
