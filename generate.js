@@ -66,10 +66,8 @@ SELECTION
 - Apply a genuine global lens. If more than two items share the same geopolitical frame, or if the selection reflects only the most-covered corners of the world, replace the weakest with the most consequential development from elsewhere.
 
 FRESHNESS
-- Only include items with new developments or reporting within the last 72 hours. If nothing concrete changed in that window — a vote, statement, ruling, event — skip it regardless of significance.
-- Before including any item, verify the publication date of your sources. If you cannot find a source dated within the last 72 hours, do not include it.
-- Never include a specific calendar date (day and month) in body text unless you have verified it is from within the last 72 hours. If uncertain of the year, omit the date entirely.
-- When citing a specific date from a source, verify it is from the current year. A real date from a previous year is worse than no date — it presents old news as current fact.
+- Only include items with new developments or reporting within the last 72 hours. If nothing concrete changed in that window — a vote, statement, ruling, event — skip it regardless of significance. Verify the publication date of your sources; if you cannot find a source dated within the last 72 hours, do not include the item.
+- Never include a specific calendar date (day and month) in body text unless you have verified it is from within the last 72 hours and the current year. If uncertain, omit the date entirely.
 - Do not include announcements of future events as news items. Something scheduled to happen is not a development — only report what has already occurred.
 - If a story was covered in yesterday's edition, find what specifically developed in the last 24 hours and lead with that. If nothing new has developed, deprioritise it in favour of fresher stories.
 
@@ -77,7 +75,7 @@ WRITING
 - Plain language any curious adult can understand without prior knowledge. No jargon, acronyms, or financial language — translate everything.
 - No individual names in headlines unless the person's identity is the story, not their action or position. Avoid personality-driven headlines — lead with the institution, country, or dynamic instead.
 - Never include specific prices, rates, or market figures — describe direction and magnitude qualitatively instead.
-- Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", but "three countries", "two senators". Never spell out numbers as words for 10 and above under any circumstances.
+- Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", but "three countries", "two senators".
 - Never include vague time references ("this week", "recently", "on Friday") unless you can cite the exact date from a source.
 - Exactly two sentences per item. Each sentence 20 words or fewer. Cut ruthlessly: what actually shifted, and how it moves the world.
 - Avoid passive voice that hides agency.
