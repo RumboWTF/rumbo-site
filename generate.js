@@ -75,7 +75,7 @@ WRITING
 - Plain language any curious adult can understand without prior knowledge. No jargon, acronyms, or financial language — translate everything.
 - No individual names in headlines unless the person's identity is the story, not their action or position. Avoid personality-driven headlines — lead with the institution, country, or dynamic instead.
 - Never include specific prices, rates, or market figures — describe direction and magnitude qualitatively instead.
-- Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", but "three countries", "two senators".
+- Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", "35-year-old", "3.3%", but "three countries", "two senators". This applies everywhere including headlines, compound adjectives, and percentages.
 - Never include vague time references ("this week", "recently", "on Friday") unless you can cite the exact date from a source.
 - Exactly two sentences per item. Each sentence 20 words or fewer. Cut ruthlessly: what actually shifted, and how it moves the world.
 - Avoid passive voice that hides agency.
