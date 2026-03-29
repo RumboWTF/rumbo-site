@@ -1,0 +1,116 @@
+{
+  "date": "29 March 2026",
+  "global": {
+    "generated_at": "2026-03-29T19:00:00Z",
+    "sources": [
+      "NPR",
+      "Al Jazeera",
+      "BleepingComputer",
+      "CNN",
+      "NBC News",
+      "TechCrunch",
+      "ACLED",
+      "Democracy Now"
+    ],
+    "items": [
+      {
+        "headline": "Four regional powers converge on Pakistan to broker Iran war talks",
+        "body": "Foreign ministers from Pakistan, Saudi Arabia, Turkey and Egypt met in Islamabad as Pakistan offers to host direct negotiations between Washington and Tehran. Pakistan has emerged as the diplomatic centre after traditional mediators Oman and Qatar came under Iranian fire during the monthlong conflict.",
+        "geo": "Asia",
+        "sources": 4
+      },
+      {
+        "headline": "European Commission confirms breach exposing hundreds of gigabytes from cloud platform",
+        "body": "Attackers gained access to the Commission's Amazon Web Services environment, stealing over 350 gigabytes of data including databases and employee information. The breach affected websites hosted on Europa.eu, with threat actors claiming ongoing access to internal email servers.",
+        "geo": "Europe",
+        "sources": 5
+      },
+      {
+        "headline": "Jury finds social media giants liable in landmark addiction case",
+        "body": "A Los Angeles jury ruled Meta and YouTube negligent for deliberately designing platforms to addict young users, awarding six million dollars in damages. The verdict validates a legal strategy targeting platform design rather than content, with thousands of similar cases now pending.",
+        "geo": "Americas",
+        "sources": 6
+      }
+    ],
+    "meanwhile": [
+      {
+        "category": "culture",
+        "text": "NCAA March Madness Sweet 16 tournament reaches final weekend with Duke, UConn advancing",
+        "search": "NCAA tournament 2026 Sweet 16 Elite Eight"
+      },
+      {
+        "category": "science_tech",
+        "text": "Lab-grown oesophagus replaces full organ section in animals without immunosuppression drugs",
+        "search": "lab grown esophagus tissue engineering 2026"
+      },
+      {
+        "category": "wellbeing",
+        "text": "Cold weather linked to 40,000 excess cardiovascular deaths annually in United States",
+        "search": "cold weather heart disease mortality study"
+      },
+      {
+        "category": "worldviews",
+        "text": "Younger American conservatives embrace traditional Christianity at higher rates than older generations",
+        "search": "Generation Z Christian revival conservative politics"
+      }
+    ]
+  },
+  "regional_items": {
+    "es": [
+      {
+        "headline": "Consumer prices jump to highest level since mid-2024 as war drives fuel costs sharply higher",
+        "body": "Inflation accelerated to 3.3% in March from 2.3% in February, according to preliminary data released Friday. The increase was driven primarily by rising fuel and lubricant prices linked to the Iran conflict.",
+        "geo": "Spain",
+        "sources": 4
+      },
+      {
+        "headline": "Algeria agrees to boost gas supplies through Mediterranean pipeline as energy security concerns mount",
+        "body": "Spain struck a deal to increase natural gas flows via the Medgaz pipeline during ministerial talks in Algiers. Algeria already supplies nearly a third of Spain's gas imports amid disruption from Middle East hostilities.",
+        "geo": "Spain",
+        "sources": 3
+      }
+    ],
+    "no": [
+      {
+        "headline": "Central bank holds rates but signals tightening ahead as inflation remains elevated",
+        "body": "Norges Bank maintained its policy rate at four percent while indicating future increases may be necessary. Inflation has stayed above the two percent target, with officials citing persistent price pressures.",
+        "geo": "Norway",
+        "sources": 3
+      },
+      {
+        "headline": "Defense ministry announces major spending increase to meet alliance commitments",
+        "body": "The government will add 115 billion kroner to defense budgets over the next decade. Opposition parties criticized delays to brigade expansion and air defense procurement in the plan.",
+        "geo": "Norway",
+        "sources": 4
+      }
+    ],
+    "uk": [
+      {
+        "headline": "Church of England installs first female leader in 1,400-year history",
+        "body": "Former nurse becomes 106th archbishop of Canterbury in ceremony attended by royalty and global Anglican leaders. The appointment drew opposition from conservative Anglican groups but marked historic milestone for the church.",
+        "geo": "United Kingdom",
+        "sources": 6
+      },
+      {
+        "headline": "Tens of thousands march through London in demonstration against far right",
+        "body": "Together Alliance rally backed by trade unions and civil society groups converges on Whitehall. Organisers claim half a million attended while police estimate 50,000 in what they call largest anti-far-right demonstration in British history.",
+        "geo": "United Kingdom",
+        "sources": 4
+      }
+    ],
+    "nl": [
+      {
+        "headline": "Senate rejects law monitoring foreign donations to mosques and community groups",
+        "body": "Mayors and prosecutors will not gain authority to oversee foreign donations to mosques after the Senate rejected proposed legislation. Some coalition parties that backed the law in the lower house reversed course in the upper chamber.",
+        "geo": "Netherlands",
+        "sources": 2
+      },
+      {
+        "headline": "Government settles with family of activist killed in political assassination case",
+        "body": "The Dutch government agreed to a settlement with relatives of an Iranian dissident murdered in The Hague in 2017. The family had argued authorities failed to protect him despite repeated requests for help.",
+        "geo": "Netherlands",
+        "sources": 2
+      }
+    ]
+  }
+}

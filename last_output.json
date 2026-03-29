@@ -1,73 +1,55 @@
 {
-  "generated_at": "2025-05-17T14:30:00Z",
+  "generated_at": "2026-03-29T19:00:00Z",
   "sources": [
-    "Reuters",
-    "Bloomberg",
-    "Financial Times",
-    "Associated Press",
-    "BBC",
+    "NPR",
     "Al Jazeera",
-    "The Guardian",
-    "Wall Street Journal"
+    "BleepingComputer",
+    "CNN",
+    "NBC News",
+    "TechCrunch",
+    "ACLED",
+    "Democracy Now"
   ],
   "items": [
     {
-      "headline": "Indonesia halts nickel ore exports to secure battery supply chain dominance",
-      "body": "Government banned unprocessed nickel shipments Thursday, forcing manufacturers to build refineries locally or lose access to twenty percent of global supply. Move threatens production timelines for electric vehicle makers across three continents who depend on Indonesian ore for batteries.",
+      "headline": "Four regional powers converge on Pakistan to broker Iran war talks",
+      "body": "Foreign ministers from Pakistan, Saudi Arabia, Turkey and Egypt met in Islamabad as Pakistan offers to host direct negotiations between Washington and Tehran. Pakistan has emerged as the diplomatic centre after traditional mediators Oman and Qatar came under Iranian fire during the monthlong conflict.",
       "geo": "Asia",
-      "sources": 7
+      "sources": 4
     },
     {
-      "headline": "European grain reserves hit fifteen-year low as Black Sea exports remain blocked",
-      "body": "Storage facilities across the continent hold just forty-two days of wheat supply, down from ninety-day average. Bakeries in twelve countries raised prices this week while governments debate releasing strategic stocks originally held for war or famine.",
+      "headline": "European Commission confirms breach exposing hundreds of gigabytes from cloud platform",
+      "body": "Attackers gained access to the Commission's Amazon Web Services environment, stealing over 350 gigabytes of data including databases and employee information. The breach affected websites hosted on Europa.eu, with threat actors claiming ongoing access to internal email servers.",
       "geo": "Europe",
-      "sources": 6
-    },
-    {
-      "headline": "Nigeria extends school closures into fourth month as teacher strikes spread nationwide",
-      "body": "Thirty-two million children remain out of class after unions rejected government wage offer covering half of inflation losses. Extended disruption threatens to reverse decade of progress reducing the eight million children already permanently out of school before strikes began.",
-      "geo": "Africa",
       "sources": 5
     },
     {
-      "headline": "Paraguay activates emergency water rationing as river system drops to century low",
-      "body": "Asunción imposed alternate-day water access for two million residents after Paraguay River fell below navigation and intake thresholds. Drought now affects hydroelectric output across five countries sharing the basin, forcing industries onto diesel generators that triple energy costs.",
+      "headline": "Jury finds social media giants liable in landmark addiction case",
+      "body": "A Los Angeles jury ruled Meta and YouTube negligent for deliberately designing platforms to addict young users, awarding six million dollars in damages. The verdict validates a legal strategy targeting platform design rather than content, with thousands of similar cases now pending.",
       "geo": "Americas",
       "sources": 6
-    },
-    {
-      "headline": "Spain evacuates two hundred troops from Iraq as Middle East conflict forces NATO mission suspension",
-      "body": "Military personnel deployed with coalition and NATO training missions completed emergency withdrawal to Turkey after deteriorating security made operations impossible. Defence minister described complex extraction under active fire with missile exchanges near bases forcing troops into shelters before evacuation flights departed.",
-      "geo": "Spain",
-      "sources": 6
-    },
-    {
-      "headline": "Government approves five billion euro emergency package slashing fuel taxes as oil crisis hits economy",
-      "body": "Eighty measures including VAT cuts on petrol from twenty-one to ten percent and reduced electricity taxes take effect immediately to shield twenty million households from energy price surge. Package combines immediate relief with expanded renewable energy subsidies but faces uncertain parliamentary approval for housing provisions including nationwide rent freeze.",
-      "geo": "Spain",
-      "sources": 8
     }
   ],
   "meanwhile": [
     {
       "category": "culture",
-      "text": "Japanese manga sales surpassed print book revenue in North America for first time",
-      "search": "manga sales exceed books North America 2025"
+      "text": "NCAA March Madness Sweet 16 tournament reaches final weekend with Duke, UConn advancing",
+      "search": "NCAA tournament 2026 Sweet 16 Elite Eight"
     },
     {
-      "category": "frontiers",
-      "text": "Quantum computer solved optimization problem classical machines cannot finish in universe lifetime",
-      "search": "quantum computer optimization breakthrough May 2025"
+      "category": "science_tech",
+      "text": "Lab-grown oesophagus replaces full organ section in animals without immunosuppression drugs",
+      "search": "lab grown esophagus tissue engineering 2026"
     },
     {
       "category": "wellbeing",
-      "text": "New malaria vaccine shows ninety percent efficacy in West African trial of twelve thousand children",
-      "search": "malaria vaccine 90 percent efficacy trial 2025"
+      "text": "Cold weather linked to 40,000 excess cardiovascular deaths annually in United States",
+      "search": "cold weather heart disease mortality study"
     },
     {
       "category": "worldviews",
-      "text": "Turkish constitutional referendum on presidential term limits scheduled for June after parliament vote",
-      "search": "Turkey constitutional referendum presidential terms June 2025"
+      "text": "Younger American conservatives embrace traditional Christianity at higher rates than older generations",
+      "search": "Generation Z Christian revival conservative politics"
     }
   ]
 }
