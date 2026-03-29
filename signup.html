@@ -46,8 +46,10 @@
     .readtime{font-family:'Courier New',monospace;font-size:11px;color:#c8a84a;}
     .btn{width:100%;background:#1a1a18;color:#f5f3ee;border:none;font-family:'Courier New',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:14px;border-radius:3px;cursor:pointer;transition:background 0.15s;}
     .btn:hover{background:#333;}
-    .coming-soon{display:none;margin-top:16px;padding:16px;background:#f0ede6;border-left:3px solid #c8a84a;border-radius:0 3px 3px 0;font-family:'Courier New',monospace;font-size:11px;color:#555;line-height:1.7;}
-    .coming-soon a{color:#7a5c0a;text-decoration:underline;text-underline-offset:3px;}
+    .btn:disabled{background:#999;cursor:not-allowed;}
+    .success{display:none;margin-top:16px;padding:16px;background:#f0ede6;border-left:3px solid #c8a84a;border-radius:0 3px 3px 0;font-family:'Courier New',monospace;font-size:11px;color:#555;line-height:1.7;}
+    .success a{color:#7a5c0a;text-decoration:underline;text-underline-offset:3px;}
+    .error{display:none;margin-top:16px;padding:16px;background:#fff0f0;border-left:3px solid #c04040;border-radius:0 3px 3px 0;font-family:'Courier New',monospace;font-size:11px;color:#555;line-height:1.7;}
     .fine{font-family:'Courier New',monospace;font-size:11px;color:#aaa;text-align:center;margin-top:14px;line-height:1.7;}
     footer{background:#1a1a18;padding:20px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;margin-top:2rem;}
     .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#b0aa9e;letter-spacing:0.5px;}
@@ -72,7 +74,6 @@
   </div>
 </nav>
 <div class="content">
-  <div style="background:#f0ede6;border-left:3px solid #c8a84a;padding:14px 18px;margin-bottom:28px;border-radius:0 3px 3px 0;font-family:'Courier New',monospace;font-size:14px;color:#555;line-height:1.7;">Email delivery may be added if there's enough interest. Fill this in to register yours — no commitment on either side.</div>
   <h1>News without the noise.</h1>
   <span style="font-family:'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#7a5c0a;margin-bottom:28px;display:block;">Know enough. Live more.</span>
   <p class="sub">The same intelligence brief you read at rumbo.wtf, delivered to your inbox. What actually shifted — structured the same way every time, on the days you choose.</p>
@@ -118,13 +119,15 @@
     <div class="readtime" id="readtime">~4 min read</div>
   </div>
 
-  <button class="btn" onclick="handleSubmit()">I'd use this →</button>
-  <div class="coming-soon" id="comingSoon">
-    Noted — thanks for the signal.<br><br>
-    In the meantime, the latest edition is always at <a href="index.html">rumbo.wtf</a>.<br>
-    Questions or feedback: <a href="/cdn-cgi/l/email-protection#9dbbbeacada8a6bbbeacacada6bbbeacadafa6bbbeacacaca6bbbeaba9a6bbbeacaca9a6bbbeacacaaa6bbbeacada4a6bbbea4a5a6bbbeacacaca6bbbea9aba6bbbeacaca4a6bbbeacacaba6bbbeacadafa6"><span class="__cf_email__" data-cfemail="5b32353d341b292e363934752c2f3d">[email&#160;protected]</span></a>
+  <button class="btn" id="submitBtn" onclick="handleSubmit()">Subscribe &#8594;</button>
+  <div class="success" id="successMsg">
+    Subscribed. First edition arrives on your next selected day.<br><br>
+    The latest edition is always at <a href="index.html">rumbo.wtf</a>.
   </div>
-  <div class="fine">Free. No spam. No ads. One click to unsubscribe when live.<br>GDPR compliant.</div>
+  <div class="error" id="errorMsg">
+    Something went wrong. Try again or email <a href="mailto:info@rumbo.wtf">info@rumbo.wtf</a>.
+  </div>
+  <div class="fine">Free. No spam. No ads. One click to unsubscribe.<br>GDPR compliant.</div>
 </div>
 <footer>
   <span class="footer-left">rumbo.wtf</span>
@@ -134,12 +137,12 @@
     <a href="signup.html">Newsletter</a>
   </div>
 </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 var selectedRegions=[];
 var selectedLang=localStorage.getItem('rumbo_lang')||'EN';
-// Set initial active language pill
-document.getElementById('lang-'+selectedLang) && document.getElementById('lang-'+selectedLang).classList.add('on');
-if(selectedLang!=='EN') document.getElementById('lang-EN').classList.remove('on');
+document.getElementById('lang-'+selectedLang)&&document.getElementById('lang-'+selectedLang).classList.add('on');
+if(selectedLang!=='EN')document.getElementById('lang-EN').classList.remove('on');
+
 function setLang(val){
   selectedLang=val;
   document.querySelectorAll('.lpill').forEach(function(p){p.classList.remove('on');});
@@ -173,17 +176,54 @@ function updateSummary(){
   var mins=4+selectedRegions.length;
   document.getElementById('readtime').textContent='~'+mins+' min read';
 }
-function handleSubmit(){
-  var email=document.getElementById('emailInput').value;
-  var days=Array.from(document.querySelectorAll('.day.on')).map(d=>d.textContent).join('');
-  var regions=selectedRegions.length===0?'global only':selectedRegions.map(r=>names[r]).join(', ');
-  var subject='Rumbo signup interest: '+regions;
-  var body='Days: '+days+'\nRegions: '+regions+'\nLanguage: '+selectedLang+'\nOther comments:';
-  window.location.href='mailto:info@rumbo.wtf?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
-  document.getElementById('comingSoon').style.display='block';
-  document.querySelector('.btn').textContent='noted \u2713';
-  document.querySelector('.btn').style.background='#555';
-  document.querySelector('.btn').onclick=null;
+async function handleSubmit(){
+  var email=document.getElementById('emailInput').value.trim();
+  var days=Array.from(document.querySelectorAll('.day.on')).map(d=>d.textContent);
+  var btn=document.getElementById('submitBtn');
+  var successEl=document.getElementById('successMsg');
+  var errorEl=document.getElementById('errorMsg');
+
+  errorEl.style.display='none';
+
+  if(!email||!email.includes('@')){
+    errorEl.textContent='Enter a valid email address.';
+    errorEl.style.display='block';
+    return;
+  }
+  if(days.length===0){
+    errorEl.textContent='Select at least one day.';
+    errorEl.style.display='block';
+    return;
+  }
+
+  btn.disabled=true;
+  btn.textContent='Sending...';
+
+  try{
+    var res=await fetch('/api/subscribe',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        email:email,
+        language:selectedLang,
+        regions:selectedRegions,
+        days:days
+      })
+    });
+    var data=await res.json();
+    if(res.ok){
+      btn.textContent='Subscribed \u2713';
+      btn.style.background='#555';
+      successEl.style.display='block';
+    } else {
+      throw new Error(data.error||'Unknown error');
+    }
+  } catch(e){
+    btn.disabled=false;
+    btn.textContent='Subscribe \u2192';
+    errorEl.textContent='Something went wrong: '+(e.message||'try again.');
+    errorEl.style.display='block';
+  }
 }
 </script>
 </body>
