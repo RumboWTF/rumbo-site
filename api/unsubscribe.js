@@ -3,11 +3,6 @@
 
 import { createClient } from "@supabase/supabase-js";
 
-const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_KEY
-);
-
 const page = (title, message) => `<!doctype html>
 <html lang="en">
 <head>
@@ -39,6 +34,10 @@ const page = (title, message) => `<!doctype html>
 </html>`;
 
 export default async function handler(req, res) {
+  const supabase = createClient(
+    process.env.SUPABASE_URL,
+    process.env.SUPABASE_SERVICE_KEY
+  );
   const { token } = req.query;
 
   if (!token) {

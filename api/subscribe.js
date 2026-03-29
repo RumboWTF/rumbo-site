@@ -3,12 +3,11 @@
 
 import { createClient } from "@supabase/supabase-js";
 
-const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_KEY
-);
-
 export default async function handler(req, res) {
+  const supabase = createClient(
+    process.env.SUPABASE_URL,
+    process.env.SUPABASE_SERVICE_KEY
+  );
   // CORS — allow requests from rumbo.wtf
   res.setHeader("Access-Control-Allow-Origin", "https://rumbo.wtf");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
