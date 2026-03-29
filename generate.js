@@ -4,6 +4,7 @@
 
 import Anthropic from "@anthropic-ai/sdk";
 import fs from "fs";
+import { createClient } from "@supabase/supabase-js";
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
@@ -382,6 +383,90 @@ function renderHtml(data, date, locale = "en") {
   return html;
 }
 
+// ─── Email rendering ──────────────────────────────────────────────────────────
+
+function renderEmail(data, date, locale, unsubscribeUrl) {
+  const t = getTranslations(locale);
+  const items = data.items;
+  const meanwhile = data.meanwhile;
+
+  const geoStyle = (geo) => {
+    const regional = ["Spain", "Norway", "UK", "United Kingdom", "Netherlands"];
+    return regional.includes(geo)
+      ? "display:inline-block;font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#7a5c0a;background:#f5ead0;border:1px solid #e0c87a;padding:2px 8px;border-radius:3px;margin-right:6px;"
+      : "display:inline-block;font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#555;background:#f0ede6;border:1px solid #d0ccc4;padding:2px 8px;border-radius:3px;margin-right:6px;";
+  };
+
+  const itemsHtml = items.map((item) => `
+    <tr><td style="padding:20px 28px 0;">
+      <div style="font-family:Georgia,serif;font-size:17px;color:#1a1a18;line-height:1.35;margin-bottom:8px;">${item.headline}</div>
+      <div style="font-family:Georgia,serif;font-size:14px;color:#444;line-height:1.65;margin-bottom:10px;">${item.body}</div>
+      <div>
+        <span style="${geoStyle(item.geo)}">${item.geo}</span>
+        <span style="font-family:'Courier New',monospace;font-size:10px;color:#aaa;">~${item.sources} ${t.SOURCE_PILL_LABEL}</span>
+      </div>
+    </td></tr>
+    <tr><td style="padding:12px 28px 0;"><hr style="border:none;border-top:1px solid #e8e4de;margin:0;"></td></tr>`
+  ).join("\n");
+
+  const meanwhileHtml = meanwhile.map((item) => {
+    const label = t.CATEGORIES[item.category] || item.category;
+    return `
+    <tr><td style="padding:10px 28px 0;">
+      <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:1.5px;color:#c8a84a;text-transform:uppercase;margin-bottom:4px;">${label}</div>
+      <div style="font-family:Georgia,serif;font-size:14px;color:#333;line-height:1.55;">${item.text}</div>
+    </td></tr>`;
+  }).join("\n");
+
+  return `<!doctype html>
+<html lang="${locale}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rumbo · ${date}</title>
+</head>
+<body style="margin:0;padding:0;background:#f5f3ee;font-family:Georgia,'Times New Roman',serif;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#f5f3ee;">
+<tr><td align="center" style="padding:24px 16px;">
+<table cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#faf9f6;border-radius:4px;border:1px solid #e0dcd4;">
+
+  <!-- Header -->
+  <tr><td style="background:#1a1a18;padding:16px 28px;border-radius:4px 4px 0 0;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><span style="font-family:Georgia,serif;font-size:20px;color:#f5f3ee;letter-spacing:-0.5px;">Rumbo<span style="color:#c8a84a;">.wtf</span></span></td>
+      <td align="right"><span style="font-family:'Courier New',monospace;font-size:10px;color:#888;letter-spacing:1px;">${date}</span></td>
+    </tr>
+    </table>
+  </td></tr>
+
+  <!-- Items -->
+  ${itemsHtml}
+
+  <!-- Meanwhile header -->
+  <tr><td style="padding:28px 28px 0;">
+    <div style="font-family:'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#1a1a18;text-transform:uppercase;border-bottom:2px solid #1a1a18;padding-bottom:6px;">${t.MEANWHILE_TITLE}</div>
+  </td></tr>
+
+  <!-- Meanwhile items -->
+  ${meanwhileHtml}
+
+  <!-- Footer -->
+  <tr><td style="padding:28px 28px 20px;text-align:center;">
+    <p style="font-family:'Courier New',monospace;font-size:10px;color:#aaa;line-height:1.8;margin:0;">
+      <a href="https://rumbo.wtf" style="color:#c8a84a;text-decoration:none;">rumbo.wtf</a>
+      &nbsp;·&nbsp;
+      <a href="${unsubscribeUrl}" style="color:#aaa;text-decoration:underline;">Unsubscribe</a>
+    </p>
+  </td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>`;
+}
+
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -439,6 +524,8 @@ async function main() {
     fs.writeFileSync(GLOBAL_ES_FILE, globalHtml, "utf8");
   }
   // Step 5: regional editions
+  const allRegionalItems = {}; // { regionCode: [items] } — used by Step 7
+
   for (const region of REGIONS) {
     console.log(`Calling Claude for ${region.name} regional top-up...`);
     try {
@@ -455,6 +542,7 @@ async function main() {
 
       if (regionalData.items && regionalData.items.length > 0) {
         console.log(`Added ${regionalData.items.length} regional items for ${region.name}`);
+        allRegionalItems[region.code] = regionalData.items;
       } else {
         console.log(`No regional items for ${region.name}, using global-only content.`);
       }
@@ -490,9 +578,94 @@ async function main() {
       }
   }
 
-  // Step 6: save debug JSON
+  // Step 6: save debug JSON + all_output for newsletter
   fs.writeFileSync("last_output.json", JSON.stringify(globalData, null, 2), "utf8");
   console.log("Raw JSON saved to last_output.json");
+
+  const allOutput = { date: dateStr, global: globalData, regional_items: allRegionalItems };
+  fs.writeFileSync("all_output.json", JSON.stringify(allOutput, null, 2), "utf8");
+  console.log("all_output.json saved.");
+
+  // Step 7: send newsletter
+  console.log("Starting newsletter send...");
+  try {
+    const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_KEY);
+    const dayCodes = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
+    const todayCode = dayCodes[new Date().getDay()];
+    console.log(`Today is: ${todayCode}`);
+
+    const { data: subscribers, error: subError } = await supabase
+      .from("subscribers")
+      .select("*")
+      .eq("active", true);
+
+    if (subError) throw new Error(`Supabase query failed: ${subError.message}`);
+    console.log(`${subscribers.length} active subscribers found.`);
+
+    let sent = 0;
+    let skipped = 0;
+
+    for (const sub of subscribers) {
+      if (!sub.days || !sub.days.includes(todayCode)) {
+        skipped++;
+        continue;
+      }
+
+      // Build merged item list for this subscriber
+      const regionalItems = [];
+      for (const regionCode of (sub.regions || [])) {
+        if (allRegionalItems[regionCode]) {
+          regionalItems.push(...allRegionalItems[regionCode]);
+        }
+      }
+      const mergedData = { ...globalData, items: [...globalData.items, ...regionalItems] };
+
+      // Translate if ES subscriber
+      let emailData = mergedData;
+      if (sub.language === "ES") {
+        try {
+          emailData = await translateData(mergedData, "Spanish");
+        } catch (e) {
+          console.error(`Translation failed for ${sub.email}, sending EN: ${e.message}`);
+        }
+      }
+
+      const locale = sub.language === "ES" ? "es" : "en";
+      const unsubUrl = `https://rumbo.wtf/api/unsubscribe?token=${sub.unsubscribe_token}`;
+      const emailHtml = renderEmail(emailData, dateStr, locale, unsubUrl);
+
+      const subject = sub.language === "ES"
+        ? `Rumbo · ${dateStr}`
+        : `Rumbo · ${dateStr}`;
+
+      const sendRes = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${process.env.RESEND_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: "Rumbo <brief@rumbo.wtf>",
+          to: sub.email,
+          subject,
+          html: emailHtml,
+        }),
+      });
+
+      if (!sendRes.ok) {
+        const errBody = await sendRes.text();
+        console.error(`Resend failed for ${sub.email}: ${errBody}`);
+      } else {
+        sent++;
+        console.log(`Sent to ${sub.email}`);
+      }
+    }
+
+    console.log(`Newsletter done. Sent: ${sent}, skipped (wrong day): ${skipped}.`);
+  } catch (e) {
+    console.error("Newsletter send failed:", e.message);
+  }
+
   console.log("Done.");
 }
 
