@@ -84,13 +84,13 @@
 
   <span class="field-label">which days</span>
   <div class="days-row">
-    <div class="day on" onclick="toggleDay(this)">M</div>
-    <div class="day on" onclick="toggleDay(this)">T</div>
-    <div class="day on" onclick="toggleDay(this)">W</div>
-    <div class="day on" onclick="toggleDay(this)">T</div>
-    <div class="day on" onclick="toggleDay(this)">F</div>
-    <div class="day on" onclick="toggleDay(this)">S</div>
-    <div class="day on" onclick="toggleDay(this)">S</div>
+    <div class="day on" data-code="Mo" onclick="toggleDay(this)">M</div>
+    <div class="day on" data-code="Tu" onclick="toggleDay(this)">T</div>
+    <div class="day on" data-code="We" onclick="toggleDay(this)">W</div>
+    <div class="day on" data-code="Th" onclick="toggleDay(this)">T</div>
+    <div class="day on" data-code="Fr" onclick="toggleDay(this)">F</div>
+    <div class="day on" data-code="Sa" onclick="toggleDay(this)">S</div>
+    <div class="day on" data-code="Su" onclick="toggleDay(this)">S</div>
   </div>
   <div class="presets">
     <span class="preset" onclick="setDays('all')">daily</span>
@@ -178,7 +178,7 @@ function updateSummary(){
 }
 async function handleSubmit(){
   var email=document.getElementById('emailInput').value.trim();
-  var days=Array.from(document.querySelectorAll('.day.on')).map(d=>d.textContent);
+  var days=Array.from(document.querySelectorAll('.day.on')).map(d=>d.dataset.code);
   var btn=document.getElementById('submitBtn');
   var successEl=document.getElementById('successMsg');
   var errorEl=document.getElementById('errorMsg');
