@@ -4,6 +4,8 @@
 import { createClient } from "@supabase/supabase-js";
 
 export default async function handler(req, res) {
+  console.log("ENV CHECK — SUPABASE_URL present:", !!process.env.SUPABASE_URL);
+  console.log("ENV CHECK — SERVICE_KEY present:", !!process.env.SUPABASE_SERVICE_KEY);
 
   const supabase = createClient(
     process.env.SUPABASE_URL,
@@ -39,7 +41,7 @@ export default async function handler(req, res) {
     : [];
 
   const cleanDays = Array.isArray(days)
-    ? days.filter((d) => typeof d === "string" && d.length === 1)
+    ? days.filter((d) => ["Mo","Tu","We","Th","Fr","Sa","Su"].includes(d))
     : [];
 
   if (cleanDays.length === 0) {
