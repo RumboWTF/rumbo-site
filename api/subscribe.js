@@ -4,11 +4,14 @@
 import { createClient } from "@supabase/supabase-js";
 
 export default async function handler(req, res) {
+  console.log("ENV CHECK — SUPABASE_URL present:", !!process.env.SUPABASE_URL);
+  console.log("ENV CHECK — SERVICE_KEY present:", !!process.env.SUPABASE_SERVICE_KEY);
+
   const supabase = createClient(
     process.env.SUPABASE_URL,
     process.env.SUPABASE_SERVICE_KEY
   );
-  // CORS — allow requests from rumbo.wtf
+
   res.setHeader("Access-Control-Allow-Origin", "https://rumbo.wtf");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -23,7 +26,6 @@ export default async function handler(req, res) {
 
   const { email, language, regions, days } = req.body;
 
-  // Basic validation
   if (!email || typeof email !== "string" || !email.includes("@")) {
     return res.status(400).json({ error: "Invalid email" });
   }
@@ -38,7 +40,6 @@ export default async function handler(req, res) {
     ? regions.filter((r) => validRegions.includes(r))
     : [];
 
-  const validDays = ["M", "T", "W", "T", "F", "S", "S"];
   const cleanDays = Array.isArray(days)
     ? days.filter((d) => typeof d === "string" && d.length === 1)
     : [];
