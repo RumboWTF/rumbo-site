@@ -66,20 +66,21 @@ export default async function handler(req, res) {
   const confirmUrl = `https://rumbo.wtf/api/confirm?token=${data.confirm_token}`;
   const confirmHtml = `<!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Confirm your Rumbo subscription</title></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Confirm your Rumbo subscription</title>
+<style>@media only screen and (max-width:600px){.rp{padding-left:16px !important;padding-right:16px !important;}}</style></head>
 <body style="margin:0;padding:0;background:#f5f3ee;font-family:Georgia,'Times New Roman',serif;">
 <table width="100%" cellpadding="0" cellspacing="0" style="background:#f5f3ee;">
 <tr><td align="center" style="padding:40px 16px;">
 <table cellpadding="0" cellspacing="0" style="max-width:480px;width:100%;background:#faf9f6;border-radius:4px;border:1px solid #e0dcd4;">
-  <tr><td style="background:#1a1a18;padding:16px 28px;border-radius:4px 4px 0 0;">
+  <tr><td class="rp" style="background:#1a1a18;padding:16px 28px;border-radius:4px 4px 0 0;">
     <span style="font-family:Georgia,serif;font-size:20px;color:#f5f3ee;letter-spacing:-0.5px;">Rumbo<span style="color:#c8a84a;">.wtf</span></span>
   </td></tr>
-  <tr><td style="padding:32px 28px 12px;">
+  <tr><td class="rp" style="padding:32px 28px 12px;">
     <div style="font-family:Georgia,serif;font-size:18px;color:#1a1a18;margin-bottom:16px;">Confirm your subscription</div>
     <p style="font-family:Georgia,serif;font-size:14px;color:#555;line-height:1.7;margin:0 0 24px;">Click the button below to confirm your Rumbo newsletter subscription. If you did not sign up, ignore this email.</p>
     <a href="${confirmUrl}" style="display:inline-block;background:#1a1a18;color:#f5f3ee;font-family:'Courier New',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:12px 24px;border-radius:3px;text-decoration:none;">Confirm subscription →</a>
   </td></tr>
-  <tr><td style="padding:24px 28px;text-align:center;">
+  <tr><td class="rp" style="padding:24px 28px;text-align:center;">
     <p style="font-family:'Courier New',monospace;font-size:10px;color:#aaa;line-height:1.8;margin:0;">
       <a href="https://rumbo.wtf" style="color:#c8a84a;text-decoration:none;">rumbo.wtf</a>
     </p>
