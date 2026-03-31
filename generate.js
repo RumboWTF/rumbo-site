@@ -91,7 +91,7 @@ MEANWHILE
 - Meanwhile = things worth knowing that sit outside the daily news cycle. Each item must have been reported or newly relevant within the last 30 days — not breaking news, but not recycled history either. Surprising, interesting, worth a search. Each item maximum 15 words, no analysis.
 - Must not repeat, reference, or summarise any story, person, event, or entity already in the main feed — even from a different angle.
 - Each Meanwhile item must include a "search" field with a good DuckDuckGo search query.
-- Culture: the lighter side of being human — sport, art, entertainment
+- Culture: the lighter side of being human — art, entertainment, and occasionally sport. Prefer art, music, film, and cultural moments over sports. When including sport, only include events with genuine global following — major international tournaments, world records, or stories that transcend the sport itself. Avoid domestic league results and national competitions that are not followed internationally.
 - Science_tech: what is becoming possible
 - Wellbeing: health, medicine, longevity — how people are living
 - Worldviews: belief systems, ideological shifts, religious movements, or political culture — how groups define themselves and others. Not news events, not disasters, not policy outcomes, not economic responses. A Worldviews item describes a shift in how people think, believe, or identify — not what governments do.
