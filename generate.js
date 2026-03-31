@@ -76,9 +76,10 @@ WRITING
 - Plain language any curious adult can understand without prior knowledge. No jargon, acronyms, or financial language — translate everything.
 - No individual names in headlines unless the person's identity is the story, not their action or position. Avoid personality-driven headlines — lead with the institution, country, or dynamic instead.
 - Never include specific prices, rates, or market figures — describe direction and magnitude qualitatively instead.
+- Never include specific numerical figures (casualty counts, monetary amounts, population numbers, percentages) unless they appear across multiple independent sources and are central to understanding the story. If uncertain, describe magnitude qualitatively instead.
 - Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", "35-year-old", "3.3%", but "three countries", "two senators". This applies everywhere including headlines, compound adjectives, and percentages.
 - Never include vague time references ("this week", "recently", "on Friday") unless you can cite the exact date from a source.
-- Exactly two sentences per item. Each sentence 20 words or fewer. Cut ruthlessly: what actually shifted, and how it moves the world.
+- Exactly two sentences per item. Each sentence 20 words or fewer. Sentence one: what happened. Sentence two: why it matters or what shifts as a result — not an additional fact, but a consequence, tension, or implication. If you cannot identify a genuine consequence, the story is not ready.
 - Avoid passive voice that hides agency.
 - Alien-observer neutrality: no home team, no ideology. Describe what actors do, not whether they are right.
 
@@ -128,7 +129,7 @@ Search the web for the 1-2 most consequential developments in ${regionName} from
 Rules:
 - Only include items genuinely specific to ${regionName} and not already represented in the global feed
 - Same format as global items: plain language, two sentences, no individual names in headlines
-- Exactly two sentences per item. Each sentence must be 20 words or fewer. Cut ruthlessly.
+- Exactly two sentences per item. Each sentence must be 20 words or fewer. Sentence one: what happened. Sentence two: why it matters or what shifts as a result — not an additional fact, but a consequence, tension, or implication.
 - Never include specific figures (monetary amounts, percentages, casualty counts) unless they appear in multiple independent sources. If uncertain, describe impact qualitatively instead.
 - Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", but "three countries", "two senators".
 - Only include items that have new developments or reporting within the last 72 hours. If a story's most recent coverage is older than 72 hours, skip it regardless of significance.
