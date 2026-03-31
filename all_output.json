@@ -3,87 +3,114 @@
   "global": {
     "generated_at": "2026-03-31T00:00:00Z",
     "sources": [
-      "NPR",
-      "Reuters",
+      "NBC News",
+      "CBS News",
       "Al Jazeera",
-      "CNN",
-      "Bloomberg",
-      "Associated Press",
-      "Washington Post",
-      "Euronews"
+      "Just Security",
+      "UN News",
+      "NPR",
+      "Democracy Now!",
+      "NCAA",
+      "Nature"
     ],
     "items": [
       {
-        "headline": "Washington lifts blanket asylum freeze for most nationalities",
-        "body": "United States immigration authorities ended a total hold on asylum decisions affecting millions of applications, though the pause continues for nationals from 40 countries designated high-risk. The shift follows months of frozen processing after a National Guard shooting blamed on vetting failures.",
-        "geo": "Americas",
+        "headline": "Three UN peacekeepers killed in southern Lebanon",
+        "body": "Indonesian peacekeepers died after projectiles hit UN positions amid intensifying Israel-Hezbollah exchanges. France requested emergency Security Council meeting following the deaths.",
+        "geo": "Asia",
         "sources": 5
       },
       {
-        "headline": "Gang warfare leaves dozens dead in central Haiti",
-        "body": "Armed group Gran Grif attacked the town of Petite-Rivière de l'Artibonite, scattering bodies across streets and burning homes in conflict with vigilante forces. The massacre adds to five years of spiraling violence that has displaced over seven million Haitians since the president's assassination.",
-        "geo": "Americas",
-        "sources": 4
+        "headline": "Israel enacts death penalty for Palestinians convicted of killing Israelis",
+        "body": "Parliament approved legislation allowing capital punishment for Palestinians found guilty of such attacks. Rights groups condemned the law as violation of international legal protections.",
+        "geo": "Asia",
+        "sources": 3
       },
       {
-        "headline": "Italian voters block government judicial overhaul",
-        "body": "Citizens rejected constitutional changes to separate judges from prosecutors by 54 to 46 percent in a referendum widely seen as a test of leadership. Premier Meloni conceded defeat but pledged to complete her mandate despite the setback one year before national elections.",
-        "geo": "Europe",
-        "sources": 7
+        "headline": "Federal judge freezes US childhood vaccine guidance changes",
+        "body": "Court ordered halt to all immunization schedule alterations made since June 2025 pending review. Medical organizations questioned decision-making process behind changes to longstanding vaccination protocols.",
+        "geo": "Americas",
+        "sources": 4
       }
     ],
     "meanwhile": [
       {
         "category": "culture",
-        "text": "Kaori Sakamoto won figure skating world championship gold in final performance before retirement",
-        "search": "Kaori Sakamoto 2026 world championship retirement"
+        "text": "UConn erased 15-point halftime deficit to beat Duke on buzzer-beater three-pointer",
+        "search": "UConn Duke Elite Eight 2026 comeback buzzer beater"
       },
       {
         "category": "science_tech",
-        "text": "Scientists created first lab-grown esophagus that restores swallowing function in animals without immunosuppression",
-        "search": "lab-grown esophagus 2026 Great Ormond Street"
+        "text": "CERN physicists discovered doubly charmed baryon containing two charm quarks and one down quark",
+        "search": "CERN LHCb doubly charmed baryon discovery 2026"
       },
       {
         "category": "wellbeing",
-        "text": "Harvard researcher claims aging reversal therapies could show first human evidence within months",
-        "search": "David Sinclair aging reversal 2026"
+        "text": "Current flu vaccine reduced hospitalization risk by 30% for adults and 41% for children",
+        "search": "flu vaccine effectiveness 2025-2026 hospitalization rates CDC"
       },
       {
         "category": "worldviews",
-        "text": "Anti-establishment pragmatism emerges as dominant political worldview across ideological divides in America",
-        "search": "anti-establishment pragmatism 2026 polling"
+        "text": "Gen Z church attendance in UK quadrupled over eight years, rising to 16% of young adults",
+        "search": "Gen Z church attendance UK increase religious revival 2026"
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Madrid bars US warplanes from Spanish airspace over Iran conflict",
-        "body": "Spain closed its airspace to American military aircraft involved in operations against Iran, defence minister confirmed Monday. The government had already denied Washington use of jointly operated bases at Rota and Morón for the conflict.",
+        "headline": "Government closes airspace to US military flights linked to Iran operations",
+        "body": "Spain closed its airspace to US planes involved in military operations against Iran. The defence minister confirmed neither bases nor airspace would be authorized for actions related to the conflict.",
         "geo": "Spain",
-        "sources": 7
+        "sources": 4
+      },
+      {
+        "headline": "Ground staff launch indefinite strike at major airports during Easter travel peak",
+        "body": "Groundforce workers began an indefinite strike affecting 12 major airports including Madrid and Barcelona. Unions scheduled rolling stoppages every Monday, Wednesday and Friday in three daily time blocks until the dispute is resolved.",
+        "geo": "Spain",
+        "sources": 5
+      }
+    ],
+    "no": [
+      {
+        "headline": "Norway signs cross-border carbon storage deal with Belgium",
+        "body": "Norway and Belgium signed an agreement to enable pipeline transport of CO2 from Belgium to Norwegian offshore storage sites. The infrastructure could become operational by 2031, managed by Fluxys onshore and Equinor offshore.",
+        "geo": "Norway",
+        "sources": 5
+      },
+      {
+        "headline": "Norway proposes additional defense spending to reach NATO target",
+        "body": "Norway unveiled plans to spend an additional 115 billion kroner on defense over the next decade. The increase would bring defense spending to 3.5 percent of GDP by 2035, aligning with NATO commitments.",
+        "geo": "Norway",
+        "sources": 6
       }
     ],
     "uk": [
       {
-        "headline": "Financial regulator launches compensation scheme for car loan customers",
-        "body": "Britain's financial watchdog approved redress for millions mis-sold motor finance deals between 2007 and 2024. Lenders will contact affected customers about payments averaging hundreds of pounds starting this summer.",
+        "headline": "Car strikes seven pedestrians in Derby city center",
+        "body": "Counter-terrorism officers joined investigation into Saturday night incident. Police arrested suspect on attempted murder charges while maintaining motives remain unclear.",
         "geo": "United Kingdom",
-        "sources": 7
+        "sources": 3
       },
       {
-        "headline": "Car strikes pedestrians in Derby city centre, suspect held on attempted murder charges",
-        "body": "Seven people were injured after a vehicle drove into pedestrians on a nightlife street. Counter-terrorism officers are assisting the investigation though police say the incident is not currently classified as terrorism.",
+        "headline": "Financial regulator announces car finance compensation scheme",
+        "body": "Authority ordered lenders to pay affected customers following years of undisclosed dealer commissions. Scheme covers agreements from 2007 to 2024.",
         "geo": "United Kingdom",
-        "sources": 6
+        "sources": 3
       }
     ],
     "nl": [
       {
-        "headline": "Doctors warn asylum ship housing hundreds of children poses developmental health risks",
-        "body": "Healthcare workers say conditions on Rotterdam's Silja vessel housing two thousand asylum seekers could cause lasting harm to children. Among residents are 578 children, with staff citing violence, overcrowding and infectious disease outbreaks.",
+        "headline": "Inflation rises as energy costs surge following Middle East tensions",
+        "body": "Consumer prices increased to the highest rate in three months driven by energy price jumps. Statistics bureau attributed the rise to volatile energy markets amid ongoing regional conflicts.",
         "geo": "Netherlands",
-        "sources": 2
+        "sources": 4
+      },
+      {
+        "headline": "Skeletal remains possibly belonging to musketeer discovered during church repairs in Maastricht",
+        "body": "Archaeologists found a skeleton beneath a church floor along with a musket bullet and French coin. DNA testing is underway to confirm whether the remains belong to a famous officer killed during the siege.",
+        "geo": "Netherlands",
+        "sources": 6
       }
     ]
   }
