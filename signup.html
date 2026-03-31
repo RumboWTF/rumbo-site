@@ -26,7 +26,7 @@
     .email-input:focus{border-color:#c8a84a;}
     .days-row{display:flex;gap:6px;margin-bottom:10px;}
     .day{width:36px;height:36px;border:2px solid #333;background:#1a1a18;border-radius:3px;font-family:'Courier New',monospace;font-size:11px;color:#777;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.1s;}
-    .day.on{background:#1a1a18;border:2px solid #00ff00;color:#00ff00;}
+    .day.on{background:#1a1a18;border:2px solid #c8a84a;color:#f5f3ee;}
     .presets{display:flex;gap:12px;margin-bottom:28px;}
     .preset{font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#7a5c0a;cursor:pointer;text-decoration:underline;text-underline-offset:3px;}
     .region-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;}
@@ -44,7 +44,7 @@
     .summary{font-family:'Courier New',monospace;font-size:11px;letter-spacing:1px;color:#555;}
     .summary strong{color:#1a1a18;}
     .readtime{font-family:'Courier New',monospace;font-size:11px;color:#c8a84a;}
-    .btn{width:100%;background:#ff0000;color:#f5f3ee;border:none;font-family:'Courier New',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:14px;border-radius:3px;cursor:pointer;transition:background 0.15s;}
+    .btn{width:100%;background:#1a1a18;color:#f5f3ee;border:none;font-family:'Courier New',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:14px;border-radius:3px;cursor:pointer;transition:background 0.15s;}
     .btn:hover{background:#333;}
     .btn:disabled{background:#999;cursor:not-allowed;}
     .success{display:none;margin-top:16px;padding:16px;background:#f0ede6;border-left:3px solid #c8a84a;border-radius:0 3px 3px 0;font-family:'Courier New',monospace;font-size:11px;color:#555;line-height:1.7;}
@@ -83,33 +83,33 @@
 
   <span class="field-label">which days</span>
   <div class="days-row">
-    <div class="day" data-code="Mo" onclick="toggleDay(this)">M</div>
-    <div class="day" data-code="Tu" onclick="toggleDay(this)">T</div>
-    <div class="day" data-code="We" onclick="toggleDay(this)">W</div>
-    <div class="day" data-code="Th" onclick="toggleDay(this)">T</div>
-    <div class="day" data-code="Fr" onclick="toggleDay(this)">F</div>
-    <div class="day" data-code="Sa" onclick="toggleDay(this)">S</div>
-    <div class="day" data-code="Su" onclick="toggleDay(this)">S</div>
+    <div class="day" data-code="Mo">M</div>
+    <div class="day" data-code="Tu">T</div>
+    <div class="day" data-code="We">W</div>
+    <div class="day" data-code="Th">T</div>
+    <div class="day" data-code="Fr">F</div>
+    <div class="day" data-code="Sa">S</div>
+    <div class="day" data-code="Su">S</div>
   </div>
   <div class="presets">
-    <span class="preset" onclick="setDays('all')">daily</span>
-    <span class="preset" onclick="setDays('weekdays')">weekdays</span>
-    <span class="preset" onclick="setDays('mwf')">mon · wed · fri</span>
-    <span class="preset" onclick="setDays('clear')">clear</span>
+    <span class="preset" data-preset="all">daily</span>
+    <span class="preset" data-preset="weekdays">weekdays</span>
+    <span class="preset" data-preset="mwf">mon · wed · fri</span>
+    <span class="preset" data-preset="clear">clear</span>
   </div>
 
   <span class="field-label">content language</span>
   <div class="lang-row">
-    <div class="lpill on" id="lang-EN" onclick="setLang('EN')">&#127468;&#127463; EN</div>
-    <div class="lpill" id="lang-ES" onclick="setLang('ES')">&#127466;&#127480; ES</div>
+    <div class="lpill on" id="lang-EN">&#127468;&#127463; EN</div>
+    <div class="lpill" id="lang-ES">&#127466;&#127480; ES</div>
   </div>
 
   <span class="field-label">regional focus <span style="font-size:9px;color:#aaa;letter-spacing:0;text-transform:none;">— add any combination</span></span>
   <div class="region-grid">
-    <div class="region" onclick="toggleRegion(this,'es')">Spain <span class="check">&#10003;</span></div>
-    <div class="region" onclick="toggleRegion(this,'no')">Norway <span class="check">&#10003;</span></div>
-    <div class="region" onclick="toggleRegion(this,'uk')">United Kingdom <span class="check">&#10003;</span></div>
-    <div class="region" onclick="toggleRegion(this,'nl')">Netherlands <span class="check">&#10003;</span></div>
+    <div class="region" data-region="es">Spain <span class="check">&#10003;</span></div>
+    <div class="region" data-region="no">Norway <span class="check">&#10003;</span></div>
+    <div class="region" data-region="uk">United Kingdom <span class="check">&#10003;</span></div>
+    <div class="region" data-region="nl">Netherlands <span class="check">&#10003;</span></div>
   </div>
   <div class="region-note">Global edition always included. Select regions to add local items.</div>
 
@@ -118,7 +118,7 @@
     <div class="readtime" id="readtime">~4 min read</div>
   </div>
 
-  <button class="btn" id="submitBtn" onclick="handleSubmit()">Subscribe &#8594;</button>
+  <button class="btn" id="submitBtn">Subscribe &#8594;</button>
   <div class="success" id="successMsg">
     Check your inbox for a confirmation email. Click the link to activate your subscription.
   </div>
@@ -136,6 +136,20 @@
   </div>
 </footer>
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.day').forEach(function(el) {
+    el.addEventListener('click', function() { toggleDay(this); });
+  });
+  document.querySelectorAll('.preset').forEach(function(el) {
+    el.addEventListener('click', function() { setDays(this.dataset.preset); });
+  });
+  document.querySelectorAll('.region').forEach(function(el) {
+    el.addEventListener('click', function() { toggleRegion(this, this.dataset.region); });
+  });
+  document.getElementById('lang-EN').addEventListener('click', function() { setLang('EN'); });
+  document.getElementById('lang-ES').addEventListener('click', function() { setLang('ES'); });
+  document.getElementById('submitBtn').addEventListener('click', handleSubmit);
+});
 var selectedRegions=[];
 var selectedLang=localStorage.getItem('rumbo_lang')||'EN';
 document.getElementById('lang-'+selectedLang)&&document.getElementById('lang-'+selectedLang).classList.add('on');
