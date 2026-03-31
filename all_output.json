@@ -1,94 +1,87 @@
 {
-  "date": "30 March 2026",
+  "date": "31 March 2026",
   "global": {
-    "generated_at": "2026-03-30T11:00:00Z",
+    "generated_at": "2026-03-31T00:00:00Z",
     "sources": [
+      "NPR",
+      "Reuters",
+      "Al Jazeera",
       "CNN",
       "Bloomberg",
-      "Al Jazeera",
-      "NPR",
-      "CBS News",
-      "NBC News",
-      "Reuters",
-      "AFP",
-      "Wikipedia"
+      "Associated Press",
+      "Washington Post",
+      "Euronews"
     ],
     "items": [
       {
-        "headline": "Two Australian states waive public transport fares as fuel costs surge",
-        "body": "Victoria made public transport free for one month starting March 31, while Tasmania removed fares for buses and ferries from March 30 to July 1. Federal government halved fuel excise and paused road-user charges for trucks for three months, reducing fuel costs by 26.3 cents per litre.",
-        "geo": "Oceania",
-        "sources": 6
+        "headline": "Washington lifts blanket asylum freeze for most nationalities",
+        "body": "United States immigration authorities ended a total hold on asylum decisions affecting millions of applications, though the pause continues for nationals from 40 countries designated high-risk. The shift follows months of frozen processing after a National Guard shooting blamed on vetting failures.",
+        "geo": "Americas",
+        "sources": 5
       },
       {
-        "headline": "Philippines becomes first nation to declare national energy emergency over fuel crisis",
-        "body": "President Marcos signed an executive order putting the country under state of national energy emergency, as the Philippines imports 98% of its oil from the Middle East and was severely affected by the Strait of Hormuz crisis. The country has 45 days of oil supply, down from 55 days when the war started, with diesel exceeding 130 pesos per liter and gasoline surpassing 100 pesos.",
-        "geo": "Asia",
-        "sources": 8
+        "headline": "Gang warfare leaves dozens dead in central Haiti",
+        "body": "Armed group Gran Grif attacked the town of Petite-Rivière de l'Artibonite, scattering bodies across streets and burning homes in conflict with vigilante forces. The massacre adds to five years of spiraling violence that has displaced over seven million Haitians since the president's assassination.",
+        "geo": "Americas",
+        "sources": 4
       },
       {
-        "headline": "Japanese authorities signal intervention as yen hits critical 160 threshold",
-        "body": "Japan's top currency official delivered his strongest warning after the yen crossed 160 per dollar, saying authorities may need to take bold action if speculative activity in the foreign exchange market continues. The yen has lost over 2% in value against the dollar since the war started, making it one of the worst-performing major currencies in the last month due to Japan's heavy dependence on energy imports.",
-        "geo": "Asia",
+        "headline": "Italian voters block government judicial overhaul",
+        "body": "Citizens rejected constitutional changes to separate judges from prosecutors by 54 to 46 percent in a referendum widely seen as a test of leadership. Premier Meloni conceded defeat but pledged to complete her mandate despite the setback one year before national elections.",
+        "geo": "Europe",
         "sources": 7
-      },
-      {
-        "headline": "Olympics Committee restricts women's events to biological females starting 2028",
-        "body": "The IOC reached consensus that male sex provides a performance advantage in all sports relying on strength, power and endurance, and that eligibility should be based on biological sex to ensure fairness and protect safety. All athletes wanting to participate in women's events must undergo genetic testing, with the policy taking effect for the 2028 Summer Games in Los Angeles.",
-        "geo": "Global",
-        "sources": 9
       }
     ],
     "meanwhile": [
       {
         "category": "culture",
-        "text": "Ilia Malinin retained world figure skating title with quad jumps and backflip in Prague",
-        "search": "Ilia Malinin world figure skating championship 2026 Prague"
+        "text": "Kaori Sakamoto won figure skating world championship gold in final performance before retirement",
+        "search": "Kaori Sakamoto 2026 world championship retirement"
       },
       {
         "category": "science_tech",
-        "text": "Sodium-ion batteries made from salt emerging as cheaper, safer alternative to lithium power",
-        "search": "sodium ion batteries 2026 alternative lithium"
+        "text": "Scientists created first lab-grown esophagus that restores swallowing function in animals without immunosuppression",
+        "search": "lab-grown esophagus 2026 Great Ormond Street"
       },
       {
         "category": "wellbeing",
-        "text": "Combined excess belly fat and low muscle mass raises death risk by 83 percent",
-        "search": "sarcopenic obesity mortality risk 2026"
+        "text": "Harvard researcher claims aging reversal therapies could show first human evidence within months",
+        "search": "David Sinclair aging reversal 2026"
       },
       {
         "category": "worldviews",
-        "text": "Declining religious observance in US sees political beliefs adopt structure of faith systems",
-        "search": "religification politics ideology belief systems"
+        "text": "Anti-establishment pragmatism emerges as dominant political worldview across ideological divides in America",
+        "search": "anti-establishment pragmatism 2026 polling"
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Parliament approves emergency relief package as energy costs surge from Iran war",
-        "body": "Spain's legislature passed measures including reduced fuel and electricity taxes to offset economic impacts from Middle East conflict. VAT on fuel drops to 10 percent while electricity and gas rates fall to the same level.",
+        "headline": "Madrid bars US warplanes from Spanish airspace over Iran conflict",
+        "body": "Spain closed its airspace to American military aircraft involved in operations against Iran, defence minister confirmed Monday. The government had already denied Washington use of jointly operated bases at Rota and Morón for the conflict.",
         "geo": "Spain",
         "sources": 7
-      },
-      {
-        "headline": "Ground handling strikes disrupt airports during peak Easter travel period",
-        "body": "Workers at 12 airports began indefinite walkouts over wage disputes affecting holiday flights. Separate strikes by another handling company are scheduled through early April covering major travel days.",
-        "geo": "Spain",
-        "sources": 8
       }
     ],
     "uk": [
       {
-        "headline": "Tens of thousands march in London against far-right movements",
-        "body": "The Together Alliance march brought together diverse crowds in what organisers called Britain's largest anti-far-right demonstration. Police estimated attendance around 50,000 while organisers claimed half a million participated.",
+        "headline": "Financial regulator launches compensation scheme for car loan customers",
+        "body": "Britain's financial watchdog approved redress for millions mis-sold motor finance deals between 2007 and 2024. Lenders will contact affected customers about payments averaging hundreds of pounds starting this summer.",
         "geo": "United Kingdom",
-        "sources": 5
+        "sources": 7
+      },
+      {
+        "headline": "Car strikes pedestrians in Derby city centre, suspect held on attempted murder charges",
+        "body": "Seven people were injured after a vehicle drove into pedestrians on a nightlife street. Counter-terrorism officers are assisting the investigation though police say the incident is not currently classified as terrorism.",
+        "geo": "United Kingdom",
+        "sources": 6
       }
     ],
     "nl": [
       {
-        "headline": "Senate rejects law to monitor foreign donations to mosques",
-        "body": "The Senate rejected legislation that would have given mayors and prosecutors authority to oversee foreign donations to mosques and weekend schools. The law aimed to curb unwanted foreign influence by requiring community organizations to share information about large donations.",
+        "headline": "Doctors warn asylum ship housing hundreds of children poses developmental health risks",
+        "body": "Healthcare workers say conditions on Rotterdam's Silja vessel housing two thousand asylum seekers could cause lasting harm to children. Among residents are 578 children, with staff citing violence, overcrowding and infectious disease outbreaks.",
         "geo": "Netherlands",
         "sources": 2
       }
