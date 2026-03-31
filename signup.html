@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Newsletter · Rumbo</title>
+  <title>Newsletter · Rumbo.wtf</title>
   <link rel="icon" type="image/png" href="favicon.png"/>
   <style>
     *{box-sizing:border-box;margin:0;padding:0;}
@@ -48,7 +48,6 @@
     .btn:hover{background:#333;}
     .btn:disabled{background:#999;cursor:not-allowed;}
     .success{display:none;margin-top:16px;padding:16px;background:#f0ede6;border-left:3px solid #c8a84a;border-radius:0 3px 3px 0;font-family:'Courier New',monospace;font-size:11px;color:#555;line-height:1.7;}
-    .success a{color:#7a5c0a;text-decoration:underline;text-underline-offset:3px;}
     .error{display:none;margin-top:16px;padding:16px;background:#fff0f0;border-left:3px solid #c04040;border-radius:0 3px 3px 0;font-family:'Courier New',monospace;font-size:11px;color:#555;line-height:1.7;}
     .fine{font-family:'Courier New',monospace;font-size:11px;color:#aaa;text-align:center;margin-top:14px;line-height:1.7;}
     footer{background:#1a1a18;padding:20px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;margin-top:2rem;}
@@ -124,7 +123,7 @@
     Check your inbox for a confirmation email. Click the link to activate your subscription.
   </div>
   <div class="error" id="errorMsg">
-    Something went wrong. Try again or email <a href="/cdn-cgi/l/email-protection#0960676f66497b7c646b66277e7d6f"><span class="__cf_email__" data-cfemail="244d4a424b64565149464b0a535042">[email&#160;protected]</span></a>.
+    Something went wrong — please try again.
   </div>
   <div class="fine">Free. No spam. No ads. One click to unsubscribe.<br>GDPR compliant.</div>
 </div>
@@ -215,4 +214,15 @@ async function handleSubmit(){
       btn.style.background='#555';
       successEl.style.display='block';
     } else {
-      throw new Error(data.error||'Unknown err
+      throw new Error(data.error||'Unknown error');
+    }
+  } catch(e){
+    btn.disabled=false;
+    btn.textContent='Subscribe \u2192';
+    errorEl.textContent='Something went wrong — please try again.';
+    errorEl.style.display='block';
+  }
+}
+</script>
+</body>
+</html>
