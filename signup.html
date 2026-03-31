@@ -25,8 +25,8 @@
     .email-input{width:100%;border:1px solid #d0ccc4;background:#fff;font-family:Georgia,serif;font-size:16px;color:#1a1a18;padding:10px 14px;border-radius:3px;outline:none;margin-bottom:24px;}
     .email-input:focus{border-color:#c8a84a;}
     .days-row{display:flex;gap:6px;margin-bottom:10px;}
-    .day{width:36px;height:36px;border:1px solid #d0ccc4;background:#fff;border-radius:3px;font-family:'Courier New',monospace;font-size:11px;color:#888;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.1s;}
-    .day.on{background:#1a1a18;border-color:#1a1a18;color:#f5f3ee;}
+    .day{width:36px;height:36px;border:2px solid transparent;background:#1a1a18;border-radius:3px;font-family:'Courier New',monospace;font-size:11px;color:#666;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.1s;}
+    .day.on{background:#1a1a18;border-color:#c8a84a;color:#f5f3ee;}
     .presets{display:flex;gap:12px;margin-bottom:28px;}
     .preset{font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#7a5c0a;cursor:pointer;text-decoration:underline;text-underline-offset:3px;}
     .region-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;}
@@ -84,13 +84,13 @@
 
   <span class="field-label">which days</span>
   <div class="days-row">
-    <div class="day on" data-code="Mo" onclick="toggleDay(this)">M</div>
-    <div class="day on" data-code="Tu" onclick="toggleDay(this)">T</div>
-    <div class="day on" data-code="We" onclick="toggleDay(this)">W</div>
-    <div class="day on" data-code="Th" onclick="toggleDay(this)">T</div>
-    <div class="day on" data-code="Fr" onclick="toggleDay(this)">F</div>
-    <div class="day on" data-code="Sa" onclick="toggleDay(this)">S</div>
-    <div class="day on" data-code="Su" onclick="toggleDay(this)">S</div>
+    <div class="day" data-code="Mo" onclick="toggleDay(this)">M</div>
+    <div class="day" data-code="Tu" onclick="toggleDay(this)">T</div>
+    <div class="day" data-code="We" onclick="toggleDay(this)">W</div>
+    <div class="day" data-code="Th" onclick="toggleDay(this)">T</div>
+    <div class="day" data-code="Fr" onclick="toggleDay(this)">F</div>
+    <div class="day" data-code="Sa" onclick="toggleDay(this)">S</div>
+    <div class="day" data-code="Su" onclick="toggleDay(this)">S</div>
   </div>
   <div class="presets">
     <span class="preset" onclick="setDays('all')">daily</span>
@@ -115,7 +115,7 @@
   <div class="region-note">Global edition always included. Select regions to add local items.</div>
 
   <div class="summary-row">
-    <div class="summary">You will receive <strong id="days-out">daily</strong> · <strong id="regions-out">global only</strong> · <strong id="lang-out">in English</strong></div>
+    <div class="summary">You will receive <strong id="days-out">no days</strong> · <strong id="regions-out">global only</strong> · <strong id="lang-out">in English</strong></div>
     <div class="readtime" id="readtime">~4 min read</div>
   </div>
 
@@ -124,7 +124,7 @@
     Check your inbox for a confirmation email. Click the link to activate your subscription.
   </div>
   <div class="error" id="errorMsg">
-    Something went wrong. Try again or email <a href="mailto:info@rumbo.wtf">info@rumbo.wtf</a>.
+    Something went wrong. Try again or email <a href="/cdn-cgi/l/email-protection#0960676f66497b7c646b66277e7d6f"><span class="__cf_email__" data-cfemail="244d4a424b64565149464b0a535042">[email&#160;protected]</span></a>.
   </div>
   <div class="fine">Free. No spam. No ads. One click to unsubscribe.<br>GDPR compliant.</div>
 </div>
@@ -136,7 +136,7 @@
     <a href="signup.html">Newsletter</a>
   </div>
 </footer>
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 var selectedRegions=[];
 var selectedLang=localStorage.getItem('rumbo_lang')||'EN';
 document.getElementById('lang-'+selectedLang)&&document.getElementById('lang-'+selectedLang).classList.add('on');
@@ -215,15 +215,4 @@ async function handleSubmit(){
       btn.style.background='#555';
       successEl.style.display='block';
     } else {
-      throw new Error(data.error||'Unknown error');
-    }
-  } catch(e){
-    btn.disabled=false;
-    btn.textContent='Subscribe \u2192';
-    errorEl.textContent='Something went wrong: '+(e.message||'try again.');
-    errorEl.style.display='block';
-  }
-}
-</script>
-</body>
-</html>
+      throw new Error(data.error||'Unknown err
