@@ -400,7 +400,7 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
   };
 
   const itemsHtml = items.map((item) => `
-    <tr><td style="padding:20px 28px 0;">
+    <tr><td class="rp" style="padding:20px 28px 0;">
       <div style="font-family:Georgia,serif;font-size:17px;color:#1a1a18;line-height:1.35;margin-bottom:8px;">${item.headline}</div>
       <div style="font-family:Georgia,serif;font-size:14px;color:#444;line-height:1.65;margin-bottom:10px;">${item.body}</div>
       <div>
@@ -408,13 +408,13 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
         <span style="font-family:'Courier New',monospace;font-size:10px;color:#aaa;">~${item.sources} ${t.SOURCE_PILL_LABEL}</span>
       </div>
     </td></tr>
-    <tr><td style="padding:12px 28px 0;"><hr style="border:none;border-top:1px solid #e8e4de;margin:0;"></td></tr>`
+    <tr><td class="rp" style="padding:12px 28px 0;"><hr style="border:none;border-top:1px solid #e8e4de;margin:0;"></td></tr>`
   ).join("\n");
 
   const meanwhileHtml = meanwhile.map((item) => {
     const label = t.CATEGORIES[item.category] || item.category;
     return `
-    <tr><td style="padding:10px 28px 0;">
+    <tr><td class="rp" style="padding:10px 28px 0;">
       <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:1.5px;color:#c8a84a;text-transform:uppercase;margin-bottom:4px;">${label}</div>
       <div style="font-family:Georgia,serif;font-size:14px;color:#333;line-height:1.55;">${item.text}</div>
     </td></tr>`;
@@ -426,6 +426,11 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Rumbo · ${date}</title>
+  <style>
+    @media only screen and (max-width:600px) {
+      .rp { padding-left:16px !important; padding-right:16px !important; }
+    }
+  </style>
 </head>
 <body style="margin:0;padding:0;background:#f5f3ee;font-family:Georgia,'Times New Roman',serif;">
 <table width="100%" cellpadding="0" cellspacing="0" style="background:#f5f3ee;">
@@ -433,7 +438,7 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
 <table cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#faf9f6;border-radius:4px;border:1px solid #e0dcd4;">
 
   <!-- Header -->
-  <tr><td style="background:#1a1a18;padding:16px 28px;border-radius:4px 4px 0 0;">
+  <tr><td class="rp" style="background:#1a1a18;padding:16px 28px;border-radius:4px 4px 0 0;">
     <table width="100%" cellpadding="0" cellspacing="0">
     <tr>
       <td><span style="font-family:Georgia,serif;font-size:20px;color:#f5f3ee;letter-spacing:-0.5px;">Rumbo<span style="color:#c8a84a;">.wtf</span></span></td>
@@ -449,7 +454,7 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
   ${itemsHtml}
 
   <!-- Meanwhile header -->
-  <tr><td style="padding:28px 28px 0;">
+  <tr><td class="rp" style="padding:28px 28px 0;">
     <div style="font-family:'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#1a1a18;text-transform:uppercase;border-bottom:2px solid #1a1a18;padding-bottom:6px;">${t.MEANWHILE_TITLE}</div>
   </td></tr>
 
@@ -457,7 +462,7 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
   ${meanwhileHtml}
 
   <!-- Footer -->
-  <tr><td style="padding:28px 28px 20px;text-align:center;">
+  <tr><td class="rp" style="padding:28px 28px 20px;text-align:center;">
     <p style="font-family:'Courier New',monospace;font-size:10px;color:#aaa;line-height:1.8;margin:0;">
       <a href="https://rumbo.wtf" style="color:#c8a84a;text-decoration:none;">rumbo.wtf</a>
       &nbsp;·&nbsp;
