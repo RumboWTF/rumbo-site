@@ -1,32 +1,37 @@
 {
-  "generated_at": "2026-03-31T00:00:00Z",
+  "generated_at": "2026-03-31T10:00:00Z",
   "sources": [
-    "NBC News",
-    "CBS News",
     "Al Jazeera",
-    "Just Security",
-    "UN News",
     "NPR",
-    "Democracy Now!",
-    "NCAA",
-    "Nature"
+    "Bloomberg",
+    "Euronews",
+    "SBS News",
+    "WTO",
+    "The National",
+    "CNN"
   ],
   "items": [
     {
-      "headline": "Three UN peacekeepers killed in southern Lebanon",
-      "body": "Indonesian peacekeepers died after projectiles hit UN positions amid intensifying Israel-Hezbollah exchanges. France requested emergency Security Council meeting following the deaths.",
-      "geo": "Asia",
+      "headline": "NATO member closes airspace to allied military over Middle East operations",
+      "body": "Spain barred US aircraft involved in Iran operations from its airspace, extending an earlier ban on American use of joint military bases. The move tests alliance cohesion as Washington pledged to defend the NATO member while Madrid calls the war illegal.",
+      "geo": "Europe",
       "sources": 5
     },
     {
-      "headline": "Israel enacts death penalty for Palestinians convicted of killing Israelis",
-      "body": "Parliament approved legislation allowing capital punishment for Palestinians found guilty of such attacks. Rights groups condemned the law as violation of international legal protections.",
-      "geo": "Asia",
+      "headline": "Australian states split on free transport as fuel shortages spread from strait closure",
+      "body": "Victoria and Tasmania waived public transport fares through mid-year as Iran's grip on Hormuz drives energy costs higher. Federal government halved fuel excise while some stations report empty tanks despite stable national reserves.",
+      "geo": "Oceania",
+      "sources": 4
+    },
+    {
+      "headline": "Africa and Latin America advance trade cooperation to bypass traditional partners",
+      "body": "Trade ministers at WTO meeting proposed regular summits between regions representing nearly 90 countries and over two billion people. Initiative aims to boost South-South commerce currently at just 0.3 percent of global trade.",
+      "geo": "Global",
       "sources": 3
     },
     {
-      "headline": "Federal judge freezes US childhood vaccine guidance changes",
-      "body": "Court ordered halt to all immunization schedule alterations made since June 2025 pending review. Medical organizations questioned decision-making process behind changes to longstanding vaccination protocols.",
+      "headline": "Washington partially lifts four-month asylum freeze while maintaining ban for 40 countries",
+      "body": "Homeland Security resumed processing applications from most countries after November pause affected four million cases. Ban remains for travel-ban nations including Cuba, Venezuela, Haiti, Afghanistan, and Iran.",
       "geo": "Americas",
       "sources": 4
     }
@@ -34,23 +39,23 @@
   "meanwhile": [
     {
       "category": "culture",
-      "text": "UConn erased 15-point halftime deficit to beat Duke on buzzer-beater three-pointer",
-      "search": "UConn Duke Elite Eight 2026 comeback buzzer beater"
+      "text": "SXSW celebrated 40th edition with 4,400 musicians from 50 countries performing across 300 showcases",
+      "search": "SXSW 2026 40th anniversary music festival Austin"
     },
     {
       "category": "science_tech",
-      "text": "CERN physicists discovered doubly charmed baryon containing two charm quarks and one down quark",
-      "search": "CERN LHCb doubly charmed baryon discovery 2026"
+      "text": "Scientists created first lab-grown oesophagus that restored swallowing function in growing animal without immunosuppression",
+      "search": "lab grown oesophagus tissue engineering 2026"
     },
     {
       "category": "wellbeing",
-      "text": "Current flu vaccine reduced hospitalization risk by 30% for adults and 41% for children",
-      "search": "flu vaccine effectiveness 2025-2026 hospitalization rates CDC"
+      "text": "UK trials begin for blood test detecting 50 cancer types before symptoms appear using DNA fragments",
+      "search": "multi-cancer early detection blood test UK 2026"
     },
     {
       "category": "worldviews",
-      "text": "Gen Z church attendance in UK quadrupled over eight years, rising to 16% of young adults",
-      "search": "Gen Z church attendance UK increase religious revival 2026"
+      "text": "Conservative Christian revival among US Gen Z shows better-educated adherents attending church more than non-believers",
+      "search": "Gen Z Christian revival conservative faith attendance 2026"
     }
   ]
 }

@@ -1,34 +1,39 @@
 {
   "date": "31 March 2026",
   "global": {
-    "generated_at": "2026-03-31T00:00:00Z",
+    "generated_at": "2026-03-31T10:00:00Z",
     "sources": [
-      "NBC News",
-      "CBS News",
       "Al Jazeera",
-      "Just Security",
-      "UN News",
       "NPR",
-      "Democracy Now!",
-      "NCAA",
-      "Nature"
+      "Bloomberg",
+      "Euronews",
+      "SBS News",
+      "WTO",
+      "The National",
+      "CNN"
     ],
     "items": [
       {
-        "headline": "Three UN peacekeepers killed in southern Lebanon",
-        "body": "Indonesian peacekeepers died after projectiles hit UN positions amid intensifying Israel-Hezbollah exchanges. France requested emergency Security Council meeting following the deaths.",
-        "geo": "Asia",
+        "headline": "NATO member closes airspace to allied military over Middle East operations",
+        "body": "Spain barred US aircraft involved in Iran operations from its airspace, extending an earlier ban on American use of joint military bases. The move tests alliance cohesion as Washington pledged to defend the NATO member while Madrid calls the war illegal.",
+        "geo": "Europe",
         "sources": 5
       },
       {
-        "headline": "Israel enacts death penalty for Palestinians convicted of killing Israelis",
-        "body": "Parliament approved legislation allowing capital punishment for Palestinians found guilty of such attacks. Rights groups condemned the law as violation of international legal protections.",
-        "geo": "Asia",
+        "headline": "Australian states split on free transport as fuel shortages spread from strait closure",
+        "body": "Victoria and Tasmania waived public transport fares through mid-year as Iran's grip on Hormuz drives energy costs higher. Federal government halved fuel excise while some stations report empty tanks despite stable national reserves.",
+        "geo": "Oceania",
+        "sources": 4
+      },
+      {
+        "headline": "Africa and Latin America advance trade cooperation to bypass traditional partners",
+        "body": "Trade ministers at WTO meeting proposed regular summits between regions representing nearly 90 countries and over two billion people. Initiative aims to boost South-South commerce currently at just 0.3 percent of global trade.",
+        "geo": "Global",
         "sources": 3
       },
       {
-        "headline": "Federal judge freezes US childhood vaccine guidance changes",
-        "body": "Court ordered halt to all immunization schedule alterations made since June 2025 pending review. Medical organizations questioned decision-making process behind changes to longstanding vaccination protocols.",
+        "headline": "Washington partially lifts four-month asylum freeze while maintaining ban for 40 countries",
+        "body": "Homeland Security resumed processing applications from most countries after November pause affected four million cases. Ban remains for travel-ban nations including Cuba, Venezuela, Haiti, Afghanistan, and Iran.",
         "geo": "Americas",
         "sources": 4
       }
@@ -36,81 +41,67 @@
     "meanwhile": [
       {
         "category": "culture",
-        "text": "UConn erased 15-point halftime deficit to beat Duke on buzzer-beater three-pointer",
-        "search": "UConn Duke Elite Eight 2026 comeback buzzer beater"
+        "text": "SXSW celebrated 40th edition with 4,400 musicians from 50 countries performing across 300 showcases",
+        "search": "SXSW 2026 40th anniversary music festival Austin"
       },
       {
         "category": "science_tech",
-        "text": "CERN physicists discovered doubly charmed baryon containing two charm quarks and one down quark",
-        "search": "CERN LHCb doubly charmed baryon discovery 2026"
+        "text": "Scientists created first lab-grown oesophagus that restored swallowing function in growing animal without immunosuppression",
+        "search": "lab grown oesophagus tissue engineering 2026"
       },
       {
         "category": "wellbeing",
-        "text": "Current flu vaccine reduced hospitalization risk by 30% for adults and 41% for children",
-        "search": "flu vaccine effectiveness 2025-2026 hospitalization rates CDC"
+        "text": "UK trials begin for blood test detecting 50 cancer types before symptoms appear using DNA fragments",
+        "search": "multi-cancer early detection blood test UK 2026"
       },
       {
         "category": "worldviews",
-        "text": "Gen Z church attendance in UK quadrupled over eight years, rising to 16% of young adults",
-        "search": "Gen Z church attendance UK increase religious revival 2026"
+        "text": "Conservative Christian revival among US Gen Z shows better-educated adherents attending church more than non-believers",
+        "search": "Gen Z Christian revival conservative faith attendance 2026"
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Government closes airspace to US military flights linked to Iran operations",
-        "body": "Spain closed its airspace to US planes involved in military operations against Iran. The defence minister confirmed neither bases nor airspace would be authorized for actions related to the conflict.",
+        "headline": "Government and Catholic bishops finalize clergy abuse compensation system",
+        "body": "Spain signed an agreement giving state oversight to Church reparations for time-barred sexual abuse cases. The framework takes effect mid-April with the ombudsman having final say over disputed compensation amounts.",
         "geo": "Spain",
         "sources": 4
       },
       {
-        "headline": "Ground staff launch indefinite strike at major airports during Easter travel peak",
-        "body": "Groundforce workers began an indefinite strike affecting 12 major airports including Madrid and Barcelona. Unions scheduled rolling stoppages every Monday, Wednesday and Friday in three daily time blocks until the dispute is resolved.",
+        "headline": "Spain summons Israeli envoy after Catholic leaders barred from Jerusalem church",
+        "body": "Foreign minister protested Israeli police blocking the Latin Patriarch from Palm Sunday mass at Holy Sepulchre. Spain called the incident unacceptable and demanded normal worship be allowed at Christian holy sites.",
         "geo": "Spain",
         "sources": 5
       }
     ],
     "no": [
       {
-        "headline": "Norway signs cross-border carbon storage deal with Belgium",
-        "body": "Norway and Belgium signed an agreement to enable pipeline transport of CO2 from Belgium to Norwegian offshore storage sites. The infrastructure could become operational by 2031, managed by Fluxys onshore and Equinor offshore.",
+        "headline": "Rocket launch from Europe's first spaceport aborted seconds before ignition after fishing boat delays",
+        "body": "A fishing vessel in the safety zone delayed the countdown at Andøya Spaceport, causing propellant temperatures to rise and forcing an abort. No new launch date has been announced for the satellite mission.",
+        "geo": "Norway",
+        "sources": 4
+      },
+      {
+        "headline": "Norway and Belgium sign cross-border CO2 transport deal to enable European carbon storage",
+        "body": "Norway and Belgium signed an agreement to transport CO2 collected in Zeebrugge to storage sites beneath the North Sea. Under the proposal, a pipeline could be operational by 2031.",
         "geo": "Norway",
         "sources": 5
-      },
-      {
-        "headline": "Norway proposes additional defense spending to reach NATO target",
-        "body": "Norway unveiled plans to spend an additional 115 billion kroner on defense over the next decade. The increase would bring defense spending to 3.5 percent of GDP by 2035, aligning with NATO commitments.",
-        "geo": "Norway",
-        "sources": 6
-      }
-    ],
-    "uk": [
-      {
-        "headline": "Car strikes seven pedestrians in Derby city center",
-        "body": "Counter-terrorism officers joined investigation into Saturday night incident. Police arrested suspect on attempted murder charges while maintaining motives remain unclear.",
-        "geo": "United Kingdom",
-        "sources": 3
-      },
-      {
-        "headline": "Financial regulator announces car finance compensation scheme",
-        "body": "Authority ordered lenders to pay affected customers following years of undisclosed dealer commissions. Scheme covers agreements from 2007 to 2024.",
-        "geo": "United Kingdom",
-        "sources": 3
       }
     ],
     "nl": [
       {
-        "headline": "Inflation rises as energy costs surge following Middle East tensions",
-        "body": "Consumer prices increased to the highest rate in three months driven by energy price jumps. Statistics bureau attributed the rise to volatile energy markets amid ongoing regional conflicts.",
+        "headline": "Healthcare providers fined for recruiting Indonesian nurses under false internships",
+        "body": "Authorities imposed nearly €700,000 in penalties on institutions that brought at least 62 Indonesian nursing graduates as students but used them as unpaid workers. The scheme violated employment laws by requiring work permits the employers never obtained.",
         "geo": "Netherlands",
-        "sources": 4
+        "sources": 2
       },
       {
-        "headline": "Skeletal remains possibly belonging to musketeer discovered during church repairs in Maastricht",
-        "body": "Archaeologists found a skeleton beneath a church floor along with a musket bullet and French coin. DNA testing is underway to confirm whether the remains belong to a famous officer killed during the siege.",
+        "headline": "Advisory council backs terrorism glorification ban but warns on rights safeguards",
+        "body": "Council of State endorsed proposed law criminalizing praise of terrorist attacks with up to three years prison. Body warned fundamental rights could be violated without proper application of European human rights rulings.",
         "geo": "Netherlands",
-        "sources": 6
+        "sources": 2
       }
     ]
   }
