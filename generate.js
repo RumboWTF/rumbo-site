@@ -383,6 +383,8 @@ function renderHtml(data, date, locale = "en") {
   return html;
 }
 
+// ─── Main ─────────────────────────────────────────────────────────────────────
+
 // ─── Email rendering ──────────────────────────────────────────────────────────
 
 function renderEmail(data, date, locale, unsubscribeUrl) {
@@ -393,8 +395,8 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
   const geoStyle = (geo) => {
     const regional = ["Spain", "Norway", "UK", "United Kingdom", "Netherlands"];
     return regional.includes(geo)
-      ? "display:inline-block;font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#7a5c0a;background:#f5ead0;border:1px solid #e0c87a;padding:2px 8px;border-radius:3px;margin-right:6px;"
-      : "display:inline-block;font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#555;background:#f0ede6;border:1px solid #d0ccc4;padding:2px 8px;border-radius:3px;margin-right:6px;";
+      ? "display:inline-block;font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#555;background:#f0ede6;border:1px solid #d0ccc4;padding:2px 8px;border-radius:3px;margin-right:6px;"
+      : "display:inline-block;font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#7a5c0a;background:#f5ead0;border:1px solid #e0c87a;padding:2px 8px;border-radius:3px;margin-right:6px;";
   };
 
   const itemsHtml = items.map((item) => `
@@ -439,6 +441,9 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
     </tr>
     </table>
   </td></tr>
+
+  <!-- Spacer -->
+  <tr><td style="padding:8px 0 0;"></td></tr>
 
   <!-- Items -->
   ${itemsHtml}
@@ -523,6 +528,7 @@ async function main() {
     console.log(`Writing EN fallback for ${GLOBAL_ES_FILE}.`);
     fs.writeFileSync(GLOBAL_ES_FILE, globalHtml, "utf8");
   }
+
   // Step 5: regional editions
   const allRegionalItems = {}; // { regionCode: [items] } — used by Step 7
 
@@ -567,18 +573,17 @@ async function main() {
         }
       }
 
-      
     } catch (e) {
       console.error(`Regional call failed for ${region.name}:`, e.message);
       console.log(`Writing global-only EN fallback for ${region.name}.`);
       fs.writeFileSync(region.file, globalHtml, "utf8");
       if (region.esFile) {
-          fs.writeFileSync(region.esFile, globalHtml, "utf8");
-        }
+        fs.writeFileSync(region.esFile, globalHtml, "utf8");
       }
+    }
   }
 
-  // Step 6: save debug JSON + all_output for newsletter
+  // Step 6: save JSON outputs
   fs.writeFileSync("last_output.json", JSON.stringify(globalData, null, 2), "utf8");
   console.log("Raw JSON saved to last_output.json");
 
@@ -597,10 +602,11 @@ async function main() {
     const { data: subscribers, error: subError } = await supabase
       .from("subscribers")
       .select("*")
-      .eq("active", true);
+      .eq("active", true)
+      .eq("confirmed", true);
 
     if (subError) throw new Error(`Supabase query failed: ${subError.message}`);
-    console.log(`${subscribers.length} active subscribers found.`);
+    console.log(`${subscribers.length} confirmed active subscribers found.`);
 
     let sent = 0;
     let skipped = 0;
@@ -634,10 +640,6 @@ async function main() {
       const unsubUrl = `https://rumbo.wtf/api/unsubscribe?token=${sub.unsubscribe_token}`;
       const emailHtml = renderEmail(emailData, dateStr, locale, unsubUrl);
 
-      const subject = sub.language === "ES"
-        ? `Rumbo · ${dateStr}`
-        : `Rumbo · ${dateStr}`;
-
       const sendRes = await fetch("https://api.resend.com/emails", {
         method: "POST",
         headers: {
@@ -647,7 +649,7 @@ async function main() {
         body: JSON.stringify({
           from: "Rumbo <brief@rumbo.wtf>",
           to: sub.email,
-          subject,
+          subject: `Rumbo · ${dateStr}`,
           html: emailHtml,
         }),
       });
