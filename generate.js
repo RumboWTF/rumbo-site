@@ -123,7 +123,7 @@ const REGIONAL_PROMPT = (regionName, globalJson) =>
 The global edition for today has already been generated. Here it is for context:
 ${globalJson}
 
-Search the web for the 1-2 most consequential developments in ${regionName} from the last 72 hours that are NOT already covered in the global edition above.
+Search the web for the single most consequential development in ${regionName} from the last 72 hours that is NOT already covered in the global edition above. Only include a second item if it is clearly distinct, equally fresh, and genuinely significant — do not pad. Zero items is better than a weak or stale story.
 
 Rules:
 - Only include items genuinely specific to ${regionName} and not already represented in the global feed
