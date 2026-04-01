@@ -1,105 +1,92 @@
 {
-  "date": "31 March 2026",
+  "date": "1 April 2026",
   "global": {
-    "generated_at": "2026-03-31T10:00:00Z",
+    "generated_at": "2026-04-01T00:00:00Z",
     "sources": [
-      "Al Jazeera",
-      "NPR",
-      "Bloomberg",
-      "Euronews",
-      "SBS News",
       "WTO",
-      "The National",
-      "CNN"
+      "CNN",
+      "CBS News",
+      "NBC News",
+      "Philippines Government",
+      "Bangkok Post",
+      "China National Bureau of Statistics",
+      "Eurovision",
+      "NASA"
     ],
     "items": [
       {
-        "headline": "NATO member closes airspace to allied military over Middle East operations",
-        "body": "Spain barred US aircraft involved in Iran operations from its airspace, extending an earlier ban on American use of joint military bases. The move tests alliance cohesion as Washington pledged to defend the NATO member while Madrid calls the war illegal.",
-        "geo": "Europe",
-        "sources": 5
-      },
-      {
-        "headline": "Australian states split on free transport as fuel shortages spread from strait closure",
-        "body": "Victoria and Tasmania waived public transport fares through mid-year as Iran's grip on Hormuz drives energy costs higher. Federal government halved fuel excise while some stations report empty tanks despite stable national reserves.",
-        "geo": "Oceania",
+        "headline": "Trade body closes first African ministerial without agreement on digital commerce or agriculture",
+        "body": "The World Trade Organization's 14th conference ended without consensus after US-Brazil deadlock over e-commerce duties and investment rules. The impasse leaves key moratoria set to expire and defers decisions to Geneva talks.",
+        "geo": "Global",
         "sources": 4
       },
       {
-        "headline": "Africa and Latin America advance trade cooperation to bypass traditional partners",
-        "body": "Trade ministers at WTO meeting proposed regular summits between regions representing nearly 90 countries and over two billion people. Initiative aims to boost South-South commerce currently at just 0.3 percent of global trade.",
-        "geo": "Global",
-        "sources": 3
+        "headline": "Philippines declares first national energy emergency as Asia braces for extended fuel crisis",
+        "body": "Manila became the first country to invoke emergency powers as reserves drop to 45 days and fuel stations close nationwide. Southeast Asia faces coordinated shortages as transport-dependent economies scramble for alternative suppliers amid strait disruptions.",
+        "geo": "Asia",
+        "sources": 5
       },
       {
-        "headline": "Washington partially lifts four-month asylum freeze while maintaining ban for 40 countries",
-        "body": "Homeland Security resumed processing applications from most countries after November pause affected four million cases. Ban remains for travel-ban nations including Cuba, Venezuela, Haiti, Afghanistan, and Iran.",
-        "geo": "Americas",
+        "headline": "China factory activity returns to expansion with strongest gain in 12 months",
+        "body": "Manufacturing PMI jumped to 50.4 in March from February's contraction as new orders and export demand rebounded post-Lunar New Year. The largest monthly gain in a year offers reassurance to commodity exporters and regional supply chains entering the second quarter.",
+        "geo": "Asia",
+        "sources": 6
+      },
+      {
+        "headline": "Thailand approves new cabinet as government prepares economic response to regional energy shock",
+        "body": "Royal endorsement of Prime Minister Anutin's 35-member cabinet clears way for policy statement next week focused on stimulus and fuel price management. The formation concludes three-week transition amid mounting pressure on transport costs and household budgets.",
+        "geo": "Asia",
         "sources": 4
       }
     ],
     "meanwhile": [
       {
         "category": "culture",
-        "text": "SXSW celebrated 40th edition with 4,400 musicians from 50 countries performing across 300 showcases",
-        "search": "SXSW 2026 40th anniversary music festival Austin"
+        "text": "Eurovision announces first Asian edition for Bangkok in November with ten countries confirmed",
+        "search": "Eurovision Asia Bangkok November 2026"
       },
       {
         "category": "science_tech",
-        "text": "Scientists created first lab-grown oesophagus that restored swallowing function in growing animal without immunosuppression",
-        "search": "lab grown oesophagus tissue engineering 2026"
+        "text": "NASA's Artemis II prepares for Wednesday launch sending four astronauts around the Moon for first time since 1972",
+        "search": "Artemis II moon mission April 2026"
       },
       {
         "category": "wellbeing",
-        "text": "UK trials begin for blood test detecting 50 cancer types before symptoms appear using DNA fragments",
-        "search": "multi-cancer early detection blood test UK 2026"
+        "text": "Global helium shortage threatens MRI access and semiconductor production as Qatar accounts for third of world supply",
+        "search": "helium shortage medical MRI 2026"
       },
       {
         "category": "worldviews",
-        "text": "Conservative Christian revival among US Gen Z shows better-educated adherents attending church more than non-believers",
-        "search": "Gen Z Christian revival conservative faith attendance 2026"
+        "text": "Macao hosts Maritime Silk Road cultural parade with 1,600 performers from Asia, Europe and Africa",
+        "search": "Macao International Parade 2026"
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Government and Catholic bishops finalize clergy abuse compensation system",
-        "body": "Spain signed an agreement giving state oversight to Church reparations for time-barred sexual abuse cases. The framework takes effect mid-April with the ombudsman having final say over disputed compensation amounts.",
+        "headline": "Inflation jumps to highest level since mid-2024 as government rolls out emergency energy measures",
+        "body": "Consumer prices rose to 3.3 percent annually in March driven by fuel costs linked to the Iran conflict. Parliament approved an emergency package including fuel tax cuts and electricity VAT reductions to shield households from the shock.",
         "geo": "Spain",
         "sources": 4
       },
       {
-        "headline": "Spain summons Israeli envoy after Catholic leaders barred from Jerusalem church",
-        "body": "Foreign minister protested Israeli police blocking the Latin Patriarch from Palm Sunday mass at Holy Sepulchre. Spain called the incident unacceptable and demanded normal worship be allowed at Christian holy sites.",
+        "headline": "Madrid secures deal with Algeria to increase pipeline gas supplies amid European energy crisis",
+        "body": "Foreign minister traveled to Algiers to negotiate higher volumes through the Medgaz pipeline already running near capacity. Algeria now supplies nearly one third of Spain's gas imports and is being courted by multiple European nations.",
         "geo": "Spain",
-        "sources": 5
-      }
-    ],
-    "no": [
-      {
-        "headline": "Rocket launch from Europe's first spaceport aborted seconds before ignition after fishing boat delays",
-        "body": "A fishing vessel in the safety zone delayed the countdown at Andøya Spaceport, causing propellant temperatures to rise and forcing an abort. No new launch date has been announced for the satellite mission.",
-        "geo": "Norway",
-        "sources": 4
-      },
-      {
-        "headline": "Norway and Belgium sign cross-border CO2 transport deal to enable European carbon storage",
-        "body": "Norway and Belgium signed an agreement to transport CO2 collected in Zeebrugge to storage sites beneath the North Sea. Under the proposal, a pipeline could be operational by 2031.",
-        "geo": "Norway",
         "sources": 5
       }
     ],
     "nl": [
       {
-        "headline": "Healthcare providers fined for recruiting Indonesian nurses under false internships",
-        "body": "Authorities imposed nearly €700,000 in penalties on institutions that brought at least 62 Indonesian nursing graduates as students but used them as unpaid workers. The scheme violated employment laws by requiring work permits the employers never obtained.",
+        "headline": "Consumer prices rise as energy shock from Middle East war drives inflation to three-month high",
+        "body": "Inflation reached 2.7 percent driven by fuel and energy costs surging after conflict disrupted supplies. Household energy bills lag current market rates but analysts warn further increases will flow through as contracts renew.",
         "geo": "Netherlands",
-        "sources": 2
+        "sources": 4
       },
       {
-        "headline": "Advisory council backs terrorism glorification ban but warns on rights safeguards",
-        "body": "Council of State endorsed proposed law criminalizing praise of terrorist attacks with up to three years prison. Body warned fundamental rights could be violated without proper application of European human rights rulings.",
+        "headline": "Microcar registrations surge nationwide while Amsterdam market collapses after parking policy shift",
+        "body": "National registrations climbed 42 percent since 2020 reaching nearly 33,000 vehicles as urbanites seek alternatives to full-size cars. Amsterdam registrations dropped from 154 to 57 monthly after citywide parking permits expired forcing owners to pay standard rates.",
         "geo": "Netherlands",
         "sources": 2
       }
