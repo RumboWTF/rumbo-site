@@ -75,8 +75,7 @@ FRESHNESS
 WRITING
 - Plain language any curious adult can understand without prior knowledge. No jargon, acronyms, or financial language — translate everything.
 - No individual names in headlines unless the person's identity is the story, not their action or position. Avoid personality-driven headlines — lead with the institution, country, or dynamic instead.
-- Never include specific prices, rates, or market figures — describe direction and magnitude qualitatively instead.
-- Never include specific numerical figures (casualty counts, monetary amounts, population numbers, percentages) unless they appear across multiple independent sources and are central to understanding the story. If uncertain, describe magnitude qualitatively instead.
+- Never include specific numerical figures of any kind — no percentages, prices, rates, counts, days, members, volumes, or market figures. Describe direction and magnitude qualitatively instead: 'reserves are critically low', 'prices rose sharply', 'a large majority voted'. The only exception is a year (e.g. '2026') or a round number that is itself the story (e.g. 'the first time in 50 years'). When in doubt, omit the figure entirely.
 - Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", "35-year-old", "3.3%", but "three countries", "two senators". This applies everywhere including headlines, compound adjectives, and percentages.
 - Never include vague time references ("this week", "recently", "on Friday") unless you can cite the exact date from a source.
 - Exactly two sentences per item. Each sentence 20 words or fewer. Sentence one: what happened. Sentence two: why it matters or what shifts as a result — not an additional fact, but a consequence, tension, or implication. If you cannot identify a genuine consequence, the story is not ready.
