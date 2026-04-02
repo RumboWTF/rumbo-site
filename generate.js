@@ -81,6 +81,7 @@ WRITING
 - Exactly two sentences per item. Each sentence 20 words or fewer. Sentence one: what happened. Sentence two: why it matters or what shifts as a result — not an additional fact, but a consequence, tension, or implication. If you cannot identify a genuine consequence, the story is not ready.
 - Avoid passive voice that hides agency.
 - Alien-observer neutrality: no home team, no ideology. Describe what actors do, not whether they are right.
+- Every specific claim — context, causation, timeframes, institutional relationships — must be attributable to a source you found in your search. Do not infer, estimate, or complete a sentence with plausible-sounding context. If a piece of information is not in your search results, omit it entirely rather than filling the gap.
 
 STRUCTURE
 - Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania
@@ -91,8 +92,8 @@ MEANWHILE
 - Meanwhile = things worth knowing that sit outside the daily news cycle. Each item must have been reported or newly relevant within the last 30 days — not breaking news, but not recycled history either. Surprising, interesting, worth a search. Each item maximum 15 words, no analysis.
 - Must not repeat, reference, or summarise any story, person, event, or entity already in the main feed — even from a different angle.
 - Each Meanwhile item must include a "search" field with a good DuckDuckGo search query.
-- Culture: the lighter side of being human — art, entertainment, and occasionally sport. Prefer art, music, film, and cultural moments over sports. When including sport, only include events with genuine global following — major international tournaments, world records, or stories that transcend the sport itself. Avoid domestic league results and national competitions that are not followed internationally.
-- Science_tech: what is becoming possible
+- Culture: the lighter side of being human — art, entertainment, and occasionally sport. Prefer art, music, film, and cultural moments over sports. When including sport, only include events with genuine global following — major international tournaments, world records, or stories that transcend the sport itself. Avoid domestic league results and national competitions that are not followed internationally. Do not use festival lineups, award nominations, scheduled events, or release announcements — something must have happened or been discovered, not merely announced.
+- Science_tech: something that changes what is physically or technically possible — a genuine capability shift, unexpected finding, or newly published result. Not recurring security incidents, hacking reports, or policy announcements. Not "X company releases Y product." The test: does this change what humans or machines can do, or does it just describe what someone did?
 - Wellbeing: health, medicine, longevity — how people are living
 - Worldviews: belief systems, ideological shifts, religious movements, or political culture — how groups define themselves and others. Not news events, not disasters, not policy outcomes, not economic responses. A Worldviews item describes a shift in how people think, believe, or identify — not what governments do.
 
@@ -125,6 +126,8 @@ ${globalJson}
 
 Search the web for the single most consequential development in ${regionName} from the last 72 hours that is NOT already covered in the global edition above. Only include a second item if it is clearly distinct, equally fresh, and genuinely significant — do not pad. Zero items is better than a weak or stale story.
 
+Consequential means: the story shifts something beyond its immediate domain — a policy change that affects daily life, an economic move with cross-sector effects, a social development with structural implications. A loud domestic controversy with no second-order consequences does not qualify, regardless of how much local coverage it receives.
+
 Rules:
 - Only include items genuinely specific to ${regionName} and not already represented in the global feed
 - Same format as global items: plain language, two sentences, no individual names in headlines
@@ -140,6 +143,7 @@ Rules:
 - When citing a specific date from a source, verify it is from the current year. A real date from a previous year is worse than no date — it presents old news as current fact.
 - Do not include announcements of future events as news items. Something scheduled to happen is not a development — only report what has already occurred.
 - You must be able to cite a specific headline, outlet, and publication date for each item. If you cannot name all three from your search results, do not include the item.
+- Every specific claim — context, causation, timeframes, relationships — must come from your search results. Do not infer or complete sentences with plausible-sounding context. If information is not in your results, omit it.
 - If the most recent independent source you can find for a story is more than 30 days old, it is not eligible regardless of how the headline is phrased.
 - Count independent source clusters per item
 - If you cannot find any genuinely fresh items for this region, return an empty items array rather than padding with stale stories.
