@@ -75,7 +75,7 @@ FRESHNESS
 WRITING
 - Plain language any curious adult can understand without prior knowledge. No jargon, acronyms, or financial language — translate everything.
 - No individual names in headlines unless the person's identity is the story, not their action or position. Avoid personality-driven headlines — lead with the institution, country, or dynamic instead.
-- Never include specific numerical figures of any kind — no percentages, prices, rates, counts, days, members, volumes, or market figures. Describe direction and magnitude qualitatively instead: 'reserves are critically low', 'prices rose sharply', 'a large majority voted'. The only exception is a year (e.g. '2026') or a round number that is itself the story (e.g. 'the first time in 50 years'). When in doubt, omit the figure entirely.
+- Avoid figures that are incidental or decorative — percentages, tallies, and market numbers that could be cut without losing the story. Keep figures that are the story: a price, duration, count, or threshold that is the actual fact being reported (e.g. "seven dollars monthly", "a two-month extension", "the first time in 50 years"). When a figure is not essential to understanding what happened or why it matters, describe direction and magnitude qualitatively instead: 'reserves are critically low', 'prices rose sharply', 'a large majority voted'. If in doubt, omit.
 - Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", "35-year-old", "3.3%", but "three countries", "two senators". This applies everywhere including headlines, compound adjectives, and percentages.
 - Never include vague time references ("this week", "recently", "on Friday") unless you can cite the exact date from a source.
 - Exactly two sentences per item. Each sentence 20 words or fewer. Sentence one: what happened. Sentence two: why it matters or what shifts as a result — not an additional fact, but a consequence, tension, or implication. If you cannot identify a genuine consequence, the story is not ready.
@@ -129,7 +129,7 @@ Rules:
 - Only include items genuinely specific to ${regionName} and not already represented in the global feed
 - Same format as global items: plain language, two sentences, no individual names in headlines
 - Exactly two sentences per item. Each sentence must be 20 words or fewer. Sentence one: what happened. Sentence two: why it matters or what shifts as a result — not an additional fact, but a consequence, tension, or implication.
-- Never include specific figures (monetary amounts, percentages, casualty counts) unless they appear in multiple independent sources. If uncertain, describe impact qualitatively instead.
+- Avoid incidental figures — drop percentages, tallies, and market numbers that aren't central to the story. Keep figures that are genuinely the fact being reported (e.g. a key price, a specific duration, a count that defines the outcome). If uncertain, describe qualitatively instead.
 - Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", but "three countries", "two senators".
 - Only include items that have new developments or reporting within the last 72 hours. If a story's most recent coverage is older than 72 hours, skip it regardless of significance.
 - Before including any item, verify the publication date of your sources. If you cannot find a source dated within the last 72 hours, do not include that item.
