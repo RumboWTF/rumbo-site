@@ -601,6 +601,9 @@ async function main() {
   console.log("all_output.json saved.");
 
   // Step 7: send newsletter
+  if (process.env.SEND_NEWSLETTER === "false") {
+    console.log("Newsletter send skipped (SEND_NEWSLETTER=false).");
+  } else {
   console.log("Starting newsletter send...");
   try {
     const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_KEY);
@@ -676,6 +679,7 @@ async function main() {
   } catch (e) {
     console.error("Newsletter send failed:", e.message);
   }
+  } // end SEND_NEWSLETTER check
 
   console.log("Done.");
 }
