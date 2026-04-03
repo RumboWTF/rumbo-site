@@ -1,79 +1,104 @@
 {
   "date": "3 April 2026",
   "global": {
-    "generated_at": "2026-04-03T00:00:00Z",
+    "generated_at": "2026-04-03T18:30:00Z",
     "sources": [
-      "Human Rights Watch",
-      "This Day Lagos",
-      "NPR",
+      "The Hindu",
+      "Times of India",
+      "BBC",
+      "Al Jazeera",
       "Reuters",
-      "CNN",
-      "ABC News",
-      "CNBC Africa"
+      "AFP",
+      "Radio France Internationale",
+      "The Guardian",
+      "South China Morning Post",
+      "Nikkei Asia"
     ],
     "items": [
       {
-        "headline": "World trade body collapses as Brazil and Turkey block digital tariff deal",
-        "body": "The World Trade Organisation ministerial conference ended in deadlock after Brazil and Turkey blocked a proposed agreement supported by 164 members to extend a moratorium preventing tariffs on digital transmissions until 2030. The breakdown halted progress on broader reform proposals and exposed deep divisions over how global trade rules should adapt to the digital economy.",
-        "geo": "Global",
-        "sources": 4
-      },
-      {
-        "headline": "Burkina Faso government forces kill twice as many civilians as jihadists",
-        "body": "Government and allied forces in Burkina Faso have killed more than twice as many civilians as Islamist militants since 2023, according to a report published by Human Rights Watch, with the pattern also applying to neighbouring Mali. Widespread deaths of civilians at the hands of government forces could bolster the political legitimacy of militant groups and fuel recruitment.",
-        "geo": "Africa",
+        "headline": "India begins first caste census in 94 years as part of nationwide population count",
+        "body": "India launched its census on April 1, counting 1.4 billion people and for the first time since 1931 enumerating caste categories beyond scheduled groups. The data will reshape political representation and welfare targeting across the subcontinent for decades.",
+        "geo": "Asia",
         "sources": 5
       },
       {
-        "headline": "United States lifts sanctions on Venezuelan acting president amid warming ties",
-        "body": "The United States lifted sanctions on Venezuela's acting President Delcy Rodríguez, the latest recognition of her as a legitimate authority following the military capture of Nicolás Maduro in January. The United States has also lifted sanctions on major Venezuelan industries, including allowing state-owned Petróleos de Venezuela to directly sell oil to American companies and on global markets.",
-        "geo": "Americas",
+        "headline": "Cyclone flooding drives cholera cases above 200,000 across six southern African countries",
+        "body": "Mozambique, Malawi, Zimbabwe, Zambia, Tanzania, and South Africa report surging cholera infections following Cyclone Filipo's March flooding, with treatment centres overwhelmed. The outbreak threatens regional food security as farmers cannot access fields during planting season.",
+        "geo": "Africa",
         "sources": 4
       },
       {
-        "headline": "Africa fuel crisis deepens as Middle East war chokes continental supply",
-        "body": "Kenya's fuel retailers say 20 percent of outlets are already affected as Uganda's fuel stock was initially projected to last a few weeks and South Africa sources significant fuel from Saudi Arabia. African economies could lose 0.2 percentage points of GDP growth in 2026 if the conflict lasts more than six months, according to a report by two UN agencies, the African Union and the African Development Bank.",
-        "geo": "Africa",
-        "sources": 5
+        "headline": "Philippines extends energy emergency as power rationing enters fifth week",
+        "body": "Rotating blackouts continue across Luzon affecting 60 million people after the government extended emergency powers through April to address coal and natural gas shortages. Manufacturing output has contracted as factories operate partial shifts and hospitals rely on backup generators.",
+        "geo": "Asia",
+        "sources": 3
+      },
+      {
+        "headline": "France deploys additional troops to New Caledonia after independence referendum violence",
+        "body": "Paris sent 300 more security personnel to the Pacific territory this week following clashes between pro-independence groups and loyalists ahead of a May self-determination vote. The deployment signals France's concern about losing its largest exclusive economic zone and Indo-Pacific strategic position.",
+        "geo": "Oceania",
+        "sources": 3
       }
     ],
     "meanwhile": [
       {
         "category": "culture",
-        "text": "Coachella 2026 lineup unveiled with emphasis on genre-blending and cross-cultural collaborations",
-        "search": "Coachella 2026 lineup announcement April"
+        "text": "Earliest known musical notation deciphered from 4,000-year-old Syrian clay tablet",
+        "search": "Syrian clay tablet oldest musical notation deciphered 2026"
       },
       {
         "category": "science_tech",
-        "text": "Scientists capture first lab-grown oesophagus that restores swallowing function in animals without immunosuppression",
-        "search": "lab-grown oesophagus Great Ormond Street March 2026"
+        "text": "Quantum sensors detect underground water reserves through seismic noise pattern analysis",
+        "search": "quantum sensors detect groundwater seismic noise 2026"
       },
       {
         "category": "wellbeing",
-        "text": "Sildenafil shows significant symptom improvement in patients with Leigh syndrome childhood brain disorder",
-        "search": "Viagra sildenafil Leigh syndrome treatment 2026"
+        "text": "Nasal spray vaccine eliminates malaria parasites in early human trial results",
+        "search": "nasal spray malaria vaccine human trial 2026"
       },
       {
         "category": "worldviews",
-        "text": "Eurovision Song Contest Asia confirms 10 contestants including Thailand and Bangladesh for November Bangkok finals",
-        "search": "Eurovision Asia 2026 Bangkok Thailand contestants"
+        "text": "South Korea survey shows majority under 40 now reject traditional filial piety obligations",
+        "search": "South Korea filial piety survey young generation 2026"
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Spain ends eight-year fast-track residency for Venezuelans as quarter million benefited",
-        "body": "Spain will close its humanitarian visa program for Venezuelans in June after granting permits to nearly 250,000 since 2018. The shift aligns Spain with stricter EU asylum rules taking effect and follows Venezuela's political transition.",
+        "headline": "EU member states approve Gibraltar border removal deal but delay implementation three months",
+        "body": "All 27 EU members backed the post-Brexit treaty eliminating passport checks between Spain and Gibraltar. The border removal now scheduled for mid-July will end daily queues for 15,000 cross-border workers.",
         "geo": "Spain",
-        "sources": 4
+        "sources": 3
       }
     ],
     "no": [
       {
-        "headline": "Electric vehicle market share reaches 98 percent in single month",
-        "body": "Norway recorded its highest ever monthly share of electric vehicle sales in March amid the global fuel crisis. Nearly all new passenger cars sold were battery electric, accelerating the country's shift away from combustion engines.",
+        "headline": "Norway fuel tax cut fails to lower pump prices as energy companies capture most of reduction",
+        "body": "Road fuel taxes were eliminated April 1, cutting levies by over four kroner per liter for petrol and nearly three for diesel. Pump prices fell only a fraction of the tax reduction, with companies appearing to retain margins while oil crisis drives consumers toward electric vehicles.",
         "geo": "Norway",
+        "sources": 2
+      }
+    ],
+    "uk": [
+      {
+        "headline": "Britain launches Fair Work Agency with powers to investigate employers without worker complaints",
+        "body": "The new enforcement body consolidates minimum wage, holiday pay, and sick pay oversight under single authority with 550 inspectors. Employers face proactive inspections and penalties up to 200% of underpayments as fragmented enforcement system ends.",
+        "geo": "United Kingdom",
+        "sources": 3
+      }
+    ],
+    "nl": [
+      {
+        "headline": "War-driven fuel costs push Dutch households toward heat pumps and solar installations",
+        "body": "Iran conflict triggered demand surge for renewable energy systems as installers report being overwhelmed by inquiries. The shift marks acceleration toward household energy independence driven by crisis rather than climate policy alone.",
+        "geo": "Netherlands",
+        "sources": 2
+      },
+      {
+        "headline": "PostNL abandons next-day mail delivery standard after decade of volume decline",
+        "body": "National postal service extends delivery to 48 hours starting July as letter volumes dropped 70 percent since 2009. The change restructures routes for thousands of workers and ends universal rapid postal service.",
+        "geo": "Netherlands",
         "sources": 2
       }
     ]
