@@ -446,7 +446,7 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
   <tr><td class="rp" style="background:#1a1a18;padding:16px 28px;border-radius:4px 4px 0 0;">
     <table width="100%" cellpadding="0" cellspacing="0">
     <tr>
-      <td><span style="font-family:Georgia,serif;font-size:20px;color:#f5f3ee;letter-spacing:-0.5px;">Rumbo<span style="color:#c8a84a;">.wtf</span></span></td>
+      <td><a href="https://rumbo.wtf/${locale === 'es' ? 'index-global-es.html' : 'index.html'}" style="text-decoration:none;"><span style="font-family:Georgia,serif;font-size:20px;color:#f5f3ee;letter-spacing:-0.5px;">Rumbo<span style="color:#c8a84a;">.wtf</span></span></a></td>
       <td align="right"><span style="font-family:'Courier New',monospace;font-size:10px;color:#888;letter-spacing:1px;">${date}</span></td>
     </tr>
     </table>
