@@ -1,62 +1,60 @@
 {
-  "generated_at": "2026-04-02T00:00:00Z",
+  "generated_at": "2026-04-03T00:00:00Z",
   "sources": [
+    "Human Rights Watch",
+    "This Day Lagos",
     "NPR",
-    "ABC News",
-    "BBC",
     "Reuters",
-    "AP",
-    "CBS News",
-    "Manila Times",
-    "Bloomberg",
-    "Asian Military Review"
+    "CNN",
+    "ABC News",
+    "CNBC Africa"
   ],
   "items": [
     {
-      "headline": "Mongolia confirms third prime minister within a year amid economic alarm",
-      "body": "Parliament approved former hip-hop artist Uchral Nyam-Osor to break legislative deadlock and calm fears over fuel dependence and commodity volatility. Rapid turnover reflects deepening factional struggles in ruling party as landlocked nation faces compounding external pressures from energy costs and mining revenue swings.",
-      "geo": "Asia",
+      "headline": "World trade body collapses as Brazil and Turkey block digital tariff deal",
+      "body": "The World Trade Organisation ministerial conference ended in deadlock after Brazil and Turkey blocked a proposed agreement supported by 164 members to extend a moratorium preventing tariffs on digital transmissions until 2030. The breakdown halted progress on broader reform proposals and exposed deep divisions over how global trade rules should adapt to the digital economy.",
+      "geo": "Global",
       "sources": 4
     },
     {
-      "headline": "Japan deploys first domestically-developed long-range missiles to southwest bases",
-      "body": "Type-12 missiles with ranges exceeding earlier versions became operational at Camp Kengun in response to China's military expansion. Deployment marks shift from postwar defensive posture to counterstrike capability as Tokyo fortifies southwestern islands near Taiwan and disputed waters.",
-      "geo": "Asia",
+      "headline": "Burkina Faso government forces kill twice as many civilians as jihadists",
+      "body": "Government and allied forces in Burkina Faso have killed more than twice as many civilians as Islamist militants since 2023, according to a report published by Human Rights Watch, with the pattern also applying to neighbouring Mali. Widespread deaths of civilians at the hands of government forces could bolster the political legitimacy of militant groups and fuel recruitment.",
+      "geo": "Africa",
       "sources": 5
     },
     {
-      "headline": "Britain cuts Africa aid by more than half to fund rearmament",
-      "body": "Foreign Office redirects support away from Sierra Leone, Malawi and poorest nations toward Ukraine and Middle East conflict zones. Health officials warn withdrawn funding for disease outbreaks, maternal care and child nutrition will have generational consequences across sub-Saharan Africa.",
-      "geo": "Africa",
-      "sources": 3
+      "headline": "United States lifts sanctions on Venezuelan acting president amid warming ties",
+      "body": "The United States lifted sanctions on Venezuela's acting President Delcy Rodríguez, the latest recognition of her as a legitimate authority following the military capture of Nicolás Maduro in January. The United States has also lifted sanctions on major Venezuelan industries, including allowing state-owned Petróleos de Venezuela to directly sell oil to American companies and on global markets.",
+      "geo": "Americas",
+      "sources": 4
     },
     {
-      "headline": "Rohingya refugees face sharply reduced food assistance as multiple donors retreat",
-      "body": "World Food Program implements tiered system dropping some aid to seven dollars monthly for hundreds of thousands in Bangladesh camps. Cuts compound after major donor reductions leave overcrowded settlements with diminishing resources amid ongoing displacement crisis.",
-      "geo": "Asia",
-      "sources": 3
+      "headline": "Africa fuel crisis deepens as Middle East war chokes continental supply",
+      "body": "Kenya's fuel retailers say 20 percent of outlets are already affected as Uganda's fuel stock was initially projected to last a few weeks and South Africa sources significant fuel from Saudi Arabia. African economies could lose 0.2 percentage points of GDP growth in 2026 if the conflict lasts more than six months, according to a report by two UN agencies, the African Union and the African Development Bank.",
+      "geo": "Africa",
+      "sources": 5
     }
   ],
   "meanwhile": [
     {
       "category": "culture",
-      "text": "CPH:DOX documentary festival presents new Chinese and Norwegian films in Copenhagen",
-      "search": "CPH:DOX 2026 documentary festival Copenhagen"
+      "text": "Coachella 2026 lineup unveiled with emphasis on genre-blending and cross-cultural collaborations",
+      "search": "Coachella 2026 lineup announcement April"
     },
     {
       "category": "science_tech",
-      "text": "North Korean hackers breach software update system targeting cryptocurrency access",
-      "search": "North Korea Axios hack supply chain 2026"
+      "text": "Scientists capture first lab-grown oesophagus that restores swallowing function in animals without immunosuppression",
+      "search": "lab-grown oesophagus Great Ormond Street March 2026"
     },
     {
       "category": "wellbeing",
-      "text": "New oral GLP-1 medication Foundayo receives FDA approval with fewer restrictions",
-      "search": "Foundayo oral GLP-1 FDA approval 2026"
+      "text": "Sildenafil shows significant symptom improvement in patients with Leigh syndrome childhood brain disorder",
+      "search": "Viagra sildenafil Leigh syndrome treatment 2026"
     },
     {
       "category": "worldviews",
-      "text": "Supreme Court strikes down Colorado conversion therapy ban as free speech violation",
-      "search": "Supreme Court conversion therapy Colorado ruling 2026"
+      "text": "Eurovision Song Contest Asia confirms 10 contestants including Thailand and Bangladesh for November Bangkok finals",
+      "search": "Eurovision Asia 2026 Bangkok Thailand contestants"
     }
   ]
 }
