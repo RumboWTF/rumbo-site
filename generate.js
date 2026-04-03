@@ -92,10 +92,10 @@ MEANWHILE
 - Meanwhile = things worth knowing that sit outside the daily news cycle. Each item must have been reported or newly relevant within the last 30 days — not breaking news, but not recycled history either. Surprising, interesting, worth a search. Each item maximum 15 words, no analysis.
 - Must not repeat, reference, or summarise any story, person, event, or entity already in the main feed — even from a different angle.
 - Each Meanwhile item must include a "search" field with a good DuckDuckGo search query.
-- Culture: the lighter side of being human — art, entertainment, and occasionally sport. Prefer art, music, film, and cultural moments over sports. When including sport, only include events with genuine global following — major international tournaments, world records, or stories that transcend the sport itself. Avoid domestic league results and national competitions that are not followed internationally. Do not use festival lineups, award nominations, scheduled events, or release announcements — something must have happened or been discovered, not merely announced.
+- Culture: something that happened or was discovered — a performance, a record broken, a work released, an unexpected cultural moment. HARD EXCLUSIONS: festival lineups, award nominations, competition schedules, event announcements, anything that describes what is coming rather than what occurred. If the item could appear in an "upcoming events" section, reject it.
 - Science_tech: something that changes what is physically or technically possible — a genuine capability shift, unexpected finding, or newly published result. Not recurring security incidents, hacking reports, or policy announcements. Not "X company releases Y product." The test: does this change what humans or machines can do, or does it just describe what someone did?
-- Wellbeing: health, medicine, longevity — how people are living
-- Worldviews: belief systems, ideological shifts, religious movements, or political culture — how groups define themselves and others. Not news events, not disasters, not policy outcomes, not economic responses. A Worldviews item describes a shift in how people think, believe, or identify — not what governments do.
+- Wellbeing: health, medicine, longevity — how people are living.
+- Worldviews: a shift in how a group of people think, believe, or define themselves — ideology, religion, identity, or political culture changing at a population level. HARD EXCLUSIONS: news events, disasters, policy outcomes, economic responses, competition results, entertainment announcements, anything that could appear in the main news feed. The test: does this describe a change in what people believe or how they identify — not what they did or what happened to them?
 
 CRITICAL: Your response must be ONLY the raw JSON object. No thinking, no explanation, no markdown, no preamble. Start your response with { and end with }. Any text outside the JSON will break the parser.
 {
@@ -410,6 +410,7 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
       <div>
         <span style="${geoStyle(item.geo)}">${item.geo}</span>
         <span style="font-family:'Courier New',monospace;font-size:10px;color:#aaa;">~${item.sources} ${t.SOURCE_PILL_LABEL}</span>
+        <a href="https://duckduckgo.com/?q=${encodeURIComponent(item.headline + (item.geo !== 'Global' ? ' ' + item.geo : ''))}" style="font-family:'Courier New',monospace;font-size:11px;color:#c8a84a;text-decoration:none;margin-left:8px;" target="_blank">&#x2197;</a>
       </div>
     </td></tr>
     <tr><td class="rp" style="padding:12px 28px 0;"><hr style="border:none;border-top:1px solid #e8e4de;margin:0;"></td></tr>`
@@ -420,7 +421,7 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
     return `
     <tr><td class="rp" style="padding:10px 28px 0;">
       <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:1.5px;color:#c8a84a;text-transform:uppercase;margin-bottom:4px;">${label}</div>
-      <div style="font-family:Georgia,serif;font-size:14px;color:#333;line-height:1.55;">${item.text}</div>
+      <div style="font-family:Georgia,serif;font-size:14px;color:#333;line-height:1.55;">${item.text}${item.search ? ` <a href="https://duckduckgo.com/?q=${encodeURIComponent(item.search)}" style="font-family:'Courier New',monospace;font-size:11px;color:#c8a84a;text-decoration:none;" target="_blank">&#x2197;</a>` : ''}</div>
     </td></tr>`;
   }).join("\n");
 
