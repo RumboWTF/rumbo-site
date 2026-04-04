@@ -74,13 +74,14 @@ FRESHNESS
 
 WRITING
 - Plain language any curious adult can understand without prior knowledge. No jargon, acronyms, or financial language — translate everything.
-- No individual names in headlines unless the person's identity is the story. Lead with the institution, country, or dynamic instead.
-- Avoid figures that are incidental or decorative. Keep figures that are the story: a price, duration, count, or threshold that is the actual fact being reported. When in doubt, describe qualitatively instead: 'reserves are critically low', 'prices rose sharply', 'a large majority voted'.
-- Write numbers as numerals for 10 and above, words for single digits.
+- No individual names in headlines unless the person's identity is the story, not their action or position. Avoid personality-driven headlines — lead with the institution, country, or dynamic instead.
+- Avoid figures that are incidental or decorative — percentages, tallies, and market numbers that could be cut without losing the story. Keep figures that are the story: a price, duration, count, or threshold that is the actual fact being reported (e.g. "seven dollars monthly", "a two-month extension", "the first time in 50 years"). When a figure is not essential to understanding what happened or why it matters, describe direction and magnitude qualitatively instead: 'reserves are critically low', 'prices rose sharply', 'a large majority voted'. If in doubt, omit.
+- Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", "35-year-old", "3.3%", but "three countries", "two senators". This applies everywhere including headlines, compound adjectives, and percentages.
 - Never include vague time references ("this week", "recently", "on Friday") unless you can cite the exact date from a source.
 - Exactly two sentences per item. Each sentence 20 words or fewer. Sentence one: what happened. Sentence two: why it matters or what shifts as a result — not an additional fact, but a consequence, tension, or implication. If you cannot identify a genuine consequence, the story is not ready.
+- Avoid passive voice that hides agency.
 - Alien-observer neutrality: no home team, no ideology. Describe what actors do, not whether they are right.
-- Every specific claim must be attributable to a source you found in your search. Do not infer or complete sentences with plausible-sounding context — if it is not in your search results, omit it.
+- Every specific claim — context, causation, timeframes, institutional relationships — must be attributable to a source you found in your search. Do not infer, estimate, or complete a sentence with plausible-sounding context. If a piece of information is not in your search results, omit it entirely rather than filling the gap.
 
 STRUCTURE
 - Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania
@@ -91,10 +92,10 @@ MEANWHILE
 - Meanwhile = things worth knowing that sit outside the daily news cycle. Each item must have been reported or newly relevant within the last 30 days — not breaking news, but not recycled history either. Surprising, interesting, worth a search. Each item maximum 15 words, no analysis.
 - Must not repeat, reference, or summarise any story, person, event, or entity already in the main feed — even from a different angle.
 - Each Meanwhile item must include a "search" field with a good DuckDuckGo search query.
-- Culture: something that already happened or was discovered — a performance, a record broken, a work released, an unexpected cultural moment. If the item could appear in an "upcoming events" section, reject it.
-- Science_tech: something that changes what is physically or technically possible — a genuine capability shift, unexpected finding, or newly published result. Not security incidents, hacking reports, or policy announcements. The test: does this change what humans or machines can do?
+- Culture: something that happened or was discovered — a performance, a record broken, a work released, an unexpected cultural moment. HARD EXCLUSIONS: festival lineups, award nominations, competition schedules, event announcements, anything that describes what is coming rather than what occurred. If the item could appear in an "upcoming events" section, reject it.
+- Science_tech: something that changes what is physically or technically possible — a genuine capability shift, unexpected finding, or newly published result. Not recurring security incidents, hacking reports, or policy announcements. Not "X company releases Y product." The test: does this change what humans or machines can do, or does it just describe what someone did?
 - Wellbeing: health, medicine, longevity — how people are living.
-- Worldviews: a shift in how a group of people think, believe, or define themselves — ideology, religion, identity, or political culture changing at a population level. HARD EXCLUSION: anything that could appear in the main news feed. The test: does this describe a change in what people believe or how they identify — not what they did or what happened to them?
+- Worldviews: how groups of people think, believe, or define themselves — and how that is shifting. Includes religious change, but equally: the rise of far-right or far-left movements, islamism, nationalism, tribalism, us-versus-them polarisation, generational value shifts, or any ideological current gaining or losing ground at a population level. HARD EXCLUSION: anything that could appear in the main news feed. The test: does this describe a change in what people believe or how they identify — not what they did or what happened to them?
 
 CRITICAL: Your response must be ONLY the raw JSON object. No thinking, no explanation, no markdown, no preamble. Start your response with { and end with }. Any text outside the JSON will break the parser.
 {
@@ -123,19 +124,31 @@ const REGIONAL_PROMPT = (regionName, globalJson) =>
 The global edition for today has already been generated. Here it is for context:
 ${globalJson}
 
-Search the web for the single most consequential development in ${regionName} from the last 72 hours that is NOT already covered in the global edition above. Consequential means the story shifts something beyond its immediate domain — a policy change that affects daily life, an economic move with cross-sector effects, a social development with structural implications. A loud domestic controversy with no second-order consequences does not qualify. Only include a second item if it is clearly distinct, equally fresh, and genuinely significant — do not pad. Zero items is better than a weak or stale story.
+Search the web for the single most consequential development in ${regionName} from the last 72 hours that is NOT already covered in the global edition above. Only include a second item if it is clearly distinct, equally fresh, and genuinely significant — do not pad. Zero items is better than a weak or stale story.
+
+Consequential means: the story shifts something beyond its immediate domain — a policy change that affects daily life, an economic move with cross-sector effects, a social development with structural implications. A loud domestic controversy with no second-order consequences does not qualify, regardless of how much local coverage it receives.
 
 Rules:
-- Apply all writing and freshness rules from the global prompt.
-- Only include items genuinely specific to ${regionName} and not already represented in the global feed.
-- Avoid incidental figures — keep only figures that are genuinely the fact being reported. If uncertain, describe qualitatively.
-- Only include items that have new developments within the last 72 hours. Verify source dates. If you cannot find a source dated within the last 72 hours, do not include the item.
-- You must be able to cite a specific headline, outlet, and publication date for each item. If you cannot name all three, do not include it.
-- If the most recent independent source is more than 30 days old, the item is not eligible.
-- Count independent source clusters per item.
-- If you cannot find any genuinely fresh items, return an empty items array.
+- Only include items genuinely specific to ${regionName} and not already represented in the global feed
+- Same format as global items: plain language, two sentences, no individual names in headlines
+- Exactly two sentences per item. Each sentence must be 20 words or fewer. Sentence one: what happened. Sentence two: why it matters or what shifts as a result — not an additional fact, but a consequence, tension, or implication.
+- Avoid incidental figures — drop percentages, tallies, and market numbers that aren't central to the story. Keep figures that are genuinely the fact being reported (e.g. a key price, a specific duration, a count that defines the outcome). If uncertain, describe qualitatively instead.
+- Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", but "three countries", "two senators".
+- Only include items that have new developments or reporting within the last 72 hours. If a story's most recent coverage is older than 72 hours, skip it regardless of significance.
+- Before including any item, verify the publication date of your sources. If you cannot find a source dated within the last 72 hours, do not include that item.
+- For each item, the newness must be concrete: a vote that happened, a statement made, a figure released, an event that occurred — all within the last 72 hours. Do not include ongoing situations unless something specific changed in that window.
+- If you cannot find 1-2 genuinely fresh items for this region, return only one item — the most recent thing you can verify — rather than padding with older stories.
+- Never include time references like "this week", "on Friday", "recently", or "announced today" in headlines or body text unless you can verify the exact date from a source. Use the factual content only — the freshness is implied by the 72-hour rule.
+- Never include a specific calendar date (day and month) in body text unless you have verified it is from within the last 72 hours. If uncertain of the year, omit the date entirely.
+- When citing a specific date from a source, verify it is from the current year. A real date from a previous year is worse than no date — it presents old news as current fact.
+- Do not include announcements of future events as news items. Something scheduled to happen is not a development — only report what has already occurred.
+- You must be able to cite a specific headline, outlet, and publication date for each item. If you cannot name all three from your search results, do not include the item.
+- Every specific claim — context, causation, timeframes, relationships — must come from your search results. Do not infer or complete sentences with plausible-sounding context. If information is not in your results, omit it.
+- If the most recent independent source you can find for a story is more than 30 days old, it is not eligible regardless of how the headline is phrased.
+- Count independent source clusters per item
+- If you cannot find any genuinely fresh items for this region, return an empty items array rather than padding with stale stories.
 
-CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end with }. No other text.
+CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end with }. No other text. Do not use markdown formatting (no asterisks, underscores, or other markup) in any string values.
 {
   "items": [
     {
