@@ -1,37 +1,39 @@
 {
-  "generated_at": "2026-04-04T18:30:00Z",
+  "generated_at": "2026-04-04T14:30:00Z",
   "sources": [
-    "Reuters",
-    "Financial Times",
-    "BBC News",
+    "NPR",
     "Al Jazeera",
+    "BBC",
+    "CBS News",
+    "AFP",
+    "Reuters",
     "Associated Press",
-    "Bloomberg",
-    "The Guardian",
-    "South China Morning Post"
+    "The Star Kenya",
+    "Japan Times",
+    "China.org.cn"
   ],
   "items": [
     {
-      "headline": "Indonesia moves capital operations to Nusantara after decades of planning",
-      "body": "Indonesia officially began relocating government ministries to Nusantara, its new capital in East Kalimantan, this week. The shift redistributes political and economic gravity away from overcrowded Jakarta, affecting infrastructure priorities across the archipelago.",
-      "geo": "Asia",
-      "sources": 5
-    },
-    {
-      "headline": "Ecuador and Peru agree to shared Amazon watershed protection zone",
-      "body": "Ecuador and Peru signed a binding agreement creating a jointly managed conservation corridor covering 14 million hectares of Amazon rainforest. The pact sets a precedent for cross-border resource governance in a region where extraction rights have historically triggered conflict.",
-      "geo": "Americas",
-      "sources": 3
-    },
-    {
-      "headline": "Saudi Arabia opens labour market to women without male guardian approval",
-      "body": "Saudi authorities removed the requirement for women to obtain male guardian consent to sign employment contracts, effective immediately. The reform expands economic autonomy for millions and accelerates the kingdom's workforce restructuring ahead of oil revenue decline.",
+      "headline": "China brokers talks between Pakistan and Afghanistan after border clashes",
+      "body": "Pakistan and Afghanistan's Taliban government resumed peace talks in China's Urumqi after weeks of fighting that killed hundreds. Beijing is mediating between the two sides to broker a lasting ceasefire, with both countries welcoming China's efforts.",
       "geo": "Asia",
       "sources": 4
     },
     {
-      "headline": "African Union launches continental pharmaceutical manufacturing initiative",
-      "body": "The African Union inaugurated a pooled procurement and production framework enabling member states to jointly manufacture essential medicines and vaccines. The system reduces import dependence that left the continent waiting years for pandemic supplies.",
+      "headline": "Cuba pardons over 2,000 prisoners amid pressure from Washington",
+      "body": "Cuba pardoned 2,010 prisoners as a humanitarian gesture during Holy Week, the second such release this year during talks with the Trump administration. Releasing political prisoners has long been a core US demand as Washington enforces an oil blockade on the island.",
+      "geo": "Americas",
+      "sources": 5
+    },
+    {
+      "headline": "Chinese carriers raise fuel surcharges as oil shock hits aviation",
+      "body": "Air China, China Southern Airlines and subsidiaries announced fuel surcharges will rise by 60 yuan for flights under 800 kilometres and 120 yuan for longer routes starting April 5. Global jet fuel prices more than doubled to $197 per barrel in recent weeks, up from $95.50 a month earlier.",
+      "geo": "Asia",
+      "sources": 6
+    },
+    {
+      "headline": "Kenya reports 16 nationals missing in Russia after military recruitment",
+      "body": "Kenya's foreign minister reported 16 Kenyans are missing in Russia after joining the country's army, with 38 others in Russian hospitals under restricted access. An estimated 165 Kenyans are actively involved in military operations, bringing the total who have participated in the conflict in Ukraine to over 250.",
       "geo": "Africa",
       "sources": 4
     }
@@ -39,23 +41,23 @@
   "meanwhile": [
     {
       "category": "culture",
-      "text": "First complete recording of all Beethoven conversation books published after 200-year transcription effort",
-      "search": "Beethoven conversation books complete publication 2026"
+      "text": "Artist JR unveiling world's largest immersive artwork on Paris's Pont Neuf in June",
+      "search": "JR artist Pont Neuf Paris 2026 immersive artwork"
     },
     {
       "category": "science_tech",
-      "text": "Engineered bacteria convert methane directly into protein at industrial scale in new reactor design",
-      "search": "methane protein bacteria reactor 2026"
+      "text": "Hybrid perovskite-silicon solar cells reach 34% efficiency, first commercial versions shipping this year",
+      "search": "perovskite silicon tandem solar cell 34% efficiency 2026"
     },
     {
       "category": "wellbeing",
-      "text": "Weight loss drug prescriptions now exceed antidepressants in six European countries for first time",
-      "search": "weight loss drug prescriptions exceed antidepressants Europe"
+      "text": "GLP-1 medications shown to reduce major heart events by 14% in longevity studies",
+      "search": "GLP-1 semaglutide heart disease reduction 14% longevity"
     },
     {
       "category": "worldviews",
-      "text": "Majority of Israeli Jews now support civil marriage option according to new demographic survey",
-      "search": "Israel civil marriage support survey 2026"
+      "text": "US religious diversity level rises from moderate to high as Christian majority shrinks 14 points",
+      "search": "United States religious diversity 2020 Pew Research Christian decline"
     }
   ]
 }
