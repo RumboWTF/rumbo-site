@@ -1,66 +1,88 @@
 {
   "date": "4 April 2026",
   "global": {
-    "generated_at": "2026-04-04T18:00:00Z",
+    "generated_at": "2026-04-04T12:00:00Z",
     "sources": [
-      "Dawn",
       "NPR",
-      "AP",
-      "Reuters",
-      "The Diplomat",
-      "Washington Post",
-      "CBS News",
       "Al Jazeera",
-      "CNN"
+      "Human Rights Watch",
+      "Reuters",
+      "Bloomberg",
+      "Associated Press",
+      "Washington Post",
+      "BBC"
     ],
     "items": [
       {
-        "headline": "Pakistan raises fuel prices by up to 55 percent as global oil shock intensifies",
-        "body": "Pakistan increased petrol by 43 percent and diesel by 55 percent, the second hike in a month. The move exposes inability to sustain fuel subsidies, risking accelerated inflation for 240 million people.",
+        "headline": "China brokers ceasefire talks between Pakistan and Afghanistan after weeks of deadly border clashes",
+        "body": "Pakistan confirmed peace talks with Afghanistan's Taliban government in China, where Beijing is trying to broker a lasting ceasefire after weeks of fighting. The talks follow border violence that has disrupted trade and cross-border travel between nuclear-armed Pakistan and Afghanistan.",
         "geo": "Asia",
         "sources": 4
       },
       {
-        "headline": "Malaysia orders government workers to stay home as oil crisis forces energy rationing",
-        "body": "Malaysia will implement work-from-home policies for public sector employees starting April 15 to reduce fuel consumption. The policy signals expectations of protracted conflict and marks shift from crisis management to structural demand reduction.",
+        "headline": "Philippines declares world's first national energy emergency as oil dependency meets Middle East war",
+        "body": "President Marcos declared a state of national energy emergency, making the Philippines the first country in the world to do so. The country imports 98 percent of its oil from the Middle East, leaving 115 million people critically vulnerable as closure of the Strait of Hormuz endangers supply.",
         "geo": "Asia",
-        "sources": 3
-      },
-      {
-        "headline": "Federal forces seize control of Baidoa as Somalia's constitutional crisis deepens",
-        "body": "Somali federal forces took full control of Baidoa following days of fighting, forcing regional president to resign and flee. The federal government appointed an acting leader while restricting media access, escalating tensions over constitutional amendments regional states reject.",
-        "geo": "Africa",
         "sources": 5
       },
       {
-        "headline": "Earthquake strikes Indonesia, killing one and triggering brief tsunami warning",
-        "body": "A magnitude 7.4 earthquake struck North Maluku, killing at least one person and injuring several others. Tsunami waves up to 75 centimeters were recorded before warnings were lifted, with authorities still assessing damage in remote villages.",
-        "geo": "Asia",
+        "headline": "Burkina Faso government forces killed twice as many civilians as jihadist groups, rights investigators find",
+        "body": "Burkina Faso military with allied militias killed more than 1,200 civilians since 2023, while jihadist groups killed around 600, according to new investigations. The pattern could bolster political legitimacy of armed groups and fuel recruitment, analysts warn.",
+        "geo": "Africa",
         "sources": 6
+      },
+      {
+        "headline": "India launches world's largest census with caste enumeration for first time in nearly a century",
+        "body": "India began counting its population in a year-long census costing 1.24 billion dollars, during which three million officials will survey 1.4 billion people. The count includes caste enumeration for the first time since 1931, which could trigger redrawn parliamentary maps and overhauled welfare quotas.",
+        "geo": "Asia",
+        "sources": 4
       }
     ],
     "meanwhile": [
       {
         "category": "culture",
-        "text": "Boston event sets Guinness record with 250 people dressed as Michael Myers slasher",
-        "search": "Michael Myers Guinness World Record Boston March 2026"
+        "text": "Second set of mountain gorilla twins born in three months at Congo's Virunga Park",
+        "search": "mountain gorilla twins Virunga National Park March 2026"
       },
       {
         "category": "science_tech",
-        "text": "Oxford researchers engineer yeast producing sterols that boost honeybee colony growth 15-fold",
-        "search": "Oxford honeybee nutrition yeast sterol March 2026"
+        "text": "Researchers achieve plasma density 1.6 times the Greenwald limit in fusion reactor breakthrough",
+        "search": "plasma density Greenwald limit EAST tokamak 2026"
       },
       {
         "category": "wellbeing",
-        "text": "UK completes long-distance robotic surgery on patient 1,500 miles away in Gibraltar",
-        "search": "UK Gibraltar robotic surgery 1500 miles 2026"
+        "text": "FDA-approved epigenetic reprogramming trials now testing cellular age reversal in humans",
+        "search": "epigenetic reprogramming FDA clinical trials 2026"
       },
       {
         "category": "worldviews",
-        "text": "Far-right parties now sit in a third of OECD governments, reshaping international funding priorities",
-        "search": "far-right OECD governments 2026 international organizations"
+        "text": "New Zealand signs Cook Islands defense pact designating it partner of choice over China",
+        "search": "Cook Islands New Zealand defense agreement China April 2026"
       }
     ]
   },
-  "regional_items": {}
+  "regional_items": {
+    "es": [
+      {
+        "headline": "Spain makes mobile digital ID legally mandatory for businesses and government after year-long transition",
+        "body": "Digital national identity app became valid substitute for physical cards across public and private sectors. All entities must now accept smartphone-based verification for banking, hotels, and age checks as infrastructure shifts to mobile-first authentication.",
+        "geo": "Spain",
+        "sources": 3
+      },
+      {
+        "headline": "Spain activates oil shock response freezing rents and cutting fuel tax as Middle East crisis forces budget rewrite",
+        "body": "Government triggered emergency plan slashing VAT on fuel and electricity to contain inflation spike. Rent freeze and energy subsidies aim to stabilize costs as oil prices force officials to recalculate fiscal assumptions mid-year.",
+        "geo": "Spain",
+        "sources": 4
+      }
+    ],
+    "uk": [
+      {
+        "headline": "Government withdraws 1,000 doctor training posts as six-day strike proceeds despite ultimatum",
+        "body": "Resident doctors launched walkout after rejecting pay deal and missing government deadline to call off action. Training posts withdrawn because providers cannot deliver them while managing sustained industrial action, cutting specialist medical workforce pipeline.",
+        "geo": "United Kingdom",
+        "sources": 4
+      }
+    ]
+  }
 }
