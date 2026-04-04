@@ -1,105 +1,73 @@
 {
-  "date": "3 April 2026",
+  "date": "4 April 2026",
   "global": {
-    "generated_at": "2026-04-03T18:30:00Z",
+    "generated_at": "2026-04-04T18:30:00Z",
     "sources": [
-      "The Hindu",
-      "Times of India",
-      "BBC",
-      "Al Jazeera",
       "Reuters",
-      "AFP",
-      "Radio France Internationale",
+      "Financial Times",
+      "BBC News",
+      "Al Jazeera",
+      "Associated Press",
+      "Bloomberg",
       "The Guardian",
-      "South China Morning Post",
-      "Nikkei Asia"
+      "South China Morning Post"
     ],
     "items": [
       {
-        "headline": "India begins first caste census in 94 years as part of nationwide population count",
-        "body": "India launched its census on April 1, counting 1.4 billion people and for the first time since 1931 enumerating caste categories beyond scheduled groups. The data will reshape political representation and welfare targeting across the subcontinent for decades.",
+        "headline": "Indonesia moves capital operations to Nusantara after decades of planning",
+        "body": "Indonesia officially began relocating government ministries to Nusantara, its new capital in East Kalimantan, this week. The shift redistributes political and economic gravity away from overcrowded Jakarta, affecting infrastructure priorities across the archipelago.",
         "geo": "Asia",
         "sources": 5
       },
       {
-        "headline": "Cyclone flooding drives cholera cases above 200,000 across six southern African countries",
-        "body": "Mozambique, Malawi, Zimbabwe, Zambia, Tanzania, and South Africa report surging cholera infections following Cyclone Filipo's March flooding, with treatment centres overwhelmed. The outbreak threatens regional food security as farmers cannot access fields during planting season.",
-        "geo": "Africa",
+        "headline": "Ecuador and Peru agree to shared Amazon watershed protection zone",
+        "body": "Ecuador and Peru signed a binding agreement creating a jointly managed conservation corridor covering 14 million hectares of Amazon rainforest. The pact sets a precedent for cross-border resource governance in a region where extraction rights have historically triggered conflict.",
+        "geo": "Americas",
+        "sources": 3
+      },
+      {
+        "headline": "Saudi Arabia opens labour market to women without male guardian approval",
+        "body": "Saudi authorities removed the requirement for women to obtain male guardian consent to sign employment contracts, effective immediately. The reform expands economic autonomy for millions and accelerates the kingdom's workforce restructuring ahead of oil revenue decline.",
+        "geo": "Asia",
         "sources": 4
       },
       {
-        "headline": "Philippines extends energy emergency as power rationing enters fifth week",
-        "body": "Rotating blackouts continue across Luzon affecting 60 million people after the government extended emergency powers through April to address coal and natural gas shortages. Manufacturing output has contracted as factories operate partial shifts and hospitals rely on backup generators.",
-        "geo": "Asia",
-        "sources": 3
-      },
-      {
-        "headline": "France deploys additional troops to New Caledonia after independence referendum violence",
-        "body": "Paris sent 300 more security personnel to the Pacific territory this week following clashes between pro-independence groups and loyalists ahead of a May self-determination vote. The deployment signals France's concern about losing its largest exclusive economic zone and Indo-Pacific strategic position.",
-        "geo": "Oceania",
-        "sources": 3
+        "headline": "African Union launches continental pharmaceutical manufacturing initiative",
+        "body": "The African Union inaugurated a pooled procurement and production framework enabling member states to jointly manufacture essential medicines and vaccines. The system reduces import dependence that left the continent waiting years for pandemic supplies.",
+        "geo": "Africa",
+        "sources": 4
       }
     ],
     "meanwhile": [
       {
         "category": "culture",
-        "text": "Earliest known musical notation deciphered from 4,000-year-old Syrian clay tablet",
-        "search": "Syrian clay tablet oldest musical notation deciphered 2026"
+        "text": "First complete recording of all Beethoven conversation books published after 200-year transcription effort",
+        "search": "Beethoven conversation books complete publication 2026"
       },
       {
         "category": "science_tech",
-        "text": "Quantum sensors detect underground water reserves through seismic noise pattern analysis",
-        "search": "quantum sensors detect groundwater seismic noise 2026"
+        "text": "Engineered bacteria convert methane directly into protein at industrial scale in new reactor design",
+        "search": "methane protein bacteria reactor 2026"
       },
       {
         "category": "wellbeing",
-        "text": "Nasal spray vaccine eliminates malaria parasites in early human trial results",
-        "search": "nasal spray malaria vaccine human trial 2026"
+        "text": "Weight loss drug prescriptions now exceed antidepressants in six European countries for first time",
+        "search": "weight loss drug prescriptions exceed antidepressants Europe"
       },
       {
         "category": "worldviews",
-        "text": "South Korea survey shows majority under 40 now reject traditional filial piety obligations",
-        "search": "South Korea filial piety survey young generation 2026"
+        "text": "Majority of Israeli Jews now support civil marriage option according to new demographic survey",
+        "search": "Israel civil marriage support survey 2026"
       }
     ]
   },
   "regional_items": {
-    "es": [
-      {
-        "headline": "EU member states approve Gibraltar border removal deal but delay implementation three months",
-        "body": "All 27 EU members backed the post-Brexit treaty eliminating passport checks between Spain and Gibraltar. The border removal now scheduled for mid-July will end daily queues for 15,000 cross-border workers.",
-        "geo": "Spain",
-        "sources": 3
-      }
-    ],
-    "no": [
-      {
-        "headline": "Norway fuel tax cut fails to lower pump prices as energy companies capture most of reduction",
-        "body": "Road fuel taxes were eliminated April 1, cutting levies by over four kroner per liter for petrol and nearly three for diesel. Pump prices fell only a fraction of the tax reduction, with companies appearing to retain margins while oil crisis drives consumers toward electric vehicles.",
-        "geo": "Norway",
-        "sources": 2
-      }
-    ],
-    "uk": [
-      {
-        "headline": "Britain launches Fair Work Agency with powers to investigate employers without worker complaints",
-        "body": "The new enforcement body consolidates minimum wage, holiday pay, and sick pay oversight under single authority with 550 inspectors. Employers face proactive inspections and penalties up to 200% of underpayments as fragmented enforcement system ends.",
-        "geo": "United Kingdom",
-        "sources": 3
-      }
-    ],
     "nl": [
       {
-        "headline": "War-driven fuel costs push Dutch households toward heat pumps and solar installations",
-        "body": "Iran conflict triggered demand surge for renewable energy systems as installers report being overwhelmed by inquiries. The shift marks acceleration toward household energy independence driven by crisis rather than climate policy alone.",
+        "headline": "Dutch authorities recover stolen Romanian golden helmet through plea agreements with museum heist suspects",
+        "body": "Prosecutors announced the return of the Coțofenești helmet and two bracelets stolen in January 2025 from Drents Museum. The recovery resolves a diplomatic crisis and demonstrates how negotiated suspect agreements can retrieve cultural property before trial.",
         "geo": "Netherlands",
-        "sources": 2
-      },
-      {
-        "headline": "PostNL abandons next-day mail delivery standard after decade of volume decline",
-        "body": "National postal service extends delivery to 48 hours starting July as letter volumes dropped 70 percent since 2009. The change restructures routes for thousands of workers and ends universal rapid postal service.",
-        "geo": "Netherlands",
-        "sources": 2
+        "sources": 4
       }
     ]
   }
