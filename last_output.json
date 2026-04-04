@@ -1,61 +1,62 @@
 {
-  "generated_at": "2026-04-04T12:00:00Z",
+  "generated_at": "2026-04-04T18:00:00Z",
   "sources": [
-    "Al Jazeera",
-    "Human Rights Watch",
+    "Dawn",
     "NPR",
-    "USNI News",
-    "Bloomberg",
-    "Haitian Times",
-    "Democracy Now",
-    "Nikkei Asia"
+    "AP",
+    "Reuters",
+    "The Diplomat",
+    "Washington Post",
+    "CBS News",
+    "Al Jazeera",
+    "CNN"
   ],
   "items": [
     {
-      "headline": "Philippines declares national energy emergency as fuel reserves drop below two months",
-      "body": "Manila became the first nation to formally declare energy emergency status, citing critically low oil supplies. With the country importing nearly all petroleum from the Middle East, reserves have fallen to around 45 days.",
+      "headline": "Pakistan raises fuel prices by up to 55 percent as global oil shock intensifies",
+      "body": "Pakistan increased petrol by 43 percent and diesel by 55 percent, the second hike in a month. The move exposes inability to sustain fuel subsidies, risking accelerated inflation for 240 million people.",
       "geo": "Asia",
       "sources": 4
     },
     {
-      "headline": "First UN-backed troops deploy to Haiti as gang violence kills dozens in central regions",
-      "body": "Chadian advance forces arrived alongside mission commander to launch expanded Gang Suppression Force. The deployment follows massacre of over 70 civilians in Artibonite as armed groups expand control beyond Port-au-Prince.",
-      "geo": "Americas",
+      "headline": "Malaysia orders government workers to stay home as oil crisis forces energy rationing",
+      "body": "Malaysia will implement work-from-home policies for public sector employees starting April 15 to reduce fuel consumption. The policy signals expectations of protracted conflict and marks shift from crisis management to structural demand reduction.",
+      "geo": "Asia",
       "sources": 3
     },
     {
-      "headline": "Japan activates long-range missiles in Kyushu, placing Chinese mainland within strike range",
-      "body": "Tokyo deployed domestically-developed Type 25 systems capable of hitting targets beyond 1,000 kilometers. The move marks Japan's first operational counterstrike capability amid rising tensions in the East China Sea.",
-      "geo": "Asia",
-      "sources": 4
-    },
-    {
-      "headline": "Burkina Faso forces killed twice as many civilians as militants since 2023, rights group finds",
-      "body": "Government troops and allied militias killed over 1,800 civilians in ethnic cleansing campaign, Human Rights Watch reported. The atrocities amount to crimes against humanity receiving minimal global attention.",
+      "headline": "Federal forces seize control of Baidoa as Somalia's constitutional crisis deepens",
+      "body": "Somali federal forces took full control of Baidoa following days of fighting, forcing regional president to resign and flee. The federal government appointed an acting leader while restricting media access, escalating tensions over constitutional amendments regional states reject.",
       "geo": "Africa",
-      "sources": 3
+      "sources": 5
+    },
+    {
+      "headline": "Earthquake strikes Indonesia, killing one and triggering brief tsunami warning",
+      "body": "A magnitude 7.4 earthquake struck North Maluku, killing at least one person and injuring several others. Tsunami waves up to 75 centimeters were recorded before warnings were lifted, with authorities still assessing damage in remote villages.",
+      "geo": "Asia",
+      "sources": 6
     }
   ],
   "meanwhile": [
     {
       "category": "culture",
-      "text": "Martha Graham Dance Company marks 100 years with touring retrospective across major venues",
-      "search": "Martha Graham Dance Company GRAHAM100 centennial tour 2026"
+      "text": "Boston event sets Guinness record with 250 people dressed as Michael Myers slasher",
+      "search": "Michael Myers Guinness World Record Boston March 2026"
     },
     {
       "category": "science_tech",
-      "text": "IBM researchers create first molecule with half-Möbius electronic topology verified by quantum computing",
-      "search": "IBM half-Möbius molecule quantum computing March 2026"
+      "text": "Oxford researchers engineer yeast producing sterols that boost honeybee colony growth 15-fold",
+      "search": "Oxford honeybee nutrition yeast sterol March 2026"
     },
     {
       "category": "wellbeing",
-      "text": "Suzetrigine offers first non-opioid pain relief targeting peripheral neurons exclusively, FDA approved",
-      "search": "suzetrigine Journavax non-opioid pain FDA approval 2026"
+      "text": "UK completes long-distance robotic surgery on patient 1,500 miles away in Gibraltar",
+      "search": "UK Gibraltar robotic surgery 1500 miles 2026"
     },
     {
       "category": "worldviews",
-      "text": "US religious affiliation stabilizes after decades of decline, Pew data shows plateau since 2020",
-      "search": "US religious affiliation stabilization 2020-2026 Pew Research"
+      "text": "Far-right parties now sit in a third of OECD governments, reshaping international funding priorities",
+      "search": "far-right OECD governments 2026 international organizations"
     }
   ]
 }
