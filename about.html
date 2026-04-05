@@ -193,4 +193,8 @@ function setLang(e,val){
 }
 function setRegion(e,val){
   e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);
-  document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.
+  document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});
+  e.currentTarget.classList.add('active');updateToken();
+  window.location.href=getFile(lang,region);
+}
+</script>
