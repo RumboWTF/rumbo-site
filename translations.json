@@ -7,13 +7,13 @@
     "LOCALE_LOCAL_CONTEXT": "Lokale nyheter",
     "SOURCE_PILL_LABEL": "kilder",
     "CATEGORIES": {
-      "culture": "Kultur og sport",
+      "culture": "Kultur",
       "science_tech": "Vitenskap og tek.",
       "wellbeing": "Helse og velvære",
       "worldviews": "Anskuelser"
     },
     "CATEGORY_TOOLTIPS": {
-      "culture": "Den lysere siden av det å være menneske",
+      "culture": "Kunst, film, musikk eller litteratur med mening utover underholdning",
       "science_tech": "Det som er i ferd med å bli mulig",
       "wellbeing": "Helse, medisin og hvordan folk lever",
       "worldviews": "Trossystemer og gruppetenking"
@@ -28,13 +28,13 @@
     "LOCALE_LOCAL_CONTEXT": "Local news",
     "SOURCE_PILL_LABEL": "fuentes",
     "CATEGORIES": {
-      "culture": "Cultura y deporte",
+      "culture": "Cultura",
       "science_tech": "Ciencia & tech",
       "wellbeing": "Bienestar",
       "worldviews": "Cosmovisiones"
     },
     "CATEGORY_TOOLTIPS": {
-      "culture": "El lado más ligero de ser humano",
+      "culture": "Arte, cine, música o literatura con significado más allá del entretenimiento",
       "science_tech": "Lo que se está volviendo posible",
       "wellbeing": "Salud, medicina y cómo vive la gente",
       "worldviews": "Sistemas de creencias y pensamiento colectivo"

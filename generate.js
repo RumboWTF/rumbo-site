@@ -29,13 +29,13 @@ const EN_STRINGS = {
   SOURCE_TIP: "Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.",
   SOURCE_PILL_LABEL: "sources",
   CATEGORIES: {
-    culture: "Culture & sports",
+    culture: "Culture",
     science_tech: "Science & tech",
     wellbeing: "Wellbeing",
     worldviews: "Worldviews",
   },
   CATEGORY_TOOLTIPS: {
-    culture: "The lighter side of being human",
+    culture: "Art, film, music or literature that carries meaning beyond entertainment",
     science_tech: "What is becoming possible",
     wellbeing: "Health, medicine, and how people live",
     worldviews: "Belief systems and group thinking",
@@ -92,7 +92,7 @@ MEANWHILE
 - Meanwhile = things worth knowing that sit outside the daily news cycle. Each item must have been reported or newly relevant within the last 30 days — not breaking news, but not recycled history either. Surprising, interesting, worth a search. Each item maximum 15 words, no analysis.
 - Must not repeat, reference, or summarise any story, person, event, or entity already in the main feed — even from a different angle.
 - Each Meanwhile item must include a "search" field with a good DuckDuckGo search query.
-- Culture: something that happened or was discovered — a performance, a record broken, a work released, an unexpected cultural moment. HARD EXCLUSIONS: festival lineups, award nominations, competition schedules, event announcements, anything that describes what is coming rather than what occurred. If the item could appear in an "upcoming events" section, reject it.
+- Culture: a work of art, film, music, or literature that was created, recovered, or reinterpreted and carries meaning beyond entertainment. Not festivals, performances, sports, or release announcements.
 - Science_tech: something that changes what is physically or technically possible — a genuine capability shift, unexpected finding, or newly published result. Not recurring security incidents, hacking reports, or policy announcements. Not "X company releases Y product." The test: does this change what humans or machines can do, or does it just describe what someone did?
 - Wellbeing: health, medicine, longevity — how people are living.
 - Worldviews: how groups of people think, believe, or define themselves — and how that is shifting. Includes religious change, but equally: the rise of far-right or far-left movements, islamism, nationalism, tribalism, us-versus-them polarisation, generational value shifts, or any ideological current gaining or losing ground at a population level. HARD EXCLUSION: anything that could appear in the main news feed. The test: does this describe a change in what people believe or how they identify — not what they did or what happened to them?
