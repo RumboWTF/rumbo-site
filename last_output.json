@@ -1,61 +1,63 @@
 {
-  "generated_at": "2026-04-04T12:00:00Z",
+  "generated_at": "2026-04-05T00:00:00Z",
   "sources": [
-    "NPR",
-    "Al Jazeera",
-    "Human Rights Watch",
     "Reuters",
+    "Financial Times",
     "Bloomberg",
+    "Al Jazeera",
+    "CNN",
+    "BBC",
+    "The Guardian",
     "Associated Press",
-    "Washington Post",
-    "BBC"
+    "NASA",
+    "ESA"
   ],
   "items": [
     {
-      "headline": "China brokers ceasefire talks between Pakistan and Afghanistan after weeks of deadly border clashes",
-      "body": "Pakistan confirmed peace talks with Afghanistan's Taliban government in China, where Beijing is trying to broker a lasting ceasefire after weeks of fighting. The talks follow border violence that has disrupted trade and cross-border travel between nuclear-armed Pakistan and Afghanistan.",
-      "geo": "Asia",
+      "headline": "European regulators propose power to ban foreign stablecoins over reserve risk",
+      "body": "Germany and Italy drafted rules letting regulators ban stablecoins if reserve transfer mechanisms fail or issuers breach home-country rules. The proposal aims to prevent contagion from stablecoin collapse rippling through financial markets before regulatory window closes end-2026.",
+      "geo": "Europe",
+      "sources": 3
+    },
+    {
+      "headline": "Cuba releases over 2,000 prisoners as fuel blockade briefly eases",
+      "body": "Cuba announced release of 2,010 prisoners, the largest such action in years, as island faces mounting pressure from fuel blockade. Trump administration tightened oil embargo attempting to force reforms but briefly allowed Russian tanker through this week.",
+      "geo": "Americas",
       "sources": 4
     },
     {
-      "headline": "Philippines declares world's first national energy emergency as oil dependency meets Middle East war",
-      "body": "President Marcos declared a state of national energy emergency, making the Philippines the first country in the world to do so. The country imports 98 percent of its oil from the Middle East, leaving 115 million people critically vulnerable as closure of the Strait of Hormuz endangers supply.",
+      "headline": "Israel deploys second division to southern Lebanon in ground invasion",
+      "body": "Israeli forces launched ground operations toward Litani River, with officials saying campaign would resemble Gaza war and ruling out displaced residents returning. Over 1,300 killed in Lebanon since offensive began with more than one million displaced from conflict.",
       "geo": "Asia",
       "sources": 5
     },
     {
-      "headline": "Burkina Faso government forces killed twice as many civilians as jihadist groups, rights investigators find",
-      "body": "Burkina Faso military with allied militias killed more than 1,200 civilians since 2023, while jihadist groups killed around 600, according to new investigations. The pattern could bolster political legitimacy of armed groups and fuel recruitment, analysts warn.",
-      "geo": "Africa",
-      "sources": 6
-    },
-    {
-      "headline": "India launches world's largest census with caste enumeration for first time in nearly a century",
-      "body": "India began counting its population in a year-long census costing 1.24 billion dollars, during which three million officials will survey 1.4 billion people. The count includes caste enumeration for the first time since 1931, which could trigger redrawn parliamentary maps and overhauled welfare quotas.",
-      "geo": "Asia",
+      "headline": "Artemis II crew passes halfway point on first crewed lunar mission in 54 years",
+      "body": "Four astronauts completed translunar injection burn sending spacecraft out of Earth orbit toward Moon on ten-day flyby mission. First crewed flight beyond low Earth orbit since Apollo 17 in 1972 tests systems for future lunar landing missions.",
+      "geo": "Global",
       "sources": 4
     }
   ],
   "meanwhile": [
     {
       "category": "culture",
-      "text": "Second set of mountain gorilla twins born in three months at Congo's Virunga Park",
-      "search": "mountain gorilla twins Virunga National Park March 2026"
+      "text": "Charlotte hosts 17-day citywide arts festival with over 200 installations and performances",
+      "search": "Charlotte SHOUT festival April 2026"
     },
     {
       "category": "science_tech",
-      "text": "Researchers achieve plasma density 1.6 times the Greenwald limit in fusion reactor breakthrough",
-      "search": "plasma density Greenwald limit EAST tokamak 2026"
+      "text": "Researchers develop cleaner molten salt method for synthesizing ultra-thin MXene materials",
+      "search": "MXene molten salt synthesis breakthrough 2026"
     },
     {
       "category": "wellbeing",
-      "text": "FDA-approved epigenetic reprogramming trials now testing cellular age reversal in humans",
-      "search": "epigenetic reprogramming FDA clinical trials 2026"
+      "text": "GLP-1 medications reframed as longevity medicines reducing heart events and diabetes risk",
+      "search": "GLP-1 longevity cardiovascular prevention 2026"
     },
     {
       "category": "worldviews",
-      "text": "New Zealand signs Cook Islands defense pact designating it partner of choice over China",
-      "search": "Cook Islands New Zealand defense agreement China April 2026"
+      "text": "Far-right parties now sit in third of OECD governments shaping international funding policies",
+      "search": "far-right OECD coalition governments 2026"
     }
   ]
 }
