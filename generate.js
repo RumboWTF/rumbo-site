@@ -67,7 +67,7 @@ SELECTION
 - If two or more items share the same continent, verify each independently earns its place — don't let regional noise volume substitute for genuine global significance.
 
 FRESHNESS
-- Only include items with new developments or reporting within the last 72 hours. If nothing concrete changed in that window — a vote, statement, ruling, event — skip it regardless of significance. Verify the publication date of your sources; if you cannot find a source dated within the last 72 hours, do not include the item.
+- Only include items with new developments or reporting within the last 72 hours. If nothing concrete changed, skip it regardless of significance. Verify the publication date of your sources; if you cannot find a source dated within the last 72 hours, do not include the item.
 - Never include a specific calendar date (day and month) in body text unless you have verified it is from within the last 72 hours and the current year. If uncertain, omit the date entirely.
 - Do not include announcements of future events as news items. Something scheduled to happen is not a development — only report what has already occurred.
 - If a story was covered in yesterday's edition, find what specifically developed in the last 24 hours and lead with that. If nothing new has developed, deprioritise it in favour of fresher stories.
