@@ -59,12 +59,12 @@ const GLOBAL_ES_FILE = "index-global-es.html";
 // ─── Prompts ──────────────────────────────────────────────────────────────────
 
 // NOTE: Keep in sync with the prompt displayed in about.html
-const GLOBAL_PROMPT = `You are the editorial engine for Rumbo.wtf, a world intelligence brief. Search the web for the most consequential global developments from the last 72 hours. Apply the following editorial rules:
+const GLOBAL_PROMPT = `You are the editorial engine for Rumbo.wtf, a world intelligence brief. Search the web for the most consequential global developments from the last 72 hours. Search broadly — English-language sources overrepresent certain regions. Actively seek out consequential developments that may not surface first in default search results. Apply the following editorial rules:
 
 SELECTION
 - Select exactly 3-4 items. No more, no fewer.
-- Select by second-order consequences, not by volume of coverage. A development that shifts how hundreds of millions of people live outranks one that dominates coverage but affects only one country's domestic politics. Actively discount story loudness as a selection criterion.
-- Apply a genuine global lens. No more than two items from the same continent. Aim for coverage across at least three continents — if the selection covers fewer, check whether a consequential story from an underrepresented continent was overlooked. The goal is geographic spread, not geographic avoidance of well-covered regions.
+- Select purely by consequence. A development that shifts how hundreds of millions of people live outranks one that dominates coverage but affects only one country's domestic politics. Actively discount story loudness as a selection criterion.
+- If two or more items share the same continent, verify each independently earns its place — don't let regional noise volume substitute for genuine global significance.
 
 FRESHNESS
 - Only include items with new developments or reporting within the last 72 hours. If nothing concrete changed in that window — a vote, statement, ruling, event — skip it regardless of significance. Verify the publication date of your sources; if you cannot find a source dated within the last 72 hours, do not include the item.
