@@ -1,63 +1,54 @@
 {
-  "generated_at": "2026-04-05T00:00:00Z",
+  "generated_at": "2026-04-06T00:00:00Z",
   "sources": [
-    "Reuters",
-    "Financial Times",
-    "Bloomberg",
     "Al Jazeera",
+    "NPR",
     "CNN",
-    "BBC",
-    "The Guardian",
-    "Associated Press",
-    "NASA",
-    "ESA"
+    "Human Rights Watch",
+    "Reuters",
+    "AP",
+    "Washington Post"
   ],
   "items": [
     {
-      "headline": "European regulators propose power to ban foreign stablecoins over reserve risk",
-      "body": "Germany and Italy drafted rules letting regulators ban stablecoins if reserve transfer mechanisms fail or issuers breach home-country rules. The proposal aims to prevent contagion from stablecoin collapse rippling through financial markets before regulatory window closes end-2026.",
-      "geo": "Europe",
-      "sources": 3
-    },
-    {
-      "headline": "Cuba releases over 2,000 prisoners as fuel blockade briefly eases",
-      "body": "Cuba announced release of 2,010 prisoners, the largest such action in years, as island faces mounting pressure from fuel blockade. Trump administration tightened oil embargo attempting to force reforms but briefly allowed Russian tanker through this week.",
-      "geo": "Americas",
+      "headline": "Nepal cuts working week to five days as fuel shortage forces austerity",
+      "body": "Nepal made Saturday a second weekly holiday for government offices and schools to conserve fuel amid shortages from disrupted Middle East oil supplies. The Himalayan nation relies almost entirely on India for fuel, leaving it highly exposed to global price shocks.",
+      "geo": "Asia",
       "sources": 4
     },
     {
-      "headline": "Israel deploys second division to southern Lebanon in ground invasion",
-      "body": "Israeli forces launched ground operations toward Litani River, with officials saying campaign would resemble Gaza war and ruling out displaced residents returning. Over 1,300 killed in Lebanon since offensive began with more than one million displaced from conflict.",
+      "headline": "China brokers resumed Pakistan-Afghanistan talks after weeks of deadly border fighting",
+      "body": "Representatives from Pakistan and Afghanistan's Taliban government met in China's Urumqi after clashes killed hundreds since February. Ceasefire talks follow earlier rounds in Qatar and Turkey that collapsed after Pakistani strikes in Kabul.",
       "geo": "Asia",
       "sources": 5
     },
     {
-      "headline": "Artemis II crew passes halfway point on first crewed lunar mission in 54 years",
-      "body": "Four astronauts completed translunar injection burn sending spacecraft out of Earth orbit toward Moon on ten-day flyby mission. First crewed flight beyond low Earth orbit since Apollo 17 in 1972 tests systems for future lunar landing missions.",
-      "geo": "Global",
-      "sources": 4
+      "headline": "Burkina Faso forces killed twice as many civilians as jihadists since 2023, report finds",
+      "body": "Government troops and allied militias killed over 1,200 civilians between January 2023 and August 2025, more than double those killed by militant groups, Human Rights Watch documented. The killings amount to war crimes and ethnic cleansing of Fulani communities.",
+      "geo": "Africa",
+      "sources": 6
     }
   ],
   "meanwhile": [
     {
       "category": "culture",
-      "text": "Charlotte hosts 17-day citywide arts festival with over 200 installations and performances",
-      "search": "Charlotte SHOUT festival April 2026"
+      "text": "Danh Võ's 27-foot Buddha sculpture for New York's High Line honours heritage destroyed by Taliban",
+      "search": "Danh Vo Light Shines Universe High Line Bamiyan Buddha 2026"
     },
     {
       "category": "science_tech",
-      "text": "Researchers develop cleaner molten salt method for synthesizing ultra-thin MXene materials",
-      "search": "MXene molten salt synthesis breakthrough 2026"
+      "text": "Cambridge chemists develop light-powered method to alter drug molecules without toxic catalysts",
+      "search": "Cambridge anti-Friedel-Crafts LED drug synthesis Nature 2026"
     },
     {
       "category": "wellbeing",
-      "text": "GLP-1 medications reframed as longevity medicines reducing heart events and diabetes risk",
-      "search": "GLP-1 longevity cardiovascular prevention 2026"
+      "text": "Oxytocin-Alk5 inhibitor combo extended elderly male mice lifespan 70% in Berkeley longevity study",
+      "search": "oxytocin Alk5 inhibitor mice lifespan extension UC Berkeley 2026"
     },
     {
       "category": "worldviews",
-      "text": "Far-right parties now sit in third of OECD governments shaping international funding policies",
-      "search": "far-right OECD coalition governments 2026"
+      "text": "Christian revival among Gen Z reshapes conservative politics, with young believers more radical than predecessors",
+      "search": "Gen Z Christian revival conservative Europe America 2026"
     }
   ]
 }
