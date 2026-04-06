@@ -284,7 +284,19 @@ function ddgUrl(query) {
   return `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
 }
 
-function renderItem(item, t) {
+const GEO_ES = {
+  'Global': 'Global', 'Europe': 'Europa', 'Asia': 'Asia',
+  'Africa': 'África', 'Americas': 'Américas', 'Oceania': 'Oceanía',
+  'Spain': 'España', 'Norway': 'Noruega', 'UK': 'Reino Unido',
+  'United Kingdom': 'Reino Unido', 'Netherlands': 'Países Bajos'
+};
+
+function translateGeo(geo, locale) {
+  if (locale === 'es') return GEO_ES[geo] || geo;
+  return geo;
+}
+
+function renderItem(item, t, locale = 'en') {
   const regionalGeos = ["Spain", "Norway", "UK", "United Kingdom", "Netherlands"];
   const isRegional = regionalGeos.includes(item.geo);
   const pillClass = isRegional ? "geo-pill regional" : "geo-pill";
@@ -292,6 +304,7 @@ function renderItem(item, t) {
   const searchQuery = isRegional
     ? encodeURIComponent(item.headline + " " + item.geo)
     : encodeURIComponent(item.headline);
+  const geoLabel = translateGeo(item.geo, locale);
 
   return `  <div class="item">
     <div class="${dotClass}"></div>
@@ -299,7 +312,7 @@ function renderItem(item, t) {
       <div class="item-head">${item.headline}</div>
       <div class="item-text">${item.body}</div>
       <div class="item-foot">
-        <span class="${pillClass}">${item.geo}</span>
+        <span class="${pillClass}">${geoLabel}</span>
         <a class="search-link" href="https://duckduckgo.com/?q=${searchQuery}" target="_blank">↗</a>
         <span class="source-pill">~${item.sources} ${t.SOURCE_PILL_LABEL}<span class="src-tip">${t.SOURCE_TIP}</span></span>
       </div>
@@ -337,7 +350,7 @@ function renderHtml(data, date, locale = "en") {
   const feedEnd = html.indexOf("<!-- FEED:END -->") + "<!-- FEED:END -->".length;
   html =
     html.slice(0, feedStart) +
-    `<!-- FEED:START -->\n<div class="feed">\n${allItems.map((item) => renderItem(item, t)).join("\n")}\n</div>\n` +
+    `<!-- FEED:START -->\n<div class="feed">\n${allItems.map((item) => renderItem(item, t, locale)).join("\n")}\n</div>\n` +
     "<!-- FEED:END -->" +
     html.slice(feedEnd);
 
@@ -409,7 +422,7 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
       <div style="font-family:Georgia,serif;font-size:17px;color:#1a1a18;line-height:1.35;margin-bottom:8px;">${item.headline}</div>
       <div style="font-family:Georgia,serif;font-size:14px;color:#444;line-height:1.65;margin-bottom:10px;">${item.body}</div>
       <div>
-        <span style="${geoStyle(item.geo)}">${item.geo}</span>
+        <span style="${geoStyle(item.geo)}">${translateGeo(item.geo, locale)}</span>
         <a href="https://duckduckgo.com/?q=${encodeURIComponent(item.headline + (item.geo !== 'Global' ? ' ' + item.geo : ''))}" style="font-family:'Courier New',monospace;font-size:11px;color:#c8a84a;text-decoration:none;margin-right:8px;" target="_blank">&#x2197;</a>
         <span style="font-family:'Courier New',monospace;font-size:10px;color:#aaa;">~${item.sources} ${t.SOURCE_PILL_LABEL}</span>
       </div>
