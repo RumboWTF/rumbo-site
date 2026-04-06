@@ -35,7 +35,7 @@ const EN_STRINGS = {
     worldviews: "Worldviews",
   },
   CATEGORY_TOOLTIPS: {
-    culture: "Art, film, music or literature that carries meaning beyond entertainment",
+    culture: "Culture with something to say",
     science_tech: "What is becoming possible",
     wellbeing: "Health, medicine, and how people live",
     worldviews: "Belief systems and group thinking",
