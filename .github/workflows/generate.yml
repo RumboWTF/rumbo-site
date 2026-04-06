@@ -36,6 +36,6 @@ jobs:
         run: |
           git config user.name "rumbo-bot"
           git config user.email "bot@rumbo.wtf"
-          git add index.html index-es.html index-no.html index-uk.html index-nl.html index-global-es.html index-spain-es.html index-norway-es.html index-uk-es.html index-nl-es.html all_output.json last_output.json
+          git add index.html index-es.html index-no.html index-uk.html index-nl.html index-global-es.html index-spain-es.html index-norway-es.html index-uk-es.html index-nl-es.html all_output.json last_output.json recent_headlines.json
           git diff --staged --quiet || git commit -m "Daily update $(date -u +%Y-%m-%d)"
           git push --force
