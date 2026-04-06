@@ -1,54 +1,63 @@
 {
-  "generated_at": "2026-04-06T00:00:00Z",
+  "generated_at": "2026-04-06T12:00:00Z",
   "sources": [
     "Al Jazeera",
+    "UN News",
+    "BBC",
+    "The Associated Press",
+    "Time",
+    "France 24",
     "NPR",
-    "CNN",
-    "Human Rights Watch",
-    "Reuters",
-    "AP",
-    "Washington Post"
+    "Nature Synthesis",
+    "Open Magazine",
+    "The Guardian"
   ],
   "items": [
     {
-      "headline": "Nepal cuts working week to five days as fuel shortage forces austerity",
-      "body": "Nepal made Saturday a second weekly holiday for government offices and schools to conserve fuel amid shortages from disrupted Middle East oil supplies. The Himalayan nation relies almost entirely on India for fuel, leaving it highly exposed to global price shocks.",
-      "geo": "Asia",
-      "sources": 4
-    },
-    {
-      "headline": "China brokers resumed Pakistan-Afghanistan talks after weeks of deadly border fighting",
-      "body": "Representatives from Pakistan and Afghanistan's Taliban government met in China's Urumqi after clashes killed hundreds since February. Ceasefire talks follow earlier rounds in Qatar and Turkey that collapsed after Pakistani strikes in Kabul.",
-      "geo": "Asia",
+      "headline": "Senegal bans ministerial travel as oil prices double budget projections",
+      "body": "Senegal banned government ministers from non-essential foreign travel after oil costs approached double what the government budgeted for. The move joins fuel tax cuts and electricity rationing across Africa as governments respond to the Strait of Hormuz closure.",
+      "geo": "Africa",
       "sources": 5
     },
     {
-      "headline": "Burkina Faso forces killed twice as many civilians as jihadists since 2023, report finds",
-      "body": "Government troops and allied militias killed over 1,200 civilians between January 2023 and August 2025, more than double those killed by militant groups, Human Rights Watch documented. The killings amount to war crimes and ethnic cleansing of Fulani communities.",
+      "headline": "Sudan hospital faces critical supply shortages as violence displaces tens of thousands",
+      "body": "Health workers at Sudan's El-Obeid Maternity Hospital report severe shortages of surgical equipment and antibiotics as violence in South Kordofan forces tens of thousands to flee. The city has come under frequent drone attacks targeting health facilities.",
       "geo": "Africa",
+      "sources": 4
+    },
+    {
+      "headline": "Australia urges fuel conservation as Strait of Hormuz closure strains supply",
+      "body": "Australia's prime minister urged citizens to take public transportation and avoid panic buying, warning that fuel should be saved for farmers and critical industries. While Australia imports little crude directly from the Middle East, up to 80 percent of its refined fuel comes via Asian refineries dependent on routes through the Strait of Hormuz.",
+      "geo": "Oceania",
       "sources": 6
+    },
+    {
+      "headline": "First Chadian troops arrive in Haiti as Gang Suppression Force begins deployment",
+      "body": "The first troops from a new UN-backed Gang Suppression Force arrived in Haiti from Chad, accompanied by the mission's special representative. The force is expected to grow to 5,500 personnel and will be empowered to make arrests, unlike the smaller Kenyan-led mission it replaces.",
+      "geo": "Americas",
+      "sources": 7
     }
   ],
   "meanwhile": [
     {
       "category": "culture",
-      "text": "Danh Võ's 27-foot Buddha sculpture for New York's High Line honours heritage destroyed by Taliban",
-      "search": "Danh Vo Light Shines Universe High Line Bamiyan Buddha 2026"
+      "text": "Gaza archaeological treasures shown at Arab World Institute in Paris after escaping war's devastation",
+      "search": "Gaza archaeological treasures Arab World Institute Paris April 2026"
     },
     {
       "category": "science_tech",
-      "text": "Cambridge chemists develop light-powered method to alter drug molecules without toxic catalysts",
-      "search": "Cambridge anti-Friedel-Crafts LED drug synthesis Nature 2026"
+      "text": "Light-powered method alters drug molecules without toxic catalysts using photocatalysis breakthrough",
+      "search": "photocatalysis drug molecules anti-Friedel-Crafts 2026"
     },
     {
       "category": "wellbeing",
-      "text": "Oxytocin-Alk5 inhibitor combo extended elderly male mice lifespan 70% in Berkeley longevity study",
-      "search": "oxytocin Alk5 inhibitor mice lifespan extension UC Berkeley 2026"
+      "text": "Gene therapy restores hearing in people born deaf within weeks using single inner ear injection",
+      "search": "gene therapy hearing restoration congenital deafness 2026"
     },
     {
       "category": "worldviews",
-      "text": "Christian revival among Gen Z reshapes conservative politics, with young believers more radical than predecessors",
-      "search": "Gen Z Christian revival conservative Europe America 2026"
+      "text": "Young Americans embrace religious revival reshaping conservative politics with radical race and gender views",
+      "search": "religious revival young Americans conservative politics 2026"
     }
   ]
 }
