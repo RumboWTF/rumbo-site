@@ -64,7 +64,7 @@ const GLOBAL_PROMPT = `You are the editorial engine for Rumbo.wtf, a world intel
 SELECTION
 - Select exactly 3-4 items. No more, no fewer.
 - Select by second-order consequences, not by volume of coverage. A development that shifts how hundreds of millions of people live outranks one that dominates coverage but affects only one country's domestic politics. Actively discount story loudness as a selection criterion.
-- Apply a genuine global lens. No more than two items from the same continent. If the selection is missing a major consequential development because it happens to be from a well-covered region, include it — the goal is geographic diversity, not geographic avoidance.
+- Apply a genuine global lens. No more than two items from the same continent. Aim for coverage across at least three continents — if the selection covers fewer, check whether a consequential story from an underrepresented continent was overlooked. The goal is geographic spread, not geographic avoidance of well-covered regions.
 
 FRESHNESS
 - Only include items with new developments or reporting within the last 72 hours. If nothing concrete changed in that window — a vote, statement, ruling, event — skip it regardless of significance. Verify the publication date of your sources; if you cannot find a source dated within the last 72 hours, do not include the item.
@@ -488,16 +488,42 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
 async function main() {
   console.log("Rumbo generator starting...");
 
-  // Step 1: load previous run context to avoid repetition
+  // Step 1: load recent run context (last 3 days) to avoid repetition
   let previousContext = "";
   let previousMeanwhileContext = "";
   try {
-    const lastOutput = JSON.parse(fs.readFileSync("last_output.json", "utf8"));
-    const headlines = lastOutput.items.map(i => `- ${i.headline}`).join("\n");
-    const meanwhiles = lastOutput.meanwhile.map(i => `- ${i.text}`).join("\n");
-    previousContext = `\nThe previous edition covered these stories. Do not repeat the same topics, angles, or entities — find what is genuinely new:\n${headlines}\n`;
-    previousMeanwhileContext = `\nThe previous edition's Meanwhile section covered:\n${meanwhiles}\nDo not repeat these topics or closely related ones.\n`;
-    console.log("Loaded previous run context for deduplication.");
+    let allHeadlines = [];
+    let allMeanwhiles = [];
+
+    // Load rolling history file (up to 3 days)
+    let recentHistory = [];
+    try {
+      recentHistory = JSON.parse(fs.readFileSync("recent_headlines.json", "utf8"));
+    } catch (e) {
+      // No history yet — start fresh
+    }
+
+    // Also load last_output.json as the most recent run
+    try {
+      const lastOutput = JSON.parse(fs.readFileSync("last_output.json", "utf8"));
+      allHeadlines = lastOutput.items.map(i => i.headline);
+      allMeanwhiles = lastOutput.meanwhile.map(i => i.text);
+    } catch (e) {}
+
+    // Combine with history, deduplicate
+    const historyHeadlines = recentHistory.flatMap(r => r.headlines || []);
+    const historyMeanwhiles = recentHistory.flatMap(r => r.meanwhiles || []);
+    const combinedHeadlines = [...new Set([...allHeadlines, ...historyHeadlines])];
+    const combinedMeanwhiles = [...new Set([...allMeanwhiles, ...historyMeanwhiles])];
+
+    if (combinedHeadlines.length > 0) {
+      previousContext = `\nThe following stories have appeared in recent editions. Do not repeat the same topics, angles, or entities — find what is genuinely new:\n${combinedHeadlines.map(h => `- ${h}`).join("\n")}\n`;
+    }
+    if (combinedMeanwhiles.length > 0) {
+      previousMeanwhileContext = `\nThe following topics appeared in recent Meanwhile sections. Do not repeat these or closely related topics:\n${combinedMeanwhiles.map(h => `- ${h}`).join("\n")}\n`;
+    }
+
+    console.log(`Loaded deduplication context: ${combinedHeadlines.length} headlines from last ${recentHistory.length + 1} runs.`);
   } catch (e) {
     console.log("No previous run context found — first run.");
   }
@@ -597,6 +623,25 @@ async function main() {
   // Step 6: save JSON outputs
   fs.writeFileSync("last_output.json", JSON.stringify(globalData, null, 2), "utf8");
   console.log("Raw JSON saved to last_output.json");
+
+  // Update rolling 3-day headline history
+  try {
+    let recentHistory = [];
+    try {
+      recentHistory = JSON.parse(fs.readFileSync("recent_headlines.json", "utf8"));
+    } catch (e) {}
+    const newEntry = {
+      date: dateStr,
+      headlines: globalData.items.map(i => i.headline),
+      meanwhiles: globalData.meanwhile.map(i => i.text)
+    };
+    recentHistory.unshift(newEntry);
+    recentHistory = recentHistory.slice(0, 3); // keep last 3 runs only
+    fs.writeFileSync("recent_headlines.json", JSON.stringify(recentHistory, null, 2), "utf8");
+    console.log(`Rolling headline history updated (${recentHistory.length} runs stored).`);
+  } catch (e) {
+    console.error("Failed to update recent_headlines.json:", e.message);
+  }
 
   const allOutput = { date: dateStr, global: globalData, regional_items: allRegionalItems };
   fs.writeFileSync("all_output.json", JSON.stringify(allOutput, null, 2), "utf8");
