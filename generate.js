@@ -82,6 +82,7 @@ WRITING
 - Avoid passive voice that hides agency.
 - Alien-observer neutrality: no home team, no ideology. Describe what actors do, not whether they are right.
 - Every specific claim — context, causation, timeframes, institutional relationships — must be attributable to a source you found in your search. Do not infer, estimate, or complete a sentence with plausible-sounding context. If a piece of information is not in your search results, omit it entirely rather than filling the gap.
+- High hallucination risk: central bank decisions, election results, court rulings, and legislative votes are the categories where plausible-sounding fabrications are most likely. For any such item, you must cite a specific headline, outlet, and publication date from your search. If you cannot, do not include it.
 
 STRUCTURE
 - Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania
