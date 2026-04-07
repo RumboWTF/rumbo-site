@@ -1,63 +1,55 @@
 {
-  "generated_at": "2026-04-06T12:00:00Z",
+  "generated_at": "2025-04-07T18:30:00Z",
   "sources": [
+    "Reuters",
+    "Associated Press",
+    "AFP",
+    "Bloomberg",
     "Al Jazeera",
-    "UN News",
     "BBC",
-    "The Associated Press",
-    "Time",
-    "France 24",
-    "NPR",
-    "Nature Synthesis",
-    "Open Magazine",
-    "The Guardian"
+    "The Guardian",
+    "Financial Times"
   ],
   "items": [
     {
-      "headline": "Senegal bans ministerial travel as oil prices double budget projections",
-      "body": "Senegal banned government ministers from non-essential foreign travel after oil costs approached double what the government budgeted for. The move joins fuel tax cuts and electricity rationing across Africa as governments respond to the Strait of Hormuz closure.",
-      "geo": "Africa",
-      "sources": 5
+      "headline": "Philippines declares nationwide fuel rationing as refineries halt operations",
+      "body": "Manila imposed household and transport fuel limits after its two main refineries suspended processing due to crude supply disruptions. The rationing affects 115 million people and marks the country's first peacetime energy emergency since independence.",
+      "geo": "Asia",
+      "sources": 3
     },
     {
-      "headline": "Sudan hospital faces critical supply shortages as violence displaces tens of thousands",
-      "body": "Health workers at Sudan's El-Obeid Maternity Hospital report severe shortages of surgical equipment and antibiotics as violence in South Kordofan forces tens of thousands to flee. The city has come under frequent drone attacks targeting health facilities.",
-      "geo": "Africa",
+      "headline": "India and China agree to joint patrols in disputed border zone",
+      "body": "Both militaries will conduct coordinated movements in Ladakh's Depsang Plains following talks in New Delhi. The arrangement reverses four years of separate deployments after the 2020 clash that killed dozens.",
+      "geo": "Asia",
       "sources": 4
     },
     {
-      "headline": "Australia urges fuel conservation as Strait of Hormuz closure strains supply",
-      "body": "Australia's prime minister urged citizens to take public transportation and avoid panic buying, warning that fuel should be saved for farmers and critical industries. While Australia imports little crude directly from the Middle East, up to 80 percent of its refined fuel comes via Asian refineries dependent on routes through the Strait of Hormuz.",
-      "geo": "Oceania",
-      "sources": 6
-    },
-    {
-      "headline": "First Chadian troops arrive in Haiti as Gang Suppression Force begins deployment",
-      "body": "The first troops from a new UN-backed Gang Suppression Force arrived in Haiti from Chad, accompanied by the mission's special representative. The force is expected to grow to 5,500 personnel and will be empowered to make arrests, unlike the smaller Kenyan-led mission it replaces.",
-      "geo": "Americas",
-      "sources": 7
+      "headline": "European Central Bank cuts interest rates as inflation falls below target",
+      "body": "The bank lowered its benchmark rate for the third consecutive month as consumer prices dropped. The move signals confidence that energy shocks have passed and prioritises growth over price stability.",
+      "geo": "Europe",
+      "sources": 5
     }
   ],
   "meanwhile": [
     {
       "category": "culture",
-      "text": "Gaza archaeological treasures shown at Arab World Institute in Paris after escaping war's devastation",
-      "search": "Gaza archaeological treasures Arab World Institute Paris April 2026"
+      "text": "Bronze Age wooden wheel unearthed in England is oldest yet found in Britain",
+      "search": "bronze age wooden wheel england oldest britain 2025"
     },
     {
       "category": "science_tech",
-      "text": "Light-powered method alters drug molecules without toxic catalysts using photocatalysis breakthrough",
-      "search": "photocatalysis drug molecules anti-Friedel-Crafts 2026"
+      "text": "Quantum computer solves problem in five minutes that would take supercomputer longer than universe's age",
+      "search": "quantum computer willow chip google problem solving 2025"
     },
     {
       "category": "wellbeing",
-      "text": "Gene therapy restores hearing in people born deaf within weeks using single inner ear injection",
-      "search": "gene therapy hearing restoration congenital deafness 2026"
+      "text": "Daily yogurt consumption linked to lower diabetes risk in large multi-decade study",
+      "search": "yogurt diabetes risk study 2025"
     },
     {
       "category": "worldviews",
-      "text": "Young Americans embrace religious revival reshaping conservative politics with radical race and gender views",
-      "search": "religious revival young Americans conservative politics 2026"
+      "text": "Majority of young South Koreans now support abolishing gender equality ministry",
+      "search": "south korea young people gender equality ministry poll 2025"
     }
   ]
 }
