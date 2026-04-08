@@ -47,14 +47,11 @@ const EN_STRINGS = {
 // esFile: Spanish output filename
 
 const REGIONS = [
-  { code: "es", name: "Spain",          file: "index-es.html",  esFile: "index-spain-es.html" },
-  { code: "no", name: "Norway",         file: "index-no.html",  esFile: "index-norway-es.html" },
-  { code: "uk", name: "United Kingdom", file: "index-uk.html",  esFile: "index-uk-es.html" },
-  { code: "nl", name: "Netherlands",    file: "index-nl.html",  esFile: "index-nl-es.html" },
+  { code: "es", name: "Spain",          file: "index-es.html"  },
+  { code: "no", name: "Norway",         file: "index-no.html"  },
+  { code: "uk", name: "United Kingdom", file: "index-uk.html"  },
+  { code: "nl", name: "Netherlands",    file: "index-nl.html"  },
 ];
-
-// Global Spanish file — generated separately from the REGIONS loop
-const GLOBAL_ES_FILE = "index-global-es.html";
 
 // ─── Prompts ──────────────────────────────────────────────────────────────────
 
@@ -161,30 +158,6 @@ CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end w
   ]
 }`;
 
-// Style anchors per language — multiple outlets to avoid ideological lean
-const STYLE_ANCHORS = {
-  Spanish: "El País, El Mundo, and RTVE",
-};
-
-const TRANSLATE_PROMPT = (langName, contentJson) => {
-  const anchor = STYLE_ANCHORS[langName];
-  const styleInstruction = anchor
-    ? `- Write as a journalist would for outlets like ${anchor} — use the vocabulary, sentence rhythm, and editorial voice of quality ${langName} journalism, not translated English phrasing.`
-    : `- Write as if originally authored in ${langName} — natural phrasing, not word-for-word translation.`;
-  return `Translate the following Rumbo.wtf JSON content into ${langName}.
-
-Rules:
-- Translate ONLY the string values of: "headline" and "body" in items; "text" in meanwhile items
-- Do NOT translate: JSON keys, "geo" values, "category" values, "search" field values, integers
-${styleInstruction}
-- Keep headlines punchy and direct
-- Do not use any markdown formatting (no asterisks, underscores, or other markup) in translated text
-
-CRITICAL: Return ONLY the raw JSON object with the exact same structure as the input. Start with { and end with }. No other text.
-
-${contentJson}`;
-};
-
 // ─── API calls ────────────────────────────────────────────────────────────────
 
 // Two-step call: search pass then format pass. Used for global and regional editions.
@@ -231,19 +204,6 @@ async function callClaude(prompt) {
   return textBlock.text.trim();
 }
 
-// Single call, no search. Used for translation passes.
-async function callClaudeSimple(prompt) {
-  const response = await client.messages.create({
-    model: "claude-sonnet-4-5",
-    max_tokens: 3000,
-    system: "You are a JSON translator. Output only raw valid JSON. Start with { and end with }. No other text.",
-    messages: [{ role: "user", content: prompt }],
-  });
-  const textBlock = response.content.find((b) => b.type === "text");
-  if (!textBlock) throw new Error("No text in Claude response");
-  return textBlock.text.trim();
-}
-
 // ─── JSON parse ───────────────────────────────────────────────────────────────
 
 function parseJson(raw) {
@@ -266,17 +226,6 @@ function getTranslations(locale) {
     CATEGORIES: { ...EN_STRINGS.CATEGORIES, ...(loc.CATEGORIES || {}) },
     CATEGORY_TOOLTIPS: { ...EN_STRINGS.CATEGORY_TOOLTIPS, ...(loc.CATEGORY_TOOLTIPS || {}) },
   };
-}
-
-// ─── Translation helper ────────────────────────────────────────────────────────
-
-async function translateData(data, langName) {
-  const toTranslate = { items: data.items, meanwhile: data.meanwhile };
-  const translatedRaw = await callClaudeSimple(
-    TRANSLATE_PROMPT(langName, JSON.stringify(toTranslate, null, 2))
-  );
-  const translated = parseJson(translatedRaw);
-  return { ...data, ...translated };
 }
 
 // ─── HTML rendering ───────────────────────────────────────────────────────────
@@ -461,7 +410,7 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
   <tr><td class="rp" style="background:#1a1a18;padding:16px 28px;border-radius:4px 4px 0 0;">
     <table width="100%" cellpadding="0" cellspacing="0">
     <tr>
-      <td><a href="https://rumbo.wtf/${locale === 'es' ? 'index-global-es.html' : 'index.html'}" style="text-decoration:none;"><span style="font-family:Georgia,serif;font-size:20px;color:#f5f3ee;letter-spacing:-0.5px;">Rumbo<span style="color:#c8a84a;">.wtf</span></span></a></td>
+      <td><a href="https://rumbo.wtf/index.html" style="text-decoration:none;"><span style="font-family:Georgia,serif;font-size:20px;color:#f5f3ee;letter-spacing:-0.5px;">Rumbo<span style="color:#c8a84a;">.wtf</span></span></a></td>
       <td align="right"><span style="font-family:'Courier New',monospace;font-size:10px;color:#888;letter-spacing:1px;">${date}</span></td>
     </tr>
     </table>
@@ -567,20 +516,7 @@ async function main() {
   fs.writeFileSync("index.html", globalHtml, "utf8");
   console.log("index.html written.");
 
-  // Step 4: render global ES edition
-  console.log("Translating global edition to Spanish...");
-  try {
-    const globalDataEs = await translateData(globalData, "Spanish");
-    const globalEsHtml = renderHtml(globalDataEs, dateStr, "es");
-    fs.writeFileSync(GLOBAL_ES_FILE, globalEsHtml, "utf8");
-    console.log(`${GLOBAL_ES_FILE} written.`);
-  } catch (e) {
-    console.error(`Global ES translation failed: ${e.message}`);
-    console.log(`Writing EN fallback for ${GLOBAL_ES_FILE}.`);
-    fs.writeFileSync(GLOBAL_ES_FILE, globalHtml, "utf8");
-  }
-
-  // Step 5: regional editions
+  // Step 4: regional editions
   const allRegionalItems = {}; // { regionCode: [items] } — used by Step 7
 
   for (const region of REGIONS) {
@@ -609,28 +545,10 @@ async function main() {
       fs.writeFileSync(region.file, regionalHtml, "utf8");
       console.log(`${region.file} written.`);
 
-      // Render ES version if configured
-      if (region.esFile) {
-        console.log(`Translating ${region.name} edition to Spanish...`);
-        try {
-          const mergedDataEs = await translateData(mergedData, "Spanish");
-          const regionalEsHtml = renderHtml(mergedDataEs, dateStr, "es");
-          fs.writeFileSync(region.esFile, regionalEsHtml, "utf8");
-          console.log(`${region.esFile} written.`);
-        } catch (e) {
-          console.error(`ES translation failed for ${region.name}: ${e.message}`);
-          console.log(`Writing EN fallback for ${region.esFile}.`);
-          fs.writeFileSync(region.esFile, regionalHtml, "utf8");
-        }
-      }
-
     } catch (e) {
       console.error(`Regional call failed for ${region.name}:`, e.message);
       console.log(`Writing global-only EN fallback for ${region.name}.`);
       fs.writeFileSync(region.file, globalHtml, "utf8");
-      if (region.esFile) {
-        fs.writeFileSync(region.esFile, globalHtml, "utf8");
-      }
     }
   }
 
@@ -699,19 +617,8 @@ async function main() {
       }
       const mergedData = { ...globalData, items: [...globalData.items, ...regionalItems] };
 
-      // Translate if ES subscriber
-      let emailData = mergedData;
-      if (sub.language === "ES") {
-        try {
-          emailData = await translateData(mergedData, "Spanish");
-        } catch (e) {
-          console.error(`Translation failed for ${sub.email}, sending EN: ${e.message}`);
-        }
-      }
-
-      const locale = sub.language === "ES" ? "es" : "en";
       const unsubUrl = `https://rumbo.wtf/api/unsubscribe?token=${sub.unsubscribe_token}`;
-      const emailHtml = renderEmail(emailData, dateStr, locale, unsubUrl);
+      const emailHtml = renderEmail(mergedData, dateStr, "en", unsubUrl);
 
       const sendRes = await fetch("https://api.resend.com/emails", {
         method: "POST",
