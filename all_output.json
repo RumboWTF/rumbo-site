@@ -1,84 +1,99 @@
 {
-  "date": "7 April 2026",
+  "date": "8 April 2026",
   "global": {
-    "generated_at": "2026-04-07T00:00:00Z",
+    "generated_at": "2026-04-08T00:00:00Z",
     "sources": [
-      "Reuters",
-      "Bloomberg",
       "Al Jazeera",
+      "Reuters",
       "BBC",
-      "Khaleej Times",
-      "AllAfrica",
-      "CNBC",
+      "AFP",
+      "Associated Press",
+      "The Guardian",
+      "Bloomberg",
+      "Financial Times",
       "NPR",
-      "Just Security"
+      "France24",
+      "Deutsche Welle",
+      "UN News"
     ],
     "items": [
       {
-        "headline": "Iran rejects ceasefire deadline as oil disruption enters sixth week",
-        "body": "Iran rejected proposals to reopen the Strait of Hormuz as the closure triggered the largest oil supply disruption in history. Nearly one billion barrels will be lost by month's end while diesel prices have more than doubled across Southeast Asia.",
+        "headline": "Pakistan mediates two-week Iran-US ceasefire ending six-week Strait of Hormuz blockade",
+        "body": "Iran agreed to reopen waterway carrying quarter of global oil supplies hours before threatened infrastructure strikes. Temporary halt pushes decisions on energy access and nuclear containment into diplomatic uncertainty.",
         "geo": "Global",
-        "sources": 5
+        "sources": 8
       },
       {
-        "headline": "China mediates as Pakistan and Afghanistan hold first talks after border clashes",
-        "body": "Pakistan confirmed peace talks with Afghanistan's Taliban government in China after weeks of fighting that killed hundreds. Tensions peaked after a Pakistani airstrike at a Kabul treatment center that Afghanistan said killed more than 400 people.",
+        "headline": "Myanmar junta leader formalizes civilian presidency through controlled parliament vote",
+        "body": "Min Aung Hlaing won approval five years after coup that deposed elected government. Transition from military uniform consolidates authoritarian rule while civil war continues across territory junta cannot control.",
         "geo": "Asia",
-        "sources": 4
+        "sources": 7
       },
       {
-        "headline": "Somalia launches first offshore oil drilling with Turkish partnership",
-        "body": "Somalia began its first offshore drilling campaign as Turkish vessel Cagri Bey arrived to drill the Curad-1 well. Officials said successful operations could boost resource-led growth and reshape regional energy dynamics.",
+        "headline": "Southern Africa cholera cases surge sevenfold as cyclone flooding overwhelms water systems",
+        "body": "Over four thousand cases and 56 deaths reported in six weeks across five countries. Mozambique accounts for ninety percent of infections as climate-amplified outbreaks reverse continental transmission declines.",
         "geo": "Africa",
         "sources": 4
+      },
+      {
+        "headline": "Cuba releases over two thousand prisoners as oil blockade pressures government",
+        "body": "Pardon coincided with Holy Week but followed months of energy collapse after oil shipments halted. Release marks largest amnesty in decade amid intensifying confrontation over political detentions and economic survival.",
+        "geo": "Americas",
+        "sources": 6
       }
     ],
     "meanwhile": [
       {
         "category": "culture",
-        "text": "5,300-year-old Egyptian copper artifact reidentified as oldest known rotary metal drill in Nile Valley",
-        "search": "5300 year old copper drill Egypt 2026"
+        "text": "Lily Stockman Hong Kong debut explores eighth-century Buddhist poetry through organic abstraction",
+        "search": "Lily Stockman Hong Kong exhibition 2026 Buddhist poetry"
       },
       {
         "category": "science_tech",
-        "text": "Scientists trap infrared light in layer 40 nanometers thick—over 1,000 times thinner than human hair",
-        "search": "light trapped 40 nanometers thin layer 2026"
+        "text": "Tandem perovskite-silicon solar cells reach 34 percent efficiency in mass production",
+        "search": "tandem perovskite solar cell 34% efficiency 2026 production"
       },
       {
         "category": "wellbeing",
-        "text": "New pill baxdrostat lowers high blood pressure nearly 10 mmHg in patients who don't respond to standard treatments",
-        "search": "baxdrostat blood pressure resistant hypertension 2026"
+        "text": "Baxdrostat lowers resistant hypertension nearly 10 mmHg in patients unresponsive to standard treatments",
+        "search": "baxdrostat blood pressure resistant hypertension 2026 trial"
       },
       {
         "category": "worldviews",
-        "text": "Young generation embracing conservative Christianity with radical views on race and gender drives US religious revival",
-        "search": "Generation Z Christian revival conservative 2026"
+        "text": "US political polarization rose 64 percent since 1988 with left shifting far more than right",
+        "search": "US political polarization 1988 2026 left shift study"
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Spain employment surpasses 22 million for first time as services sector drives record hiring",
-        "body": "Spain exceeded 22 million Social Security contributors for the first time in its history as Easter demand and services growth pushed March employment to an all-time high. The milestone marks a shift in a country long defined by stubborn joblessness, though regional unemployment gaps remain stark.",
+        "headline": "Former transport minister faces Supreme Court trial over pandemic procurement kickbacks",
+        "body": "A corruption trial opened against a close ally who helped propel current government to power. Parliamentary suspension could strip ruling coalition of crucial vote as multiple graft probes converge on minority administration.",
         "geo": "Spain",
-        "sources": 4
+        "sources": 3
       }
     ],
     "uk": [
       {
-        "headline": "Britain scraps two-child benefit cap as welfare reform extends payments to additional children",
-        "body": "The two-child benefit cap ended, extending monthly payments to all children in low-income households after nine years of restriction. An estimated 450,000 children are projected to move above the poverty line as families receive additional support worth over £3,600 annually per child.",
+        "headline": "Resident doctors begin six-day strike disrupting NHS services across England",
+        "body": "Junior doctors walked out demanding pay restoration after years of real-term cuts. Extended action forces hospitals to cancel appointments and procedures during longest continuous industrial action by doctors.",
         "geo": "United Kingdom",
-        "sources": 4
+        "sources": 3
       }
     ],
     "nl": [
       {
-        "headline": "Netherlands doubles offshore wind tender to 2 GW in response to energy security concerns",
-        "body": "Government added second offshore wind site to 2026 tender with €3.9 billion support, reversing earlier budget cuts. Decision follows Strait of Hormuz closure and aims to accelerate energy independence amid supply disruptions.",
+        "headline": "Dutch bank ING trapped in Russia as Kremlin blocks sale of operations",
+        "body": "Moscow refused regulatory approval for the sale to a Russian buyer after determining it needs Western banks for international payments. The blocked exit leaves ING facing ongoing exposure despite terminating all new Russian business since the Ukraine invasion.",
         "geo": "Netherlands",
         "sources": 3
+      },
+      {
+        "headline": "Senate majority prepares to block government plan to accelerate pension age increases",
+        "body": "Cross-party opposition argues the proposal violates a 2019 agreement between government, employers and unions on retirement age indexation. Vote scheduled for Wednesday threatens minority cabinet's first major policy test.",
+        "geo": "Netherlands",
+        "sources": 2
       }
     ]
   }
