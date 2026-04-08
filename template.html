@@ -180,13 +180,9 @@
     <span class="footer-left">rumbo.wtf</span>
   <div class="footer-center">
     <div class="locale-token" id="localeToken" onclick="toggleLocale(event)">
-      <span id="localeLabel">&#127468;&#127463; EN &middot; &#127757; Global</span>
+      <span id="localeLabel">&#127757; Global</span>
       <span class="locale-arrow">&#9650;</span>
       <div class="locale-dropdown" id="localeDropdown">
-        <div class="locale-dl">{{LOCALE_LANGUAGE}}</div>
-        <div class="locale-row">
-          <div class="lpill active" onclick="setLang(event,'EN')">&#127468;&#127463; EN</div>
-        </div>
         <div class="locale-dl">{{LOCALE_LOCAL_CONTEXT}}</div>
         <div class="locale-row">
           <div class="lpill active" onclick="setRegion(event,'Global')">&#127757; Global</div>
@@ -224,28 +220,19 @@
   updateToken();
 
   // Mark active region pill
-  document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill').forEach(function(p){p.classList.remove('active');});
-  document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill').forEach(function(p){if(p.textContent.trim().indexOf(region)!==-1){p.classList.add('active');}});
-  // Mark active language pill
-  document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});
-  document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){if(p.textContent.trim().indexOf(lang)!==-1){p.classList.add('active');}});
+  document.querySelectorAll('.locale-dropdown .locale-row .lpill').forEach(function(p){p.classList.remove('active');});
+  document.querySelectorAll('.locale-dropdown .locale-row .lpill').forEach(function(p){if(p.textContent.trim().indexOf(region)!==-1){p.classList.add('active');}});
 
-  function updateToken(){document.getElementById('localeLabel').textContent=flagFor(lang)+' '+lang+' \u00b7 '+flagFor(region)+' '+region;}
-  function flagFor(v){var m={'EN':'\ud83c\uddec\ud83c\udde7','NO':'\ud83c\uddf3\ud83c\uddf4','ES':'\ud83c\uddea\ud83c\uddf8','Global':'\ud83c\udf0d','Spain':'\ud83c\uddea\ud83c\uddf8','Norway':'\ud83c\uddf3\ud83c\uddf4','UK':'\ud83c\uddec\ud83c\udde7','Netherlands':'\ud83c\uddf3\ud83c\uddf1'};return m[v]||'';}
+  function updateToken(){document.getElementById('localeLabel').textContent=flagFor(region)+' '+region;}
+  function flagFor(v){var m={'Global':'\ud83c\udf0d','Spain':'\ud83c\uddea\ud83c\uddf8','Norway':'\ud83c\uddf3\ud83c\uddf4','UK':'\ud83c\uddec\ud83c\udde7','Netherlands':'\ud83c\uddf3\ud83c\uddf1'};return m[v]||'';}
   function toggleLocale(e){e.stopPropagation();document.getElementById('localeDropdown').classList.toggle('open');}
   document.addEventListener('click',function(){document.getElementById('localeDropdown').classList.remove('open');});
 
-  function setLang(e,val){
-    e.stopPropagation();lang=val;localStorage.setItem('rumbo_lang',val);
-    document.querySelectorAll('.locale-dropdown .locale-row:first-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});
-    e.currentTarget.classList.add('active');updateToken();
-    window.location.href=getFile(lang,region);
-  }
   function setRegion(e,val){
     e.stopPropagation();region=val;localStorage.setItem('rumbo_region',val);
-    document.querySelectorAll('.locale-dropdown .locale-row:last-of-type .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});
+    document.querySelectorAll('.locale-dropdown .locale-row .lpill:not(.soon)').forEach(function(p){p.classList.remove('active');});
     e.currentTarget.classList.add('active');updateToken();
-    window.location.href=getFile(lang,region);
+    window.location.href=getFile('EN',region);
   }
 
   // Localise the update timestamp to the reader's timezone
