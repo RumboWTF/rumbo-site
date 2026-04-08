@@ -1,99 +1,76 @@
 {
   "date": "8 April 2026",
   "global": {
-    "generated_at": "2026-04-08T00:00:00Z",
+    "generated_at": "2026-04-08T11:00:00Z",
     "sources": [
       "Al Jazeera",
-      "Reuters",
-      "BBC",
-      "AFP",
-      "Associated Press",
-      "The Guardian",
-      "Bloomberg",
-      "Financial Times",
+      "Axios",
       "NPR",
-      "France24",
-      "Deutsche Welle",
-      "UN News"
+      "Reuters",
+      "Africanews",
+      "AllAfrica",
+      "Business Today India",
+      "Bloomberg",
+      "RBI"
     ],
     "items": [
       {
-        "headline": "Pakistan mediates two-week Iran-US ceasefire ending six-week Strait of Hormuz blockade",
-        "body": "Iran agreed to reopen waterway carrying quarter of global oil supplies hours before threatened infrastructure strikes. Temporary halt pushes decisions on energy access and nuclear containment into diplomatic uncertainty.",
-        "geo": "Global",
-        "sources": 8
-      },
-      {
-        "headline": "Myanmar junta leader formalizes civilian presidency through controlled parliament vote",
-        "body": "Min Aung Hlaing won approval five years after coup that deposed elected government. Transition from military uniform consolidates authoritarian rule while civil war continues across territory junta cannot control.",
-        "geo": "Asia",
+        "headline": "Cameroon reinstates vice presidency after four decades",
+        "body": "Cameroon's parliament approved a constitutional amendment creating a vice president position, with 200 lawmakers voting in favor. The president can appoint and dismiss the vice president at will and transfer power during incapacitation.",
+        "geo": "Africa",
         "sources": 7
       },
       {
-        "headline": "Southern Africa cholera cases surge sevenfold as cyclone flooding overwhelms water systems",
-        "body": "Over four thousand cases and 56 deaths reported in six weeks across five countries. Mozambique accounts for ninety percent of infections as climate-amplified outbreaks reverse continental transmission declines.",
-        "geo": "Africa",
+        "headline": "India's central bank holds interest rate unchanged amid oil price concerns",
+        "body": "India's Reserve Bank kept the repo rate unchanged at 5.25 percent and maintained its neutral stance. The move comes as the West Asia conflict has pushed crude oil prices higher, adding inflation concerns for import-dependent economies.",
+        "geo": "Asia",
         "sources": 4
-      },
-      {
-        "headline": "Cuba releases over two thousand prisoners as oil blockade pressures government",
-        "body": "Pardon coincided with Holy Week but followed months of energy collapse after oil shipments halted. Release marks largest amnesty in decade amid intensifying confrontation over political detentions and economic survival.",
-        "geo": "Americas",
-        "sources": 6
       }
     ],
     "meanwhile": [
       {
         "category": "culture",
-        "text": "Lily Stockman Hong Kong debut explores eighth-century Buddhist poetry through organic abstraction",
-        "search": "Lily Stockman Hong Kong exhibition 2026 Buddhist poetry"
+        "text": "MoMA stages first major Marcel Duchamp retrospective in US since 1973 with nearly 300 works",
+        "search": "Marcel Duchamp MoMA retrospective 2026"
       },
       {
         "category": "science_tech",
-        "text": "Tandem perovskite-silicon solar cells reach 34 percent efficiency in mass production",
-        "search": "tandem perovskite solar cell 34% efficiency 2026 production"
+        "text": "CERN physicists discover doubly charmed baryon containing two charm quarks and one down quark",
+        "search": "doubly charmed baryon CERN LHCb 2026"
       },
       {
         "category": "wellbeing",
-        "text": "Baxdrostat lowers resistant hypertension nearly 10 mmHg in patients unresponsive to standard treatments",
-        "search": "baxdrostat blood pressure resistant hypertension 2026 trial"
+        "text": "Gene therapy restores hearing in people born deaf using single injection into inner ear",
+        "search": "gene therapy deafness hearing restoration 2026"
       },
       {
         "category": "worldviews",
-        "text": "US political polarization rose 64 percent since 1988 with left shifting far more than right",
-        "search": "US political polarization 1988 2026 left shift study"
+        "text": "Young American men driving Christian revival with church attendance rising among Gen Z males",
+        "search": "Gen Z men Christian revival church attendance 2026"
       }
     ]
   },
   "regional_items": {
-    "es": [
-      {
-        "headline": "Former transport minister faces Supreme Court trial over pandemic procurement kickbacks",
-        "body": "A corruption trial opened against a close ally who helped propel current government to power. Parliamentary suspension could strip ruling coalition of crucial vote as multiple graft probes converge on minority administration.",
-        "geo": "Spain",
-        "sources": 3
-      }
-    ],
     "uk": [
       {
-        "headline": "Resident doctors begin six-day strike disrupting NHS services across England",
-        "body": "Junior doctors walked out demanding pay restoration after years of real-term cuts. Extended action forces hospitals to cancel appointments and procedures during longest continuous industrial action by doctors.",
+        "headline": "NHS resident doctors begin six-day strike over rejected pay offer",
+        "body": "Resident doctors in England started a walkout after rejecting a government offer including a 3.5 percent pay rise. The strike affects nearly half the medical workforce and will cost the health service an estimated £50 million daily.",
         "geo": "United Kingdom",
-        "sources": 3
+        "sources": 4
       }
     ],
     "nl": [
       {
-        "headline": "Dutch bank ING trapped in Russia as Kremlin blocks sale of operations",
-        "body": "Moscow refused regulatory approval for the sale to a Russian buyer after determining it needs Western banks for international payments. The blocked exit leaves ING facing ongoing exposure despite terminating all new Russian business since the Ukraine invasion.",
-        "geo": "Netherlands",
-        "sources": 3
-      },
-      {
-        "headline": "Senate majority prepares to block government plan to accelerate pension age increases",
-        "body": "Cross-party opposition argues the proposal violates a 2019 agreement between government, employers and unions on retirement age indexation. Vote scheduled for Wednesday threatens minority cabinet's first major policy test.",
+        "headline": "Dutch government appoints envoy to finalize Tata Steel green transition plan",
+        "body": "Former deputy prime minister Lodewijk Asscher will lead negotiations over a customized agreement requiring up to 6.5 billion euros in investment. The talks center on shutting down the most polluting coke plants and decarbonizing the IJmuiden complex, with the state offering up to two billion euros in subsidies.",
         "geo": "Netherlands",
         "sources": 2
+      },
+      {
+        "headline": "Finance minister to object to KLM CEO bonus amid staff pay restrictions",
+        "body": "Minister Eelco Heinen will challenge CEO Marjan Rintel's compensation package, which rose over 30 percent to nearly 1.6 million euros. The move highlights tension between executive pay and labor demands as KLM pursues cost-cutting measures and reorganization.",
+        "geo": "Netherlands",
+        "sources": 3
       }
     ]
   }

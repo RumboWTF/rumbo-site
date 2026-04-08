@@ -2,6 +2,19 @@
   {
     "date": "8 April 2026",
     "headlines": [
+      "Cameroon reinstates vice presidency after four decades",
+      "India's central bank holds interest rate unchanged amid oil price concerns"
+    ],
+    "meanwhiles": [
+      "MoMA stages first major Marcel Duchamp retrospective in US since 1973 with nearly 300 works",
+      "CERN physicists discover doubly charmed baryon containing two charm quarks and one down quark",
+      "Gene therapy restores hearing in people born deaf using single injection into inner ear",
+      "Young American men driving Christian revival with church attendance rising among Gen Z males"
+    ]
+  },
+  {
+    "date": "8 April 2026",
+    "headlines": [
       "Pakistan mediates two-week Iran-US ceasefire ending six-week Strait of Hormuz blockade",
       "Myanmar junta leader formalizes civilian presidency through controlled parliament vote",
       "Southern Africa cholera cases surge sevenfold as cyclone flooding overwhelms water systems",
@@ -26,20 +39,6 @@
       "Scientists trap infrared light in layer 40 nanometers thick—over 1,000 times thinner than human hair",
       "New pill baxdrostat lowers high blood pressure nearly 10 mmHg in patients who don't respond to standard treatments",
       "Young generation embracing conservative Christianity with radical views on race and gender drives US religious revival"
-    ]
-  },
-  {
-    "date": "7 April 2026",
-    "headlines": [
-      "Philippines declares nationwide fuel rationing as refineries halt operations",
-      "India and China agree to joint patrols in disputed border zone",
-      "European Central Bank cuts interest rates as inflation falls below target"
-    ],
-    "meanwhiles": [
-      "Bronze Age wooden wheel unearthed in England is oldest yet found in Britain",
-      "Quantum computer solves problem in five minutes that would take supercomputer longer than universe's age",
-      "Daily yogurt consumption linked to lower diabetes risk in large multi-decade study",
-      "Majority of young South Koreans now support abolishing gender equality ministry"
     ]
   }
 ]
