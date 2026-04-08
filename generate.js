@@ -180,7 +180,7 @@ async function callClaude(prompt) {
     .filter((b) => b.type === "text")
     .map((b) => b.text)
     .join("\n")
-    .slice(0, 80000); // cap at ~80k chars to stay safely within token limit
+    .slice(0, 55000); // cap at ~55k chars to stay safely within token limit
 
   const formatResponse = await Promise.race([
     client.messages.create({
