@@ -186,7 +186,6 @@
         <div class="locale-dl">{{LOCALE_LANGUAGE}}</div>
         <div class="locale-row">
           <div class="lpill active" onclick="setLang(event,'EN')">&#127468;&#127463; EN</div>
-          <div class="lpill" onclick="setLang(event,'ES')">&#127466;&#127480; ES</div>
         </div>
         <div class="locale-dl">{{LOCALE_LOCAL_CONTEXT}}</div>
         <div class="locale-row">
@@ -212,8 +211,7 @@
   // 2D file map: fileMap[lang][region]
   // Missing combinations fall back silently to EN version of that region
   var fileMap={
-  'EN':{'Global':'index.html','Spain':'index-es.html','Norway':'index-no.html','UK':'index-uk.html','Netherlands':'index-nl.html'},
-  'ES':{'Global':'index-global-es.html','Spain':'index-spain-es.html','Norway':'index-norway-es.html','UK':'index-uk-es.html','Netherlands':'index-nl-es.html'}
+  'EN':{'Global':'index.html','Spain':'index-es.html','Norway':'index-no.html','UK':'index-uk.html','Netherlands':'index-nl.html'}
 };
   function getFile(l,r){var lm=fileMap[l]||{};return lm[r]||fileMap['EN'][r]||'index.html';}
 
