@@ -95,7 +95,7 @@ MEANWHILE
 - Wellbeing: health, medicine, longevity — how people are living.
 - Worldviews: how groups of people think, believe, or define themselves — and how that is shifting. Includes religious change, but equally: the rise of far-right or far-left movements, islamism, nationalism, tribalism, us-versus-them polarisation, generational value shifts, or any ideological current gaining or losing ground at a population level. HARD EXCLUSION: anything that could appear in the main news feed. The test: does this describe a change in what people believe or how they identify — not what they did or what happened to them?
 
-CRITICAL: Your response must be ONLY the raw JSON object. No thinking, no explanation, no markdown, no preamble. Start your response with { and end with }. Any text outside the JSON will break the parser.
+CRITICAL: Your response must be ONLY the raw JSON object. No thinking, no explanation, no markdown, no preamble. Start your response with { and end with }. Do not use markdown formatting (no asterisks, underscores, or other markup) in any string values. Any text outside the JSON will break the parser.
 {
   "generated_at": "ISO timestamp",
   "sources": ["outlet1", "outlet2"],
