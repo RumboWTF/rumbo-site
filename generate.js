@@ -160,7 +160,7 @@ CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end w
 
 // ─── API calls ────────────────────────────────────────────────────────────────
 
-// Two-step call: search pass then format pass. Used for global and regional editions.
+// Two-step call: search pass then format pass. Used for global edition.
 async function callClaude(prompt) {
   const timeout = 600000; // 10 minutes
 
@@ -202,6 +202,33 @@ async function callClaude(prompt) {
   const textBlock = formatResponse.content.find((b) => b.type === "text");
   if (!textBlock) throw new Error("No text in Claude response");
   return textBlock.text.trim();
+}
+
+// Single-pass call with web search and JSON output. Used for regional editions.
+async function callClaudeSinglePass(prompt) {
+  const timeout = 600000;
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      const response = await Promise.race([
+        client.messages.create({
+          model: "claude-sonnet-4-5",
+          max_tokens: 1500,
+          system: "You are a news editor. Output only raw valid JSON. Start with { and end with }. No other text. Do not use markdown formatting in any string values.",
+          tools: [{ type: "web_search_20250305", name: "web_search" }],
+          messages: [{ role: "user", content: prompt }],
+        }),
+        new Promise((_, reject) =>
+          setTimeout(() => reject(new Error("Claude API timeout")), timeout)
+        ),
+      ]);
+      const textBlock = response.content.find((b) => b.type === "text");
+      if (!textBlock) throw new Error("No text in response");
+      return textBlock.text.trim();
+    } catch (e) {
+      if (attempt === 2) throw e;
+      console.log(`Single-pass attempt ${attempt} failed: ${e.message}. Retrying...`);
+    }
+  }
 }
 
 // ─── JSON parse ───────────────────────────────────────────────────────────────
@@ -522,7 +549,7 @@ async function main() {
   for (const region of REGIONS) {
     console.log(`Calling Claude for ${region.name} regional top-up...`);
     try {
-      const regionalRaw = await callClaude(
+      const regionalRaw = await callClaudeSinglePass(
         REGIONAL_PROMPT(region.name, JSON.stringify(globalData, null, 2)) + previousContext
       );
       const regionalData = parseJson(regionalRaw);
