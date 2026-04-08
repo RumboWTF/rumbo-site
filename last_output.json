@@ -1,63 +1,61 @@
 {
   "generated_at": "2026-04-08T12:00:00Z",
   "sources": [
-    "Dawn",
-    "Bloomberg",
     "NPR",
-    "Al Jazeera",
-    "IOM",
-    "UNHCR",
-    "Xinhua",
+    "Axios",
+    "Democracy Now",
     "Reuters",
-    "UN OCHA",
-    "VNA"
+    "AllAfrica",
+    "Nikkei Asia",
+    "Morocco World News",
+    "European Commission"
   ],
   "items": [
     {
-      "headline": "Pakistan raises fuel prices up to 55% as Iran war chokes global oil supply",
-      "body": "<cite index=\"51-1,56-5,56-6\">Pakistan increased petrol by 43% and diesel by 55% as global oil prices surge amid the war disrupting the Strait of Hormuz</cite>. <cite index=\"56-7,57-15\">The hike pushes a cash-strapped nation already battling high inflation into deeper crisis as crude oil prices in Dubai and Oman jumped 80 to 90%</cite>.",
-      "geo": "Asia",
+      "headline": "United States and Iran agree to two-week ceasefire after Pakistani mediation",
+      "body": "Washington and Tehran suspended military operations hours before a deadline that threatened sweeping infrastructure strikes. Pakistan brokered talks set for Islamabad on April 10 to finalize terms that include reopening the Strait of Hormuz.",
+      "geo": "Global",
       "sources": 6
     },
     {
-      "headline": "Mediterranean migrant deaths near 1,000 in first three months of 2026",
-      "body": "<cite index=\"61-2,62-4\">At least 990 people have died crossing the Mediterranean since January, one of the deadliest starts to a year since 2014</cite>. <cite index=\"62-3,67-14,67-15\">Central Mediterranean deaths rose by more than 460 from last year even as Italy recorded sharply fewer arrivals</cite>.",
-      "geo": "Global",
-      "sources": 7
-    },
-    {
-      "headline": "Vietnam consolidates power as Communist Party chief assumes presidency",
-      "body": "<cite index=\"71-3,71-4\">Vietnam's National Assembly unanimously elected Tô Lâm as president, consolidating party and state roles in one figure</cite>. <cite index=\"75-4,77-5\">The move breaks with Vietnam's tradition of shared leadership and mirrors power structures in China and Laos</cite>.",
-      "geo": "Asia",
-      "sources": 5
-    },
-    {
-      "headline": "United Nations reopens Khartoum headquarters after three years of war",
-      "body": "<cite index=\"81-2,82-6\">The UN reopened its headquarters in Sudan's capital for the first time since 2023, resuming operations as the war approaches its third year</cite>. <cite index=\"82-4,82-5,82-6\">The conflict has displaced millions and left 33.7 million people requiring humanitarian assistance this year, up 3.3 million from 2025</cite>.",
+      "headline": "Cameroon president names son vice president and head of armed forces",
+      "body": "Paul Biya appointed Franck Emmanuel Biya to three top positions consolidating executive and military power within the family. The decree follows disputed elections and intensifies scrutiny over succession in a country Biya has ruled since 1982.",
       "geo": "Africa",
       "sources": 4
+    },
+    {
+      "headline": "Colombia government threatens new economic emergency as budget crisis deepens",
+      "body": "President Petro announced plans to submit emergency decree and tax reform after Congress rejected earlier fiscal proposals. Constitutional court previously suspended a December emergency leaving a gap in revenue to fund the 2026 budget.",
+      "geo": "Americas",
+      "sources": 3
+    },
+    {
+      "headline": "Morocco hosts GITEX Africa as continent positions for digital economy expansion",
+      "body": "Over 1,450 exhibitors from 145 countries gathered in Marrakech for Africa's largest technology summit focused on AI-driven transformation. Organizers frame connectivity and digital infrastructure as critical to bridging development gaps across the continent.",
+      "geo": "Africa",
+      "sources": 5
     }
   ],
   "meanwhile": [
     {
       "category": "culture",
-      "text": "Saodat Ismailova's new film Amanat screens at Swiss Institute in first US solo show",
-      "search": "Saodat Ismailova Amanat film 2026 Swiss Institute"
+      "text": "Francis Bacon exhibition opens at Gagosian Paris featuring rare vibrant-palette works from the 1980s",
+      "search": "Francis Bacon exhibition Gagosian Paris April 2026"
     },
     {
       "category": "science_tech",
-      "text": "Cambridge scientists develop light-based method to alter drug molecules without toxic chemicals",
-      "search": "Cambridge photocatalyst drug molecule light Nature Synthesis 2026"
+      "text": "Scientists create first lab-grown oesophagus that restores swallowing function without immunosuppression in animals",
+      "search": "lab-grown oesophagus Great Ormond Street March 2026"
     },
     {
       "category": "wellbeing",
-      "text": "Harvard scientist David Sinclair predicts age reversal therapies could show evidence within months",
-      "search": "David Sinclair age reversal epigenetic reprogramming 2026"
+      "text": "GLP-1 medications reframed as longevity drugs with evidence showing 14% reduction in major heart events",
+      "search": "GLP-1 semaglutide longevity heart disease 2026"
     },
     {
       "category": "worldviews",
-      "text": "Far-right Hindu nationalism reshapes Indian diaspora politics in Britain and North America",
-      "search": "Hindu nationalism Indian diaspora politics 2026"
+      "text": "Gen Z drives conservative Christian revival in US and Europe with young men leading surge in church attendance",
+      "search": "Gen Z Christian revival conservative young men 2026"
     }
   ]
 }
