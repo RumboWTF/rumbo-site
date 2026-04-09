@@ -1,5 +1,20 @@
 [
   {
+    "date": "9 April 2026",
+    "headlines": [
+      "Ghana awards major gold mine to local company as Africa pushes resource ownership",
+      "Nigerian doctors launch indefinite strike over scrapped allowance agreement",
+      "Cuba releases over 2,000 prisoners as Trump administration tightens pressure",
+      "Australia charges decorated soldier with five war crime murders in Afghanistan"
+    ],
+    "meanwhiles": [
+      "Marcel Duchamp retrospective opens at MoMA featuring 300 works in first major US show since 1973",
+      "Sodium-ion batteries made from salt emerge as cheaper safer alternative to lithium for grids",
+      "Suzetrigine approved as first non-opioid pain drug selectively blocking peripheral pain neurons without addiction risk",
+      "Islamist movements gain ground across West Africa following Sahel military coups and French withdrawal"
+    ]
+  },
+  {
     "date": "8 April 2026",
     "headlines": [
       "United States and Iran agree to two-week ceasefire after Pakistani mediation",
@@ -27,20 +42,6 @@
       "Cambridge scientists develop light-based method to alter drug molecules without toxic chemicals",
       "Harvard scientist David Sinclair predicts age reversal therapies could show evidence within months",
       "Far-right Hindu nationalism reshapes Indian diaspora politics in Britain and North America"
-    ]
-  },
-  {
-    "date": "7 April 2026",
-    "headlines": [
-      "Iran rejects ceasefire deadline as oil disruption enters sixth week",
-      "China mediates as Pakistan and Afghanistan hold first talks after border clashes",
-      "Somalia launches first offshore oil drilling with Turkish partnership"
-    ],
-    "meanwhiles": [
-      "5,300-year-old Egyptian copper artifact reidentified as oldest known rotary metal drill in Nile Valley",
-      "Scientists trap infrared light in layer 40 nanometers thick—over 1,000 times thinner than human hair",
-      "New pill baxdrostat lowers high blood pressure nearly 10 mmHg in patients who don't respond to standard treatments",
-      "Young generation embracing conservative Christianity with radical views on race and gender drives US religious revival"
     ]
   }
 ]

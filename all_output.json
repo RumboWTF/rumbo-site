@@ -1,63 +1,63 @@
 {
-  "date": "8 April 2026",
+  "date": "9 April 2026",
   "global": {
-    "generated_at": "2026-04-08T12:00:00Z",
+    "generated_at": "2026-04-09T00:00:00Z",
     "sources": [
+      "Ecofin Agency",
+      "Premium Times Nigeria",
       "NPR",
-      "Axios",
-      "Democracy Now",
-      "Reuters",
-      "AllAfrica",
-      "Nikkei Asia",
-      "Morocco World News",
-      "European Commission"
+      "Al Jazeera",
+      "CBS News",
+      "CNN",
+      "The Conversation",
+      "France 24"
     ],
     "items": [
       {
-        "headline": "United States and Iran agree to two-week ceasefire after Pakistani mediation",
-        "body": "Washington and Tehran suspended military operations hours before a deadline that threatened sweeping infrastructure strikes. Pakistan brokered talks set for Islamabad on April 10 to finalize terms that include reopening the Strait of Hormuz.",
-        "geo": "Global",
-        "sources": 6
-      },
-      {
-        "headline": "Cameroon president names son vice president and head of armed forces",
-        "body": "Paul Biya appointed Franck Emmanuel Biya to three top positions consolidating executive and military power within the family. The decree follows disputed elections and intensifies scrutiny over succession in a country Biya has ruled since 1982.",
+        "headline": "Ghana awards major gold mine to local company as Africa pushes resource ownership",
+        "body": "Ghana selected Engineers and Planners to operate the Damang gold mine after Gold Fields' lease expired, concluding a tender announced Tuesday that hands control to a company led by the president's brother. The move reflects a broader push to increase local participation in African mining, with similar transitions seen at other mines and across West Africa including Côte d'Ivoire.",
         "geo": "Africa",
         "sources": 4
       },
       {
-        "headline": "Colombia government threatens new economic emergency as budget crisis deepens",
-        "body": "President Petro announced plans to submit emergency decree and tax reform after Congress rejected earlier fiscal proposals. Constitutional court previously suspended a December emergency leaving a gap in revenue to fund the 2026 budget.",
-        "geo": "Americas",
-        "sources": 3
-      },
-      {
-        "headline": "Morocco hosts GITEX Africa as continent positions for digital economy expansion",
-        "body": "Over 1,450 exhibitors from 145 countries gathered in Marrakech for Africa's largest technology summit focused on AI-driven transformation. Organizers frame connectivity and digital infrastructure as critical to bridging development gaps across the continent.",
+        "headline": "Nigerian doctors launch indefinite strike over scrapped allowance agreement",
+        "body": "The Nigerian Association of Resident Doctors commenced a nationwide strike withdrawing services across public hospitals after government moved to scrap a professional allowance agreement reached after a 2025 strike. Nigeria already has roughly one doctor for every 5,000 patients in underserved areas where WHO recommends one to 600, and the strike will widen that gap.",
         "geo": "Africa",
         "sources": 5
+      },
+      {
+        "headline": "Cuba releases over 2,000 prisoners as Trump administration tightens pressure",
+        "body": "Cuba's government pardoned 2,010 prisoners during Easter Holy Week following pledges made in March to free prisoners as the United States increases pressure on Cuba's leadership. Human rights groups including Prisoners Defenders and Justicia 11J report no political prisoners were among those released, with over 700 political prisoners remaining behind bars according to these organizations.",
+        "geo": "Americas",
+        "sources": 6
+      },
+      {
+        "headline": "Australia charges decorated soldier with five war crime murders in Afghanistan",
+        "body": "Ben Roberts-Smith was arrested at Sydney Airport and charged with five counts of war crime murder following a years-long investigation, becoming only the second Australian veteran of the Afghanistan campaign charged with such offences and the most high-profile. Police allege victims were not taking part in hostilities and were detained, unarmed, and under control of Australian Defence Force members when killed.",
+        "geo": "Oceania",
+        "sources": 7
       }
     ],
     "meanwhile": [
       {
         "category": "culture",
-        "text": "Francis Bacon exhibition opens at Gagosian Paris featuring rare vibrant-palette works from the 1980s",
-        "search": "Francis Bacon exhibition Gagosian Paris April 2026"
+        "text": "Marcel Duchamp retrospective opens at MoMA featuring 300 works in first major US show since 1973",
+        "search": "Marcel Duchamp MoMA 2026 exhibition Nude Descending Staircase"
       },
       {
         "category": "science_tech",
-        "text": "Scientists create first lab-grown oesophagus that restores swallowing function without immunosuppression in animals",
-        "search": "lab-grown oesophagus Great Ormond Street March 2026"
+        "text": "Sodium-ion batteries made from salt emerge as cheaper safer alternative to lithium for grids",
+        "search": "sodium-ion batteries 2026 breakthrough abundant materials"
       },
       {
         "category": "wellbeing",
-        "text": "GLP-1 medications reframed as longevity drugs with evidence showing 14% reduction in major heart events",
-        "search": "GLP-1 semaglutide longevity heart disease 2026"
+        "text": "Suzetrigine approved as first non-opioid pain drug selectively blocking peripheral pain neurons without addiction risk",
+        "search": "suzetrigine NaV1.8 FDA approval opioid-free pain relief"
       },
       {
         "category": "worldviews",
-        "text": "Gen Z drives conservative Christian revival in US and Europe with young men leading surge in church attendance",
-        "search": "Gen Z Christian revival conservative young men 2026"
+        "text": "Islamist movements gain ground across West Africa following Sahel military coups and French withdrawal",
+        "search": "Islamist groups West Africa Sahel 2026 expansion Mali Burkina Faso"
       }
     ]
   },
