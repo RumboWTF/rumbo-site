@@ -30,8 +30,8 @@
     .prompt-toggle:hover{color:#5a4008;}
     .arrow{display:inline-block;font-size:8px;transition:transform 0.2s;}
     .prompt-toggle.open .arrow{transform:rotate(90deg);}
-    .prompt-text{display:none;margin-top:14px;background:#1a1a18;color:#b0ac9e;font-family:'Courier New',monospace;font-size:11px;line-height:1.75;padding:22px;border-radius:4px;white-space:pre-wrap;}
-    .prompt-text.visible{display:block;}
+    .prompt-text{display:none;margin-top:0;background:#1a1a18;color:#b0ac9e;font-family:'Courier New',monospace;font-size:11px;line-height:1.75;padding:22px;border-radius:4px;white-space:pre-wrap;}
+    .prompt-text.visible{display:block;margin-top:14px;}
     .prompt-text b{color:#f5f3ee;font-weight:bold;}
     footer{background:#1a1a18;padding:20px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
     .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#b0aa9e;letter-spacing:0.5px;}
@@ -123,7 +123,6 @@ MEANWHILE
 
 <em>Additional formatting and technical instructions are included in the full prompt for consistency.</em></div>
   </div>
-
   <div class="prompt-block">
     <button class="prompt-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('visible')">
       <span class="arrow">&#9658;</span> Notes on past runs
@@ -135,13 +134,11 @@ MEANWHILE
 <b>5 April 2026:</b> Culture item in Meanwhile section still weak, needs tighter definition.
 <b>4 April 2026:</b> Indonesia earthquake item lacking real consequence. Consider tightening of prompt re natural disasters.</div>
   </div>
-
   <div class="prompt-block">
     <a href="pitch.html" class="prompt-toggle" style="display:inline-flex;">
       <span class="arrow" style="transform:none;">&#9658;</span> What and why — the thinking behind Rumbo
     </a>
   </div>
-
   </div>
 
 </div>
