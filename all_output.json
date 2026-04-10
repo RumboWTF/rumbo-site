@@ -1,63 +1,64 @@
 {
-  "date": "9 April 2026",
+  "date": "10 April 2026",
   "global": {
-    "generated_at": "2026-04-09T00:00:00Z",
+    "generated_at": "2026-04-10T00:00:00Z",
     "sources": [
-      "Ecofin Agency",
-      "Premium Times Nigeria",
+      "Bloomberg",
       "NPR",
       "Al Jazeera",
-      "CBS News",
-      "CNN",
-      "The Conversation",
-      "France 24"
+      "UN Office for the Coordination of Humanitarian Affairs",
+      "Just Security",
+      "Council on Foreign Relations",
+      "Atlantic Council",
+      "ScienceDaily",
+      "Wikipedia"
     ],
     "items": [
       {
-        "headline": "Ghana awards major gold mine to local company as Africa pushes resource ownership",
-        "body": "Ghana selected Engineers and Planners to operate the Damang gold mine after Gold Fields' lease expired, concluding a tender announced Tuesday that hands control to a company led by the president's brother. The move reflects a broader push to increase local participation in African mining, with similar transitions seen at other mines and across West Africa including Côte d'Ivoire.",
-        "geo": "Africa",
-        "sources": 4
+        "headline": "China grants itself power to probe and punish foreign supply chain restrictions",
+        "body": "Beijing published sweeping rules allowing government agencies to investigate foreign nations that impose discriminatory bans or harm Chinese supply chains, with authority to retaliate. The framework, released by the State Council, targets espionage and enables China to counter trade curbs from the United States and Europe.",
+        "geo": "Asia",
+        "sources": 3
       },
       {
-        "headline": "Nigerian doctors launch indefinite strike over scrapped allowance agreement",
-        "body": "The Nigerian Association of Resident Doctors commenced a nationwide strike withdrawing services across public hospitals after government moved to scrap a professional allowance agreement reached after a 2025 strike. Nigeria already has roughly one doctor for every 5,000 patients in underserved areas where WHO recommends one to 600, and the strike will widen that gap.",
-        "geo": "Africa",
-        "sources": 5
-      },
-      {
-        "headline": "Cuba releases over 2,000 prisoners as Trump administration tightens pressure",
-        "body": "Cuba's government pardoned 2,010 prisoners during Easter Holy Week following pledges made in March to free prisoners as the United States increases pressure on Cuba's leadership. Human rights groups including Prisoners Defenders and Justicia 11J report no political prisoners were among those released, with over 700 political prisoners remaining behind bars according to these organizations.",
-        "geo": "Americas",
+        "headline": "Hungary votes April 12 as Orban faces first serious challenge in 16 years",
+        "body": "Opposition Tisza Party leads most independent polls by double digits ahead of parliamentary elections, though the electoral system heavily favors the ruling Fidesz party. Outcome will shape European Union cohesion on Ukraine support and test whether entrenched state capture can be reversed through elections alone.",
+        "geo": "Europe",
         "sources": 6
       },
       {
-        "headline": "Australia charges decorated soldier with five war crime murders in Afghanistan",
-        "body": "Ben Roberts-Smith was arrested at Sydney Airport and charged with five counts of war crime murder following a years-long investigation, becoming only the second Australian veteran of the Afghanistan campaign charged with such offences and the most high-profile. Police allege victims were not taking part in hostilities and were detained, unarmed, and under control of Australian Defence Force members when killed.",
-        "geo": "Oceania",
-        "sources": 7
+        "headline": "Afghanistan Pakistan conflict displaces 94,000 as China mediates talks in Urumqi",
+        "body": "Cross-border fighting that began in February has left hundreds dead and cut off 100,000 people in two Afghan districts from essential supplies, according to UN humanitarian office. Both sides agreed not to escalate and to explore comprehensive solution after seven days of Chinese mediation.",
+        "geo": "Asia",
+        "sources": 5
+      },
+      {
+        "headline": "North Korea tested cluster warhead missiles as weapons development accelerates",
+        "body": "Pyongyang announced testing of ballistic missiles armed with cluster-bomb warheads and other new weapons systems this week. The spree pushes expansion of nuclear-capable forces as regional tensions remain elevated.",
+        "geo": "Asia",
+        "sources": 2
       }
     ],
     "meanwhile": [
       {
         "category": "culture",
-        "text": "Marcel Duchamp retrospective opens at MoMA featuring 300 works in first major US show since 1973",
-        "search": "Marcel Duchamp MoMA 2026 exhibition Nude Descending Staircase"
+        "text": "Japanese artist Yayoi Kusama unveils infinity room installation at Tate Modern London",
+        "search": "Yayoi Kusama infinity room Tate Modern 2026"
       },
       {
         "category": "science_tech",
-        "text": "Sodium-ion batteries made from salt emerge as cheaper safer alternative to lithium for grids",
-        "search": "sodium-ion batteries 2026 breakthrough abundant materials"
+        "text": "Researchers grow functional human lungs from stem cells offering transplant alternative",
+        "search": "lab-grown human lungs stem cells transplant 2026"
       },
       {
         "category": "wellbeing",
-        "text": "Suzetrigine approved as first non-opioid pain drug selectively blocking peripheral pain neurons without addiction risk",
-        "search": "suzetrigine NaV1.8 FDA approval opioid-free pain relief"
+        "text": "Intermittent fasting reverses Type 2 diabetes in 90-day trial without medication",
+        "search": "intermittent fasting Type 2 diabetes reversal 90 day trial 2026"
       },
       {
         "category": "worldviews",
-        "text": "Islamist movements gain ground across West Africa following Sahel military coups and French withdrawal",
-        "search": "Islamist groups West Africa Sahel 2026 expansion Mali Burkina Faso"
+        "text": "Latin America sees evangelical Protestant surge as Catholic majority declines across continent",
+        "search": "Latin America evangelical Protestant growth Catholic decline 2026"
       }
     ]
   },
