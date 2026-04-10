@@ -626,9 +626,10 @@ async function main() {
     if (subError) throw new Error(`Supabase query failed: ${subError.message}`);
     console.log(`${subscribers.length} confirmed active subscribers found.`);
 
-    let sent = 0;
     let skipped = 0;
 
+    // Build batch payload — one object per eligible subscriber
+    const batch = [];
     for (const sub of subscribers) {
       if (!sub.days || !sub.days.includes(todayCode)) {
         skipped++;
@@ -647,30 +648,36 @@ async function main() {
       const unsubUrl = `https://rumbo.wtf/api/unsubscribe?token=${sub.unsubscribe_token}`;
       const emailHtml = renderEmail(mergedData, dateStr, "en", unsubUrl);
 
-      const sendRes = await fetch("https://api.resend.com/emails", {
+      batch.push({
+        from: "Rumbo <brief@rumbo.wtf>",
+        to: sub.email,
+        subject: `Rumbo · ${dateStr}`,
+        html: emailHtml,
+      });
+    }
+
+    if (batch.length === 0) {
+      console.log(`Newsletter done. Sent: 0, skipped (wrong day): ${skipped}.`);
+    } else {
+      const sendRes = await fetch("https://api.resend.com/emails/batch", {
         method: "POST",
         headers: {
           "Authorization": `Bearer ${process.env.RESEND_API_KEY}`,
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          from: "Rumbo <brief@rumbo.wtf>",
-          to: sub.email,
-          subject: `Rumbo · ${dateStr}`,
-          html: emailHtml,
-        }),
+        body: JSON.stringify(batch),
       });
 
       if (!sendRes.ok) {
         const errBody = await sendRes.text();
-        console.error(`Resend failed for ${sub.email}: ${errBody}`);
+        console.error(`Resend batch failed: ${errBody}`);
       } else {
-        sent++;
-        console.log(`Sent to ${sub.email}`);
+        const resJson = await sendRes.json();
+        console.log(`Resend batch accepted. IDs: ${resJson.data?.map(r => r.id).join(", ") ?? "n/a"}`);
       }
-    }
 
-    console.log(`Newsletter done. Sent: ${sent}, skipped (wrong day): ${skipped}.`);
+      console.log(`Newsletter done. Sent: ${batch.length}, skipped (wrong day): ${skipped}.`);
+    }
   } catch (e) {
     console.error("Newsletter send failed:", e.message);
   }
