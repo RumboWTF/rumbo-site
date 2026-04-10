@@ -2,6 +2,21 @@
   {
     "date": "10 April 2026",
     "headlines": [
+      "Mediterranean crossing deaths near 1,000 in first three months as arrivals fall sharply",
+      "Pakistan mediates first direct Iran-United States peace talks as fragile ceasefire holds",
+      "Benin votes Sunday in first leadership transition after decade of tightening democratic space",
+      "Africa to outpace Asia in economic growth for first time as IMF forecasts 4.3 percent expansion"
+    ],
+    "meanwhiles": [
+      "Museum of Modern Art opens first major Marcel Duchamp retrospective since 1973 with 300 works",
+      "Memory device survives temperatures exceeding 700 degrees Celsius, far beyond current chip limits",
+      "New CRISPR method turns silenced genes on without cutting DNA, offering safer genetic therapy",
+      "Pew survey shows Christianity decline in US may have stabilized since 2020 after decades of losses"
+    ]
+  },
+  {
+    "date": "10 April 2026",
+    "headlines": [
       "China grants itself power to probe and punish foreign supply chain restrictions",
       "Hungary votes April 12 as Orban faces first serious challenge in 16 years",
       "Afghanistan Pakistan conflict displaces 94,000 as China mediates talks in Urumqi",
@@ -27,21 +42,6 @@
       "Sodium-ion batteries made from salt emerge as cheaper safer alternative to lithium for grids",
       "Suzetrigine approved as first non-opioid pain drug selectively blocking peripheral pain neurons without addiction risk",
       "Islamist movements gain ground across West Africa following Sahel military coups and French withdrawal"
-    ]
-  },
-  {
-    "date": "8 April 2026",
-    "headlines": [
-      "United States and Iran agree to two-week ceasefire after Pakistani mediation",
-      "Cameroon president names son vice president and head of armed forces",
-      "Colombia government threatens new economic emergency as budget crisis deepens",
-      "Morocco hosts GITEX Africa as continent positions for digital economy expansion"
-    ],
-    "meanwhiles": [
-      "Francis Bacon exhibition opens at Gagosian Paris featuring rare vibrant-palette works from the 1980s",
-      "Scientists create first lab-grown oesophagus that restores swallowing function without immunosuppression in animals",
-      "GLP-1 medications reframed as longevity drugs with evidence showing 14% reduction in major heart events",
-      "Gen Z drives conservative Christian revival in US and Europe with young men leading surge in church attendance"
     ]
   }
 ]

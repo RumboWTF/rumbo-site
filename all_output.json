@@ -1,64 +1,63 @@
 {
   "date": "10 April 2026",
   "global": {
-    "generated_at": "2026-04-10T00:00:00Z",
+    "generated_at": "2026-04-10T10:00:00Z",
     "sources": [
-      "Bloomberg",
-      "NPR",
+      "International Organization for Migration",
       "Al Jazeera",
-      "UN Office for the Coordination of Humanitarian Affairs",
-      "Just Security",
-      "Council on Foreign Relations",
-      "Atlantic Council",
-      "ScienceDaily",
-      "Wikipedia"
+      "NPR",
+      "Bloomberg",
+      "International Monetary Fund",
+      "Financial Times",
+      "Associated Press",
+      "ABC News"
     ],
     "items": [
       {
-        "headline": "China grants itself power to probe and punish foreign supply chain restrictions",
-        "body": "Beijing published sweeping rules allowing government agencies to investigate foreign nations that impose discriminatory bans or harm Chinese supply chains, with authority to retaliate. The framework, released by the State Council, targets espionage and enables China to counter trade curbs from the United States and Europe.",
-        "geo": "Asia",
-        "sources": 3
+        "headline": "Mediterranean crossing deaths near 1,000 in first three months as arrivals fall sharply",
+        "body": "The International Organization for Migration reports nearly 1,000 people have died crossing the Mediterranean in 2026, one of the deadliest starts to a year since record keeping began in 2014, despite arrivals to Italy dropping by a third. Fatalities are rising even as crossings decline, with inadequate search and rescue capacity leaving migrants on unseaworthy vessels to drown as they flee conflict and instability across North Africa.",
+        "geo": "Europe",
+        "sources": 4
       },
       {
-        "headline": "Hungary votes April 12 as Orban faces first serious challenge in 16 years",
-        "body": "Opposition Tisza Party leads most independent polls by double digits ahead of parliamentary elections, though the electoral system heavily favors the ruling Fidesz party. Outcome will shape European Union cohesion on Ukraine support and test whether entrenched state capture can be reversed through elections alone.",
-        "geo": "Europe",
+        "headline": "Pakistan mediates first direct Iran-United States peace talks as fragile ceasefire holds",
+        "body": "Senior American and Iranian delegations begin negotiations in Islamabad tomorrow following a two-week ceasefire agreed this week that halted a 40-day war which killed thousands and shut the Strait of Hormuz. The talks represent Pakistan's emergence as an unlikely mediator in a conflict that has caused the largest energy supply disruption in history, with global oil flows down 20 percent and prices spiking above 100 dollars per barrel before retreating on ceasefire news.",
+        "geo": "Asia",
         "sources": 6
       },
       {
-        "headline": "Afghanistan Pakistan conflict displaces 94,000 as China mediates talks in Urumqi",
-        "body": "Cross-border fighting that began in February has left hundreds dead and cut off 100,000 people in two Afghan districts from essential supplies, according to UN humanitarian office. Both sides agreed not to escalate and to explore comprehensive solution after seven days of Chinese mediation.",
-        "geo": "Asia",
+        "headline": "Benin votes Sunday in first leadership transition after decade of tightening democratic space",
+        "body": "Eight million Beninese elect a new president on Sunday as incumbent Patrice Talon steps down after ten years in which opposition has been systematically excluded, with the main challenger barred from running for failing to secure parliamentary endorsements critics say were engineered to keep rivals out. The election follows a failed coup in December and tests whether electoral competition can survive in a West African coastal state surrounded by military juntas.",
+        "geo": "Africa",
         "sources": 5
       },
       {
-        "headline": "North Korea tested cluster warhead missiles as weapons development accelerates",
-        "body": "Pyongyang announced testing of ballistic missiles armed with cluster-bomb warheads and other new weapons systems this week. The spree pushes expansion of nuclear-capable forces as regional tensions remain elevated.",
-        "geo": "Asia",
-        "sources": 2
+        "headline": "Africa to outpace Asia in economic growth for first time as IMF forecasts 4.3 percent expansion",
+        "body": "The International Monetary Fund projects African economies will grow faster than Asian economies in 2026 for the first time, driven by macroeconomic stabilization in key countries and high commodity prices, while China's structural deceleration drags down the Asian average. The shift reflects reforms in countries like Ghana and Ethiopia alongside demographic momentum, though much of Africa's growth stems from population increases rather than productivity gains, limiting per capita income improvements.",
+        "geo": "Africa",
+        "sources": 4
       }
     ],
     "meanwhile": [
       {
         "category": "culture",
-        "text": "Japanese artist Yayoi Kusama unveils infinity room installation at Tate Modern London",
-        "search": "Yayoi Kusama infinity room Tate Modern 2026"
+        "text": "Museum of Modern Art opens first major Marcel Duchamp retrospective since 1973 with 300 works",
+        "search": "Marcel Duchamp MoMA retrospective 2026"
       },
       {
         "category": "science_tech",
-        "text": "Researchers grow functional human lungs from stem cells offering transplant alternative",
-        "search": "lab-grown human lungs stem cells transplant 2026"
+        "text": "Memory device survives temperatures exceeding 700 degrees Celsius, far beyond current chip limits",
+        "search": "high temperature memory device 700 celsius 2026"
       },
       {
         "category": "wellbeing",
-        "text": "Intermittent fasting reverses Type 2 diabetes in 90-day trial without medication",
-        "search": "intermittent fasting Type 2 diabetes reversal 90 day trial 2026"
+        "text": "New CRISPR method turns silenced genes on without cutting DNA, offering safer genetic therapy",
+        "search": "CRISPR gene activation without cutting DNA 2026"
       },
       {
         "category": "worldviews",
-        "text": "Latin America sees evangelical Protestant surge as Catholic majority declines across continent",
-        "search": "Latin America evangelical Protestant growth Catholic decline 2026"
+        "text": "Pew survey shows Christianity decline in US may have stabilized since 2020 after decades of losses",
+        "search": "Christianity decline stabilization United States Pew 2026"
       }
     ]
   },
