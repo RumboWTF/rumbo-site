@@ -161,15 +161,19 @@ CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end w
 // ─── API calls ────────────────────────────────────────────────────────────────
 
 // Two-step call: search pass then format pass. Used for global edition.
-async function callClaude(prompt) {
+// Pass 1 uses a short search-only prompt to avoid exceeding the 200k token limit.
+// Pass 2 receives the full editorial prompt + capped search results for formatting.
+async function callClaude(prompt, deduplicationHint = "") {
   const timeout = 600000; // 10 minutes
+
+  const searchPrompt = `Search the web broadly for the most consequential global developments from the last 72 hours. English-language sources overrepresent certain regions — actively seek out developments that may not surface first in default results. Return a detailed summary of what you find.${deduplicationHint}`;
 
   const searchResponse = await Promise.race([
     client.messages.create({
       model: "claude-sonnet-4-5",
       max_tokens: 3000,
       tools: [{ type: "web_search_20250305", name: "web_search" }],
-      messages: [{ role: "user", content: prompt }],
+      messages: [{ role: "user", content: searchPrompt }],
     }),
     new Promise((_, reject) =>
       setTimeout(() => reject(new Error("Claude API timeout (search)")), timeout)
@@ -180,7 +184,7 @@ async function callClaude(prompt) {
     .filter((b) => b.type === "text")
     .map((b) => b.text)
     .join("\n")
-    .slice(0, 55000); // cap at ~55k chars to stay safely within token limit
+    .slice(0, 30000); // cap at 30k chars (~7-8k tokens)
 
   const formatResponse = await Promise.race([
     client.messages.create({
@@ -198,7 +202,6 @@ async function callClaude(prompt) {
       setTimeout(() => reject(new Error("Claude API timeout (format)")), timeout)
     ),
   ]);
-
   const textBlock = formatResponse.content.find((b) => b.type === "text");
   if (!textBlock) throw new Error("No text in Claude response");
   return textBlock.text.trim();
@@ -522,12 +525,20 @@ async function main() {
   console.log("Calling Claude for global edition...");
   let globalData;
   try {
-    const globalRaw = await callClaude(GLOBAL_PROMPT + previousContext + previousMeanwhileContext);
+    const deduplicationHint = previousContext + previousMeanwhileContext;
+    const globalRaw = await callClaude(GLOBAL_PROMPT + deduplicationHint, deduplicationHint);
     globalData = parseJson(globalRaw);
     console.log(`Global: ${globalData.items.length} items, ${globalData.meanwhile.length} meanwhile`);
   } catch (e) {
     console.error("Global call failed:", e.message);
-    process.exit(1);
+    // Fall back to last run's output rather than killing the whole process
+    try {
+      globalData = JSON.parse(fs.readFileSync("last_output.json", "utf8"));
+      console.warn("Using last_output.json as fallback — today's content may be stale.");
+    } catch (e2) {
+      console.error("No fallback available:", e2.message);
+      process.exit(1);
+    }
   }
 
   const now = new Date();
