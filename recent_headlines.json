@@ -1,5 +1,20 @@
 [
   {
+    "date": "11 April 2026",
+    "headlines": [
+      "Israel strikes Lebanon killing over 200 as ceasefire scope dispute escalates",
+      "Russia declares Orthodox Easter ceasefire with Ukraine for two days",
+      "Venezuela passes mining reform law to attract foreign investment after decades",
+      "Artemis II crew returns from Moon in first crewed lunar mission since 1972"
+    ],
+    "meanwhiles": [
+      "Ai Weiwei unveils monumental installation at Venice Biennale addressing displacement and surveillance through refugee boat sculptures",
+      "Quantum computer solves problem in minutes that would take classical supercomputer longer than age of universe",
+      "Single malaria vaccine dose shows 80 percent efficacy in infants through second year of life",
+      "Survey finds majority of young Europeans now identify as having no religious affiliation for first time"
+    ]
+  },
+  {
     "date": "10 April 2026",
     "headlines": [
       "Mediterranean crossing deaths near 1,000 in first three months as arrivals fall sharply",
@@ -27,21 +42,6 @@
       "Researchers grow functional human lungs from stem cells offering transplant alternative",
       "Intermittent fasting reverses Type 2 diabetes in 90-day trial without medication",
       "Latin America sees evangelical Protestant surge as Catholic majority declines across continent"
-    ]
-  },
-  {
-    "date": "9 April 2026",
-    "headlines": [
-      "Ghana awards major gold mine to local company as Africa pushes resource ownership",
-      "Nigerian doctors launch indefinite strike over scrapped allowance agreement",
-      "Cuba releases over 2,000 prisoners as Trump administration tightens pressure",
-      "Australia charges decorated soldier with five war crime murders in Afghanistan"
-    ],
-    "meanwhiles": [
-      "Marcel Duchamp retrospective opens at MoMA featuring 300 works in first major US show since 1973",
-      "Sodium-ion batteries made from salt emerge as cheaper safer alternative to lithium for grids",
-      "Suzetrigine approved as first non-opioid pain drug selectively blocking peripheral pain neurons without addiction risk",
-      "Islamist movements gain ground across West Africa following Sahel military coups and French withdrawal"
     ]
   }
 ]
