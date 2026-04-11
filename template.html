@@ -32,19 +32,6 @@
     .geo-pill.regional{background:#f0ede6;border:1px solid #d0ccc4;color:#555;}
     .source-pill{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;padding:3px 9px;border-radius:3px;background:#ede9e0;color:#888;cursor:default;position:relative;}.source-pill .src-tip{display:none;position:absolute;bottom:22px;left:0;background:#1a1a18;color:#c8c4bc;font-family:'Courier New',monospace;font-size:10px;line-height:1.5;padding:6px 10px;border-radius:4px;white-space:nowrap;z-index:10;pointer-events:none;width:280px;white-space:normal;}.source-pill:hover .src-tip{display:block;}.search-link{font-family:'Courier New',monospace;font-size:13px;color:#555;line-height:1;text-decoration:none;}
     .search-link:hover{color:#7a5c0a;}
-    .meanwhile-section{max-width:700px;margin:0 auto;padding:0 24px 52px;}
-    .meanwhile-header{margin-bottom:16px;padding-top:4px;border-top:1px solid #e0dcd4;}
-    .meanwhile-title{font-family:'Courier New',monospace;font-size:13px;letter-spacing:2px;color:#1a1a18;font-weight:700;text-transform:uppercase;}
-    .nw-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 32px;}
-    .nw-item{display:flex;flex-direction:column;gap:5px;padding:4px 0;}
-    .nw-top{display:flex;align-items:center;gap:8px;}
-    .nw-cat-wrap{position:relative;}
-    .nw-cat{font-family:'Courier New',monospace;font-size:12px;letter-spacing:1px;color:#8a6010;background:#f5f1e6;padding:3px 9px;border-radius:3px;cursor:default;border-bottom:1px dotted #c8a84a;display:inline-block;font-weight:600;}
-    .nw-tooltip{display:none;position:absolute;bottom:22px;left:0;background:#1a1a18;color:#c8c4bc;font-family:'Courier New',monospace;font-size:10px;line-height:1.5;padding:6px 10px;border-radius:4px;white-space:nowrap;z-index:10;pointer-events:none;}
-    .nw-cat-wrap:hover .nw-tooltip{display:block;}
-    .nw-search{font-family:'Courier New',monospace;font-size:13px;color:#555;text-decoration:none;line-height:1;}
-    .nw-search:hover{color:#7a5c0a;}
-    .nw-txt{font-size:14px;color:#555;line-height:1.5;}
     footer{background:#1a1a18;padding:20px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
     .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#b0aa9e;letter-spacing:0.5px;}
     .footer-center{display:flex;align-items:center;position:relative;}
@@ -67,7 +54,7 @@
     @media(max-width:600px){
       .nw-grid{grid-template-columns:1fr;}
       nav,.meta-bar,footer{padding-left:16px;padding-right:16px;}
-      .feed,.meanwhile-section{padding-left:16px;padding-right:16px;}
+      .feed{padding-left:16px;padding-right:16px;}
       footer{flex-direction:column;align-items:flex-start;}
     }
   </style>
@@ -136,46 +123,7 @@
 
 </div>
 <!-- FEED:END -->
- <div class="meanwhile-section">
-  <div class="meanwhile-header"><span class="meanwhile-title">{{MEANWHILE_TITLE}}</span></div>
-<!-- MEANWHILE:START -->
-<div class="nw-grid">
-    <div class="nw-item">
-      <div class="nw-top">
-        <div class="nw-cat-wrap"><span class="nw-cat">culture</span><div class="nw-tooltip">The lighter side of being human</div></div>
-        <a class="nw-search" href="https://duckduckgo.com/?q=Alcaraz+Medvedev+Indian+Wells+2026+semifinals" target="_blank">↗</a>
-      </div>
-      <span class="nw-txt">Alcaraz and Medvedev meet in the Indian Wells semifinals &mdash; a repeat of last year&#39;s final.</span>
-    </div>
 
-    <div class="nw-item">
-      <div class="nw-top">
-        <div class="nw-cat-wrap"><span class="nw-cat">science_tech</span><div class="nw-tooltip">What is becoming possible</div></div>
-        <a class="nw-search" href="https://duckduckgo.com/?q=drone+warfare+civilian+targets+2026" target="_blank">↗</a>
-      </div>
-      <span class="nw-txt">Cheap drones are now hitting hospitals and rehab centres &mdash; the line between military and civilian targets is dissolving across multiple conflicts at once.</span>
-    </div>
-
-    <div class="nw-item">
-      <div class="nw-top">
-        <div class="nw-cat-wrap"><span class="nw-cat">wellbeing</span><div class="nw-tooltip">Health, medicine, longevity &mdash; how people are living</div></div>
-        <a class="nw-search" href="https://duckduckgo.com/?q=people+limiting+phone+screen+time+strategies" target="_blank">↗</a>
-      </div>
-      <span class="nw-txt">People are finding creative ways to limit phone use &mdash; keeping it in another room, pairing screen time with a paperback.</span>
-    </div>
-
-    <div class="nw-item">
-      <div class="nw-top">
-        <div class="nw-cat-wrap"><span class="nw-cat">worldviews</span><div class="nw-tooltip">The stories humans tell to form groups</div></div>
-        <a class="nw-search" href="https://duckduckgo.com/?q=Musk+Twitter+stock+manipulation+verdict+2026" target="_blank">↗</a>
-      </div>
-      <span class="nw-txt">A US court found a tech billionaire liable for manipulating his own company&#39;s stock price before a $44 billion acquisition &mdash; one of the largest investor fraud verdicts against an individual in years.</span>
-    </div>
-
-  </div>
-</div>
-<!-- MEANWHILE:END -->
-</div>
 <footer style="margin-top: 2rem;">
     <span class="footer-left">rumbo.wtf</span>
   <div class="footer-center">

@@ -21,31 +21,15 @@ const EN_STRINGS = {
   NAV_SIGNUP: "Newsletter",
   META_UPDATED_LABEL: "Edition:",
   ITEMS_SUFFIX: "signals",
-  MEANWHILE_TITLE: "Meanwhile",
-  LOCALE_LANGUAGE: "Language",
   LOCALE_LOCAL_CONTEXT: "Local news",
   FOOTER_LATEST: "Latest",
   FOOTER_ABOUT: "About",
   SOURCE_TIP: "Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.",
   SOURCE_PILL_LABEL: "sources",
-  CATEGORIES: {
-    culture: "Culture",
-    science_tech: "Science & tech",
-    wellbeing: "Wellbeing",
-    worldviews: "Worldviews",
-  },
-  CATEGORY_TOOLTIPS: {
-    culture: "Culture with something to say",
-    science_tech: "What is becoming possible",
-    wellbeing: "Health, medicine, and how people live",
-    worldviews: "Belief systems and group thinking",
-  },
+
 };
 
 // ─── Region config ────────────────────────────────────────────────────────────
-// file:   English output filename
-// esFile: Spanish output filename
-
 const REGIONS = [
   { code: "es", name: "Spain",          file: "index-es.html"  },
   { code: "no", name: "Norway",         file: "index-no.html"  },
@@ -85,16 +69,6 @@ STRUCTURE
 - Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania
 - Count genuinely independent source clusters per item (organisations that did their own reporting, not syndication). Include as a "sources" integer.
 
-MEANWHILE
-- Exactly 4 Meanwhile items, one per category in this exact order: culture, science_tech, wellbeing, worldviews. All four required every time.
-- Meanwhile = things worth knowing that sit outside the daily news cycle. Each item must have been reported or newly relevant within the last 30 days — not breaking news, but not recycled history either. Surprising, interesting, worth a search. Each item maximum 15 words, no analysis.
-- Must not repeat, reference, or summarise any story, person, event, or entity already in the main feed — even from a different angle.
-- Each Meanwhile item must include a "search" field with a good DuckDuckGo search query.
-- Culture: a work of art, film, music, or literature that was created, recovered, or reinterpreted and carries meaning beyond entertainment. Not festivals, performances, sports, or release announcements.
-- Science_tech: something that changes what is physically or technically possible — a genuine capability shift, unexpected finding, or newly published result. Not recurring security incidents, hacking reports, or policy announcements. Not "X company releases Y product." The test: does this change what humans or machines can do, or does it just describe what someone did?
-- Wellbeing: health, medicine, longevity — how people are living.
-- Worldviews: how groups of people think, believe, or define themselves — and how that is shifting. Includes religious change, but equally: the rise of far-right or far-left movements, islamism, nationalism, tribalism, us-versus-them polarisation, generational value shifts, or any ideological current gaining or losing ground at a population level. HARD EXCLUSION: anything that could appear in the main news feed. The test: does this describe a change in what people believe or how they identify — not what they did or what happened to them?
-
 CRITICAL: Your response must be ONLY the raw JSON object. No thinking, no explanation, no markdown, no preamble. Start your response with { and end with }. Do not use markdown formatting (no asterisks, underscores, or other markup) in any string values. Any text outside the JSON will break the parser.
 {
   "generated_at": "ISO timestamp",
@@ -105,13 +79,6 @@ CRITICAL: Your response must be ONLY the raw JSON object. No thinking, no explan
       "body": "string — two sentences",
       "geo": "string",
       "sources": 4
-    }
-  ],
-  "meanwhile": [
-    {
-      "category": "culture|science_tech|wellbeing|worldviews",
-      "text": "string — one line",
-      "search": "duckduckgo search query string"
     }
   ]
 }`;
@@ -248,32 +215,13 @@ function parseJson(raw) {
 // ─── Translations ─────────────────────────────────────────────────────────────
 
 function getTranslations(locale) {
-  if (locale === "en" || !TRANSLATIONS[locale]) return EN_STRINGS;
-  const loc = TRANSLATIONS[locale];
-  return {
-    ...EN_STRINGS,
-    ...loc,
-    CATEGORIES: { ...EN_STRINGS.CATEGORIES, ...(loc.CATEGORIES || {}) },
-    CATEGORY_TOOLTIPS: { ...EN_STRINGS.CATEGORY_TOOLTIPS, ...(loc.CATEGORY_TOOLTIPS || {}) },
-  };
+  return EN_STRINGS;
 }
 
 // ─── HTML rendering ───────────────────────────────────────────────────────────
 
 function ddgUrl(query) {
   return `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
-}
-
-const GEO_ES = {
-  'Global': 'Global', 'Europe': 'Europa', 'Asia': 'Asia',
-  'Africa': 'África', 'Americas': 'Américas', 'Oceania': 'Oceanía',
-  'Spain': 'España', 'Norway': 'Noruega', 'UK': 'Reino Unido',
-  'United Kingdom': 'Reino Unido', 'Netherlands': 'Países Bajos'
-};
-
-function translateGeo(geo, locale) {
-  if (locale === 'es') return GEO_ES[geo] || geo;
-  return geo;
 }
 
 function renderItem(item, t, locale = 'en') {
@@ -284,7 +232,7 @@ function renderItem(item, t, locale = 'en') {
   const searchQuery = isRegional
     ? encodeURIComponent(item.headline + " " + item.geo)
     : encodeURIComponent(item.headline);
-  const geoLabel = translateGeo(item.geo, locale);
+  const geoLabel = item.geo;
 
   return `  <div class="item">
     <div class="${dotClass}"></div>
@@ -298,22 +246,6 @@ function renderItem(item, t, locale = 'en') {
       </div>
     </div>
   </div>`;
-}
-
-function renderMeanwhile(items, t) {
-  return items
-    .map((item) => {
-      const label = t.CATEGORIES[item.category] || item.category;
-      const tooltip = t.CATEGORY_TOOLTIPS[item.category] || "";
-      return `    <div class="nw-item">
-      <div class="nw-top">
-        <div class="nw-cat-wrap"><span class="nw-cat">${label}</span><div class="nw-tooltip">${tooltip}</div></div>
-        <a class="nw-search" href="${ddgUrl(item.search)}" target="_blank">↗</a>
-      </div>
-      <span class="nw-txt">${item.text}</span>
-    </div>`;
-    })
-    .join("\n");
 }
 
 function renderHtml(data, date, locale = "en") {
@@ -334,15 +266,6 @@ function renderHtml(data, date, locale = "en") {
     "<!-- FEED:END -->" +
     html.slice(feedEnd);
 
-  // Inject meanwhile
-  const mwStart = html.indexOf("<!-- MEANWHILE:START -->");
-  const mwEnd = html.indexOf("<!-- MEANWHILE:END -->") + "<!-- MEANWHILE:END -->".length;
-  html =
-    html.slice(0, mwStart) +
-    `<!-- MEANWHILE:START -->\n<div class="nw-grid">\n${renderMeanwhile(data.meanwhile, t)}\n  </div>\n` +
-    "<!-- MEANWHILE:END -->" +
-    html.slice(mwEnd);
-
   // Update date — keep token in place so replaceAll picks it up at the end
   html = html.replace(/\{\{META_UPDATED_LABEL\}\} [^<&]+/, `{{META_UPDATED_LABEL}} ${date}`);
 
@@ -356,20 +279,8 @@ function renderHtml(data, date, locale = "en") {
   );
 
   // Hardcode timestamp locale per file — not dependent on localStorage lang
-  const jsLocaleMap = { en: "en-GB", es: "es-ES" };
+  const jsLocaleMap = { en: "en-GB" };
   html = html.replace("{{JS_LOCALE}}", jsLocaleMap[locale] || "en-GB");
-
-  // Set correct active language pill based on render locale (baked in, no JS dependency)
-  if (locale !== "en") {
-    html = html.replace(
-      `<div class="lpill active" onclick="setLang(event,'EN')">`,
-      `<div class="lpill" onclick="setLang(event,'EN')">`
-    );
-    html = html.replace(
-      `<div class="lpill" onclick="setLang(event,'${locale.toUpperCase()}')">`,
-      `<div class="lpill active" onclick="setLang(event,'${locale.toUpperCase()}')">`
-    );
-  }
 
   // Apply all flat string tokens from translations
   for (const [key, val] of Object.entries(t)) {
@@ -388,8 +299,6 @@ function renderHtml(data, date, locale = "en") {
 function renderEmail(data, date, locale, unsubscribeUrl) {
   const t = getTranslations(locale);
   const items = data.items;
-  const meanwhile = data.meanwhile;
-
   const geoStyle = (geo) => {
     const regional = ["Spain", "Norway", "UK", "United Kingdom", "Netherlands"];
     return regional.includes(geo)
@@ -402,7 +311,7 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
       <div style="font-family:Georgia,serif;font-size:17px;color:#1a1a18;line-height:1.35;margin-bottom:8px;">${item.headline}</div>
       <div style="font-family:Georgia,serif;font-size:14px;color:#444;line-height:1.65;margin-bottom:10px;">${item.body}</div>
       <div>
-        <span style="${geoStyle(item.geo)}">${translateGeo(item.geo, locale)}</span>
+        <span style="${geoStyle(item.geo)}">${item.geo}</span>
         <a href="https://duckduckgo.com/?q=${encodeURIComponent(item.headline + (item.geo !== 'Global' ? ' ' + item.geo : ''))}" style="font-family:'Courier New',monospace;font-size:11px;color:#c8a84a;text-decoration:none;margin-right:8px;" target="_blank">&#x2197;</a>
         <span style="font-family:'Courier New',monospace;font-size:10px;color:#aaa;">~${item.sources} ${t.SOURCE_PILL_LABEL}</span>
       </div>
@@ -410,14 +319,6 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
     <tr><td class="rp" style="padding:12px 28px 0;"><hr style="border:none;border-top:1px solid #e8e4de;margin:0;"></td></tr>`
   ).join("\n");
 
-  const meanwhileHtml = meanwhile.map((item) => {
-    const label = t.CATEGORIES[item.category] || item.category;
-    return `
-    <tr><td class="rp" style="padding:10px 28px 0;">
-      <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:1.5px;color:#c8a84a;text-transform:uppercase;margin-bottom:4px;">${label}</div>
-      <div style="font-family:Georgia,serif;font-size:14px;color:#333;line-height:1.55;">${item.text}${item.search ? ` <a href="https://duckduckgo.com/?q=${encodeURIComponent(item.search)}" style="font-family:'Courier New',monospace;font-size:11px;color:#c8a84a;text-decoration:none;" target="_blank">&#x2197;</a>` : ''}</div>
-    </td></tr>`;
-  }).join("\n");
 
   return `<!doctype html>
 <html lang="${locale}">
@@ -452,14 +353,6 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
   <!-- Items -->
   ${itemsHtml}
 
-  <!-- Meanwhile header -->
-  <tr><td class="rp" style="padding:28px 28px 0;">
-    <div style="font-family:'Courier New',monospace;font-size:11px;letter-spacing:2px;color:#1a1a18;text-transform:uppercase;border-bottom:2px solid #1a1a18;padding-bottom:6px;">${t.MEANWHILE_TITLE}</div>
-  </td></tr>
-
-  <!-- Meanwhile items -->
-  ${meanwhileHtml}
-
   <!-- Footer -->
   <tr><td class="rp" style="padding:28px 28px 20px;text-align:center;">
     <p style="font-family:'Courier New',monospace;font-size:10px;color:#aaa;line-height:1.8;margin:0;">
@@ -483,11 +376,8 @@ async function main() {
 
   // Step 1: load recent run context (last 3 days) to avoid repetition
   let previousContext = "";
-  let previousMeanwhileContext = "";
   try {
     let allHeadlines = [];
-    let allMeanwhiles = [];
-
     // Load rolling history file (up to 3 days)
     let recentHistory = [];
     try {
@@ -500,20 +390,14 @@ async function main() {
     try {
       const lastOutput = JSON.parse(fs.readFileSync("last_output.json", "utf8"));
       allHeadlines = lastOutput.items.map(i => i.headline);
-      allMeanwhiles = lastOutput.meanwhile.map(i => i.text);
     } catch (e) {}
 
     // Combine with history, deduplicate
     const historyHeadlines = recentHistory.flatMap(r => r.headlines || []);
-    const historyMeanwhiles = recentHistory.flatMap(r => r.meanwhiles || []);
     const combinedHeadlines = [...new Set([...allHeadlines, ...historyHeadlines])];
-    const combinedMeanwhiles = [...new Set([...allMeanwhiles, ...historyMeanwhiles])];
 
     if (combinedHeadlines.length > 0) {
       previousContext = `\nThe following stories have appeared in recent editions. Do not repeat the same topics, angles, or entities — find what is genuinely new:\n${combinedHeadlines.map(h => `- ${h}`).join("\n")}\n`;
-    }
-    if (combinedMeanwhiles.length > 0) {
-      previousMeanwhileContext = `\nThe following topics appeared in recent Meanwhile sections. Do not repeat these or closely related topics:\n${combinedMeanwhiles.map(h => `- ${h}`).join("\n")}\n`;
     }
 
     console.log(`Loaded deduplication context: ${combinedHeadlines.length} headlines from last ${recentHistory.length + 1} runs.`);
@@ -525,10 +409,10 @@ async function main() {
   console.log("Calling Claude for global edition...");
   let globalData;
   try {
-    const deduplicationHint = previousContext + previousMeanwhileContext;
+    const deduplicationHint = previousContext;
     const globalRaw = await callClaude(GLOBAL_PROMPT + deduplicationHint, deduplicationHint);
     globalData = parseJson(globalRaw);
-    console.log(`Global: ${globalData.items.length} items, ${globalData.meanwhile.length} meanwhile`);
+    console.log(`Global: ${globalData.items.length} items`);
   } catch (e) {
     console.error("Global call failed:", e.message);
     // Fall back to last run's output rather than killing the whole process
@@ -602,8 +486,7 @@ async function main() {
     } catch (e) {}
     const newEntry = {
       date: dateStr,
-      headlines: globalData.items.map(i => i.headline),
-      meanwhiles: globalData.meanwhile.map(i => i.text)
+      headlines: globalData.items.map(i => i.headline)
     };
     recentHistory.unshift(newEntry);
     recentHistory = recentHistory.slice(0, 3); // keep last 3 runs only
