@@ -1,5 +1,14 @@
 [
   {
+    "date": "12 April 2026",
+    "headlines": [
+      "United States and Iran talks collapse without deal after marathon negotiations",
+      "Peru holds presidential election with record 35 candidates amid political fragmentation",
+      "Ecuador raises tariffs on Colombia to 100 percent as border security dispute escalates",
+      "Anthropic withholds AI model after discovering vulnerabilities across all major operating systems"
+    ]
+  },
+  {
     "date": "11 April 2026",
     "headlines": [
       "Israel strikes Lebanon killing over 200 as ceasefire scope dispute escalates",
@@ -27,21 +36,6 @@
       "Memory device survives temperatures exceeding 700 degrees Celsius, far beyond current chip limits",
       "New CRISPR method turns silenced genes on without cutting DNA, offering safer genetic therapy",
       "Pew survey shows Christianity decline in US may have stabilized since 2020 after decades of losses"
-    ]
-  },
-  {
-    "date": "10 April 2026",
-    "headlines": [
-      "China grants itself power to probe and punish foreign supply chain restrictions",
-      "Hungary votes April 12 as Orban faces first serious challenge in 16 years",
-      "Afghanistan Pakistan conflict displaces 94,000 as China mediates talks in Urumqi",
-      "North Korea tested cluster warhead missiles as weapons development accelerates"
-    ],
-    "meanwhiles": [
-      "Japanese artist Yayoi Kusama unveils infinity room installation at Tate Modern London",
-      "Researchers grow functional human lungs from stem cells offering transplant alternative",
-      "Intermittent fasting reverses Type 2 diabetes in 90-day trial without medication",
-      "Latin America sees evangelical Protestant surge as Catholic majority declines across continent"
     ]
   }
 ]

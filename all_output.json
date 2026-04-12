@@ -1,75 +1,45 @@
 {
-  "date": "11 April 2026",
+  "date": "12 April 2026",
   "global": {
-    "generated_at": "2026-04-11T18:30:00Z",
+    "generated_at": "2025-04-13T18:30:00Z",
     "sources": [
-      "Al Jazeera",
+      "NBC News",
+      "BBC",
       "Reuters",
       "The Guardian",
+      "CNN",
       "Associated Press",
-      "BBC News",
-      "France 24",
-      "Times of India",
-      "La República",
-      "NASA"
+      "Al Jazeera",
+      "Financial Times",
+      "Bloomberg",
+      "Axios"
     ],
     "items": [
       {
-        "headline": "Israel strikes Lebanon killing over 200 as ceasefire scope dispute escalates",
-        "body": "Israeli bombings across Lebanon killed at least 203 people in deadliest attacks since March, with Netanyahu saying Lebanon excluded from Iran ceasefire. Iran warns Washington must choose between ceasefire or continued proxy war through Israel.",
-        "geo": "Asia",
-        "sources": 5
-      },
-      {
-        "headline": "Russia declares Orthodox Easter ceasefire with Ukraine for two days",
-        "body": "Putin ordered cessation of combat operations from April 11 through April 12 for Orthodox Easter after Zelenskyy signaled openness. Ukraine had urged reimposition of Russian oil sanctions after temporary US waiver allowed Moscow billions in extra profit.",
-        "geo": "Europe",
-        "sources": 4
-      },
-      {
-        "headline": "Venezuela passes mining reform law to attract foreign investment after decades",
-        "body": "National Assembly unanimously approved bill replacing framework from 1990s with flexible tax regime and legal guarantees for international investors. Reform pushed by Acting President Rodríguez targets US companies in industry long exploited by criminal groups.",
-        "geo": "Americas",
+        "headline": "United States and Iran talks collapse without deal after marathon negotiations",
+        "body": "Vice President JD Vance ended negotiations in Islamabad without agreement after Iran refused commitment to halt nuclear weapons development. Iran claims the United States abandoned diplomacy despite Iranian flexibility on core terms.",
+        "geo": "Global",
         "sources": 3
       },
       {
-        "headline": "Artemis II crew returns from Moon in first crewed lunar mission since 1972",
-        "body": "Orion capsule splashed down in Pacific completing mission that sent first person of color and first woman around the Moon. Landing marks halfway point in NASA program to establish permanent lunar presence by decade end.",
+        "headline": "Peru holds presidential election with record 35 candidates amid political fragmentation",
+        "body": "The country votes for its ninth leader in nearly as many years with no candidate polling above 15 percent. A June runoff is inevitable as fury with the political class drives historic ballot crowding.",
+        "geo": "Americas",
+        "sources": 2
+      },
+      {
+        "headline": "Ecuador raises tariffs on Colombia to 100 percent as border security dispute escalates",
+        "body": "Ecuador imposed what it calls a security tax over alleged failures to control drug trafficking at shared borders. Colombia matched the tariff rate and declared the effective end of the Andean Pact.",
+        "geo": "Americas",
+        "sources": 2
+      },
+      {
+        "headline": "Anthropic withholds AI model after discovering vulnerabilities across all major operating systems",
+        "body": "The company's Claude Mythos Preview found high-severity security flaws in every major system and browser it tested. Access is restricted to 50 organizations with no public release planned due to exploit development risk.",
         "geo": "Global",
-        "sources": 4
-      }
-    ],
-    "meanwhile": [
-      {
-        "category": "culture",
-        "text": "Ai Weiwei unveils monumental installation at Venice Biennale addressing displacement and surveillance through refugee boat sculptures",
-        "search": "Ai Weiwei Venice Biennale 2026 refugee boats installation"
-      },
-      {
-        "category": "science_tech",
-        "text": "Quantum computer solves problem in minutes that would take classical supercomputer longer than age of universe",
-        "search": "quantum supremacy 2026 Google IBM problem solving breakthrough"
-      },
-      {
-        "category": "wellbeing",
-        "text": "Single malaria vaccine dose shows 80 percent efficacy in infants through second year of life",
-        "search": "malaria vaccine 2026 single dose infant efficacy trial results"
-      },
-      {
-        "category": "worldviews",
-        "text": "Survey finds majority of young Europeans now identify as having no religious affiliation for first time",
-        "search": "Europe youth religious affiliation 2026 survey secular nones"
+        "sources": 3
       }
     ]
   },
-  "regional_items": {
-    "no": [
-      {
-        "headline": "Government commission recommends Norway not pursue nuclear power until at least the 2040s",
-        "body": "Report delivered April 8 concludes nuclear is not economically viable given abundant hydropower and high regulatory costs. Decision ends first comprehensive review since the 1970s and could delay private proposals for small modular reactors.",
-        "geo": "Norway",
-        "sources": 3
-      }
-    ]
-  }
+  "regional_items": {}
 }
