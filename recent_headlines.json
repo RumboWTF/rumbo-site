@@ -1,5 +1,14 @@
 [
   {
+    "date": "13 April 2026",
+    "headlines": [
+      "Myanmar's coup leader sworn in as president five years after ousting elected government",
+      "Djibouti's president claims victory with nearly 98 percent after constitutional change removed age limit",
+      "Pakistan airstrikes hit Kabul killing at least 269 as conflict with Afghanistan expands to eleven provinces",
+      "Colombia records 35 massacres in first quarter making it the most violent period in a decade"
+    ]
+  },
+  {
     "date": "12 April 2026",
     "headlines": [
       "United States and Iran talks collapse without deal after marathon negotiations",
@@ -21,21 +30,6 @@
       "Quantum computer solves problem in minutes that would take classical supercomputer longer than age of universe",
       "Single malaria vaccine dose shows 80 percent efficacy in infants through second year of life",
       "Survey finds majority of young Europeans now identify as having no religious affiliation for first time"
-    ]
-  },
-  {
-    "date": "10 April 2026",
-    "headlines": [
-      "Mediterranean crossing deaths near 1,000 in first three months as arrivals fall sharply",
-      "Pakistan mediates first direct Iran-United States peace talks as fragile ceasefire holds",
-      "Benin votes Sunday in first leadership transition after decade of tightening democratic space",
-      "Africa to outpace Asia in economic growth for first time as IMF forecasts 4.3 percent expansion"
-    ],
-    "meanwhiles": [
-      "Museum of Modern Art opens first major Marcel Duchamp retrospective since 1973 with 300 works",
-      "Memory device survives temperatures exceeding 700 degrees Celsius, far beyond current chip limits",
-      "New CRISPR method turns silenced genes on without cutting DNA, offering safer genetic therapy",
-      "Pew survey shows Christianity decline in US may have stabilized since 2020 after decades of losses"
     ]
   }
 ]

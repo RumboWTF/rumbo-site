@@ -1,41 +1,38 @@
 {
-  "generated_at": "2025-04-13T18:30:00Z",
+  "generated_at": "2026-04-11T10:00:00Z",
   "sources": [
-    "NBC News",
-    "BBC",
     "Reuters",
-    "The Guardian",
-    "CNN",
-    "Associated Press",
+    "BBC",
     "Al Jazeera",
-    "Financial Times",
-    "Bloomberg",
-    "Axios"
+    "AFP",
+    "Associated Press",
+    "World Bank",
+    "UN reports"
   ],
   "items": [
     {
-      "headline": "United States and Iran talks collapse without deal after marathon negotiations",
-      "body": "Vice President JD Vance ended negotiations in Islamabad without agreement after Iran refused commitment to halt nuclear weapons development. Iran claims the United States abandoned diplomacy despite Iranian flexibility on core terms.",
-      "geo": "Global",
+      "headline": "Myanmar's coup leader sworn in as president five years after ousting elected government",
+      "body": "Senior General Min Aung Hlaing took office as president on April 10 after winning a vote in a pro-military parliament, with representatives from China, India, Thailand and 20 other countries attending the inauguration ceremony. The UN estimates more than 96,000 people have been killed and at least 3.6 million displaced since the 2021 coup he led.",
+      "geo": "Asia",
       "sources": 3
     },
     {
-      "headline": "Peru holds presidential election with record 35 candidates amid political fragmentation",
-      "body": "The country votes for its ninth leader in nearly as many years with no candidate polling above 15 percent. A June runoff is inevitable as fury with the political class drives historic ballot crowding.",
-      "geo": "Americas",
+      "headline": "Djibouti's president claims victory with nearly 98 percent after constitutional change removed age limit",
+      "body": "President Ismail Omar Guelleh secured 97.81 percent of votes cast on April 10, extending his 27-year rule after a 2025 constitutional amendment removed the age limit of 75 that would have barred him from a sixth term. His sole opponent received just 2.19 percent of votes.",
+      "geo": "Africa",
       "sources": 2
     },
     {
-      "headline": "Ecuador raises tariffs on Colombia to 100 percent as border security dispute escalates",
-      "body": "Ecuador imposed what it calls a security tax over alleged failures to control drug trafficking at shared borders. Colombia matched the tariff rate and declared the effective end of the Andean Pact.",
-      "geo": "Americas",
+      "headline": "Pakistan airstrikes hit Kabul killing at least 269 as conflict with Afghanistan expands to eleven provinces",
+      "body": "A Pakistani airstrike on March 16 struck a drug rehabilitation center in Kabul, and warplanes have targeted locations across eleven Afghan provinces throughout March in clashes along the disputed Durand Line. The strikes represent a dramatic escalation beyond border areas into what some describe as open war between the two countries.",
+      "geo": "Asia",
       "sources": 2
     },
     {
-      "headline": "Anthropic withholds AI model after discovering vulnerabilities across all major operating systems",
-      "body": "The company's Claude Mythos Preview found high-severity security flaws in every major system and browser it tested. Access is restricted to 50 organizations with no public release planned due to exploit development risk.",
-      "geo": "Global",
-      "sources": 3
+      "headline": "Colombia records 35 massacres in first quarter making it the most violent period in a decade",
+      "body": "The Institute of Peace and Development documented 35 massacres between January and March 2026, the highest quarterly total in ten years. The violence continues despite ongoing peace efforts with armed groups across the country.",
+      "geo": "Americas",
+      "sources": 1
     }
   ]
 }
