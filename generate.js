@@ -171,11 +171,15 @@ async function callClaude(prompt, deduplicationHint = "") {
   ]);
   const textBlock = formatResponse.content.find((b) => b.type === "text");
   if (!textBlock) throw new Error("No text in Claude response");
+  const su = searchResponse.usage || {};
+  const fu = formatResponse.usage || {};
+  console.log(`[tokens] global search — in:${su.input_tokens ?? '?'} out:${su.output_tokens ?? '?'}`);
+  console.log(`[tokens] global format — in:${fu.input_tokens ?? '?'} out:${fu.output_tokens ?? '?'}`);
   return textBlock.text.trim();
 }
 
 // Single-pass call with web search and JSON output. Used for regional editions.
-async function callClaudeSinglePass(prompt) {
+async function callClaudeSinglePass(prompt, regionName = "regional") {
   const timeout = 600000;
   for (let attempt = 1; attempt <= 2; attempt++) {
     try {
@@ -193,6 +197,8 @@ async function callClaudeSinglePass(prompt) {
       ]);
       const textBlock = response.content.find((b) => b.type === "text");
       if (!textBlock) throw new Error("No text in response");
+      const ru = response.usage || {};
+      console.log(`[tokens] ${regionName} — in:${ru.input_tokens ?? '?'} out:${ru.output_tokens ?? '?'}`);
       return textBlock.text.trim();
     } catch (e) {
       if (attempt === 2) throw e;
@@ -445,7 +451,8 @@ async function main() {
     console.log(`Calling Claude for ${region.name} regional top-up...`);
     try {
       const regionalRaw = await callClaudeSinglePass(
-        REGIONAL_PROMPT(region.name, JSON.stringify(globalData, null, 2)) + previousContext
+        REGIONAL_PROMPT(region.name, JSON.stringify(globalData, null, 2)) + previousContext,
+        region.name
       );
       const regionalData = parseJson(regionalRaw);
 
