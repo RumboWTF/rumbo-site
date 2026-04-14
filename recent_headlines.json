@@ -1,5 +1,14 @@
 [
   {
+    "date": "14 April 2026",
+    "headlines": [
+      "Hungary opposition wins two-thirds majority ending Orbán's 16-year rule",
+      "United States begins naval blockade of Iran and Strait of Hormuz",
+      "China tells Taiwan opposition leader independence will not be tolerated",
+      "Uganda president wins seventh term as opposition leader goes into hiding"
+    ]
+  },
+  {
     "date": "13 April 2026",
     "headlines": [
       "Myanmar's coup leader sworn in as president five years after ousting elected government",
@@ -15,21 +24,6 @@
       "Peru holds presidential election with record 35 candidates amid political fragmentation",
       "Ecuador raises tariffs on Colombia to 100 percent as border security dispute escalates",
       "Anthropic withholds AI model after discovering vulnerabilities across all major operating systems"
-    ]
-  },
-  {
-    "date": "11 April 2026",
-    "headlines": [
-      "Israel strikes Lebanon killing over 200 as ceasefire scope dispute escalates",
-      "Russia declares Orthodox Easter ceasefire with Ukraine for two days",
-      "Venezuela passes mining reform law to attract foreign investment after decades",
-      "Artemis II crew returns from Moon in first crewed lunar mission since 1972"
-    ],
-    "meanwhiles": [
-      "Ai Weiwei unveils monumental installation at Venice Biennale addressing displacement and surveillance through refugee boat sculptures",
-      "Quantum computer solves problem in minutes that would take classical supercomputer longer than age of universe",
-      "Single malaria vaccine dose shows 80 percent efficacy in infants through second year of life",
-      "Survey finds majority of young Europeans now identify as having no religious affiliation for first time"
     ]
   }
 ]

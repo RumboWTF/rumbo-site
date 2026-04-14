@@ -1,38 +1,41 @@
 {
-  "generated_at": "2026-04-11T10:00:00Z",
+  "generated_at": "2026-04-14T18:00:00Z",
   "sources": [
     "Reuters",
-    "BBC",
     "Al Jazeera",
-    "AFP",
-    "Associated Press",
-    "World Bank",
-    "UN reports"
+    "BBC",
+    "The Guardian",
+    "Financial Times",
+    "South China Morning Post",
+    "Nikkei Asia",
+    "Politico Europe",
+    "The East African",
+    "New Vision Uganda"
   ],
   "items": [
     {
-      "headline": "Myanmar's coup leader sworn in as president five years after ousting elected government",
-      "body": "Senior General Min Aung Hlaing took office as president on April 10 after winning a vote in a pro-military parliament, with representatives from China, India, Thailand and 20 other countries attending the inauguration ceremony. The UN estimates more than 96,000 people have been killed and at least 3.6 million displaced since the 2021 coup he led.",
-      "geo": "Asia",
-      "sources": 3
+      "headline": "Hungary opposition wins two-thirds majority ending Orbán's 16-year rule",
+      "body": "Centre-right Tisza party secured 138 of 199 parliament seats with turnout exceeding 77 percent. Supermajority allows constitutional amendments and unblocks 90 billion euro loan to Ukraine previously vetoed by Orbán government.",
+      "geo": "Europe",
+      "sources": 5
     },
     {
-      "headline": "Djibouti's president claims victory with nearly 98 percent after constitutional change removed age limit",
-      "body": "President Ismail Omar Guelleh secured 97.81 percent of votes cast on April 10, extending his 27-year rule after a 2025 constitutional amendment removed the age limit of 75 that would have barred him from a sixth term. His sole opponent received just 2.19 percent of votes.",
+      "headline": "United States begins naval blockade of Iran and Strait of Hormuz",
+      "body": "American forces began enforcing port restrictions after talks collapsed and Trump administration deadline passed. Blockade affects route carrying one-fifth of global fuel with Iran warning all Gulf ports at risk.",
+      "geo": "Global",
+      "sources": 6
+    },
+    {
+      "headline": "China tells Taiwan opposition leader independence will not be tolerated",
+      "body": "Xi Jinping met visiting Kuomintang chairwoman in first party leadership talks since 2015. KMT has blocked 40 billion dollar defense budget proposed by Taiwan president to counter potential Chinese military action.",
+      "geo": "Asia",
+      "sources": 4
+    },
+    {
+      "headline": "Uganda president wins seventh term as opposition leader goes into hiding",
+      "body": "Museveni secured 72 percent in vote UN described as marred by repression and internet blackout. Opposition candidate reported security forces surrounded his home before he escaped to undisclosed location after results announced.",
       "geo": "Africa",
-      "sources": 2
-    },
-    {
-      "headline": "Pakistan airstrikes hit Kabul killing at least 269 as conflict with Afghanistan expands to eleven provinces",
-      "body": "A Pakistani airstrike on March 16 struck a drug rehabilitation center in Kabul, and warplanes have targeted locations across eleven Afghan provinces throughout March in clashes along the disputed Durand Line. The strikes represent a dramatic escalation beyond border areas into what some describe as open war between the two countries.",
-      "geo": "Asia",
-      "sources": 2
-    },
-    {
-      "headline": "Colombia records 35 massacres in first quarter making it the most violent period in a decade",
-      "body": "The Institute of Peace and Development documented 35 massacres between January and March 2026, the highest quarterly total in ten years. The violence continues despite ongoing peace efforts with armed groups across the country.",
-      "geo": "Americas",
-      "sources": 1
+      "sources": 4
     }
   ]
 }
