@@ -118,7 +118,8 @@ WRITING
     <button class="prompt-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('visible')">
       <span class="arrow">&#9658;</span> Notes on past runs
     </button>
-<div class="prompt-text"><b>14 April 2026:</b> Good edition, with one regional item only.
+<div class="prompt-text"><b>15 April 2026:</b> Regional calls failing silently and consuming ~85% of run cost. Root cause: web search results uncapped in regional pass, overwhelming context. Fixed with two-pass approach, should reduce cost significantly from tomorrow.
+<b>14 April 2026:</b> Good edition, with one regional item only.
 <b>13 April 2026:</b> One item several weeks old slipped through freshness check, partly repeating. Refined rule on deduplication context.
 <b>12 April 2026:</b> Future events recurring in output. Rewrote freshness rule as positive framing — completed actions only. Trimmed both prompts by ~50%.
 <b>11 April 2026:</b> Meanwhile section shows inconsistent quality over time; removing from future editions.
