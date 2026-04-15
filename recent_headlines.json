@@ -1,5 +1,14 @@
 [
   {
+    "date": "15 April 2026",
+    "headlines": [
+      "Nigerian airstrike kills over 100 civilians at market while targeting militants",
+      "Libya approves unified national budget for first time in 13 years",
+      "China Evergrande founder pleads guilty to fraud charges after two-day trial",
+      "Maldives voters reject referendum to align presidential and parliamentary elections"
+    ]
+  },
+  {
     "date": "14 April 2026",
     "headlines": [
       "Hungary opposition wins two-thirds majority ending Orbán's 16-year rule",
@@ -15,15 +24,6 @@
       "Djibouti's president claims victory with nearly 98 percent after constitutional change removed age limit",
       "Pakistan airstrikes hit Kabul killing at least 269 as conflict with Afghanistan expands to eleven provinces",
       "Colombia records 35 massacres in first quarter making it the most violent period in a decade"
-    ]
-  },
-  {
-    "date": "12 April 2026",
-    "headlines": [
-      "United States and Iran talks collapse without deal after marathon negotiations",
-      "Peru holds presidential election with record 35 candidates amid political fragmentation",
-      "Ecuador raises tariffs on Colombia to 100 percent as border security dispute escalates",
-      "Anthropic withholds AI model after discovering vulnerabilities across all major operating systems"
     ]
   }
 ]

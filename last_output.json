@@ -1,41 +1,39 @@
 {
-  "generated_at": "2026-04-14T18:00:00Z",
+  "generated_at": "2026-04-15T18:30:00Z",
   "sources": [
+    "France 24",
+    "BBC News",
     "Reuters",
     "Al Jazeera",
-    "BBC",
-    "The Guardian",
-    "Financial Times",
-    "South China Morning Post",
-    "Nikkei Asia",
-    "Politico Europe",
-    "The East African",
-    "New Vision Uganda"
+    "Bloomberg",
+    "Amnesty International",
+    "Associated Press",
+    "The Guardian"
   ],
   "items": [
     {
-      "headline": "Hungary opposition wins two-thirds majority ending Orbán's 16-year rule",
-      "body": "Centre-right Tisza party secured 138 of 199 parliament seats with turnout exceeding 77 percent. Supermajority allows constitutional amendments and unblocks 90 billion euro loan to Ukraine previously vetoed by Orbán government.",
-      "geo": "Europe",
-      "sources": 5
-    },
-    {
-      "headline": "United States begins naval blockade of Iran and Strait of Hormuz",
-      "body": "American forces began enforcing port restrictions after talks collapsed and Trump administration deadline passed. Blockade affects route carrying one-fifth of global fuel with Iran warning all Gulf ports at risk.",
-      "geo": "Global",
-      "sources": 6
-    },
-    {
-      "headline": "China tells Taiwan opposition leader independence will not be tolerated",
-      "body": "Xi Jinping met visiting Kuomintang chairwoman in first party leadership talks since 2015. KMT has blocked 40 billion dollar defense budget proposed by Taiwan president to counter potential Chinese military action.",
-      "geo": "Asia",
-      "sources": 4
-    },
-    {
-      "headline": "Uganda president wins seventh term as opposition leader goes into hiding",
-      "body": "Museveni secured 72 percent in vote UN described as marred by repression and internet blackout. Opposition candidate reported security forces surrounded his home before he escaped to undisclosed location after results announced.",
+      "headline": "Nigerian airstrike kills over 100 civilians at market while targeting militants",
+      "body": "A military strike aimed at jihadist rebels hit a village market in northeastern Yobe state. Amnesty International called for an independent investigation, noting over 500 civilians have died in similar misfires since 2017.",
       "geo": "Africa",
       "sources": 4
+    },
+    {
+      "headline": "Libya approves unified national budget for first time in 13 years",
+      "body": "Rival legislative bodies endorsed a combined spending plan totaling roughly 30 billion dollars. The agreement comes as European demand for Libyan crude rises amid disruptions to Gulf oil routes.",
+      "geo": "Africa",
+      "sources": 3
+    },
+    {
+      "headline": "China Evergrande founder pleads guilty to fraud charges after two-day trial",
+      "body": "Hui Ka Yan admitted to fundraising fraud, embezzlement, and bribery in a Shenzhen court. His company defaulted in 2021 on most of 300 billion dollars in liabilities, emblematic of China's property sector crisis.",
+      "geo": "Asia",
+      "sources": 3
+    },
+    {
+      "headline": "Maldives voters reject referendum to align presidential and parliamentary elections",
+      "body": "The constitutional amendment lost with nearly 69 percent voting against shortening the current parliamentary term. Opposition parties swept all five mayoral seats, widely seen as a verdict on government performance.",
+      "geo": "Asia",
+      "sources": 2
     }
   ]
 }
