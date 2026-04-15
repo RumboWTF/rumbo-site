@@ -178,33 +178,60 @@ async function callClaude(prompt, deduplicationHint = "") {
   return textBlock.text.trim();
 }
 
-// Single-pass call with web search and JSON output. Used for regional editions.
+// Two-pass call for regional editions — mirrors global approach to cap token usage.
+// Pass 1: short search prompt with web tool. Pass 2: format with capped results + full prompt.
 async function callClaudeSinglePass(prompt, regionName = "regional") {
   const timeout = 600000;
-  for (let attempt = 1; attempt <= 2; attempt++) {
-    try {
-      const response = await Promise.race([
-        client.messages.create({
-          model: "claude-sonnet-4-5",
-          max_tokens: 1500,
-          system: "You are a news editor. Output only raw valid JSON. Start with { and end with }. No other text. Do not use markdown formatting in any string values.",
-          tools: [{ type: "web_search_20250305", name: "web_search" }],
-          messages: [{ role: "user", content: prompt }],
-        }),
-        new Promise((_, reject) =>
-          setTimeout(() => reject(new Error("Claude API timeout")), timeout)
-        ),
-      ]);
-      const textBlock = response.content.find((b) => b.type === "text");
-      if (!textBlock) throw new Error("No text in response");
-      const ru = response.usage || {};
-      console.log(`[tokens] ${regionName} — in:${ru.input_tokens ?? '?'} out:${ru.output_tokens ?? '?'}`);
-      return textBlock.text.trim();
-    } catch (e) {
-      if (attempt === 2) throw e;
-      console.log(`Single-pass attempt ${attempt} failed: ${e.message}. Retrying...`);
-    }
-  }
+
+  // Extract region name from prompt for the search query
+  const regionMatch = prompt.match(/covering ([^
+.]+)/);
+  const region = regionMatch ? regionMatch[1].trim() : regionName;
+
+  const searchPrompt = `Search the web for the single most consequential news development in ${region} from the last 72 hours. Return a detailed summary of what you find.`;
+
+  const searchResponse = await Promise.race([
+    client.messages.create({
+      model: "claude-sonnet-4-5",
+      max_tokens: 2000,
+      tools: [{ type: "web_search_20250305", name: "web_search" }],
+      messages: [{ role: "user", content: searchPrompt }],
+    }),
+    new Promise((_, reject) =>
+      setTimeout(() => reject(new Error("Claude API timeout (search)")), timeout)
+    ),
+  ]);
+
+  const searchText = searchResponse.content
+    .filter((b) => b.type === "text")
+    .map((b) => b.text)
+    .join("
+")
+    .slice(0, 30000); // cap at 30k chars (~7-8k tokens)
+
+  const formatResponse = await Promise.race([
+    client.messages.create({
+      model: "claude-sonnet-4-5",
+      max_tokens: 1500,
+      system: "You are a JSON formatter. Output only raw valid JSON. Start with { and end with }. No other text.",
+      messages: [{ role: "user", content: `Format this content as the required JSON structure:
+
+${searchText}
+
+${prompt}` }],
+    }),
+    new Promise((_, reject) =>
+      setTimeout(() => reject(new Error("Claude API timeout (format)")), timeout)
+    ),
+  ]);
+
+  const textBlock = formatResponse.content.find((b) => b.type === "text");
+  if (!textBlock) throw new Error("No text in response");
+  const su = searchResponse.usage || {};
+  const fu = formatResponse.usage || {};
+  console.log(`[tokens] ${regionName} search — in:${su.input_tokens ?? '?'} out:${su.output_tokens ?? '?'}`);
+  console.log(`[tokens] ${regionName} format — in:${fu.input_tokens ?? '?'} out:${fu.output_tokens ?? '?'}`);
+  return textBlock.text.trim();
 }
 
 // ─── JSON parse ───────────────────────────────────────────────────────────────
