@@ -48,7 +48,8 @@ SELECTION
 - If two or more items share the same continent, verify each independently earns its place — don't let regional noise volume substitute for genuine global significance.
 
 FRESHNESS
-- Only include items with new developments or reporting within the last 72 hours. If nothing concrete changed, skip it regardless of significance. Verify the publication date of your sources; if you cannot find a source dated within the last 72 hours, do not include the item.
+- Only include items with new developments or reporting within the last 72 hours. If nothing concrete changed, skip it regardless of significance.
+- For every item, you must cite a specific headline, outlet, and publication date from your search results. The publication date must be within the last 72 hours. If you cannot name all three, do not include the item.
 - Never include a specific calendar date (day and month) in body text unless you have verified it is from within the last 72 hours and the current year. If uncertain, omit the date entirely.
 - Do not include any item whose news hook is an upcoming event — an election scheduled for Sunday, talks beginning tomorrow, a vote later this week. Only report what has already happened. If the only fresh angle is anticipation of a future event, skip the item.
 - If a story was covered in yesterday's edition, find what specifically developed in the last 24 hours and lead with that. If nothing new has developed, deprioritise it in favour of fresher stories.
@@ -100,8 +101,7 @@ Rules:
 - Avoid incidental figures — drop percentages, tallies, and market numbers that aren't central to the story. Keep figures that are genuinely the fact being reported (e.g. a key price, a specific duration, a count that defines the outcome). If uncertain, describe qualitatively instead.
 - Write numbers as numerals for 10 and above, and as words for single digits — "69 soldiers", "2008", "10%", but "three countries", "two senators".
 - Only include items that have new developments or reporting within the last 72 hours. If a story's most recent coverage is older than 72 hours, skip it regardless of significance.
-- Before including any item, verify the publication date of your sources. If you cannot find a source dated within the last 72 hours, do not include that item.
-- For each item, the newness must be concrete: a vote that happened, a statement made, a figure released, an event that occurred — all within the last 72 hours. Do not include ongoing situations unless something specific changed in that window.
+- For every item, you must cite a specific headline, outlet, and publication date from your search results. The publication date must be within the last 72 hours. If you cannot name all three, do not include the item.
 - If you cannot find 1-2 genuinely fresh items for this region, return only one item — the most recent thing you can verify — rather than padding with older stories.
 - Never include time references like "this week", "on Friday", "recently", or "announced today" in headlines or body text unless you can verify the exact date from a source. Use the factual content only — the freshness is implied by the 72-hour rule.
 - Never include a specific calendar date (day and month) in body text unless you have verified it is from within the last 72 hours. If uncertain of the year, omit the date entirely.
@@ -138,7 +138,7 @@ async function callClaude(prompt, deduplicationHint = "") {
   const searchResponse = await Promise.race([
     client.messages.create({
       model: "claude-sonnet-4-5",
-      max_tokens: 2500,
+      max_tokens: 3000,
       tools: [{ type: "web_search_20250305", name: "web_search" }],
       messages: [{ role: "user", content: searchPrompt }],
     }),
@@ -189,7 +189,7 @@ async function callClaudeSinglePass(prompt, regionName = "regional") {
   const searchResponse = await Promise.race([
     client.messages.create({
       model: "claude-sonnet-4-5",
-      max_tokens: 1500,
+      max_tokens: 2000,
       tools: [{ type: "web_search_20250305", name: "web_search" }],
       messages: [{ role: "user", content: searchPrompt }],
     }),
