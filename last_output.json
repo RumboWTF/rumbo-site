@@ -1,38 +1,37 @@
 {
-  "generated_at": "2026-04-15T18:30:00Z",
+  "generated_at": "2026-04-16T18:00:00Z",
   "sources": [
-    "France 24",
-    "BBC News",
-    "Reuters",
     "Al Jazeera",
-    "Bloomberg",
-    "Amnesty International",
+    "Financial Times",
+    "Reuters",
     "Associated Press",
-    "The Guardian"
+    "BBC",
+    "Philippine Daily Inquirer",
+    "Yale Humanitarian Research Lab"
   ],
   "items": [
     {
-      "headline": "Nigerian airstrike kills over 100 civilians at market while targeting militants",
-      "body": "A military strike aimed at jihadist rebels hit a village market in northeastern Yobe state. Amnesty International called for an independent investigation, noting over 500 civilians have died in similar misfires since 2017.",
+      "headline": "Philippines declares national energy emergency as oil reserves drop to 45 days",
+      "body": "The government declared a state of emergency after the Iran war disrupted imports from the Middle East, which supplies 98 percent of the country's oil. Nearly 400 gas stations have closed and 40,000 workers are stranded after deployment bans to Gulf states.",
+      "geo": "Asia",
+      "sources": 3
+    },
+    {
+      "headline": "China installs floating barrier across entrance to Scarborough Shoal",
+      "body": "Satellite images show a 352-meter barrier blocking the disputed reef where Philippine fishermen operate under Chinese coast guard pressure. Diplomats warn China may be exploiting American focus on Iran to escalate South China Sea territorial claims.",
+      "geo": "Asia",
+      "sources": 2
+    },
+    {
+      "headline": "Sudan civil war enters fourth year as UN official calls it abandoned crisis",
+      "body": "The conflict between government forces and the Rapid Support Forces has displaced a quarter of the population and left 19 million facing acute hunger. New evidence shows Ethiopia is providing military assistance to the paramilitaries despite official denials.",
       "geo": "Africa",
       "sources": 4
     },
     {
-      "headline": "Libya approves unified national budget for first time in 13 years",
-      "body": "Rival legislative bodies endorsed a combined spending plan totaling roughly 30 billion dollars. The agreement comes as European demand for Libyan crude rises amid disruptions to Gulf oil routes.",
-      "geo": "Africa",
-      "sources": 3
-    },
-    {
-      "headline": "China Evergrande founder pleads guilty to fraud charges after two-day trial",
-      "body": "Hui Ka Yan admitted to fundraising fraud, embezzlement, and bribery in a Shenzhen court. His company defaulted in 2021 on most of 300 billion dollars in liabilities, emblematic of China's property sector crisis.",
-      "geo": "Asia",
-      "sources": 3
-    },
-    {
-      "headline": "Maldives voters reject referendum to align presidential and parliamentary elections",
-      "body": "The constitutional amendment lost with nearly 69 percent voting against shortening the current parliamentary term. Opposition parties swept all five mayoral seats, widely seen as a verdict on government performance.",
-      "geo": "Asia",
+      "headline": "IMF slashes Middle East growth forecast by nearly three percentage points",
+      "body": "The region's expected growth dropped to 1.1 percent as oil exporters face Iran war fallout and multiple Gulf economies are now projected to contract. Iran's economy is forecast to shrink over six percent this fiscal year.",
+      "geo": "Global",
       "sources": 2
     }
   ]

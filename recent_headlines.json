@@ -1,5 +1,14 @@
 [
   {
+    "date": "16 April 2026",
+    "headlines": [
+      "Philippines declares national energy emergency as oil reserves drop to 45 days",
+      "China installs floating barrier across entrance to Scarborough Shoal",
+      "Sudan civil war enters fourth year as UN official calls it abandoned crisis",
+      "IMF slashes Middle East growth forecast by nearly three percentage points"
+    ]
+  },
+  {
     "date": "15 April 2026",
     "headlines": [
       "Nigerian airstrike kills over 100 civilians at market while targeting militants",
@@ -15,15 +24,6 @@
       "United States begins naval blockade of Iran and Strait of Hormuz",
       "China tells Taiwan opposition leader independence will not be tolerated",
       "Uganda president wins seventh term as opposition leader goes into hiding"
-    ]
-  },
-  {
-    "date": "13 April 2026",
-    "headlines": [
-      "Myanmar's coup leader sworn in as president five years after ousting elected government",
-      "Djibouti's president claims victory with nearly 98 percent after constitutional change removed age limit",
-      "Pakistan airstrikes hit Kabul killing at least 269 as conflict with Afghanistan expands to eleven provinces",
-      "Colombia records 35 massacres in first quarter making it the most violent period in a decade"
     ]
   }
 ]
