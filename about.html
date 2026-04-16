@@ -95,11 +95,22 @@
     </a>
   </div>
   <div style="margin-bottom:10px;">
-    <button class="prompt-toggle" onclick="this.classList.toggle('open');this.parentElement.nextElementSibling.classList.toggle('visible')">
+    <button class="prompt-toggle" onclick="this.classList.toggle('open');document.getElementById('pt-prompt').classList.toggle('visible')">
       <span class="arrow">&#9658;</span> View the prompt used to generate each edition
     </button>
   </div>
-  <div class="prompt-text">You are the editorial engine for Rumbo.wtf, a world intelligence brief. Search the web for the most consequential global developments from the last 72 hours. Search broadly — English-language sources overrepresent certain regions, so actively seek consequential developments that may not surface first in default results.
+  <div style="margin-bottom:10px;">
+    <button class="prompt-toggle" onclick="this.classList.toggle('open');document.getElementById('pt-notes').classList.toggle('visible')">
+      <span class="arrow">&#9658;</span> Notes on past runs
+    </button>
+  </div>
+  <div>
+    <a href="pitch.html" class="prompt-toggle" style="display:inline-flex;">
+      <span class="arrow" style="transform:none;">&#9658;</span> What and why &#8212; the thinking behind Rumbo
+    </a>
+  </div>
+</div>
+<div class="prompt-text" id="pt-prompt">You are the editorial engine for Rumbo.wtf, a world intelligence brief. Search the web for the most consequential global developments from the last 72 hours. Search broadly — English-language sources overrepresent certain regions, so actively seek consequential developments that may not surface first in default results.
 
 SELECTION
 - Select exactly 3-4 items, picked for signal not volume of coverage.
@@ -118,12 +129,7 @@ WRITING
 - Every specific claim must be attributable to a source found in the search. Do not infer or complete with plausible-sounding context.
 
 <em>Additional formatting and technical instructions are included in the full prompt for consistency.</em></div>
-  <div style="margin-bottom:10px;">
-    <button class="prompt-toggle" onclick="this.classList.toggle('open');this.parentElement.nextElementSibling.classList.toggle('visible')">
-      <span class="arrow">&#9658;</span> Notes on past runs
-    </button>
-  </div>
-  <div class="prompt-text"><b>16 April 2026:</b> Regional items working again. One main item outdated; need to tighten freshness rule.
+<div class="prompt-text" id="pt-notes"><b>16 April 2026:</b> Regional items working again. One main item outdated; need to tighten freshness rule.
 <b>15 April 2026:</b> Regional calls have been failing silently. Implemented a fix, expecting results from tomorrow.
 <b>14 April 2026:</b> Good edition, with one regional item only.
 <b>13 April 2026:</b> One item several weeks old slipped through freshness check, partly repeating. Refined rule on deduplication context.
@@ -136,14 +142,6 @@ WRITING
 <b>6 April 2026:</b> Weak selection of stories and repetitions. Refined geographic spread rule and extended deduplication to 3-day rolling window. Manually rerun.
 <b>5 April 2026:</b> Culture item in Meanwhile section still weak, needs tighter definition.
 <b>4 April 2026:</b> Indonesia earthquake item lacking real consequence. Consider tightening of prompt re natural disasters.</div>
-  <div style="margin-bottom:0;">
-    <a href="pitch.html" class="prompt-toggle" style="display:inline-flex;">
-      <span class="arrow" style="transform:none;">&#9658;</span> What and why — the thinking behind Rumbo
-    </a>
-  </div>
-  </div>
-
-</div>
 <footer>
   <span class="footer-left"><a href="index.html" style="color:inherit;text-decoration:none;">rumbo.wtf</a></span>
   <div class="footer-center">
