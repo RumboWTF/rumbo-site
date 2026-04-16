@@ -179,16 +179,12 @@ async function callClaude(prompt, deduplicationHint = "") {
 }
 
 // Two-pass call for regional editions — mirrors global approach to cap token usage.
-// Pass 1: short search prompt with web tool. Pass 2: format with capped results + full prompt.
+// Pass 1: short search prompt with web tool, capped at 30k chars.
+// Pass 2: format pass with capped results + full editorial prompt, no web tool.
 async function callClaudeSinglePass(prompt, regionName = "regional") {
   const timeout = 600000;
 
-  // Extract region name from prompt for the search query
-  const regionMatch = prompt.match(/covering ([^
-.]+)/);
-  const region = regionMatch ? regionMatch[1].trim() : regionName;
-
-  const searchPrompt = `Search the web for the single most consequential news development in ${region} from the last 72 hours. Return a detailed summary of what you find.`;
+  const searchPrompt = `Search the web for the single most consequential news development in ${regionName} from the last 72 hours. Return a detailed summary of what you find.`;
 
   const searchResponse = await Promise.race([
     client.messages.create({
@@ -205,20 +201,15 @@ async function callClaudeSinglePass(prompt, regionName = "regional") {
   const searchText = searchResponse.content
     .filter((b) => b.type === "text")
     .map((b) => b.text)
-    .join("
-")
-    .slice(0, 30000); // cap at 30k chars (~7-8k tokens)
+    .join("\n")
+    .slice(0, 30000);
 
   const formatResponse = await Promise.race([
     client.messages.create({
       model: "claude-sonnet-4-5",
       max_tokens: 1500,
       system: "You are a JSON formatter. Output only raw valid JSON. Start with { and end with }. No other text.",
-      messages: [{ role: "user", content: `Format this content as the required JSON structure:
-
-${searchText}
-
-${prompt}` }],
+      messages: [{ role: "user", content: `Format this content as the required JSON structure:\n\n${searchText}\n\n${prompt}` }],
     }),
     new Promise((_, reject) =>
       setTimeout(() => reject(new Error("Claude API timeout (format)")), timeout)
