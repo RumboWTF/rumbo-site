@@ -51,7 +51,7 @@ FRESHNESS
 - Only include items with new developments or reporting within the last 72 hours. If nothing concrete changed, skip it regardless of significance.
 - For every item, you must cite a specific headline, outlet, and publication date from your search results. The publication date must be within the last 72 hours. If you cannot name all three, do not include the item.
 - Never include a specific calendar date (day and month) in body text unless you have verified it is from within the last 72 hours and the current year. If uncertain, omit the date entirely.
-- Do not include any item whose news hook is an upcoming event — an election scheduled for Sunday, talks beginning tomorrow, a vote later this week. Only report what has already happened. If the only fresh angle is anticipation of a future event, skip the item.
+- Every item must report something that has already happened, not something expected or anticipated. If the most newsworthy angle is what might happen next, skip it.
 - If a story was covered in yesterday's edition, find what specifically developed in the last 24 hours and lead with that. If nothing new has developed, deprioritise it in favour of fresher stories.
 
 WRITING
@@ -106,7 +106,7 @@ Rules:
 - Never include time references like "this week", "on Friday", "recently", or "announced today" in headlines or body text unless you can verify the exact date from a source. Use the factual content only — the freshness is implied by the 72-hour rule.
 - Never include a specific calendar date (day and month) in body text unless you have verified it is from within the last 72 hours. If uncertain of the year, omit the date entirely.
 - When citing a specific date from a source, verify it is from the current year. A real date from a previous year is worse than no date — it presents old news as current fact.
-- Do not include any item whose news hook is an upcoming event — an election scheduled for Sunday, talks beginning tomorrow, a vote later this week. Only report what has already happened. If the only fresh angle is anticipation of a future event, skip the item.
+- Every item must report something that has already happened, not something expected or anticipated. If the most newsworthy angle is what might happen next, skip it.
 - You must be able to cite a specific headline, outlet, and publication date for each item. If you cannot name all three from your search results, do not include the item.
 - Every specific claim — context, causation, timeframes, relationships — must come from your search results. Do not infer or complete sentences with plausible-sounding context. If information is not in your results, omit it.
 - If the most recent independent source you can find for a story is more than 30 days old, it is not eligible regardless of how the headline is phrased.
