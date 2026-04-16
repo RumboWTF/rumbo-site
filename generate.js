@@ -138,7 +138,7 @@ async function callClaude(prompt, deduplicationHint = "") {
   const searchResponse = await Promise.race([
     client.messages.create({
       model: "claude-sonnet-4-5",
-      max_tokens: 3000,
+      max_tokens: 2500,
       tools: [{ type: "web_search_20250305", name: "web_search" }],
       messages: [{ role: "user", content: searchPrompt }],
     }),
@@ -189,7 +189,7 @@ async function callClaudeSinglePass(prompt, regionName = "regional") {
   const searchResponse = await Promise.race([
     client.messages.create({
       model: "claude-sonnet-4-5",
-      max_tokens: 2000,
+      max_tokens: 1500,
       tools: [{ type: "web_search_20250305", name: "web_search" }],
       messages: [{ role: "user", content: searchPrompt }],
     }),
