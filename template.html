@@ -210,7 +210,9 @@
     if(isPlaying){stopSpeech();return;}
     var items = document.querySelectorAll('.item');
     if(items.length === 0) return;
-    var text = '';
+    var dateLabel = document.getElementById('meta-date');
+    var dateText = dateLabel ? dateLabel.textContent.replace(/^[^:]+:\s*/, '').trim() : '';
+    var text = 'The Rumbo brief' + (dateText ? ', ' + dateText : '') + '.\n\n';
     items.forEach(function(item){
       var geo = item.querySelector('.geo-pill');
       var head = item.querySelector('.item-head');
@@ -220,6 +222,7 @@
       if(body) text += body.textContent.trim() + ' ';
       text += '\n\n';
     });
+    text += 'That was today\'s Rumbo. Thank you for listening.';
     var utter = new SpeechSynthesisUtterance(text);
     utter.rate = 1.0;
     utter.pitch = 1.0;
