@@ -18,6 +18,10 @@
     .meta-bar{background:#1a1a18;border-top:1px solid #2e2e2c;padding:5px 32px 8px;display:flex;justify-content:space-between;}
     .meta-date{font-family:'Courier New',monospace;font-size:11px;color:#b0aa9e ;letter-spacing:1px;}
     .meta-count{font-family:'Courier New',monospace;font-size:11px;color:#b0aa9e ;letter-spacing:1px;}
+    .meta-right{display:flex;align-items:center;gap:12px;}
+    .play-btn{background:none;border:1px solid #444;color:#c8a84a;font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;padding:3px 9px;border-radius:3px;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all 0.15s;}
+    .play-btn:hover{border-color:#c8a84a;background:#2a2410;}
+    .play-btn .icon{font-size:9px;}
     .feed{max-width:700px;margin:0 auto;padding:36px 24px 48px;}
     .item{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #e8e4dc;align-items:flex-start;}
     .item:last-child{border-bottom:none;}
@@ -56,6 +60,8 @@
       nav,.meta-bar,footer{padding-left:16px;padding-right:16px;}
       .feed{padding-left:16px;padding-right:16px;}
       footer{flex-direction:column;align-items:flex-start;}
+      .meta-right{gap:8px;}
+      .play-btn{padding:2px 7px;font-size:9px;}
     }
   </style>
 </head>
@@ -70,7 +76,10 @@
 </nav>
 <div class="meta-bar">
   <span class="meta-date" id="meta-date">{{META_UPDATED_LABEL}} 21 March 2026</span>
-  <span class="meta-count">5 {{ITEMS_SUFFIX}}</span>
+  <span class="meta-right">
+    <button class="play-btn" id="playBtn" onclick="toggleSpeech()" aria-label="Read aloud"><span class="icon" id="playIcon">&#9654;</span><span id="playLabel">Listen</span></button>
+    <span class="meta-count">5 {{ITEMS_SUFFIX}}</span>
+  </span>
 </div>
 
 <!-- FEED:START -->
@@ -193,6 +202,41 @@
       document.getElementById('meta-date').textContent = '{{META_UPDATED_LABEL}} ' + local;
     } catch(e) {}
   })();
+
+  // Read-aloud: uses browser's built-in speechSynthesis
+  var isPlaying = false;
+  function toggleSpeech(){
+    if(!('speechSynthesis' in window)){alert('Read-aloud not supported in this browser.');return;}
+    if(isPlaying){stopSpeech();return;}
+    var items = document.querySelectorAll('.item');
+    if(items.length === 0) return;
+    var text = '';
+    items.forEach(function(item){
+      var geo = item.querySelector('.geo-pill');
+      var head = item.querySelector('.item-head');
+      var body = item.querySelector('.item-text');
+      if(geo) text += geo.textContent.trim() + '. ';
+      if(head) text += head.textContent.trim() + '. ';
+      if(body) text += body.textContent.trim() + ' ';
+      text += '\n\n';
+    });
+    var utter = new SpeechSynthesisUtterance(text);
+    utter.rate = 1.0;
+    utter.pitch = 1.0;
+    utter.onend = stopSpeech;
+    utter.onerror = stopSpeech;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utter);
+    isPlaying = true;
+    document.getElementById('playIcon').innerHTML = '&#9632;';
+    document.getElementById('playLabel').textContent = 'Stop';
+  }
+  function stopSpeech(){
+    window.speechSynthesis.cancel();
+    isPlaying = false;
+    document.getElementById('playIcon').innerHTML = '&#9654;';
+    document.getElementById('playLabel').textContent = 'Listen';
+  }
 </script>
 </body>
 </html>
