@@ -1,40 +1,38 @@
 {
-  "generated_at": "2026-04-17T12:00:00Z",
+  "generated_at": "2026-04-17T18:30:00Z",
   "sources": [
     "Reuters",
     "Al Jazeera",
+    "BBC",
+    "Bloomberg",
     "Associated Press",
     "The Guardian",
-    "AFP",
-    "Voice of America",
-    "Xinhua",
-    "People's Daily",
-    "Bloomberg",
-    "BBC"
+    "Financial Times",
+    "South China Morning Post"
   ],
   "items": [
     {
-      "headline": "Peru arrests electoral chief as presidential vote chaos forces unprecedented second day of polling",
-      "body": "Peruvian authorities arrested the head of the electoral authority on April 13, 2026, one day after severe logistical failures prevented 63,000 people from voting and forced polling stations to reopen for a second day, with right-wing candidate Rafael López Aliaga organizing demonstrations demanding invalidation and facing criminal charges for alleged incitement. The crisis extends Peru's extraordinary political instability in which the country has cycled through nine presidents in just ten years, with roughly 69 percent of respondents saying the current crisis rivals the bloody civil conflict of the 1990s and hyperinflation.",
-      "geo": "Americas",
+      "headline": "Hungary opposition wins two-thirds majority ending Viktor Orbán's 16-year rule",
+      "body": "Péter Magyar's Tisza party secured 138 seats in Hungary's 199-seat parliament on April 12, removing Orbán who had blocked EU aid to Ukraine and served as Putin's main ally in Europe. The result clears the way for a 90 billion euro loan to Ukraine and ends Hungary's adversarial role inside the European Union.",
+      "geo": "Europe",
       "sources": 3
     },
     {
-      "headline": "Benin finance minister wins presidential election with over 94 percent after opposition locked out of ballot",
-      "body": "Finance minister Romuald Wadagni won Benin's presidential election on April 12, 2026, with over 94 percent of the vote after opposition candidates struggled to meet a requirement for endorsements from 15 percent of all parliamentarians and mayors combined, leaving the governing coalition holding every parliamentary seat. The incoming president inherits a worsening security crisis in the north where an armed rebellion from al-Qaeda affiliate Jama'at Nusrat al-Islam wal-Muslimin killed 54 soldiers last year and 15 more in March.",
+      "headline": "Two school shootings in Turkey within 28 hours kill at least 10 and trigger nationwide teacher strike",
+      "body": "A 14-year-old killed nine people at a secondary school in Kahramanmaraş on April 15, one day after a 19-year-old injured 16 at a vocational school in Şanlıurfa Province. Teacher unions launched a three-day nationwide strike on April 15 as authorities arrested dozens of students over social media posts suggesting copycat attacks.",
+      "geo": "Europe",
+      "sources": 4
+    },
+    {
+      "headline": "China eliminates all tariffs on imports from 53 African countries starting May 1",
+      "body": "The tariff removal includes Nigeria, Africa's largest economy, and takes effect May 1, 2026. The policy gives African exporters duty-free access to the world's second-largest economy and a chance to reposition in global supply chains.",
       "geo": "Africa",
       "sources": 2
     },
     {
-      "headline": "Indonesia signs defense pact with United States hours after Moscow energy deal in same-day balancing act",
-      "body": "Indonesian President Prabowo Subianto met Russian President Vladimir Putin in Moscow on April 13, 2026, agreeing to purchase Russian oil to offset Middle East supply disruptions, then announced a new defense cooperation agreement with the United States the same day covering military modernization and potential U.S. military aircraft access to Indonesian airspace. The simultaneous outreach to both powers demonstrates Indonesia's attempt to maintain strategic autonomy while securing energy supplies for its population of over 270 million amid global fuel price spikes.",
-      "geo": "Asia",
-      "sources": 4
-    },
-    {
-      "headline": "Pakistan declares open war with Afghanistan as Taliban drone strikes reach within 10 kilometers of capital",
-      "body": "Pakistan's Defense Ministry said the country now considers itself in an open war with Afghanistan on April 16, 2026, after Taliban forces conducted 12 drone strikes between February 27 and April 3, including one that reached Rawalpindi just 10 kilometers from Islamabad, following Pakistani airstrikes in three Afghan provinces in late February. The escalating conflict has displaced over 100,000 people and caused hundreds of civilian casualties, marking a dramatic breakdown in relations between the two neighbors.",
-      "geo": "Asia",
+      "headline": "Pope visits Cameroon conflict zone as separatists announce three-day ceasefire",
+      "body": "Pope Leo XIV preached in Bamenda in northwest Cameroon on April 16 as separatist forces suspended hostilities from April 15-17 to allow safe movement during the visit. The region has faced years of deadly fighting between separatists and government forces in what observers call one of the world's most neglected conflicts.",
+      "geo": "Africa",
       "sources": 3
     }
   ]

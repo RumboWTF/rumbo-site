@@ -18,6 +18,10 @@
     .meta-bar{background:#1a1a18;border-top:1px solid #2e2e2c;padding:5px 32px 8px;display:flex;justify-content:space-between;}
     .meta-date{font-family:'Courier New',monospace;font-size:11px;color:#b0aa9e ;letter-spacing:1px;}
     .meta-count{font-family:'Courier New',monospace;font-size:11px;color:#b0aa9e ;letter-spacing:1px;}
+    .meta-right{display:flex;align-items:center;gap:12px;}
+    .play-btn{background:none;border:1px solid #444;color:#c8a84a;font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;padding:3px 9px;border-radius:3px;cursor:pointer;display:flex;align-items:center;gap:5px;transition:all 0.15s;}
+    .play-btn:hover{border-color:#c8a84a;background:#2a2410;}
+    .play-btn .icon{font-size:9px;}
     .feed{max-width:700px;margin:0 auto;padding:36px 24px 48px;}
     .item{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #e8e4dc;align-items:flex-start;}
     .item:last-child{border-bottom:none;}
@@ -56,6 +60,8 @@
       nav,.meta-bar,footer{padding-left:16px;padding-right:16px;}
       .feed{padding-left:16px;padding-right:16px;}
       footer{flex-direction:column;align-items:flex-start;}
+      .meta-right{gap:8px;}
+      .play-btn{padding:2px 7px;font-size:9px;}
     }
   </style>
 </head>
@@ -70,7 +76,10 @@
 </nav>
 <div class="meta-bar">
   <span class="meta-date" id="meta-date">Edition: 17 April 2026</span>
-  <span class="meta-count">4 signals</span>
+  <span class="meta-right">
+    <button class="play-btn" id="playBtn" onclick="toggleSpeech()" aria-label="Read aloud"><span class="icon" id="playIcon">&#9654;</span><span id="playLabel">Listen</span></button>
+    <span class="meta-count">4 signals</span>
+  </span>
 </div>
 
 <!-- FEED:START -->
@@ -78,11 +87,11 @@
   <div class="item">
     <div class="dot dot-global"></div>
     <div class="item-body">
-      <div class="item-head">Peru arrests electoral chief as presidential vote chaos forces unprecedented second day of polling</div>
-      <div class="item-text">Peruvian authorities arrested the head of the electoral authority on April 13, 2026, one day after severe logistical failures prevented 63,000 people from voting and forced polling stations to reopen for a second day, with right-wing candidate Rafael López Aliaga organizing demonstrations demanding invalidation and facing criminal charges for alleged incitement. The crisis extends Peru's extraordinary political instability in which the country has cycled through nine presidents in just ten years, with roughly 69 percent of respondents saying the current crisis rivals the bloody civil conflict of the 1990s and hyperinflation.</div>
+      <div class="item-head">Hungary opposition wins two-thirds majority ending Viktor Orbán's 16-year rule</div>
+      <div class="item-text">Péter Magyar's Tisza party secured 138 seats in Hungary's 199-seat parliament on April 12, removing Orbán who had blocked EU aid to Ukraine and served as Putin's main ally in Europe. The result clears the way for a 90 billion euro loan to Ukraine and ends Hungary's adversarial role inside the European Union.</div>
       <div class="item-foot">
-        <span class="geo-pill">Americas</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Peru%20arrests%20electoral%20chief%20as%20presidential%20vote%20chaos%20forces%20unprecedented%20second%20day%20of%20polling" target="_blank">↗</a>
+        <span class="geo-pill">Europe</span>
+        <a class="search-link" href="https://duckduckgo.com/?q=Hungary%20opposition%20wins%20two-thirds%20majority%20ending%20Viktor%20Orb%C3%A1n's%2016-year%20rule" target="_blank">↗</a>
         <span class="source-pill">~3 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.</span></span>
       </div>
     </div>
@@ -90,23 +99,11 @@
   <div class="item">
     <div class="dot dot-global"></div>
     <div class="item-body">
-      <div class="item-head">Benin finance minister wins presidential election with over 94 percent after opposition locked out of ballot</div>
-      <div class="item-text">Finance minister Romuald Wadagni won Benin's presidential election on April 12, 2026, with over 94 percent of the vote after opposition candidates struggled to meet a requirement for endorsements from 15 percent of all parliamentarians and mayors combined, leaving the governing coalition holding every parliamentary seat. The incoming president inherits a worsening security crisis in the north where an armed rebellion from al-Qaeda affiliate Jama'at Nusrat al-Islam wal-Muslimin killed 54 soldiers last year and 15 more in March.</div>
+      <div class="item-head">Two school shootings in Turkey within 28 hours kill at least 10 and trigger nationwide teacher strike</div>
+      <div class="item-text">A 14-year-old killed nine people at a secondary school in Kahramanmaraş on April 15, one day after a 19-year-old injured 16 at a vocational school in Şanlıurfa Province. Teacher unions launched a three-day nationwide strike on April 15 as authorities arrested dozens of students over social media posts suggesting copycat attacks.</div>
       <div class="item-foot">
-        <span class="geo-pill">Africa</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Benin%20finance%20minister%20wins%20presidential%20election%20with%20over%2094%20percent%20after%20opposition%20locked%20out%20of%20ballot" target="_blank">↗</a>
-        <span class="source-pill">~2 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.</span></span>
-      </div>
-    </div>
-  </div>
-  <div class="item">
-    <div class="dot dot-global"></div>
-    <div class="item-body">
-      <div class="item-head">Indonesia signs defense pact with United States hours after Moscow energy deal in same-day balancing act</div>
-      <div class="item-text">Indonesian President Prabowo Subianto met Russian President Vladimir Putin in Moscow on April 13, 2026, agreeing to purchase Russian oil to offset Middle East supply disruptions, then announced a new defense cooperation agreement with the United States the same day covering military modernization and potential U.S. military aircraft access to Indonesian airspace. The simultaneous outreach to both powers demonstrates Indonesia's attempt to maintain strategic autonomy while securing energy supplies for its population of over 270 million amid global fuel price spikes.</div>
-      <div class="item-foot">
-        <span class="geo-pill">Asia</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Indonesia%20signs%20defense%20pact%20with%20United%20States%20hours%20after%20Moscow%20energy%20deal%20in%20same-day%20balancing%20act" target="_blank">↗</a>
+        <span class="geo-pill">Europe</span>
+        <a class="search-link" href="https://duckduckgo.com/?q=Two%20school%20shootings%20in%20Turkey%20within%2028%20hours%20kill%20at%20least%2010%20and%20trigger%20nationwide%20teacher%20strike" target="_blank">↗</a>
         <span class="source-pill">~4 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.</span></span>
       </div>
     </div>
@@ -114,11 +111,23 @@
   <div class="item">
     <div class="dot dot-global"></div>
     <div class="item-body">
-      <div class="item-head">Pakistan declares open war with Afghanistan as Taliban drone strikes reach within 10 kilometers of capital</div>
-      <div class="item-text">Pakistan's Defense Ministry said the country now considers itself in an open war with Afghanistan on April 16, 2026, after Taliban forces conducted 12 drone strikes between February 27 and April 3, including one that reached Rawalpindi just 10 kilometers from Islamabad, following Pakistani airstrikes in three Afghan provinces in late February. The escalating conflict has displaced over 100,000 people and caused hundreds of civilian casualties, marking a dramatic breakdown in relations between the two neighbors.</div>
+      <div class="item-head">China eliminates all tariffs on imports from 53 African countries starting May 1</div>
+      <div class="item-text">The tariff removal includes Nigeria, Africa's largest economy, and takes effect May 1, 2026. The policy gives African exporters duty-free access to the world's second-largest economy and a chance to reposition in global supply chains.</div>
       <div class="item-foot">
-        <span class="geo-pill">Asia</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Pakistan%20declares%20open%20war%20with%20Afghanistan%20as%20Taliban%20drone%20strikes%20reach%20within%2010%20kilometers%20of%20capital" target="_blank">↗</a>
+        <span class="geo-pill">Africa</span>
+        <a class="search-link" href="https://duckduckgo.com/?q=China%20eliminates%20all%20tariffs%20on%20imports%20from%2053%20African%20countries%20starting%20May%201" target="_blank">↗</a>
+        <span class="source-pill">~2 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="dot dot-global"></div>
+    <div class="item-body">
+      <div class="item-head">Pope visits Cameroon conflict zone as separatists announce three-day ceasefire</div>
+      <div class="item-text">Pope Leo XIV preached in Bamenda in northwest Cameroon on April 16 as separatist forces suspended hostilities from April 15-17 to allow safe movement during the visit. The region has faced years of deadly fighting between separatists and government forces in what observers call one of the world's most neglected conflicts.</div>
+      <div class="item-foot">
+        <span class="geo-pill">Africa</span>
+        <a class="search-link" href="https://duckduckgo.com/?q=Pope%20visits%20Cameroon%20conflict%20zone%20as%20separatists%20announce%20three-day%20ceasefire" target="_blank">↗</a>
         <span class="source-pill">~3 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.</span></span>
       </div>
     </div>
@@ -188,13 +197,51 @@
   // Localise the update timestamp to the reader's timezone
   (function(){
     try {
-      var utc = new Date('2026-04-17T04:02:14.333Z');
+      var utc = new Date('2026-04-17T15:45:07.413Z');
       var opts = {day:'numeric', month:'long', year:'numeric'};
       var jsLocale='en-GB';
       var local = utc.toLocaleString(jsLocale, opts);
       document.getElementById('meta-date').textContent = 'Edition: ' + local;
     } catch(e) {}
   })();
+
+  // Read-aloud: uses browser's built-in speechSynthesis
+  var isPlaying = false;
+  function toggleSpeech(){
+    if(!('speechSynthesis' in window)){alert('Read-aloud not supported in this browser.');return;}
+    if(isPlaying){stopSpeech();return;}
+    var items = document.querySelectorAll('.item');
+    if(items.length === 0) return;
+    var dateLabel = document.getElementById('meta-date');
+    var dateText = dateLabel ? dateLabel.textContent.replace(/^[^:]+:\s*/, '').trim() : '';
+    var text = 'The Rumbo brief' + (dateText ? ', ' + dateText : '') + '.\n\n';
+    items.forEach(function(item){
+      var geo = item.querySelector('.geo-pill');
+      var head = item.querySelector('.item-head');
+      var body = item.querySelector('.item-text');
+      if(geo) text += geo.textContent.trim() + '. ';
+      if(head) text += head.textContent.trim() + '. ';
+      if(body) text += body.textContent.trim() + ' ';
+      text += '\n\n';
+    });
+    text += 'That was today\'s Rumbo. Thank you for listening.';
+    var utter = new SpeechSynthesisUtterance(text);
+    utter.rate = 1.0;
+    utter.pitch = 1.0;
+    utter.onend = stopSpeech;
+    utter.onerror = stopSpeech;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utter);
+    isPlaying = true;
+    document.getElementById('playIcon').innerHTML = '&#9632;';
+    document.getElementById('playLabel').textContent = 'Stop';
+  }
+  function stopSpeech(){
+    window.speechSynthesis.cancel();
+    isPlaying = false;
+    document.getElementById('playIcon').innerHTML = '&#9654;';
+    document.getElementById('playLabel').textContent = 'Listen';
+  }
 </script>
 </body>
 </html>
