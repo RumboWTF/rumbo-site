@@ -77,7 +77,8 @@
 <div class="meta-bar">
   <span class="meta-date" id="meta-date">{{META_UPDATED_LABEL}} 21 March 2026</span>
   <span class="meta-right">
-    <button class="play-btn" id="playBtn" onclick="toggleSpeech()" aria-label="Read aloud"><span class="icon" id="playIcon">&#9654;</span><span id="playLabel">Listen</span></button>
+    <button class="play-btn" id="playBtn" onclick="togglePlayPause()" aria-label="Read aloud"><span class="icon" id="playIcon">&#9654;</span><span id="playLabel">Listen</span></button>
+    <button class="play-btn stop-btn" id="stopBtn" onclick="stopSpeech()" aria-label="Stop" style="display:none;"><span class="icon">&#10005;</span></button>
     <span class="meta-count">5 {{ITEMS_SUFFIX}}</span>
   </span>
 </div>
@@ -204,10 +205,15 @@
   })();
 
   // Read-aloud: uses browser's built-in speechSynthesis
-  var isPlaying = false;
-  function toggleSpeech(){
+  // State: 'idle' | 'playing' | 'paused'
+  var speechState = 'idle';
+  function togglePlayPause(){
     if(!('speechSynthesis' in window)){alert('Read-aloud not supported in this browser.');return;}
-    if(isPlaying){stopSpeech();return;}
+    if(speechState === 'playing'){ pauseSpeech(); return; }
+    if(speechState === 'paused'){ resumeSpeech(); return; }
+    startSpeech();
+  }
+  function startSpeech(){
     var items = document.querySelectorAll('.item');
     if(items.length === 0) return;
     var dateLabel = document.getElementById('meta-date');
@@ -230,15 +236,28 @@
     utter.onerror = stopSpeech;
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(utter);
-    isPlaying = true;
-    document.getElementById('playIcon').innerHTML = '&#9632;';
-    document.getElementById('playLabel').textContent = 'Stop';
+    setState('playing');
+  }
+  function pauseSpeech(){
+    window.speechSynthesis.pause();
+    setState('paused');
+  }
+  function resumeSpeech(){
+    window.speechSynthesis.resume();
+    setState('playing');
   }
   function stopSpeech(){
     window.speechSynthesis.cancel();
-    isPlaying = false;
-    document.getElementById('playIcon').innerHTML = '&#9654;';
-    document.getElementById('playLabel').textContent = 'Listen';
+    setState('idle');
+  }
+  function setState(s){
+    speechState = s;
+    var icon = document.getElementById('playIcon');
+    var label = document.getElementById('playLabel');
+    var stopBtn = document.getElementById('stopBtn');
+    if(s === 'playing'){ icon.innerHTML = '&#10074;&#10074;'; label.textContent = 'Pause'; stopBtn.style.display = ''; }
+    else if(s === 'paused'){ icon.innerHTML = '&#9654;'; label.textContent = 'Resume'; stopBtn.style.display = ''; }
+    else { icon.innerHTML = '&#9654;'; label.textContent = 'Listen'; stopBtn.style.display = 'none'; }
   }
 </script>
 </body>
