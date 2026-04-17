@@ -408,7 +408,7 @@ async function main() {
     const combinedHeadlines = [...new Set([...allHeadlines, ...historyHeadlines])];
 
     if (combinedHeadlines.length > 0) {
-      previousContext = `\nThe following stories have appeared in recent editions. Do not repeat the same topics, angles, or entities — find what is genuinely new. Do not return to the same ongoing conflict or country situation even under a new angle, if it appeared in any of these recent editions:\n${combinedHeadlines.map(h => `- ${h}`).join("\n")}\n`;
+      previousContext = `\nThe following stories appeared in recent editions:\n${combinedHeadlines.map(h => `- ${h}`).join("\n")}\n\nSelection must demonstrate net-new information. If the underlying story appeared in the list above, the new development must be substantial enough to stand on its own without the prior context. A fresh angle on the same situation does not qualify — the update itself must earn the spot on its own merits.\n`;
     }
 
     console.log(`Loaded deduplication context: ${combinedHeadlines.length} headlines from last ${recentHistory.length + 1} runs.`);
