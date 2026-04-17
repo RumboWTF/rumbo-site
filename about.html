@@ -26,7 +26,7 @@
     .rumbo-tip .tip-text{display:none;position:absolute;bottom:20px;left:0;background:#1a1a18;color:#c8c4bc;font-family:'Courier New',monospace;font-size:10px;line-height:1.5;padding:7px 11px;border-radius:4px;white-space:nowrap;z-index:10;pointer-events:none;}
     .rumbo-tip:hover .tip-text{display:block;}
     .prompt-block{margin-top:0;padding-top:12px;}
-    .prompt-toggle{font-family:'Courier New',monospace;font-size:12px;letter-spacing:1px;color:#7a5c0a;cursor:pointer;border:none;background:none;padding:0;display:flex;align-items:center;gap:8px;}
+    .prompt-toggle{font-family:'Courier New',monospace;font-size:12px;letter-spacing:1px;color:#7a5c0a;cursor:pointer;border:none;background:none;padding:0;display:flex;align-items:flex-start;gap:8px;justify-content:flex-start;text-align:left;}.prompt-toggle .arrow{margin-top:4px;flex-shrink:0;}
     .prompt-toggle:hover{color:#5a4008;}
     .arrow{display:inline-block;font-size:8px;transition:transform 0.2s;}
     .prompt-toggle.open .arrow{transform:rotate(90deg);}
@@ -91,9 +91,9 @@
 
   <div style="margin-top:24px;">
   <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-    <li><a href="signup.html" class="prompt-toggle"><span class="arrow" style="transform:none;">&#9658;</span>&nbsp;Get it in your inbox &mdash; sign up for the newsletter</a></li>
+    <li><a href="signup.html" class="prompt-toggle"><span class="arrow" style="transform:none;">&#9658;</span>&nbsp;Sign up for the newsletter</a></li>
     <li>
-      <button class="prompt-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('visible')"><span class="arrow">&#9658;</span>&nbsp;View the prompt used to generate each edition</button>
+      <button class="prompt-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('visible')"><span class="arrow">&#9658;</span>&nbsp;View the daily prompt</button>
       <div class="prompt-text">You are the editorial engine for Rumbo.wtf, a world intelligence brief. Search the web for the most consequential global developments from the last 72 hours. Search broadly — English-language sources overrepresent certain regions, so actively seek consequential developments that may not surface first in default results.
 
 SELECTION
@@ -132,7 +132,7 @@ WRITING
 <b>4 April 2026:</b> Indonesia earthquake item lacking real consequence. Consider tightening of prompt re natural disasters.</div>
 </div>
     </li>
-    <li style="list-style:none;margin-top:10px;"><a href="pitch.html" class="prompt-toggle"><span class="arrow" style="transform:none;">&#9658;</span>&nbsp;What and why &mdash; the thinking behind Rumbo</a></li>
+    <li style="list-style:none;margin-top:10px;"><a href="pitch.html" class="prompt-toggle"><span class="arrow" style="transform:none;">&#9658;</span>&nbsp;What and why</a></li>
   </ul>
 </div>
 </div>
