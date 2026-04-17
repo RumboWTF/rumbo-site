@@ -1,74 +1,69 @@
 {
-  "date": "16 April 2026",
+  "date": "17 April 2026",
   "global": {
-    "generated_at": "2026-04-16T18:00:00Z",
+    "generated_at": "2026-04-17T12:00:00Z",
     "sources": [
-      "Al Jazeera",
-      "Financial Times",
       "Reuters",
+      "Al Jazeera",
       "Associated Press",
-      "BBC",
-      "Philippine Daily Inquirer",
-      "Yale Humanitarian Research Lab"
+      "The Guardian",
+      "AFP",
+      "Voice of America",
+      "Xinhua",
+      "People's Daily",
+      "Bloomberg",
+      "BBC"
     ],
     "items": [
       {
-        "headline": "Philippines declares national energy emergency as oil reserves drop to 45 days",
-        "body": "The government declared a state of emergency after the Iran war disrupted imports from the Middle East, which supplies 98 percent of the country's oil. Nearly 400 gas stations have closed and 40,000 workers are stranded after deployment bans to Gulf states.",
-        "geo": "Asia",
+        "headline": "Peru arrests electoral chief as presidential vote chaos forces unprecedented second day of polling",
+        "body": "Peruvian authorities arrested the head of the electoral authority on April 13, 2026, one day after severe logistical failures prevented 63,000 people from voting and forced polling stations to reopen for a second day, with right-wing candidate Rafael López Aliaga organizing demonstrations demanding invalidation and facing criminal charges for alleged incitement. The crisis extends Peru's extraordinary political instability in which the country has cycled through nine presidents in just ten years, with roughly 69 percent of respondents saying the current crisis rivals the bloody civil conflict of the 1990s and hyperinflation.",
+        "geo": "Americas",
         "sources": 3
       },
       {
-        "headline": "China installs floating barrier across entrance to Scarborough Shoal",
-        "body": "Satellite images show a 352-meter barrier blocking the disputed reef where Philippine fishermen operate under Chinese coast guard pressure. Diplomats warn China may be exploiting American focus on Iran to escalate South China Sea territorial claims.",
-        "geo": "Asia",
+        "headline": "Benin finance minister wins presidential election with over 94 percent after opposition locked out of ballot",
+        "body": "Finance minister Romuald Wadagni won Benin's presidential election on April 12, 2026, with over 94 percent of the vote after opposition candidates struggled to meet a requirement for endorsements from 15 percent of all parliamentarians and mayors combined, leaving the governing coalition holding every parliamentary seat. The incoming president inherits a worsening security crisis in the north where an armed rebellion from al-Qaeda affiliate Jama'at Nusrat al-Islam wal-Muslimin killed 54 soldiers last year and 15 more in March.",
+        "geo": "Africa",
         "sources": 2
       },
       {
-        "headline": "Sudan civil war enters fourth year as UN official calls it abandoned crisis",
-        "body": "The conflict between government forces and the Rapid Support Forces has displaced a quarter of the population and left 19 million facing acute hunger. New evidence shows Ethiopia is providing military assistance to the paramilitaries despite official denials.",
-        "geo": "Africa",
+        "headline": "Indonesia signs defense pact with United States hours after Moscow energy deal in same-day balancing act",
+        "body": "Indonesian President Prabowo Subianto met Russian President Vladimir Putin in Moscow on April 13, 2026, agreeing to purchase Russian oil to offset Middle East supply disruptions, then announced a new defense cooperation agreement with the United States the same day covering military modernization and potential U.S. military aircraft access to Indonesian airspace. The simultaneous outreach to both powers demonstrates Indonesia's attempt to maintain strategic autonomy while securing energy supplies for its population of over 270 million amid global fuel price spikes.",
+        "geo": "Asia",
         "sources": 4
       },
       {
-        "headline": "IMF slashes Middle East growth forecast by nearly three percentage points",
-        "body": "The region's expected growth dropped to 1.1 percent as oil exporters face Iran war fallout and multiple Gulf economies are now projected to contract. Iran's economy is forecast to shrink over six percent this fiscal year.",
-        "geo": "Global",
-        "sources": 2
+        "headline": "Pakistan declares open war with Afghanistan as Taliban drone strikes reach within 10 kilometers of capital",
+        "body": "Pakistan's Defense Ministry said the country now considers itself in an open war with Afghanistan on April 16, 2026, after Taliban forces conducted 12 drone strikes between February 27 and April 3, including one that reached Rawalpindi just 10 kilometers from Islamabad, following Pakistani airstrikes in three Afghan provinces in late February. The escalating conflict has displaced over 100,000 people and caused hundreds of civilian casualties, marking a dramatic breakdown in relations between the two neighbors.",
+        "geo": "Asia",
+        "sources": 3
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Spain approves regularization program granting legal status to hundreds of thousands of undocumented migrants",
-        "body": "Applicants must prove five months of residency and have no criminal record to receive one-year residence and work permits. The program contrasts sharply with tightening immigration policies across Europe as Spain faces labor shortages.",
+        "headline": "Spain approves amnesty allowing 500,000 undocumented immigrants to apply for legal status starting April 20",
+        "body": "Spain's government passed a decree on April 15, 2026, enabling an estimated 500,000 undocumented immigrants who arrived before January 1 and have lived in the country for at least five months to apply for one-year residency and work permits, with applications opening April 20 and closing June 30. The measure makes Spain an outlier in Europe amid rising anti-immigration sentiment across the continent and represents one of the largest legalization programs in recent European history designed to address the country's aging workforce.",
         "geo": "Spain",
         "sources": 3
       }
     ],
     "no": [
       {
-        "headline": "Norway signs defense agreement with Ukraine establishing bilateral drone production in both countries",
-        "body": "Ukraine will produce Norwegian-designed drones while Norway manufactures Ukrainian models under license, reversing the traditional donor-recipient dynamic. Norwegian forces will receive combat training from Ukrainian instructors who have operated drones in Europe's most intensive unmanned warfare environment.",
+        "headline": "Norway's crude oil export revenues reach record high in March as Iran war closes Strait of Hormuz",
+        "body": "Norway's crude oil exports hit 57.4 billion kroner in March 2026, up 67.9 percent year-over-year, with oil prices averaging 1,014 kroner per barrel as the closure of the Strait of Hormuz created what Statistics Norway called a significant supply shock. The windfall positions Norway as Europe's critical energy anchor during Middle Eastern instability, with the Scandinavian country now Europe's largest oil and gas producer excluding Russia absorbing demand from disrupted global markets.",
         "geo": "Norway",
-        "sources": 4
-      }
-    ],
-    "uk": [
-      {
-        "headline": "IMF cuts UK growth forecast more than any major economy as Iran war drives inflation",
-        "body": "Britain's projected growth fell to less than one percent as fuel import costs surged sharply. Chancellor Rachel Reeves publicly criticized the US conflict as a mistake without a clear exit plan.",
-        "geo": "United Kingdom",
-        "sources": 4
+        "sources": 2
       }
     ],
     "nl": [
       {
-        "headline": "Netherlands refuses to join U.S. naval blockade of Strait of Hormuz",
-        "body": "Defense Minister Yeşilgöz announced Dutch forces will not participate in the American operation, calling it a worrying escalation. The government is instead coordinating with European allies and 10 other nations to restore free transit through the strategic waterway.",
+        "headline": "Dutch privacy chief warns U.S. takeover of DigiD provider could allow American authorities to shut down national digital identity system",
+        "body": "Pieter van Oordt, chief privacy officer at Logius, publicly warned on April 16, 2026, that a proposed U.S. acquisition of Solvinity, which manages the DigiD system used by 17 million Dutch residents for government services, hospitals, and pension funds, would place the system under American jurisdiction and enable U.S. agencies to request data or block access through sanctions. The unprecedented public challenge by a senior official, who is now preparing legal action after internal escalations failed, comes as 87 percent of DigiD users surveyed said they would stop using the system if it came under U.S. ownership.",
         "geo": "Netherlands",
-        "sources": 3
+        "sources": 2
       }
     ]
   }

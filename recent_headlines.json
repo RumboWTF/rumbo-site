@@ -1,5 +1,14 @@
 [
   {
+    "date": "17 April 2026",
+    "headlines": [
+      "Peru arrests electoral chief as presidential vote chaos forces unprecedented second day of polling",
+      "Benin finance minister wins presidential election with over 94 percent after opposition locked out of ballot",
+      "Indonesia signs defense pact with United States hours after Moscow energy deal in same-day balancing act",
+      "Pakistan declares open war with Afghanistan as Taliban drone strikes reach within 10 kilometers of capital"
+    ]
+  },
+  {
     "date": "16 April 2026",
     "headlines": [
       "Philippines declares national energy emergency as oil reserves drop to 45 days",
@@ -15,15 +24,6 @@
       "Libya approves unified national budget for first time in 13 years",
       "China Evergrande founder pleads guilty to fraud charges after two-day trial",
       "Maldives voters reject referendum to align presidential and parliamentary elections"
-    ]
-  },
-  {
-    "date": "14 April 2026",
-    "headlines": [
-      "Hungary opposition wins two-thirds majority ending Orbán's 16-year rule",
-      "United States begins naval blockade of Iran and Strait of Hormuz",
-      "China tells Taiwan opposition leader independence will not be tolerated",
-      "Uganda president wins seventh term as opposition leader goes into hiding"
     ]
   }
 ]
