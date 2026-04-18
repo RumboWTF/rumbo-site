@@ -36,6 +36,17 @@
     .geo-pill.regional{background:#f0ede6;border:1px solid #d0ccc4;color:#555;}
     .source-pill{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;padding:3px 9px;border-radius:3px;background:#ede9e0;color:#888;cursor:default;position:relative;}.source-pill .src-tip{display:none;position:absolute;bottom:22px;left:0;background:#1a1a18;color:#c8c4bc;font-family:'Courier New',monospace;font-size:10px;line-height:1.5;padding:6px 10px;border-radius:4px;white-space:nowrap;z-index:10;pointer-events:none;width:280px;white-space:normal;}.source-pill:hover .src-tip{display:block;}.search-link{font-family:'Courier New',monospace;font-size:13px;color:#555;line-height:1;text-decoration:none;}
     .search-link:hover{color:#7a5c0a;}
+    .meanwhile{max-width:700px;margin:0 auto;padding:24px 24px 48px;border-top:1px solid #e8e4dc;}
+    .mw-title{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#888;text-transform:uppercase;margin-bottom:14px;}
+    .mw-item{display:flex;align-items:flex-start;gap:10px;padding:8px 0;font-size:14px;color:#3a3a38;line-height:1.55;}
+    .mw-tag{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.2px;padding:3px 8px;border-radius:3px;text-transform:uppercase;flex-shrink:0;margin-top:2px;}
+    .mw-culture{background:#f0e8d8;border:1px solid #d4c68a;color:#6b5a20;}
+    .mw-science{background:#e2ebe0;border:1px solid #b8c9b2;color:#3f5838;}
+    .mw-wellbeing{background:#ede0e0;border:1px solid #c9b0b0;color:#6a3f3f;}
+    .mw-worldviews{background:#dfe3ed;border:1px solid #a8b2c9;color:#3a4566;}
+    .mw-text{flex:1;}
+    .mw-link{font-family:'Courier New',monospace;font-size:13px;color:#888;text-decoration:none;line-height:1;flex-shrink:0;margin-top:2px;}
+    .mw-link:hover{color:#7a5c0a;}
     footer{background:#1a1a18;padding:20px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
     .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#b0aa9e;letter-spacing:0.5px;}
     .footer-center{display:flex;align-items:center;position:relative;}
@@ -58,7 +69,7 @@
     @media(max-width:600px){
       .nw-grid{grid-template-columns:1fr;}
       nav,.meta-bar,footer{padding-left:16px;padding-right:16px;}
-      .feed{padding-left:16px;padding-right:16px;}
+      .feed,.meanwhile{padding-left:16px;padding-right:16px;}
       footer{flex-direction:column;align-items:flex-start;}
       .meta-right{gap:8px;}
       .play-btn{padding:2px 7px;font-size:9px;}
@@ -133,6 +144,9 @@
 
 </div>
 <!-- FEED:END -->
+
+<!-- MEANWHILE:START -->
+<!-- MEANWHILE:END -->
 
 <footer style="margin-top: 2rem;">
     <span class="footer-left">rumbo.wtf</span>
