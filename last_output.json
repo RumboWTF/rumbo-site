@@ -1,39 +1,30 @@
 {
-  "generated_at": "2026-04-17T18:30:00Z",
+  "generated_at": "2026-04-17T10:30:00Z",
   "sources": [
-    "Reuters",
     "Al Jazeera",
-    "BBC",
-    "Bloomberg",
-    "Associated Press",
-    "The Guardian",
-    "Financial Times",
-    "South China Morning Post"
+    "Reuters",
+    "BBC News",
+    "AFP",
+    "Bloomberg"
   ],
   "items": [
     {
-      "headline": "Hungary opposition wins two-thirds majority ending Viktor Orbán's 16-year rule",
-      "body": "Péter Magyar's Tisza party secured 138 seats in Hungary's 199-seat parliament on April 12, removing Orbán who had blocked EU aid to Ukraine and served as Putin's main ally in Europe. The result clears the way for a 90 billion euro loan to Ukraine and ends Hungary's adversarial role inside the European Union.",
-      "geo": "Europe",
+      "headline": "Somalia enters constitutional vacuum as parliament term expires without succession plan",
+      "body": "Somalia's federal parliament term expired on April 14 with no electoral roadmap in place, reviving memories of the 2021 standoff when election disputes triggered armed clashes in Mogadishu. President Hassan Sheikh Mohamud has one month left in his mandate before it expires on May 15, while breakaway states Puntland and Jubbaland reject last-minute constitutional amendments extending legislative terms from four to five years.",
+      "geo": "Africa",
       "sources": 3
     },
     {
-      "headline": "Two school shootings in Turkey within 28 hours kill at least 10 and trigger nationwide teacher strike",
-      "body": "A 14-year-old killed nine people at a secondary school in Kahramanmaraş on April 15, one day after a 19-year-old injured 16 at a vocational school in Şanlıurfa Province. Teacher unions launched a three-day nationwide strike on April 15 as authorities arrested dozens of students over social media posts suggesting copycat attacks.",
-      "geo": "Europe",
-      "sources": 4
-    },
-    {
-      "headline": "China eliminates all tariffs on imports from 53 African countries starting May 1",
-      "body": "The tariff removal includes Nigeria, Africa's largest economy, and takes effect May 1, 2026. The policy gives African exporters duty-free access to the world's second-largest economy and a chance to reposition in global supply chains.",
+      "headline": "Zimbabwe declares state of disaster after commuter bus explosion kills 18 on major highway",
+      "body": "A minibus carrying suspected explosive materials burst into flames on the Bulawayo-Beitbridge Road on April 16, killing at least 18 passengers between the Chipangali and Gwanda tollgate. President Mnangagwa declared a state of disaster following the blast on one of Zimbabwe's busiest routes linking the country to South Africa.",
       "geo": "Africa",
       "sources": 2
     },
     {
-      "headline": "Pope visits Cameroon conflict zone as separatists announce three-day ceasefire",
-      "body": "Pope Leo XIV preached in Bamenda in northwest Cameroon on April 16 as separatist forces suspended hostilities from April 15-17 to allow safe movement during the visit. The region has faced years of deadly fighting between separatists and government forces in what observers call one of the world's most neglected conflicts.",
-      "geo": "Africa",
-      "sources": 3
+      "headline": "Japan pledges 10 billion dollars to Southeast Asian countries hit by Middle East energy crisis",
+      "body": "Japanese Prime Minister Takaichi Sanae announced funding equivalent to 1.2 billion barrels of crude oil to help Asian countries secure petroleum supplies after the closure of the Strait of Hormuz disrupted regional supply chains. The package matches the value of crude oil imported by all Southeast Asian nations in one year, Japan's Foreign Ministry stated.",
+      "geo": "Asia",
+      "sources": 2
     }
   ]
 }

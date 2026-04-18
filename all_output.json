@@ -1,79 +1,56 @@
 {
-  "date": "17 April 2026",
+  "date": "18 April 2026",
   "global": {
-    "generated_at": "2026-04-17T18:30:00Z",
+    "generated_at": "2026-04-17T10:30:00Z",
     "sources": [
-      "Reuters",
       "Al Jazeera",
-      "BBC",
-      "Bloomberg",
-      "Associated Press",
-      "The Guardian",
-      "Financial Times",
-      "South China Morning Post"
+      "Reuters",
+      "BBC News",
+      "AFP",
+      "Bloomberg"
     ],
     "items": [
       {
-        "headline": "Hungary opposition wins two-thirds majority ending Viktor Orbán's 16-year rule",
-        "body": "Péter Magyar's Tisza party secured 138 seats in Hungary's 199-seat parliament on April 12, removing Orbán who had blocked EU aid to Ukraine and served as Putin's main ally in Europe. The result clears the way for a 90 billion euro loan to Ukraine and ends Hungary's adversarial role inside the European Union.",
-        "geo": "Europe",
+        "headline": "Somalia enters constitutional vacuum as parliament term expires without succession plan",
+        "body": "Somalia's federal parliament term expired on April 14 with no electoral roadmap in place, reviving memories of the 2021 standoff when election disputes triggered armed clashes in Mogadishu. President Hassan Sheikh Mohamud has one month left in his mandate before it expires on May 15, while breakaway states Puntland and Jubbaland reject last-minute constitutional amendments extending legislative terms from four to five years.",
+        "geo": "Africa",
         "sources": 3
       },
       {
-        "headline": "Two school shootings in Turkey within 28 hours kill at least 10 and trigger nationwide teacher strike",
-        "body": "A 14-year-old killed nine people at a secondary school in Kahramanmaraş on April 15, one day after a 19-year-old injured 16 at a vocational school in Şanlıurfa Province. Teacher unions launched a three-day nationwide strike on April 15 as authorities arrested dozens of students over social media posts suggesting copycat attacks.",
-        "geo": "Europe",
-        "sources": 4
-      },
-      {
-        "headline": "China eliminates all tariffs on imports from 53 African countries starting May 1",
-        "body": "The tariff removal includes Nigeria, Africa's largest economy, and takes effect May 1, 2026. The policy gives African exporters duty-free access to the world's second-largest economy and a chance to reposition in global supply chains.",
+        "headline": "Zimbabwe declares state of disaster after commuter bus explosion kills 18 on major highway",
+        "body": "A minibus carrying suspected explosive materials burst into flames on the Bulawayo-Beitbridge Road on April 16, killing at least 18 passengers between the Chipangali and Gwanda tollgate. President Mnangagwa declared a state of disaster following the blast on one of Zimbabwe's busiest routes linking the country to South Africa.",
         "geo": "Africa",
         "sources": 2
       },
       {
-        "headline": "Pope visits Cameroon conflict zone as separatists announce three-day ceasefire",
-        "body": "Pope Leo XIV preached in Bamenda in northwest Cameroon on April 16 as separatist forces suspended hostilities from April 15-17 to allow safe movement during the visit. The region has faced years of deadly fighting between separatists and government forces in what observers call one of the world's most neglected conflicts.",
-        "geo": "Africa",
-        "sources": 3
+        "headline": "Japan pledges 10 billion dollars to Southeast Asian countries hit by Middle East energy crisis",
+        "body": "Japanese Prime Minister Takaichi Sanae announced funding equivalent to 1.2 billion barrels of crude oil to help Asian countries secure petroleum supplies after the closure of the Strait of Hormuz disrupted regional supply chains. The package matches the value of crude oil imported by all Southeast Asian nations in one year, Japan's Foreign Ministry stated.",
+        "geo": "Asia",
+        "sources": 2
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Spain opens applications for immigration amnesty covering 500,000 undocumented residents",
-        "body": "The government approved a decree on April 15 allowing undocumented migrants who arrived before January 1 and lived in Spain for five months to apply for legal status, with applications opening April 16 online and April 20 in person. The measure positions Spain as an outlier in Europe amid rising anti-immigration sentiment and aims to address labor shortages from an aging population in a country where one in five residents is foreign-born.",
+        "headline": "Spain approves amnesty for 500,000 undocumented migrants through decree bypassing parliament",
+        "body": "The government fast-tracked legal status applications opening April 16 for migrants who arrived before January and lived in Spain at least five months. The decree makes Spain an outlier as most of Europe tightens immigration policy, with one in five residents now foreign-born in a country of 50 million.",
         "geo": "Spain",
-        "sources": 4
+        "sources": 3
       }
     ],
     "no": [
       {
-        "headline": "Norway's populist Progress Party reaches 29.9 percent in new poll, highest level in 17 years",
-        "body": "The Progress Party gained 3.2 percentage points since March to reach its strongest position since 2009, while the ruling Labour Party fell to 20.8 percent in the Opinion poll published this week. The surge could reshape coalition dynamics and signal voter rejection of current government policies ahead of future elections.",
+        "headline": "Progress Party polls at highest level in 17 years as ruling Labour falls to near tie",
+        "body": "The populist Progress Party reached 29.9 percent in polling this week, rising over three percentage points since March while Labour dropped to 20.8 percent. The shift positions Norway's anti-immigration party within striking distance of overtaking the governing coalition ahead of next year's election.",
         "geo": "Norway",
         "sources": 2
-      },
-      {
-        "headline": "Microsoft agrees to rent 30,000 Nvidia chips at Arctic Circle data center site in Narvik originally marketed for OpenAI",
-        "body": "Microsoft will rent capacity from provider Nscale at a campus inside the Arctic Circle, building on a prior 6.2 billion dollar commitment at the same location. The expansion consolidates Norway's position in AI infrastructure and redirects a facility initially tied to OpenAI's Stargate initiative.",
-        "geo": "Norway",
-        "sources": 2
-      }
-    ],
-    "uk": [
-      {
-        "headline": "Counter Terrorism Policing take over investigation of three coordinated arson attacks targeting Jewish and Persian sites in northwest London",
-        "body": "Seven arrests were made between April 15 and 16 in connection with attacks on volunteer ambulances in Golders Green, a synagogue in Finchley, and offices of a Persian media organization. The coordinated nature of the arsons and the profile of the targets have prompted counter-terrorism units to assume control despite no formal terrorist designation yet.",
-        "geo": "United Kingdom",
-        "sources": 3
       }
     ],
     "nl": [
       {
-        "headline": "Dutch government privacy chief files lawsuit and goes public over US takeover of cloud service hosting national ID system",
-        "body": "Pieter van Oordt, senior privacy advisor at Logius, filed legal action on April 15 and told Volkskrant that the pending Kyndryl acquisition of Solvinity would put detailed information on all 17 million DigiD users under US legal jurisdiction and surveillance powers. The system processes 2 million daily logins for hospitals, pension funds, prisons, and government services, and 87 percent of users said they would stop using it under US ownership.",
+        "headline": "Dutch privacy chief publicly opposes U.S. takeover of DigiD operator and prepares lawsuit against state",
+        "body": "Pieter van Oordt of Logius warned on April 16 that the proposed acquisition of Solvinity by U.S.-based Kyndryl could expose personal data of millions and allow American authorities to disrupt the login system used for government services, hospitals, and pension funds. The system handles roughly 2 million daily sessions and also manages IT for the National Police and judiciary, with 87 percent of users saying they would stop using DigiD under U.S. ownership.",
         "geo": "Netherlands",
         "sources": 2
       }

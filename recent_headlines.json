@@ -1,5 +1,13 @@
 [
   {
+    "date": "18 April 2026",
+    "headlines": [
+      "Somalia enters constitutional vacuum as parliament term expires without succession plan",
+      "Zimbabwe declares state of disaster after commuter bus explosion kills 18 on major highway",
+      "Japan pledges 10 billion dollars to Southeast Asian countries hit by Middle East energy crisis"
+    ]
+  },
+  {
     "date": "17 April 2026",
     "headlines": [
       "Hungary opposition wins two-thirds majority ending Viktor Orbán's 16-year rule",
@@ -15,15 +23,6 @@
       "Benin finance minister wins presidential election with over 94 percent after opposition locked out of ballot",
       "Indonesia signs defense pact with United States hours after Moscow energy deal in same-day balancing act",
       "Pakistan declares open war with Afghanistan as Taliban drone strikes reach within 10 kilometers of capital"
-    ]
-  },
-  {
-    "date": "16 April 2026",
-    "headlines": [
-      "Philippines declares national energy emergency as oil reserves drop to 45 days",
-      "China installs floating barrier across entrance to Scarborough Shoal",
-      "Sudan civil war enters fourth year as UN official calls it abandoned crisis",
-      "IMF slashes Middle East growth forecast by nearly three percentage points"
     ]
   }
 ]
