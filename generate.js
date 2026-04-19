@@ -370,6 +370,31 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
     <tr><td class="rp" style="padding:12px 28px 0;"><hr style="border:none;border-top:1px solid #e8e4de;margin:0;"></td></tr>`
   ).join("\n");
 
+  const mwStyle = (cat) => {
+    const c = (cat || "").toLowerCase();
+    const map = {
+      culture: "color:#6b5a20;background:#f0e8d8;border:1px solid #d4c68a;",
+      science: "color:#3f5838;background:#e2ebe0;border:1px solid #b8c9b2;",
+      wellbeing: "color:#6a3f3f;background:#ede0e0;border:1px solid #c9b0b0;",
+      worldviews: "color:#3a4566;background:#dfe3ed;border:1px solid #a8b2c9;",
+    };
+    return `display:inline-block;font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.2px;padding:3px 8px;border-radius:3px;text-transform:uppercase;margin-right:8px;${map[c] || "color:#555;background:#f0ede6;border:1px solid #d0ccc4;"}`;
+  };
+
+  const meanwhile = Array.isArray(data.meanwhile) ? data.meanwhile : [];
+  const meanwhileHtml = meanwhile.length > 0 ? `
+    <tr><td class="rp" style="padding:24px 28px 0;">
+      <div style="border-top:1px solid #e0dcd4;padding-top:18px;">
+        <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#888;text-transform:uppercase;margin-bottom:12px;">Meanwhile</div>
+        ${meanwhile.map(m => `
+        <div style="padding:6px 0;font-family:Georgia,serif;font-size:13px;color:#3a3a38;line-height:1.55;">
+          <span style="${mwStyle(m.category)}">${(m.category || "note").toLowerCase()}</span>
+          <span>${m.text || ""}</span>
+          <a href="https://duckduckgo.com/?q=${encodeURIComponent(m.search || m.text || "")}" style="font-family:'Courier New',monospace;font-size:11px;color:#c8a84a;text-decoration:none;margin-left:4px;" target="_blank">&#x2197;</a>
+        </div>`).join("\n")}
+      </div>
+    </td></tr>` : "";
+
 
   return `<!doctype html>
 <html lang="${locale}">
@@ -403,6 +428,9 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
 
   <!-- Items -->
   ${itemsHtml}
+
+  <!-- Meanwhile -->
+  ${meanwhileHtml}
 
   <!-- Footer -->
   <tr><td class="rp" style="padding:28px 28px 20px;text-align:center;">
