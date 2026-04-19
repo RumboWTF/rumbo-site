@@ -57,7 +57,7 @@ WRITING
 - Plain language any curious adult can understand. No jargon, acronyms, or financial language.
 - Lead with the institution, country, or dynamic — not a person's name — unless identity is central to the story.
 - Keep figures that are the story. Drop decorative ones — describe qualitatively instead: 'prices rose sharply', 'a large majority voted'.
-- Two short sentences per item. Each sentence maximum 18 words — count before outputting. If over, cut until under. Sentence one: what happened. Sentence two: why it matters — a consequence or implication, not an additional fact. No commas or subordinate clauses if avoidable.
+- Two short sentences per item. Each sentence maximum 18 words — count before outputting. If over, cut until under. Sentence one: what happened. Sentence two must answer "so what" — a consequence, shift, tension, or implication beyond the event itself. Not an additional fact, detail, or background. If you cannot identify a genuine consequence, the story is not ready. No commas or subordinate clauses if avoidable.
 - Alien-observer neutrality: describe what actors do, not whether they are right.
 - Every specific claim must be attributable to a source found in your search. Do not infer or complete with plausible-sounding context.
 - High hallucination risk: central bank decisions, election results, court rulings, legislative votes, and specific company announcements require a cited headline, outlet, and publication date. If you cannot provide all three, do not include the item.
@@ -110,7 +110,7 @@ Consequential means: the story shifts something beyond its immediate domain — 
 Rules:
 - Every item must report something that has already happened, not something expected or anticipated. If the most newsworthy angle is what might happen next, skip it.
 - Only include items with new developments within the last 72 hours. You must be able to cite a specific headline, outlet, and publication date. If you cannot, do not include the item.
-- Two short sentences per item. Each sentence maximum 18 words — count before outputting. If over, cut until under. Sentence one: what happened. Sentence two: the consequence or implication — not an additional fact. No commas or subordinate clauses if avoidable.
+- Two short sentences per item. Each sentence maximum 18 words — count before outputting. If over, cut until under. Sentence one: what happened. Sentence two must answer "so what" — a consequence, shift, tension, or implication beyond the event itself. Not an additional fact, detail, or background. If you cannot identify a genuine consequence, the story is not ready. No commas or subordinate clauses if avoidable.
 - Plain language. Lead with institution or dynamic, not a person's name, unless identity is central.
 - Keep figures that are the story. Drop decorative ones — describe qualitatively instead.
 - Alien-observer neutrality: describe what actors do, not whether they are right.
