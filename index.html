@@ -36,6 +36,17 @@
     .geo-pill.regional{background:#f0ede6;border:1px solid #d0ccc4;color:#555;}
     .source-pill{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1px;padding:3px 9px;border-radius:3px;background:#ede9e0;color:#888;cursor:default;position:relative;}.source-pill .src-tip{display:none;position:absolute;bottom:22px;left:0;background:#1a1a18;color:#c8c4bc;font-family:'Courier New',monospace;font-size:10px;line-height:1.5;padding:6px 10px;border-radius:4px;white-space:nowrap;z-index:10;pointer-events:none;width:280px;white-space:normal;}.source-pill:hover .src-tip{display:block;}.search-link{font-family:'Courier New',monospace;font-size:13px;color:#555;line-height:1;text-decoration:none;}
     .search-link:hover{color:#7a5c0a;}
+    .meanwhile{max-width:700px;margin:0 auto;padding:24px 24px 48px;border-top:1px solid #e8e4dc;}
+    .mw-title{font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#888;text-transform:uppercase;margin-bottom:14px;}
+    .mw-item{display:flex;align-items:flex-start;gap:10px;padding:8px 0;font-size:14px;color:#3a3a38;line-height:1.55;}
+    .mw-tag{font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.2px;padding:3px 8px;border-radius:3px;text-transform:uppercase;flex-shrink:0;margin-top:2px;}
+    .mw-culture{background:#f0e8d8;border:1px solid #d4c68a;color:#6b5a20;}
+    .mw-science{background:#e2ebe0;border:1px solid #b8c9b2;color:#3f5838;}
+    .mw-wellbeing{background:#ede0e0;border:1px solid #c9b0b0;color:#6a3f3f;}
+    .mw-worldviews{background:#dfe3ed;border:1px solid #a8b2c9;color:#3a4566;}
+    .mw-text{flex:1;}
+    .mw-link{font-family:'Courier New',monospace;font-size:13px;color:#888;text-decoration:none;line-height:1;flex-shrink:0;margin-top:2px;}
+    .mw-link:hover{color:#7a5c0a;}
     footer{background:#1a1a18;padding:20px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
     .footer-left{font-family:'Courier New',monospace;font-size:9px;color:#b0aa9e;letter-spacing:0.5px;}
     .footer-center{display:flex;align-items:center;position:relative;}
@@ -58,7 +69,7 @@
     @media(max-width:600px){
       .nw-grid{grid-template-columns:1fr;}
       nav,.meta-bar,footer{padding-left:16px;padding-right:16px;}
-      .feed{padding-left:16px;padding-right:16px;}
+      .feed,.meanwhile{padding-left:16px;padding-right:16px;}
       footer{flex-direction:column;align-items:flex-start;}
       .meta-right{gap:8px;}
       .play-btn{padding:2px 7px;font-size:9px;}
@@ -75,11 +86,11 @@
 </div>
 </nav>
 <div class="meta-bar">
-  <span class="meta-date" id="meta-date">Edition: 18 April 2026</span>
+  <span class="meta-date" id="meta-date">Edition: 19 April 2026</span>
   <span class="meta-right">
     <button class="play-btn" id="playBtn" onclick="togglePlayPause()" aria-label="Read aloud"><span class="icon" id="playIcon">&#9654;</span><span id="playLabel">Listen</span></button>
     <button class="play-btn stop-btn" id="stopBtn" onclick="stopSpeech()" aria-label="Stop" style="display:none;"><span class="icon">&#10005;</span></button>
-    <span class="meta-count">3 signals</span>
+    <span class="meta-count">4 signals</span>
   </span>
 </div>
 
@@ -88,41 +99,74 @@
   <div class="item">
     <div class="dot dot-global"></div>
     <div class="item-body">
-      <div class="item-head">Somalia enters constitutional vacuum as parliament term expires without succession plan</div>
-      <div class="item-text">Somalia's federal parliament term expired on April 14 with no electoral roadmap in place, reviving memories of the 2021 standoff when election disputes triggered armed clashes in Mogadishu. President Hassan Sheikh Mohamud has one month left in his mandate before it expires on May 15, while breakaway states Puntland and Jubbaland reject last-minute constitutional amendments extending legislative terms from four to five years.</div>
+      <div class="item-head">Strait of Hormuz Closes Again After US Refuses to Lift Naval Blockade</div>
+      <div class="item-text">Iran shut the Strait of Hormuz on April 18 after briefly announcing it open, following the US refusal to end its naval blockade. A fifth of the world's oil passes through the strait, and several vessels were targeted after the closure was declared.</div>
       <div class="item-foot">
-        <span class="geo-pill">Africa</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Somalia%20enters%20constitutional%20vacuum%20as%20parliament%20term%20expires%20without%20succession%20plan" target="_blank">↗</a>
+        <span class="geo-pill">Global</span>
+        <a class="search-link" href="https://duckduckgo.com/?q=Strait%20of%20Hormuz%20Closes%20Again%20After%20US%20Refuses%20to%20Lift%20Naval%20Blockade" target="_blank">↗</a>
+        <span class="source-pill">~6 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="dot dot-global"></div>
+    <div class="item-body">
+      <div class="item-head">IMF Warns Middle East War Is Pushing Global Economy Toward Recession</div>
+      <div class="item-text">The IMF cut its 2026 global growth forecast and warned that a prolonged energy disruption could push growth to 2 percent, the threshold historically linked to global recession. Inflation could exceed 6 percent in the worst scenario.</div>
+      <div class="item-foot">
+        <span class="geo-pill">Global</span>
+        <a class="search-link" href="https://duckduckgo.com/?q=IMF%20Warns%20Middle%20East%20War%20Is%20Pushing%20Global%20Economy%20Toward%20Recession" target="_blank">↗</a>
+        <span class="source-pill">~5 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="dot dot-global"></div>
+    <div class="item-body">
+      <div class="item-head">Mass Shooting in Wartime Kyiv Kills Six as Gunman Born in Russia Opens Fire</div>
+      <div class="item-text">A gunman killed six people and wounded at least 14 outside a supermarket in central Kyiv on April 19 before police shot him dead. Ukrainian President Zelenskyy confirmed the attacker was born in Russia.</div>
+      <div class="item-foot">
+        <span class="geo-pill">Europe</span>
+        <a class="search-link" href="https://duckduckgo.com/?q=Mass%20Shooting%20in%20Wartime%20Kyiv%20Kills%20Six%20as%20Gunman%20Born%20in%20Russia%20Opens%20Fire" target="_blank">↗</a>
+        <span class="source-pill">~4 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="dot dot-global"></div>
+    <div class="item-body">
+      <div class="item-head">Iran's Internet Blackout Reaches 50 Days With Door-to-Door Satellite Dish Seizures</div>
+      <div class="item-text">Iran's nationwide internet shutdown passed 50 days, the longest ever recorded for a connected society, according to NetBlocks. Security forces began confiscating satellite dishes door to door after the government shut down Starlink access.</div>
+      <div class="item-foot">
+        <span class="geo-pill">Middle East</span>
+        <a class="search-link" href="https://duckduckgo.com/?q=Iran's%20Internet%20Blackout%20Reaches%2050%20Days%20With%20Door-to-Door%20Satellite%20Dish%20Seizures" target="_blank">↗</a>
         <span class="source-pill">~3 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.</span></span>
-      </div>
-    </div>
-  </div>
-  <div class="item">
-    <div class="dot dot-global"></div>
-    <div class="item-body">
-      <div class="item-head">Zimbabwe declares state of disaster after commuter bus explosion kills 18 on major highway</div>
-      <div class="item-text">A minibus carrying suspected explosive materials burst into flames on the Bulawayo-Beitbridge Road on April 16, killing at least 18 passengers between the Chipangali and Gwanda tollgate. President Mnangagwa declared a state of disaster following the blast on one of Zimbabwe's busiest routes linking the country to South Africa.</div>
-      <div class="item-foot">
-        <span class="geo-pill">Africa</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Zimbabwe%20declares%20state%20of%20disaster%20after%20commuter%20bus%20explosion%20kills%2018%20on%20major%20highway" target="_blank">↗</a>
-        <span class="source-pill">~2 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.</span></span>
-      </div>
-    </div>
-  </div>
-  <div class="item">
-    <div class="dot dot-global"></div>
-    <div class="item-body">
-      <div class="item-head">Japan pledges 10 billion dollars to Southeast Asian countries hit by Middle East energy crisis</div>
-      <div class="item-text">Japanese Prime Minister Takaichi Sanae announced funding equivalent to 1.2 billion barrels of crude oil to help Asian countries secure petroleum supplies after the closure of the Strait of Hormuz disrupted regional supply chains. The package matches the value of crude oil imported by all Southeast Asian nations in one year, Japan's Foreign Ministry stated.</div>
-      <div class="item-foot">
-        <span class="geo-pill">Asia</span>
-        <a class="search-link" href="https://duckduckgo.com/?q=Japan%20pledges%2010%20billion%20dollars%20to%20Southeast%20Asian%20countries%20hit%20by%20Middle%20East%20energy%20crisis" target="_blank">↗</a>
-        <span class="source-pill">~2 sources<span class="src-tip">Approximate number of independent source clusters found. More sources means wider reporting — not that the story is accurate.</span></span>
       </div>
     </div>
   </div>
 </div>
 <!-- FEED:END -->
+
+<!-- MEANWHILE:START -->
+<div class="meanwhile">
+  <div class="mw-title">Meanwhile</div>
+  <div class="mw-item">
+    <span class="mw-tag mw-science">science</span>
+    <span class="mw-text">Researchers published results showing a malaria vaccine using modified RNA produced durable immunity in adults across three African trial sites.</span>
+    <a class="mw-link" href="https://duckduckgo.com/?q=mRNA%20malaria%20vaccine%20trial%20results%20published%202026" target="_blank">↗</a>
+  </div>
+  <div class="mw-item">
+    <span class="mw-tag mw-worldviews">worldviews</span>
+    <span class="mw-text">A Pew Research survey found that fewer than one in three adults under 30 in Western Europe now identify with any organised religion.</span>
+    <a class="mw-link" href="https://duckduckgo.com/?q=Pew%20Research%20young%20Europeans%20religion%20identity%202026" target="_blank">↗</a>
+  </div>
+  <div class="mw-item">
+    <span class="mw-tag mw-wellbeing">wellbeing</span>
+    <span class="mw-text">A large study published in The Lancet linked ultra-processed food consumption to measurably faster cognitive decline in adults over 50.</span>
+    <a class="mw-link" href="https://duckduckgo.com/?q=Lancet%20ultra-processed%20food%20cognitive%20decline%20study%202026" target="_blank">↗</a>
+  </div>
+</div>
+<!-- MEANWHILE:END -->
 
 <footer style="margin-top: 2rem;">
     <span class="footer-left">rumbo.wtf</span>
@@ -186,7 +230,7 @@
   // Localise the update timestamp to the reader's timezone
   (function(){
     try {
-      var utc = new Date('2026-04-18T04:01:31.554Z');
+      var utc = new Date('2026-04-19T04:02:01.665Z');
       var opts = {day:'numeric', month:'long', year:'numeric'};
       var jsLocale='en-GB';
       var local = utc.toLocaleString(jsLocale, opts);

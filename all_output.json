@@ -1,58 +1,98 @@
 {
-  "date": "18 April 2026",
+  "date": "19 April 2026",
   "global": {
-    "generated_at": "2026-04-17T10:30:00Z",
+    "generated_at": "2026-04-19T12:00:00Z",
     "sources": [
-      "Al Jazeera",
       "Reuters",
+      "Al Jazeera",
       "BBC News",
-      "AFP",
-      "Bloomberg"
+      "CNN",
+      "The Guardian",
+      "Financial Times",
+      "Associated Press",
+      "NetBlocks"
     ],
     "items": [
       {
-        "headline": "Somalia enters constitutional vacuum as parliament term expires without succession plan",
-        "body": "Somalia's federal parliament term expired on April 14 with no electoral roadmap in place, reviving memories of the 2021 standoff when election disputes triggered armed clashes in Mogadishu. President Hassan Sheikh Mohamud has one month left in his mandate before it expires on May 15, while breakaway states Puntland and Jubbaland reject last-minute constitutional amendments extending legislative terms from four to five years.",
-        "geo": "Africa",
+        "headline": "Strait of Hormuz Closes Again After US Refuses to Lift Naval Blockade",
+        "body": "Iran shut the Strait of Hormuz on April 18 after briefly announcing it open, following the US refusal to end its naval blockade. A fifth of the world's oil passes through the strait, and several vessels were targeted after the closure was declared.",
+        "geo": "Global",
+        "sources": 6
+      },
+      {
+        "headline": "IMF Warns Middle East War Is Pushing Global Economy Toward Recession",
+        "body": "The IMF cut its 2026 global growth forecast and warned that a prolonged energy disruption could push growth to 2 percent, the threshold historically linked to global recession. Inflation could exceed 6 percent in the worst scenario.",
+        "geo": "Global",
+        "sources": 5
+      },
+      {
+        "headline": "Mass Shooting in Wartime Kyiv Kills Six as Gunman Born in Russia Opens Fire",
+        "body": "A gunman killed six people and wounded at least 14 outside a supermarket in central Kyiv on April 19 before police shot him dead. Ukrainian President Zelenskyy confirmed the attacker was born in Russia.",
+        "geo": "Europe",
+        "sources": 4
+      },
+      {
+        "headline": "Iran's Internet Blackout Reaches 50 Days With Door-to-Door Satellite Dish Seizures",
+        "body": "Iran's nationwide internet shutdown passed 50 days, the longest ever recorded for a connected society, according to NetBlocks. Security forces began confiscating satellite dishes door to door after the government shut down Starlink access.",
+        "geo": "Middle East",
         "sources": 3
+      }
+    ],
+    "meanwhile": [
+      {
+        "category": "science",
+        "text": "Researchers published results showing a malaria vaccine using modified RNA produced durable immunity in adults across three African trial sites.",
+        "search": "mRNA malaria vaccine trial results published 2026"
       },
       {
-        "headline": "Zimbabwe declares state of disaster after commuter bus explosion kills 18 on major highway",
-        "body": "A minibus carrying suspected explosive materials burst into flames on the Bulawayo-Beitbridge Road on April 16, killing at least 18 passengers between the Chipangali and Gwanda tollgate. President Mnangagwa declared a state of disaster following the blast on one of Zimbabwe's busiest routes linking the country to South Africa.",
-        "geo": "Africa",
-        "sources": 2
+        "category": "worldviews",
+        "text": "A Pew Research survey found that fewer than one in three adults under 30 in Western Europe now identify with any organised religion.",
+        "search": "Pew Research young Europeans religion identity 2026"
       },
       {
-        "headline": "Japan pledges 10 billion dollars to Southeast Asian countries hit by Middle East energy crisis",
-        "body": "Japanese Prime Minister Takaichi Sanae announced funding equivalent to 1.2 billion barrels of crude oil to help Asian countries secure petroleum supplies after the closure of the Strait of Hormuz disrupted regional supply chains. The package matches the value of crude oil imported by all Southeast Asian nations in one year, Japan's Foreign Ministry stated.",
-        "geo": "Asia",
-        "sources": 2
+        "category": "wellbeing",
+        "text": "A large study published in The Lancet linked ultra-processed food consumption to measurably faster cognitive decline in adults over 50.",
+        "search": "Lancet ultra-processed food cognitive decline study 2026"
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Spain approves amnesty for 500,000 undocumented migrants through decree bypassing parliament",
-        "body": "The government fast-tracked legal status applications opening April 16 for migrants who arrived before January and lived in Spain at least five months. The decree makes Spain an outlier as most of Europe tightens immigration policy, with one in five residents now foreign-born in a country of 50 million.",
+        "headline": "Spain Bypasses Parliament to Legalise Up to 500,000 Undocumented Migrants by Royal Decree",
+        "body": "Spain's government approved a royal decree on April 14 opening a residency and work permit process for undocumented migrants who can prove continuous residence before December 2025. Applications opened online April 16 and in person April 20, with the window closing June 30.",
         "geo": "Spain",
         "sources": 3
       }
     ],
     "no": [
       {
-        "headline": "Progress Party polls at highest level in 17 years as ruling Labour falls to near tie",
-        "body": "The populist Progress Party reached 29.9 percent in polling this week, rising over three percentage points since March while Labour dropped to 20.8 percent. The shift positions Norway's anti-immigration party within striking distance of overtaking the governing coalition ahead of next year's election.",
+        "headline": "Norway's Oil Exports Hit All-Time Record as Hormuz Closure Reshapes European Energy Supply",
+        "body": "Norway exported crude oil worth NOK 57.4 billion in March, up 67.9% year on year, the highest monthly value ever recorded. European buyers are now routing demand toward Norwegian supply as Middle Eastern shipments remain blocked.",
         "geo": "Norway",
+        "sources": 2
+      }
+    ],
+    "uk": [
+      {
+        "headline": "Royal Navy Shadowed Russian Frigate Escorting Sanctioned Tankers Through English Channel",
+        "body": "A Russian warship armed with anti-ship missiles escorted two sanctioned oil tankers through the Channel on April 9. Britain's new interception powers went untested as the Royal Navy sent only an auxiliary tanker in response.",
+        "geo": "United Kingdom",
+        "sources": 3
+      },
+      {
+        "headline": "UK Attorney General Rules Military Cannot Board Russian Shadow Fleet Vessels Under International Law",
+        "body": "Britain's top law officer determined that intercepting Russian vessels would likely breach international maritime law. The ruling undermines a policy the government announced weeks ago as a show of force against sanctions evasion.",
+        "geo": "United Kingdom",
         "sources": 2
       }
     ],
     "nl": [
       {
-        "headline": "Dutch privacy chief publicly opposes U.S. takeover of DigiD operator and prepares lawsuit against state",
-        "body": "Pieter van Oordt of Logius warned on April 16 that the proposed acquisition of Solvinity by U.S.-based Kyndryl could expose personal data of millions and allow American authorities to disrupt the login system used for government services, hospitals, and pension funds. The system handles roughly 2 million daily sessions and also manages IT for the National Police and judiciary, with 87 percent of users saying they would stop using DigiD under U.S. ownership.",
+        "headline": "Dutch Civil Servants Strike Forces Historic Parliamentary Shutdown and Restarts Wage Talks",
+        "body": "A nationwide strike by central government workers halted all debates in the Tweede Kamer for the first time ever. Negotiations resumed April 18 after unions won a commitment to abandon the zero-wage-increase policy for 2026.",
         "geo": "Netherlands",
-        "sources": 2
+        "sources": 3
       }
     ]
   }
