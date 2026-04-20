@@ -1,56 +1,56 @@
 {
-  "generated_at": "2026-04-19T12:00:00Z",
+  "generated_at": "2026-04-20T12:00:00Z",
   "sources": [
     "Reuters",
-    "Al Jazeera",
+    "AP News",
     "BBC News",
-    "CNN",
+    "Al Jazeera",
     "The Guardian",
-    "Financial Times",
-    "Associated Press",
-    "NetBlocks"
+    "Yonhap News Agency",
+    "Le Monde",
+    "The Hindu"
   ],
   "items": [
     {
-      "headline": "Strait of Hormuz Closes Again After US Refuses to Lift Naval Blockade",
-      "body": "Iran shut the Strait of Hormuz on April 18 after briefly announcing it open, following the US refusal to end its naval blockade. A fifth of the world's oil passes through the strait, and several vessels were targeted after the closure was declared.",
+      "headline": "US Navy Boards Iranian Vessel as Ceasefire Collapses and Iran Shuts Hormuz",
+      "body": "The US Navy fired on and boarded an Iranian cargo ship in the Gulf of Oman after the crew refused to stop at the blockade line. Iran then declined to join a second round of diplomatic talks and the existing ceasefire expires Wednesday with no replacement in sight.",
       "geo": "Global",
       "sources": 6
     },
     {
-      "headline": "IMF Warns Middle East War Is Pushing Global Economy Toward Recession",
-      "body": "The IMF cut its 2026 global growth forecast and warned that a prolonged energy disruption could push growth to 2 percent, the threshold historically linked to global recession. Inflation could exceed 6 percent in the worst scenario.",
-      "geo": "Global",
+      "headline": "French UNIFIL Peacekeeper Killed in Lebanon in Attack UN Attributes to Hezbollah",
+      "body": "A French soldier was killed and three others wounded in an ambush during an ordnance-clearing mission in southern Lebanon ten days into a new ceasefire. The UN secretary-general said an initial assessment blamed Hezbollah directly, raising pressure on the ceasefire's survival.",
+      "geo": "Asia",
       "sources": 5
     },
     {
-      "headline": "Mass Shooting in Wartime Kyiv Kills Six as Gunman Born in Russia Opens Fire",
-      "body": "A gunman killed six people and wounded at least 14 outside a supermarket in central Kyiv on April 19 before police shot him dead. Ukrainian President Zelenskyy confirmed the attacker was born in Russia.",
+      "headline": "Bulgaria Votes in Pro-Russian Bloc by Wide Margin in Eighth Election in Five Years",
+      "body": "Former President Rumen Radev's bloc won a large majority while the incumbent conservative party collapsed to a fraction of its prior support. A Radev-led government would give Russia a second EU member state openly resistant to Ukraine aid within days of Hungary's political shift.",
       "geo": "Europe",
       "sources": 4
     },
     {
-      "headline": "Iran's Internet Blackout Reaches 50 Days With Door-to-Door Satellite Dish Seizures",
-      "body": "Iran's nationwide internet shutdown passed 50 days, the longest ever recorded for a connected society, according to NetBlocks. Security forces began confiscating satellite dishes door to door after the government shut down Starlink access.",
-      "geo": "Middle East",
-      "sources": 3
+      "headline": "Eight Children Killed in Shreveport in Deadliest US Mass Shooting in Over Two Years",
+      "body": "A man killed eight children across three homes in Shreveport Louisiana before police killed him during a vehicle chase. The children ranged from eighteen months to twelve years old making it the deadliest such attack on children in the United States since early 2024.",
+      "geo": "Americas",
+      "sources": 4
     }
   ],
   "meanwhile": [
     {
       "category": "science",
-      "text": "Researchers published results showing a malaria vaccine using modified RNA produced durable immunity in adults across three African trial sites.",
-      "search": "mRNA malaria vaccine trial results published 2026"
+      "text": "North Korea tested submarine-launched ballistic missiles for the first time in four years raising detection difficulty for regional militaries.",
+      "search": "North Korea submarine ballistic missile test 2026 April"
     },
     {
       "category": "worldviews",
-      "text": "A Pew Research survey found that fewer than one in three adults under 30 in Western Europe now identify with any organised religion.",
-      "search": "Pew Research young Europeans religion identity 2026"
+      "text": "Canada's new majority government declared US economic ties a structural weakness and began formally redirecting trade policy toward other partners.",
+      "search": "Carney Canada US trade weakness majority government April 2026"
     },
     {
       "category": "wellbeing",
-      "text": "A large study published in The Lancet linked ultra-processed food consumption to measurably faster cognitive decline in adults over 50.",
-      "search": "Lancet ultra-processed food cognitive decline study 2026"
+      "text": "More than 20000 seafarers remained stranded on hundreds of ships in the Gulf with no timeline for safe passage or crew relief.",
+      "search": "seafarers stranded Gulf of Oman Hormuz blockade 2026"
     }
   ]
 }

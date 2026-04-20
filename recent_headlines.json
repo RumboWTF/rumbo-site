@@ -1,5 +1,25 @@
 [
   {
+    "date": "20 April 2026",
+    "headlines": [
+      "US Navy Boards Iranian Vessel as Ceasefire Collapses and Iran Shuts Hormuz",
+      "French UNIFIL Peacekeeper Killed in Lebanon in Attack UN Attributes to Hezbollah",
+      "Bulgaria Votes in Pro-Russian Bloc by Wide Margin in Eighth Election in Five Years",
+      "Eight Children Killed in Shreveport in Deadliest US Mass Shooting in Over Two Years"
+    ],
+    "regional_headlines": [
+      "Spain's Mass Regularisation Opens as Scammers Block Official Appointments Within Hours",
+      "Norway and UK Publicly Expose Joint Operation That Forced Russian Deep-Sea Submarines to Retreat",
+      "UK Government Overrode Security Vetting to Appoint Mandelson Ambassador",
+      "Dutch Public Majority Backs Keeping Groningen Gas Wells Available for Emergencies"
+    ],
+    "meanwhile": [
+      "North Korea tested submarine-launched ballistic missiles for the first time in four years raising detection difficulty for regional militaries.",
+      "Canada's new majority government declared US economic ties a structural weakness and began formally redirecting trade policy toward other partners.",
+      "More than 20000 seafarers remained stranded on hundreds of ships in the Gulf with no timeline for safe passage or crew relief."
+    ]
+  },
+  {
     "date": "19 April 2026",
     "headlines": [
       "Strait of Hormuz Closes Again After US Refuses to Lift Naval Blockade",
@@ -26,15 +46,6 @@
       "Somalia enters constitutional vacuum as parliament term expires without succession plan",
       "Zimbabwe declares state of disaster after commuter bus explosion kills 18 on major highway",
       "Japan pledges 10 billion dollars to Southeast Asian countries hit by Middle East energy crisis"
-    ]
-  },
-  {
-    "date": "17 April 2026",
-    "headlines": [
-      "Hungary opposition wins two-thirds majority ending Viktor Orbán's 16-year rule",
-      "Two school shootings in Turkey within 28 hours kill at least 10 and trigger nationwide teacher strike",
-      "China eliminates all tariffs on imports from 53 African countries starting May 1",
-      "Pope visits Cameroon conflict zone as separatists announce three-day ceasefire"
     ]
   }
 ]
