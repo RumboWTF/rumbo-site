@@ -254,13 +254,15 @@ function ddgUrl(query) {
 
 function renderItem(item, t, locale = 'en') {
   const regionalGeos = ["Spain", "Norway", "UK", "United Kingdom", "Netherlands"];
-  const isRegional = regionalGeos.includes(item.geo);
+  const geo = item.geo || "Global";
+  const isRegional = regionalGeos.includes(geo);
   const pillClass = isRegional ? "geo-pill regional" : "geo-pill";
   const dotClass = isRegional ? "dot dot-regional" : "dot dot-global";
   const searchQuery = isRegional
-    ? encodeURIComponent(item.headline + " " + item.geo)
+    ? encodeURIComponent(item.headline + " " + geo)
     : encodeURIComponent(item.headline);
-  const geoLabel = item.geo;
+  const geoLabel = geo;
+  const sources = item.sources ?? "?";
 
   return `  <div class="item">
     <div class="${dotClass}"></div>
@@ -270,7 +272,7 @@ function renderItem(item, t, locale = 'en') {
       <div class="item-foot">
         <span class="${pillClass}">${geoLabel}</span>
         <a class="search-link" href="https://duckduckgo.com/?q=${searchQuery}" target="_blank">↗</a>
-        <span class="source-pill">~${item.sources} ${t.SOURCE_PILL_LABEL}<span class="src-tip">${t.SOURCE_TIP}</span></span>
+        <span class="source-pill">~${sources} ${t.SOURCE_PILL_LABEL}<span class="src-tip">${t.SOURCE_TIP}</span></span>
       </div>
     </div>
   </div>`;
@@ -357,18 +359,21 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
       : "display:inline-block;font-family:'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#7a5c0a;background:#f5ead0;border:1px solid #e0c87a;padding:2px 8px;border-radius:3px;margin-right:6px;";
   };
 
-  const itemsHtml = items.map((item) => `
+  const itemsHtml = items.map((item) => {
+    const geo = item.geo || "Global";
+    const sources = item.sources ?? "?";
+    return `
     <tr><td class="rp" style="padding:20px 28px 0;">
       <div style="font-family:Georgia,serif;font-size:17px;color:#1a1a18;line-height:1.35;margin-bottom:8px;">${item.headline}</div>
       <div style="font-family:Georgia,serif;font-size:14px;color:#444;line-height:1.65;margin-bottom:10px;">${item.body}</div>
       <div>
-        <span style="${geoStyle(item.geo)}">${item.geo}</span>
-        <a href="https://duckduckgo.com/?q=${encodeURIComponent(item.headline + (item.geo !== 'Global' ? ' ' + item.geo : ''))}" style="font-family:'Courier New',monospace;font-size:11px;color:#c8a84a;text-decoration:none;margin-right:8px;" target="_blank">&#x2197;</a>
-        <span style="font-family:'Courier New',monospace;font-size:10px;color:#aaa;">~${item.sources} ${t.SOURCE_PILL_LABEL}</span>
+        <span style="${geoStyle(geo)}">${geo}</span>
+        <a href="https://duckduckgo.com/?q=${encodeURIComponent(item.headline + (geo !== 'Global' ? ' ' + geo : ''))}" style="font-family:'Courier New',monospace;font-size:11px;color:#c8a84a;text-decoration:none;margin-right:8px;" target="_blank">&#x2197;</a>
+        <span style="font-family:'Courier New',monospace;font-size:10px;color:#aaa;">~${sources} ${t.SOURCE_PILL_LABEL}</span>
       </div>
     </td></tr>
-    <tr><td class="rp" style="padding:12px 28px 0;"><hr style="border:none;border-top:1px solid #e8e4de;margin:0;"></td></tr>`
-  ).join("\n");
+    <tr><td class="rp" style="padding:12px 28px 0;"><hr style="border:none;border-top:1px solid #e8e4de;margin:0;"></td></tr>`;
+  }).join("\n");
 
   const mwStyle = (cat) => {
     const c = (cat || "").toLowerCase();
