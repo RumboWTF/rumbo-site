@@ -1,92 +1,92 @@
 {
-  "date": "20 April 2026",
+  "date": "21 April 2026",
   "global": {
-    "generated_at": "2026-04-20T12:00:00Z",
+    "generated_at": "2026-04-21T06:00:00Z",
     "sources": [
+      "CENTCOM",
+      "Tasnim News Agency",
       "Reuters",
-      "AP News",
       "BBC News",
-      "Al Jazeera",
+      "Associated Press",
+      "Japan Meteorological Agency",
+      "Tokyo Electric Power Company",
+      "Honor",
+      "NHK",
       "The Guardian",
-      "Yonhap News Agency",
-      "Le Monde",
-      "The Hindu"
+      "Hungarian Election Commission",
+      "Metropolitan Police Service"
     ],
     "items": [
       {
-        "headline": "US Navy Boards Iranian Vessel as Ceasefire Collapses and Iran Shuts Hormuz",
-        "body": "The US Navy fired on and boarded an Iranian cargo ship in the Gulf of Oman after the crew refused to stop at the blockade line. Iran then declined to join a second round of diplomatic talks and the existing ceasefire expires Wednesday with no replacement in sight.",
-        "geo": "Global",
-        "sources": 6
-      },
-      {
-        "headline": "French UNIFIL Peacekeeper Killed in Lebanon in Attack UN Attributes to Hezbollah",
-        "body": "A French soldier was killed and three others wounded in an ambush during an ordnance-clearing mission in southern Lebanon ten days into a new ceasefire. The UN secretary-general said an initial assessment blamed Hezbollah directly, raising pressure on the ceasefire's survival.",
-        "geo": "Asia",
+        "headline": "Iran Fires Drones at US Navy Vessels as Ceasefire Expires",
+        "body": "Iran launched drone strikes against US military vessels enforcing the blockade and separately targeted equipment on Kuwaiti territory at Bubiyan Island injuring six civilians. The ceasefire formally expires tonight and Iran has withdrawn its negotiators leaving no diplomatic channel open as Trump warns strikes will follow.",
+        "geo": "Middle East",
         "sources": 5
       },
       {
-        "headline": "Bulgaria Votes in Pro-Russian Bloc by Wide Margin in Eighth Election in Five Years",
-        "body": "Former President Rumen Radev's bloc won a large majority while the incumbent conservative party collapsed to a fraction of its prior support. A Radev-led government would give Russia a second EU member state openly resistant to Ukraine aid within days of Hungary's political shift.",
+        "headline": "Hungary Elects New Government With Landslide Majority Ending Orbán Era",
+        "body": "The Tisza party won a two-thirds parliamentary majority ousting Viktor Orbán after the highest voter turnout Hungary has seen since the fall of communism. A new government is expected to lift Hungary's veto on the European Union's ninety-billion-euro Ukraine support package removing Russia's last inside ally in the bloc.",
         "geo": "Europe",
         "sources": 4
       },
       {
-        "headline": "Eight Children Killed in Shreveport in Deadliest US Mass Shooting in Over Two Years",
-        "body": "A man killed eight children across three homes in Shreveport Louisiana before police killed him during a vehicle chase. The children ranged from eighteen months to twelve years old making it the deadliest such attack on children in the United States since early 2024.",
-        "geo": "Americas",
+        "headline": "Japan Hit by Major Earthquake With Mega-Quake Risk Now Elevated",
+        "body": "A magnitude 7.7 earthquake struck off northeastern Japan prompting tsunami warnings and evacuation orders for nearly 172,000 people across five prefectures. Japan's Meteorological Agency then issued an advisory warning that the chance of a follow-on mega-quake in the north had risen tenfold above normal.",
+        "geo": "Asia",
         "sources": 4
+      },
+      {
+        "headline": "Chinese Robot Beats Human Half-Marathon World Record by Six Minutes",
+        "body": "A bipedal humanoid robot called Lightning developed by Chinese firm Honor completed a 21-kilometre race in Beijing faster than any human has ever run the distance. The result signals that Chinese robotics development has crossed a threshold from competitive curiosity to benchmark-setting physical performance against humans.",
+        "geo": "Asia",
+        "sources": 3
       }
     ],
     "meanwhile": [
       {
         "category": "science",
-        "text": "North Korea tested submarine-launched ballistic missiles for the first time in four years raising detection difficulty for regional militaries.",
-        "search": "North Korea submarine ballistic missile test 2026 April"
-      },
-      {
-        "category": "worldviews",
-        "text": "Canada's new majority government declared US economic ties a structural weakness and began formally redirecting trade policy toward other partners.",
-        "search": "Carney Canada US trade weakness majority government April 2026"
+        "text": "Japanese researchers confirmed a room-temperature superconducting material held its properties under standard atmospheric pressure in peer-reviewed replication tests published April 2026.",
+        "search": "room temperature superconductor replication confirmed 2026"
       },
       {
         "category": "wellbeing",
-        "text": "More than 20000 seafarers remained stranded on hundreds of ships in the Gulf with no timeline for safe passage or crew relief.",
-        "search": "seafarers stranded Gulf of Oman Hormuz blockade 2026"
+        "text": "A study published in Nature Medicine found that a single-dose gene therapy reversed inherited deafness in children with measurable hearing restoration at 12 months.",
+        "search": "gene therapy inherited deafness children results 2026"
+      },
+      {
+        "category": "worldviews",
+        "text": "A Gallup survey published April 2026 found a record share of Americans now describe themselves as politically independent rather than aligned with either major party.",
+        "search": "Gallup record political independents Americans 2026"
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Spain's Mass Regularisation Opens as Scammers Block Official Appointments Within Hours",
-        "body": "Criminal networks began block-booking in-person immigration appointments and reselling them for cash within hours of the scheme launching on April 16. Spain's government now faces pressure to redesign the booking system before the June 30 deadline closes.",
-        "geo": "Spain",
-        "sources": 2
+        "headline": "Spain's Regularisation Drive Hits 42,000 Online Applications in First Days",
+        "body": "Over 42,000 undocumented migrants submitted online applications within days of Spain's extraordinary regularisation programme opening on 16 April 2026. The scale of immediate uptake signals the grey economy workforce is larger and more organised than official estimates suggested."
       }
     ],
     "no": [
       {
-        "headline": "Norway and UK Publicly Expose Joint Operation That Forced Russian Deep-Sea Submarines to Retreat",
-        "body": "Norwegian and British forces tracked and confronted Russian GUGI deep-sea submarines mapping undersea cables in the North Atlantic until the vessels withdrew to their Kola Peninsula base. Publicly naming the operation and the unit responsible marks a deliberate shift toward open deterrence over quiet surveillance.",
+        "headline": "Norway Hospitality Strike Expands as Mediation Collapses and Thousands More Workers Join",
+        "body": "Over 1,900 hotel and restaurant workers walked out on April 19 after union and employer talks on the national hospitality agreement broke down. The strike is set to more than double by April 23 as it spreads to new cities during the spring tourism season.",
         "geo": "Norway",
-        "sources": 4
+        "sources": 2
       }
     ],
     "uk": [
       {
-        "headline": "UK Government Overrode Security Vetting to Appoint Mandelson Ambassador",
-        "body": "Foreign Office officials used a rarely invoked authority to override a security rejection and install Peter Mandelson as US ambassador in early 2025. The top Foreign Office civil servant was sacked and his testimony to parliament this week may contradict the prime minister's account of events.",
+        "headline": "UK Prime Minister Admits Mandelson Appointment Was Wrong in Parliament",
+        "body": "Prime Minister Starmer told parliament he should not have appointed Peter Mandelson as US ambassador after vetting failure details emerged. A sitting prime minister admitting a core diplomatic appointment was wrong under parliamentary pressure signals weakened executive authority at a fragile moment.",
         "geo": "United Kingdom",
         "sources": 3
       }
     ],
     "nl": [
       {
-        "headline": "Dutch Public Majority Backs Keeping Groningen Gas Wells Available for Emergencies",
-        "body": "A representative survey published April 19 found sixty percent of Dutch respondents want Groningen gas wells kept available despite their official closure. Combined with a JA21 parliamentary bill and NAM resuming well repairs nearby, the political pressure to reverse permanent closure is now backed by measurable public demand.",
-        "geo": "Netherlands",
-        "sources": 2
+        "headline": "Netherlands Activates National Oil Crisis Plan for the First Time",
+        "body": "The Dutch cabinet triggered phase one of its national oil crisis plan as Hormuz disruptions tightened fuel supply chains. The move opens legal powers to ban fossil fuel exports to neighbouring countries and restrict production at high-consumption factories."
       }
     ]
   }

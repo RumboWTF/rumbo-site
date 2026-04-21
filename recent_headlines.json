@@ -1,5 +1,25 @@
 [
   {
+    "date": "21 April 2026",
+    "headlines": [
+      "Iran Fires Drones at US Navy Vessels as Ceasefire Expires",
+      "Hungary Elects New Government With Landslide Majority Ending Orbán Era",
+      "Japan Hit by Major Earthquake With Mega-Quake Risk Now Elevated",
+      "Chinese Robot Beats Human Half-Marathon World Record by Six Minutes"
+    ],
+    "regional_headlines": [
+      "Spain's Regularisation Drive Hits 42,000 Online Applications in First Days",
+      "Norway Hospitality Strike Expands as Mediation Collapses and Thousands More Workers Join",
+      "UK Prime Minister Admits Mandelson Appointment Was Wrong in Parliament",
+      "Netherlands Activates National Oil Crisis Plan for the First Time"
+    ],
+    "meanwhile": [
+      "Japanese researchers confirmed a room-temperature superconducting material held its properties under standard atmospheric pressure in peer-reviewed replication tests published April 2026.",
+      "A study published in Nature Medicine found that a single-dose gene therapy reversed inherited deafness in children with measurable hearing restoration at 12 months.",
+      "A Gallup survey published April 2026 found a record share of Americans now describe themselves as politically independent rather than aligned with either major party."
+    ]
+  },
+  {
     "date": "20 April 2026",
     "headlines": [
       "US Navy Boards Iranian Vessel as Ceasefire Collapses and Iran Shuts Hormuz",
@@ -38,14 +58,6 @@
       "Researchers published results showing a malaria vaccine using modified RNA produced durable immunity in adults across three African trial sites.",
       "A Pew Research survey found that fewer than one in three adults under 30 in Western Europe now identify with any organised religion.",
       "A large study published in The Lancet linked ultra-processed food consumption to measurably faster cognitive decline in adults over 50."
-    ]
-  },
-  {
-    "date": "18 April 2026",
-    "headlines": [
-      "Somalia enters constitutional vacuum as parliament term expires without succession plan",
-      "Zimbabwe declares state of disaster after commuter bus explosion kills 18 on major highway",
-      "Japan pledges 10 billion dollars to Southeast Asian countries hit by Middle East energy crisis"
     ]
   }
 ]
