@@ -1,5 +1,25 @@
 [
   {
+    "date": "22 April 2026",
+    "headlines": [
+      "Japan Lifts Postwar Ban on Exporting Lethal Weapons Including Fighter Jets",
+      "UAE Dismantles Second Iran-Linked Terror Cell in Two Months",
+      "Gunman Kills Canadian Tourist at Teotihuacan Pyramids in Mexico",
+      "Virginia Voters Approve Map That Could Give Democrats 10 of 11 Congressional Seats"
+    ],
+    "regional_headlines": [
+      "EU Ministers Block Spain-Led Push to Suspend Israel Trade Agreement",
+      "Norwegian Parliament Moves to Force Release of Classified Welfare Scandal Report",
+      "UK Equality Regulator Sends Revised Single-Sex Spaces Code to Ministers After Government Feedback",
+      "Netherlands Announces Nearly One Billion Euro Economic Relief Package Tied to Middle East Energy Crisis"
+    ],
+    "meanwhile": [
+      "Researchers reported that a new AI model predicted novel antibiotic structures that proved effective against drug-resistant bacteria in animal trials, published April 2026.",
+      "A large clinical study published April 2026 found continuous glucose monitoring in non-diabetic adults reduced cardiovascular risk markers significantly over 12 months.",
+      "A new cross-country survey published April 2026 found majority support for authoritarian governance among adults under 35 in four Southeast Asian nations."
+    ]
+  },
+  {
     "date": "21 April 2026",
     "headlines": [
       "Iran Fires Drones at US Navy Vessels as Ceasefire Expires",
@@ -37,27 +57,6 @@
       "North Korea tested submarine-launched ballistic missiles for the first time in four years raising detection difficulty for regional militaries.",
       "Canada's new majority government declared US economic ties a structural weakness and began formally redirecting trade policy toward other partners.",
       "More than 20000 seafarers remained stranded on hundreds of ships in the Gulf with no timeline for safe passage or crew relief."
-    ]
-  },
-  {
-    "date": "19 April 2026",
-    "headlines": [
-      "Strait of Hormuz Closes Again After US Refuses to Lift Naval Blockade",
-      "IMF Warns Middle East War Is Pushing Global Economy Toward Recession",
-      "Mass Shooting in Wartime Kyiv Kills Six as Gunman Born in Russia Opens Fire",
-      "Iran's Internet Blackout Reaches 50 Days With Door-to-Door Satellite Dish Seizures"
-    ],
-    "regional_headlines": [
-      "Spain Bypasses Parliament to Legalise Up to 500,000 Undocumented Migrants by Royal Decree",
-      "Norway's Oil Exports Hit All-Time Record as Hormuz Closure Reshapes European Energy Supply",
-      "Royal Navy Shadowed Russian Frigate Escorting Sanctioned Tankers Through English Channel",
-      "UK Attorney General Rules Military Cannot Board Russian Shadow Fleet Vessels Under International Law",
-      "Dutch Civil Servants Strike Forces Historic Parliamentary Shutdown and Restarts Wage Talks"
-    ],
-    "meanwhile": [
-      "Researchers published results showing a malaria vaccine using modified RNA produced durable immunity in adults across three African trial sites.",
-      "A Pew Research survey found that fewer than one in three adults under 30 in Western Europe now identify with any organised religion.",
-      "A large study published in The Lancet linked ultra-processed food consumption to measurably faster cognitive decline in adults over 50."
     ]
   }
 ]

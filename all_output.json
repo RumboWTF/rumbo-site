@@ -1,92 +1,92 @@
 {
-  "date": "21 April 2026",
+  "date": "22 April 2026",
   "global": {
-    "generated_at": "2026-04-21T06:00:00Z",
+    "generated_at": "2026-04-22T12:00:00Z",
     "sources": [
-      "CENTCOM",
-      "Tasnim News Agency",
       "Reuters",
-      "BBC News",
+      "BBC",
+      "Al Jazeera",
       "Associated Press",
-      "Japan Meteorological Agency",
-      "Tokyo Electric Power Company",
-      "Honor",
       "NHK",
       "The Guardian",
-      "Hungarian Election Commission",
-      "Metropolitan Police Service"
+      "El Pais",
+      "Le Monde"
     ],
     "items": [
       {
-        "headline": "Iran Fires Drones at US Navy Vessels as Ceasefire Expires",
-        "body": "Iran launched drone strikes against US military vessels enforcing the blockade and separately targeted equipment on Kuwaiti territory at Bubiyan Island injuring six civilians. The ceasefire formally expires tonight and Iran has withdrawn its negotiators leaving no diplomatic channel open as Trump warns strikes will follow.",
-        "geo": "Middle East",
+        "headline": "Japan Lifts Postwar Ban on Exporting Lethal Weapons Including Fighter Jets",
+        "body": "Japan's cabinet formally ended a decades-old prohibition on exporting lethal weapons, allowing sales of fighter jets, missiles, and destroyers to 17 partner countries. The shift marks the most significant rewrite of Japan's pacifist defence posture since 1945 and opens a new front in regional arms competition as China condemned the move publicly.",
+        "geo": "Asia",
         "sources": 5
       },
       {
-        "headline": "Hungary Elects New Government With Landslide Majority Ending Orbán Era",
-        "body": "The Tisza party won a two-thirds parliamentary majority ousting Viktor Orbán after the highest voter turnout Hungary has seen since the fall of communism. A new government is expected to lift Hungary's veto on the European Union's ninety-billion-euro Ukraine support package removing Russia's last inside ally in the bloc.",
-        "geo": "Europe",
+        "headline": "UAE Dismantles Second Iran-Linked Terror Cell in Two Months",
+        "body": "UAE security services publicly identified 27 individuals accused of planning coordinated terrorist and sabotage operations inside the country with alleged links to Iran's governing ideology. A separate Iran-linked network was broken up just weeks earlier, suggesting an accelerating covert campaign against Gulf state targets.",
+        "geo": "Asia",
+        "sources": 3
+      },
+      {
+        "headline": "Gunman Kills Canadian Tourist at Teotihuacan Pyramids in Mexico",
+        "body": "A gunman opened fire from the Pyramid of the Moon at Mexico's Teotihuacan site, killing one Canadian woman and wounding 13 tourists before dying by suicide. The attack struck one of Latin America's most visited archaeological sites fewer than two months before Mexico co-hosts the FIFA World Cup.",
+        "geo": "Americas",
         "sources": 4
       },
       {
-        "headline": "Japan Hit by Major Earthquake With Mega-Quake Risk Now Elevated",
-        "body": "A magnitude 7.7 earthquake struck off northeastern Japan prompting tsunami warnings and evacuation orders for nearly 172,000 people across five prefectures. Japan's Meteorological Agency then issued an advisory warning that the chance of a follow-on mega-quake in the north had risen tenfold above normal.",
-        "geo": "Asia",
-        "sources": 4
-      },
-      {
-        "headline": "Chinese Robot Beats Human Half-Marathon World Record by Six Minutes",
-        "body": "A bipedal humanoid robot called Lightning developed by Chinese firm Honor completed a 21-kilometre race in Beijing faster than any human has ever run the distance. The result signals that Chinese robotics development has crossed a threshold from competitive curiosity to benchmark-setting physical performance against humans.",
-        "geo": "Asia",
+        "headline": "Virginia Voters Approve Map That Could Give Democrats 10 of 11 Congressional Seats",
+        "body": "Virginia voters approved a ballot measure allowing state lawmakers to bypass the bipartisan redistricting commission and draw congressional districts more favourable to Democrats. The result escalates a nationwide redistricting contest that has already seen Texas, California, Missouri, and North Carolina redraw lines in rapid sequence.",
+        "geo": "Americas",
         "sources": 3
       }
     ],
     "meanwhile": [
       {
         "category": "science",
-        "text": "Japanese researchers confirmed a room-temperature superconducting material held its properties under standard atmospheric pressure in peer-reviewed replication tests published April 2026.",
-        "search": "room temperature superconductor replication confirmed 2026"
+        "text": "Researchers reported that a new AI model predicted novel antibiotic structures that proved effective against drug-resistant bacteria in animal trials, published April 2026.",
+        "search": "AI antibiotic discovery drug-resistant bacteria published April 2026"
       },
       {
         "category": "wellbeing",
-        "text": "A study published in Nature Medicine found that a single-dose gene therapy reversed inherited deafness in children with measurable hearing restoration at 12 months.",
-        "search": "gene therapy inherited deafness children results 2026"
+        "text": "A large clinical study published April 2026 found continuous glucose monitoring in non-diabetic adults reduced cardiovascular risk markers significantly over 12 months.",
+        "search": "continuous glucose monitoring non-diabetic cardiovascular study published April 2026"
       },
       {
         "category": "worldviews",
-        "text": "A Gallup survey published April 2026 found a record share of Americans now describe themselves as politically independent rather than aligned with either major party.",
-        "search": "Gallup record political independents Americans 2026"
+        "text": "A new cross-country survey published April 2026 found majority support for authoritarian governance among adults under 35 in four Southeast Asian nations.",
+        "search": "authoritarianism youth support Southeast Asia survey April 2026"
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Spain's Regularisation Drive Hits 42,000 Online Applications in First Days",
-        "body": "Over 42,000 undocumented migrants submitted online applications within days of Spain's extraordinary regularisation programme opening on 16 April 2026. The scale of immediate uptake signals the grey economy workforce is larger and more organised than official estimates suggested."
+        "headline": "EU Ministers Block Spain-Led Push to Suspend Israel Trade Agreement",
+        "body": "Germany and Italy blocked a Spanish-led bid to suspend the EU-Israel Association Agreement at Luxembourg foreign minister talks on Tuesday. The failure exposes a structural split inside the EU between northern and southern governments over trade as a lever of human rights policy.",
+        "geo": "Spain",
+        "sources": 4
       }
     ],
     "no": [
       {
-        "headline": "Norway Hospitality Strike Expands as Mediation Collapses and Thousands More Workers Join",
-        "body": "Over 1,900 hotel and restaurant workers walked out on April 19 after union and employer talks on the national hospitality agreement broke down. The strike is set to more than double by April 23 as it spreads to new cities during the spring tourism season.",
+        "headline": "Norwegian Parliament Moves to Force Release of Classified Welfare Scandal Report",
+        "body": "A parliamentary majority emerged to compel the government to publish a classified report on the NAV scandal, which produced dozens of wrongful convictions for welfare fraud. This would be the first use of that constitutional power since 1959, marking a direct legislative override of executive secrecy.",
         "geo": "Norway",
-        "sources": 2
+        "sources": 3
       }
     ],
     "uk": [
       {
-        "headline": "UK Prime Minister Admits Mandelson Appointment Was Wrong in Parliament",
-        "body": "Prime Minister Starmer told parliament he should not have appointed Peter Mandelson as US ambassador after vetting failure details emerged. A sitting prime minister admitting a core diplomatic appointment was wrong under parliamentary pressure signals weakened executive authority at a fragile moment.",
+        "headline": "UK Equality Regulator Sends Revised Single-Sex Spaces Code to Ministers After Government Feedback",
+        "body": "The Equality and Human Rights Commission revised its single-sex spaces code of practice following government comments and sent the updated document to the Secretary of State for approval. Public bodies and employers including the NHS are holding policy changes pending the code reaching Parliament making the delay structurally consequential across public services.",
         "geo": "United Kingdom",
         "sources": 3
       }
     ],
     "nl": [
       {
-        "headline": "Netherlands Activates National Oil Crisis Plan for the First Time",
-        "body": "The Dutch cabinet triggered phase one of its national oil crisis plan as Hormuz disruptions tightened fuel supply chains. The move opens legal powers to ban fossil fuel exports to neighbouring countries and restrict production at high-consumption factories."
+        "headline": "Netherlands Announces Nearly One Billion Euro Economic Relief Package Tied to Middle East Energy Crisis",
+        "body": "The Dutch cabinet released a combined fiscal response worth close to one billion euros targeting transport, energy bills, and agricultural fuel costs. The package signals that the government treats the Hormuz disruption as a prolonged structural threat rather than a short-term price shock.",
+        "geo": "Netherlands",
+        "sources": 3
       }
     ]
   }
