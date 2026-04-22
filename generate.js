@@ -62,16 +62,6 @@ WRITING
 - Every specific claim must be attributable to a source found in your search. Do not infer or complete with plausible-sounding context.
 - High hallucination risk: central bank decisions, election results, court rulings, legislative votes, and specific company announcements require a cited headline, outlet, and publication date. If you cannot provide all three, do not include the item.
 
-MEANWHILE
-- Include 2 to 4 Meanwhile items from the last 14 days that sit outside the main news cycle but are worth knowing. Choose freely across categories — include only items that clearly qualify. Skip categories where nothing fresh qualifies rather than forcing an item.
-- Each Meanwhile item is one sentence maximum 25 words. Must cite a specific headline, outlet, and publication date from your search. If you cannot, do not include it.
-- Must not repeat any story, entity, or angle already in the main feed, or any Meanwhile from recent editions.
-- Categories and their tests:
-  - culture: a work of art, film, music, literature, or creative output that carries meaning beyond entertainment. Not exhibitions, retrospectives, festivals, performances, release announcements, or award ceremonies.
-  - science: a genuine capability shift, unexpected finding, or newly published result that changes what is physically or technically possible. Not product launches, policy announcements, or security incidents.
-  - wellbeing: a health, medicine, or longevity outcome affecting how people live. Not lab techniques, research methods, or clinical trials without published results.
-  - worldviews: a measurable shift in what groups of people believe or how they identify. Religious change, ideological currents, generational value shifts, polarisation trends. Not news events or policy outcomes.
-
 STRUCTURE
 - Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania
 - Count genuinely independent source clusters per item (organisations that did their own reporting, not syndication). Include as a "sources" integer.
@@ -86,13 +76,6 @@ CRITICAL: Your response must be ONLY the raw JSON object. No thinking, no explan
       "body": "string — two sentences",
       "geo": "string",
       "sources": 4
-    }
-  ],
-  "meanwhile": [
-    {
-      "category": "culture|science|wellbeing|worldviews",
-      "text": "string — one sentence, max 25 words",
-      "search": "short search query for the story"
     }
   ]
 }`;
@@ -278,18 +261,6 @@ function renderItem(item, t, locale = 'en') {
   </div>`;
 }
 
-function renderMeanwhileItem(item) {
-  const cat = (item.category || "").toLowerCase();
-  const validCats = ["culture", "science", "wellbeing", "worldviews"];
-  const tagClass = validCats.includes(cat) ? `mw-tag mw-${cat}` : "mw-tag";
-  const searchQuery = encodeURIComponent(item.search || item.text || "");
-  return `  <div class="mw-item">
-    <span class="${tagClass}">${cat || "note"}</span>
-    <span class="mw-text">${item.text || ""}</span>
-    <a class="mw-link" href="https://duckduckgo.com/?q=${searchQuery}" target="_blank">↗</a>
-  </div>`;
-}
-
 function renderHtml(data, date, locale = "en") {
   const t = getTranslations(locale);
   const allItems = data.items;
@@ -308,15 +279,11 @@ function renderHtml(data, date, locale = "en") {
     "<!-- FEED:END -->" +
     html.slice(feedEnd);
 
-  // Inject meanwhile
+  // Clear Meanwhile region if template still has the markers — feature removed
   const mwStart = html.indexOf("<!-- MEANWHILE:START -->");
   const mwEnd = html.indexOf("<!-- MEANWHILE:END -->") + "<!-- MEANWHILE:END -->".length;
   if (mwStart !== -1 && mwEnd !== -1) {
-    const mwItems = Array.isArray(data.meanwhile) ? data.meanwhile : [];
-    const mwHtml = mwItems.length > 0
-      ? `<!-- MEANWHILE:START -->\n<div class="meanwhile">\n  <div class="mw-title">Meanwhile</div>\n${mwItems.map(renderMeanwhileItem).join("\n")}\n</div>\n<!-- MEANWHILE:END -->`
-      : `<!-- MEANWHILE:START -->\n<!-- MEANWHILE:END -->`;
-    html = html.slice(0, mwStart) + mwHtml + html.slice(mwEnd);
+    html = html.slice(0, mwStart) + `<!-- MEANWHILE:START -->\n<!-- MEANWHILE:END -->` + html.slice(mwEnd);
   }
 
   // Update date — keep token in place so replaceAll picks it up at the end
@@ -375,32 +342,6 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
     <tr><td class="rp" style="padding:12px 28px 0;"><hr style="border:none;border-top:1px solid #e8e4de;margin:0;"></td></tr>`;
   }).join("\n");
 
-  const mwStyle = (cat) => {
-    const c = (cat || "").toLowerCase();
-    const map = {
-      culture: "color:#6b5a20;background:#f0e8d8;border:1px solid #d4c68a;",
-      science: "color:#3f5838;background:#e2ebe0;border:1px solid #b8c9b2;",
-      wellbeing: "color:#6a3f3f;background:#ede0e0;border:1px solid #c9b0b0;",
-      worldviews: "color:#3a4566;background:#dfe3ed;border:1px solid #a8b2c9;",
-    };
-    return `display:inline-block;font-family:'Courier New',monospace;font-size:9px;letter-spacing:1.2px;padding:3px 8px;border-radius:3px;text-transform:uppercase;margin-right:8px;${map[c] || "color:#555;background:#f0ede6;border:1px solid #d0ccc4;"}`;
-  };
-
-  const meanwhile = Array.isArray(data.meanwhile) ? data.meanwhile : [];
-  const meanwhileHtml = meanwhile.length > 0 ? `
-    <tr><td class="rp" style="padding:24px 28px 0;">
-      <div style="border-top:1px solid #e0dcd4;padding-top:18px;">
-        <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:#888;text-transform:uppercase;margin-bottom:12px;">Meanwhile</div>
-        ${meanwhile.map(m => `
-        <div style="padding:6px 0;font-family:Georgia,serif;font-size:13px;color:#3a3a38;line-height:1.55;">
-          <span style="${mwStyle(m.category)}">${(m.category || "note").toLowerCase()}</span>
-          <span>${m.text || ""}</span>
-          <a href="https://duckduckgo.com/?q=${encodeURIComponent(m.search || m.text || "")}" style="font-family:'Courier New',monospace;font-size:11px;color:#c8a84a;text-decoration:none;margin-left:4px;" target="_blank">&#x2197;</a>
-        </div>`).join("\n")}
-      </div>
-    </td></tr>` : "";
-
-
   return `<!doctype html>
 <html lang="${locale}">
 <head>
@@ -433,9 +374,6 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
 
   <!-- Items -->
   ${itemsHtml}
-
-  <!-- Meanwhile -->
-  ${meanwhileHtml}
 
   <!-- Footer -->
   <tr><td class="rp" style="padding:28px 28px 20px;text-align:center;">
@@ -480,14 +418,8 @@ async function main() {
     const historyHeadlines = recentHistory.flatMap(r => [...(r.headlines || []), ...(r.regional_headlines || [])]);
     const combinedHeadlines = [...new Set([...allHeadlines, ...historyHeadlines])];
 
-    // Recent Meanwhile items — for dedup context
-    const historyMeanwhile = recentHistory.flatMap(r => r.meanwhile || []);
-
     if (combinedHeadlines.length > 0) {
       previousContext = `\nThe following stories appeared in recent editions:\n${combinedHeadlines.map(h => `- ${h}`).join("\n")}\n\nSelection must demonstrate net-new information. If the underlying story appeared in the list above, the new development must be substantial enough to stand on its own without the prior context. A fresh angle on the same situation does not qualify — the update itself must earn the spot on its own merits.\n`;
-      if (historyMeanwhile.length > 0) {
-        previousContext += `\nThe following Meanwhile items appeared in recent editions. Do not repeat these topics:\n${historyMeanwhile.map(m => `- ${m}`).join("\n")}\n`;
-      }
     }
 
     console.log(`Loaded deduplication context: ${combinedHeadlines.length} headlines from last ${recentHistory.length + 1} runs.`);
@@ -577,12 +509,10 @@ async function main() {
     } catch (e) {}
     // Collect regional headlines across all regions
     const regionalHeadlines = Object.values(allRegionalItems).flatMap(items => items.map(i => i.headline));
-    const meanwhileTexts = (globalData.meanwhile || []).map(m => m.text);
     const newEntry = {
       date: dateStr,
       headlines: globalData.items.map(i => i.headline),
-      regional_headlines: regionalHeadlines,
-      meanwhile: meanwhileTexts
+      regional_headlines: regionalHeadlines
     };
     recentHistory.unshift(newEntry);
     recentHistory = recentHistory.slice(0, 3); // keep last 3 runs only
