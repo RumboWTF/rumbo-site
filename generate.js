@@ -124,7 +124,7 @@ async function callClaude(prompt, deduplicationHint = "") {
 
   const searchResponse = await Promise.race([
     client.messages.create({
-      model: "claude-sonnet-4-6",
+      model: "claude-sonnet-4-5",
       max_tokens: 2500,
       tools: [{ type: "web_search_20250305", name: "web_search" }],
       messages: [{ role: "user", content: searchPrompt }],
@@ -142,7 +142,7 @@ async function callClaude(prompt, deduplicationHint = "") {
 
   const formatResponse = await Promise.race([
     client.messages.create({
-      model: "claude-sonnet-4-6",
+      model: "claude-sonnet-4-5",
       max_tokens: 2000,
       system: "You are a JSON formatter. Output only raw valid JSON. Start with { and end with }. No other text.",
       messages: [
@@ -175,7 +175,7 @@ async function callClaudeSinglePass(prompt, regionName = "regional") {
 
   const searchResponse = await Promise.race([
     client.messages.create({
-      model: "claude-sonnet-4-6",
+      model: "claude-sonnet-4-5",
       max_tokens: 1500,
       tools: [{ type: "web_search_20250305", name: "web_search" }],
       messages: [{ role: "user", content: searchPrompt }],
@@ -193,7 +193,7 @@ async function callClaudeSinglePass(prompt, regionName = "regional") {
 
   const formatResponse = await Promise.race([
     client.messages.create({
-      model: "claude-sonnet-4-6",
+      model: "claude-sonnet-4-5",
       max_tokens: 1500,
       system: "You are a JSON formatter. Output only raw valid JSON. Start with { and end with }. No other text.",
       messages: [{ role: "user", content: `Format this content as the required JSON structure:\n\n${searchText}\n\n${prompt}` }],
