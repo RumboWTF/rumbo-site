@@ -1,56 +1,35 @@
 {
-  "generated_at": "2026-04-22T12:00:00Z",
+  "generated_at": "2025-04-23T10:30:00Z",
   "sources": [
-    "Reuters",
-    "BBC",
-    "Al Jazeera",
+    "NBC News",
     "Associated Press",
-    "NHK",
     "The Guardian",
-    "El Pais",
-    "Le Monde"
+    "CNN"
   ],
   "items": [
     {
-      "headline": "Japan Lifts Postwar Ban on Exporting Lethal Weapons Including Fighter Jets",
-      "body": "Japan's cabinet formally ended a decades-old prohibition on exporting lethal weapons, allowing sales of fighter jets, missiles, and destroyers to 17 partner countries. The shift marks the most significant rewrite of Japan's pacifist defence posture since 1945 and opens a new front in regional arms competition as China condemned the move publicly.",
-      "geo": "Asia",
-      "sources": 5
-    },
-    {
-      "headline": "UAE Dismantles Second Iran-Linked Terror Cell in Two Months",
-      "body": "UAE security services publicly identified 27 individuals accused of planning coordinated terrorist and sabotage operations inside the country with alleged links to Iran's governing ideology. A separate Iran-linked network was broken up just weeks earlier, suggesting an accelerating covert campaign against Gulf state targets.",
-      "geo": "Asia",
+      "headline": "Navy Secretary Ousted Amid Iran War",
+      "body": "Navy Secretary John Phelan departed the Trump administration effective immediately on April 22 amid tension with Defense Secretary Pete Hegseth. Navy Undersecretary Hung Cao will serve as acting secretary during ongoing operations in the Strait of Hormuz.",
+      "geo": "Americas",
       "sources": 3
     },
     {
-      "headline": "Gunman Kills Canadian Tourist at Teotihuacan Pyramids in Mexico",
-      "body": "A gunman opened fire from the Pyramid of the Moon at Mexico's Teotihuacan site, killing one Canadian woman and wounding 13 tourists before dying by suicide. The attack struck one of Latin America's most visited archaeological sites fewer than two months before Mexico co-hosts the FIFA World Cup.",
+      "headline": "CIA Agents Killed in Mexico Drug Operation Car Crash",
+      "body": "Two US embassy officials who died in a car accident in Mexico on Sunday worked for the CIA and had been collaborating on counternarcotics operations. Mexican President Claudia Sheinbaum is considering sanctions against Chihuahua state for allowing CIA agents to participate without federal government awareness.",
       "geo": "Americas",
       "sources": 4
     },
     {
-      "headline": "Virginia Voters Approve Map That Could Give Democrats 10 of 11 Congressional Seats",
-      "body": "Virginia voters approved a ballot measure allowing state lawmakers to bypass the bipartisan redistricting commission and draw congressional districts more favourable to Democrats. The result escalates a nationwide redistricting contest that has already seen Texas, California, Missouri, and North Carolina redraw lines in rapid sequence.",
+      "headline": "Maine Passes First Statewide Data Center Moratorium",
+      "body": "State legislators in Maine passed a first-in-the-country statewide moratorium on data centers larger than 20 megawatts until November 2027. Governor Janet Mills has ten days to decide whether to sign the bill enacted April 14.",
+      "geo": "Americas",
+      "sources": 2
+    },
+    {
+      "headline": "First High-Level US Diplomatic Visit to Cuba Since 2016",
+      "body": "American diplomats flew to Cuba in early April for the first time since 2016 in a new diplomatic push. Cuba's government confirmed the meeting included assistant secretaries of state and deputy foreign ministers discussing energy embargo elimination.",
       "geo": "Americas",
       "sources": 3
-    }
-  ],
-  "meanwhile": [
-    {
-      "category": "science",
-      "text": "Researchers reported that a new AI model predicted novel antibiotic structures that proved effective against drug-resistant bacteria in animal trials, published April 2026.",
-      "search": "AI antibiotic discovery drug-resistant bacteria published April 2026"
-    },
-    {
-      "category": "wellbeing",
-      "text": "A large clinical study published April 2026 found continuous glucose monitoring in non-diabetic adults reduced cardiovascular risk markers significantly over 12 months.",
-      "search": "continuous glucose monitoring non-diabetic cardiovascular study published April 2026"
-    },
-    {
-      "category": "worldviews",
-      "text": "A new cross-country survey published April 2026 found majority support for authoritarian governance among adults under 35 in four Southeast Asian nations.",
-      "search": "authoritarianism youth support Southeast Asia survey April 2026"
     }
   ]
 }

@@ -1,5 +1,18 @@
 [
   {
+    "date": "23 April 2026",
+    "headlines": [
+      "Navy Secretary Ousted Amid Iran War",
+      "CIA Agents Killed in Mexico Drug Operation Car Crash",
+      "Maine Passes First Statewide Data Center Moratorium",
+      "First High-Level US Diplomatic Visit to Cuba Since 2016"
+    ],
+    "regional_headlines": [
+      "Spain Begins In-Person Immigration Regularization Appointments After 42,000 Online Applications",
+      "UK Parliament Passes Tobacco Ban Creating Smoke-Free Generation"
+    ]
+  },
+  {
     "date": "22 April 2026",
     "headlines": [
       "Japan Lifts Postwar Ban on Exporting Lethal Weapons Including Fighter Jets",
@@ -37,26 +50,6 @@
       "Japanese researchers confirmed a room-temperature superconducting material held its properties under standard atmospheric pressure in peer-reviewed replication tests published April 2026.",
       "A study published in Nature Medicine found that a single-dose gene therapy reversed inherited deafness in children with measurable hearing restoration at 12 months.",
       "A Gallup survey published April 2026 found a record share of Americans now describe themselves as politically independent rather than aligned with either major party."
-    ]
-  },
-  {
-    "date": "20 April 2026",
-    "headlines": [
-      "US Navy Boards Iranian Vessel as Ceasefire Collapses and Iran Shuts Hormuz",
-      "French UNIFIL Peacekeeper Killed in Lebanon in Attack UN Attributes to Hezbollah",
-      "Bulgaria Votes in Pro-Russian Bloc by Wide Margin in Eighth Election in Five Years",
-      "Eight Children Killed in Shreveport in Deadliest US Mass Shooting in Over Two Years"
-    ],
-    "regional_headlines": [
-      "Spain's Mass Regularisation Opens as Scammers Block Official Appointments Within Hours",
-      "Norway and UK Publicly Expose Joint Operation That Forced Russian Deep-Sea Submarines to Retreat",
-      "UK Government Overrode Security Vetting to Appoint Mandelson Ambassador",
-      "Dutch Public Majority Backs Keeping Groningen Gas Wells Available for Emergencies"
-    ],
-    "meanwhile": [
-      "North Korea tested submarine-launched ballistic missiles for the first time in four years raising detection difficulty for regional militaries.",
-      "Canada's new majority government declared US economic ties a structural weakness and began formally redirecting trade policy toward other partners.",
-      "More than 20000 seafarers remained stranded on hundreds of ships in the Gulf with no timeline for safe passage or crew relief."
     ]
   }
 ]
