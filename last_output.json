@@ -1,35 +1,34 @@
 {
-  "generated_at": "2025-04-23T10:30:00Z",
+  "generated_at": "2025-05-18T10:30:00Z",
   "sources": [
-    "NBC News",
-    "Associated Press",
-    "The Guardian",
-    "CNN"
+    "Reuters",
+    "AP",
+    "Yonhap"
   ],
   "items": [
     {
-      "headline": "Navy Secretary Ousted Amid Iran War",
-      "body": "Navy Secretary John Phelan departed the Trump administration effective immediately on April 22 amid tension with Defense Secretary Pete Hegseth. Navy Undersecretary Hung Cao will serve as acting secretary during ongoing operations in the Strait of Hormuz.",
-      "geo": "Americas",
+      "headline": "South Korea economy grows 1.7% in first quarter, strongest in nearly six years",
+      "body": "South Korea's economy expanded 1.7% in the first quarter, driven by a 5.1% surge in exports of semiconductors for artificial intelligence. The growth rate was the strongest since 2020 and beat forecasts by 70%.",
+      "geo": "Asia",
       "sources": 3
     },
     {
-      "headline": "CIA Agents Killed in Mexico Drug Operation Car Crash",
-      "body": "Two US embassy officials who died in a car accident in Mexico on Sunday worked for the CIA and had been collaborating on counternarcotics operations. Mexican President Claudia Sheinbaum is considering sanctions against Chihuahua state for allowing CIA agents to participate without federal government awareness.",
-      "geo": "Americas",
-      "sources": 4
-    },
-    {
-      "headline": "Maine Passes First Statewide Data Center Moratorium",
-      "body": "State legislators in Maine passed a first-in-the-country statewide moratorium on data centers larger than 20 megawatts until November 2027. Governor Janet Mills has ten days to decide whether to sign the bill enacted April 14.",
-      "geo": "Americas",
+      "headline": "US military intercepts Iranian oil tankers in Asian waters far from Persian Gulf",
+      "body": "The US intercepted at least three Iranian tankers near India, Malaysia and Sri Lanka, seizing vessels in international waters thousands of miles from the Strait of Hormuz. The remote locations suggest the US is avoiding mine-deployment risks near Iranian coastlines.",
+      "geo": "Asia",
       "sources": 2
     },
     {
-      "headline": "First High-Level US Diplomatic Visit to Cuba Since 2016",
-      "body": "American diplomats flew to Cuba in early April for the first time since 2016 in a new diplomatic push. Cuba's government confirmed the meeting included assistant secretaries of state and deputy foreign ministers discussing energy embargo elimination.",
+      "headline": "Satellite images show major oil spills in Persian Gulf after strikes on Iranian facilities",
+      "body": "Oil slicks from strikes on Lavan Island and other facilities now threaten desalination plants serving nearly 100 million people. Spills have reached protected wildlife refuges and could contaminate filtering systems for regional drinking water.",
+      "geo": "Global",
+      "sources": 2
+    },
+    {
+      "headline": "Federal grand jury indicts Southern Poverty Law Center on fraud and money laundering charges",
+      "body": "The SPLC faces 11 counts alleging it funneled over $3 million in donations to individuals linked to the Ku Klux Klan and neo-Nazi groups between 2014 and 2023. The indictment marks a major legal challenge to one of America's most prominent civil rights monitoring organizations.",
       "geo": "Americas",
-      "sources": 3
+      "sources": 1
     }
   ]
 }

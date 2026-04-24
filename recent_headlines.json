@@ -1,5 +1,18 @@
 [
   {
+    "date": "24 April 2026",
+    "headlines": [
+      "South Korea economy grows 1.7% in first quarter, strongest in nearly six years",
+      "US military intercepts Iranian oil tankers in Asian waters far from Persian Gulf",
+      "Satellite images show major oil spills in Persian Gulf after strikes on Iranian facilities",
+      "Federal grand jury indicts Southern Poverty Law Center on fraud and money laundering charges"
+    ],
+    "regional_headlines": [
+      "Norway takes state control of Europe's largest rare earth deposit to accelerate development",
+      "Cabinet Office chief says sacked Foreign Office leader refused to hand over Mandelson vetting files"
+    ]
+  },
+  {
     "date": "23 April 2026",
     "headlines": [
       "Navy Secretary Ousted Amid Iran War",
@@ -30,26 +43,6 @@
       "Researchers reported that a new AI model predicted novel antibiotic structures that proved effective against drug-resistant bacteria in animal trials, published April 2026.",
       "A large clinical study published April 2026 found continuous glucose monitoring in non-diabetic adults reduced cardiovascular risk markers significantly over 12 months.",
       "A new cross-country survey published April 2026 found majority support for authoritarian governance among adults under 35 in four Southeast Asian nations."
-    ]
-  },
-  {
-    "date": "21 April 2026",
-    "headlines": [
-      "Iran Fires Drones at US Navy Vessels as Ceasefire Expires",
-      "Hungary Elects New Government With Landslide Majority Ending Orbán Era",
-      "Japan Hit by Major Earthquake With Mega-Quake Risk Now Elevated",
-      "Chinese Robot Beats Human Half-Marathon World Record by Six Minutes"
-    ],
-    "regional_headlines": [
-      "Spain's Regularisation Drive Hits 42,000 Online Applications in First Days",
-      "Norway Hospitality Strike Expands as Mediation Collapses and Thousands More Workers Join",
-      "UK Prime Minister Admits Mandelson Appointment Was Wrong in Parliament",
-      "Netherlands Activates National Oil Crisis Plan for the First Time"
-    ],
-    "meanwhile": [
-      "Japanese researchers confirmed a room-temperature superconducting material held its properties under standard atmospheric pressure in peer-reviewed replication tests published April 2026.",
-      "A study published in Nature Medicine found that a single-dose gene therapy reversed inherited deafness in children with measurable hearing restoration at 12 months.",
-      "A Gallup survey published April 2026 found a record share of Americans now describe themselves as politically independent rather than aligned with either major party."
     ]
   }
 ]
