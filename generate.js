@@ -46,6 +46,7 @@ SELECTION
 - Select exactly 3-4 items, picked for signal not volume of coverage.
 - Select purely by consequence. A development that shifts how hundreds of millions of people live outranks one that dominates coverage but affects only domestic politics. Actively discount story loudness.
 - If two or more items share the same continent, verify each independently earns its place.
+- Consequence test — for each candidate item, complete this sentence concretely before including it: "This shifts what happens next for [named group of people] because [named effect]." If you cannot name a specific group and a specific downstream effect, do not include the item. "Readers who follow this topic" is not a group. "People may pay attention" is not an effect.
 
 FRESHNESS
 - Every item must report something that has already happened, not something expected or anticipated. If the most newsworthy angle is what might happen next, skip it.
@@ -89,6 +90,8 @@ ${globalJson}
 Search the web for the single most consequential development in ${regionName} from the last 72 hours not already in the global edition. Only add a second item if it is clearly distinct, equally fresh, and genuinely significant. Zero items is better than a weak or stale story.
 
 Consequential means: the story shifts something beyond its immediate domain — a policy change affecting daily life, an economic move with cross-sector effects, a social development with structural implications. Loud domestic controversy with no second-order consequences does not qualify.
+
+Consequence test — for each candidate item, complete this sentence concretely before including it: "This shifts what happens next for [named group of people in ${regionName}] because [named effect]." If you cannot name a specific group and a specific downstream effect, do not include the item.
 
 Rules:
 - Every item must report something that has already happened, not something expected or anticipated. If the most newsworthy angle is what might happen next, skip it.
