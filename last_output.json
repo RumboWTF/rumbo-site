@@ -1,34 +1,36 @@
 {
-  "generated_at": "2025-05-18T10:30:00Z",
+  "generated_at": "2025-04-25T10:30:00Z",
   "sources": [
+    "CNBC",
     "Reuters",
-    "AP",
-    "Yonhap"
+    "Associated Press",
+    "BBC",
+    "Financial Times"
   ],
   "items": [
     {
-      "headline": "South Korea economy grows 1.7% in first quarter, strongest in nearly six years",
-      "body": "South Korea's economy expanded 1.7% in the first quarter, driven by a 5.1% surge in exports of semiconductors for artificial intelligence. The growth rate was the strongest since 2020 and beat forecasts by 70%.",
-      "geo": "Asia",
+      "headline": "X-energy raises over $1 billion in largest nuclear IPO on record",
+      "body": "Small modular reactor company X-energy completed public offering on April 24 with Amazon backing. Energy agency head warned Europe has six weeks of jet fuel left as Lufthansa cuts 20,000 flights through 2026.",
+      "geo": "Global",
       "sources": 3
     },
     {
-      "headline": "US military intercepts Iranian oil tankers in Asian waters far from Persian Gulf",
-      "body": "The US intercepted at least three Iranian tankers near India, Malaysia and Sri Lanka, seizing vessels in international waters thousands of miles from the Strait of Hormuz. The remote locations suggest the US is avoiding mine-deployment risks near Iranian coastlines.",
-      "geo": "Asia",
+      "headline": "Tanzania reports 518 killed in election violence, far below opposition estimates",
+      "body": "Government commission documented deaths from last year's election, mostly from gunshot wounds. Commission head called the toll not final or conclusive.",
+      "geo": "Africa",
       "sources": 2
     },
     {
-      "headline": "Satellite images show major oil spills in Persian Gulf after strikes on Iranian facilities",
-      "body": "Oil slicks from strikes on Lavan Island and other facilities now threaten desalination plants serving nearly 100 million people. Spills have reached protected wildlife refuges and could contaminate filtering systems for regional drinking water.",
-      "geo": "Global",
-      "sources": 2
-    },
-    {
-      "headline": "Federal grand jury indicts Southern Poverty Law Center on fraud and money laundering charges",
-      "body": "The SPLC faces 11 counts alleging it funneled over $3 million in donations to individuals linked to the Ku Klux Klan and neo-Nazi groups between 2014 and 2023. The indictment marks a major legal challenge to one of America's most prominent civil rights monitoring organizations.",
+      "headline": "Peru defense and foreign ministers resign over fighter jet purchase dispute",
+      "body": "Cabinet members quit April 22 after interim president deferred F-16 decision from Lockheed Martin. Economy ministry transferred $462 million initial payment despite president's declared suspension.",
       "geo": "Americas",
-      "sources": 1
+      "sources": 2
+    },
+    {
+      "headline": "Japan warns of heightened earthquake risk after 7.4 magnitude strike",
+      "body": "Earthquake on April 20 triggered tsunami warnings for waves up to three meters. Officials placed 182 towns on alert with 1% chance of magnitude 8 quake in next week.",
+      "geo": "Asia",
+      "sources": 3
     }
   ]
 }

@@ -1,5 +1,20 @@
 [
   {
+    "date": "25 April 2026",
+    "headlines": [
+      "X-energy raises over $1 billion in largest nuclear IPO on record",
+      "Tanzania reports 518 killed in election violence, far below opposition estimates",
+      "Peru defense and foreign ministers resign over fighter jet purchase dispute",
+      "Japan warns of heightened earthquake risk after 7.4 magnitude strike"
+    ],
+    "regional_headlines": [
+      "Barcelona confirms Lamine Yamal's domestic season ended by injury sustained against Celta Vigo",
+      "Norway to ban social media for children under 16 starting 2027",
+      "Prime Minister Starmer apologizes for Mandelson appointment after security vetting override revealed",
+      "Dutch intelligence warns of greatest security threat in 80 years from Russia and China"
+    ]
+  },
+  {
     "date": "24 April 2026",
     "headlines": [
       "South Korea economy grows 1.7% in first quarter, strongest in nearly six years",
@@ -23,26 +38,6 @@
     "regional_headlines": [
       "Spain Begins In-Person Immigration Regularization Appointments After 42,000 Online Applications",
       "UK Parliament Passes Tobacco Ban Creating Smoke-Free Generation"
-    ]
-  },
-  {
-    "date": "22 April 2026",
-    "headlines": [
-      "Japan Lifts Postwar Ban on Exporting Lethal Weapons Including Fighter Jets",
-      "UAE Dismantles Second Iran-Linked Terror Cell in Two Months",
-      "Gunman Kills Canadian Tourist at Teotihuacan Pyramids in Mexico",
-      "Virginia Voters Approve Map That Could Give Democrats 10 of 11 Congressional Seats"
-    ],
-    "regional_headlines": [
-      "EU Ministers Block Spain-Led Push to Suspend Israel Trade Agreement",
-      "Norwegian Parliament Moves to Force Release of Classified Welfare Scandal Report",
-      "UK Equality Regulator Sends Revised Single-Sex Spaces Code to Ministers After Government Feedback",
-      "Netherlands Announces Nearly One Billion Euro Economic Relief Package Tied to Middle East Energy Crisis"
-    ],
-    "meanwhile": [
-      "Researchers reported that a new AI model predicted novel antibiotic structures that proved effective against drug-resistant bacteria in animal trials, published April 2026.",
-      "A large clinical study published April 2026 found continuous glucose monitoring in non-diabetic adults reduced cardiovascular risk markers significantly over 12 months.",
-      "A new cross-country survey published April 2026 found majority support for authoritarian governance among adults under 35 in four Southeast Asian nations."
     ]
   }
 ]
