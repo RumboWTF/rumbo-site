@@ -606,6 +606,15 @@ async function main() {
   }
   } // end SEND_NEWSLETTER check
 
+  // Keepalive ping to prevent Supabase free-tier auto-pause
+  try {
+    const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_KEY);
+    await supabase.from("subscribers").select("id", { count: "exact", head: true });
+    console.log("Supabase keepalive ping sent.");
+  } catch (e) {
+    console.error("Keepalive ping failed:", e.message);
+  }
+
   console.log("Done.");
 }
 
