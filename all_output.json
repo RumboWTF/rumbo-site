@@ -1,37 +1,39 @@
 {
-  "date": "25 April 2026",
+  "date": "26 April 2026",
   "global": {
-    "generated_at": "2025-04-25T10:30:00Z",
+    "generated_at": "2026-04-26T18:30:00Z",
     "sources": [
-      "CNBC",
-      "Reuters",
-      "Associated Press",
-      "BBC",
-      "Financial Times"
+      "South China Morning Post",
+      "Korea JoongAng Daily",
+      "Kyiv Independent",
+      "TechCrunch",
+      "Department of Justice",
+      "World Bank",
+      "UNDP"
     ],
     "items": [
       {
-        "headline": "X-energy raises over $1 billion in largest nuclear IPO on record",
-        "body": "Small modular reactor company X-energy completed public offering on April 24 with Amazon backing. Energy agency head warned Europe has six weeks of jet fuel left as Lufthansa cuts 20,000 flights through 2026.",
-        "geo": "Global",
+        "headline": "Russia launches over 600 drones and 47 missiles at Ukraine in one of largest strikes since 2022 invasion",
+        "body": "Russia struck 30 locations across Ukraine killing at least 10 people in a massive coordinated attack. The scale signals an escalation that directly affects energy infrastructure and civilian safety for millions across multiple Ukrainian regions.",
+        "geo": "Europe",
         "sources": 3
       },
       {
-        "headline": "Tanzania reports 518 killed in election violence, far below opposition estimates",
-        "body": "Government commission documented deaths from last year's election, mostly from gunshot wounds. Commission head called the toll not final or conclusive.",
-        "geo": "Africa",
-        "sources": 2
-      },
-      {
-        "headline": "Peru defense and foreign ministers resign over fighter jet purchase dispute",
-        "body": "Cabinet members quit April 22 after interim president deferred F-16 decision from Lockheed Martin. Economy ministry transferred $462 million initial payment despite president's declared suspension.",
+        "headline": "OpenAI shuts down Sora video generation service after user base collapsed by half",
+        "body": "The Sora web and app closed on April 26 after users fell from one million to under 500,000. The shutdown reflects compute cost pressures reshaping which AI services remain economically viable at commercial scale.",
         "geo": "Americas",
         "sources": 2
       },
       {
-        "headline": "Japan warns of heightened earthquake risk after 7.4 magnitude strike",
-        "body": "Earthquake on April 20 triggered tsunami warnings for waves up to three meters. Officials placed 182 towns on alert with 1% chance of magnitude 8 quake in next week.",
+        "headline": "SK Hynix breaks ground on $13 billion AI memory fabrication plant in South Korea",
+        "body": "Construction began on a factory dedicated to advanced AI chip packaging targeting 2028 completion. The investment cements South Korea's position in supplying memory chips critical to data center expansion worldwide.",
         "geo": "Asia",
+        "sources": 2
+      },
+      {
+        "headline": "Middle East conflict cuts regional economic growth forecast by more than half to 1.8 percent",
+        "body": "The World Bank slashed its 2026 MENA growth projection by 2.4 percentage points citing energy route disruptions. Separate analysis warns 8.8 million people across Asia-Pacific risk falling into poverty from resulting energy price shocks.",
+        "geo": "Global",
         "sources": 3
       }
     ]
@@ -39,33 +41,17 @@
   "regional_items": {
     "es": [
       {
-        "headline": "Barcelona confirms Lamine Yamal's domestic season ended by injury sustained against Celta Vigo",
-        "body": "The forward suffered the injury on April 22 and will miss Barcelona's title run. Spain faces uncertainty over his availability for World Cup opener on June 15.",
+        "headline": "Pentagon considers suspending Spain from NATO over refusal to support US operations in Iran war",
+        "body": "Internal Defense Department email outlines potential suspension after Spain closed airspace and blocked US use of Rota and Morón bases. The threat marks unprecedented tension within the alliance affecting Spain's security architecture and transatlantic defense posture.",
         "geo": "Spain",
-        "sources": 2
-      }
-    ],
-    "no": [
-      {
-        "headline": "Norway to ban social media for children under 16 starting 2027",
-        "body": "Government announced bill making accounts illegal before January first of year users turn sixteen. Tech companies must verify age under strictest European child digital safety framework.",
-        "geo": "Norway",
         "sources": 2
       }
     ],
     "uk": [
       {
-        "headline": "Prime Minister Starmer apologizes for Mandelson appointment after security vetting override revealed",
-        "body": "Starmer told Parliament on April 20 he would not have appointed the US Ambassador had he known vetting officials recommended denial in January 2025. Foreign Office permanent secretary was sacked after testimony revealed Downing Street pressured clearance despite Epstein intelligence concerns.",
+        "headline": "Parliament votes Tuesday on referring Starmer to sleaze inquiry over Mandelson testimony contradictions",
+        "body": "Opposition parties secured a vote on sending the Prime Minister to the privileges committee that ended Boris Johnson's career. Labour's majority makes referral unlikely but internal anger over the scandal may split backbenchers two weeks before local elections.",
         "geo": "United Kingdom",
-        "sources": 3
-      }
-    ],
-    "nl": [
-      {
-        "headline": "Dutch intelligence warns of greatest security threat in 80 years from Russia and China",
-        "body": "AIVD released annual report Thursday citing Russian cyberattacks on police and Chinese targeting of quantum technology. Agency head said military conflict between Russia and West is no longer unthinkable.",
-        "geo": "Netherlands",
         "sources": 2
       }
     ]

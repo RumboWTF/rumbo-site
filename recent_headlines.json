@@ -1,5 +1,18 @@
 [
   {
+    "date": "26 April 2026",
+    "headlines": [
+      "Russia launches over 600 drones and 47 missiles at Ukraine in one of largest strikes since 2022 invasion",
+      "OpenAI shuts down Sora video generation service after user base collapsed by half",
+      "SK Hynix breaks ground on $13 billion AI memory fabrication plant in South Korea",
+      "Middle East conflict cuts regional economic growth forecast by more than half to 1.8 percent"
+    ],
+    "regional_headlines": [
+      "Pentagon considers suspending Spain from NATO over refusal to support US operations in Iran war",
+      "Parliament votes Tuesday on referring Starmer to sleaze inquiry over Mandelson testimony contradictions"
+    ]
+  },
+  {
     "date": "25 April 2026",
     "headlines": [
       "X-energy raises over $1 billion in largest nuclear IPO on record",
@@ -25,19 +38,6 @@
     "regional_headlines": [
       "Norway takes state control of Europe's largest rare earth deposit to accelerate development",
       "Cabinet Office chief says sacked Foreign Office leader refused to hand over Mandelson vetting files"
-    ]
-  },
-  {
-    "date": "23 April 2026",
-    "headlines": [
-      "Navy Secretary Ousted Amid Iran War",
-      "CIA Agents Killed in Mexico Drug Operation Car Crash",
-      "Maine Passes First Statewide Data Center Moratorium",
-      "First High-Level US Diplomatic Visit to Cuba Since 2016"
-    ],
-    "regional_headlines": [
-      "Spain Begins In-Person Immigration Regularization Appointments After 42,000 Online Applications",
-      "UK Parliament Passes Tobacco Ban Creating Smoke-Free Generation"
     ]
   }
 ]
