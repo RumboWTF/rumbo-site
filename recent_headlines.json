@@ -1,5 +1,17 @@
 [
   {
+    "date": "27 April 2026",
+    "headlines": [
+      "Mali defense minister killed as separatists and al-Qaida-linked militants jointly attack five cities",
+      "Meta to cut 10 percent of workforce affecting 8,000 employees on May 20",
+      "Colombia bombing kills 20 on highway bus as rebel attacks multiply across southwest",
+      "Uganda President Museveni wins seventh term extending four-decade rule"
+    ],
+    "regional_headlines": [
+      "Parliament passes smartphone ban in schools with legal force after Lords approves government amendment"
+    ]
+  },
+  {
     "date": "26 April 2026",
     "headlines": [
       "Russia launches over 600 drones and 47 missiles at Ukraine in one of largest strikes since 2022 invasion",
@@ -25,19 +37,6 @@
       "Norway to ban social media for children under 16 starting 2027",
       "Prime Minister Starmer apologizes for Mandelson appointment after security vetting override revealed",
       "Dutch intelligence warns of greatest security threat in 80 years from Russia and China"
-    ]
-  },
-  {
-    "date": "24 April 2026",
-    "headlines": [
-      "South Korea economy grows 1.7% in first quarter, strongest in nearly six years",
-      "US military intercepts Iranian oil tankers in Asian waters far from Persian Gulf",
-      "Satellite images show major oil spills in Persian Gulf after strikes on Iranian facilities",
-      "Federal grand jury indicts Southern Poverty Law Center on fraud and money laundering charges"
-    ],
-    "regional_headlines": [
-      "Norway takes state control of Europe's largest rare earth deposit to accelerate development",
-      "Cabinet Office chief says sacked Foreign Office leader refused to hand over Mandelson vetting files"
     ]
   }
 ]

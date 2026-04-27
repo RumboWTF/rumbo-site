@@ -1,56 +1,45 @@
 {
-  "date": "26 April 2026",
+  "date": "27 April 2026",
   "global": {
-    "generated_at": "2026-04-26T18:30:00Z",
+    "generated_at": "2026-04-27T18:00:00Z",
     "sources": [
-      "South China Morning Post",
-      "Korea JoongAng Daily",
-      "Kyiv Independent",
-      "TechCrunch",
-      "Department of Justice",
-      "World Bank",
-      "UNDP"
+      "Al Jazeera",
+      "Reuters",
+      "Associated Press",
+      "BBC"
     ],
     "items": [
       {
-        "headline": "Russia launches over 600 drones and 47 missiles at Ukraine in one of largest strikes since 2022 invasion",
-        "body": "Russia struck 30 locations across Ukraine killing at least 10 people in a massive coordinated attack. The scale signals an escalation that directly affects energy infrastructure and civilian safety for millions across multiple Ukrainian regions.",
-        "geo": "Europe",
+        "headline": "Mali defense minister killed as separatists and al-Qaida-linked militants jointly attack five cities",
+        "body": "Defence Minister Sadio Camara died when coordinated attacks hit military sites nationwide on April 25-26. Tuareg separatists announced Russian Africa Corps and Malian forces withdrew from Kidal following the assault.",
+        "geo": "Africa",
         "sources": 3
       },
       {
-        "headline": "OpenAI shuts down Sora video generation service after user base collapsed by half",
-        "body": "The Sora web and app closed on April 26 after users fell from one million to under 500,000. The shutdown reflects compute cost pressures reshaping which AI services remain economically viable at commercial scale.",
+        "headline": "Meta to cut 10 percent of workforce affecting 8,000 employees on May 20",
+        "body": "The company will eliminate those positions and leave 6,000 roles unfilled. Meta spent over 72 billion dollars on infrastructure in 2025 to support AI development.",
         "geo": "Americas",
-        "sources": 2
+        "sources": 4
       },
       {
-        "headline": "SK Hynix breaks ground on $13 billion AI memory fabrication plant in South Korea",
-        "body": "Construction began on a factory dedicated to advanced AI chip packaging targeting 2028 completion. The investment cements South Korea's position in supplying memory chips critical to data center expansion worldwide.",
-        "geo": "Asia",
-        "sources": 2
-      },
-      {
-        "headline": "Middle East conflict cuts regional economic growth forecast by more than half to 1.8 percent",
-        "body": "The World Bank slashed its 2026 MENA growth projection by 2.4 percentage points citing energy route disruptions. Separate analysis warns 8.8 million people across Asia-Pacific risk falling into poverty from resulting energy price shocks.",
-        "geo": "Global",
+        "headline": "Colombia bombing kills 20 on highway bus as rebel attacks multiply across southwest",
+        "body": "An explosive device detonated on a Pan-American Highway bus in Cajibio on Saturday. At least 26 separate incidents occurred across the region within two days.",
+        "geo": "Americas",
         "sources": 3
+      },
+      {
+        "headline": "Uganda President Museveni wins seventh term extending four-decade rule",
+        "body": "Official results announced Saturday confirmed the former guerrilla's victory in East Africa's third most populous country. Opposition leader Bobi Wine remains in hiding after security forces raided his residence.",
+        "geo": "Africa",
+        "sources": 2
       }
     ]
   },
   "regional_items": {
-    "es": [
-      {
-        "headline": "Pentagon considers suspending Spain from NATO over refusal to support US operations in Iran war",
-        "body": "Internal Defense Department email outlines potential suspension after Spain closed airspace and blocked US use of Rota and Morón bases. The threat marks unprecedented tension within the alliance affecting Spain's security architecture and transatlantic defense posture.",
-        "geo": "Spain",
-        "sources": 2
-      }
-    ],
     "uk": [
       {
-        "headline": "Parliament votes Tuesday on referring Starmer to sleaze inquiry over Mandelson testimony contradictions",
-        "body": "Opposition parties secured a vote on sending the Prime Minister to the privileges committee that ended Boris Johnson's career. Labour's majority makes referral unlikely but internal anger over the scandal may split backbenchers two weeks before local elections.",
+        "headline": "Parliament passes smartphone ban in schools with legal force after Lords approves government amendment",
+        "body": "Education minister Baroness Smith tabled the amendment to the Children's Wellbeing and Schools Bill on Monday. Schools must now enforce phone-free days rather than follow voluntary guidance.",
         "geo": "United Kingdom",
         "sources": 2
       }
