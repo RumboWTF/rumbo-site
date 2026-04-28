@@ -1,5 +1,18 @@
 [
   {
+    "date": "28 April 2026",
+    "headlines": [
+      "Kenyan runner breaks two-hour marathon barrier in official race",
+      "Elon Musk breach of trust trial against Sam Altman begins in federal court",
+      "Iran offers ceasefire proposal separating Hormuz reopening from nuclear talks",
+      "India and Russia operationalize mutual troop deployment pact allowing 3,000 soldiers on each territory"
+    ],
+    "regional_headlines": [
+      "Spain records twenty-two police-related deaths in 2025, doubling previous year's toll",
+      "Norway signs agreement to begin producing Ukrainian drones domestically"
+    ]
+  },
+  {
     "date": "27 April 2026",
     "headlines": [
       "Mali defense minister killed as separatists and al-Qaida-linked militants jointly attack five cities",
@@ -22,21 +35,6 @@
     "regional_headlines": [
       "Pentagon considers suspending Spain from NATO over refusal to support US operations in Iran war",
       "Parliament votes Tuesday on referring Starmer to sleaze inquiry over Mandelson testimony contradictions"
-    ]
-  },
-  {
-    "date": "25 April 2026",
-    "headlines": [
-      "X-energy raises over $1 billion in largest nuclear IPO on record",
-      "Tanzania reports 518 killed in election violence, far below opposition estimates",
-      "Peru defense and foreign ministers resign over fighter jet purchase dispute",
-      "Japan warns of heightened earthquake risk after 7.4 magnitude strike"
-    ],
-    "regional_headlines": [
-      "Barcelona confirms Lamine Yamal's domestic season ended by injury sustained against Celta Vigo",
-      "Norway to ban social media for children under 16 starting 2027",
-      "Prime Minister Starmer apologizes for Mandelson appointment after security vetting override revealed",
-      "Dutch intelligence warns of greatest security threat in 80 years from Russia and China"
     ]
   }
 ]

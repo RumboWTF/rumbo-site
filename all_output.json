@@ -1,46 +1,55 @@
 {
-  "date": "27 April 2026",
+  "date": "28 April 2026",
   "global": {
-    "generated_at": "2026-04-27T18:00:00Z",
+    "generated_at": "2026-04-28T12:00:00Z",
     "sources": [
-      "Al Jazeera",
-      "Reuters",
-      "Associated Press",
-      "BBC"
+      "U.S. District Court (Oakland)",
+      "Buckingham Palace",
+      "State Department",
+      "London Marathon",
+      "Russian Federal Government"
     ],
     "items": [
       {
-        "headline": "Mali defense minister killed as separatists and al-Qaida-linked militants jointly attack five cities",
-        "body": "Defence Minister Sadio Camara died when coordinated attacks hit military sites nationwide on April 25-26. Tuareg separatists announced Russian Africa Corps and Malian forces withdrew from Kidal following the assault.",
-        "geo": "Africa",
+        "headline": "Kenyan runner breaks two-hour marathon barrier in official race",
+        "body": "Sawe finished the London Marathon in 1:59:30 on April 26, becoming the first person to break two hours in a sanctioned competition. The barrier was considered one of sport's most symbolic thresholds affecting elite distance running standards worldwide.",
+        "geo": "Europe",
         "sources": 3
       },
       {
-        "headline": "Meta to cut 10 percent of workforce affecting 8,000 employees on May 20",
-        "body": "The company will eliminate those positions and leave 6,000 roles unfilled. Meta spent over 72 billion dollars on infrastructure in 2025 to support AI development.",
+        "headline": "Elon Musk breach of trust trial against Sam Altman begins in federal court",
+        "body": "A nine-person jury was seated April 27 in Oakland to hear Musk's claims that Altman breached charitable obligations when converting OpenAI to for-profit structure. The case could reshape legal boundaries for nonprofit-to-profit conversions in the technology sector.",
         "geo": "Americas",
-        "sources": 4
-      },
-      {
-        "headline": "Colombia bombing kills 20 on highway bus as rebel attacks multiply across southwest",
-        "body": "An explosive device detonated on a Pan-American Highway bus in Cajibio on Saturday. At least 26 separate incidents occurred across the region within two days.",
-        "geo": "Americas",
-        "sources": 3
-      },
-      {
-        "headline": "Uganda President Museveni wins seventh term extending four-decade rule",
-        "body": "Official results announced Saturday confirmed the former guerrilla's victory in East Africa's third most populous country. Opposition leader Bobi Wine remains in hiding after security forces raided his residence.",
-        "geo": "Africa",
         "sources": 2
+      },
+      {
+        "headline": "Iran offers ceasefire proposal separating Hormuz reopening from nuclear talks",
+        "body": "Iran submitted a new proposal April 26 through Pakistani mediators to end the Strait of Hormuz blockade and extend the ceasefire before addressing nuclear issues. The sequencing reverses prior U.S. insistence on simultaneous resolution of both issues.",
+        "geo": "Asia",
+        "sources": 2
+      },
+      {
+        "headline": "India and Russia operationalize mutual troop deployment pact allowing 3,000 soldiers on each territory",
+        "body": "Russia published details in April 2026 of a January pact permitting each country to station 3,000 troops, five warships, and ten aircraft on the other's soil during peace or war. India has not granted similar permanent stationing rights to any other country.",
+        "geo": "Asia",
+        "sources": 1
       }
     ]
   },
   "regional_items": {
-    "uk": [
+    "es": [
       {
-        "headline": "Parliament passes smartphone ban in schools with legal force after Lords approves government amendment",
-        "body": "Education minister Baroness Smith tabled the amendment to the Children's Wellbeing and Schools Bill on Monday. Schools must now enforce phone-free days rather than follow voluntary guidance.",
-        "geo": "United Kingdom",
+        "headline": "Spain records twenty-two police-related deaths in 2025, doubling previous year's toll",
+        "body": "Interior Ministry reported twenty-two deaths during police operations last year, up from eleven in 2024. The figure excludes regional and local forces, raising questions about oversight standards across Spanish law enforcement.",
+        "geo": "Spain",
+        "sources": 1
+      }
+    ],
+    "no": [
+      {
+        "headline": "Norway signs agreement to begin producing Ukrainian drones domestically",
+        "body": "Norway formalized production agreements April 28 enabling Ukrainian drone manufacturing on Norwegian soil. The setup expands Norwegian defense industrial capacity while allowing Ukraine to build weapons outside strike range.",
+        "geo": "Norway",
         "sources": 2
       }
     ]
