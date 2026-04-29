@@ -1,36 +1,29 @@
 {
-  "generated_at": "2026-04-28T12:00:00Z",
+  "generated_at": "2026-04-29T18:30:00Z",
   "sources": [
-    "U.S. District Court (Oakland)",
-    "Buckingham Palace",
-    "State Department",
-    "London Marathon",
-    "Russian Federal Government"
+    "CNN",
+    "Reuters",
+    "BBC",
+    "Financial Times"
   ],
   "items": [
     {
-      "headline": "Kenyan runner breaks two-hour marathon barrier in official race",
-      "body": "Sawe finished the London Marathon in 1:59:30 on April 26, becoming the first person to break two hours in a sanctioned competition. The barrier was considered one of sport's most symbolic thresholds affecting elite distance running standards worldwide.",
-      "geo": "Europe",
+      "headline": "United Arab Emirates withdraws from OPEC effective May 1",
+      "body": "The UAE announced it will leave OPEC stripping the cartel of its third largest producer. The country produces 3.4 million barrels daily and chose this timing because Hormuz closure limits market impact.",
+      "geo": "Asia",
       "sources": 3
     },
     {
-      "headline": "Elon Musk breach of trust trial against Sam Altman begins in federal court",
-      "body": "A nine-person jury was seated April 27 in Oakland to hear Musk's claims that Altman breached charitable obligations when converting OpenAI to for-profit structure. The case could reshape legal boundaries for nonprofit-to-profit conversions in the technology sector.",
+      "headline": "Gaza holds first elections in twenty years with Fatah-backed candidates winning most seats",
+      "body": "Municipal elections in Deir el-Balah gave Abbas-aligned candidates six of eight council seats. Turnout reached only 23 percent in Gaza compared to 56 percent in West Bank.",
+      "geo": "Asia",
+      "sources": 4
+    },
+    {
+      "headline": "Google signs classified Pentagon agreement authorizing AI use for any lawful government purpose",
+      "body": "Google joined OpenAI and xAI in providing AI models for classified military operations. Over 600 Google employees signed letter opposing the Pentagon collaboration announced Monday.",
       "geo": "Americas",
-      "sources": 2
-    },
-    {
-      "headline": "Iran offers ceasefire proposal separating Hormuz reopening from nuclear talks",
-      "body": "Iran submitted a new proposal April 26 through Pakistani mediators to end the Strait of Hormuz blockade and extend the ceasefire before addressing nuclear issues. The sequencing reverses prior U.S. insistence on simultaneous resolution of both issues.",
-      "geo": "Asia",
-      "sources": 2
-    },
-    {
-      "headline": "India and Russia operationalize mutual troop deployment pact allowing 3,000 soldiers on each territory",
-      "body": "Russia published details in April 2026 of a January pact permitting each country to station 3,000 troops, five warships, and ten aircraft on the other's soil during peace or war. India has not granted similar permanent stationing rights to any other country.",
-      "geo": "Asia",
-      "sources": 1
+      "sources": 5
     }
   ]
 }

@@ -1,5 +1,19 @@
 [
   {
+    "date": "29 April 2026",
+    "headlines": [
+      "United Arab Emirates withdraws from OPEC effective May 1",
+      "Gaza holds first elections in twenty years with Fatah-backed candidates winning most seats",
+      "Google signs classified Pentagon agreement authorizing AI use for any lawful government purpose"
+    ],
+    "regional_headlines": [
+      "Princess Leonor will study Political Science at public university starting autumn 2026",
+      "Norway's grid operator halts new industrial power connections above 5MW across northern regions",
+      "King Charles tells joint session of Congress that Ukraine support keeps citizens safer for generations",
+      "Dutch intelligence declares Netherlands faces highest threat level in eighty years from Russia and China"
+    ]
+  },
+  {
     "date": "28 April 2026",
     "headlines": [
       "Kenyan runner breaks two-hour marathon barrier in official race",
@@ -22,19 +36,6 @@
     ],
     "regional_headlines": [
       "Parliament passes smartphone ban in schools with legal force after Lords approves government amendment"
-    ]
-  },
-  {
-    "date": "26 April 2026",
-    "headlines": [
-      "Russia launches over 600 drones and 47 missiles at Ukraine in one of largest strikes since 2022 invasion",
-      "OpenAI shuts down Sora video generation service after user base collapsed by half",
-      "SK Hynix breaks ground on $13 billion AI memory fabrication plant in South Korea",
-      "Middle East conflict cuts regional economic growth forecast by more than half to 1.8 percent"
-    ],
-    "regional_headlines": [
-      "Pentagon considers suspending Spain from NATO over refusal to support US operations in Iran war",
-      "Parliament votes Tuesday on referring Starmer to sleaze inquiry over Mandelson testimony contradictions"
     ]
   }
 ]
