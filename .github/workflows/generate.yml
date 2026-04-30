@@ -1,14 +1,9 @@
 name: Generate Rumbo
 
 on:
-#  schedule:
-#    - cron: '17 5 * * *'
+  schedule:
+    - cron: '17 5 * * *'
   workflow_dispatch:
-    inputs:
-      run_gemini_test:
-        description: 'Run parallel Gemini Flash test'
-        type: boolean
-        default: false
 
 permissions:
   contents: write
@@ -36,7 +31,7 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           SEND_NEWSLETTER: ${{ vars.SEND_NEWSLETTER }}
-          RUN_GEMINI_TEST: ${{ inputs.run_gemini_test }}
+          RUN_GEMINI_TEST: "true"
         run: node generate.js
 
       - name: Commit and push
