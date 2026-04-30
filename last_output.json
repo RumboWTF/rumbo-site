@@ -1,29 +1,35 @@
 {
-  "generated_at": "2026-04-29T18:30:00Z",
+  "generated_at": "2026-04-30T18:45:00Z",
   "sources": [
-    "CNN",
-    "Reuters",
-    "BBC",
-    "Financial Times"
+    "CBS News",
+    "AFP",
+    "Associated Press",
+    "Reuters"
   ],
   "items": [
     {
-      "headline": "United Arab Emirates withdraws from OPEC effective May 1",
-      "body": "The UAE announced it will leave OPEC stripping the cartel of its third largest producer. The country produces 3.4 million barrels daily and chose this timing because Hormuz closure limits market impact.",
-      "geo": "Asia",
+      "headline": "Supreme Court ruling eviscerates Voting Rights Act protection for minority districts",
+      "body": "The court struck down Louisiana's congressional map in a decision that allows states to draw districts diluting minority voting power. Black voters across America could lose districts that provided fair representation for decades.",
+      "geo": "Americas",
       "sources": 3
     },
     {
-      "headline": "Gaza holds first elections in twenty years with Fatah-backed candidates winning most seats",
-      "body": "Municipal elections in Deir el-Balah gave Abbas-aligned candidates six of eight council seats. Turnout reached only 23 percent in Gaza compared to 56 percent in West Bank.",
-      "geo": "Asia",
+      "headline": "White House Correspondents' Dinner shooting suspect charged with attempted assassination",
+      "body": "Cole Tomas Allen faces life imprisonment after arrest near the banquet hall screening area. He intended to target multiple Trump administration officials at the event.",
+      "geo": "Americas",
+      "sources": 2
+    },
+    {
+      "headline": "United States commits one hundred million dollars for Chornobyl containment emergency repairs",
+      "body": "Washington will fund twenty percent of restoration needed after a Russian drone strike damaged the radiation shield. The strike created immediate contamination risk across Ukraine and neighboring countries.",
+      "geo": "Global",
       "sources": 4
     },
     {
-      "headline": "Google signs classified Pentagon agreement authorizing AI use for any lawful government purpose",
-      "body": "Google joined OpenAI and xAI in providing AI models for classified military operations. Over 600 Google employees signed letter opposing the Pentagon collaboration announced Monday.",
-      "geo": "Americas",
-      "sources": 5
+      "headline": "South Korean court adds seven years to ousted president Yoon's life sentence",
+      "body": "The appeals court convicted Yoon for obstructing justice before his December 2024 martial law declaration. The ruling extends punishment for the country's worst democratic crisis in decades.",
+      "geo": "Asia",
+      "sources": 3
     }
   ]
 }

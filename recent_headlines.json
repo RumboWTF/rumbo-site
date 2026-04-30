@@ -1,5 +1,19 @@
 [
   {
+    "date": "30 April 2026",
+    "headlines": [
+      "Supreme Court ruling eviscerates Voting Rights Act protection for minority districts",
+      "White House Correspondents' Dinner shooting suspect charged with attempted assassination",
+      "United States commits one hundred million dollars for Chornobyl containment emergency repairs",
+      "South Korean court adds seven years to ousted president Yoon's life sentence"
+    ],
+    "regional_headlines": [
+      "Spain issues first residence permits under largest migrant regularization program in two decades",
+      "Norway commits NOK 1.72 billion over four years to World Food Programme",
+      "Major wildfire at 't Harde military range remains uncontrolled with smoke reaching England"
+    ]
+  },
+  {
     "date": "29 April 2026",
     "headlines": [
       "United Arab Emirates withdraws from OPEC effective May 1",
@@ -24,18 +38,6 @@
     "regional_headlines": [
       "Spain records twenty-two police-related deaths in 2025, doubling previous year's toll",
       "Norway signs agreement to begin producing Ukrainian drones domestically"
-    ]
-  },
-  {
-    "date": "27 April 2026",
-    "headlines": [
-      "Mali defense minister killed as separatists and al-Qaida-linked militants jointly attack five cities",
-      "Meta to cut 10 percent of workforce affecting 8,000 employees on May 20",
-      "Colombia bombing kills 20 on highway bus as rebel attacks multiply across southwest",
-      "Uganda President Museveni wins seventh term extending four-decade rule"
-    ],
-    "regional_headlines": [
-      "Parliament passes smartphone ban in schools with legal force after Lords approves government amendment"
     ]
   }
 ]

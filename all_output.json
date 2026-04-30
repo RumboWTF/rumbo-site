@@ -1,65 +1,63 @@
 {
-  "date": "29 April 2026",
+  "date": "30 April 2026",
   "global": {
-    "generated_at": "2026-04-29T18:30:00Z",
+    "generated_at": "2026-04-30T18:45:00Z",
     "sources": [
-      "CNN",
-      "Reuters",
-      "BBC",
-      "Financial Times"
+      "CBS News",
+      "AFP",
+      "Associated Press",
+      "Reuters"
     ],
     "items": [
       {
-        "headline": "United Arab Emirates withdraws from OPEC effective May 1",
-        "body": "The UAE announced it will leave OPEC stripping the cartel of its third largest producer. The country produces 3.4 million barrels daily and chose this timing because Hormuz closure limits market impact.",
-        "geo": "Asia",
+        "headline": "Supreme Court ruling eviscerates Voting Rights Act protection for minority districts",
+        "body": "The court struck down Louisiana's congressional map in a decision that allows states to draw districts diluting minority voting power. Black voters across America could lose districts that provided fair representation for decades.",
+        "geo": "Americas",
         "sources": 3
       },
       {
-        "headline": "Gaza holds first elections in twenty years with Fatah-backed candidates winning most seats",
-        "body": "Municipal elections in Deir el-Balah gave Abbas-aligned candidates six of eight council seats. Turnout reached only 23 percent in Gaza compared to 56 percent in West Bank.",
-        "geo": "Asia",
+        "headline": "White House Correspondents' Dinner shooting suspect charged with attempted assassination",
+        "body": "Cole Tomas Allen faces life imprisonment after arrest near the banquet hall screening area. He intended to target multiple Trump administration officials at the event.",
+        "geo": "Americas",
+        "sources": 2
+      },
+      {
+        "headline": "United States commits one hundred million dollars for Chornobyl containment emergency repairs",
+        "body": "Washington will fund twenty percent of restoration needed after a Russian drone strike damaged the radiation shield. The strike created immediate contamination risk across Ukraine and neighboring countries.",
+        "geo": "Global",
         "sources": 4
       },
       {
-        "headline": "Google signs classified Pentagon agreement authorizing AI use for any lawful government purpose",
-        "body": "Google joined OpenAI and xAI in providing AI models for classified military operations. Over 600 Google employees signed letter opposing the Pentagon collaboration announced Monday.",
-        "geo": "Americas",
-        "sources": 5
+        "headline": "South Korean court adds seven years to ousted president Yoon's life sentence",
+        "body": "The appeals court convicted Yoon for obstructing justice before his December 2024 martial law declaration. The ruling extends punishment for the country's worst democratic crisis in decades.",
+        "geo": "Asia",
+        "sources": 3
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Princess Leonor will study Political Science at public university starting autumn 2026",
-        "body": "Spain's heir to the throne will attend Carlos III University in Madrid after completing military training. The choice signals constitutional preparation over traditional royal curricula for future head of state.",
+        "headline": "Spain issues first residence permits under largest migrant regularization program in two decades",
+        "body": "Venezuelan nurse receives provisional work authorization as authorities begin processing applications targeting 500,000 undocumented residents. Approved applicants gain immediate legal employment access before final permit resolution under three-month application window.",
         "geo": "Spain",
         "sources": 2
       }
     ],
     "no": [
       {
-        "headline": "Norway's grid operator halts new industrial power connections above 5MW across northern regions",
-        "body": "Statnett announced Wednesday all projects exceeding five megawatts north of Svartisen face indefinite postponement due to capacity limits. The freeze blocks major industrial development across Finnmark and Nordland for years or decades.",
+        "headline": "Norway commits NOK 1.72 billion over four years to World Food Programme",
+        "body": "The government signed the agreement on April 29 as unrestricted core funding. Small-scale farmers across Africa dependent on Norwegian-funded fertilizer access will face direct impact from whether this funding sustains WFP operations through budget crisis.",
         "geo": "Norway",
-        "sources": 3
-      }
-    ],
-    "uk": [
-      {
-        "headline": "King Charles tells joint session of Congress that Ukraine support keeps citizens safer for generations",
-        "body": "The King urged continued military aid to Ukraine during a Tuesday address earning bipartisan standing ovation. His explicit defense of NATO and transatlantic security creates pressure on Trump administration amid Republican calls to end Ukrainian funding.",
-        "geo": "United Kingdom",
-        "sources": 4
+        "sources": 2
       }
     ],
     "nl": [
       {
-        "headline": "Dutch intelligence declares Netherlands faces highest threat level in eighty years from Russia and China",
-        "body": "AIVD published its annual report warning national security pressure from multiple adversaries exceeds anything since World War II. Russian hackers stole police data while China illegally acquired technology from Dutch companies threatening their autonomy.",
+        "headline": "Major wildfire at 't Harde military range remains uncontrolled with smoke reaching England",
+        "body": "Fire covering 2,200 meters requires 400 personnel and air force helicopters. Highway closures and smoke across Amsterdam shift what happens next for commuters and residents because national infrastructure remains disrupted.",
         "geo": "Netherlands",
-        "sources": 2
+        "sources": 3
       }
     ]
   }
