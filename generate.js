@@ -3,6 +3,7 @@
 // Run: node generate.js
 
 import Anthropic from "@anthropic-ai/sdk";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 import fs from "fs";
 import { createClient } from "@supabase/supabase-js";
 
@@ -226,6 +227,48 @@ function parseJson(raw) {
   throw new Error("No JSON object found in response");
 }
 
+// ─── Gemini Flash (parallel test) ─────────────────────────────────────────────
+
+async function callGeminiFlash(prompt) {
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) throw new Error("GEMINI_API_KEY not set");
+  const genAI = new GoogleGenerativeAI(apiKey);
+
+  const model = genAI.getGenerativeModel({
+    model: "gemini-2.5-flash",
+    tools: [{ googleSearch: {} }],
+    generationConfig: {
+      temperature: 0.7,
+      maxOutputTokens: 4000,
+    },
+  });
+
+  const result = await model.generateContent(prompt);
+  const response = result.response;
+  const text = response.text();
+
+  // Token usage logging (Gemini reports differently than Anthropic)
+  const usage = response.usageMetadata || {};
+  const inTokens = usage.promptTokenCount ?? "?";
+  const outTokens = usage.candidatesTokenCount ?? "?";
+  const totalTokens = usage.totalTokenCount ?? "?";
+  console.log(`[gemini tokens] in:${inTokens} out:${outTokens} total:${totalTokens}`);
+
+  // Strip markdown code fences if present (Flash sometimes wraps JSON)
+  let cleaned = text.trim();
+  if (cleaned.startsWith("```")) {
+    cleaned = cleaned.replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "");
+  }
+
+  // Parse JSON
+  const start = cleaned.indexOf("{");
+  const end = cleaned.lastIndexOf("}");
+  if (start !== -1 && end !== -1) {
+    return { json: JSON.parse(cleaned.slice(start, end + 1)), raw: text, usage };
+  }
+  throw new Error("No JSON object found in Gemini response");
+}
+
 // ─── Translations ─────────────────────────────────────────────────────────────
 
 function getTranslations(locale) {
@@ -447,6 +490,28 @@ async function main() {
     } catch (e2) {
       console.error("No fallback available:", e2.message);
       process.exit(1);
+    }
+  }
+
+  // Step 2b (optional): parallel Gemini Flash test — runs only when RUN_GEMINI_TEST=true
+  if (process.env.RUN_GEMINI_TEST === "true") {
+    console.log("Calling Gemini Flash for parallel comparison...");
+    try {
+      const deduplicationHint = previousContext;
+      const geminiResult = await callGeminiFlash(GLOBAL_PROMPT + deduplicationHint);
+      const today = new Date().toISOString().split("T")[0];
+      const comparisonFile = `gemini-comparison-${today}.json`;
+      fs.writeFileSync(comparisonFile, JSON.stringify({
+        date: today,
+        gemini_output: geminiResult.json,
+        gemini_raw: geminiResult.raw,
+        gemini_usage: geminiResult.usage,
+        claude_output: globalData,
+      }, null, 2));
+      console.log(`Gemini comparison written to ${comparisonFile}`);
+      console.log(`Gemini items: ${geminiResult.json.items?.length ?? 0}`);
+    } catch (e) {
+      console.error("Gemini test failed:", e.message);
     }
   }
 
