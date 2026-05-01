@@ -1,5 +1,19 @@
 [
   {
+    "date": "1 May 2026",
+    "headlines": [
+      "Japan-flagged oil tanker crosses Strait of Hormuz for first time since Iran war began",
+      "Bulgaria opposition coalition wins outright parliamentary majority ending years of political crisis",
+      "Highway bomb attack kills 19 ahead of Colombia presidential election next month",
+      "China detains nearly 70 Panamanian-flagged ships after Supreme Court canal ruling"
+    ],
+    "regional_headlines": [
+      "Norway unearths largest Viking Age coin hoard with over 3,150 coins from 1047",
+      "UK raises national terrorism threat level to severe following Golders Green stabbing attack",
+      "Netherlands evacuates 1,500 asylum seekers from second-largest reception center due to wildfire near Weert"
+    ]
+  },
+  {
     "date": "30 April 2026",
     "headlines": [
       "Supreme Court ruling eviscerates Voting Rights Act protection for minority districts",
@@ -25,19 +39,6 @@
       "Norway's grid operator halts new industrial power connections above 5MW across northern regions",
       "King Charles tells joint session of Congress that Ukraine support keeps citizens safer for generations",
       "Dutch intelligence declares Netherlands faces highest threat level in eighty years from Russia and China"
-    ]
-  },
-  {
-    "date": "28 April 2026",
-    "headlines": [
-      "Kenyan runner breaks two-hour marathon barrier in official race",
-      "Elon Musk breach of trust trial against Sam Altman begins in federal court",
-      "Iran offers ceasefire proposal separating Hormuz reopening from nuclear talks",
-      "India and Russia operationalize mutual troop deployment pact allowing 3,000 soldiers on each territory"
-    ],
-    "regional_headlines": [
-      "Spain records twenty-two police-related deaths in 2025, doubling previous year's toll",
-      "Norway signs agreement to begin producing Ukrainian drones domestically"
     ]
   }
 ]

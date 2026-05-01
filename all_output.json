@@ -1,61 +1,62 @@
 {
-  "date": "30 April 2026",
+  "date": "1 May 2026",
   "global": {
-    "generated_at": "2026-04-30T18:45:00Z",
+    "generated_at": "2026-05-01T12:00:00Z",
     "sources": [
-      "CBS News",
-      "AFP",
-      "Associated Press",
-      "Reuters"
+      "NHK",
+      "Al Jazeera",
+      "BBC",
+      "Reuters",
+      "Associated Press"
     ],
     "items": [
       {
-        "headline": "Supreme Court ruling eviscerates Voting Rights Act protection for minority districts",
-        "body": "The court struck down Louisiana's congressional map in a decision that allows states to draw districts diluting minority voting power. Black voters across America could lose districts that provided fair representation for decades.",
-        "geo": "Americas",
+        "headline": "Japan-flagged oil tanker crosses Strait of Hormuz for first time since Iran war began",
+        "body": "The Idemitsu Maru became the first Japanese-flagged tanker to transit the strait since conflict started February 28. Japan confirmed no fees were paid to Iran for passage.",
+        "geo": "Asia",
         "sources": 3
       },
       {
-        "headline": "White House Correspondents' Dinner shooting suspect charged with attempted assassination",
-        "body": "Cole Tomas Allen faces life imprisonment after arrest near the banquet hall screening area. He intended to target multiple Trump administration officials at the event.",
-        "geo": "Americas",
+        "headline": "Bulgaria opposition coalition wins outright parliamentary majority ending years of political crisis",
+        "body": "Progressive Bulgaria secured 130 seats with 44.7 percent of votes counted in parliamentary elections. No Bulgarian party has won an outright majority this century.",
+        "geo": "Europe",
         "sources": 2
       },
       {
-        "headline": "United States commits one hundred million dollars for Chornobyl containment emergency repairs",
-        "body": "Washington will fund twenty percent of restoration needed after a Russian drone strike damaged the radiation shield. The strike created immediate contamination risk across Ukraine and neighboring countries.",
-        "geo": "Global",
-        "sources": 4
+        "headline": "Highway bomb attack kills 19 ahead of Colombia presidential election next month",
+        "body": "An explosive struck a bus on the Pan-American Highway in Cauca department on April 25. Military officials recorded 26 attacks across two southwestern departments over two days.",
+        "geo": "Americas",
+        "sources": 3
       },
       {
-        "headline": "South Korean court adds seven years to ousted president Yoon's life sentence",
-        "body": "The appeals court convicted Yoon for obstructing justice before his December 2024 martial law declaration. The ruling extends punishment for the country's worst democratic crisis in decades.",
-        "geo": "Asia",
-        "sources": 3
+        "headline": "China detains nearly 70 Panamanian-flagged ships after Supreme Court canal ruling",
+        "body": "Beijing detained the vessels in March following a court decision on Panama Canal operations. Six countries including the United States issued a joint statement condemning the economic retaliation.",
+        "geo": "Global",
+        "sources": 2
       }
     ]
   },
   "regional_items": {
-    "es": [
-      {
-        "headline": "Spain issues first residence permits under largest migrant regularization program in two decades",
-        "body": "Venezuelan nurse receives provisional work authorization as authorities begin processing applications targeting 500,000 undocumented residents. Approved applicants gain immediate legal employment access before final permit resolution under three-month application window.",
-        "geo": "Spain",
-        "sources": 2
-      }
-    ],
     "no": [
       {
-        "headline": "Norway commits NOK 1.72 billion over four years to World Food Programme",
-        "body": "The government signed the agreement on April 29 as unrestricted core funding. Small-scale farmers across Africa dependent on Norwegian-funded fertilizer access will face direct impact from whether this funding sustains WFP operations through budget crisis.",
+        "headline": "Norway unearths largest Viking Age coin hoard with over 3,150 coins from 1047",
+        "body": "Archaeologists recovered more than 3,150 coins near Rena after detectorists found initial 19 on April 10. The hoard preserves English and German coins from when Harald Hardrada established Norwegian national minting.",
         "geo": "Norway",
         "sources": 2
       }
     ],
+    "uk": [
+      {
+        "headline": "UK raises national terrorism threat level to severe following Golders Green stabbing attack",
+        "body": "Joint Terrorism Analysis Centre elevated the threat from substantial to severe on April 30. Government fast-tracked counter-terrorism legislation and added £25 million for Jewish community security.",
+        "geo": "United Kingdom",
+        "sources": 3
+      }
+    ],
     "nl": [
       {
-        "headline": "Major wildfire at 't Harde military range remains uncontrolled with smoke reaching England",
-        "body": "Fire covering 2,200 meters requires 400 personnel and air force helicopters. Highway closures and smoke across Amsterdam shift what happens next for commuters and residents because national infrastructure remains disrupted.",
+        "headline": "Netherlands evacuates 1,500 asylum seekers from second-largest reception center due to wildfire near Weert",
+        "body": "A wildfire forced complete evacuation of Budel asylum center and Kempen Airport on Thursday. The fire is part of nationwide outbreak driven by weeks without rainfall making April one of driest on record.",
         "geo": "Netherlands",
         "sources": 3
       }

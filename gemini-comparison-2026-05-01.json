@@ -1,0 +1,111 @@
+{
+  "date": "2026-05-01",
+  "gemini_output": {
+    "generated_at": "2026-05-01T06:57:00Z",
+    "sources": [
+      "Anadolu Ajansı",
+      "Global News",
+      "Spearnet",
+      "Go Local Prov",
+      "UN Meetings Coverage and Press Releases",
+      "News of record",
+      "UN Documents Most Recent - Security Council Report",
+      "Institute for the Study of War",
+      "KTVN",
+      "CNN 10",
+      "Democracy Now!",
+      "USNews",
+      "IMI Daily",
+      "Euronews"
+    ],
+    "items": [
+      {
+        "headline": "UAE to Withdraw from OPEC, Effective May 1",
+        "body": "The United Arab Emirates officially withdrew from OPEC, effective May 1, 2026. This action could reshape global energy dynamics and influence oil prices by increasing UAE output.",
+        "geo": "Global",
+        "sources": 4
+      },
+      {
+        "headline": "Supreme Court Ruling Weakens Voting Rights Act Protections",
+        "body": "The US Supreme Court struck down a Louisiana congressional map, citing racial gerrymandering. This decision makes proving future Voting Rights Act violations significantly harder for minority districts.",
+        "geo": "Americas",
+        "sources": 2
+      },
+      {
+        "headline": "Overnight Policy Change Disrupts Lives of 500,000 US Workers",
+        "body": "A sudden US policy change terminated contracts and suspended work permits for hundreds of thousands. This disruption creates financial strain for families and could cause broader economic ripple effects.",
+        "geo": "Americas",
+        "sources": 1
+      },
+      {
+        "headline": "Russia Continues Deportation and Indoctrination of Ukrainian Children",
+        "body": "Russian officials are deporting children from occupied Mariupol to St. Petersburg for cultural indoctrination. This forced re-education profoundly impacts Ukrainian identity and future generations.",
+        "geo": "Europe",
+        "sources": 1
+      }
+    ]
+  },
+  "gemini_raw": "{\n  \"generated_at\": \"2026-05-01T06:57:00Z\",\n  \"sources\": [\n    \"Anadolu Ajansı\",\n    \"Global News\",\n    \"Spearnet\",\n    \"Go Local Prov\",\n    \"UN Meetings Coverage and Press Releases\",\n    \"News of record\",\n    \"UN Documents Most Recent - Security Council Report\",\n    \"Institute for the Study of War\",\n    \"KTVN\",\n    \"CNN 10\",\n    \"Democracy Now!\",\n    \"USNews\",\n    \"IMI Daily\",\n    \"Euronews\"\n  ],\n  \"items\": [\n    {\n      \"headline\": \"UAE to Withdraw from OPEC, Effective May 1\",\n      \"body\": \"The United Arab Emirates officially withdrew from OPEC, effective May 1, 2026. This action could reshape global energy dynamics and influence oil prices by increasing UAE output.\",\n      \"geo\": \"Global\",\n      \"sources\": 4\n    },\n    {\n      \"headline\": \"Supreme Court Ruling Weakens Voting Rights Act Protections\",\n      \"body\": \"The US Supreme Court struck down a Louisiana congressional map, citing racial gerrymandering. This decision makes proving future Voting Rights Act violations significantly harder for minority districts.\",\n      \"geo\": \"Americas\",\n      \"sources\": 2\n    },\n    {\n      \"headline\": \"Overnight Policy Change Disrupts Lives of 500,000 US Workers\",\n      \"body\": \"A sudden US policy change terminated contracts and suspended work permits for hundreds of thousands. This disruption creates financial strain for families and could cause broader economic ripple effects.\",\n      \"geo\": \"Americas\",\n      \"sources\": 1\n    },\n    {\n      \"headline\": \"Russia Continues Deportation and Indoctrination of Ukrainian Children\",\n      \"body\": \"Russian officials are deporting children from occupied Mariupol to St. Petersburg for cultural indoctrination. This forced re-education profoundly impacts Ukrainian identity and future generations.\",\n      \"geo\": \"Europe\",\n      \"sources\": 1\n    }\n  ]\n}",
+  "gemini_usage": {
+    "promptTokenCount": 1197,
+    "candidatesTokenCount": 576,
+    "totalTokenCount": 7260,
+    "cachedContentTokenCount": 32,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1197
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 32
+      }
+    ],
+    "toolUsePromptTokenCount": 1923,
+    "toolUsePromptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1923
+      }
+    ],
+    "thoughtsTokenCount": 3564
+  },
+  "claude_output": {
+    "generated_at": "2026-05-01T12:00:00Z",
+    "sources": [
+      "NHK",
+      "Al Jazeera",
+      "BBC",
+      "Reuters",
+      "Associated Press"
+    ],
+    "items": [
+      {
+        "headline": "Japan-flagged oil tanker crosses Strait of Hormuz for first time since Iran war began",
+        "body": "The Idemitsu Maru became the first Japanese-flagged tanker to transit the strait since conflict started February 28. Japan confirmed no fees were paid to Iran for passage.",
+        "geo": "Asia",
+        "sources": 3
+      },
+      {
+        "headline": "Bulgaria opposition coalition wins outright parliamentary majority ending years of political crisis",
+        "body": "Progressive Bulgaria secured 130 seats with 44.7 percent of votes counted in parliamentary elections. No Bulgarian party has won an outright majority this century.",
+        "geo": "Europe",
+        "sources": 2
+      },
+      {
+        "headline": "Highway bomb attack kills 19 ahead of Colombia presidential election next month",
+        "body": "An explosive struck a bus on the Pan-American Highway in Cauca department on April 25. Military officials recorded 26 attacks across two southwestern departments over two days.",
+        "geo": "Americas",
+        "sources": 3
+      },
+      {
+        "headline": "China detains nearly 70 Panamanian-flagged ships after Supreme Court canal ruling",
+        "body": "Beijing detained the vessels in March following a court decision on Panama Canal operations. Six countries including the United States issued a joint statement condemning the economic retaliation.",
+        "geo": "Global",
+        "sources": 2
+      }
+    ]
+  }
+}
