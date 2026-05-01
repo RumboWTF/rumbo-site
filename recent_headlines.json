@@ -2,6 +2,18 @@
   {
     "date": "1 May 2026",
     "headlines": [
+      "Tuareg rebels seize Kidal as Russian forces withdraw from northern Mali",
+      "Pakistan military kills 216 militants in Balochistan after coordinated attacks",
+      "Myanmar moves Aung San Suu Kyi to house arrest after five years detention",
+      "Chad closes Sudan border after drone kills seventeen at funeral in Tine"
+    ],
+    "regional_headlines": [
+      "Spanish Prime Minister accused of heading criminal organization in COVID mask corruption trial testimony"
+    ]
+  },
+  {
+    "date": "1 May 2026",
+    "headlines": [
       "Japan-flagged oil tanker crosses Strait of Hormuz for first time since Iran war began",
       "Bulgaria opposition coalition wins outright parliamentary majority ending years of political crisis",
       "Highway bomb attack kills 19 ahead of Colombia presidential election next month",
@@ -25,20 +37,6 @@
       "Spain issues first residence permits under largest migrant regularization program in two decades",
       "Norway commits NOK 1.72 billion over four years to World Food Programme",
       "Major wildfire at 't Harde military range remains uncontrolled with smoke reaching England"
-    ]
-  },
-  {
-    "date": "29 April 2026",
-    "headlines": [
-      "United Arab Emirates withdraws from OPEC effective May 1",
-      "Gaza holds first elections in twenty years with Fatah-backed candidates winning most seats",
-      "Google signs classified Pentagon agreement authorizing AI use for any lawful government purpose"
-    ],
-    "regional_headlines": [
-      "Princess Leonor will study Political Science at public university starting autumn 2026",
-      "Norway's grid operator halts new industrial power connections above 5MW across northern regions",
-      "King Charles tells joint session of Congress that Ukraine support keeps citizens safer for generations",
-      "Dutch intelligence declares Netherlands faces highest threat level in eighty years from Russia and China"
     ]
   }
 ]
