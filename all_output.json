@@ -1,47 +1,55 @@
 {
-  "date": "1 May 2026",
+  "date": "2 May 2026",
   "global": {
-    "generated_at": "2025-05-15T10:30:00Z",
+    "generated_at": "2026-05-01T18:00:00Z",
     "sources": [
+      "BBC Sport",
       "Al Jazeera",
-      "BBC",
+      "The Guardian",
       "Reuters",
-      "France 24",
       "Associated Press"
     ],
     "items": [
       {
-        "headline": "Tuareg rebels seize Kidal as Russian forces withdraw from northern Mali",
-        "body": "Tuareg and Al-Qaeda-linked militants forced Russia's Africa Corps to retreat from Kidal in Mali's largest offensive since 2012. The junta's defense minister was killed and President Goïta is reportedly in hiding after attacks on Bamako facilities.",
-        "geo": "Africa",
+        "headline": "Two runners break two-hour marathon barrier in record-eligible race",
+        "body": "Sabastian Sawe ran 1:59:30 at the London Marathon on April 26, becoming the first person to break two hours in official conditions. Millions of distance runners now train toward a barrier previously considered impossible outside exhibition attempts.",
+        "geo": "Europe",
         "sources": 3
       },
       {
-        "headline": "Pakistan military kills 216 militants in Balochistan after coordinated attacks",
-        "body": "Security forces launched counter-operations across Balochistan following January 29 attacks by separatist militants on schools and military sites. The clashes killed 216 militants, 22 soldiers, and 36 civilians in one of the largest operations to date.",
-        "geo": "Asia",
+        "headline": "Mali defense minister killed in nationwide coordinated attacks",
+        "body": "General Sadio Camara died when fighters drove a car bomb into his residence on April 30. Mali loses a central figure in its ruling military government amid expanding insurgent control.",
+        "geo": "Africa",
         "sources": 4
       },
       {
-        "headline": "Myanmar moves Aung San Suu Kyi to house arrest after five years detention",
-        "body": "Military leader Min Aung Hlaing commuted the remaining sentence of the Nobel laureate to house arrest. State media released the first public photograph of Suu Kyi in years showing her flanked by uniformed personnel.",
+        "headline": "United Arab Emirates withdraws from OPEC effective May 1",
+        "body": "The UAE announced its departure from the oil cartel on May 1, removing 4.8 million barrels per day of production capacity. Global oil supply coordination weakens as the group loses its third-largest producer.",
         "geo": "Asia",
-        "sources": 5
+        "sources": 3
       },
       {
-        "headline": "Chad closes Sudan border after drone kills seventeen at funeral in Tine",
-        "body": "A drone attack Wednesday killed mourners and children in the border town. President Déby blamed Sudan's RSF paramilitary and warned Chad would retaliate for any further strikes on its territory.",
-        "geo": "Africa",
-        "sources": 3
+        "headline": "Direct commercial flights resume between United States and Venezuela after seven years",
+        "body": "American Airlines flight AA3599 landed in Caracas on April 30, ending a suspension since 2019. Hundreds of thousands of Venezuelans in the United States gain direct access to family without third-country connections.",
+        "geo": "Americas",
+        "sources": 2
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Spanish Prime Minister accused of heading criminal organization in COVID mask corruption trial testimony",
-        "body": "Businessman testified April 29 that Pedro Sánchez tops hierarchy of bribery scheme involving transport ministry contracts. Coalition partner Sumar and regional allies now threaten legislative support amid escalating government crisis.",
+        "headline": "Israel seizes Gaza-bound flotilla with 31 Spanish nationals in international waters near Greece",
+        "body": "Israeli forces intercepted over 20 boats sailing from Barcelona on Wednesday, detaining 175 activists total. Spain suspends diplomatic engagement and demands EU freeze Israel association agreement immediately.",
         "geo": "Spain",
+        "sources": 3
+      }
+    ],
+    "nl": [
+      {
+        "headline": "Netherlands requests international wildfire assistance through EU system for first time in history",
+        "body": "Fire departments exhausted their resources fighting blazes across seven locations and activated EU Civil Protection Mechanism on April 30. France and Germany deployed specialized wildfire vehicles and helicopter while Belgium sent crews to prevent peat reignition.",
+        "geo": "Netherlands",
         "sources": 3
       }
     ]

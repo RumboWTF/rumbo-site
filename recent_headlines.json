@@ -1,5 +1,18 @@
 [
   {
+    "date": "2 May 2026",
+    "headlines": [
+      "Two runners break two-hour marathon barrier in record-eligible race",
+      "Mali defense minister killed in nationwide coordinated attacks",
+      "United Arab Emirates withdraws from OPEC effective May 1",
+      "Direct commercial flights resume between United States and Venezuela after seven years"
+    ],
+    "regional_headlines": [
+      "Israel seizes Gaza-bound flotilla with 31 Spanish nationals in international waters near Greece",
+      "Netherlands requests international wildfire assistance through EU system for first time in history"
+    ]
+  },
+  {
     "date": "1 May 2026",
     "headlines": [
       "Tuareg rebels seize Kidal as Russian forces withdraw from northern Mali",
@@ -23,20 +36,6 @@
       "Norway unearths largest Viking Age coin hoard with over 3,150 coins from 1047",
       "UK raises national terrorism threat level to severe following Golders Green stabbing attack",
       "Netherlands evacuates 1,500 asylum seekers from second-largest reception center due to wildfire near Weert"
-    ]
-  },
-  {
-    "date": "30 April 2026",
-    "headlines": [
-      "Supreme Court ruling eviscerates Voting Rights Act protection for minority districts",
-      "White House Correspondents' Dinner shooting suspect charged with attempted assassination",
-      "United States commits one hundred million dollars for Chornobyl containment emergency repairs",
-      "South Korean court adds seven years to ousted president Yoon's life sentence"
-    ],
-    "regional_headlines": [
-      "Spain issues first residence permits under largest migrant regularization program in two decades",
-      "Norway commits NOK 1.72 billion over four years to World Food Programme",
-      "Major wildfire at 't Harde military range remains uncontrolled with smoke reaching England"
     ]
   }
 ]
