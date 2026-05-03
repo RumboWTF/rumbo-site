@@ -1,35 +1,35 @@
 {
-  "generated_at": "2026-05-01T18:00:00Z",
+  "generated_at": "2026-05-04T12:00:00Z",
   "sources": [
-    "BBC Sport",
-    "Al Jazeera",
-    "The Guardian",
-    "Reuters",
-    "Associated Press"
+    "IRNA",
+    "Washington Post",
+    "Bangkok Post",
+    "South China Morning Post",
+    "Wikinews"
   ],
   "items": [
     {
-      "headline": "Two runners break two-hour marathon barrier in record-eligible race",
-      "body": "Sabastian Sawe ran 1:59:30 at the London Marathon on April 26, becoming the first person to break two hours in official conditions. Millions of distance runners now train toward a barrier previously considered impossible outside exhibition attempts.",
-      "geo": "Europe",
-      "sources": 3
-    },
-    {
-      "headline": "Mali defense minister killed in nationwide coordinated attacks",
-      "body": "General Sadio Camara died when fighters drove a car bomb into his residence on April 30. Mali loses a central figure in its ruling military government amid expanding insurgent control.",
-      "geo": "Africa",
-      "sources": 4
-    },
-    {
-      "headline": "United Arab Emirates withdraws from OPEC effective May 1",
-      "body": "The UAE announced its departure from the oil cartel on May 1, removing 4.8 million barrels per day of production capacity. Global oil supply coordination weakens as the group loses its third-largest producer.",
-      "geo": "Asia",
-      "sources": 3
-    },
-    {
-      "headline": "Direct commercial flights resume between United States and Venezuela after seven years",
-      "body": "American Airlines flight AA3599 landed in Caracas on April 30, ending a suspension since 2019. Hundreds of thousands of Venezuelans in the United States gain direct access to family without third-country connections.",
+      "headline": "Spirit Airlines ceases operations, stranding passengers across United States",
+      "body": "Spirit Airlines announced Saturday it would immediately wind down all operations after a federal bailout failed to materialize. The eighth-largest US carrier had 9,000 scheduled flights through May, leaving thousands stranded.",
       "geo": "Americas",
+      "sources": 3
+    },
+    {
+      "headline": "Iran submits negotiation proposal to United States through Pakistan mediators",
+      "body": "Iran sent a proposal to end the war to US mediators from Pakistan, state media reported. President Trump confirmed he is reviewing the Iranian proposal.",
+      "geo": "Global",
+      "sources": 2
+    },
+    {
+      "headline": "Cambodia repatriates 635 Thai nationals from scam operations",
+      "body": "Cambodia returned 635 Thai citizens allegedly working in online fraud from a single building Thursday. Thai authorities are screening returnees for prosecution in cross-border fraud networks.",
+      "geo": "Asia",
+      "sources": 2
+    },
+    {
+      "headline": "Chinese court rules AI job replacement unlawful in landmark case",
+      "body": "A Hangzhou appeals court ruled that dismissing a tech worker after replacing his job with AI was unlawful. Legal scholars call it a reassuring signal for labor rights as China pushes widespread AI adoption.",
+      "geo": "Asia",
       "sources": 2
     }
   ]

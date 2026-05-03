@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-03",
+  "gemini_output": {
+    "generated_at": "2026-05-03T04:01:23Z",
+    "sources": [
+      "Africanews",
+      "Associated Press",
+      "CNN",
+      "KEYT",
+      "KTVB",
+      "New Vision",
+      "Reuters",
+      "THE DAILY TRIBUNE",
+      "THE RESPONDENT",
+      "The News Pakistan",
+      "The Straits Times",
+      "WBOC",
+      "WFTV",
+      "WHIO-TV",
+      "YouTube"
+    ],
+    "items": [
+      {
+        "headline": "Mali accuses military officers of working with jihadis to carry out attacks against government",
+        "body": "Mali's military prosecutor says officers were complicit in recent coordinated insurgent attacks. This signals deep fractures within the junta, weakening its ability to fight rebels.",
+        "geo": "Africa",
+        "sources": 5
+      },
+      {
+        "headline": "Mexican governor indicted by the US for drug trafficking says he'll step down",
+        "body": "The governor of Mexico's Sinaloa state is temporarily resigning after a US indictment. The move strips his immunity, escalating political fallout from alleged cartel ties.",
+        "geo": "Americas",
+        "sources": 5
+      },
+      {
+        "headline": "Tanzania shuts camp housing thousands of Burundi refugees",
+        "body": "Tanzania closed the Nduta refugee camp, repatriating thousands of Burundians amid coercion claims. This forces a vulnerable population into an uncertain and potentially unsafe future.",
+        "geo": "Africa",
+        "sources": 5
+      }
+    ]
+  },
+  "gemini_raw": "```json\n{\n  \"generated_at\": \"2026-05-03T04:01:23Z\",\n  \"sources\": [\n    \"Africanews\",\n    \"Associated Press\",\n    \"CNN\",\n    \"KEYT\",\n    \"KTVB\",\n    \"New Vision\",\n    \"Reuters\",\n    \"THE DAILY TRIBUNE\",\n    \"THE RESPONDENT\",\n    \"The News Pakistan\",\n    \"The Straits Times\",\n    \"WBOC\",\n    \"WFTV\",\n    \"WHIO-TV\",\n    \"YouTube\"\n  ],\n  \"items\": [\n    {\n      \"headline\": \"Mali accuses military officers of working with jihadis to carry out attacks against government\",\n      \"body\": \"Mali's military prosecutor says officers were complicit in recent coordinated insurgent attacks. This signals deep fractures within the junta, weakening its ability to fight rebels.\",\n      \"geo\": \"Africa\",\n      \"sources\": 5\n    },\n    {\n      \"headline\": \"Mexican governor indicted by the US for drug trafficking says he'll step down\",\n      \"body\": \"The governor of Mexico's Sinaloa state is temporarily resigning after a US indictment. The move strips his immunity, escalating political fallout from alleged cartel ties.\",\n      \"geo\": \"Americas\",\n      \"sources\": 5\n    },\n    {\n      \"headline\": \"Tanzania shuts camp housing thousands of Burundi refugees\",\n      \"body\": \"Tanzania closed the Nduta refugee camp, repatriating thousands of Burundians amid coercion claims. This forces a vulnerable population into an uncertain and potentially unsafe future.\",\n      \"geo\": \"Africa\",\n      \"sources\": 5\n    }\n  ]\n}\n```",
+  "gemini_usage": {
+    "promptTokenCount": 1172,
+    "candidatesTokenCount": 675,
+    "totalTokenCount": 10086,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1172
+      }
+    ],
+    "toolUsePromptTokenCount": 6733,
+    "toolUsePromptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 6733
+      }
+    ],
+    "thoughtsTokenCount": 1506
+  },
+  "claude_output": {
+    "generated_at": "2026-05-04T12:00:00Z",
+    "sources": [
+      "IRNA",
+      "Washington Post",
+      "Bangkok Post",
+      "South China Morning Post",
+      "Wikinews"
+    ],
+    "items": [
+      {
+        "headline": "Spirit Airlines ceases operations, stranding passengers across United States",
+        "body": "Spirit Airlines announced Saturday it would immediately wind down all operations after a federal bailout failed to materialize. The eighth-largest US carrier had 9,000 scheduled flights through May, leaving thousands stranded.",
+        "geo": "Americas",
+        "sources": 3
+      },
+      {
+        "headline": "Iran submits negotiation proposal to United States through Pakistan mediators",
+        "body": "Iran sent a proposal to end the war to US mediators from Pakistan, state media reported. President Trump confirmed he is reviewing the Iranian proposal.",
+        "geo": "Global",
+        "sources": 2
+      },
+      {
+        "headline": "Cambodia repatriates 635 Thai nationals from scam operations",
+        "body": "Cambodia returned 635 Thai citizens allegedly working in online fraud from a single building Thursday. Thai authorities are screening returnees for prosecution in cross-border fraud networks.",
+        "geo": "Asia",
+        "sources": 2
+      },
+      {
+        "headline": "Chinese court rules AI job replacement unlawful in landmark case",
+        "body": "A Hangzhou appeals court ruled that dismissing a tech worker after replacing his job with AI was unlawful. Legal scholars call it a reassuring signal for labor rights as China pushes widespread AI adoption.",
+        "geo": "Asia",
+        "sources": 2
+      }
+    ]
+  }
+}

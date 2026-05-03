@@ -1,5 +1,17 @@
 [
   {
+    "date": "3 May 2026",
+    "headlines": [
+      "Spirit Airlines ceases operations, stranding passengers across United States",
+      "Iran submits negotiation proposal to United States through Pakistan mediators",
+      "Cambodia repatriates 635 Thai nationals from scam operations",
+      "Chinese court rules AI job replacement unlawful in landmark case"
+    ],
+    "regional_headlines": [
+      "Netherlands withdraws warship from Mediterranean despite ongoing Iranian threat and French request"
+    ]
+  },
+  {
     "date": "2 May 2026",
     "headlines": [
       "Two runners break two-hour marathon barrier in record-eligible race",
@@ -22,20 +34,6 @@
     ],
     "regional_headlines": [
       "Spanish Prime Minister accused of heading criminal organization in COVID mask corruption trial testimony"
-    ]
-  },
-  {
-    "date": "1 May 2026",
-    "headlines": [
-      "Japan-flagged oil tanker crosses Strait of Hormuz for first time since Iran war began",
-      "Bulgaria opposition coalition wins outright parliamentary majority ending years of political crisis",
-      "Highway bomb attack kills 19 ahead of Colombia presidential election next month",
-      "China detains nearly 70 Panamanian-flagged ships after Supreme Court canal ruling"
-    ],
-    "regional_headlines": [
-      "Norway unearths largest Viking Age coin hoard with over 3,150 coins from 1047",
-      "UK raises national terrorism threat level to severe following Golders Green stabbing attack",
-      "Netherlands evacuates 1,500 asylum seekers from second-largest reception center due to wildfire near Weert"
     ]
   }
 ]
