@@ -493,9 +493,10 @@ async function main() {
     }
   }
 
-  // Step 2b (optional): parallel Gemini Flash test — runs only when RUN_GEMINI_TEST=true
+  // Step 2b (optional): parallel Gemini Pro test — runs only when RUN_GEMINI_TEST=true
+  // Writes comparison JSON AND renders to index-gemini.html for visual side-by-side
   if (process.env.RUN_GEMINI_TEST === "true") {
-    console.log("Calling Gemini Flash for parallel comparison...");
+    console.log("Calling Gemini Pro for parallel comparison...");
     try {
       const deduplicationHint = previousContext;
       const geminiResult = await callGeminiFlash(GLOBAL_PROMPT + deduplicationHint);
@@ -510,6 +511,19 @@ async function main() {
       }, null, 2));
       console.log(`Gemini comparison written to ${comparisonFile}`);
       console.log(`Gemini items: ${geminiResult.json.items?.length ?? 0}`);
+
+      // Render Gemini's output as a parallel index-gemini.html (not published anywhere,
+      // just exists in repo for inspection)
+      try {
+        const dateStrForGemini = new Date().toLocaleDateString("en-GB", {
+          day: "numeric", month: "long", year: "numeric",
+        });
+        const geminiHtml = renderHtml({ ...geminiResult.json }, dateStrForGemini, "en");
+        fs.writeFileSync("index-gemini.html", geminiHtml);
+        console.log("index-gemini.html written.");
+      } catch (e) {
+        console.error("Gemini HTML render failed:", e.message);
+      }
     } catch (e) {
       console.error("Gemini test failed:", e.message);
     }
