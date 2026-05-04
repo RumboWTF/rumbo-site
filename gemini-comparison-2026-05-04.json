@@ -1,0 +1,119 @@
+{
+  "date": "2026-05-04",
+  "gemini_output": {
+    "generated_at": "2026-05-04T04:01:21.234Z",
+    "sources": [
+      "The Jerusalem Post",
+      "Asian Development Bank",
+      "The Times of Israel",
+      "Mint",
+      "The Irish Times",
+      "BNO News",
+      "Ynet News",
+      "The Business Standard",
+      "BusinessWorld Online",
+      "CNA",
+      "Bloomberg Government",
+      "Financial Post",
+      "CCTV",
+      "Caliber.Az",
+      "LIGA.net",
+      "The Japan Times",
+      "The National",
+      "Reddit",
+      "Ecobiz.asia",
+      "FDD",
+      "The Jewish Chronicle"
+    ],
+    "items": [
+      {
+        "headline": "US move on long-range missiles creates problems for Europe",
+        "body": "The United States cancelled its planned long-range missile deployment to Germany. This decision leaves the continent with a significant security gap. European nations must now accelerate their own weapons development faster than anticipated.",
+        "geo": "Europe",
+        "sources": 4
+      },
+      {
+        "headline": "Beijing tells China firms to ignore US sanctions on refiners",
+        "body": "China has prohibited companies from complying with US sanctions on five refiners. The order bans recognition or enforcement of the American measures. This move forces multinational firms into a direct legal conflict.",
+        "geo": "Asia",
+        "sources": 5
+      },
+      {
+        "headline": "United States to begin escorting ships out of Strait of Hormuz",
+        "body": "The US will start escorting commercial ships through the Strait of Hormuz. The operation, called 'Project Freedom', is described as a humanitarian effort. This directly challenges Iran's control over the critical shipping lane.",
+        "geo": "Global",
+        "sources": 5
+      },
+      {
+        "headline": "Gaza disarmament talks stall as Hamas refuses to lay down arms",
+        "body": "Negotiations between Hamas and international mediators have reached an impasse. Hamas has refused to disarm before other conditions are met. This stalls any post-war reconstruction and governance plans for Gaza.",
+        "geo": "Asia",
+        "sources": 4
+      }
+    ]
+  },
+  "gemini_raw": "```json\n{\n  \"generated_at\": \"2026-05-04T04:01:21.234Z\",\n  \"sources\": [\n    \"The Jerusalem Post\",\n    \"Asian Development Bank\",\n    \"The Times of Israel\",\n    \"Mint\",\n    \"The Irish Times\",\n    \"BNO News\",\n    \"Ynet News\",\n    \"The Business Standard\",\n    \"BusinessWorld Online\",\n    \"CNA\",\n    \"Bloomberg Government\",\n    \"Financial Post\",\n    \"CCTV\",\n    \"Caliber.Az\",\n    \"LIGA.net\",\n    \"The Japan Times\",\n    \"The National\",\n    \"Reddit\",\n    \"Ecobiz.asia\",\n    \"FDD\",\n    \"The Jewish Chronicle\"\n  ],\n  \"items\": [\n    {\n      \"headline\": \"US move on long-range missiles creates problems for Europe\",\n      \"body\": \"The United States cancelled its planned long-range missile deployment to Germany. This decision leaves the continent with a significant security gap. European nations must now accelerate their own weapons development faster than anticipated.\",\n      \"geo\": \"Europe\",\n      \"sources\": 4\n    },\n    {\n      \"headline\": \"Beijing tells China firms to ignore US sanctions on refiners\",\n      \"body\": \"China has prohibited companies from complying with US sanctions on five refiners. The order bans recognition or enforcement of the American measures. This move forces multinational firms into a direct legal conflict.\",\n      \"geo\": \"Asia\",\n      \"sources\": 5\n    },\n    {\n      \"headline\": \"United States to begin escorting ships out of Strait of Hormuz\",\n      \"body\": \"The US will start escorting commercial ships through the Strait of Hormuz. The operation, called 'Project Freedom', is described as a humanitarian effort. This directly challenges Iran's control over the critical shipping lane.\",\n      \"geo\": \"Global\",\n      \"sources\": 5\n    },\n    {\n      \"headline\": \"Gaza disarmament talks stall as Hamas refuses to lay down arms\",\n      \"body\": \"Negotiations between Hamas and international mediators have reached an impasse. Hamas has refused to disarm before other conditions are met. This stalls any post-war reconstruction and governance plans for Gaza.\",\n      \"geo\": \"Asia\",\n      \"sources\": 4\n    }\n  ]\n}\n```",
+  "gemini_usage": {
+    "promptTokenCount": 1101,
+    "candidatesTokenCount": 680,
+    "totalTokenCount": 8606,
+    "cachedContentTokenCount": 660,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1101
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 660
+      }
+    ],
+    "toolUsePromptTokenCount": 4758,
+    "toolUsePromptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4758
+      }
+    ],
+    "thoughtsTokenCount": 2067
+  },
+  "claude_output": {
+    "generated_at": "2025-05-04T18:30:00Z",
+    "sources": [
+      "World Health Organization",
+      "Joint Terrorism Analysis Centre",
+      "White House",
+      "U.S. Attorney's Office",
+      "Portland Police Bureau",
+      "Public Investment Fund"
+    ],
+    "items": [
+      {
+        "headline": "Hantavirus outbreak on Atlantic cruise ship kills three passengers, prompts WHO confirmation",
+        "body": "Three passengers died and one remains critical after suspected hantavirus infected at least six people aboard a Dutch cruise ship traveling from Argentina to Cape Verde. The outbreak forces isolation protocols affecting approximately 150 passengers across multiple countries with no established treatment protocol for shipboard transmission.",
+        "geo": "Global",
+        "sources": 3
+      },
+      {
+        "headline": "United Kingdom raises terrorism threat level to severe after attack pattern shifts",
+        "body": "Britain elevated its national threat assessment meaning terrorist attack now considered highly likely. The change reflects increased activity from both Islamist and extreme right-wing individuals operating domestically rather than coordinated foreign groups.",
+        "geo": "Europe",
+        "sources": 4
+      },
+      {
+        "headline": "Secret Service agent shot at White House Correspondents Dinner with buckshot pellet lodged in vest",
+        "body": "U.S. Attorney confirmed protective agent was struck by pellet from suspected gunman targeting multiple Trump administration officials. The April 25 attack at Washington's main press event required evacuation protocols now being redesigned for future presidential appearances.",
+        "geo": "Americas",
+        "sources": 2
+      },
+      {
+        "headline": "Saudi Arabia ends LIV Golf funding after spending 5.3 billion dollars in three years",
+        "body": "The Public Investment Fund will stop financing the golf league after 2026 season concludes. The withdrawal leaves the sport without its primary challenger to established tour structure after reshaping professional golf compensation worldwide.",
+        "geo": "Global",
+        "sources": 3
+      }
+    ]
+  }
+}

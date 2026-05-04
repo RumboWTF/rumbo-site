@@ -1,46 +1,63 @@
 {
-  "date": "3 May 2026",
+  "date": "4 May 2026",
   "global": {
-    "generated_at": "2026-05-04T12:00:00Z",
+    "generated_at": "2025-05-04T18:30:00Z",
     "sources": [
-      "IRNA",
-      "Washington Post",
-      "Bangkok Post",
-      "South China Morning Post",
-      "Wikinews"
+      "World Health Organization",
+      "Joint Terrorism Analysis Centre",
+      "White House",
+      "U.S. Attorney's Office",
+      "Portland Police Bureau",
+      "Public Investment Fund"
     ],
     "items": [
       {
-        "headline": "Spirit Airlines ceases operations, stranding passengers across United States",
-        "body": "Spirit Airlines announced Saturday it would immediately wind down all operations after a federal bailout failed to materialize. The eighth-largest US carrier had 9,000 scheduled flights through May, leaving thousands stranded.",
-        "geo": "Americas",
+        "headline": "Hantavirus outbreak on Atlantic cruise ship kills three passengers, prompts WHO confirmation",
+        "body": "Three passengers died and one remains critical after suspected hantavirus infected at least six people aboard a Dutch cruise ship traveling from Argentina to Cape Verde. The outbreak forces isolation protocols affecting approximately 150 passengers across multiple countries with no established treatment protocol for shipboard transmission.",
+        "geo": "Global",
         "sources": 3
       },
       {
-        "headline": "Iran submits negotiation proposal to United States through Pakistan mediators",
-        "body": "Iran sent a proposal to end the war to US mediators from Pakistan, state media reported. President Trump confirmed he is reviewing the Iranian proposal.",
+        "headline": "United Kingdom raises terrorism threat level to severe after attack pattern shifts",
+        "body": "Britain elevated its national threat assessment meaning terrorist attack now considered highly likely. The change reflects increased activity from both Islamist and extreme right-wing individuals operating domestically rather than coordinated foreign groups.",
+        "geo": "Europe",
+        "sources": 4
+      },
+      {
+        "headline": "Secret Service agent shot at White House Correspondents Dinner with buckshot pellet lodged in vest",
+        "body": "U.S. Attorney confirmed protective agent was struck by pellet from suspected gunman targeting multiple Trump administration officials. The April 25 attack at Washington's main press event required evacuation protocols now being redesigned for future presidential appearances.",
+        "geo": "Americas",
+        "sources": 2
+      },
+      {
+        "headline": "Saudi Arabia ends LIV Golf funding after spending 5.3 billion dollars in three years",
+        "body": "The Public Investment Fund will stop financing the golf league after 2026 season concludes. The withdrawal leaves the sport without its primary challenger to established tour structure after reshaping professional golf compensation worldwide.",
         "geo": "Global",
-        "sources": 2
-      },
-      {
-        "headline": "Cambodia repatriates 635 Thai nationals from scam operations",
-        "body": "Cambodia returned 635 Thai citizens allegedly working in online fraud from a single building Thursday. Thai authorities are screening returnees for prosecution in cross-border fraud networks.",
-        "geo": "Asia",
-        "sources": 2
-      },
-      {
-        "headline": "Chinese court rules AI job replacement unlawful in landmark case",
-        "body": "A Hangzhou appeals court ruled that dismissing a tech worker after replacing his job with AI was unlawful. Legal scholars call it a reassuring signal for labor rights as China pushes widespread AI adoption.",
-        "geo": "Asia",
-        "sources": 2
+        "sources": 3
       }
     ]
   },
   "regional_items": {
+    "es": [
+      {
+        "headline": "Spain's migrant regularization program triggers administrative collapse with daily applications surging from 1,500 to 5,500",
+        "body": "The amnesty scheme launched mid-April created systemic failures forcing office closures and swamping social services across multiple cities. The program affects 500,000 undocumented workers whose legal status directly impacts labor markets and municipal budgets nationwide.",
+        "geo": "Spain",
+        "sources": 2
+      }
+    ],
+    "no": [
+      {
+        "headline": "Norway Supreme Court overturns government withdrawal of state funding from Jehovah's Witnesses",
+        "body": "The court ruled April 30 that denying subsidies violated religious freedom despite alleged harmful practices. The decision eliminates the state's primary tool for enforcing human rights standards on registered religious communities.",
+        "geo": "Norway",
+        "sources": 2
+      }
+    ],
     "nl": [
       {
-        "headline": "Netherlands withdraws warship from Mediterranean despite ongoing Iranian threat and French request",
-        "body": "The frigate Evertsen will return early after the government declined to extend its air defense mission. The withdrawal reduces European naval coverage in an active conflict zone without official explanation.",
+        "headline": "Dutch citizens launch court action to block U.S. takeover of DigiD provider",
+        "body": "Technology experts and journalists asked a court to recognize them as stakeholders blocking Kyndryl's acquisition of Solvinity. This shifts access to government services for seventeen million users because American ownership would place login data under U.S. jurisdiction.",
         "geo": "Netherlands",
         "sources": 2
       }
