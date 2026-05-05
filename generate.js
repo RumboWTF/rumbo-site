@@ -67,6 +67,7 @@ WRITING
 STRUCTURE
 - Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania
 - Count genuinely independent source clusters per item (organisations that did their own reporting, not syndication). Include as a "sources" integer.
+- The headline field contains ONLY the headline text. Do not append source citations, outlet names, dates, or parenthetical metadata to the headline. Citations belong in the body and the sources list, never in the headline.
 
 CRITICAL: Your response must be ONLY the raw JSON object. No thinking, no explanation, no markdown, no preamble. Start with { and end with }. Do not use markdown formatting (no asterisks, underscores, or other markup) in any string values.
 {
@@ -103,6 +104,7 @@ Rules:
 - Alien-observer neutrality: describe what actors do, not whether they are right.
 - Every specific claim must come from your search results. Do not infer or fill gaps.
 - If you cannot find any genuinely fresh items, return an empty items array.
+- The headline field contains ONLY the headline text. Do not append source citations, outlet names, dates, or parenthetical metadata to the headline.
 
 CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end with }. No other text. No markdown formatting in any string values.
 {
