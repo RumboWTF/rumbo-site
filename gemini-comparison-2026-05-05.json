@@ -1,0 +1,100 @@
+{
+  "date": "2026-05-05",
+  "gemini_output": {
+    "generated_at": "2026-05-05T04:01:27Z",
+    "sources": [
+      "TIME",
+      "Breaking Defense",
+      "PBS News",
+      "The New Voice of Ukraine",
+      "CIDRAP",
+      "The Jerusalem Post",
+      "CBC",
+      "Associated Press",
+      "New Vision",
+      "MINING.COM",
+      "Reuters",
+      "Business Insider Africa",
+      "World Health Organization"
+    ],
+    "items": [
+      {
+        "headline": "US to withdraw 5,000 troops from Germany in next 6 to 12 months (PBS News, May 2, 2026)",
+        "body": "The United States will withdraw 5,000 troops from Germany. This decision alters Europe's security structure and strains NATO alliance cohesion.",
+        "geo": "Europe",
+        "sources": 4
+      },
+      {
+        "headline": "Hantavirus cluster linked to cruise ship travel, Multi-country (World Health Organization, May 5, 2026)",
+        "body": "The WHO confirmed a hantavirus outbreak on a cruise ship. The incident, with seven cases and three deaths, prompts review of maritime health protocols.",
+        "geo": "Global",
+        "sources": 5
+      },
+      {
+        "headline": "Zambia says US health deal must be uncoupled from minerals access (MarketScreener, May 4, 2026)",
+        "body": "Zambia stalled a major US health funding agreement. The dispute centers on data privacy and access to the nation's critical minerals.",
+        "geo": "Africa",
+        "sources": 4
+      }
+    ]
+  },
+  "gemini_raw": "```json\n{\n  \"generated_at\": \"2026-05-05T04:01:27Z\",\n  \"sources\": [\n    \"TIME\",\n    \"Breaking Defense\",\n    \"PBS News\",\n    \"The New Voice of Ukraine\",\n    \"CIDRAP\",\n    \"The Jerusalem Post\",\n    \"CBC\",\n    \"Associated Press\",\n    \"New Vision\",\n    \"MINING.COM\",\n    \"Reuters\",\n    \"Business Insider Africa\",\n    \"World Health Organization\"\n  ],\n  \"items\": [\n    {\n      \"headline\": \"US to withdraw 5,000 troops from Germany in next 6 to 12 months (PBS News, May 2, 2026)\",\n      \"body\": \"The United States will withdraw 5,000 troops from Germany. This decision alters Europe's security structure and strains NATO alliance cohesion.\",\n      \"geo\": \"Europe\",\n      \"sources\": 4\n    },\n    {\n      \"headline\": \"Hantavirus cluster linked to cruise ship travel, Multi-country (World Health Organization, May 5, 2026)\",\n      \"body\": \"The WHO confirmed a hantavirus outbreak on a cruise ship. The incident, with seven cases and three deaths, prompts review of maritime health protocols.\",\n      \"geo\": \"Global\",\n      \"sources\": 5\n    },\n    {\n      \"headline\": \"Zambia says US health deal must be uncoupled from minerals access (MarketScreener, May 4, 2026)\",\n      \"body\": \"Zambia stalled a major US health funding agreement. The dispute centers on data privacy and access to the nation's critical minerals.\",\n      \"geo\": \"Africa\",\n      \"sources\": 4\n    }\n  ]\n}\n```",
+  "gemini_usage": {
+    "promptTokenCount": 1156,
+    "candidatesTokenCount": 524,
+    "totalTokenCount": 7005,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1156
+      }
+    ],
+    "toolUsePromptTokenCount": 3798,
+    "toolUsePromptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 3798
+      }
+    ],
+    "thoughtsTokenCount": 1527
+  },
+  "claude_output": {
+    "generated_at": "2026-05-05T18:30:00Z",
+    "sources": [
+      "CNN",
+      "Reuters",
+      "The Guardian",
+      "ABC News",
+      "Associated Press",
+      "BBC",
+      "Al Jazeera",
+      "The Australian"
+    ],
+    "items": [
+      {
+        "headline": "United Airlines plane strikes truck on highway during landing approach to Newark",
+        "body": "A Boeing 767 carrying 221 passengers hit a light pole and truck on the New Jersey Turnpike during final approach Sunday. All passengers landed safely but the driver was injured and the NTSB classified it as an accident due to aircraft damage extent.",
+        "geo": "Americas",
+        "sources": 3
+      },
+      {
+        "headline": "Iran strikes oil facility in United Arab Emirates after ceasefire period",
+        "body": "A drone hit the Fujairah Oil Industry Zone on Monday injuring three workers and causing major fire. This is the first attack on UAE infrastructure since the April 8 ceasefire between Iran and United States.",
+        "geo": "Asia",
+        "sources": 4
+      },
+      {
+        "headline": "GameStop offers 55.5 billion dollars to acquire eBay",
+        "body": "The video game retailer made an unsolicited cash-and-stock bid Sunday valuing eBay at 125 dollars per share. eBay confirmed Monday its board will review the proposal from a company with far smaller revenue.",
+        "geo": "Americas",
+        "sources": 5
+      },
+      {
+        "headline": "Up to 40,000 gather at French military firing range despite unexploded ordnance warnings",
+        "body": "An illegal rave occurred Saturday near Bourges at a site with World War II munitions. Parliament approved penalties in April including six months jail for organizers of unauthorized raves.",
+        "geo": "Europe",
+        "sources": 3
+      }
+    ]
+  }
+}

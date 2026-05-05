@@ -1,38 +1,40 @@
 {
-  "date": "4 May 2026",
+  "date": "5 May 2026",
   "global": {
-    "generated_at": "2025-05-04T18:30:00Z",
+    "generated_at": "2026-05-05T18:30:00Z",
     "sources": [
-      "World Health Organization",
-      "Joint Terrorism Analysis Centre",
-      "White House",
-      "U.S. Attorney's Office",
-      "Portland Police Bureau",
-      "Public Investment Fund"
+      "CNN",
+      "Reuters",
+      "The Guardian",
+      "ABC News",
+      "Associated Press",
+      "BBC",
+      "Al Jazeera",
+      "The Australian"
     ],
     "items": [
       {
-        "headline": "Hantavirus outbreak on Atlantic cruise ship kills three passengers, prompts WHO confirmation",
-        "body": "Three passengers died and one remains critical after suspected hantavirus infected at least six people aboard a Dutch cruise ship traveling from Argentina to Cape Verde. The outbreak forces isolation protocols affecting approximately 150 passengers across multiple countries with no established treatment protocol for shipboard transmission.",
-        "geo": "Global",
+        "headline": "United Airlines plane strikes truck on highway during landing approach to Newark",
+        "body": "A Boeing 767 carrying 221 passengers hit a light pole and truck on the New Jersey Turnpike during final approach Sunday. All passengers landed safely but the driver was injured and the NTSB classified it as an accident due to aircraft damage extent.",
+        "geo": "Americas",
         "sources": 3
       },
       {
-        "headline": "United Kingdom raises terrorism threat level to severe after attack pattern shifts",
-        "body": "Britain elevated its national threat assessment meaning terrorist attack now considered highly likely. The change reflects increased activity from both Islamist and extreme right-wing individuals operating domestically rather than coordinated foreign groups.",
-        "geo": "Europe",
+        "headline": "Iran strikes oil facility in United Arab Emirates after ceasefire period",
+        "body": "A drone hit the Fujairah Oil Industry Zone on Monday injuring three workers and causing major fire. This is the first attack on UAE infrastructure since the April 8 ceasefire between Iran and United States.",
+        "geo": "Asia",
         "sources": 4
       },
       {
-        "headline": "Secret Service agent shot at White House Correspondents Dinner with buckshot pellet lodged in vest",
-        "body": "U.S. Attorney confirmed protective agent was struck by pellet from suspected gunman targeting multiple Trump administration officials. The April 25 attack at Washington's main press event required evacuation protocols now being redesigned for future presidential appearances.",
+        "headline": "GameStop offers 55.5 billion dollars to acquire eBay",
+        "body": "The video game retailer made an unsolicited cash-and-stock bid Sunday valuing eBay at 125 dollars per share. eBay confirmed Monday its board will review the proposal from a company with far smaller revenue.",
         "geo": "Americas",
-        "sources": 2
+        "sources": 5
       },
       {
-        "headline": "Saudi Arabia ends LIV Golf funding after spending 5.3 billion dollars in three years",
-        "body": "The Public Investment Fund will stop financing the golf league after 2026 season concludes. The withdrawal leaves the sport without its primary challenger to established tour structure after reshaping professional golf compensation worldwide.",
-        "geo": "Global",
+        "headline": "Up to 40,000 gather at French military firing range despite unexploded ordnance warnings",
+        "body": "An illegal rave occurred Saturday near Bourges at a site with World War II munitions. Parliament approved penalties in April including six months jail for organizers of unauthorized raves.",
+        "geo": "Europe",
         "sources": 3
       }
     ]
@@ -40,26 +42,18 @@
   "regional_items": {
     "es": [
       {
-        "headline": "Spain's migrant regularization program triggers administrative collapse with daily applications surging from 1,500 to 5,500",
-        "body": "The amnesty scheme launched mid-April created systemic failures forcing office closures and swamping social services across multiple cities. The program affects 500,000 undocumented workers whose legal status directly impacts labor markets and municipal budgets nationwide.",
+        "headline": "Pentagon floats Spain NATO suspension over Iran war non-cooperation in internal email",
+        "body": "Defense Department advisor circulated memo proposing Spain's alliance suspension after airspace closure to Iran operations. Prime Minister Sánchez dismissed the threat noting NATO treaty contains no removal mechanism.",
         "geo": "Spain",
         "sources": 2
       }
     ],
-    "no": [
+    "uk": [
       {
-        "headline": "Norway Supreme Court overturns government withdrawal of state funding from Jehovah's Witnesses",
-        "body": "The court ruled April 30 that denying subsidies violated religious freedom despite alleged harmful practices. The decision eliminates the state's primary tool for enforcing human rights standards on registered religious communities.",
-        "geo": "Norway",
-        "sources": 2
-      }
-    ],
-    "nl": [
-      {
-        "headline": "Dutch citizens launch court action to block U.S. takeover of DigiD provider",
-        "body": "Technology experts and journalists asked a court to recognize them as stakeholders blocking Kyndryl's acquisition of Solvinity. This shifts access to government services for seventeen million users because American ownership would place login data under U.S. jurisdiction.",
-        "geo": "Netherlands",
-        "sources": 2
+        "headline": "King Charles III addresses U.S. Congress on April 28, urging continued military support for Ukraine",
+        "body": "The monarch spoke before a joint session marking only the second time British royalty has addressed American legislature. Charles pressed Republicans to extend Ukraine aid amid White House tensions over British military restraint on Iran.",
+        "geo": "United Kingdom",
+        "sources": 4
       }
     ]
   }
