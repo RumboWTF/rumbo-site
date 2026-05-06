@@ -231,7 +231,7 @@ function parseJson(raw) {
 
 // ─── Gemini Flash (parallel test) ─────────────────────────────────────────────
 
-async function callGeminiFlash(prompt) {
+async function callGemini(prompt, label = "global") {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) throw new Error("GEMINI_API_KEY not set");
   const genAI = new GoogleGenerativeAI(apiKey);
@@ -249,14 +249,14 @@ async function callGeminiFlash(prompt) {
   const response = result.response;
   const text = response.text();
 
-  // Token usage logging (Gemini reports differently than Anthropic)
+  // Token usage logging
   const usage = response.usageMetadata || {};
   const inTokens = usage.promptTokenCount ?? "?";
   const outTokens = usage.candidatesTokenCount ?? "?";
   const totalTokens = usage.totalTokenCount ?? "?";
-  console.log(`[gemini tokens] in:${inTokens} out:${outTokens} total:${totalTokens}`);
+  console.log(`[gemini tokens] ${label} — in:${inTokens} out:${outTokens} total:${totalTokens}`);
 
-  // Strip markdown code fences if present (Flash sometimes wraps JSON)
+  // Strip markdown code fences if present
   let cleaned = text.trim();
   if (cleaned.startsWith("```")) {
     cleaned = cleaned.replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "");
@@ -475,13 +475,13 @@ async function main() {
     console.log("No previous run context found — first run.");
   }
 
-  // Step 2: global call — runs once, shared across all editions
-  console.log("Calling Claude for global edition...");
+  // Step 2: global call — Gemini Pro is now primary
+  console.log("Calling Gemini Pro for global edition...");
   let globalData;
   try {
     const deduplicationHint = previousContext;
-    const globalRaw = await callClaude(GLOBAL_PROMPT + deduplicationHint, deduplicationHint);
-    globalData = parseJson(globalRaw);
+    const geminiResult = await callGemini(GLOBAL_PROMPT + deduplicationHint, "global");
+    globalData = geminiResult.json;
     console.log(`Global: ${globalData.items.length} items`);
   } catch (e) {
     console.error("Global call failed:", e.message);
@@ -495,39 +495,37 @@ async function main() {
     }
   }
 
-  // Step 2b (optional): parallel Gemini Pro test — runs only when RUN_GEMINI_TEST=true
-  // Writes comparison JSON AND renders to index-gemini.html for visual side-by-side
-  if (process.env.RUN_GEMINI_TEST === "true") {
-    console.log("Calling Gemini Pro for parallel comparison...");
+  // Step 2b (optional): parallel Claude comparison — runs only when RUN_CLAUDE_COMPARISON=true
+  // Writes comparison JSON AND renders to index-claude.html for visual side-by-side
+  if (process.env.RUN_CLAUDE_COMPARISON === "true") {
+    console.log("Calling Claude for parallel comparison...");
     try {
       const deduplicationHint = previousContext;
-      const geminiResult = await callGeminiFlash(GLOBAL_PROMPT + deduplicationHint);
+      const claudeRaw = await callClaude(GLOBAL_PROMPT + deduplicationHint, deduplicationHint);
+      const claudeData = parseJson(claudeRaw);
       const today = new Date().toISOString().split("T")[0];
-      const comparisonFile = `gemini-comparison-${today}.json`;
+      const comparisonFile = `claude-comparison-${today}.json`;
       fs.writeFileSync(comparisonFile, JSON.stringify({
         date: today,
-        gemini_output: geminiResult.json,
-        gemini_raw: geminiResult.raw,
-        gemini_usage: geminiResult.usage,
-        claude_output: globalData,
+        gemini_output: globalData,
+        claude_output: claudeData,
       }, null, 2));
-      console.log(`Gemini comparison written to ${comparisonFile}`);
-      console.log(`Gemini items: ${geminiResult.json.items?.length ?? 0}`);
+      console.log(`Claude comparison written to ${comparisonFile}`);
+      console.log(`Claude items: ${claudeData.items?.length ?? 0}`);
 
-      // Render Gemini's output as a parallel index-gemini.html (not published anywhere,
-      // just exists in repo for inspection)
+      // Render Claude's output as parallel index-claude.html for inspection
       try {
-        const dateStrForGemini = new Date().toLocaleDateString("en-GB", {
+        const dateStrForClaude = new Date().toLocaleDateString("en-GB", {
           day: "numeric", month: "long", year: "numeric",
         });
-        const geminiHtml = renderHtml({ ...geminiResult.json }, dateStrForGemini, "en");
-        fs.writeFileSync("index-gemini.html", geminiHtml);
-        console.log("index-gemini.html written.");
+        const claudeHtml = renderHtml({ ...claudeData }, dateStrForClaude, "en");
+        fs.writeFileSync("index-claude.html", claudeHtml);
+        console.log("index-claude.html written.");
       } catch (e) {
-        console.error("Gemini HTML render failed:", e.message);
+        console.error("Claude HTML render failed:", e.message);
       }
     } catch (e) {
-      console.error("Gemini test failed:", e.message);
+      console.error("Claude comparison failed:", e.message);
     }
   }
 
@@ -548,13 +546,13 @@ async function main() {
   const allRegionalItems = {}; // { regionCode: [items] } — used by Step 7
 
   for (const region of REGIONS) {
-    console.log(`Calling Claude for ${region.name} regional top-up...`);
+    console.log(`Calling Gemini for ${region.name} regional top-up...`);
     try {
-      const regionalRaw = await callClaudeSinglePass(
+      const regionalResult = await callGemini(
         REGIONAL_PROMPT(region.name, JSON.stringify(globalData, null, 2)) + previousContext,
         region.name
       );
-      const regionalData = parseJson(regionalRaw);
+      const regionalData = regionalResult.json;
 
       // Merge: global items + regional items
       const mergedData =
