@@ -1,0 +1,113 @@
+{
+  "date": "2026-05-06",
+  "gemini_output": {
+    "generated_at": "2026-05-06T04:01:27Z",
+    "sources": [
+      "The Guardian",
+      "Associated Press",
+      "The Washington Post",
+      "Al Jazeera",
+      "Reuters",
+      "France 24",
+      "The Hindu",
+      "NDTV",
+      "Anadolu Agency",
+      "WDRB",
+      "Xinhua",
+      "The Independent",
+      "Fox News",
+      "CBS News",
+      "The Times of India"
+    ],
+    "items": [
+      {
+        "headline": "US pauses military operation in Strait of Hormuz for Iran talks",
+        "body": "The United States paused its new mission to escort ships through the Strait of Hormuz. This de-escalation creates a window for diplomacy to end the conflict with Iran.",
+        "geo": "Global",
+        "sources": 5
+      },
+      {
+        "headline": "Romania's pro-EU government toppled in no-confidence vote",
+        "body": "Romania's pro-European coalition government collapsed after losing a no-confidence vote in parliament. This triggers political turmoil in a key eastern European nation amid regional tensions.",
+        "geo": "Europe",
+        "sources": 5
+      },
+      {
+        "headline": "Modi's party wins control of West Bengal for the first time",
+        "body": "India's ruling BJP has won state elections in West Bengal, an opposition stronghold. The victory consolidates the prime minister's power and further weakens the national opposition.",
+        "geo": "Asia",
+        "sources": 5
+      },
+      {
+        "headline": "Boko Haram militants kill 23 soldiers in attack on Chad military post",
+        "body": "Boko Haram fighters attacked a military post in Chad’s Lake Chad region, killing soldiers. The assault signals a resurgence, threatening stability for countries in the entire region.",
+        "geo": "Africa",
+        "sources": 5
+      }
+    ]
+  },
+  "gemini_raw": "```json\n{\n  \"generated_at\": \"2026-05-06T04:01:27Z\",\n  \"sources\": [\n    \"The Guardian\",\n    \"Associated Press\",\n    \"The Washington Post\",\n    \"Al Jazeera\",\n    \"Reuters\",\n    \"France 24\",\n    \"The Hindu\",\n    \"NDTV\",\n    \"Anadolu Agency\",\n    \"WDRB\",\n    \"Xinhua\",\n    \"The Independent\",\n    \"Fox News\",\n    \"CBS News\",\n    \"The Times of India\"\n  ],\n  \"items\": [\n    {\n      \"headline\": \"US pauses military operation in Strait of Hormuz for Iran talks\",\n      \"body\": \"The United States paused its new mission to escort ships through the Strait of Hormuz. This de-escalation creates a window for diplomacy to end the conflict with Iran.\",\n      \"geo\": \"Global\",\n      \"sources\": 5\n    },\n    {\n      \"headline\": \"Romania's pro-EU government toppled in no-confidence vote\",\n      \"body\": \"Romania's pro-European coalition government collapsed after losing a no-confidence vote in parliament. This triggers political turmoil in a key eastern European nation amid regional tensions.\",\n      \"geo\": \"Europe\",\n      \"sources\": 5\n    },\n    {\n      \"headline\": \"Modi's party wins control of West Bengal for the first time\",\n      \"body\": \"India's ruling BJP has won state elections in West Bengal, an opposition stronghold. The victory consolidates the prime minister's power and further weakens the national opposition.\",\n      \"geo\": \"Asia\",\n      \"sources\": 5\n    },\n    {\n      \"headline\": \"Boko Haram militants kill 23 soldiers in attack on Chad military post\",\n      \"body\": \"Boko Haram fighters attacked a military post in Chad’s Lake Chad region, killing soldiers. The assault signals a resurgence, threatening stability for countries in the entire region.\",\n      \"geo\": \"Africa\",\n      \"sources\": 5\n    }\n  ]\n}\n```",
+  "gemini_usage": {
+    "promptTokenCount": 1218,
+    "candidatesTokenCount": 607,
+    "totalTokenCount": 7033,
+    "cachedContentTokenCount": 565,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1218
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 565
+      }
+    ],
+    "toolUsePromptTokenCount": 3969,
+    "toolUsePromptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 3969
+      }
+    ],
+    "thoughtsTokenCount": 1239
+  },
+  "claude_output": {
+    "generated_at": "2026-05-07T18:30:00Z",
+    "sources": [
+      "Reuters",
+      "The Guardian",
+      "Associated Press",
+      "Al Jazeera",
+      "Bloomberg",
+      "AFP"
+    ],
+    "items": [
+      {
+        "headline": "China fireworks factory explosion kills 26 workers in Hunan Province",
+        "body": "An explosion at a fireworks facility in Liuyang killed 26 and injured 61 on May 5. All fireworks manufacturers in the city have been ordered to halt production pending investigation.",
+        "geo": "Asia",
+        "sources": 3
+      },
+      {
+        "headline": "Romania coalition government collapses after no-confidence vote",
+        "body": "Parliament removed Prime Minister Ilie Bolojan with 281 votes on May 6. Markets fell on concern the political crisis threatens deficit reduction pledges to Brussels.",
+        "geo": "Europe",
+        "sources": 4
+      },
+      {
+        "headline": "Trump pauses Strait of Hormuz operation one day after launch",
+        "body": "The U.S. halted ship escort operations on May 6 citing progress toward Iran agreement. Six Iranian boats were sunk during the single day of military confrontation.",
+        "geo": "Global",
+        "sources": 5
+      },
+      {
+        "headline": "Philippines declares national energy emergency as gasoline prices double",
+        "body": "The government invoked emergency powers after fuel costs surged past previous highs. Indonesia and Vietnam have begun energy rationing in response to the regional supply shock.",
+        "geo": "Asia",
+        "sources": 2
+      }
+    ]
+  }
+}

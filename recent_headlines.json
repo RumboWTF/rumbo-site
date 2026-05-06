@@ -1,5 +1,19 @@
 [
   {
+    "date": "6 May 2026",
+    "headlines": [
+      "China fireworks factory explosion kills 26 workers in Hunan Province",
+      "Romania coalition government collapses after no-confidence vote",
+      "Trump pauses Strait of Hormuz operation one day after launch",
+      "Philippines declares national energy emergency as gasoline prices double"
+    ],
+    "regional_headlines": [
+      "Spain agrees to receive hantavirus-affected cruise ship in Canary Islands after Cape Verde denies entry",
+      "Norway deploys 1.7 billion kroner to cut public transport prices nationwide starting May 3",
+      "Dutch government launches medical evacuation from Cape Verde as hantavirus outbreak leaves three dead"
+    ]
+  },
+  {
     "date": "5 May 2026",
     "headlines": [
       "United Airlines plane strikes truck on highway during landing approach to Newark",
@@ -24,18 +38,6 @@
       "Spain's migrant regularization program triggers administrative collapse with daily applications surging from 1,500 to 5,500",
       "Norway Supreme Court overturns government withdrawal of state funding from Jehovah's Witnesses",
       "Dutch citizens launch court action to block U.S. takeover of DigiD provider"
-    ]
-  },
-  {
-    "date": "3 May 2026",
-    "headlines": [
-      "Spirit Airlines ceases operations, stranding passengers across United States",
-      "Iran submits negotiation proposal to United States through Pakistan mediators",
-      "Cambodia repatriates 635 Thai nationals from scam operations",
-      "Chinese court rules AI job replacement unlawful in landmark case"
-    ],
-    "regional_headlines": [
-      "Netherlands withdraws warship from Mediterranean despite ongoing Iranian threat and French request"
     ]
   }
 ]

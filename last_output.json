@@ -1,39 +1,37 @@
 {
-  "generated_at": "2026-05-05T18:30:00Z",
+  "generated_at": "2026-05-07T18:30:00Z",
   "sources": [
-    "CNN",
     "Reuters",
     "The Guardian",
-    "ABC News",
     "Associated Press",
-    "BBC",
     "Al Jazeera",
-    "The Australian"
+    "Bloomberg",
+    "AFP"
   ],
   "items": [
     {
-      "headline": "United Airlines plane strikes truck on highway during landing approach to Newark",
-      "body": "A Boeing 767 carrying 221 passengers hit a light pole and truck on the New Jersey Turnpike during final approach Sunday. All passengers landed safely but the driver was injured and the NTSB classified it as an accident due to aircraft damage extent.",
-      "geo": "Americas",
+      "headline": "China fireworks factory explosion kills 26 workers in Hunan Province",
+      "body": "An explosion at a fireworks facility in Liuyang killed 26 and injured 61 on May 5. All fireworks manufacturers in the city have been ordered to halt production pending investigation.",
+      "geo": "Asia",
       "sources": 3
     },
     {
-      "headline": "Iran strikes oil facility in United Arab Emirates after ceasefire period",
-      "body": "A drone hit the Fujairah Oil Industry Zone on Monday injuring three workers and causing major fire. This is the first attack on UAE infrastructure since the April 8 ceasefire between Iran and United States.",
-      "geo": "Asia",
+      "headline": "Romania coalition government collapses after no-confidence vote",
+      "body": "Parliament removed Prime Minister Ilie Bolojan with 281 votes on May 6. Markets fell on concern the political crisis threatens deficit reduction pledges to Brussels.",
+      "geo": "Europe",
       "sources": 4
     },
     {
-      "headline": "GameStop offers 55.5 billion dollars to acquire eBay",
-      "body": "The video game retailer made an unsolicited cash-and-stock bid Sunday valuing eBay at 125 dollars per share. eBay confirmed Monday its board will review the proposal from a company with far smaller revenue.",
-      "geo": "Americas",
+      "headline": "Trump pauses Strait of Hormuz operation one day after launch",
+      "body": "The U.S. halted ship escort operations on May 6 citing progress toward Iran agreement. Six Iranian boats were sunk during the single day of military confrontation.",
+      "geo": "Global",
       "sources": 5
     },
     {
-      "headline": "Up to 40,000 gather at French military firing range despite unexploded ordnance warnings",
-      "body": "An illegal rave occurred Saturday near Bourges at a site with World War II munitions. Parliament approved penalties in April including six months jail for organizers of unauthorized raves.",
-      "geo": "Europe",
-      "sources": 3
+      "headline": "Philippines declares national energy emergency as gasoline prices double",
+      "body": "The government invoked emergency powers after fuel costs surged past previous highs. Indonesia and Vietnam have begun energy rationing in response to the regional supply shock.",
+      "geo": "Asia",
+      "sources": 2
     }
   ]
 }
