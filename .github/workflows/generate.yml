@@ -31,7 +31,7 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           SEND_NEWSLETTER: ${{ vars.SEND_NEWSLETTER }}
-          RUN_GEMINI_TEST: "true"
+          RUN_CLAUDE_COMPARISON: "true"
         run: node generate.js
 
       - name: Commit and push
@@ -39,7 +39,7 @@ jobs:
           git config user.name "rumbo-bot"
           git config user.email "bot@rumbo.wtf"
           git add index.html index-es.html index-no.html index-uk.html index-nl.html all_output.json last_output.json recent_headlines.json
-          git add gemini-comparison-*.json 2>/dev/null || true
-          git add index-gemini.html 2>/dev/null || true
+          git add claude-comparison-*.json 2>/dev/null || true
+          git add index-claude.html 2>/dev/null || true
           git diff --staged --quiet || git commit -m "Daily update $(date -u +%Y-%m-%d)"
           git push --force
