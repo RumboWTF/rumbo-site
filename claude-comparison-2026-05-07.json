@@ -1,0 +1,74 @@
+{
+  "date": "2026-05-07",
+  "gemini_output": {
+    "generated_at": "2026-05-07T04:00:00Z",
+    "sources": [
+      "DA",
+      "World Bank",
+      "ReliefWeb",
+      "allAfrica.com",
+      "Channel Africa",
+      "The Guardian",
+      "Associated Press",
+      "Reuters"
+    ],
+    "items": [
+      {
+        "headline": "South Africa's main opposition party introduces bill to replace Black empowerment laws",
+        "body": "South Africa's opposition introduced a bill to replace Black Economic Empowerment policies. The new law would shift from race-based criteria to broader economic inclusion metrics.",
+        "geo": "Africa",
+        "sources": 5
+      },
+      {
+        "headline": "West and Central African nations launch unified health roadmap with World Bank",
+        "body": "Ministers from West and Central Africa launched a new regional health strategy. The plan aims to coordinate investment and policy to achieve universal healthcare.",
+        "geo": "Africa",
+        "sources": 4
+      },
+      {
+        "headline": "Severe flooding in northeastern Brazil kills six and displaces over 10,000 people",
+        "body": "Heavy rains in Brazil's northeast caused deadly floods and landslides. The states of Pernambuco and Paraíba have seen thousands of residents displaced.",
+        "geo": "Americas",
+        "sources": 4
+      }
+    ]
+  },
+  "claude_output": {
+    "generated_at": "2026-05-07T18:30:00Z",
+    "sources": [
+      "CNN",
+      "Reuters",
+      "Al Jazeera",
+      "The Guardian",
+      "BBC",
+      "Institute of International Finance",
+      "Associated Press"
+    ],
+    "items": [
+      {
+        "headline": "India ruling party wins West Bengal state election for first time in party history",
+        "body": "Prime Minister Modi's party captured West Bengal after removing nine million voters from electoral rolls. The victory strengthens Modi's position nationally and extends Hindu nationalist control to India's fourth most populous state.",
+        "geo": "Asia",
+        "sources": 3
+      },
+      {
+        "headline": "North Korea constitution now defines border with South and removes reunification language",
+        "body": "The revised constitution marks the first territorial clause in North Korean history. It formally ends the state's reunification policy and consolidates nuclear command under Kim's office.",
+        "geo": "Asia",
+        "sources": 4
+      },
+      {
+        "headline": "Global debt reaches 353 trillion dollars in fastest quarterly rise since mid-2025",
+        "body": "Debt increased 4.4 trillion dollars in three months as governments expanded borrowing. International investors are reducing U.S. Treasury holdings in favor of other assets.",
+        "geo": "Global",
+        "sources": 2
+      },
+      {
+        "headline": "Ted Turner dies at 87 after Lewy body dementia diagnosis",
+        "body": "The CNN founder transformed television news by creating the first 24-hour network. His death removes the last living architect of continuous broadcast news format.",
+        "geo": "Americas",
+        "sources": 5
+      }
+    ]
+  }
+}
