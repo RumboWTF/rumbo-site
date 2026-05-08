@@ -1,5 +1,22 @@
 [
   {
+    "date": "8 May 2026",
+    "headlines": [
+      "US trade court rules against president's 10% global tariffs",
+      "Zambia rejects US health deal over data and minerals clauses",
+      "National strike escalates in Bolivia amid economic crisis",
+      "Insurgents kill dozens in coordinated attacks in central Mali"
+    ],
+    "regional_headlines": [
+      "Spanish food industry exports fall 8% this year",
+      "Norway's central bank raises key policy interest rate to 4.25 percent",
+      "Norway opens for testing of driverless vehicles on public roads",
+      "Labour government suffers significant losses in UK-wide elections",
+      "EU to introduce stricter rules for heavy fireworks after Dutch appeal",
+      "National tech accelerator splits to create dedicated deeptech support"
+    ]
+  },
+  {
     "date": "7 May 2026",
     "headlines": [
       "South Africa's main opposition party introduces bill to replace Black empowerment laws",
@@ -25,19 +42,6 @@
       "Spain agrees to receive hantavirus-affected cruise ship in Canary Islands after Cape Verde denies entry",
       "Norway deploys 1.7 billion kroner to cut public transport prices nationwide starting May 3",
       "Dutch government launches medical evacuation from Cape Verde as hantavirus outbreak leaves three dead"
-    ]
-  },
-  {
-    "date": "5 May 2026",
-    "headlines": [
-      "United Airlines plane strikes truck on highway during landing approach to Newark",
-      "Iran strikes oil facility in United Arab Emirates after ceasefire period",
-      "GameStop offers 55.5 billion dollars to acquire eBay",
-      "Up to 40,000 gather at French military firing range despite unexploded ordnance warnings"
-    ],
-    "regional_headlines": [
-      "Pentagon floats Spain NATO suspension over Iran war non-cooperation in internal email",
-      "King Charles III addresses U.S. Congress on April 28, urging continued military support for Ukraine"
     ]
   }
 ]

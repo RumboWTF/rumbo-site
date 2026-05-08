@@ -1,0 +1,78 @@
+{
+  "date": "2026-05-08",
+  "gemini_output": {
+    "generated_at": "2026-05-08T04:00:00Z",
+    "sources": [
+      "Reuters",
+      "The Guardian",
+      "Associated Press",
+      "Agenzia Fides",
+      "Miningmx",
+      "CBS News",
+      "CityNews Halifax"
+    ],
+    "items": [
+      {
+        "headline": "US trade court rules against president's 10% global tariffs",
+        "body": "A federal trade court has ruled the administration’s 10% global tariffs are unlawful. This decision forces a halt to collecting the duties, impacting billions in trade.",
+        "geo": "Global",
+        "sources": 5
+      },
+      {
+        "headline": "Zambia rejects US health deal over data and minerals clauses",
+        "body": "Zambia rejected a US health funding deal worth up to two billion dollars. The decision halts a new US aid model over data privacy and mineral rights fears.",
+        "geo": "Africa",
+        "sources": 4
+      },
+      {
+        "headline": "National strike escalates in Bolivia amid economic crisis",
+        "body": "A national strike by workers over fuel prices and inflation has intensified. The growing unrest creates a major challenge for the government's stability.",
+        "geo": "Americas",
+        "sources": 3
+      },
+      {
+        "headline": "Insurgents kill dozens in coordinated attacks in central Mali",
+        "body": "Al-Qaeda affiliated insurgents killed dozens of people in two village attacks. The coordinated assault signals a worsening security crisis for the ruling junta.",
+        "geo": "Africa",
+        "sources": 4
+      }
+    ]
+  },
+  "claude_output": {
+    "generated_at": "2026-05-08T12:00:00Z",
+    "sources": [
+      "Lloyd's List Intelligence",
+      "Russia's Defense Ministry via state media",
+      "Israel Defense Forces",
+      "China foreign ministry",
+      "IMF",
+      "YouGov via The Times"
+    ],
+    "items": [
+      {
+        "headline": "Russia excludes military equipment from May 9 Victory Day parade for first time in nearly two decades",
+        "body": "Russia will not display tanks or missiles in Moscow's traditional parade. Mobile internet and text messaging will shut down across the capital on May 9.",
+        "geo": "Europe",
+        "sources": 3
+      },
+      {
+        "headline": "Iran establishes Persian Gulf Strait Authority to collect tolls from ships passing through Strait of Hormuz",
+        "body": "Iran created a government agency requiring ships to apply for transit permission through the strait. Maritime law experts say the demands to vet or tax vessels violate international law.",
+        "geo": "Asia",
+        "sources": 2
+      },
+      {
+        "headline": "Japan fires offensive missile overseas for first time since World War II during Philippines drill",
+        "body": "Japanese forces launched a surface-to-ship missile during joint exercises in the Philippines on May 7. China called it a significant departure from Japan's post-war pacifist stance.",
+        "geo": "Asia",
+        "sources": 2
+      },
+      {
+        "headline": "IMF warns Iran war will push 20 million Africans into food insecurity as regional growth falls",
+        "body": "Regional growth is expected to decline by 0.3 percentage points as energy and food prices rise. The reversal comes just as sub-Saharan Africa had reached its fastest growth in a decade.",
+        "geo": "Africa",
+        "sources": 1
+      }
+    ]
+  }
+}

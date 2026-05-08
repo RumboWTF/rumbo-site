@@ -1,34 +1,39 @@
 {
-  "date": "7 May 2026",
+  "date": "8 May 2026",
   "global": {
-    "generated_at": "2026-05-07T04:00:00Z",
+    "generated_at": "2026-05-08T04:00:00Z",
     "sources": [
-      "DA",
-      "World Bank",
-      "ReliefWeb",
-      "allAfrica.com",
-      "Channel Africa",
+      "Reuters",
       "The Guardian",
       "Associated Press",
-      "Reuters"
+      "Agenzia Fides",
+      "Miningmx",
+      "CBS News",
+      "CityNews Halifax"
     ],
     "items": [
       {
-        "headline": "South Africa's main opposition party introduces bill to replace Black empowerment laws",
-        "body": "South Africa's opposition introduced a bill to replace Black Economic Empowerment policies. The new law would shift from race-based criteria to broader economic inclusion metrics.",
-        "geo": "Africa",
+        "headline": "US trade court rules against president's 10% global tariffs",
+        "body": "A federal trade court has ruled the administration’s 10% global tariffs are unlawful. This decision forces a halt to collecting the duties, impacting billions in trade.",
+        "geo": "Global",
         "sources": 5
       },
       {
-        "headline": "West and Central African nations launch unified health roadmap with World Bank",
-        "body": "Ministers from West and Central Africa launched a new regional health strategy. The plan aims to coordinate investment and policy to achieve universal healthcare.",
+        "headline": "Zambia rejects US health deal over data and minerals clauses",
+        "body": "Zambia rejected a US health funding deal worth up to two billion dollars. The decision halts a new US aid model over data privacy and mineral rights fears.",
         "geo": "Africa",
         "sources": 4
       },
       {
-        "headline": "Severe flooding in northeastern Brazil kills six and displaces over 10,000 people",
-        "body": "Heavy rains in Brazil's northeast caused deadly floods and landslides. The states of Pernambuco and Paraíba have seen thousands of residents displaced.",
+        "headline": "National strike escalates in Bolivia amid economic crisis",
+        "body": "A national strike by workers over fuel prices and inflation has intensified. The growing unrest creates a major challenge for the government's stability.",
         "geo": "Americas",
+        "sources": 3
+      },
+      {
+        "headline": "Insurgents kill dozens in coordinated attacks in central Mali",
+        "body": "Al-Qaeda affiliated insurgents killed dozens of people in two village attacks. The coordinated assault signals a worsening security crisis for the ruling junta.",
+        "geo": "Africa",
         "sources": 4
       }
     ]
@@ -36,34 +41,54 @@
   "regional_items": {
     "es": [
       {
-        "headline": "Spain classifies migrant regularization documents under official secrecy law",
-        "body": "The government classified documents related to its mass migrant regularization program. The move restricts public scrutiny of decision-making on the new immigration policy.",
+        "headline": "Spanish food industry exports fall 8% this year",
+        "body": "Spain's food industry exports have fallen over 8% in 2026 due to geopolitics. This shrinks international markets, pressuring a key sector of the national economy.",
         "geo": "Spain",
         "sources": 1
       }
     ],
     "no": [
       {
-        "headline": "Parliamentary majority forms to tighten family reunification rules",
-        "body": "A new majority in parliament will significantly raise the income requirement for family reunification. This makes it harder for residents to bring family to Norway, affecting workforce recruitment.",
+        "headline": "Norway's central bank raises key policy interest rate to 4.25 percent",
+        "body": "Norges Bank raised its main interest rate by 0.25 percentage points to fight inflation. The move increases borrowing costs for households and businesses across the country.",
         "geo": "Norway",
-        "sources": 1
+        "sources": [
+          2,
+          3,
+          4,
+          6,
+          18
+        ]
+      },
+      {
+        "headline": "Norway opens for testing of driverless vehicles on public roads",
+        "body": "The Public Roads Administration now permits testing self-driving vehicles without a safety driver. This change advances the potential for commercial autonomous transport solutions in the country.",
+        "geo": "Norway",
+        "sources": [
+          16
+        ]
       }
     ],
     "uk": [
       {
-        "headline": "New law strengthening rights for millions of renters comes into force",
-        "body": "A new law banning 'no-fault' evictions for private tenants has now come into force. This gives 11 million renters greater security and new protections against unfair rent hikes.",
+        "headline": "Labour government suffers significant losses in UK-wide elections",
+        "body": "The party lost control of key councils and seats in England, Scotland, and Wales. This result empowers opposition parties and signals a major shift in the political landscape.",
         "geo": "United Kingdom",
-        "sources": 2
+        "sources": 1
       }
     ],
     "nl": [
       {
-        "headline": "Dutch universities and government partner to reduce big tech dependence",
-        "body": "Dutch universities and the government launched a partnership for digital autonomy. This shifts control over academic data, reducing reliance on foreign technology.",
+        "headline": "EU to introduce stricter rules for heavy fireworks after Dutch appeal",
+        "body": "The European Commission is set to introduce stricter fireworks regulations. This follows an urgent appeal from the Netherlands over their use in attacks.",
         "geo": "Netherlands",
-        "sources": 2
+        "sources": 1
+      },
+      {
+        "headline": "National tech accelerator splits to create dedicated deeptech support",
+        "body": "The Dutch tech accelerator Techleap has been restructured into two separate entities. The change creates focused public funding for strategic deeptech and AI startups.",
+        "geo": "Netherlands",
+        "sources": 1
       }
     ]
   }

@@ -1,32 +1,37 @@
 {
-  "generated_at": "2026-05-07T04:00:00Z",
+  "generated_at": "2026-05-08T04:00:00Z",
   "sources": [
-    "DA",
-    "World Bank",
-    "ReliefWeb",
-    "allAfrica.com",
-    "Channel Africa",
+    "Reuters",
     "The Guardian",
     "Associated Press",
-    "Reuters"
+    "Agenzia Fides",
+    "Miningmx",
+    "CBS News",
+    "CityNews Halifax"
   ],
   "items": [
     {
-      "headline": "South Africa's main opposition party introduces bill to replace Black empowerment laws",
-      "body": "South Africa's opposition introduced a bill to replace Black Economic Empowerment policies. The new law would shift from race-based criteria to broader economic inclusion metrics.",
-      "geo": "Africa",
+      "headline": "US trade court rules against president's 10% global tariffs",
+      "body": "A federal trade court has ruled the administration’s 10% global tariffs are unlawful. This decision forces a halt to collecting the duties, impacting billions in trade.",
+      "geo": "Global",
       "sources": 5
     },
     {
-      "headline": "West and Central African nations launch unified health roadmap with World Bank",
-      "body": "Ministers from West and Central Africa launched a new regional health strategy. The plan aims to coordinate investment and policy to achieve universal healthcare.",
+      "headline": "Zambia rejects US health deal over data and minerals clauses",
+      "body": "Zambia rejected a US health funding deal worth up to two billion dollars. The decision halts a new US aid model over data privacy and mineral rights fears.",
       "geo": "Africa",
       "sources": 4
     },
     {
-      "headline": "Severe flooding in northeastern Brazil kills six and displaces over 10,000 people",
-      "body": "Heavy rains in Brazil's northeast caused deadly floods and landslides. The states of Pernambuco and Paraíba have seen thousands of residents displaced.",
+      "headline": "National strike escalates in Bolivia amid economic crisis",
+      "body": "A national strike by workers over fuel prices and inflation has intensified. The growing unrest creates a major challenge for the government's stability.",
       "geo": "Americas",
+      "sources": 3
+    },
+    {
+      "headline": "Insurgents kill dozens in coordinated attacks in central Mali",
+      "body": "Al-Qaeda affiliated insurgents killed dozens of people in two village attacks. The coordinated assault signals a worsening security crisis for the ruling junta.",
+      "geo": "Africa",
       "sources": 4
     }
   ]
