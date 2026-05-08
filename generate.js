@@ -66,7 +66,7 @@ WRITING
 
 STRUCTURE
 - Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania
-- Count genuinely independent source clusters per item (organisations that did their own reporting, not syndication). Include as a "sources" integer.
+- Count genuinely independent source clusters per item (organisations that did their own reporting, not syndication). Include as a "sources" integer between 1 and 10. Never return a list, comma-separated values, or a string for this field — only a single integer.
 - The headline field contains ONLY the headline text. Do not append source citations, outlet names, dates, or parenthetical metadata to the headline. Citations belong in the body and the sources list, never in the headline.
 
 CRITICAL: Your response must be ONLY the raw JSON object. No thinking, no explanation, no markdown, no preamble. Start with { and end with }. Do not use markdown formatting (no asterisks, underscores, or other markup) in any string values.
@@ -105,6 +105,7 @@ Rules:
 - Every specific claim must come from your search results. Do not infer or fill gaps.
 - If you cannot find any genuinely fresh items, return an empty items array.
 - The headline field contains ONLY the headline text. Do not append source citations, outlet names, dates, or parenthetical metadata to the headline.
+- The "sources" field is a single integer between 1 and 10. Never a list, comma-separated values, or a string.
 
 CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end with }. No other text. No markdown formatting in any string values.
 {
@@ -293,7 +294,18 @@ function renderItem(item, t, locale = 'en') {
     ? encodeURIComponent(item.headline + " " + geo)
     : encodeURIComponent(item.headline);
   const geoLabel = geo;
-  const sources = item.sources ?? "?";
+
+  // Defensive coercion: sources should be a single integer.
+  // Handle malformed values (arrays, comma-strings, undefined) gracefully.
+  let sources = item.sources;
+  if (Array.isArray(sources)) {
+    sources = sources[0] ?? "?";
+  } else if (typeof sources === "string") {
+    const firstNumber = sources.match(/\d+/);
+    sources = firstNumber ? firstNumber[0] : "?";
+  } else if (sources === undefined || sources === null) {
+    sources = "?";
+  }
 
   return `  <div class="item">
     <div class="${dotClass}"></div>
@@ -376,7 +388,15 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
 
   const itemsHtml = items.map((item) => {
     const geo = item.geo || "Global";
-    const sources = item.sources ?? "?";
+    let sources = item.sources;
+    if (Array.isArray(sources)) {
+      sources = sources[0] ?? "?";
+    } else if (typeof sources === "string") {
+      const firstNumber = sources.match(/\d+/);
+      sources = firstNumber ? firstNumber[0] : "?";
+    } else if (sources === undefined || sources === null) {
+      sources = "?";
+    }
     return `
     <tr><td class="rp" style="padding:20px 28px 0;">
       <div style="font-family:Georgia,serif;font-size:17px;color:#1a1a18;line-height:1.35;margin-bottom:8px;">${item.headline}</div>
