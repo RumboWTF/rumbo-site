@@ -1,37 +1,44 @@
 {
-  "generated_at": "2026-05-08T04:00:00Z",
+  "generated_at": "2026-05-09T04:00:00Z",
   "sources": [
-    "Reuters",
-    "The Guardian",
+    "Al Jazeera",
     "Associated Press",
-    "Agenzia Fides",
-    "Miningmx",
-    "CBS News",
-    "CityNews Halifax"
+    "B360",
+    "China.org.cn",
+    "Courthouse News Service",
+    "Miami Herald",
+    "Newsday",
+    "Semafor",
+    "The Guardian",
+    "The Irish Times",
+    "The Kyiv Independent",
+    "The Washington Post",
+    "U.S. Department of Justice",
+    "UN News"
   ],
   "items": [
     {
-      "headline": "US trade court rules against president's 10% global tariffs",
-      "body": "A federal trade court has ruled the administration’s 10% global tariffs are unlawful. This decision forces a halt to collecting the duties, impacting billions in trade.",
-      "geo": "Global",
+      "headline": "Russia and Ukraine agree to a three-day ceasefire",
+      "body": "Russia and Ukraine have agreed to a three-day ceasefire starting May 9. The temporary truce provides a brief window to halt hostilities and exchange 1,000 prisoners.",
+      "geo": "Europe",
       "sources": 5
     },
     {
-      "headline": "Zambia rejects US health deal over data and minerals clauses",
-      "body": "Zambia rejected a US health funding deal worth up to two billion dollars. The decision halts a new US aid model over data privacy and mineral rights fears.",
+      "headline": "South Africa's top court revives presidential impeachment inquiry",
+      "body": "South Africa's Constitutional Court overturned a parliamentary vote that blocked an impeachment inquiry. This ruling forces lawmakers to reconsider proceedings against the president over a corruption scandal.",
       "geo": "Africa",
+      "sources": 5
+    },
+    {
+      "headline": "Four men convicted in assassination of Haiti's president",
+      "body": "A US federal jury convicted four men for their roles in the 2021 assassination. The verdict holds key plotters accountable, impacting Haiti's long search for political justice.",
+      "geo": "Americas",
       "sources": 4
     },
     {
-      "headline": "National strike escalates in Bolivia amid economic crisis",
-      "body": "A national strike by workers over fuel prices and inflation has intensified. The growing unrest creates a major challenge for the government's stability.",
-      "geo": "Americas",
-      "sources": 3
-    },
-    {
-      "headline": "Insurgents kill dozens in coordinated attacks in central Mali",
-      "body": "Al-Qaeda affiliated insurgents killed dozens of people in two village attacks. The coordinated assault signals a worsening security crisis for the ruling junta.",
-      "geo": "Africa",
+      "headline": "United Nations proposes new global dashboard to measure progress beyond GDP",
+      "body": "A UN expert group released a new framework for assessing country-level progress. This shifts how development is measured, influencing policy and investment decisions globally.",
+      "geo": "Global",
       "sources": 4
     }
   ]

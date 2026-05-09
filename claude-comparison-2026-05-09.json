@@ -1,6 +1,6 @@
 {
-  "date": "9 May 2026",
-  "global": {
+  "date": "2026-05-09",
+  "gemini_output": {
     "generated_at": "2026-05-09T04:00:00Z",
     "sources": [
       "Al Jazeera",
@@ -45,37 +45,44 @@
       }
     ]
   },
-  "regional_items": {
-    "es": [
-      {
-        "headline": "S&P upgrades Balearic Islands' credit rating to 'A'",
-        "body": "S&P Global Ratings raised the Balearic Islands' long-term credit rating to 'A'. This improves the region's borrowing power and can attract further investment.",
-        "geo": "Spain",
-        "sources": 1
-      }
+  "claude_output": {
+    "generated_at": "2026-05-09T18:30:00Z",
+    "sources": [
+      "CNN",
+      "AP",
+      "Reuters",
+      "BBC",
+      "The Guardian",
+      "Bloomberg",
+      "Al Jazeera",
+      "The Straits Times",
+      "Philippine Daily Inquirer",
+      "Ukrinform"
     ],
-    "no": [
+    "items": [
       {
-        "headline": "Norway arrests Chinese citizen for suspected spying",
-        "body": "A Chinese citizen was arrested for attempted illegal intelligence gathering. This escalates counter-intelligence scrutiny of foreign nationals at sensitive research sites.",
-        "geo": "Norway",
-        "sources": 1
-      }
-    ],
-    "uk": [
+        "headline": "Ted Turner, CNN founder and cable television pioneer, dies at 87",
+        "body": "Turner died May 6 after revealing in 2018 he had Lewy body dementia. His creation of 24-hour news broadcasting reshaped how hundreds of millions globally consume information.",
+        "geo": "Americas",
+        "sources": 7
+      },
       {
-        "headline": "UK borrowing costs fall as leadership challenge fears recede",
-        "body": "Government borrowing costs dropped and the pound rose on Friday. This followed the prime minister's vow to remain, easing market instability fears.",
-        "geo": "United Kingdom",
-        "sources": 1
-      }
-    ],
-    "nl": [
+        "headline": "Virginia Supreme Court strikes down Democratic congressional redistricting map",
+        "body": "The court ruled May 8 that the legislature violated procedural requirements placing the constitutional amendment on ballot. The nullified map would have shifted Virginia's congressional delegation from 6-5 Democratic to 10-1.",
+        "geo": "Americas",
+        "sources": 5
+      },
       {
-        "headline": "Major datacenter fire disrupts critical online services",
-        "body": "A fire at a large Almere datacenter caused widespread digital service outages. This incident forces a national test of digital resilience for businesses and institutions.",
-        "geo": "Netherlands",
-        "sources": 2
+        "headline": "Canvas learning platform hacked during final exam period affecting 9,000 schools worldwide",
+        "body": "Criminal group ShinyHunters breached the system May 7 forcing maintenance mode during exams. The platform serves over 30 million active users globally.",
+        "geo": "Global",
+        "sources": 4
+      },
+      {
+        "headline": "Mount Dukono eruption kills three climbers in Indonesia",
+        "body": "The volcano erupted May 8 killing two Singaporeans and one Indonesian among 20 climbers. Authorities had noted increased explosive magmatic activity since March.",
+        "geo": "Asia",
+        "sources": 6
       }
     ]
   }

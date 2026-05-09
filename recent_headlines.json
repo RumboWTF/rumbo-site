@@ -1,5 +1,20 @@
 [
   {
+    "date": "9 May 2026",
+    "headlines": [
+      "Russia and Ukraine agree to a three-day ceasefire",
+      "South Africa's top court revives presidential impeachment inquiry",
+      "Four men convicted in assassination of Haiti's president",
+      "United Nations proposes new global dashboard to measure progress beyond GDP"
+    ],
+    "regional_headlines": [
+      "S&P upgrades Balearic Islands' credit rating to 'A'",
+      "Norway arrests Chinese citizen for suspected spying",
+      "UK borrowing costs fall as leadership challenge fears recede",
+      "Major datacenter fire disrupts critical online services"
+    ]
+  },
+  {
     "date": "8 May 2026",
     "headlines": [
       "US trade court rules against president's 10% global tariffs",
@@ -28,20 +43,6 @@
       "Parliamentary majority forms to tighten family reunification rules",
       "New law strengthening rights for millions of renters comes into force",
       "Dutch universities and government partner to reduce big tech dependence"
-    ]
-  },
-  {
-    "date": "6 May 2026",
-    "headlines": [
-      "China fireworks factory explosion kills 26 workers in Hunan Province",
-      "Romania coalition government collapses after no-confidence vote",
-      "Trump pauses Strait of Hormuz operation one day after launch",
-      "Philippines declares national energy emergency as gasoline prices double"
-    ],
-    "regional_headlines": [
-      "Spain agrees to receive hantavirus-affected cruise ship in Canary Islands after Cape Verde denies entry",
-      "Norway deploys 1.7 billion kroner to cut public transport prices nationwide starting May 3",
-      "Dutch government launches medical evacuation from Cape Verde as hantavirus outbreak leaves three dead"
     ]
   }
 ]
