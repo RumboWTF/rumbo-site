@@ -1,5 +1,19 @@
 [
   {
+    "date": "10 May 2026",
+    "headlines": [
+      "US and Iran exchange fire in Strait of Hormuz",
+      "African nations forge joint strategy on debt and climate finance",
+      "Asian Development Bank launches $70 billion infrastructure plan"
+    ],
+    "regional_headlines": [
+      "Government orders virus-hit ship to dock over regional objections",
+      "Norway commits to reopening three offshore gas fields",
+      "UK grants license for major new gas storage facility",
+      "Central bank finds capital and labor trapped in unproductive firms"
+    ]
+  },
+  {
     "date": "9 May 2026",
     "headlines": [
       "Russia and Ukraine agree to a three-day ceasefire",
@@ -29,20 +43,6 @@
       "Labour government suffers significant losses in UK-wide elections",
       "EU to introduce stricter rules for heavy fireworks after Dutch appeal",
       "National tech accelerator splits to create dedicated deeptech support"
-    ]
-  },
-  {
-    "date": "7 May 2026",
-    "headlines": [
-      "South Africa's main opposition party introduces bill to replace Black empowerment laws",
-      "West and Central African nations launch unified health roadmap with World Bank",
-      "Severe flooding in northeastern Brazil kills six and displaces over 10,000 people"
-    ],
-    "regional_headlines": [
-      "Spain classifies migrant regularization documents under official secrecy law",
-      "Parliamentary majority forms to tighten family reunification rules",
-      "New law strengthening rights for millions of renters comes into force",
-      "Dutch universities and government partner to reduce big tech dependence"
     ]
   }
 ]

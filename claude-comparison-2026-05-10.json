@@ -1,0 +1,74 @@
+{
+  "date": "2026-05-10",
+  "gemini_output": {
+    "generated_at": "2026-05-10T04:00:00Z",
+    "sources": [
+      "The Guardian",
+      "Axios",
+      "CBS News",
+      "Rigzone",
+      "Dawn",
+      "Enerdata",
+      "United Nations Economic Commission for Africa",
+      "Ethiopian News Agency",
+      "Addis Media Network",
+      "Fana Broadcasting Corporate"
+    ],
+    "items": [
+      {
+        "headline": "US and Iran exchange fire in Strait of Hormuz",
+        "body": "American and Iranian forces exchanged missile and drone fire in the Strait of Hormuz. The clash tests a fragile ceasefire, raising risks for global oil shipping.",
+        "geo": "Global",
+        "sources": 6
+      },
+      {
+        "headline": "African nations forge joint strategy on debt and climate finance",
+        "body": "A sovereign finance forum concluded in Ethiopia on Friday. The meeting aimed to unify Africa's approach to debt relief and climate funding.",
+        "geo": "Africa",
+        "sources": 4
+      },
+      {
+        "headline": "Asian Development Bank launches $70 billion infrastructure plan",
+        "body": "The bank announced a major energy and digital connectivity initiative for Asia. It aims to provide power and internet to hundreds of millions of people.",
+        "geo": "Asia",
+        "sources": 4
+      }
+    ]
+  },
+  "claude_output": {
+    "generated_at": "2026-05-09T18:30:00Z",
+    "sources": [
+      "New York Times",
+      "Xinhua",
+      "The Guardian",
+      "Human Rights Watch",
+      "Diario Red en América Latina"
+    ],
+    "items": [
+      {
+        "headline": "Hungary swears in new prime minister, ending Orbán's 16-year rule",
+        "body": "Péter Magyar became Hungary's prime minister after elections ended Viktor Orbán's long tenure in power. The new government reinstated the EU flag in parliament and aims to unlock frozen EU funding worth around 20 billion dollars.",
+        "geo": "Europe",
+        "sources": 6
+      },
+      {
+        "headline": "Fireworks factory explosion in southern China kills 37 people",
+        "body": "A blast at a factory in Hunan province killed 37 workers in China's deadliest explosion since 2019. Police have summoned eight people for questioning on suspicion of causing the incident.",
+        "geo": "Asia",
+        "sources": 4
+      },
+      {
+        "headline": "Australia charges three women with crimes against humanity for alleged ISIS slavery",
+        "body": "Authorities charged three women after their return from Syrian detention camps with serious crimes including enslavement of Yazidis. This marks the first time Australia has brought crimes against humanity charges against anyone.",
+        "geo": "Oceania",
+        "sources": 3
+      },
+      {
+        "headline": "Russia uses Caspian Sea to ship drone parts to Iran, bypassing Hormuz blockade",
+        "body": "Russia is delivering military drone components to Iran through Caspian Sea ports, evading Strait of Hormuz tensions. The landlocked waterway is inaccessible to US forces because only five bordering states control access.",
+        "geo": "Global",
+        "sources": 2
+      }
+    ]
+  }
+}

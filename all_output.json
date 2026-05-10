@@ -1,46 +1,36 @@
 {
-  "date": "9 May 2026",
+  "date": "10 May 2026",
   "global": {
-    "generated_at": "2026-05-09T04:00:00Z",
+    "generated_at": "2026-05-10T04:00:00Z",
     "sources": [
-      "Al Jazeera",
-      "Associated Press",
-      "B360",
-      "China.org.cn",
-      "Courthouse News Service",
-      "Miami Herald",
-      "Newsday",
-      "Semafor",
       "The Guardian",
-      "The Irish Times",
-      "The Kyiv Independent",
-      "The Washington Post",
-      "U.S. Department of Justice",
-      "UN News"
+      "Axios",
+      "CBS News",
+      "Rigzone",
+      "Dawn",
+      "Enerdata",
+      "United Nations Economic Commission for Africa",
+      "Ethiopian News Agency",
+      "Addis Media Network",
+      "Fana Broadcasting Corporate"
     ],
     "items": [
       {
-        "headline": "Russia and Ukraine agree to a three-day ceasefire",
-        "body": "Russia and Ukraine have agreed to a three-day ceasefire starting May 9. The temporary truce provides a brief window to halt hostilities and exchange 1,000 prisoners.",
-        "geo": "Europe",
-        "sources": 5
+        "headline": "US and Iran exchange fire in Strait of Hormuz",
+        "body": "American and Iranian forces exchanged missile and drone fire in the Strait of Hormuz. The clash tests a fragile ceasefire, raising risks for global oil shipping.",
+        "geo": "Global",
+        "sources": 6
       },
       {
-        "headline": "South Africa's top court revives presidential impeachment inquiry",
-        "body": "South Africa's Constitutional Court overturned a parliamentary vote that blocked an impeachment inquiry. This ruling forces lawmakers to reconsider proceedings against the president over a corruption scandal.",
+        "headline": "African nations forge joint strategy on debt and climate finance",
+        "body": "A sovereign finance forum concluded in Ethiopia on Friday. The meeting aimed to unify Africa's approach to debt relief and climate funding.",
         "geo": "Africa",
-        "sources": 5
-      },
-      {
-        "headline": "Four men convicted in assassination of Haiti's president",
-        "body": "A US federal jury convicted four men for their roles in the 2021 assassination. The verdict holds key plotters accountable, impacting Haiti's long search for political justice.",
-        "geo": "Americas",
         "sources": 4
       },
       {
-        "headline": "United Nations proposes new global dashboard to measure progress beyond GDP",
-        "body": "A UN expert group released a new framework for assessing country-level progress. This shifts how development is measured, influencing policy and investment decisions globally.",
-        "geo": "Global",
+        "headline": "Asian Development Bank launches $70 billion infrastructure plan",
+        "body": "The bank announced a major energy and digital connectivity initiative for Asia. It aims to provide power and internet to hundreds of millions of people.",
+        "geo": "Asia",
         "sources": 4
       }
     ]
@@ -48,34 +38,34 @@
   "regional_items": {
     "es": [
       {
-        "headline": "S&P upgrades Balearic Islands' credit rating to 'A'",
-        "body": "S&P Global Ratings raised the Balearic Islands' long-term credit rating to 'A'. This improves the region's borrowing power and can attract further investment.",
+        "headline": "Government orders virus-hit ship to dock over regional objections",
+        "body": "The central government ordered a cruise ship with hantavirus cases to dock in Tenerife. This move overrides the Canary Islands government, sparking a conflict over regional health autonomy.",
         "geo": "Spain",
         "sources": 1
       }
     ],
     "no": [
       {
-        "headline": "Norway arrests Chinese citizen for suspected spying",
-        "body": "A Chinese citizen was arrested for attempted illegal intelligence gathering. This escalates counter-intelligence scrutiny of foreign nationals at sensitive research sites.",
+        "headline": "Norway commits to reopening three offshore gas fields",
+        "body": "The government announced it will restart three gas fields by 2028. This decision aims to secure long-term energy supplies to Europe.",
         "geo": "Norway",
         "sources": 1
       }
     ],
     "uk": [
       {
-        "headline": "UK borrowing costs fall as leadership challenge fears recede",
-        "body": "Government borrowing costs dropped and the pound rose on Friday. This followed the prime minister's vow to remain, easing market instability fears.",
+        "headline": "UK grants license for major new gas storage facility",
+        "body": "The project is expected to double Britain's current gas storage capacity. This move seeks to enhance national energy security and reduce reliance on imports.",
         "geo": "United Kingdom",
         "sources": 1
       }
     ],
     "nl": [
       {
-        "headline": "Major datacenter fire disrupts critical online services",
-        "body": "A fire at a large Almere datacenter caused widespread digital service outages. This incident forces a national test of digital resilience for businesses and institutions.",
+        "headline": "Central bank finds capital and labor trapped in unproductive firms",
+        "body": "The Dutch central bank reported capital and labor are stuck in unproductive firms. This pressures the government to pursue reforms, shifting jobs and business investment patterns.",
         "geo": "Netherlands",
-        "sources": 2
+        "sources": 3
       }
     ]
   }
