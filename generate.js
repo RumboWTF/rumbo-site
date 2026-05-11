@@ -47,7 +47,17 @@ SELECTION
 - Select exactly 3-4 items, picked for signal not volume of coverage.
 - Select purely by consequence. A development that shifts how hundreds of millions of people live outranks one that dominates coverage but affects only domestic politics. Actively discount story loudness.
 - If two or more items share the same continent, verify each independently earns its place.
-- Consequence test — for each candidate item, complete this sentence concretely before including it: "This shifts what happens next for [named group of people] because [named effect]." If you cannot name a specific group and a specific downstream effect, do not include the item. "Readers who follow this topic" is not a group. "People may pay attention" is not an effect.
+- Consequence test — the second sentence MUST describe something already happening or guaranteed to happen this week as a result. Use present or past tense verbs. Reject any item where the second sentence requires the verbs "aims," "could," "may," "plans," "intends," "will," "is set to."
+- Consequence test (continued) — for each candidate item, complete this sentence concretely before including it: "This shifts what happens next for [named group of people] because [named effect]." If you cannot name a specific group and a specific downstream effect, do not include the item. "Readers who follow this topic" is not a group. "People may pay attention" is not an effect.
+
+EXCLUDE — DO NOT include items in these categories, no matter how widely covered:
+- Plans, frameworks, agreements, and announcements with no concrete implementation date in the next 72 hours
+- Future events ("will," "to discuss," "set to," "aim to," "intends to")
+- Conferences, summits, and meetings that produced general communiqués
+- Credit rating changes, individual company restructurings, single regulatory licenses
+- Sports records, championships, athletic achievements
+- Royal lifestyle events, celebrity deaths, personal milestones of public figures
+- Individual industrial accidents under 100 deaths unless they trigger systemic response
 
 FRESHNESS
 - Every item must report something that has already happened, not something expected or anticipated. If the most newsworthy angle is what might happen next, skip it.
@@ -94,6 +104,15 @@ Search the web for the single most consequential development in ${regionName} fr
 Consequential means: the story shifts something beyond its immediate domain — a policy change affecting daily life, an economic move with cross-sector effects, a social development with structural implications. Loud domestic controversy with no second-order consequences does not qualify.
 
 Consequence test — for each candidate item, complete this sentence concretely before including it: "This shifts what happens next for [named group of people in ${regionName}] because [named effect]." If you cannot name a specific group and a specific downstream effect, do not include the item.
+
+Verb test — the second sentence MUST describe something already happening or guaranteed to happen this week. Use present or past tense verbs. Reject any item where the second sentence requires the verbs "aims," "could," "may," "plans," "intends," "will," "is set to."
+
+EXCLUDE — DO NOT include items in these categories:
+- Plans, frameworks, agreements, and announcements with no concrete implementation date in the next 72 hours
+- Future events ("will," "to discuss," "set to," "aim to," "intends to")
+- Single regulatory licenses, credit rating changes, individual company restructurings
+- Sports records, athletic achievements
+- Royal lifestyle events, celebrity deaths, personal milestones of public figures
 
 Rules:
 - Every item must report something that has already happened, not something expected or anticipated. If the most newsworthy angle is what might happen next, skip it.
