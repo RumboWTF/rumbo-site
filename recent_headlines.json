@@ -1,5 +1,21 @@
 [
   {
+    "date": "11 May 2026",
+    "headlines": [
+      "Amid energy shock, ASEAN economy forges resilience through cooperation",
+      "Changing geopolitics are in focus as France's Macron kicks off Kenya visit for an Africa summit",
+      "South Africa's top court revives impeachment inquiry against president",
+      "EU foreign ministers to discuss new aspects of security guarantees for Ukraine on 11 May"
+    ],
+    "regional_headlines": [
+      "Police unions demand more resources after two officers die",
+      "Norway joins US-led initiative to secure technology supply chains",
+      "Government expands offshore acreage for new petroleum exploration",
+      "Reform UK surges in local elections, fracturing political landscape",
+      "Government details €100 million compensation for national fireworks ban"
+    ]
+  },
+  {
     "date": "10 May 2026",
     "headlines": [
       "US and Iran exchange fire in Strait of Hormuz",
@@ -26,23 +42,6 @@
       "Norway arrests Chinese citizen for suspected spying",
       "UK borrowing costs fall as leadership challenge fears recede",
       "Major datacenter fire disrupts critical online services"
-    ]
-  },
-  {
-    "date": "8 May 2026",
-    "headlines": [
-      "US trade court rules against president's 10% global tariffs",
-      "Zambia rejects US health deal over data and minerals clauses",
-      "National strike escalates in Bolivia amid economic crisis",
-      "Insurgents kill dozens in coordinated attacks in central Mali"
-    ],
-    "regional_headlines": [
-      "Spanish food industry exports fall 8% this year",
-      "Norway's central bank raises key policy interest rate to 4.25 percent",
-      "Norway opens for testing of driverless vehicles on public roads",
-      "Labour government suffers significant losses in UK-wide elections",
-      "EU to introduce stricter rules for heavy fireworks after Dutch appeal",
-      "National tech accelerator splits to create dedicated deeptech support"
     ]
   }
 ]

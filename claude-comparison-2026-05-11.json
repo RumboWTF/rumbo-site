@@ -1,6 +1,6 @@
 {
-  "date": "11 May 2026",
-  "global": {
+  "date": "2026-05-11",
+  "gemini_output": {
     "generated_at": "2026-05-11T04:00:00Z",
     "sources": [
       "CGTN",
@@ -38,43 +38,39 @@
       }
     ]
   },
-  "regional_items": {
-    "es": [
-      {
-        "headline": "Police unions demand more resources after two officers die",
-        "body": "Two Guardia Civil officers died during an anti-drug operation. Police associations now demand more resources to confront trafficking.",
-        "geo": "Spain",
-        "sources": 2
-      }
+  "claude_output": {
+    "generated_at": "2026-05-12T10:30:00Z",
+    "sources": [
+      "Europol",
+      "BBC",
+      "Reuters",
+      "The Guardian",
+      "CENTCOM"
     ],
-    "no": [
+    "items": [
       {
-        "headline": "Norway joins US-led initiative to secure technology supply chains",
-        "body": "The country has joined the American-led Pax Silica initiative. This aligns its tech sector with Western semiconductor security efforts.",
-        "geo": "Norway",
-        "sources": 1
+        "headline": "Hungary restores EU flag to parliament after Orbán's 16-year rule ends",
+        "body": "Péter Magyar was sworn in as prime minister and parliament's new speaker ordered the EU flag reinstated. The new government holds 141 of 199 seats and seeks to unlock $20 billion in frozen EU funding.",
+        "geo": "Europe",
+        "sources": 3
       },
       {
-        "headline": "Government expands offshore acreage for new petroleum exploration",
-        "body": "The annual oil and gas licensing round was announced. It adds 70 new exploration blocks for potential development.",
-        "geo": "Norway",
-        "sources": 3
-      }
-    ],
-    "uk": [
-      {
-        "headline": "Reform UK surges in local elections, fracturing political landscape",
-        "body": "The populist Reform UK party gained over 1,300 council seats in nationwide local elections. The results pressure the government on immigration and challenge the traditional two-party political system.",
-        "geo": "United Kingdom",
+        "headline": "India's BJP wins West Bengal, ending Mamata Banerjee's 15-year rule",
+        "body": "The governing party defeated the Trinamool Congress in state assembly elections. Nine million people were controversially removed from voting lists before the election.",
+        "geo": "Asia",
         "sources": 4
-      }
-    ],
-    "nl": [
+      },
       {
-        "headline": "Government details €100 million compensation for national fireworks ban",
-        "body": "The Netherlands will compensate fireworks businesses for losses from an upcoming nationwide ban. This provides a financial exit for importers and retailers affected by the new policy.",
-        "geo": "Netherlands",
-        "sources": 1
+        "headline": "Law enforcement seizes 12 tons of cocaine in Atlantic corridor operation",
+        "body": "Eight vessels were intercepted and 54 people arrested between the Canary Islands and Azores. The area is now called the Cocaine Highway due to growing drug traffic toward Europe.",
+        "geo": "Global",
+        "sources": 2
+      },
+      {
+        "headline": "US naval blockade redirects 58 commercial vessels from Iranian ports",
+        "body": "CENTCOM confirmed ongoing maritime operations preventing ships from entering or leaving Iran since April 13. Iranians now face soaring food prices as currency plunges under the blockade.",
+        "geo": "Global",
+        "sources": 2
       }
     ]
   }

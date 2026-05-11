@@ -1,35 +1,38 @@
 {
-  "generated_at": "2026-05-10T04:00:00Z",
+  "generated_at": "2026-05-11T04:00:00Z",
   "sources": [
-    "The Guardian",
-    "Axios",
-    "CBS News",
-    "Rigzone",
-    "Dawn",
-    "Enerdata",
-    "United Nations Economic Commission for Africa",
-    "Ethiopian News Agency",
-    "Addis Media Network",
-    "Fana Broadcasting Corporate"
+    "CGTN",
+    "Fresh News",
+    "Bangkok Post",
+    "WSLS 10",
+    "Africa News Agency",
+    "Al Jazeera",
+    "European Pravda"
   ],
   "items": [
     {
-      "headline": "US and Iran exchange fire in Strait of Hormuz",
-      "body": "American and Iranian forces exchanged missile and drone fire in the Strait of Hormuz. The clash tests a fragile ceasefire, raising risks for global oil shipping.",
-      "geo": "Global",
-      "sources": 6
-    },
-    {
-      "headline": "African nations forge joint strategy on debt and climate finance",
-      "body": "A sovereign finance forum concluded in Ethiopia on Friday. The meeting aimed to unify Africa's approach to debt relief and climate funding.",
-      "geo": "Africa",
-      "sources": 4
-    },
-    {
-      "headline": "Asian Development Bank launches $70 billion infrastructure plan",
-      "body": "The bank announced a major energy and digital connectivity initiative for Asia. It aims to provide power and internet to hundreds of millions of people.",
+      "headline": "Amid energy shock, ASEAN economy forges resilience through cooperation",
+      "body": "Southeast Asian nations agreed on a collective response to Middle East instability. This creates a framework to manage regional energy, food, and financial shocks.",
       "geo": "Asia",
       "sources": 4
+    },
+    {
+      "headline": "Changing geopolitics are in focus as France's Macron kicks off Kenya visit for an Africa summit",
+      "body": "France is holding a major African summit in an Anglophone country. This signals a strategic pivot from its traditional Francophone sphere of influence.",
+      "geo": "Africa",
+      "sources": 2
+    },
+    {
+      "headline": "South Africa's top court revives impeachment inquiry against president",
+      "body": "South Africa’s highest court revived a presidential impeachment inquiry over a farm theft scandal. The ruling creates new political uncertainty for the governing African National Congress.",
+      "geo": "Africa",
+      "sources": 3
+    },
+    {
+      "headline": "EU foreign ministers to discuss new aspects of security guarantees for Ukraine on 11 May",
+      "body": "EU ministers will discuss long-term security guarantees for Ukraine, including satellite monitoring. This moves European support beyond immediate aid to institutionalized security commitments.",
+      "geo": "Europe",
+      "sources": 1
     }
   ]
 }
