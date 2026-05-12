@@ -1,5 +1,20 @@
 [
   {
+    "date": "12 May 2026",
+    "headlines": [
+      "Nigerian unions launch nationwide strike, shutting down the power grid.",
+      "Argentina's Senate approves President Milei's sweeping state reform package.",
+      "Mexico's peso falls sharply after the ruling party's landslide election.",
+      "South Korea announces new cash payments to boost its birth rate."
+    ],
+    "regional_headlines": [
+      "Final passengers from virus-stricken cruise ship depart Spain.",
+      "Norwegian banks raise mortgage rates, increasing costs for homeowners.",
+      "Nationalist party wins plurality in Welsh election, ending Labour's dominance.",
+      "Government says most businesses are unprepared for network failure"
+    ]
+  },
+  {
     "date": "11 May 2026",
     "headlines": [
       "Amid energy shock, ASEAN economy forges resilience through cooperation",
@@ -27,21 +42,6 @@
       "Norway commits to reopening three offshore gas fields",
       "UK grants license for major new gas storage facility",
       "Central bank finds capital and labor trapped in unproductive firms"
-    ]
-  },
-  {
-    "date": "9 May 2026",
-    "headlines": [
-      "Russia and Ukraine agree to a three-day ceasefire",
-      "South Africa's top court revives presidential impeachment inquiry",
-      "Four men convicted in assassination of Haiti's president",
-      "United Nations proposes new global dashboard to measure progress beyond GDP"
-    ],
-    "regional_headlines": [
-      "S&P upgrades Balearic Islands' credit rating to 'A'",
-      "Norway arrests Chinese citizen for suspected spying",
-      "UK borrowing costs fall as leadership challenge fears recede",
-      "Major datacenter fire disrupts critical online services"
     ]
   }
 ]

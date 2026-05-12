@@ -1,0 +1,84 @@
+{
+  "date": "2026-05-12",
+  "gemini_output": {
+    "generated_at": "2026-05-12T04:00:00Z",
+    "sources": [
+      "Newsweek",
+      "The Guardian",
+      "Reuters",
+      "Associated Press",
+      "Al Jazeera",
+      "BBC News",
+      "Bloomberg",
+      "Taipei Times",
+      "Global News",
+      "Pulse Nigeria",
+      "THISDAY LIVE"
+    ],
+    "items": [
+      {
+        "headline": "Nigerian unions launch nationwide strike, shutting down the power grid.",
+        "body": "Organized labor began an indefinite strike over the national minimum wage. This action immediately halted power and transport for millions of people.",
+        "geo": "Africa",
+        "sources": 5
+      },
+      {
+        "headline": "Argentina's Senate approves President Milei's sweeping state reform package.",
+        "body": "The controversial bill passed after a tense and prolonged debate. The law now grants the executive broad new powers over the economy.",
+        "geo": "Americas",
+        "sources": 4
+      },
+      {
+        "headline": "Mexico's peso falls sharply after the ruling party's landslide election.",
+        "body": "The currency dropped over four percent on fears of constitutional changes. This immediately increases the cost of imported goods for Mexican consumers.",
+        "geo": "Americas",
+        "sources": 3
+      },
+      {
+        "headline": "South Korea announces new cash payments to boost its birth rate.",
+        "body": "The government is offering new financial incentives to parents. These policies aim to address the world's lowest fertility rate.",
+        "geo": "Asia",
+        "sources": 3
+      }
+    ]
+  },
+  "claude_output": {
+    "generated_at": "2025-05-12T10:30:00Z",
+    "sources": [
+      "CNN",
+      "Brown University",
+      "BBC",
+      "AFP",
+      "Reuters",
+      "The Guardian",
+      "Al Jazeera",
+      "Bloomberg"
+    ],
+    "items": [
+      {
+        "headline": "US President Trump rejects Iran peace proposal on day 73 of conflict",
+        "body": "Trump dismissed Iran's latest peace offer without explanation as oil hit $104 per barrel. American households have already lost $284 on average to higher fuel costs since the war began.",
+        "geo": "Global",
+        "sources": 6
+      },
+      {
+        "headline": "Iran-linked group claims 17 arson attacks on Jewish sites across Europe",
+        "body": "Synagogues and schools in London and other European cities were set ablaze by a shadowy group that emerged in March. CNN found links between the attackers and an Iran-backed Shia paramilitary organization.",
+        "geo": "Europe",
+        "sources": 4
+      },
+      {
+        "headline": "Indonesia volcano eruption kills three hikers including two Singaporeans found holding each other",
+        "body": "Mount Dukono on Halmahera Island erupted Thursday trapping 20 climbers who defied safety restrictions. Rescuers recovered two bodies under rock debris near the crater rim.",
+        "geo": "Asia",
+        "sources": 5
+      },
+      {
+        "headline": "France and Kenya sign joint venture for $800 million port and logistics infrastructure",
+        "body": "The agreement emerged from the Africa Forward Summit that closed Monday with bilateral deals across five nations. Kenya also secured French financing to rehabilitate its commuter rail network.",
+        "geo": "Africa",
+        "sources": 3
+      }
+    ]
+  }
+}

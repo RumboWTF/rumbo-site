@@ -1,78 +1,76 @@
 {
-  "date": "11 May 2026",
+  "date": "12 May 2026",
   "global": {
-    "generated_at": "2026-05-11T04:00:00Z",
+    "generated_at": "2026-05-12T04:00:00Z",
     "sources": [
-      "CGTN",
-      "Fresh News",
-      "Bangkok Post",
-      "WSLS 10",
-      "Africa News Agency",
+      "Newsweek",
+      "The Guardian",
+      "Reuters",
+      "Associated Press",
       "Al Jazeera",
-      "European Pravda"
+      "BBC News",
+      "Bloomberg",
+      "Taipei Times",
+      "Global News",
+      "Pulse Nigeria",
+      "THISDAY LIVE"
     ],
     "items": [
       {
-        "headline": "Amid energy shock, ASEAN economy forges resilience through cooperation",
-        "body": "Southeast Asian nations agreed on a collective response to Middle East instability. This creates a framework to manage regional energy, food, and financial shocks.",
-        "geo": "Asia",
+        "headline": "Nigerian unions launch nationwide strike, shutting down the power grid.",
+        "body": "Organized labor began an indefinite strike over the national minimum wage. This action immediately halted power and transport for millions of people.",
+        "geo": "Africa",
+        "sources": 5
+      },
+      {
+        "headline": "Argentina's Senate approves President Milei's sweeping state reform package.",
+        "body": "The controversial bill passed after a tense and prolonged debate. The law now grants the executive broad new powers over the economy.",
+        "geo": "Americas",
         "sources": 4
       },
       {
-        "headline": "Changing geopolitics are in focus as France's Macron kicks off Kenya visit for an Africa summit",
-        "body": "France is holding a major African summit in an Anglophone country. This signals a strategic pivot from its traditional Francophone sphere of influence.",
-        "geo": "Africa",
-        "sources": 2
-      },
-      {
-        "headline": "South Africa's top court revives impeachment inquiry against president",
-        "body": "South Africa’s highest court revived a presidential impeachment inquiry over a farm theft scandal. The ruling creates new political uncertainty for the governing African National Congress.",
-        "geo": "Africa",
+        "headline": "Mexico's peso falls sharply after the ruling party's landslide election.",
+        "body": "The currency dropped over four percent on fears of constitutional changes. This immediately increases the cost of imported goods for Mexican consumers.",
+        "geo": "Americas",
         "sources": 3
       },
       {
-        "headline": "EU foreign ministers to discuss new aspects of security guarantees for Ukraine on 11 May",
-        "body": "EU ministers will discuss long-term security guarantees for Ukraine, including satellite monitoring. This moves European support beyond immediate aid to institutionalized security commitments.",
-        "geo": "Europe",
-        "sources": 1
+        "headline": "South Korea announces new cash payments to boost its birth rate.",
+        "body": "The government is offering new financial incentives to parents. These policies aim to address the world's lowest fertility rate.",
+        "geo": "Asia",
+        "sources": 3
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Police unions demand more resources after two officers die",
-        "body": "Two Guardia Civil officers died during an anti-drug operation. Police associations now demand more resources to confront trafficking.",
+        "headline": "Final passengers from virus-stricken cruise ship depart Spain.",
+        "body": "Two planes evacuated the last travelers from the Canary Islands. This action ends a tense public health and diplomatic standoff.",
         "geo": "Spain",
-        "sources": 2
+        "sources": 1
       }
     ],
     "no": [
       {
-        "headline": "Norway joins US-led initiative to secure technology supply chains",
-        "body": "The country has joined the American-led Pax Silica initiative. This aligns its tech sector with Western semiconductor security efforts.",
+        "headline": "Norwegian banks raise mortgage rates, increasing costs for homeowners.",
+        "body": "Several major banks increased their mortgage rates following a central bank hike. The move directly raises monthly housing costs for many Norwegian homeowners.",
         "geo": "Norway",
-        "sources": 1
-      },
-      {
-        "headline": "Government expands offshore acreage for new petroleum exploration",
-        "body": "The annual oil and gas licensing round was announced. It adds 70 new exploration blocks for potential development.",
-        "geo": "Norway",
-        "sources": 3
+        "sources": 2
       }
     ],
     "uk": [
       {
-        "headline": "Reform UK surges in local elections, fracturing political landscape",
-        "body": "The populist Reform UK party gained over 1,300 council seats in nationwide local elections. The results pressure the government on immigration and challenge the traditional two-party political system.",
+        "headline": "Nationalist party wins plurality in Welsh election, ending Labour's dominance.",
+        "body": "Plaid Cymru won the most seats in the Welsh Parliament election. This result ends a century of Labour party dominance in Wales.",
         "geo": "United Kingdom",
-        "sources": 4
+        "sources": 8
       }
     ],
     "nl": [
       {
-        "headline": "Government details €100 million compensation for national fireworks ban",
-        "body": "The Netherlands will compensate fireworks businesses for losses from an upcoming nationwide ban. This provides a financial exit for importers and retailers affected by the new policy.",
+        "headline": "Government says most businesses are unprepared for network failure",
+        "body": "Over half of Dutch firms lack plans for a major cyberattack or blackout. The government is now urging companies to create 72-hour emergency procedures.",
         "geo": "Netherlands",
         "sources": 1
       }

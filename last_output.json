@@ -1,38 +1,42 @@
 {
-  "generated_at": "2026-05-11T04:00:00Z",
+  "generated_at": "2026-05-12T04:00:00Z",
   "sources": [
-    "CGTN",
-    "Fresh News",
-    "Bangkok Post",
-    "WSLS 10",
-    "Africa News Agency",
+    "Newsweek",
+    "The Guardian",
+    "Reuters",
+    "Associated Press",
     "Al Jazeera",
-    "European Pravda"
+    "BBC News",
+    "Bloomberg",
+    "Taipei Times",
+    "Global News",
+    "Pulse Nigeria",
+    "THISDAY LIVE"
   ],
   "items": [
     {
-      "headline": "Amid energy shock, ASEAN economy forges resilience through cooperation",
-      "body": "Southeast Asian nations agreed on a collective response to Middle East instability. This creates a framework to manage regional energy, food, and financial shocks.",
-      "geo": "Asia",
+      "headline": "Nigerian unions launch nationwide strike, shutting down the power grid.",
+      "body": "Organized labor began an indefinite strike over the national minimum wage. This action immediately halted power and transport for millions of people.",
+      "geo": "Africa",
+      "sources": 5
+    },
+    {
+      "headline": "Argentina's Senate approves President Milei's sweeping state reform package.",
+      "body": "The controversial bill passed after a tense and prolonged debate. The law now grants the executive broad new powers over the economy.",
+      "geo": "Americas",
       "sources": 4
     },
     {
-      "headline": "Changing geopolitics are in focus as France's Macron kicks off Kenya visit for an Africa summit",
-      "body": "France is holding a major African summit in an Anglophone country. This signals a strategic pivot from its traditional Francophone sphere of influence.",
-      "geo": "Africa",
-      "sources": 2
-    },
-    {
-      "headline": "South Africa's top court revives impeachment inquiry against president",
-      "body": "South Africa’s highest court revived a presidential impeachment inquiry over a farm theft scandal. The ruling creates new political uncertainty for the governing African National Congress.",
-      "geo": "Africa",
+      "headline": "Mexico's peso falls sharply after the ruling party's landslide election.",
+      "body": "The currency dropped over four percent on fears of constitutional changes. This immediately increases the cost of imported goods for Mexican consumers.",
+      "geo": "Americas",
       "sources": 3
     },
     {
-      "headline": "EU foreign ministers to discuss new aspects of security guarantees for Ukraine on 11 May",
-      "body": "EU ministers will discuss long-term security guarantees for Ukraine, including satellite monitoring. This moves European support beyond immediate aid to institutionalized security commitments.",
-      "geo": "Europe",
-      "sources": 1
+      "headline": "South Korea announces new cash payments to boost its birth rate.",
+      "body": "The government is offering new financial incentives to parents. These policies aim to address the world's lowest fertility rate.",
+      "geo": "Asia",
+      "sources": 3
     }
   ]
 }
