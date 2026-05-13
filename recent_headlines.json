@@ -1,5 +1,20 @@
 [
   {
+    "date": "13 May 2026",
+    "headlines": [
+      "UN warns Sudan's war is entering a deadlier phase as drone strikes increase",
+      "Kuwait summons Iranian ambassador after alleged border incursion by Revolutionary Guards",
+      "Japanese snack giant changes packaging to black and white due to war",
+      "Displacement by Colombian conflict doubled in one year, Red Cross reports"
+    ],
+    "regional_headlines": [
+      "New law requires mandatory energy retrofits for older homes",
+      "Government revises budget amid massive oil revenue windfall",
+      "Investor uncertainty drives UK government borrowing costs to a 28-year high",
+      "Government launches campaign after survey reveals business fragility"
+    ]
+  },
+  {
     "date": "12 May 2026",
     "headlines": [
       "Nigerian unions launch nationwide strike, shutting down the power grid.",
@@ -28,20 +43,6 @@
       "Government expands offshore acreage for new petroleum exploration",
       "Reform UK surges in local elections, fracturing political landscape",
       "Government details €100 million compensation for national fireworks ban"
-    ]
-  },
-  {
-    "date": "10 May 2026",
-    "headlines": [
-      "US and Iran exchange fire in Strait of Hormuz",
-      "African nations forge joint strategy on debt and climate finance",
-      "Asian Development Bank launches $70 billion infrastructure plan"
-    ],
-    "regional_headlines": [
-      "Government orders virus-hit ship to dock over regional objections",
-      "Norway commits to reopening three offshore gas fields",
-      "UK grants license for major new gas storage facility",
-      "Central bank finds capital and labor trapped in unproductive firms"
     ]
   }
 ]

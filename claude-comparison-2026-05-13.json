@@ -1,6 +1,6 @@
 {
-  "date": "13 May 2026",
-  "global": {
+  "date": "2026-05-13",
+  "gemini_output": {
     "generated_at": "2026-05-13T04:00:00Z",
     "sources": [
       "The Guardian",
@@ -51,37 +51,42 @@
       }
     ]
   },
-  "regional_items": {
-    "es": [
-      {
-        "headline": "New law requires mandatory energy retrofits for older homes",
-        "body": "A new building code requiring energy efficiency has entered into force. This creates a legal obligation for many property owners to renovate.",
-        "geo": "Spain",
-        "sources": 1
-      }
+  "claude_output": {
+    "generated_at": "2026-05-14T10:30:00Z",
+    "sources": [
+      "Wall Street Journal",
+      "Supreme Court of the United States",
+      "Philippine House of Representatives",
+      "FDA",
+      "European Union Health Security Committee",
+      "Spanish Ministry of Health",
+      "The Guardian",
+      "Al Jazeera"
     ],
-    "no": [
+    "items": [
       {
-        "headline": "Government revises budget amid massive oil revenue windfall",
-        "body": "Norway sharply raised its 2026 oil revenue forecast due to high energy prices. The entire windfall will be saved to avoid fueling domestic inflation and overheating the economy.",
-        "geo": "Norway",
+        "headline": "US Supreme Court allows Alabama to eliminate majority-Black congressional district",
+        "body": "Alabama can now redraw maps to remove one of two majority-Black districts before November midterms. Republicans gain an additional House seat as the state joins several others redrawing boundaries after the Court gutted Voting Rights Act protections.",
+        "geo": "Americas",
+        "sources": 5
+      },
+      {
+        "headline": "Philippine House votes to impeach Vice President Sara Duterte",
+        "body": "Lawmakers overwhelmingly approved impeachment charges including misuse of funds and threatening the president. She now faces a Senate trial that could remove her from office and ban her from the 2028 presidential race she was leading.",
+        "geo": "Asia",
+        "sources": 6
+      },
+      {
+        "headline": "EU bans Brazilian meat imports from September",
+        "body": "The European Union imposed a full import ban on Brazilian meat starting in September. The decision reshapes agricultural trade flows and forces Brazil to redirect millions of tons of beef and poultry exports.",
+        "geo": "Global",
         "sources": 4
-      }
-    ],
-    "uk": [
+      },
       {
-        "headline": "Investor uncertainty drives UK government borrowing costs to a 28-year high",
-        "body": "Political instability fears pushed interest rates on UK government debt to the highest since 1998. This increases state borrowing costs and influences rates for new mortgages and business loans.",
-        "geo": "United Kingdom",
-        "sources": 3
-      }
-    ],
-    "nl": [
-      {
-        "headline": "Government launches campaign after survey reveals business fragility",
-        "body": "The government launched a campaign after a survey found over half of businesses are unprepared for crises. It prompts firms to create plans for surviving the first 72 hours of a major disruption.",
-        "geo": "Netherlands",
-        "sources": 8
+        "headline": "Spain confirms first hantavirus case from Antarctic cruise outbreak",
+        "body": "A Spanish passenger from the MV Hondius has been in hospital isolation in Madrid since May 11. EU guidance now directs member states on testing and quarantine protocols for returning cruise passengers across the continent.",
+        "geo": "Europe",
+        "sources": 7
       }
     ]
   }

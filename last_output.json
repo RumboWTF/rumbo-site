@@ -1,42 +1,51 @@
 {
-  "generated_at": "2026-05-12T04:00:00Z",
+  "generated_at": "2026-05-13T04:00:00Z",
   "sources": [
-    "Newsweek",
     "The Guardian",
-    "Reuters",
-    "Associated Press",
-    "Al Jazeera",
-    "BBC News",
-    "Bloomberg",
-    "Taipei Times",
-    "Global News",
-    "Pulse Nigeria",
-    "THISDAY LIVE"
+    "Sudan Tribune",
+    "Globalnews.ca",
+    "The Hindu",
+    "allAfrica.com",
+    "UN News",
+    "MyJoyOnline",
+    "The New Region",
+    "The Peninsula Qatar",
+    "Middle East Monitor",
+    "DAWN.COM",
+    "WANA",
+    "The Yomiuri Shimbun",
+    "Business Insider",
+    "KRDO",
+    "Asia News Network",
+    "The Straits Times",
+    "Internazionale",
+    "The Times of India",
+    "WLRN"
   ],
   "items": [
     {
-      "headline": "Nigerian unions launch nationwide strike, shutting down the power grid.",
-      "body": "Organized labor began an indefinite strike over the national minimum wage. This action immediately halted power and transport for millions of people.",
+      "headline": "UN warns Sudan's war is entering a deadlier phase as drone strikes increase",
+      "body": "The United Nations warns Sudan’s war is entering a significantly deadlier phase. Armed drones are now the leading cause of civilian deaths in multiple regions.",
       "geo": "Africa",
+      "sources": 6
+    },
+    {
+      "headline": "Kuwait summons Iranian ambassador after alleged border incursion by Revolutionary Guards",
+      "body": "Kuwait summoned Iran's ambassador over an alleged border infiltration by Revolutionary Guards. The incident created a direct diplomatic and security crisis between the two nations.",
+      "geo": "Asia",
       "sources": 5
     },
     {
-      "headline": "Argentina's Senate approves President Milei's sweeping state reform package.",
-      "body": "The controversial bill passed after a tense and prolonged debate. The law now grants the executive broad new powers over the economy.",
+      "headline": "Japanese snack giant changes packaging to black and white due to war",
+      "body": "A major Japanese snack maker changed its packaging to black and white. The Iran conflict disrupted the global supply of raw materials for colored ink.",
+      "geo": "Asia",
+      "sources": 5
+    },
+    {
+      "headline": "Displacement by Colombian conflict doubled in one year, Red Cross reports",
+      "body": "Internal displacement from conflict in Colombia doubled last year, says the Red Cross. Aid agencies now face a greatly expanded humanitarian crisis requiring immediate adjustments.",
       "geo": "Americas",
       "sources": 4
-    },
-    {
-      "headline": "Mexico's peso falls sharply after the ruling party's landslide election.",
-      "body": "The currency dropped over four percent on fears of constitutional changes. This immediately increases the cost of imported goods for Mexican consumers.",
-      "geo": "Americas",
-      "sources": 3
-    },
-    {
-      "headline": "South Korea announces new cash payments to boost its birth rate.",
-      "body": "The government is offering new financial incentives to parents. These policies aim to address the world's lowest fertility rate.",
-      "geo": "Asia",
-      "sources": 3
     }
   ]
 }
