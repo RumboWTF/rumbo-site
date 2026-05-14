@@ -1,6 +1,6 @@
 {
-  "date": "14 May 2026",
-  "global": {
+  "date": "2026-05-14",
+  "gemini_output": {
     "generated_at": "2026-05-14T04:00:00Z",
     "sources": [
       "African Development Bank Group",
@@ -41,37 +41,39 @@
       }
     ]
   },
-  "regional_items": {
-    "es": [
-      {
-        "headline": "Spain advances tough new rules for AI and social media",
-        "body": "The government confirmed it will proceed with strict digital regulations despite industry pressure. This forces technology companies to prepare for new operating constraints and liabilities.",
-        "geo": "Spain",
-        "sources": 6
-      }
+  "claude_output": {
+    "generated_at": "2025-05-15T18:30:00Z",
+    "sources": [
+      "Philippine Senate Press Office",
+      "Xinhua News Agency",
+      "South Carolina Supreme Court",
+      "Amnesty International",
+      "Russian Ministry of Defense"
     ],
-    "no": [
+    "items": [
       {
-        "headline": "Norway revises budget with higher oil income, slower growth",
-        "body": "The government raised its 2026 petroleum revenue forecast by billions. It also lowered the domestic growth outlook, citing persistent inflation.",
-        "geo": "Norway",
+        "headline": "Gunfire erupts in Philippine Senate during ICC arrest attempt for drug war senator",
+        "body": "Armed confrontation broke out Wednesday as authorities tried to arrest Senator dela Rosa for crimes against humanity linked to 32 killings. Allied senators placed him in protective custody, forcing President Marcos to issue public calm appeals.",
+        "geo": "Asia",
         "sources": 6
-      }
-    ],
-    "uk": [
+      },
       {
-        "headline": "UK government introduces voluntary digital ID legislation",
-        "body": "The government presented a bill to create a voluntary digital identity. The system provides citizens a new way to access public services.",
-        "geo": "United Kingdom",
+        "headline": "Trump meets Xi in Beijing summit with three US tech CEOs in delegation",
+        "body": "The presidents began two-day talks Thursday with Apple, Tesla, and Nvidia chiefs present. Xi opened by asking whether they could avoid conflict between rising and established powers.",
+        "geo": "Asia",
+        "sources": 8
+      },
+      {
+        "headline": "South Carolina Supreme Court overturns Alex Murdaugh conviction, orders new murder trial",
+        "body": "The court ruled unanimously Wednesday that the clerk improperly influenced the jury. The state attorney general vowed immediate retrial for the killings.",
+        "geo": "Americas",
+        "sources": 7
+      },
+      {
+        "headline": "Nigerian airstrike kills over 100 civilians at crowded market in Zamfara state",
+        "body": "Military jets struck Sunday's market gathering, the second mass-casualty market bombing in a month. Hospitals in two districts are treating dozens of wounded women and girls.",
+        "geo": "Africa",
         "sources": 5
-      }
-    ],
-    "nl": [
-      {
-        "headline": "Government reconsiders benefit cuts after union strike threat",
-        "body": "Major trade unions issued an ultimatum to the government over planned welfare cuts. The cabinet now promises to reassess the controversial social security reform plans.",
-        "geo": "Netherlands",
-        "sources": 4
       }
     ]
   }

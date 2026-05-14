@@ -1,51 +1,41 @@
 {
-  "generated_at": "2026-05-13T04:00:00Z",
+  "generated_at": "2026-05-14T04:00:00Z",
   "sources": [
-    "The Guardian",
-    "Sudan Tribune",
-    "Globalnews.ca",
-    "The Hindu",
-    "allAfrica.com",
-    "UN News",
-    "MyJoyOnline",
-    "The New Region",
-    "The Peninsula Qatar",
-    "Middle East Monitor",
-    "DAWN.COM",
-    "WANA",
-    "The Yomiuri Shimbun",
-    "Business Insider",
-    "KRDO",
-    "Asia News Network",
-    "The Straits Times",
-    "Internazionale",
-    "The Times of India",
-    "WLRN"
+    "African Development Bank Group",
+    "The Kenyan Wallstreet",
+    "Daily Maverick",
+    "The Jerusalem Post",
+    "Anadolu Ajansı",
+    "Al Jazeera",
+    "Latham & Watkins",
+    "Travers Smith",
+    "TRT World",
+    "Arab News"
   ],
   "items": [
     {
-      "headline": "UN warns Sudan's war is entering a deadlier phase as drone strikes increase",
-      "body": "The United Nations warns Sudan’s war is entering a significantly deadlier phase. Armed drones are now the leading cause of civilian deaths in multiple regions.",
+      "headline": "African leaders back new guarantee mechanism to unlock investment",
+      "body": "A summit in Nairobi secured political backing for a new pan-African financial architecture. This advances a framework to lower capital costs and accelerate job creation across Africa.",
       "geo": "Africa",
+      "sources": 8
+    },
+    {
+      "headline": "Kuwait arrests alleged Iranian Revolutionary Guards members after sea clash",
+      "body": "Kuwait announced it arrested four people affiliated with Iran's Islamic Revolutionary Guard Corps. The incident introduces a new geography to the escalating regional conflict.",
+      "geo": "Global",
+      "sources": 7
+    },
+    {
+      "headline": "EU agrees to extend compliance deadlines for its AI Act",
+      "body": "EU bodies reached a political agreement to amend the landmark AI Act. Companies now have until at least December 2027 to comply with high-risk system rules.",
+      "geo": "Europe",
       "sources": 6
     },
     {
-      "headline": "Kuwait summons Iranian ambassador after alleged border incursion by Revolutionary Guards",
-      "body": "Kuwait summoned Iran's ambassador over an alleged border infiltration by Revolutionary Guards. The incident created a direct diplomatic and security crisis between the two nations.",
-      "geo": "Asia",
-      "sources": 5
-    },
-    {
-      "headline": "Japanese snack giant changes packaging to black and white due to war",
-      "body": "A major Japanese snack maker changed its packaging to black and white. The Iran conflict disrupted the global supply of raw materials for colored ink.",
-      "geo": "Asia",
-      "sources": 5
-    },
-    {
-      "headline": "Displacement by Colombian conflict doubled in one year, Red Cross reports",
-      "body": "Internal displacement from conflict in Colombia doubled last year, says the Red Cross. Aid agencies now face a greatly expanded humanitarian crisis requiring immediate adjustments.",
+      "headline": "Bolivian court reissues arrest warrant for former president Evo Morales",
+      "body": "A court declared the former leader a fugitive after he missed a trial start. His supporters are promising a nationwide insurgency if he is captured.",
       "geo": "Americas",
-      "sources": 4
+      "sources": 5
     }
   ]
 }

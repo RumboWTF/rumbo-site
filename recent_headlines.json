@@ -1,5 +1,20 @@
 [
   {
+    "date": "14 May 2026",
+    "headlines": [
+      "African leaders back new guarantee mechanism to unlock investment",
+      "Kuwait arrests alleged Iranian Revolutionary Guards members after sea clash",
+      "EU agrees to extend compliance deadlines for its AI Act",
+      "Bolivian court reissues arrest warrant for former president Evo Morales"
+    ],
+    "regional_headlines": [
+      "Spain advances tough new rules for AI and social media",
+      "Norway revises budget with higher oil income, slower growth",
+      "UK government introduces voluntary digital ID legislation",
+      "Government reconsiders benefit cuts after union strike threat"
+    ]
+  },
+  {
     "date": "13 May 2026",
     "headlines": [
       "UN warns Sudan's war is entering a deadlier phase as drone strikes increase",
@@ -27,22 +42,6 @@
       "Norwegian banks raise mortgage rates, increasing costs for homeowners.",
       "Nationalist party wins plurality in Welsh election, ending Labour's dominance.",
       "Government says most businesses are unprepared for network failure"
-    ]
-  },
-  {
-    "date": "11 May 2026",
-    "headlines": [
-      "Amid energy shock, ASEAN economy forges resilience through cooperation",
-      "Changing geopolitics are in focus as France's Macron kicks off Kenya visit for an Africa summit",
-      "South Africa's top court revives impeachment inquiry against president",
-      "EU foreign ministers to discuss new aspects of security guarantees for Ukraine on 11 May"
-    ],
-    "regional_headlines": [
-      "Police unions demand more resources after two officers die",
-      "Norway joins US-led initiative to secure technology supply chains",
-      "Government expands offshore acreage for new petroleum exploration",
-      "Reform UK surges in local elections, fracturing political landscape",
-      "Government details €100 million compensation for national fireworks ban"
     ]
   }
 ]
