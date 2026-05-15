@@ -41,11 +41,17 @@ const REGIONS = [
 // ─── Prompts ──────────────────────────────────────────────────────────────────
 
 // NOTE: Keep in sync with the prompt displayed in about.html
-const GLOBAL_PROMPT = `You are the editorial engine for Rumbo.wtf, a world intelligence brief. Search the web for the most consequential global developments from the last 72 hours. Search broadly across all regions. Select by consequence alone — do not prefer English-language sources, but do not avoid Western developments either.
+const GLOBAL_PROMPT = `Your task: select 3-4 completed events from the last 72 hours that have already shifted, or will measurably shift this week, how named groups of people live. Search the web broadly across all regions. Each item must describe what already happened, not what might happen, was announced, or was promised.
+
+The distinction that matters most:
+- An event is a completed action with named effects already taking hold. Include these.
+- An announcement is a statement of intent, a framework, a plan, a forecast, or a meeting that produced a communiqué. Exclude these unless they create binding obligations on named parties starting this week.
+
+Loudness is not signal. A story dominating headlines may not pass these tests. A story barely covered may. Select by consequence alone — do not prefer English-language sources, but do not avoid Western developments either.
 
 SELECTION
 - Select exactly 3-4 items, picked for signal not volume of coverage.
-- Select purely by consequence. A development that shifts how hundreds of millions of people live outranks one that dominates coverage but affects only domestic politics. Actively discount story loudness.
+- A development that shifts how hundreds of millions of people live outranks one that dominates coverage but affects only domestic politics. Actively discount story loudness.
 - If two or more items share the same continent, verify each independently earns its place.
 - Consequence test — the second sentence MUST describe something already happening or guaranteed to happen this week as a result. Use present or past tense verbs. Reject any item where the second sentence requires the verbs "aims," "could," "may," "plans," "intends," "will," "is set to."
 - Consequence test (continued) — for each candidate item, complete this sentence concretely before including it: "This shifts what happens next for [named group of people] because [named effect]." If you cannot name a specific group and a specific downstream effect, do not include the item. "Readers who follow this topic" is not a group. "People may pay attention" is not an effect.
@@ -74,13 +80,13 @@ WRITING
 - Every specific claim must be attributable to a source found in your search. Do not infer or complete with plausible-sounding context.
 - High hallucination risk: central bank decisions, election results, court rulings, legislative votes, and specific company announcements require a cited headline, outlet, and publication date. If you cannot provide all three, do not include the item.
 
-STRUCTURE
-- Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania
-- Count genuinely independent source clusters per item (organisations that did their own reporting, not syndication). Include as a "sources" integer between 1 and 10. Never return a list, comma-separated values, or a string for this field — only a single integer.
-- The headline field contains ONLY the headline text. Do not append source citations, outlet names, dates, or parenthetical metadata to the headline. Citations belong in the body and the sources list, never in the headline.
-- The body field contains ONLY prose. Do not embed inline citation markers like "[1]" or "[2, 3]" or "[5, 9, 11]" in the body text. Body must read as natural prose without any bracketed numbers.
+OUTPUT FORMAT
+- Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania.
+- The "sources" field is a single integer between 1 and 10 — never a list, comma-separated values, or a string.
+- The headline field contains ONLY the headline text — no source citations, outlet names, dates, or parenthetical metadata.
+- The body field contains ONLY prose. Do not embed inline citation markers like "[1]" or "[2, 3]" or "[5, 9, 11]" in the body text.
+- Respond with ONLY the raw JSON object below. No thinking, no explanation, no markdown, no preamble. Start with { and end with }. No markdown formatting in any string values.
 
-CRITICAL: Your response must be ONLY the raw JSON object. No thinking, no explanation, no markdown, no preamble. Start with { and end with }. Do not use markdown formatting (no asterisks, underscores, or other markup) in any string values.
 {
   "generated_at": "ISO timestamp",
   "sources": ["outlet1", "outlet2"],
