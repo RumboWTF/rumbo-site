@@ -1,41 +1,49 @@
 {
-  "generated_at": "2026-05-14T04:00:00Z",
+  "generated_at": "2026-05-15T04:00:00Z",
   "sources": [
-    "African Development Bank Group",
-    "The Kenyan Wallstreet",
-    "Daily Maverick",
-    "The Jerusalem Post",
-    "Anadolu Ajansı",
-    "Al Jazeera",
-    "Latham & Watkins",
-    "Travers Smith",
-    "TRT World",
-    "Arab News"
+    "OPB",
+    "Pittsburgh Post-Gazette",
+    "Evertiq",
+    "Euromaidan Press",
+    "The New Indian Express",
+    "SupplyChainBrain",
+    "The Kyiv Independent",
+    "The Manila Times",
+    "Human Resources Online",
+    "Mongabay",
+    "CBS News",
+    "The Journal",
+    "WSOC TV",
+    "The Week",
+    "The New Voice of Ukraine",
+    "Asia News Network",
+    "Morningstar",
+    "koreaherald.com",
+    "koreajoongangdaily.joins.com",
+    "afdb.org",
+    "the-star.co.ke",
+    "allafrica.com",
+    "africa-forward.com",
+    "Devdiscourse"
   ],
   "items": [
     {
-      "headline": "African leaders back new guarantee mechanism to unlock investment",
-      "body": "A summit in Nairobi secured political backing for a new pan-African financial architecture. This advances a framework to lower capital costs and accelerate job creation across Africa.",
-      "geo": "Africa",
-      "sources": 8
-    },
-    {
-      "headline": "Kuwait arrests alleged Iranian Revolutionary Guards members after sea clash",
-      "body": "Kuwait announced it arrested four people affiliated with Iran's Islamic Revolutionary Guard Corps. The incident introduces a new geography to the escalating regional conflict.",
-      "geo": "Global",
-      "sources": 7
-    },
-    {
-      "headline": "EU agrees to extend compliance deadlines for its AI Act",
-      "body": "EU bodies reached a political agreement to amend the landmark AI Act. Companies now have until at least December 2027 to comply with high-risk system rules.",
+      "headline": "Russia unleashes massive missile and drone attack on Kyiv",
+      "body": "Russia launched one of the war's largest air attacks on Ukraine's capital city. [8, 9] The assault killed dozens of civilians and destroyed a nine-story apartment block. [6, 9]",
       "geo": "Europe",
-      "sources": 6
+      "sources": 9
     },
     {
-      "headline": "Bolivian court reissues arrest warrant for former president Evo Morales",
-      "body": "A court declared the former leader a fugitive after he missed a trial start. His supporters are promising a nationwide insurgency if he is captured.",
-      "geo": "Americas",
+      "headline": "African leaders push to process critical minerals on the continent",
+      "body": "A summit backed a new guarantee mechanism to unlock private investment for local manufacturing. [20, 31] This shifts economic strategy from exporting raw materials to creating domestic value chains. [15]",
+      "geo": "Africa",
       "sources": 5
+    },
+    {
+      "headline": "Samsung Electronics faces imminent strike after labor talks collapse",
+      "body": "Last-ditch wage negotiations between the company and its largest union have failed. [7, 12, 13] The government is considering emergency arbitration to avert major disruption to chip production. [23, 25, 26]",
+      "geo": "Asia",
+      "sources": 8
     }
   ]
 }

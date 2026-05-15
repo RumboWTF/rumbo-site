@@ -1,6 +1,6 @@
 {
-  "date": "15 May 2026",
-  "global": {
+  "date": "2026-05-15",
+  "gemini_output": {
     "generated_at": "2026-05-15T04:00:00Z",
     "sources": [
       "OPB",
@@ -49,43 +49,39 @@
       }
     ]
   },
-  "regional_items": {
-    "es": [
-      {
-        "headline": "Governments agree to protect non-contributory pensions",
-        "body": "Spain's government and the Canary Islands agreed to change a regional law. The deal protects supplemental income for thousands of non-contributory pension recipients.",
-        "geo": "Spain",
-        "sources": 1
-      }
+  "claude_output": {
+    "generated_at": "2026-05-15T18:30:00Z",
+    "sources": [
+      "China Daily",
+      "Philippine Star",
+      "Latvian Public Broadcasting",
+      "Ghana News Agency",
+      "UAE state media"
     ],
-    "no": [
+    "items": [
       {
-        "headline": "Norway revokes missile export license to Malaysia",
-        "body": "The government cancelled an approved export license for naval strike missiles. [19] This created a diplomatic dispute, halting a multi-year defense contract. [19, 24]",
-        "geo": "Norway",
-        "sources": 2
-      }
-    ],
-    "uk": [
-      {
-        "headline": "Senior minister resigns, triggering Labour leadership crisis",
-        "body": "Health Secretary Wes Streeting quit the government after poor local election results. [21] His exit triggered open maneuvering for a leadership contest against the Prime Minister. [11, 16]",
-        "geo": "United Kingdom",
-        "sources": 6
-      }
-    ],
-    "nl": [
-      {
-        "headline": "IMF lowers Dutch economic growth forecast amid Mideast conflict",
-        "body": "The International Monetary Fund lowered its growth forecast for the Netherlands. [2, 4] Rising energy costs are increasing inflation and weakening consumer confidence. [2, 4]",
-        "geo": "Netherlands",
-        "sources": 2
+        "headline": "Trump and Xi agree on three-year strategic stability framework during Beijing summit",
+        "body": "The US and China committed to a named framework governing relations through 2029. China will buy more American oil starting this quarter.",
+        "geo": "Asia",
+        "sources": 7
       },
       {
-        "headline": "Arson attack targets new asylum seeker housing",
-        "body": "Protesters attacked a new asylum shelter in Loosdrecht with fire. [5] The incident escalates tensions around national refugee housing policy. [5]",
-        "geo": "Netherlands",
-        "sources": 2
+        "headline": "Philippine Senate installs new president hours before second Duterte impeachment",
+        "body": "Thirteen senators voted Cayetano into power, replacing Sotto. The impeachment court convenes May 18 to try the sitting vice president.",
+        "geo": "Asia",
+        "sources": 5
+      },
+      {
+        "headline": "Latvian government collapses after coalition partner withdraws over drone response",
+        "body": "Prime Minister Silina resigned after losing majority support. Multiple Ukrainian drones have crashed in Latvia since March without interception.",
+        "geo": "Europe",
+        "sources": 4
+      },
+      {
+        "headline": "Ghana evacuates 300 citizens from South Africa amid xenophobic attacks",
+        "body": "Foreign Ministry confirmed evacuation flights have begun for registered citizens. Nigeria reports 130 citizens have requested repatriation.",
+        "geo": "Africa",
+        "sources": 6
       }
     ]
   }

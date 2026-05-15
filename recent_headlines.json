@@ -1,5 +1,20 @@
 [
   {
+    "date": "15 May 2026",
+    "headlines": [
+      "Russia unleashes massive missile and drone attack on Kyiv",
+      "African leaders push to process critical minerals on the continent",
+      "Samsung Electronics faces imminent strike after labor talks collapse"
+    ],
+    "regional_headlines": [
+      "Governments agree to protect non-contributory pensions",
+      "Norway revokes missile export license to Malaysia",
+      "Senior minister resigns, triggering Labour leadership crisis",
+      "IMF lowers Dutch economic growth forecast amid Mideast conflict",
+      "Arson attack targets new asylum seeker housing"
+    ]
+  },
+  {
     "date": "14 May 2026",
     "headlines": [
       "African leaders back new guarantee mechanism to unlock investment",
@@ -27,21 +42,6 @@
       "Government revises budget amid massive oil revenue windfall",
       "Investor uncertainty drives UK government borrowing costs to a 28-year high",
       "Government launches campaign after survey reveals business fragility"
-    ]
-  },
-  {
-    "date": "12 May 2026",
-    "headlines": [
-      "Nigerian unions launch nationwide strike, shutting down the power grid.",
-      "Argentina's Senate approves President Milei's sweeping state reform package.",
-      "Mexico's peso falls sharply after the ruling party's landslide election.",
-      "South Korea announces new cash payments to boost its birth rate."
-    ],
-    "regional_headlines": [
-      "Final passengers from virus-stricken cruise ship depart Spain.",
-      "Norwegian banks raise mortgage rates, increasing costs for homeowners.",
-      "Nationalist party wins plurality in Welsh election, ending Labour's dominance.",
-      "Government says most businesses are unprepared for network failure"
     ]
   }
 ]
