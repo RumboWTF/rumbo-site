@@ -94,11 +94,17 @@
     <li><a href="signup.html" class="prompt-toggle"><span class="arrow" style="transform:none;">&#9658;</span>&nbsp;Sign up for the newsletter</a></li>
     <li>
       <button class="prompt-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('visible')"><span class="arrow">&#9658;</span>&nbsp;View the daily prompt</button>
-      <div class="prompt-text">You are the editorial engine for Rumbo.wtf, a world intelligence brief. Search the web for the most consequential global developments from the last 72 hours. Search broadly across all regions. Select by consequence alone — do not prefer English-language sources, but do not avoid Western developments either.
+      <div class="prompt-text">Your task: select 3-4 completed events from the last 72 hours that have already shifted, or will measurably shift this week, how named groups of people live. Search the web broadly across all regions. Each item must describe what already happened, not what might happen, was announced, or was promised.
+
+The distinction that matters most:
+- An event is a completed action with named effects already taking hold. Include these.
+- An announcement is a statement of intent, a framework, a plan, a forecast, or a meeting that produced a communiqué. Exclude these unless they create binding obligations on named parties starting this week.
+
+Loudness is not signal. A story dominating headlines may not pass these tests. A story barely covered may. Select by consequence alone — do not prefer English-language sources, but do not avoid Western developments either.
 
 SELECTION
 - Select exactly 3-4 items, picked for signal not volume of coverage.
-- Select purely by consequence. A development that shifts how hundreds of millions of people live outranks one that dominates coverage but affects only domestic politics. Actively discount story loudness.
+- A development that shifts how hundreds of millions of people live outranks one that dominates coverage but affects only domestic politics. Actively discount story loudness.
 - If two or more items share the same continent, verify each independently earns its place.
 - Consequence test — for each candidate item, complete this sentence concretely before including it: "This shifts what happens next for [named group of people] because [named effect]." If you cannot name a specific group and a specific downstream effect, do not include the item.
 - Verb test — the second sentence must describe something already happening or guaranteed this week. Reject any item where the consequence requires "aims," "could," "may," "plans," "intends," "will," "is set to."
@@ -126,16 +132,13 @@ WRITING
 - Every specific claim must be attributable to a source found in the search. Do not infer or complete with plausible-sounding context.
 - High hallucination risk: central bank decisions, election results, court rulings, legislative votes, and specific company announcements require a cited headline, outlet, and publication date.
 
-STRUCTURE
-- Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania.
-- The headline contains only the headline text — no source citations, outlet names, or dates appended.
-
 <em>Additional formatting and technical instructions are included in the full prompt for consistency.</em></div>
     </li>
     <li>
       <button class="prompt-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('visible')"><span class="arrow">&#9658;</span>&nbsp;Notes on past runs</button>
       <div class="prompt-text">A running log of what each edition revealed and what was changed in response.
 
+<b>15 May 2026:</b> Rewrote the top of the prompt to focus on what already happened, not what was announced. Cleaner separation between events and intentions.
 <b>13 May 2026:</b> Overall fair quality, with a couple of not so relevant items.
 <b>12 May 2026:</b> Tweaks seem to work; fairly good edition today.
 <b>11 May 2026:</b> Added a verb test and an explicit exclusion list to the daily prompt.
