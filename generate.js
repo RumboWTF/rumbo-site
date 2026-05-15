@@ -78,6 +78,7 @@ STRUCTURE
 - Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania
 - Count genuinely independent source clusters per item (organisations that did their own reporting, not syndication). Include as a "sources" integer between 1 and 10. Never return a list, comma-separated values, or a string for this field — only a single integer.
 - The headline field contains ONLY the headline text. Do not append source citations, outlet names, dates, or parenthetical metadata to the headline. Citations belong in the body and the sources list, never in the headline.
+- The body field contains ONLY prose. Do not embed inline citation markers like "[1]" or "[2, 3]" or "[5, 9, 11]" in the body text. Body must read as natural prose without any bracketed numbers.
 
 CRITICAL: Your response must be ONLY the raw JSON object. No thinking, no explanation, no markdown, no preamble. Start with { and end with }. Do not use markdown formatting (no asterisks, underscores, or other markup) in any string values.
 {
@@ -125,6 +126,7 @@ Rules:
 - If you cannot find any genuinely fresh items, return an empty items array.
 - The headline field contains ONLY the headline text. Do not append source citations, outlet names, dates, or parenthetical metadata to the headline.
 - The "sources" field is a single integer between 1 and 10. Never a list, comma-separated values, or a string.
+- The body field contains ONLY prose. Do not embed inline citation markers like "[1]" or "[2, 3]" or "[5, 9, 11]" in the body text. Body must read as natural prose without any bracketed numbers.
 
 CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end with }. No other text. No markdown formatting in any string values.
 {
@@ -286,7 +288,23 @@ async function callGemini(prompt, label = "global") {
   const start = cleaned.indexOf("{");
   const end = cleaned.lastIndexOf("}");
   if (start !== -1 && end !== -1) {
-    return { json: JSON.parse(cleaned.slice(start, end + 1)), raw: text, usage };
+    const parsed = JSON.parse(cleaned.slice(start, end + 1));
+
+    // Strip Gemini grounding citation markers from body and headline.
+    // Gemini sometimes leaks "[1, 2]" or "[5, 9, 11]" style markers into text.
+    const stripCitations = (str) => {
+      if (typeof str !== "string") return str;
+      return str.replace(/\s*\[\d+(?:,\s*\d+)*\]/g, "").replace(/\s{2,}/g, " ").trim();
+    };
+    if (Array.isArray(parsed.items)) {
+      parsed.items = parsed.items.map((item) => ({
+        ...item,
+        headline: stripCitations(item.headline),
+        body: stripCitations(item.body),
+      }));
+    }
+
+    return { json: parsed, raw: text, usage };
   }
   throw new Error("No JSON object found in Gemini response");
 }
