@@ -82,7 +82,7 @@ WRITING
 
 OUTPUT FORMAT
 - Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania.
-- The "sources" field is a single integer between 1 and 10 — never a list, comma-separated values, or a string.
+- The "sources" field is a single integer from 1 to 10 maximum. Cap at 10 even when more independent outlets have reported the story — never return a value higher than 10. Never a list, comma-separated values, or a string.
 - The headline field contains ONLY the headline text — no source citations, outlet names, dates, or parenthetical metadata.
 - The body field contains ONLY prose. Do not embed inline citation markers like "[1]" or "[2, 3]" or "[5, 9, 11]" in the body text.
 - Respond with ONLY the raw JSON object below. No thinking, no explanation, no markdown, no preamble. Start with { and end with }. No markdown formatting in any string values.
@@ -131,7 +131,7 @@ Rules:
 - Every specific claim must come from your search results. Do not infer or fill gaps.
 - If you cannot find any genuinely fresh items, return an empty items array.
 - The headline field contains ONLY the headline text. Do not append source citations, outlet names, dates, or parenthetical metadata to the headline.
-- The "sources" field is a single integer between 1 and 10. Never a list, comma-separated values, or a string.
+- The "sources" field is a single integer from 1 to 10 maximum. Cap at 10 even when more independent outlets have reported the story.
 - The body field contains ONLY prose. Do not embed inline citation markers like "[1]" or "[2, 3]" or "[5, 9, 11]" in the body text. Body must read as natural prose without any bracketed numbers.
 
 CRITICAL: Your response must be ONLY the raw JSON object. Start with { and end with }. No other text. No markdown formatting in any string values.
@@ -338,8 +338,8 @@ function renderItem(item, t, locale = 'en') {
     : encodeURIComponent(item.headline);
   const geoLabel = geo;
 
-  // Defensive coercion: sources should be a single integer.
-  // Handle malformed values (arrays, comma-strings, undefined) gracefully.
+  // Defensive coercion: sources should be a single integer between 1 and 10.
+  // Handle malformed values (arrays, comma-strings, undefined, out-of-range) gracefully.
   let sources = item.sources;
   if (Array.isArray(sources)) {
     sources = sources[0] ?? "?";
@@ -348,6 +348,12 @@ function renderItem(item, t, locale = 'en') {
     sources = firstNumber ? firstNumber[0] : "?";
   } else if (sources === undefined || sources === null) {
     sources = "?";
+  }
+  // Cap displayed value at 10 — anything higher is implausible for "independent
+  // source clusters" and likely reflects the model counting articles instead.
+  const sourcesNum = parseInt(sources, 10);
+  if (!isNaN(sourcesNum) && sourcesNum > 10) {
+    sources = "10+";
   }
 
   return `  <div class="item">
@@ -439,6 +445,10 @@ function renderEmail(data, date, locale, unsubscribeUrl) {
       sources = firstNumber ? firstNumber[0] : "?";
     } else if (sources === undefined || sources === null) {
       sources = "?";
+    }
+    const sourcesNum = parseInt(sources, 10);
+    if (!isNaN(sourcesNum) && sourcesNum > 10) {
+      sources = "10+";
     }
     return `
     <tr><td class="rp" style="padding:20px 28px 0;">
