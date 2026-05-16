@@ -1,5 +1,19 @@
 [
   {
+    "date": "16 May 2026",
+    "headlines": [
+      "New law strengthening water protection in EU enters into force",
+      "A political dynasty heiress and a former trade minister advance to Peru's presidential runoff",
+      "Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support"
+    ],
+    "regional_headlines": [
+      "Spain ends tax relief measures for electricity and gas",
+      "Norway joins international effort to establish special tribunal for Ukraine",
+      "UK economy posts unexpected growth in first quarter",
+      "Government bill reverses mandatory sale of council homes"
+    ]
+  },
+  {
     "date": "15 May 2026",
     "headlines": [
       "Russia unleashes massive missile and drone attack on Kyiv",
@@ -27,21 +41,6 @@
       "Norway revises budget with higher oil income, slower growth",
       "UK government introduces voluntary digital ID legislation",
       "Government reconsiders benefit cuts after union strike threat"
-    ]
-  },
-  {
-    "date": "13 May 2026",
-    "headlines": [
-      "UN warns Sudan's war is entering a deadlier phase as drone strikes increase",
-      "Kuwait summons Iranian ambassador after alleged border incursion by Revolutionary Guards",
-      "Japanese snack giant changes packaging to black and white due to war",
-      "Displacement by Colombian conflict doubled in one year, Red Cross reports"
-    ],
-    "regional_headlines": [
-      "New law requires mandatory energy retrofits for older homes",
-      "Government revises budget amid massive oil revenue windfall",
-      "Investor uncertainty drives UK government borrowing costs to a 28-year high",
-      "Government launches campaign after survey reveals business fragility"
     ]
   }
 ]

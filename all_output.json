@@ -1,90 +1,73 @@
 {
-  "date": "15 May 2026",
+  "date": "16 May 2026",
   "global": {
-    "generated_at": "2026-05-15T04:00:00Z",
+    "generated_at": "2026-05-16T04:00:00Z",
     "sources": [
-      "OPB",
-      "Pittsburgh Post-Gazette",
-      "Evertiq",
-      "Euromaidan Press",
-      "The New Indian Express",
-      "SupplyChainBrain",
-      "The Kyiv Independent",
-      "The Manila Times",
-      "Human Resources Online",
-      "Mongabay",
-      "CBS News",
-      "The Journal",
-      "WSOC TV",
-      "The Week",
-      "The New Voice of Ukraine",
-      "Asia News Network",
-      "Morningstar",
-      "koreaherald.com",
-      "koreajoongangdaily.joins.com",
-      "afdb.org",
-      "the-star.co.ke",
-      "allafrica.com",
-      "africa-forward.com",
-      "Devdiscourse"
+      "EU Environment",
+      "European Commission",
+      "Foresight®",
+      "ECHA",
+      "WAM",
+      "Associated Press",
+      "Yeni Safak English",
+      "Xinhua",
+      "Science Media Centre",
+      "Reuters",
+      "WHO",
+      "Africa CDC",
+      "U.S. Embassy in Uganda",
+      "Mansfield 103.2",
+      "Global News"
     ],
     "items": [
       {
-        "headline": "Russia unleashes massive missile and drone attack on Kyiv",
-        "body": "Russia launched one of the war's largest air attacks on Ukraine's capital city. [8, 9] The assault killed dozens of civilians and destroyed a nine-story apartment block. [6, 9]",
+        "headline": "New law strengthening water protection in EU enters into force",
+        "body": "A new EU directive on water pollutants took effect this week. Industries and water utilities now face stricter controls on more substances.",
         "geo": "Europe",
-        "sources": 9
+        "sources": 1
       },
       {
-        "headline": "African leaders push to process critical minerals on the continent",
-        "body": "A summit backed a new guarantee mechanism to unlock private investment for local manufacturing. [20, 31] This shifts economic strategy from exporting raw materials to creating domestic value chains. [15]",
+        "headline": "A political dynasty heiress and a former trade minister advance to Peru's presidential runoff",
+        "body": "Peru's final vote count confirmed a polarized presidential runoff election. Voters and investors now face a stark choice between two ideological extremes.",
+        "geo": "Americas",
+        "sources": 6
+      },
+      {
+        "headline": "Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support",
+        "body": "The Democratic Republic of Congo declared a new Ebola outbreak. An emergency response is now underway affecting residents and health workers.",
         "geo": "Africa",
-        "sources": 5
-      },
-      {
-        "headline": "Samsung Electronics faces imminent strike after labor talks collapse",
-        "body": "Last-ditch wage negotiations between the company and its largest union have failed. [7, 12, 13] The government is considering emergency arbitration to avert major disruption to chip production. [23, 25, 26]",
-        "geo": "Asia",
-        "sources": 8
+        "sources": 27
       }
     ]
   },
   "regional_items": {
     "es": [
       {
-        "headline": "Governments agree to protect non-contributory pensions",
-        "body": "Spain's government and the Canary Islands agreed to change a regional law. The deal protects supplemental income for thousands of non-contributory pension recipients.",
+        "headline": "Spain ends tax relief measures for electricity and gas",
+        "body": "The government is ending temporary VAT reductions on electricity and natural gas. The move raises utility costs for households and businesses starting in June.",
         "geo": "Spain",
-        "sources": 1
+        "sources": 5
       }
     ],
     "no": [
       {
-        "headline": "Norway revokes missile export license to Malaysia",
-        "body": "The government cancelled an approved export license for naval strike missiles. [19] This created a diplomatic dispute, halting a multi-year defense contract. [19, 24]",
+        "headline": "Norway joins international effort to establish special tribunal for Ukraine",
+        "body": "Norway joined 35 other countries to create a new special tribunal. The body will investigate and prosecute Russia's crime of aggression.",
         "geo": "Norway",
-        "sources": 2
+        "sources": 8
       }
     ],
     "uk": [
       {
-        "headline": "Senior minister resigns, triggering Labour leadership crisis",
-        "body": "Health Secretary Wes Streeting quit the government after poor local election results. [21] His exit triggered open maneuvering for a leadership contest against the Prime Minister. [11, 16]",
+        "headline": "UK economy posts unexpected growth in first quarter",
+        "body": "The United Kingdom's economy grew unexpectedly during the year's first quarter. The data challenges recession forecasts and complicates central bank decisions.",
         "geo": "United Kingdom",
-        "sources": 6
-      }
-    ],
-    "nl": [
-      {
-        "headline": "IMF lowers Dutch economic growth forecast amid Mideast conflict",
-        "body": "The International Monetary Fund lowered its growth forecast for the Netherlands. [2, 4] Rising energy costs are increasing inflation and weakening consumer confidence. [2, 4]",
-        "geo": "Netherlands",
-        "sources": 2
+        "sources": 3
       },
       {
-        "headline": "Arson attack targets new asylum seeker housing",
-        "body": "Protesters attacked a new asylum shelter in Loosdrecht with fire. [5] The incident escalates tensions around national refugee housing policy. [5]",
-        "geo": "Netherlands",
+        "headline": "Government bill reverses mandatory sale of council homes",
+        "body": "A new bill ends the forced sale of high-value social housing. Local authorities now have greater power to manage their housing stock.",
+        "geo": "United Kingdom",
         "sources": 2
       }
     ]

@@ -1,49 +1,40 @@
 {
-  "generated_at": "2026-05-15T04:00:00Z",
+  "generated_at": "2026-05-16T04:00:00Z",
   "sources": [
-    "OPB",
-    "Pittsburgh Post-Gazette",
-    "Evertiq",
-    "Euromaidan Press",
-    "The New Indian Express",
-    "SupplyChainBrain",
-    "The Kyiv Independent",
-    "The Manila Times",
-    "Human Resources Online",
-    "Mongabay",
-    "CBS News",
-    "The Journal",
-    "WSOC TV",
-    "The Week",
-    "The New Voice of Ukraine",
-    "Asia News Network",
-    "Morningstar",
-    "koreaherald.com",
-    "koreajoongangdaily.joins.com",
-    "afdb.org",
-    "the-star.co.ke",
-    "allafrica.com",
-    "africa-forward.com",
-    "Devdiscourse"
+    "EU Environment",
+    "European Commission",
+    "Foresight®",
+    "ECHA",
+    "WAM",
+    "Associated Press",
+    "Yeni Safak English",
+    "Xinhua",
+    "Science Media Centre",
+    "Reuters",
+    "WHO",
+    "Africa CDC",
+    "U.S. Embassy in Uganda",
+    "Mansfield 103.2",
+    "Global News"
   ],
   "items": [
     {
-      "headline": "Russia unleashes massive missile and drone attack on Kyiv",
-      "body": "Russia launched one of the war's largest air attacks on Ukraine's capital city. [8, 9] The assault killed dozens of civilians and destroyed a nine-story apartment block. [6, 9]",
+      "headline": "New law strengthening water protection in EU enters into force",
+      "body": "A new EU directive on water pollutants took effect this week. Industries and water utilities now face stricter controls on more substances.",
       "geo": "Europe",
-      "sources": 9
+      "sources": 1
     },
     {
-      "headline": "African leaders push to process critical minerals on the continent",
-      "body": "A summit backed a new guarantee mechanism to unlock private investment for local manufacturing. [20, 31] This shifts economic strategy from exporting raw materials to creating domestic value chains. [15]",
+      "headline": "A political dynasty heiress and a former trade minister advance to Peru's presidential runoff",
+      "body": "Peru's final vote count confirmed a polarized presidential runoff election. Voters and investors now face a stark choice between two ideological extremes.",
+      "geo": "Americas",
+      "sources": 6
+    },
+    {
+      "headline": "Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support",
+      "body": "The Democratic Republic of Congo declared a new Ebola outbreak. An emergency response is now underway affecting residents and health workers.",
       "geo": "Africa",
-      "sources": 5
-    },
-    {
-      "headline": "Samsung Electronics faces imminent strike after labor talks collapse",
-      "body": "Last-ditch wage negotiations between the company and its largest union have failed. [7, 12, 13] The government is considering emergency arbitration to avert major disruption to chip production. [23, 25, 26]",
-      "geo": "Asia",
-      "sources": 8
+      "sources": 27
     }
   ]
 }
