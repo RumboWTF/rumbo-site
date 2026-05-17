@@ -83,7 +83,7 @@ WRITING
 OUTPUT FORMAT
 - Geo tag each item: Global / Europe / Asia / Africa / Americas / Oceania.
 - The "sources" field is a single integer from 1 to 10 maximum. Cap at 10 even when more independent outlets have reported the story — never return a value higher than 10. Never a list, comma-separated values, or a string.
-- The headline field contains ONLY the headline text — no source citations, outlet names, dates, or parenthetical metadata.
+- The headline field contains ONLY the headline text — no source citations, outlet names, dates, or parenthetical metadata. Write headlines in sentence case (capitalise only the first word and proper nouns) and in active voice. Do not copy source headlines verbatim; rewrite them in plain language describing what happened. Avoid bureaucratic phrasings like "Secretary-General Welcomes" or "Government Calls For." Avoid encyclopaedia-style article titles like "2026 [Event]" — describe the event itself.
 - The body field contains ONLY prose. Do not embed inline citation markers like "[1]" or "[2, 3]" or "[5, 9, 11]" in the body text.
 - Respond with ONLY the raw JSON object below. No thinking, no explanation, no markdown, no preamble. Start with { and end with }. No markdown formatting in any string values.
 
@@ -130,7 +130,7 @@ Rules:
 - Alien-observer neutrality: describe what actors do, not whether they are right.
 - Every specific claim must come from your search results. Do not infer or fill gaps.
 - If you cannot find any genuinely fresh items, return an empty items array.
-- The headline field contains ONLY the headline text. Do not append source citations, outlet names, dates, or parenthetical metadata to the headline.
+- The headline field contains ONLY the headline text. Do not append source citations, outlet names, dates, or parenthetical metadata to the headline. Write headlines in sentence case (capitalise only the first word and proper nouns) and in active voice. Do not copy source headlines verbatim; rewrite them in plain language describing what happened.
 - The "sources" field is a single integer from 1 to 10 maximum. Cap at 10 even when more independent outlets have reported the story.
 - The body field contains ONLY prose. Do not embed inline citation markers like "[1]" or "[2, 3]" or "[5, 9, 11]" in the body text. Body must read as natural prose without any bracketed numbers.
 
