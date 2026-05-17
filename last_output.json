@@ -1,40 +1,36 @@
 {
-  "generated_at": "2026-05-16T04:00:00Z",
+  "generated_at": "2026-05-17T04:00:00Z",
   "sources": [
-    "EU Environment",
-    "European Commission",
-    "Foresight®",
-    "ECHA",
-    "WAM",
-    "Associated Press",
-    "Yeni Safak English",
-    "Xinhua",
-    "Science Media Centre",
-    "Reuters",
-    "WHO",
-    "Africa CDC",
-    "U.S. Embassy in Uganda",
-    "Mansfield 103.2",
-    "Global News"
+    "Planned Parenthood Vermont Action Fund",
+    "UN Meetings Coverage and Press Releases",
+    "Wikipedia",
+    "Kharon",
+    "United States Department of State"
   ],
   "items": [
     {
-      "headline": "New law strengthening water protection in EU enters into force",
-      "body": "A new EU directive on water pollutants took effect this week. Industries and water utilities now face stricter controls on more substances.",
-      "geo": "Europe",
-      "sources": 1
-    },
-    {
-      "headline": "A political dynasty heiress and a former trade minister advance to Peru's presidential runoff",
-      "body": "Peru's final vote count confirmed a polarized presidential runoff election. Voters and investors now face a stark choice between two ideological extremes.",
+      "headline": "U.S. Supreme Court Strikes Down Medication Abortion Restriction",
+      "body": "The U.S. Supreme Court blocked an attempt to restrict access to the abortion medication mifepristone. This action ensures patients can continue to receive the medication through telehealth and mail services.",
       "geo": "Americas",
-      "sources": 6
+      "sources": 3
     },
     {
-      "headline": "Democratic Republic of the Congo confirms new Ebola outbreak, WHO scales up support",
-      "body": "The Democratic Republic of Congo declared a new Ebola outbreak. An emergency response is now underway affecting residents and health workers.",
-      "geo": "Africa",
-      "sources": 27
+      "headline": "Secretary-General Welcomes Deal for Exchange of Conflict-Related Detainees in Yemen",
+      "body": "Parties in the Yemen conflict agreed to release more than 1,600 detainees. The agreement allows for the imminent reunion of these individuals with their families.",
+      "geo": "Asia",
+      "sources": 2
+    },
+    {
+      "headline": "2026 Long Island Rail Road strike",
+      "body": "Over 3,500 Long Island Rail Road workers began a strike over pay disputes. The action suspended service for more than 300,000 daily commuters in the United States.",
+      "geo": "Americas",
+      "sources": 3
+    },
+    {
+      "headline": "U.S. Sanctions Target Cuba's Military Regime, Elites",
+      "body": "The United States government imposed new sanctions on a Cuban military-controlled business enterprise. The action blocks the company's property in the U.S. and impacts foreign firms doing business there.",
+      "geo": "Americas",
+      "sources": 4
     }
   ]
 }
